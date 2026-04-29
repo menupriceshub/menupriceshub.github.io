@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ============================================================
+  ðŸ”§ SEO â€” CHANGE THESE FOR EVERY RESTAURANT
+============================================================ -->
+<title>Chipotle Menu with Prices 2024 â€“ Full Menu & Items</title>
+<meta name="description" content="Chipotle full menu with prices, pictures and latest updates. Browse burritos, bowls, tacos, salads and more. Updated 2024.">
+<meta name="keywords" content="chipotle menu, chipotle menu with prices, chipotle menu 2024">
+<link rel="canonical" href="https://yoursite.com/chipotle-menu">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Chipotle Menu with Prices 2024">
+<meta property="og:description" content="Full Chipotle menu with prices and pictures. Updated 2024.">
+<meta property="og:type" content="website">
+
+<!-- Schema.org Structured Data for SEO -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Chipotle Mexican Grill",
+  "servesCuisine": "Mexican",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "US"
+  },
+  "hasMenu": {
+    "@type": "Menu",
+    "name": "Chipotle Menu 2024"
+  }
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+/* =====================================================
+   DESIGN TOKENS â€” Easy to retheme per restaurant
+   Just change these colors for each restaurant!
+   Chipotle = warm red/brown
+   Shake Shack = green
+   Blue Bottle = blue/cream
+   Panera = earthy green
+====================================================== */
+:root {
+  --primary: #c0392b;       /* ðŸŽ¨ BRAND COLOR â€” change per restaurant */
+  --primary-dark: #96281b;
+  --primary-light: #e74c3c;
+  --bg: #faf8f5;
+  --bg2: #ffffff;
+  --card: #ffffff;
+  --border: #ede8e0;
+  --text: #1a1410;
+  --muted: #8a7d70;
+  --tag-bg: #f5f0e8;
+  --gold: #c8a055; 
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 15px; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Outfit', sans-serif;
+  font-weight: 300;
+  line-height: 1.65;
+}
+
+/* â”€â”€ TOPBAR â”€â”€ */
+.topbar {
+  background: var(--primary);
+  color: #fff;
+  font-size: .75rem;
+  text-align: center;
+  padding: 7px 16px;
+  letter-spacing: .05em;
+}
+
+/* â”€â”€ HEADER â”€â”€ */
+header {
+  background: var(--bg2);
+  border-bottom: 1px solid var(--border);
+  padding: 0 20px;
+  display: flex; align-items: center; justify-content: space-between;
+  height: 56px;
+  position: sticky; top: 0; z-index: 100;
+  box-shadow: 0 1px 12px rgba(0,0,0,.06);
+}
+.site-logo {
+  font-family: 'Syne', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--primary);
+  text-decoration: none;
+  letter-spacing: -.01em;
+}
+.site-logo span { color: var(--text); }
+.breadcrumb {
+  font-size: .72rem;
+  color: var(--muted);
+  display: flex; align-items: center; gap: 6px;
+}
+.breadcrumb a { color: var(--muted); text-decoration: none; }
+.breadcrumb a:hover { color: var(--primary); }
+
+/* â”€â”€ HERO â”€â”€ */
+.hero {
+  background: var(--bg2);
+  border-bottom: 2px solid var(--border);
+  padding: 32px 20px 24px;
+  position: relative;
+  overflow: hidden;
+}
+.hero::after {
+  content: '';
+  position: absolute;
+  right: -40px; top: -40px;
+  width: 200px; height: 200px;
+  border-radius: 50%;
+  background: var(--primary);
+  opacity: .05;
+}
+.hero-inner { max-width: 860px; margin: 0 auto; }
+.restaurant-tag {
+  display: inline-block;
+  background: var(--primary);
+  color: #fff;
+  font-size: .68rem; font-weight: 500;
+  letter-spacing: .1em; text-transform: uppercase;
+  padding: 3px 10px; border-radius: 4px;
+  margin-bottom: 10px;
+}
+.hero h1 {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(1.8rem, 6vw, 3rem);
+  font-weight: 800;
+  line-height: 1.05;
+  color: var(--text);
+  margin-bottom: 10px;
+}
+.hero h1 em { color: var(--primary); font-style: normal; }
+.hero-meta {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 10px;
+  font-size: .8rem; color: var(--muted);
+  margin-bottom: 18px;
+}
+.hero-meta .sep { color: var(--border); }
+.stars { color: var(--gold); font-size: .85rem; }
+.pill {
+  display: inline-flex; align-items: center; gap: 5px;
+  background: var(--tag-bg);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 4px 10px;
+  font-size: .73rem; color: var(--muted);
+}
+.pill strong { color: var(--text); font-weight: 500; }
+
+/* â”€â”€ SEARCH â”€â”€ */
+.search-wrap {
+  max-width: 480px;
+  position: relative;
+  margin-top: 6px;
+}
+.search-wrap input {
+  width: 100%;
+  border: 2px solid var(--border);
+  border-radius: 50px;
+  background: var(--bg);
+  font-family: 'Outfit', sans-serif;
+  font-size: .88rem;
+  padding: 11px 44px 11px 18px;
+  color: var(--text);
+  outline: none;
+  transition: border-color .2s, box-shadow .2s;
+}
+.search-wrap input::placeholder { color: var(--muted); }
+.search-wrap input:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(192,57,43,.1);
+}
+.search-wrap .search-icon {
+  position: absolute; right: 15px; top: 50%; transform: translateY(-50%);
+  color: var(--muted); font-size: 1rem; pointer-events: none;
+}
+.search-count {
+  font-size: .75rem; color: var(--muted);
+  margin-top: 6px; margin-left: 4px;
+  min-height: 18px;
+}
+
+/* â”€â”€ TABS â”€â”€ */
+.tabs-bar {
+  background: var(--bg2);
+  border-bottom: 1px solid var(--border);
+  display: flex; gap: 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+  padding: 0 20px;
+  position: sticky; top: 56px; z-index: 90;
+}
+.tabs-bar::-webkit-scrollbar { display: none; }
+.tab-btn {
+  flex-shrink: 0;
+  padding: 13px 16px;
+  font-family: 'Outfit', sans-serif;
+  font-size: .78rem; font-weight: 500;
+  color: var(--muted);
+  border: none; background: none;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: color .2s, border-color .2s;
+  white-space: nowrap;
+  letter-spacing: .03em;
+}
+.tab-btn:hover { color: var(--text); }
+.tab-btn.active { color: var(--primary); border-bottom-color: var(--primary); }
+
+/* â”€â”€ LAYOUT â”€â”€ */
+.page-wrap { max-width: 860px; margin: 0 auto; padding: 28px 20px 70px; }
+
+/* â”€â”€ INFO ROW â”€â”€ */
+.info-row {
+  display: flex; flex-wrap: wrap; gap: 8px;
+  margin-bottom: 28px;
+}
+.info-chip {
+  display: flex; align-items: center; gap: 6px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: .77rem; color: var(--muted);
+  background: var(--card);
+}
+.info-chip b { color: var(--text); font-weight: 500; }
+
+/* â”€â”€ SECTION HEADER â”€â”€ */
+.sec-head {
+  display: flex; align-items: center; gap: 12px;
+  margin: 32px 0 14px;
+}
+.sec-head:first-child { margin-top: 0; }
+.sec-head h2 {
+  font-family: 'Syne', sans-serif;
+  font-size: 1.1rem; font-weight: 700;
+  color: var(--text);
+  white-space: nowrap;
+}
+.sec-line { flex: 1; height: 1px; background: var(--border); }
+.sec-count { font-size: .72rem; color: var(--muted); white-space: nowrap; }
+
+/* â”€â”€ MENU LIST â”€â”€ */
+.menu-list {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--card);
+}
+.menu-row {
+  display: flex; align-items: center; gap: 14px;
+  padding: 15px 18px;
+  border-bottom: 1px solid var(--border);
+  transition: background .15s;
+  cursor: default;
+}
+.menu-row:last-child { border-bottom: none; }
+.menu-row:hover { background: var(--bg); }
+.menu-row.hidden { display: none !important; }
+.row-emoji {
+  font-size: 1.7rem;
+  width: 44px; height: 44px;
+  border-radius: 10px;
+  background: var(--tag-bg);
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.row-body { flex: 1; min-width: 0; }
+.row-name {
+  font-weight: 500; font-size: .9rem; color: var(--text);
+  margin-bottom: 2px;
+}
+.row-desc {
+  font-size: .76rem; color: var(--muted);
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+}
+.row-tags { display: flex; gap: 5px; margin-top: 5px; flex-wrap: wrap; }
+.tag {
+  font-size: .65rem; font-weight: 500; letter-spacing: .06em;
+  text-transform: uppercase; padding: 2px 7px; border-radius: 4px;
+  border: 1px solid var(--border); background: var(--tag-bg); color: var(--muted);
+}
+.tag.gf  { color: #27ae60; border-color: #d5f0e0; background: #f0faf4; }
+.tag.vg  { color: #16a085; border-color: #c8ebe4; background: #edfaf6; }
+.tag.sp  { color: #e74c3c; border-color: #fadadd; background: #fff5f5; }
+.tag.new { color: var(--primary); border-color: #fdd; background: #fff8f8; }
+.tag.pop { color: var(--gold); border-color: #fde8c0; background: #fffaf0; }
+.row-price {
+  font-family: 'Syne', sans-serif;
+  font-size: 1rem; font-weight: 700;
+  color: var(--primary);
+  white-space: nowrap;
+  flex-shrink: 0;
+  min-width: 44px;
+  text-align: right;
+}
+
+/* â”€â”€ FEATURED SCROLL â”€â”€ */
+.feat-scroll {
+  display: flex; gap: 12px;
+  overflow-x: auto; padding-bottom: 4px;
+  scrollbar-width: none; margin-bottom: 24px;
+}
+.feat-scroll::-webkit-scrollbar { display: none; }
+.feat-card {
+  flex-shrink: 0; width: 160px;
+  border: 1px solid var(--border);
+  border-radius: 12px; overflow: hidden;
+  background: var(--card);
+  transition: box-shadow .2s, transform .2s;
+}
+.feat-card:hover { box-shadow: 0 4px 20px rgba(0,0,0,.1); transform: translateY(-2px); }
+.feat-img {
+  height: 88px; background: var(--tag-bg);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 2.2rem;
+}
+.feat-body { padding: 10px 12px 12px; }
+.feat-name { font-weight: 500; font-size: .8rem; color: var(--text); margin-bottom: 4px; line-height: 1.25; }
+.feat-price { font-family: 'Syne', sans-serif; font-size: .88rem; color: var(--primary); font-weight: 700; }
+
+/* â”€â”€ NO RESULTS â”€â”€ */
+.no-results {
+  text-align: center; padding: 40px 20px;
+  color: var(--muted); font-size: .88rem;
+  display: none;
+}
+.no-results.show { display: block; }
+
+/* â”€â”€ FAQ (SEO) â”€â”€ */
+.faq-section { margin-top: 40px; }
+.faq-item {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  margin-bottom: 8px;
+  overflow: hidden;
+  background: var(--card);
+}
+.faq-q {
+  padding: 14px 18px;
+  font-weight: 500; font-size: .88rem;
+  cursor: pointer;
+  display: flex; justify-content: space-between; align-items: center;
+  user-select: none;
+}
+.faq-q:hover { background: var(--bg); }
+.faq-q .arrow { color: var(--muted); transition: transform .2s; font-size: .8rem; }
+.faq-q.open .arrow { transform: rotate(180deg); }
+.faq-a {
+  font-size: .82rem; color: var(--muted);
+  max-height: 0; overflow: hidden;
+  transition: max-height .3s ease, padding .3s;
+  padding: 0 18px;
+}
+.faq-a.open { max-height: 200px; padding: 0 18px 14px; }
+
+/* â”€â”€ RELATED â”€â”€ */
+.related-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px; margin-top: 12px;
+}
+.related-card {
+  border: 1px solid var(--border); border-radius: 10px;
+  padding: 14px 16px; background: var(--card);
+  text-decoration: none; color: var(--text);
+  transition: border-color .2s, box-shadow .2s;
+  display: block;
+}
+.related-card:hover { border-color: var(--primary); box-shadow: 0 2px 12px rgba(0,0,0,.08); }
+.related-card .rname { font-weight: 500; font-size: .88rem; margin-bottom: 3px; }
+.related-card .rkw { font-size: .72rem; color: var(--muted); }
+
+/* â”€â”€ FOOTER â”€â”€ */
+footer {
+  background: var(--text);
+  color: rgba(255,255,255,.5);
+  text-align: center;
+  padding: 20px;
+  font-size: .72rem;
+}
+footer a { color: rgba(255,255,255,.7); text-decoration: none; }
+
+/* â”€â”€ ANIMATIONS â”€â”€ */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.hero { animation: fadeUp .4s ease both; }
+.page-wrap > * { animation: fadeUp .35s ease both; }
+
+@media (max-width: 480px) {
+  .hero h1 { font-size: 1.7rem; }
+  .tabs-bar { padding: 0 12px; }
+  .page-wrap { padding: 20px 14px 60px; }
+}
+</style>
+</head>
+<body>
+
+<!-- TOPBAR â€” change text per restaurant -->
+<div class="topbar">âœ… Menu Updated April 2026 &nbsp;Â·&nbsp; Prices may vary by location</div>
+
+<!-- HEADER -->
+<header>
+  <a class="site-logo" href="/">Menu<span>Guide</span></a>
+  <nav class="breadcrumb">
+    <a href="/">Home</a> â€º <a href="/restaurants">Restaurants</a> â€º Chipotle
+  </nav>
+</header>
+
+<!-- ============================================================
+  ðŸ”§ HERO â€” CHANGE FOR EVERY RESTAURANT
+============================================================ -->
+<div class="hero">
+  <div class="hero-inner">
+    <div class="restaurant-tag">Mexican Fast Casual</div>
+
+    <!-- H1 includes target keyword naturally -->
+    <h1>Chipotle <em>Menu</em> with Prices 2026</h1>
+
+    <div class="hero-meta">
+      <span class="stars">â˜…â˜…â˜…â˜…â˜†</span>
+      <span>4.1 / 5</span>
+      <span class="sep">|</span>
+      <span>Fast Casual Â· Mexican</span>
+      <span class="sep">|</span>
+      <span>$8 â€“ $15 avg</span>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px;">
+      <span class="pill">ðŸ• <strong>Open Now</strong> Â· 10:45amâ€“10pm</span>
+      <span class="pill">ðŸ“ <strong>3,000+</strong> locations nationwide</span>
+      <span class="pill">ðŸŒ¿ <strong>Fresh ingredients daily</strong></span>
+      <span class="pill">ðŸ¥‘ <strong>Vegan & GF</strong> options</span>
+    </div>
+    <div class="search-wrap">
+      <input type="text" id="menuSearch" placeholder="Search Chipotle menu itemsâ€¦" autocomplete="off">
+      <span class="search-icon">ðŸ”</span>
+    </div>
+    <div class="search-count" id="searchCount"></div>
+  </div>
+</div>
+
+<!-- CATEGORY TABS -->
+<div class="tabs-bar" id="tabsBar">
+  <button class="tab-btn active" data-cat="all">All Items</button>
+  <button class="tab-btn" data-cat="burritos">Burritos</button>
+  <button class="tab-btn" data-cat="bowls">Bowls</button>
+  <button class="tab-btn" data-cat="tacos" href="#tacos1">Tacos</button>
+  <button class="tab-btn" data-cat="salads">Salads</button>
+  <button class="tab-btn" data-cat="sides">Sides & Extras</button>
+  <button class="tab-btn" data-cat="drinks">Drinks</button>
+  <button class="tab-btn" data-cat="kids">Kids</button>
+</div>
+
+<!-- MAIN PAGE -->
+<div class="page-wrap">
+
+  <!-- INFO CHIPS -->
+  <div class="info-row">
+    <div class="info-chip">ðŸ• <b>Monâ€“Sun</b> 10:45am â€“ 10pm</div>
+    <div class="info-chip">ðŸ“± <b>Online ordering</b> available</div>
+    <div class="info-chip">ðŸŒ¿ <b>GF</b> & Vegan options</div>
+    <div class="info-chip">ðŸš— <b>Drive-thru</b> Chipotlane locations</div>
+  </div>
+
+  <!-- FEATURED -->
+  <div class="sec-head">
+    <h2>Most Popular</h2>
+    <div class="sec-line"></div>
+    <span class="sec-count">Fan Favorites</span>
+  </div>
+  <div class="feat-scroll">
+    <div class="feat-card"><div class="feat-img">ðŸŒ¯</div><div class="feat-body"><div class="feat-name">Chicken Burrito</div><div class="feat-price">$10.70</div></div></div>
+    <div class="feat-card"><div class="feat-img">ðŸ¥£</div><div class="feat-body"><div class="feat-name">Steak Bowl</div><div class="feat-price">$11.70</div></div></div>
+    <div class="feat-card"><div class="feat-img">ðŸŒ®</div><div class="feat-body"><div class="feat-name">Barbacoa Tacos</div><div class="feat-price">$10.25</div></div></div>
+    <div class="feat-card"><div class="feat-img">ðŸ¥‘</div><div class="feat-body"><div class="feat-name">Guacamole</div><div class="feat-price">$2.65</div></div></div>
+    <div class="feat-card"><div class="feat-img">ðŸŒ±</div><div class="feat-body"><div class="feat-name">Sofritas Bowl</div><div class="feat-price">$10.45</div></div></div>
+  </div>
+
+  <!-- NO RESULTS -->
+  <div class="no-results" id="noResults">ðŸ˜• No items found. Try a different search!</div>
+
+  <!-- ==========================================================
+    ðŸ”§ MENU DATA â€” Replace this section per restaurant
+    Format: data-cat="category" for tab filtering
+    Copy/paste menu-row blocks to add items
+  ========================================================== -->
+
+  <!-- BURRITOS -->
+  <div class="sec-head sec-group" data-cat="burritos">
+    <h2>Burritos</h2><div class="sec-line"></div><span class="sec-count">6 items</span>
+  </div>
+  <div class="menu-list" data-cat="burritos">
+    <div class="menu-row" data-cat="burritos">
+      <div class="row-emoji">ðŸŒ¯</div>
+      <div class="row-body">
+        <div class="row-name">Chicken Burrito</div>
+        <div class="row-desc">Grilled adobo chicken, rice, black beans, salsa, sour cream, cheese, wrapped in flour tortilla.</div>
+        <div class="row-tags"><span class="tag pop">Popular</span></div>
+      </div>
+      <div class="row-price">$10.70</div>
+    </div>
+    <div class="menu-row" data-cat="burritos">
+      <div class="row-emoji">ðŸ¥©</div>
+      <div class="row-body">
+        <div class="row-name">Steak Burrito</div>
+        <div class="row-desc">Grilled steak, cilantro-lime rice, pinto beans, fajita veggies, fresh tomato salsa.</div>
+        <div class="row-tags"><span class="tag gf">GF option</span></div>
+      </div>
+      <div class="row-price">$11.70</div>
+    </div>
+    <div class="menu-row" data-cat="burritos">
+      <div class="row-emoji">ðŸŒ¯</div>
+      <div class="row-body">
+        <div class="row-name">Barbacoa Burrito</div>
+        <div class="row-desc">Slow-braised beef, chipotle-adobo spice, rice, beans, guacamole.</div>
+        <div class="row-tags"><span class="tag sp">Spicy</span></div>
+      </div>
+      <div class="row-price">$11.70</div>
+    </div>
+    <div class="menu-row" data-cat="burritos">
+      <div class="row-emoji">ðŸŒ±</div>
+      <div class="row-body">
+        <div class="row-name">Sofritas Burrito</div>
+        <div class="row-desc">Organic braised tofu with roasted chilies, tomatillos, cumin. Fully plant-based.</div>
+        <div class="row-tags"><span class="tag vg">Vegan</span></div>
+      </div>
+      <div class="row-price">$10.45</div>
+    </div>
+    <div class="menu-row" data-cat="burritos">
+      <div class="row-emoji">ðŸ·</div>
+      <div class="row-body">
+        <div class="row-name">Carnitas Burrito</div>
+        <div class="row-desc">Slow-cooked pulled pork with juniper, thyme, bay leaves, rice, cheese, salsa.</div>
+        <div class="row-tags"></div>
+      </div>
+      <div class="row-price">$11.20</div>
+    </div>
+    <div class="menu-row" data-cat="burritos">
+      <div class="row-emoji">ðŸŒ¯</div>
+      <div class="row-body">
+        <div class="row-name">Veggie Burrito</div>
+        <div class="row-desc">Fajita veggies, black beans, rice, guacamole, fresh tomato salsa. No meat.</div>
+        <div class="row-tags"><span class="tag vg">Vegan</span><span class="tag gf">GF option</span></div>
+      </div>
+      <div class="row-price">$9.80</div>
+    </div>
+  </div>
+
+  <!-- BOWLS -->
+  <div class="sec-head sec-group" data-cat="bowls">
+    <h2>Burrito Bowls</h2><div class="sec-line"></div><span class="sec-count">5 items</span>
+  </div>
+  <div class="menu-list" data-cat="bowls">
+    <div class="menu-row" data-cat="bowls">
+      <div class="row-emoji">ðŸ¥£</div>
+      <div class="row-body">
+        <div class="row-name">Chicken Bowl</div>
+        <div class="row-desc">Grilled chicken, cilantro-lime rice, black beans, corn salsa, sour cream, shredded cheese.</div>
+        <div class="row-tags"><span class="tag pop">Popular</span><span class="tag gf">GF</span></div>
+      </div>
+      <div class="row-price">$10.70</div>
+    </div>
+    <div class="menu-row" data-cat="bowls">
+      <div class="row-emoji">ðŸ¥£</div>
+      <div class="row-body">
+        <div class="row-name">Steak Bowl</div>
+        <div class="row-desc">Grilled steak, white rice, pinto beans, roasted chili-corn salsa, guacamole.</div>
+        <div class="row-tags"><span class="tag gf">GF</span></div>
+      </div>
+      <div class="row-price">$11.70</div>
+    </div>
+    <div class="menu-row" data-cat="bowls">
+      <div class="row-emoji">ðŸŒ±</div>
+      <div class="row-body">
+        <div class="row-name">Lifestyle Bowl â€“ Whole30</div>
+        <div class="row-desc">Supergreens lettuce blend, chicken, fajita veggies, fresh tomato salsa, guacamole.</div>
+        <div class="row-tags"><span class="tag new">New</span><span class="tag gf">GF</span></div>
+      </div>
+      <div class="row-price">$12.25</div>
+    </div>
+    <div class="menu-row" data-cat="bowls">
+      <div class="row-emoji">ðŸ¥£</div>
+      <div class="row-body">
+        <div class="row-name">Barbacoa Bowl</div>
+        <div class="row-desc">Slow-braised beef, cilantro-lime rice, black beans, tomatillo red chili salsa.</div>
+        <div class="row-tags"><span class="tag sp">Spicy</span><span class="tag gf">GF</span></div>
+      </div>
+      <div class="row-price">$11.70</div>
+    </div>
+    <div class="menu-row" data-cat="bowls">
+      <div class="row-emoji">ðŸŒ¿</div>
+      <div class="row-body">
+        <div class="row-name">Veggie Bowl</div>
+        <div class="row-desc">Fajita veggies, sofritas, guacamole, fresh tomato salsa, romaine lettuce base.</div>
+        <div class="row-tags"><span class="tag vg">Vegan</span><span class="tag gf">GF</span></div>
+      </div>
+      <div class="row-price">$10.45</div>
+    </div>
+  </div>
+
+  <!-- TACOS -->
+  <div class="sec-head sec-group" data-cat="tacos" id="tacos1">
+    <h2>Tacos</h2><div class="sec-line"></div><span class="sec-count">4 items Â· 3 tacos per order</span>
+  </div>
+  <div class="menu-list" data-cat="tacos">
+    <div class="menu-row" data-cat="tacos">
+      <div class="row-emoji">ðŸŒ®</div>
+      <div class="row-body">
+        <div class="row-name">Chicken Tacos (3)</div>
+        <div class="row-desc">Crispy or soft corn/flour tortillas, grilled chicken, salsa, cheese, sour cream.</div>
+        <div class="row-tags"><span class="tag pop">Popular</span></div>
+      </div>
+      <div class="row-price">$10.25</div>
+    </div>
+    <div class="menu-row" data-cat="tacos">
+      <div class="row-emoji">ðŸŒ®</div>
+      <div class="row-body">
+        <div class="row-name">Steak Tacos (3)</div>
+        <div class="row-desc">Grilled steak, pico de gallo, romaine, shredded cheese. Corn or flour tortilla.</div>
+        <div class="row-tags"></div>
+      </div>
+      <div class="row-price">$11.25</div>
+    </div>
+    <div class="menu-row" data-cat="tacos">
+      <div class="row-emoji">ðŸŒ®</div>
+      <div class="row-body">
+        <div class="row-name">Barbacoa Tacos (3)</div>
+        <div class="row-desc">Slow-braised beef, tomatillo red chili salsa, onion, cilantro. Street-style option.</div>
+        <div class="row-tags"><span class="tag sp">Spicy</span></div>
+      </div>
+      <div class="row-price">$11.25</div>
+    </div>
+    <div class="menu-row" data-cat="tacos">
+      <div class="row-emoji">ðŸŒ±</div>
+      <div class="row-body">
+        <div class="row-name">Veggie Tacos (3)</div>
+        <div class="row-desc">Sofritas or fajita veggies, guacamole, corn salsa. Corn tortillas (GF).</div>
+        <div class="row-tags"><span class="tag vg">Vegan</span><span class="tag gf">GF option</span></div>
+      </div>
+      <div class="row-price">$10.00</div>
+    </div>
+  </div>
+
+  <!-- SALADS -->
+  <div class="sec-head sec-group" data-cat="salads">
+    <h2>Salads</h2><div class="sec-line"></div><span class="sec-count">3 items</span>
+  </div>
+  <div class="menu-list" data-cat="salads">
+    <div class="menu-row" data-cat="salads">
+      <div class="row-emoji">ðŸ¥—</div>
+      <div class="row-body">
+        <div class="row-name">Chicken Salad</div>
+        <div class="row-desc">Romaine base, grilled chicken, fajita veggies, fresh tomato salsa, guacamole. No tortilla.</div>
+        <div class="row-tags"><span class="tag gf">GF</span></div>
+      </div>
+      <div class="row-price">$10.70</div>
+    </div>
+    <div class="menu-row" data-cat="salads">
+      <div class="row-emoji">ðŸ¥—</div>
+      <div class="row-body">
+        <div class="row-name">Steak Salad</div>
+        <div class="row-desc">Supergreens or romaine, grilled steak, corn salsa, cheese, vinaigrette.</div>
+        <div class="row-tags"><span class="tag gf">GF</span></div>
+      </div>
+      <div class="row-price">$11.70</div>
+    </div>
+    <div class="menu-row" data-cat="salads">
+      <div class="row-emoji">ðŸŒ¿</div>
+      <div class="row-body">
+        <div class="row-name">Veggie Salad</div>
+        <div class="row-desc">Supergreens, sofritas, black beans, corn salsa, guacamole. Fully plant-based.</div>
+        <div class="row-tags"><span class="tag vg">Vegan</span><span class="tag gf">GF</span></div>
+      </div>
+      <div class="row-price">$10.45</div>
+    </div>
+  </div>
+
+  <!-- SIDES -->
+  <div class="sec-head sec-group" data-cat="sides">
+    <h2>Sides & Extras</h2><div class="sec-line"></div><span class="sec-count">6 items</span>
+  </div>
+  <div class="menu-list" data-cat="sides">
+    <div class="menu-row" data-cat="sides">
+      <div class="row-emoji">ðŸ¥‘</div>
+      <div class="row-body">
+        <div class="row-name">Guacamole</div>
+        <div class="row-desc">Fresh-made daily with hand-mashed Hass avocados, lime, cilantro, red onion, jalapeÃ±o.</div>
+        <div class="row-tags"><span class="tag vg">Vegan</span><span class="tag gf">GF</span><span class="tag pop">Most Added</span></div>
+      </div>
+      <div class="row-price">$2.65</div>
+    </div>
+    <div class="menu-row" data-cat="sides">
+      <div class="row-emoji">ðŸš</div>
+      <div class="row-body">
+        <div class="row-name">Cilantro-Lime Rice</div>
+        <div class="row-desc">White or brown rice, citrus juice, fresh cilantro. Available as side order.</div>
+        <div class="row-tags"><span class="tag vg">Vegan</span><span class="tag gf">GF</span></div>
+      </div>
+      <div class="row-price">$3.15</div>
+    </div>
+    <div class="menu-row" data-cat="sides">
+      <div class="row-emoji">ðŸ«˜</div>
+      <div class="row-body">
+        <div class="row-name">Black or Pinto Beans</div>
+        <div class="row-desc">Slow-cooked with garlic, cumin, bay leaves. Hearty and filling side.</div>
+        <div class="row-tags"><span class="tag vg">Vegan</span><span class="tag gf">GF</span></div>
+      </div>
+      <div class="row-price">$3.15</div>
+    </div>
+    <div class="menu-row" data-cat="sides">
+      <div class="row-emoji">ðŸ§†</div>
+      <div class="row-body">
+        <div class="row-name">Chips & Guacamole</div>
+        <div class="row-desc">Crispy corn tortilla chips, lightly salted with lime. Served with fresh guacamole.</div>
+        <div class="row-tags"><span class="tag vg">Vegan</span><span class="tag gf">GF</span><span class="tag pop">Popular</span></div>
+      </div>
+      <div class="row-price">$5.85</div>
+    </div>
+    <div class="menu-row" data-cat="sides">
+      <div class="row-emoji">ðŸ§€</div>
+      <div class="row-body">
+        <div class="row-name">Chips & Queso Blanco</div>
+        <div class="row-desc">Tortilla chips with signature creamy queso blanco dip, green chiles, jalapeÃ±o.</div>
+        <div class="row-tags"></div>
+      </div>
+      <div class="row-price">$5.85</div>
+    </div>
+    <div class="menu-row" data-cat="sides">
+      <div class="row-emoji">ðŸŒ¶ï¸</div>
+      <div class="row-body">
+        <div class="row-name">Side of Salsa (4 varieties)</div>
+        <div class="row-desc">Fresh tomato, corn, tomatillo green, or tomatillo red chili salsa. Served as 4oz cup.</div>
+        <div class="row-tags"><span class="tag vg">Vegan</span><span class="tag gf">GF</span></div>
+      </div>
+      <div class="row-price">$1.50</div>
+    </div>
+  </div>
+
+  <!-- DRINKS -->
+  <div class="sec-head sec-group" data-cat="drinks">
+    <h2>Drinks</h2><div class="sec-line"></div><span class="sec-count">5 items</span>
+  </div>
+  <div class="menu-list" data-cat="drinks">
+    <div class="menu-row" data-cat="drinks">
+      <div class="row-emoji">ðŸ§ƒ</div>
+      <div class="row-body">
+        <div class="row-name">Agua Fresca</div>
+        <div class="row-desc">House-made watermelon, hibiscus, or cucumber-mint. Rotating seasonal flavors.</div>
+        <div class="row-tags"><span class="tag vg">Vegan</span><span class="tag gf">GF</span></div>
+      </div>
+      <div class="row-price">$3.50</div>
+    </div>
+    <div class="menu-row" data-cat="drinks">
+      <div class="row-emoji">ðŸ¥¤</div>
+      <div class="row-body">
+        <div class="row-name">Fountain Drinks (S/M/L)</div>
+        <div class="row-desc">Coke, Diet Coke, Sprite, Lemonade, Iced Tea. Free refills in restaurant.</div>
+        <div class="row-tags"></div>
+      </div>
+      <div class="row-price">$3.00</div>
+    </div>
+    <div class="menu-row" data-cat="drinks">
+      <div class="row-emoji">ðŸ§‹</div>
+      <div class="row-body">
+        <div class="row-name">Organic Milk or Juice Box</div>
+        <div class="row-desc">Kids option: organic whole milk or 100% apple juice box.</div>
+        <div class="row-tags"><span class="tag gf">GF</span></div>
+      </div>
+      <div class="row-price">$1.25</div>
+    </div>
+  </div>
+
+  <!-- KIDS -->
+  <div class="sec-head sec-group" data-cat="kids">
+    <h2>Kids Menu</h2><div class="sec-line"></div><span class="sec-count">3 items Â· 12 & under</span>
+  </div>
+  <div class="menu-list" data-cat="kids">
+    <div class="menu-row" data-cat="kids">
+      <div class="row-emoji">ðŸ‘¶</div>
+      <div class="row-body">
+        <div class="row-name">Build Your Own Kids Meal</div>
+        <div class="row-desc">Choice of 1 protein, rice, beans or fajita veggies, mild salsa, cheese or sour cream. Includes juice or milk.</div>
+        <div class="row-tags"></div>
+      </div>
+      <div class="row-price">$7.85</div>
+    </div>
+    <div class="menu-row" data-cat="kids">
+      <div class="row-emoji">ðŸŒ®</div>
+      <div class="row-body">
+        <div class="row-name">Kids Tacos (2)</div>
+        <div class="row-desc">Two soft tacos with chicken or veggie, mild pico, shredded cheese. Includes drink.</div>
+        <div class="row-tags"></div>
+      </div>
+      <div class="row-price">$7.85</div>
+    </div>
+    <div class="menu-row" data-cat="kids">
+      <div class="row-emoji">ðŸ¥£</div>
+      <div class="row-body">
+        <div class="row-name">Kids Quesadilla</div>
+        <div class="row-desc">Flour tortilla, Monterey Jack cheese. Add chicken +$1. Includes chips & drink.</div>
+        <div class="row-tags"></div>
+      </div>
+      <div class="row-price">$6.50</div>
+    </div>
+  </div>
+
+  <!-- FAQ â€” SEO boost -->
+  <div class="faq-section">
+    <div class="sec-head" style="margin-top:40px;">
+      <h2>Frequently Asked Questions</h2>
+      <div class="sec-line"></div>
+    </div>
+
+    <!-- ðŸ”§ CHANGE FAQ per restaurant keyword queries -->
+    <div class="faq-item">
+      <div class="faq-q">What is the cheapest item on the Chipotle menu? <span class="arrow">â–¾</span></div>
+      <div class="faq-a">The most affordable items are the Kids Quesadilla at $6.50 and drinks starting at $1.25. Side salsas start at $1.50.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Does Chipotle have gluten-free options? <span class="arrow">â–¾</span></div>
+      <div class="faq-a">Yes! Most Chipotle items can be made gluten-free. The corn tortillas (used in tacos) are certified GF. Avoid the flour burrito tortilla. Bowls, salads, and most toppings are naturally gluten-free.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">What is Chipotle's most popular item? <span class="arrow">â–¾</span></div>
+      <div class="faq-a">The Chicken Burrito Bowl is consistently Chipotle's best-seller. The Chips & Guacamole is the most popular add-on.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Did Chipotle raise prices in 2026? <span class="arrow">â–¾</span></div>
+      <div class="faq-a">Prices vary by location. EntrÃ©es generally range from $9.80 to $12.25. Always check with your local Chipotle for the most accurate current pricing.</div>
+    </div>
+  </div>
+
+  <!-- RELATED RESTAURANTS â€” internal linking for SEO -->
+  <div class="sec-head" style="margin-top:40px;">
+    <h2>Similar Restaurant Menus</h2>
+    <div class="sec-line"></div>
+  </div>
+  <div class="related-grid">
+    <a href="/qdoba-menu" class="related-card">
+      <div class="rname">Qdoba Menu</div>
+      <div class="rkw">qdoba menu with prices</div>
+    </a>
+    <a href="/moes-southwest-grill-menu" class="related-card">
+      <div class="rname">Moe's Southwest Menu</div>
+      <div class="rkw">moes menu 2026</div>
+    </a>
+    <a href="/del-taco-menu" class="related-card">
+      <div class="rname">Del Taco Menu</div>
+      <div class="rkw">del taco menu with prices</div>
+    </a>
+    <a href="/taco-bell-menu" class="related-card">
+      <div class="rname">Taco Bell Menu</div>
+      <div class="rkw">taco bell menu 2026</div>
+    </a>
+  </div>
+
+</div><!-- /page-wrap -->
+
+<footer>
+  &copy; 2026 MenuGuide &nbsp;Â·&nbsp;
+  <a href="/about">About</a> &nbsp;Â·&nbsp;
+  <a href="/contact">Contact</a> &nbsp;Â·&nbsp;
+  Menu data for reference only. Prices may vary by location. Always verify with restaurant.
+</footer>
+
+<!-- =====================================================
+   JAVASCRIPT â€” Search + Tabs (no library needed)
+====================================================== -->
+<script>
+  // â”€â”€ TAB FILTERING â”€â”€
+  const tabBtns = document.querySelectorAll('.tab-btn');
+  tabBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      tabBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const cat = btn.dataset.cat;
+
+      document.querySelectorAll('.menu-list').forEach(list => {
+        const show = cat === 'all' || list.dataset.cat === cat;
+        list.style.display = show ? '' : 'none';
+      });
+      document.querySelectorAll('.sec-group').forEach(sh => {
+        const show = cat === 'all' || sh.dataset.cat === cat;
+        sh.style.display = show ? '' : 'none';
+      });
+
+      // Reset search when tab changes
+      document.getElementById('menuSearch').value = '';
+      document.querySelectorAll('.menu-row').forEach(r => r.classList.remove('hidden'));
+      document.getElementById('searchCount').textContent = '';
+      document.getElementById('noResults').classList.remove('show');
+    });
+  });
+
+  // â”€â”€ LIVE SEARCH â”€â”€
+  const searchInput = document.getElementById('menuSearch');
+  const noResults = document.getElementById('noResults');
+  const searchCount = document.getElementById('searchCount');
+
+  searchInput.addEventListener('input', () => {
+    const q = searchInput.value.toLowerCase().trim();
+    const allRows = document.querySelectorAll('.menu-row');
+    let visible = 0;
+
+    // Show all sections during search
+    document.querySelectorAll('.menu-list, .sec-group').forEach(el => el.style.display = '');
+    tabBtns.forEach(b => b.classList.remove('active'));
+    document.querySelector('[data-cat="all"]').classList.add('active');
+
+    allRows.forEach(row => {
+      if (!q) {
+        row.classList.remove('hidden');
+        visible++;
+      } else {
+        const text = row.innerText.toLowerCase();
+        const match = text.includes(q);
+        row.classList.toggle('hidden', !match);
+        if (match) visible++;
+      }
+    });
+
+    if (q) {
+      searchCount.textContent = `${visible} item${visible !== 1 ? 's' : ''} found`;
+      noResults.classList.toggle('show', visible === 0);
+    } else {
+      searchCount.textContent = '';
+      noResults.classList.remove('show');
+    }
+  });
+
+  // â”€â”€ FAQ ACCORDION â”€â”€
+  document.querySelectorAll('.faq-q').forEach(q => {
+    q.addEventListener('click', () => {
+      const isOpen = q.classList.contains('open');
+      document.querySelectorAll('.faq-q').forEach(fq => {
+        fq.classList.remove('open');
+        fq.nextElementSibling.classList.remove('open');
+      });
+      if (!isOpen) {
+        q.classList.add('open');
+        q.nextElementSibling.classList.add('open');
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
