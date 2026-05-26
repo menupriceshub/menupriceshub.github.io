@@ -279,7 +279,7 @@ footer{
   max-width:1200px;
   margin:auto;
   display:grid;
-  grid-template-columns:repeat(3,1fr);
+  grid-template-columns:repeat(4,1fr);
   gap:30px;
 }
 
@@ -384,15 +384,19 @@ padding:15px;
   width:100%;
   background:#fff;
   display:flex;
-  justify-content:space-around;
   align-items:center;
-  padding:12px 10px;
+  gap:10px;
+
+  padding:10px 12px calc(10px + env(safe-area-inset-bottom));
+
   box-shadow:0 -4px 18px rgba(0,0,0,0.08);
   border-top:1px solid #eee;
+
   z-index:9999;
 
   opacity:0;
   visibility:hidden;
+
   transition:all .35s ease;
 }
 
@@ -403,25 +407,47 @@ padding:15px;
 }
 
 .nav-item{
-  font-size:14px;
-  font-weight:600;
-  color:#444;
-  padding:10px 16px;
-  border-radius:14px;
+  flex:1;
+  min-width:0;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
   background:#f5f5f5;
+  padding:10px 6px;
+  border-radius:18px;
+  font-size:13px;
+  font-weight:600;
+  color:#222;
+  line-height:1.2;
+  transition:.3s;
 }
 
-.nav-item:hover{
-border:2px solid #000;
-  color:#000;
+.nav-item i{
+  font-size:18px !important;
+  margin-bottom:6px;
 }
 
 .nav-item.active:hover{
-  border:2px solid #000;
-  color:#000;
+  border:2px solid #222;
 }
 
+.nav-item:hover{
+  transform:translateY(-2px);
+  border:2px solid #000;
+  background:white;
+}
 
+/* Desktop hide */
+
+@media(min-width:769px){
+
+  .bottom-nav{
+    display:flex !important;
+  }
+
+}
 
 
 .menu-btn{
@@ -570,7 +596,7 @@ box-shadow:none;
 <header>
 
 <div class="logo">
-MenuPriceHub
+MenuPricesHub
 </div>
 
 <!-- Replace Old Button -->
@@ -673,7 +699,7 @@ menuBtn.addEventListener("click",()=>{
 <!-- BREADCRUMB -->
 
 <div class="breadcrumb">
-<i class="fa fa-home" style="font-size:15px;color:black"></i>&nbsp;&nbsp;Home > Restaurants > Chipotle Menu
+<i class="fa fa-home" style="font-size:15px;color:#777;"></i>&nbsp;&nbsp;Home > Restaurants > Chipotle Menu
 </div>
 
 <!-- TITLE -->
@@ -1109,6 +1135,10 @@ Overview
 <a href="#menu" class="nav-tab">
 Menu
 </a>
+<a href="#ptg-prices" class="nav-tab">
+Price List
+</a>
+
 
 <a href="#photos" class="nav-tab">
 Photos
@@ -1204,6 +1234,303 @@ $14.99
 
 </section>
 
+
+<style>
+
+/* =========================
+   UNIQUE RESPONSIVE TABLE
+========================= */
+
+#ptg-prices{
+  margin-top:20px;
+}
+
+.ptg-sec-title{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  font-size:20px;
+  font-weight:800;
+  color:#111;
+  margin-bottom:18px;
+  line-height:1.3;
+}
+
+.ptg-sec-title-icon{
+  width:42px;
+  height:42px;
+  border-radius:14px;
+  background:#fff3ed;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:20px;
+  flex-shrink:0;
+}
+
+.ptg-table-wrap{
+  overflow-x:auto;
+  border-radius:28px;
+  border:1px solid #ececec;
+  background:#fff;
+  box-shadow:0 4px 20px rgba(0,0,0,.04);
+}
+
+.ptg-price-table{
+  width:100%;
+  min-width:620px;
+  border-collapse:collapse;
+  background:#fff;
+}
+
+.ptg-price-table thead th{
+  background:#111114;
+  color:#fff;
+  padding:18px 20px;
+  text-align:left;
+  font-size:12px;
+  font-weight:800;
+  letter-spacing:.8px;
+  text-transform:uppercase;
+  white-space:nowrap;
+}
+
+.ptg-price-table thead th:first-child{
+  border-top-left-radius:28px;
+}
+
+.ptg-price-table thead th:last-child{
+  border-top-right-radius:28px;
+}
+
+.ptg-price-table tbody td{
+  padding:18px 20px;
+  font-size:15px;
+  color:#222;
+  border-bottom:1px solid #eeeeee;
+  vertical-align:middle;
+  background:#fff;
+}
+
+.ptg-price-table tbody tr:last-child td{
+  border-bottom:none;
+}
+
+.ptg-price-table tbody td:first-child{
+  font-weight:700;
+  color:#111;
+  line-height:1.5;
+  min-width:150px;
+}
+
+.ptg-price-table tbody td:nth-child(2){
+  font-weight:500;
+}
+
+.ptg-td-cal{
+  color:#9ca3af;
+  font-size:13px;
+}
+
+.ptg-td-price{
+  color:#f04a10 !important;
+  font-weight:800;
+  font-size:20px;
+  white-space:nowrap;
+  min-width:90px;
+}
+
+.ptg-price-table tbody tr:nth-child(even) td{
+  background:#fcfcfc;
+}
+
+@media (hover:hover){
+
+.ptg-price-table tbody tr:hover td{
+  background:#f7f7f7;
+  transition:.2s;
+}
+
+}
+
+.ptg-scroll-note{
+  text-align:center;
+  font-size:11px;
+  color:#9ca3af;
+  margin-top:8px;
+}
+
+.ptg-price-note{
+  font-size:12px;
+  color:#8b8b8b;
+  margin-top:10px;
+  line-height:1.6;
+}
+
+@media(max-width:768px){
+
+  .ptg-sec-title{
+    font-size:18px;
+  }
+
+  .ptg-sec-title-icon{
+    width:38px;
+    height:38px;
+    font-size:18px;
+  }
+
+  .ptg-price-table{
+    min-width:560px;
+  }
+
+  .ptg-price-table thead th{
+    padding:15px 16px;
+    font-size:11px;
+  }
+
+  .ptg-price-table tbody td{
+    padding:15px 16px;
+    font-size:14px;
+  }
+
+  .ptg-td-price{
+    font-size:18px;
+  }
+
+}
+
+@media(max-width:480px){
+
+  .ptg-price-table{
+    min-width:520px;
+  }
+
+  .ptg-price-table thead th{
+    padding:14px;
+    font-size:10px;
+  }
+
+  .ptg-price-table tbody td{
+    padding:14px;
+    font-size:13px;
+  }
+
+  .ptg-td-price{
+    font-size:17px;
+  }
+
+  .ptg-td-cal{
+    font-size:12px;
+  }
+
+}
+
+</style>
+
+
+
+<section id="ptg-prices">
+
+  <div class="ptg-sec-title">
+
+    <div class="ptg-sec-title-icon">
+      💰
+    </div>
+
+    Complete Price List
+
+  </div>
+
+  <div class="ptg-table-wrap">
+
+    <table class="ptg-price-table">
+
+      <thead>
+
+        <tr>
+          <th>Menu Item</th>
+          <th>Category</th>
+          <th>Calories</th>
+          <th>Price</th>
+        </tr>
+
+      </thead>
+
+      <tbody>
+
+
+        <tr>
+          <td>Chicken Burrito</td>
+          <td>Burrito</td>
+          <td class="ptg-td-cal">1080</td>
+          <td class="ptg-td-price">$12.99</td>
+        </tr>
+        <tr>
+          <td>Steak Burrito</td>
+          <td>Burrito</td>
+          <td class="ptg-td-cal">1050</td>
+          <td class="ptg-td-price">$13.99</td>
+        </tr>
+        <tr>
+          <td>Barbacoa Burrito</td>
+          <td>Burrito</td>
+          <td class="ptg-td-cal">1020</td>
+          <td class="ptg-td-price">$13.99</td>
+        </tr>
+        <tr>
+          <td>Carnitas Burrito</td>
+          <td>Burrito</td>
+          <td class="ptg-td-cal">1060</td>
+          <td class="ptg-td-price">$13.49</td>
+        </tr>
+        <tr>
+          <td>Veggie Burrito</td>
+          <td>Burrito</td>
+          <td class="ptg-td-cal">935</td>
+          <td class="ptg-td-price">$11.49</td>
+        </tr>
+        <tr>
+          <td>Chicken Bowl</td>
+          <td>Bowl</td>
+          <td class="ptg-td-cal">750</td>
+          <td class="ptg-td-price">$12.99</td>
+        </tr>
+        <tr>
+          <td>Steak Bowl</td>
+          <td>Bowl</td>
+          <td class="ptg-td-cal">720</td>
+          <td class="ptg-td-price">$13.99</td>
+        </tr>
+        <tr>
+          <td>Veggie Bowl</td>
+          <td>Bowl</td>
+          <td class="ptg-td-cal">695</td>
+          <td class="ptg-td-price">$10.99</td>
+        </tr>
+        <tr>
+          <td>Sofritas Bowl</td>
+          <td>Bowl</td>
+          <td class="ptg-td-cal">710</td>
+          <td class="ptg-td-price">$10.99</td>
+        </tr>
+
+      </tbody>
+
+    </table>
+
+  </div>
+
+  <div class="ptg-scroll-note">
+    ↔ Swipe table to see more
+  </div>
+
+  <p class="ptg-price-note">
+    * Prices may vary by location.
+  </p>
+
+</section>
+
+
 <!-- PHOTOS -->
 
 <section id="photos">
@@ -1232,15 +1559,126 @@ Photos
 Location
 </h2>
 
-<div class="card">
 
-Chipotle Mexican Grill <br><br>
 
-123 Main Street, New York, USA <br><br>
 
-Directions Available
+
+
+
+<style>
+
+/* =========================
+   LOCATION SECTION
+========================= */
+
+.location-card{
+background:#fff;
+padding:24px;
+border-radius:24px;
+box-shadow:0 2px 10px rgba(0,0,0,.05);
+display:flex;
+flex-direction:column;
+gap:22px;
+}
+
+.location-item{
+display:flex;
+align-items:flex-start;
+gap:16px;
+}
+
+.location-item i{
+width:48px;
+height:48px;
+border-radius:14px;
+background:#fff3ed;
+color:#ff4d00;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:20px;
+flex-shrink:0;
+}
+
+.location-item h3{
+font-size:18px;
+font-weight:600;
+color:#222;
+line-height:1.5;
+margin-bottom:2px;
+}
+
+.location-item p{
+font-size:14px;
+color:#777;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.location-card{
+padding:20px;
+border-radius:20px;
+}
+
+.location-item{
+gap:14px;
+}
+
+.location-item i{
+width:44px;
+height:44px;
+font-size:18px;
+}
+
+.location-item h3{
+font-size:16px;
+}
+
+.location-item p{
+font-size:13px;
+}
+
+}
+</style>
+
+
+
+
+<div class="location-card">
+
+<div class="location-item">
+<i class="fa fa-building"></i>
+<div>
+<h3>Chipotle Mexican Grill</h3>
+<p>Restaurant</p>
+</div>
+</div>
+
+<div class="location-item">
+<i class="fa fa-map-marker"></i>
+<div>
+<h3>123 Main Street, New York, USA</h3>
+<p>Store Address</p>
+</div>
+</div>
+
+<div class="location-item">
+<i class="fa fa-location-arrow"></i>
+<div>
+<h3>Directions Available</h3>
+<p>Get route instantly</p>
+</div>
+</div>
 
 </div>
+
+
+
+
+
+
 
 </section>
 
@@ -1249,16 +1687,16 @@ Location
 <section id="reviews">
 
 <h2 class="section-title">
-<i class="fa fa-check-circle" style="font-size:48px;color:red"></i>Reviews
+Reviews
 </h2>
 
 <div class="review-card">
-<br>
+<i class="fa fa-star" style="font-size:18px;color:orange"></i><br>
 Amazing food quality and quick service.
 </div>
 
 <div class="review-card">
- <br>
+<i class="fa fa-star" style="font-size:18px;color:orange"></i><br>
 Affordable prices and delicious tacos.
 </div>
 
@@ -1329,10 +1767,11 @@ Texas Roadhouse Menu
 
   <!-- COLUMN 1 -->
   <div class="footer-box">
-    <h3>MenuPriceHub</h3>
+    <h3>MenuPricesHub</h3>
     <a href="#">Home</a>
     <a href="#">Categories</a>
     <a href="#">Latest Menus</a>
+        <a href="#">List Your Business</a>
   </div>
 
   <!-- COLUMN 2 -->
@@ -1341,6 +1780,11 @@ Texas Roadhouse Menu
     <a href="#">About</a>
     <a href="#">Contact</a>
     <a href="#">Disclaimer</a>
+    <a href="#">Sitemap</a>
+    <a href="#">Author</a>
+    
+    
+    
   </div>
 
   <!-- COLUMN 3 -->
@@ -1350,11 +1794,19 @@ Texas Roadhouse Menu
     <a href="#">Terms & Conditions</a>
     <a href="#">DMCA</a>
   </div>
+  
+  <!-- COLUMN 4 -->
+  <div class="footer-box">
+    <h3>Follow Us</h3>
+    <a href="#">Facebook</a>
+    <a href="#">Whatsapp</a>
+    <a href="#">instagram</a>
+  </div>
 
 </div>
 
 <div class="footer-bottom">
-  &copy; 2026 MenuPriceHub. All Rights Reserved.
+  &copy; 2026 MenuPricesHub. All Rights Reserved.
 </div>
 <br><br>
 </footer>
@@ -1374,7 +1826,7 @@ Texas Roadhouse Menu
 <i class="fa fa-location-arrow" style="font-size:15px;color:red"></i>  Directions
   </div>
 
-  <div class="nav-item active">
+  <div class="nav-item">
 <i class="fa fa-coffee" style="font-size:15px;color:red"></i>  Menu
   </div>
   
