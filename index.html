@@ -46,8 +46,7 @@ box-shadow:0 2px 10px rgba(0,0,0,.05);
 }
 
 .logo{
-font-size:24px;
-font-weight:700;
+font-size:20px;
 color:#ff4d00;
 }
 /* menu old code remove ❌*/
@@ -312,6 +311,15 @@ footer{
   font-size:14px;
 }
 
+.footer-badge{
+  text-align:left;
+  margin-top:35px;
+  border-top:0px solid rgba(255,255,255,0.1);
+  padding-top:20px;
+  color:#bdbdbd;
+  font-size:14px;
+}
+
 /* MOBILE */
 
 @media(max-width:768px){
@@ -382,7 +390,7 @@ padding:15px;
   left:0;
   bottom:-120px;
   width:100%;
-  background:#fff;
+  background:#f5f5f5;
   display:flex;
   align-items:center;
   gap:10px;
@@ -414,14 +422,15 @@ padding:15px;
   align-items:center;
   justify-content:center;
   text-align:center;
-  background:#f5f5f5;
+  background:#fff;
   padding:10px 6px;
   border-radius:18px;
   font-size:13px;
   font-weight:600;
   color:#222;
   line-height:1.2;
-  transition:.3s;
+  transition:0.3s;
+  border:2px solid #fff;
 }
 
 .nav-item i{
@@ -430,12 +439,13 @@ padding:15px;
 }
 
 .nav-item.active:hover{
-  border:2px solid #222;
+  border:0px solid #222;
+  
 }
 
 .nav-item:hover{
   transform:translateY(-2px);
-  border:2px solid #000;
+  border:1px solid #222;
   background:white;
 }
 
@@ -506,7 +516,9 @@ width:24px;
 display:flex;
 align-items:center;
 gap:25px;
+flex-wrap:nowrap;
 }
+
 
 .nav-menu a{
 text-decoration:none;
@@ -515,6 +527,7 @@ font-size:15px;
 font-weight:600;
 position:relative;
 transition:.3s;
+white-space: nowrap;
 }
 
 .nav-menu a:hover{
@@ -587,6 +600,126 @@ box-shadow:none;
 }
 
 }
+
+
+
+
+
+#openhours .hours-table{
+  width:100%;
+  border-collapse:collapse;
+  background:#fff;
+  border-radius:12px;
+  overflow:hidden;
+}
+
+#openhours .hours-table tr:not(:last-child){
+  border-bottom:1px solid #eee;
+}
+
+#openhours .hours-table td{
+  padding:14px 16px;
+  font-size:15px;
+}
+
+#openhours .hours-table td:first-child{
+  font-weight:600;
+  color:#333;
+}
+
+#openhours .hours-table td:last-child{
+  text-align:right;
+  color:#333;
+  font-weight:200;
+}
+
+@media(max-width:480px){
+  #openhours .hours-table td{
+    padding:12px;
+    font-size:14px;
+  }
+}
+a{
+  color:inherit;
+  text-decoration:none;
+}
+
+a:hover,
+a:focus,
+a:active{
+  color:inherit;
+  text-decoration:none;
+}
+
+.menulogotext1{
+color:Red;
+font-weight:600;
+
+}
+.menulogotext2{
+color:darkblue;font-weight:600;
+}
+
+.menulogotext3{
+color:darkblue;font-weight:600;
+}
+
+
+/* AUTO MORE MENU */
+
+.more-menu{
+position:relative;
+}
+
+.more-btn{
+background:none;
+border:none;
+font-size:15px;
+font-weight:600;
+color:#222;
+cursor:pointer;
+font-family:'Poppins',sans-serif;
+padding:0;
+display:flex;
+align-items:center;
+gap:5px;
+}
+
+.more-btn:hover{
+color:#ff4d00;
+}
+
+.more-dropdown{
+display:none;
+position:absolute;
+top:35px;
+right:0;
+min-width:220px;
+background:#fff;
+border-radius:18px;
+padding:10px;
+box-shadow:0 10px 30px rgba(0,0,0,.1);
+z-index:9999;
+}
+
+.more-dropdown a{
+display:block;
+padding:12px;
+border-radius:10px;
+border-bottom:1px solid #f2f2f2;
+}
+
+.more-dropdown a:last-child{
+border-bottom:none;
+}
+
+.more-dropdown a:hover{
+background:#f5f5f5;
+}
+
+.more-menu:hover .more-dropdown{
+display:block;
+}
 </style>
 </head>
 <body>
@@ -596,7 +729,7 @@ box-shadow:none;
 <header>
 
 <div class="logo">
-MenuPricesHub
+<span class="menulogotext1">Menu</span><span class="menulogotext2">Prices</span><span class="menulogotext3">Hub</span>
 </div>
 
 <!-- Replace Old Button -->
@@ -609,17 +742,12 @@ MenuPricesHub
 <nav class="nav-menu" id="navMenu">
 
 <a href="#overview">Home</a>
-<a href="#overview">Submit Your profile</a>
-
+<a href="#overview">Calories & Nutrition</a>
 <a href="#menu">Restaurants</a>
-
 <a href="#photos">Near Me</a>
-
 <a href="#location">Categories</a>
-
 <a href="#reviews">Contact</a>
-
-<a href="#faq">About</a>
+<a href="#overview">List Your profile</a>
 
 </nav>
  
@@ -679,15 +807,7 @@ navMenu.classList.remove("active");
 </script>
 
 
-<script>
-const menuBtn = document.getElementById("menuToggle");
 
-menuBtn.addEventListener("click",()=>{
-
-  menuBtn.classList.toggle("active");
-
-});
-</script>
 
 
 </header>
@@ -1101,17 +1221,20 @@ document.addEventListener(
 <i class="fa fa-check-circle" style="font-size:15px;color:red"></i> Verified
 </div>
 
+<a href="#reviews">
 <div class="info-box">
 <i class="fa fa-star" style="font-size:15px;color:red"></i>  4.5 Rating
-</div>
+</div></a>
 
+<a href="#location">
 <div class="info-box">
 <i class="fa fa-map-marker" style="font-size:15px;color:red"></i>  New York
-</div>
+</div></a>
 
+<a href="#openhours">
 <div class="info-box">
-<i class="fa fa-bullseye" style="font-size:15px;color:red"></i>  Open
-</div>
+<i class="fa fa-bullseye" style="font-size:15px;color:red"></i> Open
+</div></a>
 
 <div class="info-box">
 <i class="fa fa-phone" style="font-size:15px;color:red"></i> Call Now
@@ -1147,6 +1270,11 @@ Photos
 <a href="#location" class="nav-tab">
 Location
 </a>
+
+<a href="#openhours" class="nav-tab">
+Open Hours
+</a>
+
 
 <a href="#reviews" class="nav-tab">
 Reviews
@@ -1437,7 +1565,7 @@ $14.99
       💰
     </div>
 
-    Complete Price List
+    Complete Menu With Price List
 
   </div>
 
@@ -1641,6 +1769,99 @@ font-size:13px;
 }
 
 }
+
+
+
+.rating-widget{
+background:#fff;
+border:1px solid #eee;
+border-radius:18px;
+padding:20px;
+display:flex;
+align-items:center;
+gap:20px;
+box-shadow:0 4px 15px rgba(0,0,0,.05);
+}
+
+.rating-left{
+width:110px;
+flex-shrink:0;
+text-align:center;
+}
+
+.rating-score{
+font-size:48px;
+font-weight:800;
+color:#ff4d00;
+line-height:1;
+}
+
+.rating-stars{
+font-size:16px;
+color:#ffb400;
+margin:5px 0;
+}
+
+.rating-text{
+font-size:11px;
+color:#666;
+line-height:1.4;
+}
+
+.rating-right{
+flex:1;
+display:flex;
+flex-direction:column;
+gap:8px;
+}
+
+.r-row{
+display:flex;
+align-items:center;
+gap:8px;
+font-size:12px;
+font-weight:600;
+}
+
+.r-bar{
+flex:1;
+height:8px;
+background:#eee;
+border-radius:20px;
+overflow:hidden;
+}
+
+.fill{
+height:100%;
+background:linear-gradient(90deg,#ff4d00,#ff7a00);
+border-radius:20px;
+}
+
+/* Mobile */
+@media(max-width:768px){
+
+.rating-widget{
+padding:15px;
+gap:12px;
+}
+
+.rating-left{
+width:85px;
+}
+
+.rating-score{
+font-size:38px;
+}
+
+.rating-stars{
+font-size:13px;
+}
+
+.rating-text{
+font-size:10px;
+}
+
+}
 </style>
 
 
@@ -1665,6 +1886,15 @@ font-size:13px;
 </div>
 
 <div class="location-item">
+<i class="fa fa-phone"></i>
+<div>
+<h3>+91 987654321</h3>
+<p>Phone Number</p>
+</div>
+</div>
+
+
+<div class="location-item">
 <i class="fa fa-location-arrow"></i>
 <div>
 <h3>Directions Available</h3>
@@ -1682,6 +1912,51 @@ font-size:13px;
 
 </section>
 
+<!-- Open Hours-->
+
+<section id="openhours">
+
+<h2 class="section-title">
+Open Hours
+
+</h2><div class="card">
+ <table class="hours-table">
+    <tbody>
+      <tr>
+        <td>Monday</td>
+        <td>3:00 PM – 12:00 AM</td>
+      </tr>
+      <tr>
+        <td>Tuesday</td>
+        <td>3:00 PM – 12:00 AM</td>
+      </tr>
+      <tr>
+        <td>Wednesday</td>
+        <td>3:00 PM – 12:00 AM</td>
+      </tr>
+      <tr>
+        <td>Thursday</td>
+        <td>3:00 PM – 12:00 AM</td>
+      </tr>
+      <tr>
+        <td>Friday</td>
+        <td>3:00 PM – 12:00 AM</td>
+      </tr>
+      <tr>
+        <td>Saturday</td>
+        <td>3:00 PM – 2:00 AM</td>
+      </tr>
+      <tr>
+        <td>Sunday</td>
+        <td>3:00 PM – 12:00 AM</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+</div>
+</section>
+
 <!-- REVIEWS -->
 
 <section id="reviews">
@@ -1689,16 +1964,54 @@ font-size:13px;
 <h2 class="section-title">
 Reviews
 </h2>
+<div class="card">
+<!-- Rating Widget -->
+<div class="rating-widget">
+  <div class="rating-left">
+    <div class="rating-score">4.5</div>
+    <div class="rating-stars">★★★★★</div>
+    <div class="rating-text">Based on Google Reviews (8,000)</div>
+  </div>
 
-<div class="review-card">
-<i class="fa fa-star" style="font-size:18px;color:orange"></i><br>
-Amazing food quality and quick service.
+  <div class="rating-right">
+
+    <div class="r-row">
+      <span>5</span>
+      <div class="r-bar"><div class="fill" style="width:72%"></div></div>
+      <span>72%</span>
+    </div>
+
+    <div class="r-row">
+      <span>4</span>
+      <div class="r-bar"><div class="fill" style="width:18%"></div></div>
+      <span>18%</span>
+    </div>
+
+    <div class="r-row">
+      <span>3</span>
+      <div class="r-bar"><div class="fill" style="width:6%"></div></div>
+      <span>6%</span>
+    </div>
+
+    <div class="r-row">
+      <span>2</span>
+      <div class="r-bar"><div class="fill" style="width:3%"></div></div>
+      <span>3%</span>
+    </div>
+
+    <div class="r-row">
+      <span>1</span>
+      <div class="r-bar"><div class="fill" style="width:1%"></div></div>
+      <span>1%</span>
+    </div>
+
+  </div>
+</div>
+<br>
+Restaurant ka menu kaafi impressive hai, jismein har taste ke liye achhe options maujood hain. Khane ki quality aur taste dono bahut achhe lage. Overall, ek satisfying dining experience raha."
 </div>
 
-<div class="review-card">
-<i class="fa fa-star" style="font-size:18px;color:orange"></i><br>
-Affordable prices and delicious tacos.
-</div>
+
 
 </section>
 
@@ -1714,7 +2027,7 @@ FAQ
 
 <strong>Does Chipotle offer vegetarian food?</strong>
 
-<br><br>
+<br>
 
 Yes, multiple veg options are available.
 
@@ -1723,8 +2036,7 @@ Yes, multiple veg options are available.
 <div class="faq-item">
 
 <strong>What are opening hours?</strong>
-
-<br><br>
+<br>
 
 10AM to 11PM Daily.
 
@@ -1771,17 +2083,17 @@ Texas Roadhouse Menu
     <a href="#">Home</a>
     <a href="#">Categories</a>
     <a href="#">Latest Menus</a>
-        <a href="#">List Your Business</a>
+        <a href="https://menupriceshub.github.io/list-your-business.html">List Your Business</a>
   </div>
 
   <!-- COLUMN 2 -->
   <div class="footer-box">
     <h3>Company</h3>
-    <a href="#">About</a>
-    <a href="#">Contact</a>
-    <a href="#">Disclaimer</a>
-    <a href="#">Sitemap</a>
-    <a href="#">Author</a>
+    <a href="https://menupriceshub.github.io/about.html">About</a>
+    <a href="https://menupriceshub.github.io/contact.html">Contact</a>
+    <a href="https://menupriceshub.github.io/disclaimer.html">Disclaimer</a>
+    <a href="https://menupriceshub.github.io/sitemap.html">Sitemap</a>
+    <a href="https://menupriceshub.github.io/author.html">Author</a>
     
     
     
@@ -1790,8 +2102,8 @@ Texas Roadhouse Menu
   <!-- COLUMN 3 -->
   <div class="footer-box">
     <h3>Legal</h3>
-    <a href="#">Privacy Policy</a>
-    <a href="#">Terms & Conditions</a>
+    <a href="https://menupriceshub.github.io/privacy-policy.html">Privacy Policy</a>
+    <a href="https://menupriceshub.github.io/terms-conditions.html">Terms & Conditions</a>
     <a href="#">DMCA</a>
   </div>
   
@@ -1801,9 +2113,15 @@ Texas Roadhouse Menu
     <a href="#">Facebook</a>
     <a href="#">Whatsapp</a>
     <a href="#">instagram</a>
+    
+    
   </div>
 
 </div>
+<div class="footer-badge">
+<a href="//www.dmca.com/Protection/Status.aspx?ID=c82fef17-989f-4eb1-8fe1-8d43f5f18b6e" title="DMCA.com Protection Status" class="dmca-badge"> <img src ="https://images.dmca.com/Badges/dmca_protected_sml_120n.png?ID=c82fef17-989f-4eb1-8fe1-8d43f5f18b6e"  alt="DMCA.com Protection Status" /></a>  <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
+</div>
+
 
 <div class="footer-bottom">
   &copy; 2026 MenuPricesHub. All Rights Reserved.
@@ -2034,6 +2352,62 @@ function shareCurrentUrl() {
   }
 }
 </script>
+
+
+<script>
+
+document.addEventListener("DOMContentLoaded",()=>{
+
+if(window.innerWidth <= 768) return;
+
+/* Desktop Only */
+
+const nav = document.getElementById("navMenu");
+
+if(!nav) return;
+
+const links =
+Array.from(nav.children)
+.filter(el => el.tagName === "A");
+
+if(links.length <= 5) return;
+
+/* Create More Menu */
+
+const moreMenu =
+document.createElement("div");
+
+moreMenu.className =
+"more-menu";
+
+moreMenu.innerHTML = `
+<button class="more-btn">
+More <i class="fa fa-angle-down"></i>
+</button>
+<div class="more-dropdown"></div>
+`;
+
+const dropdown =
+moreMenu.querySelector(
+".more-dropdown"
+);
+
+/* Move items after 5 */
+
+links.slice(5).forEach(link=>{
+
+dropdown.appendChild(link);
+
+});
+
+/* Add More Button */
+
+nav.appendChild(moreMenu);
+
+});
+
+</script>
+
 
 </body>
 </html>
