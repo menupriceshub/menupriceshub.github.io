@@ -2472,5 +2472,45 @@ nav.appendChild(moreMenu);
   });
 </script>
 
+
+<script>
+// Sab anchor clicks handle karo
+document.addEventListener('click', function(e) {
+  var anchor = e.target.closest('a[href^="#"]');
+  if (!anchor) return;
+  var id = anchor.getAttribute('href').slice(1);
+  if (!id) return;
+  var target = document.getElementById(id);
+  if (!target) return;
+  e.preventDefault();
+
+  // Real-time sticky height calculate karo
+  var header = document.querySelector('header');
+  var tabs = document.querySelector('.section-tabs');
+  var offset = (header ? header.getBoundingClientRect().height : 0)
+             + (tabs ? tabs.getBoundingClientRect().height : 0) + 8;
+
+  var targetTop = target.getBoundingClientRect().top + window.pageYOffset - offset;
+
+  // Kiwi + sab browsers ke liye manual smooth scroll
+  var start = window.pageYOffset;
+  var distance = targetTop - start;
+  var duration = 500;
+  var startTime = null;
+
+  function step(timestamp) {
+    if (!startTime) startTime = timestamp;
+    var progress = Math.min((timestamp - startTime) / duration, 1);
+    var ease = progress < 0.5
+      ? 2 * progress * progress
+      : -1 + (4 - 2 * progress) * progress;
+    window.scrollTo(0, start + distance * ease);
+    if (progress < 1) requestAnimationFrame(step);
+  }
+  requestAnimationFrame(step);
+});
+</script>
+  
+
 </body>
 </html>
