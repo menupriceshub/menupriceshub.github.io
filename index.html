@@ -155,10 +155,10 @@ color:#fff !important;
 
 /* SECTION */
 
-section{
+  section{
 margin-bottom:45px;
-scroll-margin-top:150px;
-}
+scroll-margin-top:0px;
+  }
 
 .section-title{
 font-size:28px;
@@ -2470,6 +2470,23 @@ nav.appendChild(moreMenu);
     });
   });
 </script>
+<script>
+// Dynamically set scroll-margin-top based on actual sticky elements height
+function updateScrollMargins() {
+  const header = document.querySelector('header');
+  const tabs = document.querySelector('.section-tabs');
+  
+  const headerH = header ? header.offsetHeight : 0;
+  const tabsH = tabs ? tabs.offsetHeight : 0;
+  const offset = headerH + tabsH + 10; // +10px breathing room
 
+  document.querySelectorAll('section').forEach(sec => {
+    sec.style.scrollMarginTop = offset + 'px';
+  });
+}
+
+updateScrollMargins();
+window.addEventListener('resize', updateScrollMargins);
+</script>
 </body>
 </html>
