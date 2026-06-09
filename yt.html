@@ -2499,12 +2499,14 @@ Texas Roadhouse Menu
 document.querySelectorAll(".similar-card").forEach(async (card)=>{
 
   let link = card.querySelector("a");
-
   if(!link) return;
 
   let url = link.href;
 
-  // Microlink API (fetch thumbnail)
+  // Use link text as alt
+  let titleText = link.textContent.trim();
+
+  // Microlink API
   let api = "https://api.microlink.io/?url=" + encodeURIComponent(url);
 
   try{
@@ -2516,18 +2518,31 @@ document.querySelectorAll(".similar-card").forEach(async (card)=>{
     let img = document.createElement("img");
     img.src = imgUrl || "https://via.placeholder.com/50";
 
+    // ✅ lazy loading add
+    img.loading = "lazy";
+
+    // ✅ alt text add
+    img.alt = titleText || "thumbnail";
+
+    img.style.width = "50px";
+    img.style.height = "50px";
+    img.style.objectFit = "cover";
+
     // insert image before text
     card.insertBefore(img, link);
 
   }catch(e){
     let img = document.createElement("img");
     img.src = "https://via.placeholder.com/50";
+
+    img.loading = "lazy";
+    img.alt = titleText || "thumbnail";
+
     card.insertBefore(img, link);
   }
 
 });
 </script>
-
 
 
 </main>  <!-- container end -->
