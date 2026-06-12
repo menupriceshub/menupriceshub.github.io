@@ -2480,31 +2480,8 @@ nav.appendChild(moreMenu);
 
 
   <script type="module">
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-app.js";
-  import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-analytics.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
-
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  const firebaseConfig = {
-    apiKey: "AIzaSyBjziH0t9bWHu8Dx4orVck0ie_WyeC9pcY",
-    authDomain: "menupriceshub-a1b55.firebaseapp.com",
-    projectId: "menupriceshub-a1b55",
-    storageBucket: "menupriceshub-a1b55.firebasestorage.app",
-    messagingSenderId: "602825616043",
-    appId: "1:602825616043:web:b22d9cc478f798c4c1a5ee",
-    measurementId: "G-NSNZJYXVN6"
-  };
-
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
-</script>
-
-  <script type="module">
 import { initializeApp } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-app.js";
+import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-analytics.js";
 import { getMessaging, getToken } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-messaging.js";
 
 const firebaseConfig = {
@@ -2513,22 +2490,37 @@ const firebaseConfig = {
   projectId: "menupriceshub-a1b55",
   storageBucket: "menupriceshub-a1b55.firebasestorage.app",
   messagingSenderId: "602825616043",
-  appId: "1:602825616043:web:b22d9cc478f798c4c1a5ee"
+  appId: "1:602825616043:web:b22d9cc478f798c4c1a5ee",
+  measurementId: "G-NSNZJYXVN6"
 };
 
 const app = initializeApp(firebaseConfig);
+getAnalytics(app);
+
 const messaging = getMessaging(app);
 
 Notification.requestPermission().then(async (permission) => {
-  if (permission === "granted") {
-    const token = await getToken(messaging, {
-      vapidKey: "BCippBxRkTcCDblBJ23XSKVLD2nCLA5xFoCNh5iyDQU1XDO-FnrEjWFQdmja_tOw5aBBIoZ37SXFrwt9DI3sK8E"
-    });
+  alert("Permission: " + permission);
 
-    console.log("FCM Token:", token);
+  if (permission === "granted") {
+    try {
+      const token = await getToken(messaging, {
+        vapidKey: "BCippBxRkTcCDblBJ23XSKVLD2nCLA5xFoCNh5iyDQU1XDO-FnrEjWFQdmja_tOw5aBBIoZ37SXFrwt9DI3sK8E"
+      });
+
+      alert("TOKEN:\n" + token);
+      console.log(token);
+
+    } catch (e) {
+      alert("ERROR: " + e.message);
+      console.error(e);
+    }
   }
 });
 </script>
+
+
+  
 <script>
 Notification.requestPermission().then(permission => {
   alert("Permission: " + permission);
