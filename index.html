@@ -2529,6 +2529,10 @@ Notification.requestPermission().then(async (permission) => {
   }
 });
 </script>
-
+<script>
+Notification.requestPermission().then(permission => {
+  alert("Permission: " + permission);
+});
+</script>
 </body>
 </html>
