@@ -2486,19 +2486,17 @@ nav.appendChild(moreMenu);
 
   
 
-
-
 <script type="module">
 import { initializeApp } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-app.js";
 import { getMessaging, getToken } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-messaging.js";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBjziH0t9bWHu8Dx4orVck0ie_WyeC9pcY",
-  authDomain: "menupriceshub-a1b55.firebaseapp.com",
-  projectId: "menupriceshub-a1b55",
-  storageBucket: "menupriceshub-a1b55.firebasestorage.app",
-  messagingSenderId: "602825616043",
-  appId: "1:602825616043:web:b22d9cc478f798c4c1a5ee"
+  apiKey: "AIzaSyCod1_H1HEGw2wUg3lzkC1OCKNfzQ17eho",
+  authDomain: "menupriceshub-964c0.firebaseapp.com",
+  projectId: "menupriceshub-964c0",
+  storageBucket: "menupriceshub-964c0.firebasestorage.app",
+  messagingSenderId: "846490180206",
+  appId: "1:846490180206:web:dfac3b25ad118c0810e47f"
 };
 
 const app = initializeApp(firebaseConfig);
@@ -2513,29 +2511,27 @@ document.getElementById("notifyBtn").addEventListener("click", async () => {
     try {
 
       const token = await getToken(messaging, {
-        vapidKey: "BCippBxRkTcCDblBJ23XSKVLD2nCLA5xFoCNh5iyDQU1XDO-FnrEjWFQdmja_tOw5aBBIoZ37SXFrwt9DI3sK8E"
+        vapidKey: "BMF7VaLIylgT6m6g1LQi6V2Z0T5huntAO4rGEA_IRO40YjYpZkwBqg1o9g93RvLIO0-w0V-r5ffPr3C6XXAp5SA"
       });
 
-      alert("Notifications Enabled ✅");
-      console.log("FCM Token:", token);
+      if (token) {
+        alert("Notifications Enabled ✅");
+        console.log("FCM Token:", token);
+      } else {
+        alert("Token not generated ❌");
+      }
 
     } catch (error) {
-
       alert("Error: " + error.message);
       console.error(error);
-
     }
 
   } else {
-
     alert("Notification Permission Denied ❌");
-
   }
 
 });
 </script>
-
-
   
 </body>
 </html>
