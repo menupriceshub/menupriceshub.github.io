@@ -1,13 +1,14 @@
 importScripts('https://www.gstatic.com/firebasejs/12.14.0/firebase-app-compat.js');
 importScripts('https://www.gstatic.com/firebasejs/12.14.0/firebase-messaging-compat.js');
 
+
 firebase.initializeApp({
-  apiKey: "AIzaSyBjziH0t9bWHu8Dx4orVck0ie_WyeC9pcY",
-  authDomain: "menupriceshub-a1b55.firebaseapp.com",
-  projectId: "menupriceshub-a1b55",
-  storageBucket: "menupriceshub-a1b55.firebasestorage.app",
-  messagingSenderId: "602825616043",
-  appId: "1:602825616043:web:b22d9cc478f798c4c1a5ee"
+  apiKey: "AIzaSyCod1_H1HEGw2wUg3lzkC1OCKNfzQ17eho",
+  authDomain: "menupriceshub-964c0.firebaseapp.com",
+  projectId: "menupriceshub-964c0",
+  storageBucket: "menupriceshub-964c0.firebasestorage.app",
+  messagingSenderId: "846490180206",
+  appId: "1:846490180206:web:dfac3b25ad118c0810e47f"
 });
 
 const messaging = firebase.messaging();
