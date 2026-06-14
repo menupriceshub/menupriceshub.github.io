@@ -2159,6 +2159,7 @@ Texas Roadhouse Menu
 
 
 <div class="footer-bottom">
+  <h2>Total Subscribers: <span id="count">0</span></h2>
   &copy; 2026 MenuPricesHub. All Rights Reserved.
 </div>
 <br><br>
@@ -2564,5 +2565,12 @@ document.getElementById("notifyBtn").addEventListener("click", async () => {
 
 });
 </script>
+
+  <script>
+    async function updateCount(db) {
+  const snapshot = await getDocs(collection(db, "subscribers"));
+  document.getElementById("count").innerText = snapshot.size;
+}
+  </script>
 </body>
 </html>
