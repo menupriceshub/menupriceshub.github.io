@@ -2515,7 +2515,12 @@ const app = initializeApp(firebaseConfig);
 const messaging = getMessaging(app);
 const db = getFirestore(app);
 
+async function updateCount(db) {
+  const snapshot = await getDocs(collection(db, "subscribers"));
+  document.getElementById("count").innerText = snapshot.size;
+}
 
+    
 // ✅ STEP 1: REGISTER SERVICE WORKER
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('/firebase-messaging-sw.js')
