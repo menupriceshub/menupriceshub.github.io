@@ -1,4 +1,3 @@
-
 importScripts('https://www.gstatic.com/firebasejs/12.14.0/firebase-app-compat.js');
 importScripts('https://www.gstatic.com/firebasejs/12.14.0/firebase-messaging-compat.js');
 
@@ -11,4 +10,23 @@ firebase.initializeApp({
   appId: "1:602825616043:web:b22d9cc478f798c4c1a5ee"
 });
 
-firebase.messaging();
+const messaging = firebase.messaging();
+
+self.addEventListener('notificationclick', function(event) {
+  event.notification.close();
+
+  let url = '/';
+
+  if (
+    event.notification.data &&
+    event.notification.data.FCM_MSG &&
+    event.notification.data.FCM_MSG.data &&
+    event.notification.data.FCM_MSG.data.url
+  ) {
+    url = event.notification.data.FCM_MSG.data.url;
+  }
+
+  event.waitUntil(
+    clients.openWindow(url)
+  );
+});
