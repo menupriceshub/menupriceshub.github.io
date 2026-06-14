@@ -2489,7 +2489,16 @@ nav.appendChild(moreMenu);
 
   <script type="module">
 import { initializeApp } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-app.js";
-import { getMessaging, getToken } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-messaging.js";
+import { 
+  getMessaging, 
+  getToken 
+} from "https://www.gstatic.com/firebasejs/12.14.0/firebase-messaging.js";
+
+import { 
+  getFirestore, 
+  doc, 
+  setDoc 
+} from "https://www.gstatic.com/firebasejs/12.14.0/firebase-firestore.js";
 
 const firebaseConfig = {
   apiKey: "AIzaSyCod1_H1HEGw2wUg3lzkC1OCKNfzQ17eho",
@@ -2500,11 +2509,13 @@ const firebaseConfig = {
   appId: "1:846490180206:web:dfac3b25ad118c0810e47f"
 };
 
+// Init Firebase
 const app = initializeApp(firebaseConfig);
 const messaging = getMessaging(app);
+const db = getFirestore(app);
 
 
-// ✅ STEP 1: REGISTER SERVICE WORKER (VERY IMPORTANT)
+// ✅ STEP 1: REGISTER SERVICE WORKER
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('/firebase-messaging-sw.js')
     .then(() => console.log("Service Worker Registered"))
@@ -2524,7 +2535,6 @@ document.getElementById("notifyBtn").addEventListener("click", async () => {
 
   try {
 
-    // wait SW ready
     const registration = await navigator.serviceWorker.ready;
 
     const token = await getToken(messaging, {
@@ -2534,6 +2544,14 @@ document.getElementById("notifyBtn").addEventListener("click", async () => {
 
     if (token) {
       console.log("FCM Token:", token);
+
+      // ✅ SAVE SUBSCRIBER TO FIRESTORE
+      await setDoc(doc(db, "subscribers", token), {
+        token: token,
+        status: "active",
+        createdAt: new Date()
+      });
+
       alert("Notifications Enabled ✅");
     } else {
       alert("Token not generated ❌");
