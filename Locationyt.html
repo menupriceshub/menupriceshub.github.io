@@ -2774,48 +2774,7 @@ function updateNotificationStatus() {
 updateNotificationStatus();
 </script>
   
-<script>
-function updateNotificationStatus() {
-    const badge = document.getElementById("notifyStatus");
-
-    if (!("Notification" in window)) {
-        badge.innerHTML =
-            '<i class="fas fa-times-circle" style="color:red"></i>';
-        return;
-    }
-
-    if (Notification.permission === "granted") {
-        badge.innerHTML =
-            '<i class="fas fa-check-circle" style="color:#28a745"></i>';
-            // Pulse Animation Stop
-        notifyBtn.style.animation = "none";
-    } else {
-        badge.innerHTML =
-            '<i class="fas fa-times-circle" style="color:red"></i>';
-    }
-}
-
-function enableNotifications() {
-    if (!("Notification" in window)) {
-        alert("Notifications not supported on this device.");
-        return;
-    }
-
-    Notification.requestPermission().then(permission => {
-        updateNotificationStatus();
-
-        if (permission === "granted") {
-            new Notification("🎉 Notifications Enabled!", {
-                body: "Thank you for enabling notifications."
-            });
-        }
-    });
-}
-
-updateNotificationStatus();
-</script>
-
-
+ 
 
   
  </body>
