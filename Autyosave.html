@@ -1,0 +1,209 @@
+<script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-app.js";
+import { getMessaging, getToken } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-messaging.js";
+import { getFirestore, collection, getDocs, doc, setDoc } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-firestore.js";
+
+const firebaseConfig = {
+  apiKey: "YOUR_API_KEY",
+  authDomain: "menupriceshub-964c0.firebaseapp.com",
+  projectId: "menupriceshub-964c0",
+  storageBucket: "menupriceshub-964c0.firebasestorage.app",
+  messagingSenderId: "846490180206",
+  appId: "1:846490180206:web:dfac3b25ad118c0810e47f"
+};
+
+// Firebase Init
+const app = initializeApp(firebaseConfig);
+const messaging = getMessaging(app);
+const db = getFirestore(app);
+
+// Service Worker Register
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/firebase-messaging-sw.js')
+    .then(() => console.log("SW Registered"))
+    .catch(err => console.log(err));
+}
+
+// Get Location
+async function getLocation() {
+  try {
+    const res = await fetch("https://ipapi.co/json/");
+    return await res.json();
+  } catch {
+    return null;
+  }
+}
+
+// Save Token Function
+async function saveSubscriber(token) {
+
+  const loc = await getLocation();
+
+  await setDoc(doc(db, "subscribers", token), {
+    token: token,
+    status: "active",
+
+    website: window.location.origin,
+    currentPage: window.location.href,
+    pageTitle: document.title,
+
+    ip: loc?.ip || "N/A",
+    city: loc?.city || "N/A",
+    region: loc?.region || "N/A",
+    country: loc?.country_name || "N/A",
+    latitude: loc?.latitude || "N/A",
+    longitude: loc?.longitude || "N/A",
+
+    userAgent: navigator.userAgent,
+    lastVisit: new Date()
+  }, { merge: true });
+
+  updateCount();
+}
+
+// AUTO SAVE IF ALREADY ALLOWED
+async function autoSaveToken() {
+
+  if (!("Notification" in window)) return;
+
+  if (Notification.permission !== "granted") return;
+
+  try {
+
+    const registration = await navigator.serviceWorker.ready;
+
+    const token = await getToken(messaging, {
+      vapidKey: "YOUR_VAPID_KEY",
+      serviceWorkerRegistration: registration
+    });
+
+    if (token) {
+      await saveSubscriber(token);
+      console.log("Existing subscriber auto saved");
+    }
+
+  } catch (err) {
+    console.error(err);
+  }
+}
+
+// Notification Button
+document.getElementById("notifyBtn").addEventListener("click", async () => {
+
+  const permission = await Notification.requestPermission();
+
+  if (permission !== "granted") {
+    alert("Permission Denied ❌");
+    return;
+  }
+
+  try {
+
+    const registration = await navigator.serviceWorker.ready;
+
+    const token = await getToken(messaging, {
+      vapidKey: "YOUR_VAPID_KEY",
+      serviceWorkerRegistration: registration
+    });
+
+    if (!token) {
+      alert("Token not generated ❌");
+      return;
+    }
+
+    await saveSubscriber(token);
+
+    alert("Notifications Enabled ✅");
+
+    updateNotificationStatus();
+
+  } catch (err) {
+    console.error(err);
+  }
+
+});
+
+// Subscriber Count
+async function updateCount() {
+  try {
+    const snapshot = await getDocs(collection(db, "subscribers"));
+
+    const countEl = document.getElementById("count");
+
+    if (countEl) {
+      countEl.innerText = snapshot.size;
+    }
+
+  } catch (err) {
+    console.error(err);
+  }
+}
+
+// Page Load
+window.addEventListener("load", async () => {
+
+  await autoSaveToken();
+
+  updateCount();
+
+  updateNotificationStatus();
+
+});
+</script>
+
+<script>
+function updateNotificationStatus() {
+
+  const badge = document.getElementById("notifyStatus");
+
+  if (!badge) return;
+
+  if (!("Notification" in window)) {
+    badge.innerHTML =
+      '<i class="fas fa-times-circle" style="color:red"></i>';
+    return;
+  }
+
+  if (Notification.permission === "granted") {
+
+    badge.innerHTML =
+      '<i class="fas fa-check-circle" style="color:#28a745"></i>';
+
+    const btn = document.getElementById("notifyBtn");
+
+    if (btn) {
+      btn.style.animation = "none";
+    }
+
+  } else {
+
+    badge.innerHTML =
+      '<i class="fas fa-times-circle" style="color:red"></i>';
+
+  }
+}
+
+function enableNotifications() {
+
+  if (!("Notification" in window)) {
+    alert("Notifications not supported.");
+    return;
+  }
+
+  Notification.requestPermission().then(permission => {
+
+    updateNotificationStatus();
+
+    if (permission === "granted") {
+
+      new Notification("🎉 Notifications Enabled!", {
+        body: "Thank you for enabling notifications."
+      });
+
+    }
+
+  });
+}
+
+updateNotificationStatus();
+</script>
