@@ -1,10 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Push Notification Subscribe</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+body{
+font-family:Arial,sans-serif;
+background:#f5f5f5;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+margin:0;
+}
+
+.card{
+background:#fff;
+padding:25px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.15);
+text-align:center;
+width:320px;
+}
+
+button{
+background:#007bff;
+color:#fff;
+border:none;
+padding:12px 20px;
+border-radius:10px;
+cursor:pointer;
+font-size:16px;
+margin-top:15px;
+animation:pulse 1.5s infinite;
+}
+
+@keyframes pulse{
+0%{transform:scale(1);}
+50%{transform:scale(1.08);}
+100%{transform:scale(1);}
+}
+
+.count{
+font-size:18px;
+font-weight:bold;
+margin-top:10px;
+}
+
+.status{
+font-size:24px;
+margin-top:10px;
+}
+</style>
+</head>
+<body>
+
+<div class="card">
+
+<h2>Enable Notifications</h2>
+
+<div class="status" id="notifyStatus">
+<i class="fas fa-times-circle" style="color:red"></i>
+</div>
+
+<button id="notifyBtn">
+<i class="fas fa-bell"></i> Enable Notifications
+</button>
+
+<div class="count">
+Subscribers:
+<span id="count">0</span>
+</div>
+
+</div>
+
 <script type="module">
 import { initializeApp } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-app.js";
 import { getMessaging, getToken } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-messaging.js";
 import { getFirestore, collection, getDocs, doc, setDoc } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-firestore.js";
 
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
+  apiKey: "AIzaSyCod1_H1HEGw2wUg3lzkC1OCKNfzQ17eho",
   authDomain: "menupriceshub-964c0.firebaseapp.com",
   projectId: "menupriceshub-964c0",
   storageBucket: "menupriceshub-964c0.firebasestorage.app",
@@ -12,198 +93,154 @@ const firebaseConfig = {
   appId: "1:846490180206:web:dfac3b25ad118c0810e47f"
 };
 
-// Firebase Init
+const VAPID_KEY = "BMF7VaLIylgT6m6g1LQi6V2Z0T5huntAO4rGEA_IRO40YjYpZkwBqg1o9g93RvLIO0-w0V-r5ffPr3C6XXAp5SA";
+
 const app = initializeApp(firebaseConfig);
 const messaging = getMessaging(app);
 const db = getFirestore(app);
 
-// Service Worker Register
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('/firebase-messaging-sw.js')
-    .then(() => console.log("SW Registered"))
-    .catch(err => console.log(err));
+  .then(()=>console.log("SW Registered"))
+  .catch(err=>console.log(err));
 }
 
-// Get Location
-async function getLocation() {
-  try {
+async function getLocation(){
+  try{
     const res = await fetch("https://ipapi.co/json/");
     return await res.json();
-  } catch {
+  }catch(e){
     return null;
   }
 }
 
-// Save Token Function
-async function saveSubscriber(token) {
+async function saveToken(token){
 
   const loc = await getLocation();
 
-  await setDoc(doc(db, "subscribers", token), {
-    token: token,
-    status: "active",
+  await setDoc(doc(db,"subscribers",token),{
 
-    website: window.location.origin,
-    currentPage: window.location.href,
-    pageTitle: document.title,
+    token:token,
+    status:"active",
 
-    ip: loc?.ip || "N/A",
-    city: loc?.city || "N/A",
-    region: loc?.region || "N/A",
-    country: loc?.country_name || "N/A",
-    latitude: loc?.latitude || "N/A",
-    longitude: loc?.longitude || "N/A",
+    website:window.location.origin,
+    currentPage:window.location.href,
+    pageTitle:document.title,
 
-    userAgent: navigator.userAgent,
-    lastVisit: new Date()
-  }, { merge: true });
+    ip:loc?.ip || "N/A",
+    city:loc?.city || "N/A",
+    region:loc?.region || "N/A",
+    country:loc?.country_name || "N/A",
+    latitude:loc?.latitude || "N/A",
+    longitude:loc?.longitude || "N/A",
+
+    userAgent:navigator.userAgent,
+
+    lastVisit:new Date()
+
+  },{merge:true});
 
   updateCount();
 }
 
-// AUTO SAVE IF ALREADY ALLOWED
-async function autoSaveToken() {
+async function autoSaveToken(){
 
-  if (!("Notification" in window)) return;
+  if(Notification.permission !== "granted"){
+    return;
+  }
 
-  if (Notification.permission !== "granted") return;
-
-  try {
+  try{
 
     const registration = await navigator.serviceWorker.ready;
 
-    const token = await getToken(messaging, {
-      vapidKey: "YOUR_VAPID_KEY",
-      serviceWorkerRegistration: registration
+    const token = await getToken(messaging,{
+      vapidKey:VAPID_KEY,
+      serviceWorkerRegistration:registration
     });
 
-    if (token) {
-      await saveSubscriber(token);
-      console.log("Existing subscriber auto saved");
+    if(token){
+      await saveToken(token);
+      console.log("Auto saved");
     }
 
-  } catch (err) {
-    console.error(err);
+  }catch(err){
+    console.log(err);
   }
 }
 
-// Notification Button
-document.getElementById("notifyBtn").addEventListener("click", async () => {
+document.getElementById("notifyBtn").addEventListener("click", async ()=>{
 
   const permission = await Notification.requestPermission();
 
-  if (permission !== "granted") {
-    alert("Permission Denied ❌");
+  if(permission !== "granted"){
+    alert("Permission Denied");
     return;
   }
 
-  try {
+  try{
 
     const registration = await navigator.serviceWorker.ready;
 
-    const token = await getToken(messaging, {
-      vapidKey: "YOUR_VAPID_KEY",
-      serviceWorkerRegistration: registration
+    const token = await getToken(messaging,{
+      vapidKey:VAPID_KEY,
+      serviceWorkerRegistration:registration
     });
 
-    if (!token) {
-      alert("Token not generated ❌");
-      return;
+    if(token){
+
+      await saveToken(token);
+
+      updateNotificationStatus();
+
+      alert("Notifications Enabled ✅");
+
+      new Notification("🎉 Notifications Enabled!",{
+        body:"Thank you for subscribing."
+      });
     }
 
-    await saveSubscriber(token);
-
-    alert("Notifications Enabled ✅");
-
-    updateNotificationStatus();
-
-  } catch (err) {
-    console.error(err);
+  }catch(err){
+    console.log(err);
   }
 
 });
 
-// Subscriber Count
-async function updateCount() {
-  try {
-    const snapshot = await getDocs(collection(db, "subscribers"));
+async function updateCount(){
 
-    const countEl = document.getElementById("count");
-
-    if (countEl) {
-      countEl.innerText = snapshot.size;
-    }
-
-  } catch (err) {
-    console.error(err);
-  }
+  try{
+    const snap = await getDocs(collection(db,"subscribers"));
+    document.getElementById("count").innerText = snap.size;
+  }catch(e){}
 }
 
-// Page Load
-window.addEventListener("load", async () => {
-
-  await autoSaveToken();
-
-  updateCount();
-
-  updateNotificationStatus();
-
-});
-</script>
-
-<script>
-function updateNotificationStatus() {
+window.updateNotificationStatus = function(){
 
   const badge = document.getElementById("notifyStatus");
 
-  if (!badge) return;
-
-  if (!("Notification" in window)) {
-    badge.innerHTML =
-      '<i class="fas fa-times-circle" style="color:red"></i>';
-    return;
-  }
-
-  if (Notification.permission === "granted") {
+  if(Notification.permission === "granted"){
 
     badge.innerHTML =
-      '<i class="fas fa-check-circle" style="color:#28a745"></i>';
+    '<i class="fas fa-check-circle" style="color:#28a745"></i>';
 
-    const btn = document.getElementById("notifyBtn");
+    document.getElementById("notifyBtn").style.animation="none";
 
-    if (btn) {
-      btn.style.animation = "none";
-    }
-
-  } else {
+  }else{
 
     badge.innerHTML =
-      '<i class="fas fa-times-circle" style="color:red"></i>';
-
+    '<i class="fas fa-times-circle" style="color:red"></i>';
   }
-}
+};
 
-function enableNotifications() {
+window.addEventListener("load",async()=>{
 
-  if (!("Notification" in window)) {
-    alert("Notifications not supported.");
-    return;
-  }
+  updateNotificationStatus();
 
-  Notification.requestPermission().then(permission => {
+  updateCount();
 
-    updateNotificationStatus();
+  await autoSaveToken();
 
-    if (permission === "granted") {
-
-      new Notification("🎉 Notifications Enabled!", {
-        body: "Thank you for enabling notifications."
-      });
-
-    }
-
-  });
-}
-
-updateNotificationStatus();
+});
 </script>
+
+</body>
+</html>
