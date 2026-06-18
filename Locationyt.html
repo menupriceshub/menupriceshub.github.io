@@ -2576,21 +2576,14 @@ nav.appendChild(moreMenu);
     });
   });
 </script>
+
 <script type="module">
 import { initializeApp } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-app.js";
 import { getMessaging, getToken } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-messaging.js";
-
-import {
-  getFirestore,
-  collection,
-  getDocs,
-  doc,
-  setDoc,
-  getDoc
-} from "https://www.gstatic.com/firebasejs/12.14.0/firebase-firestore.js";
+import { getFirestore, collection, getDocs, doc, setDoc } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-firestore.js";
 
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
+  apiKey: "AIzaSyCod1_H1HEGw2wUg3lzkC1OCKNfzQ17eho",
   authDomain: "menupriceshub-964c0.firebaseapp.com",
   projectId: "menupriceshub-964c0",
   storageBucket: "menupriceshub-964c0.firebasestorage.app",
@@ -2598,21 +2591,19 @@ const firebaseConfig = {
   appId: "1:846490180206:web:dfac3b25ad118c0810e47f"
 };
 
+// INIT
 const app = initializeApp(firebaseConfig);
 const messaging = getMessaging(app);
 const db = getFirestore(app);
 
-const VAPID_KEY = "YOUR_VAPID_KEY";
-
-/* SERVICE WORKER */
-if ("serviceWorker" in navigator) {
-  navigator.serviceWorker
-    .register("/firebase-messaging-sw.js")
-    .then(() => console.log("SW Registered"))
-    .catch(err => console.log(err));
+// SERVICE WORKER
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/firebase-messaging-sw.js')
+  .then(() => console.log("SW Registered"))
+  .catch(err => console.log(err));
 }
 
-/* LOCATION */
+// GET LOCATION FUNCTION
 async function getLocation() {
   try {
     const res = await fetch("https://ipapi.co/json/");
@@ -2622,73 +2613,7 @@ async function getLocation() {
   }
 }
 
-/* SAVE TOKEN */
-async function saveTokenToFirebase(token) {
-
-  const tokenRef = doc(db, "subscribers", token);
-  const tokenSnap = await getDoc(tokenRef);
-
-  if (tokenSnap.exists()) {
-    console.log("Token already exists");
-    return false;
-  }
-
-  const loc = await getLocation();
-
-  await setDoc(tokenRef, {
-    token: token,
-    status: "active",
-
-    createdAt: new Date(),
-
-    website: window.location.origin,
-    currentPage: window.location.href,
-    pageTitle: document.title,
-
-    userAgent: navigator.userAgent,
-    language: navigator.language,
-
-    ip: loc?.ip || "N/A",
-    city: loc?.city || "N/A",
-    region: loc?.region || "N/A",
-    country: loc?.country_name || "N/A",
-    latitude: loc?.latitude || "N/A",
-    longitude: loc?.longitude || "N/A"
-  });
-
-  console.log("Token Saved");
-  return true;
-}
-
-/* GENERATE TOKEN */
-async function generateAndSaveToken() {
-
-  try {
-
-    const registration = await navigator.serviceWorker.ready;
-
-    const token = await getToken(messaging, {
-      vapidKey: VAPID_KEY,
-      serviceWorkerRegistration: registration
-    });
-
-    if (!token) {
-      console.log("Token not generated");
-      return;
-    }
-
-    const added = await saveTokenToFirebase(token);
-
-    if (added) {
-      updateCount();
-    }
-
-  } catch (err) {
-    console.error(err);
-  }
-}
-
-/* BUTTON CLICK */
+// ENABLE NOTIFICATIONS
 document.getElementById("notifyBtn").addEventListener("click", async () => {
 
   const permission = await Notification.requestPermission();
@@ -2698,45 +2623,61 @@ document.getElementById("notifyBtn").addEventListener("click", async () => {
     return;
   }
 
-  await generateAndSaveToken();
-
-  alert("Notifications Enabled ✅");
-
-  updateNotificationStatus();
-});
-
-/* AUTO CHECK ON PAGE LOAD */
-window.addEventListener("load", async () => {
-
-  if (Notification.permission === "granted") {
-
-    await generateAndSaveToken();
-
-    updateNotificationStatus();
-  }
-
-  updateCount();
-});
-
-/* SUBSCRIBER COUNT */
-async function updateCount() {
-
   try {
 
-    const snapshot = await getDocs(
-      collection(db, "subscribers")
-    );
+    const registration = await navigator.serviceWorker.ready;
 
-    const countEl = document.getElementById("count");
+    const token = await getToken(messaging, {
+      vapidKey: "BMF7VaLIylgT6m6g1LQi6V2Z0T5huntAO4rGEA_IRO40YjYpZkwBqg1o9g93RvLIO0-w0V-r5ffPr3C6XXAp5SA",
+      serviceWorkerRegistration: registration
+    });
 
-    if (countEl) {
-      countEl.innerText = snapshot.size;
+    if (token) {
+
+      // 🌍 GET IP + LOCATION
+      const loc = await getLocation();
+
+      // 💾 SAVE TO FIREBASE
+      await setDoc(doc(db, "subscribers", token), {
+        token: token,
+        status: "active",
+        createdAt: new Date(),
+
+        // 🔗 PAGE INFO
+        page_url: window.location.href,
+        page_path: window.location.pathname,
+        page_title: document.title,
+
+        ip: loc?.ip || "N/A",
+        city: loc?.city || "N/A",
+        region: loc?.region || "N/A",
+        country: loc?.country_name || "N/A",
+        latitude: loc?.latitude || "N/A",
+        longitude: loc?.longitude || "N/A"
+      });
+
+      alert("Notifications Enabled ✅");
+      updateCount();
+
+    } else {
+      alert("Token not generated ❌");
     }
 
-  } catch (err) {
-    console.error(err);
+  } catch (error) {
+    console.error(error);
   }
+
+});
+
+// COUNT FUNCTION
+async function updateCount() {
+  const snapshot = await getDocs(collection(db, "subscribers"));
+  document.getElementById("count").innerText = snapshot.size;
 }
+
+// LOAD COUNT ON START
+updateCount();
+
 </script>
 
 <script>
