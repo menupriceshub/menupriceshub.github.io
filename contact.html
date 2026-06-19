@@ -1411,109 +1411,107 @@ question.parentElement.classList.toggle('active');
 
 
 
-<script type="module">
-import { initializeApp } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-app.js";
-import { getMessaging, getToken } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-messaging.js";
-import { getFirestore, doc, setDoc } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-firestore.js";
 
-const firebaseConfig = {
-  apiKey: "AIzaSyCod1_H1HEGw2wUg3lzkC1OCKNfzQ17eho",
-  authDomain: "menupriceshub-964c0.firebaseapp.com",
-  projectId: "menupriceshub-964c0",
-  storageBucket: "menupriceshub-964c0.firebasestorage.app",
-  messagingSenderId: "846490180206",
-  appId: "1:846490180206:web:dfac3b25ad118c0810e47f"
-};
 
-const VAPID_KEY =
-  "BMF7VaLIylgT6m6g1LQi6V2Z0T5huntAO4rGEA_IRO40YjYpZkwBqg1o9g93RvLIO0-w0V-r5ffPr3C6XXAp5SA";
-
-const app = initializeApp(firebaseConfig);
-const messaging = getMessaging(app);
-const db = getFirestore(app);
-
-// Register Service Worker
-if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.register("/firebase-messaging-sw.js")
-    .then(() => console.log("Service Worker Registered"))
-    .catch(err => console.error(err));
-}
-
-// Get IP Location
-async function getLocation() {
-  try {
-    const res = await fetch("https://ipapi.co/json/");
-    return await res.json();
-  } catch (e) {
-    console.error(e);
-    return null;
-  }
-}
-
-// Save Subscriber Data
-async function saveSubscriber(token) {
-  const loc = await getLocation();
-
-  const data = {
-    token: token,
-
-    website: location.origin,
-    pageUrl: location.href,
-    pagePath: location.pathname,
-    pageTitle: document.title,
-
-    ip: loc?.ip || "",
-    country: loc?.country_name || "",
-    state: loc?.region || "",
-    city: loc?.city || "",
-    latitude: loc?.latitude || "",
-    longitude: loc?.longitude || "",
-
-    userAgent: navigator.userAgent,
-
-    lastVisit: new Date().toISOString(),
-    timestamp: Date.now()
-  };
-
-  await setDoc(
-    doc(db, "subscribers", token),
-    data,
-    { merge: true }
-  );
-
-  console.log("Subscriber Saved:", data);
-}
-
-// Auto Save If Notification Already Allowed
-async function autoSave() {
-
-  if (Notification.permission !== "granted") {
-    console.log("Notification permission not granted");
-    return;
-  }
-
-  try {
-    const registration = await navigator.serviceWorker.ready;
-
-    const token = await getToken(messaging, {
-      vapidKey: VAPID_KEY,
-      serviceWorkerRegistration: registration
-    });
-
-    if (token) {
-      await saveSubscriber(token);
-      console.log("Token Saved:", token);
-    } else {
-      console.log("No token generated");
-    }
-
-  } catch (err) {
-    console.error("Error:", err);
-  }
-}
-
-window.addEventListener("load", autoSave);
+<script type="module">    
+import { initializeApp } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-app.js";    
+import { getMessaging, getToken } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-messaging.js";    
+import { getFirestore, doc, setDoc } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-firestore.js";    
+    
+const firebaseConfig = {    
+  apiKey: "AIzaSyCod1_H1HEGw2wUg3lzkC1OCKNfzQ17eho",    
+  authDomain: "menupriceshub-964c0.firebaseapp.com",    
+  projectId: "menupriceshub-964c0",    
+  storageBucket: "menupriceshub-964c0.firebasestorage.app",    
+  messagingSenderId: "846490180206",    
+  appId: "1:846490180206:web:dfac3b25ad118c0810e47f"    
+};    
+    
+const VAPID_KEY = "BMF7VaLIylgT6m6g1LQi6V2Z0T5huntAO4rGEA_IRO40YjYpZkwBqg1o9g93RvLIO0-w0V-r5ffPr3C6XXAp5SA";    
+    
+const app = initializeApp(firebaseConfig);    
+const messaging = getMessaging(app);    
+const db = getFirestore(app);    
+    
+// Register Service Worker    
+if ("serviceWorker" in navigator) {    
+  navigator.serviceWorker.register("/firebase-messaging-sw.js")    
+    .then(() => console.log("Service Worker Registered"))    
+    .catch(err => console.error(err));    
+}    
+    
+// Get IP Location    
+async function getLocation() {    
+  try {    
+    const res = await fetch("https://ipapi.co/json/");    
+    return await res.json();    
+  } catch (e) {    
+    console.error(e);    
+    return null;    
+  }    
+}    
+    
+// Save Subscriber Data    
+async function saveSubscriber(token) {    
+  const loc = await getLocation();    
+    
+  const data = {    
+    token: token,    
+    website: location.origin,    
+    pageUrl: location.href,    
+    pagePath: location.pathname,    
+    pageTitle: document.title,    
+    ip: loc?.ip || "",    
+    country: loc?.country_name || "",    
+    state: loc?.region || "",    
+    city: loc?.city || "",    
+    latitude: loc?.latitude || "",    
+    longitude: loc?.longitude || "",    
+    userAgent: navigator.userAgent,    
+    lastVisit: new Date().toISOString(),    
+    timestamp: Date.now()    
+  };    
+    
+  await setDoc(doc(db, "subscribers", token), data, { merge: true });    
+  console.log("Subscriber Saved:", data);    
+}    
+    
+// Auto Save If Notification Already Allowed    
+async function autoSave() {    
+  if (Notification.permission !== "granted") {    
+    console.log("Notification permission not granted");    
+    return;    
+  }    
+    
+  try {    
+    const registration = await navigator.serviceWorker.ready;    
+    
+    const token = await getToken(messaging, {    
+      vapidKey: VAPID_KEY,    
+      serviceWorkerRegistration: registration    
+    });    
+    
+    if (token) {    
+      await saveSubscriber(token);    
+      console.log("Token Saved:", token);    
+    } else {    
+      console.log("No token generated");    
+    }    
+    
+  } catch (err) {    
+    console.error("Error:", err);    
+  }    
+}    
+    
+// ✅ 3 Second Delay Added    
+window.addEventListener("load", () => {    
+  setTimeout(autoSave, 3000);    
+});    
+    
 </script>
+
+
+
   
 </body>
 </html>
