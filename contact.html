@@ -1472,7 +1472,7 @@ async function saveSubscriber(token) {
     timestamp: Date.now()    
   };    
     
-  await setDoc(doc(db, "subscribers", token), data, { merge: true });    
+  await setDoc(doc(db, "subscribers", token), data);    
   console.log("Subscriber Saved:", data);    
 }    
     
