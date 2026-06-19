@@ -1410,7 +1410,6 @@ question.parentElement.classList.toggle('active');
 </script>
 
 
-
 <script type="module">
 import { initializeApp } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-app.js";
 import { getMessaging, getToken } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-messaging.js";
@@ -1513,23 +1512,13 @@ async function autoSave() {
 }
 
 window.addEventListener("load", autoSave);
-
-
-// autoSave() mein:
-await saveSubscriber(token, "auto");
-
-// Button click handler mein:
-await saveSubscriber(token, "button");
-
-// saveSubscriber function signature:
-async function saveSubscriber(token, method) {
-  const data = {
-    // ...existing fields...
-    subscribeMethod: method,  // ← yeh add karo
-  };
-}
-  
 </script>
+
+
+
+
+
   
 </body>
 </html>
+
