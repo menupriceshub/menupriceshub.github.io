@@ -3151,6 +3151,7 @@ if ('serviceWorker' in navigator) {
 
 
 
+
 <script type="module">
 import { initializeApp } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-app.js";
 import { getMessaging, getToken } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-messaging.js";
@@ -3177,6 +3178,16 @@ if ('serviceWorker' in navigator) {
   .catch(err => console.log(err));
 }
 
+// GET LOCATION FUNCTION
+async function getLocation() {
+  try {
+    const res = await fetch("https://ipapi.co/json/");
+    return await res.json();
+  } catch (e) {
+    return null;
+  }
+}
+
 // ENABLE NOTIFICATIONS
 document.getElementById("notifyBtn").addEventListener("click", async () => {
 
@@ -3198,11 +3209,26 @@ document.getElementById("notifyBtn").addEventListener("click", async () => {
 
     if (token) {
 
-      // SAVE TOKEN
+      // 🌍 GET IP + LOCATION
+      const loc = await getLocation();
+
+      // 💾 SAVE TO FIREBASE
       await setDoc(doc(db, "subscribers", token), {
         token: token,
         status: "active",
-        createdAt: new Date()
+        createdAt: new Date(),
+
+        // 🔗 PAGE INFO
+        page_url: window.location.href,
+        page_path: window.location.pathname,
+        page_title: document.title,
+
+        ip: loc?.ip || "N/A",
+        city: loc?.city || "N/A",
+        region: loc?.region || "N/A",
+        country: loc?.country_name || "N/A",
+        latitude: loc?.latitude || "N/A",
+        longitude: loc?.longitude || "N/A"
       });
 
       alert("Notifications Enabled ✅");
@@ -3229,52 +3255,43 @@ updateCount();
 
 </script>
 
-
-
-
 <script>
 function updateNotificationStatus() {
-    const badge = document.getElementById("notifyStatus");
 
-    if (!("Notification" in window)) {
-        badge.innerHTML =
-            '<i class="fas fa-times-circle" style="color:red"></i>';
-        return;
+  const badge = document.getElementById("notifyStatus");
+  const notifyBtn = document.getElementById("notifyBtn");
+
+  if (!badge) return;
+
+  if (!("Notification" in window)) {
+
+    badge.innerHTML =
+      '<i class="fas fa-times-circle" style="color:red"></i>';
+
+    return;
+  }
+
+  if (Notification.permission === "granted") {
+
+    badge.innerHTML =
+      '<i class="fas fa-check-circle" style="color:#28a745"></i>';
+
+    if (notifyBtn) {
+      notifyBtn.style.animation = "none";
     }
 
-    if (Notification.permission === "granted") {
-        badge.innerHTML =
-            '<i class="fas fa-check-circle" style="color:#28a745"></i>';
-    } else {
-        badge.innerHTML =
-            '<i class="fas fa-times-circle" style="color:red"></i>';
-    }
-}
+  } else {
 
-function enableNotifications() {
-    if (!("Notification" in window)) {
-        alert("Notifications not supported on this device.");
-        return;
-    }
-
-    Notification.requestPermission().then(permission => {
-        updateNotificationStatus();
-
-        if (permission === "granted") {
-            new Notification("🎉 Notifications Enabled!", {
-                body: "Thank you for enabling notifications."
-            });
-        }
-    });
+    badge.innerHTML =
+      '<i class="fas fa-times-circle" style="color:red"></i>';
+  }
 }
 
 updateNotificationStatus();
 </script>
-
-
+  
+ 
 
   
-  
-  
-</body>
+ </body>
 </html>
