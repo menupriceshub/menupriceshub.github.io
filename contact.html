@@ -1451,7 +1451,8 @@ async function saveSubscriber(token) {
     doc(db, "subscribers", token),    
     {    
       token: token,    
-      website: location.origin,    
+      website: location.origin,
+      pageUrl: currentPageUrl, 
       pageUrl: location.href,    
       pageTitle: document.title,    
       country: loc?.country_name || "",    
