@@ -1158,11 +1158,18 @@ navMenu.classList.remove("active");
     border:none;
     border-radius:50%;
     background:rgba(255,255,255,.2);
-    backdrop-filter:blur(8px);
+    backdrop-filter:blur(5px);
     color:#fff;
     font-size:20px;
     cursor:pointer;
     z-index:10;
+    opacity:0.5;
+    transition:all .35s ease;
+}
+.hero-slider:hover .nav{
+   opacity:1;
+  visibility:visible;
+  transform:translateY(-50%) scale(1);
 }
 
 .prev{left:20px;}
@@ -1295,8 +1302,9 @@ document.querySelector(".hero-slider")
 /* ===== CATEGORY WRAPPER ===== */
 .category-wrapper{
   width:100%;
-  padding:10px 5px;
+  padding:0px 5px;
   background:transparent;
+  margin-bottom:20px;
 }
 
 /* ===== HORIZONTAL SCROLL ===== */
@@ -1320,53 +1328,54 @@ document.querySelector(".hero-slider")
   width:80px;
   text-align:center;
   text-decoration:none;
-  color:#333;
+  color:#fff;
   font-family:Arial;
+ background:transparent;
+  border-radius:5px;  
 }
 
 .category-icon{
   width:55px;
   height:55px;
   margin:auto;
-  border-radius:50%;  
+  border-radius:20px;  
   display:flex;
   align-items:center;
   justify-content:center;
   font-size:20px;
   transition:0.3s;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   margin-bottom:15px;
+  background:transparent;
+  margin-top:13px;
+  color:#fff;
 }
 .category-item:hover .category-icon{
   background:#007bff;
   color:#fff;
 }
 
-.category-item:nth-child(1) .category-icon{
-  background:rgba(255, 99, 132, 0.08);
-}
 
-.category-item:nth-child(2) .category-icon{
-  background:rgba(54, 162, 235, 0.08);
-}
+/* different soft colors per item */
+.category-item:nth-child(1) .category-icon{ background:red; }
+.category-item:nth-child(2) .category-icon{ background:blue; }
+.category-item:nth-child(3) .category-icon{ background:orange; }
+.category-item:nth-child(4) .category-icon{ background:green; }
+.category-item:nth-child(5) .category-icon{ background:pink; }
 
-.category-item:nth-child(3) .category-icon{
-  background:rgba(255, 206, 86, 0.08);
-}
+/* NEXT 10 ITEMS */
+.category-item:nth-child(6) .category-icon{ background:#ff6b6b; }   /* light red */
+.category-item:nth-child(7) .category-icon{ background:#4dabf7; }   /* sky blue */
+.category-item:nth-child(8) .category-icon{ background:#ffd43b; }   /* soft yellow */
+.category-item:nth-child(9) .category-icon{ background:#69db7c; }   /* light green */
 
-.category-item:nth-child(4) .category-icon{
-  background:rgba(75, 192, 92, 0.08);
-}
-
-.category-item:nth-child(5) .category-icon{
-  background:rgba(153, 102, 255, 0.08);
-}
     
 
 .category-text{
   font-size:12px;
-  margin-top:6px;
+  margin-top:3px;
   display:block;
+  color:#000;
 }
 
 /* ===== VIEW MORE STYLE ===== */
@@ -1374,6 +1383,9 @@ document.querySelector(".hero-slider")
   background:#111;
   color:#fff;
 }
+
+
+
 </style>
 
 
@@ -1382,29 +1394,54 @@ document.querySelector(".hero-slider")
   <div class="category-scroll">
 
     <a href="#" class="category-item">
-      <div class="category-icon"><i class="fa-solid fa-house"></i></div>
-      <span class="category-text">Home</span>
+      <div class="category-icon"><i class="fa-solid fa-pizza-slice"></i></div>
+      <span class="category-text">Pizza</span>
+    </a>
+    
+
+    <a href="#" class="category-item">
+      <div class="category-icon"><i class="fa-solid fa-burger"></i></div>
+      <span class="category-text">Burger</span>
     </a>
 
     <a href="#" class="category-item">
-      <div class="category-icon"><i class="fa-solid fa-car"></i></div>
-      <span class="category-text">Auto</span>
+      <div class="category-icon"><i class="fa-solid fa-bread-slice"></i></div>
+      <span class="category-text">Sandwiches</span>
     </a>
 
     <a href="#" class="category-item">
-      <div class="category-icon"><i class="fa-solid fa-coins"></i></div>
-      <span class="category-text">Finance</span>
+      <div class="category-icon"><i class="fa-solid fa-coffee"></i></div>
+      <span class="category-text">Cafe</span>
     </a>
 
     <a href="#" class="category-item">
-      <div class="category-icon"><i class="fa-solid fa-landmark"></i></div>
-      <span class="category-text">Loans</span>
+      <div class="category-icon"><i class="fa-solid fa-ice-cream"></i></div>
+      <span class="category-text">Desserts</span>
     </a>
-
+    
+    
     <a href="#" class="category-item">
-      <div class="category-icon"><i class="fa-solid fa-chart-line"></i></div>
-      <span class="category-text">Stocks</span>
+      <div class="category-icon"><i class="fa-solid fa-pepper-hot"></i></div>
+      <span class="category-text">Mexican</span>
     </a>
+    
+        <a href="#" class="category-item">
+      <div class="category-icon"><i class="fa-solid fa-utensils"></i></div>
+      <span class="category-text">Italian</span>
+    </a>
+    
+    
+    <a href="#" class="category-item">
+      <div class="category-icon"><i class="fa-solid fa-apple-whole"></i></div>
+      <span class="category-text">Healthy Food</span>
+    </a>
+    
+    
+    <a href="#" class="category-item">
+      <div class="category-icon"><i class="fa-solid fa-bowl-rice"></i></div>
+      <span class="category-text">Asian Food</span>
+    </a>
+    
 
     <!-- VIEW MORE -->
     <a href="#" class="category-item view-more">
@@ -1417,8 +1454,699 @@ document.querySelector(".hero-slider")
 
   
 <!-- TITLE -->
+<!-- POPULAR RESTAURANTS WIDGET -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+<style>
+.popular-restaurants{
+  width:100%;
+  max-width:1400px;
+  margin:auto;
+  padding:20px 15px;
+}
+
+.popular-heading{
+  font-size:28px;
+  font-weight:700;
+  margin-bottom:20px;
+}
+
+.restaurant-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.restaurant-card{
+  background:#fff;
+  border-radius:24px;
+  overflow:hidden;
+  box-shadow:0 8px 25px rgba(0,0,0,.08);
+  transition:.3s;
+  display:flex;
+  flex-direction:column;
+}
+
+.restaurant-card:hover{
+  transform:translateY(-6px);
+}
+
+.restaurant-img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+  border-radius:24px;
+}
+
+.restaurant-content{
+  padding:18px;
+  display:flex;
+  flex-direction:column;
+  flex:1;
+}
+
+.restaurant-name{
+  font-size:20px;
+  font-weight:800;
+  margin-bottom:6px;
+}
+
+.restaurant-info{
+  font-size:14px;
+  color:#666;
+  margin-bottom:16px;
+}
+
+.restaurant-bottom{
+  margin-top:auto;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.restaurant-rating{
+  font-weight:600;
+}
+
+.restaurant-stars {  
+      color: #FFD43B;  
+      font-size: 14px;  
+    }  
+    
+.restaurant-btn{
+  padding:8px 18px;
+  background:#ff1d25;
+  color:#fff;
+  border-radius:999px;
+  text-decoration:none;
+  font-weight:700;
+}
+
+/* responsive */
+@media(max-width:768px){
+  .restaurant-grid{grid-template-columns:repeat(2,1fr);}
+}
+
+@media(max-width:600px){
+  .restaurant-grid{grid-template-columns:1fr;}
+}
+</style>
+
+<section class="popular-restaurants">
+
+  <h2 class="popular-heading">Popular Restaurants</h2>
+
+  <div class="restaurant-grid">
+
+    <article class="restaurant-card">
+      <img class="restaurant-img" src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800">
+      <div class="restaurant-content">
+        <h3 class="restaurant-name">Lunch Food</h3>
+        <div class="restaurant-info">Pizza • Fast Food Restaurant</div>
+
+        <div class="restaurant-bottom">
+          <div class="restaurant-rating">
+            <span>4.5</span>
+            <span class="restaurant-stars">  
+              <i class="fas fa-star"></i>  
+              <i class="fas fa-star"></i>  
+              <i class="fas fa-star"></i>  
+              <i class="fas fa-star"></i>  
+              <i class="fas fa-star"></i>  
+            </span>  
+          </div>
+          <a href="#" class="restaurant-btn">View</a>
+        </div>
+      </div>
+    </article>
+    
+    
+    <article class="restaurant-card">
+      <img class="restaurant-img" src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800">
+      <div class="restaurant-content">
+        <h3 class="restaurant-name">Lunch Food</h3>
+        <div class="restaurant-info">Pizza • Fast Food Restaurant</div>
+
+        <div class="restaurant-bottom">
+          <div class="restaurant-rating">
+            <span>4.5</span>
+            <span class="restaurant-stars">  
+              <i class="fas fa-star"></i>  
+              <i class="fas fa-star"></i>  
+              <i class="fas fa-star"></i>  
+              <i class="fas fa-star"></i>  
+              <i class="fas fa-star"></i>  
+            </span>  
+          </div>
+          <a href="#" class="restaurant-btn">View</a>
+        </div>
+      </div>
+    </article>
+    
+    
+    
+    <article class="restaurant-card">
+      <img class="restaurant-img" src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800">
+      <div class="restaurant-content">
+        <h3 class="restaurant-name">Lunch Food</h3>
+        <div class="restaurant-info">Pizza • Fast Food Restaurant</div>
+
+        <div class="restaurant-bottom">
+          <div class="restaurant-rating">
+            <span>4.5</span>
+            <span class="restaurant-stars">  
+              <i class="fas fa-star"></i>  
+              <i class="fas fa-star"></i>  
+              <i class="fas fa-star"></i>  
+              <i class="fas fa-star"></i>  
+              <i class="fas fa-star"></i>  
+            </span>  
+          </div>
+          <a href="#" class="restaurant-btn">View</a>
+        </div>
+      </div>
+    </article>
+    
+    
+    
+    
+    
+    
+
+  </div>
+
+</section>
+
+<br>
 
 
+<section class="popular-restaurants">
+
+  <h2 class="popular-heading">Popular Cafe's</h2>
+
+  <div class="restaurant-grid">
+
+    <article class="restaurant-card">
+      <img class="restaurant-img" src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800">
+      <div class="restaurant-content">
+        <h3 class="restaurant-name">Lunch Food</h3>
+        <div class="restaurant-info">Pizza • Fast Food Restaurant</div>
+
+        <div class="restaurant-bottom">
+          <div class="restaurant-rating">
+            <span>4.5</span>
+            <span class="restaurant-stars">  
+              <i class="fas fa-star"></i>  
+              <i class="fas fa-star"></i>  
+              <i class="fas fa-star"></i>  
+              <i class="fas fa-star"></i>  
+              <i class="fas fa-star"></i>  
+            </span>  
+          </div>
+          <a href="#" class="restaurant-btn">View</a>
+        </div>
+      </div>
+    </article>
+    
+    
+    <article class="restaurant-card">
+      <img class="restaurant-img" src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800">
+      <div class="restaurant-content">
+        <h3 class="restaurant-name">Lunch Food</h3>
+        <div class="restaurant-info">Pizza • Fast Food Restaurant</div>
+
+        <div class="restaurant-bottom">
+          <div class="restaurant-rating">
+            <span>4.5</span>
+            <span class="restaurant-stars">  
+              <i class="fas fa-star"></i>  
+              <i class="fas fa-star"></i>  
+              <i class="fas fa-star"></i>  
+              <i class="fas fa-star"></i>  
+              <i class="fas fa-star"></i>  
+            </span>  
+          </div>
+          <a href="#" class="restaurant-btn">View</a>
+        </div>
+      </div>
+    </article>
+    
+    
+    
+    <article class="restaurant-card">
+      <img class="restaurant-img" src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800">
+      <div class="restaurant-content">
+        <h3 class="restaurant-name">Lunch Food</h3>
+        <div class="restaurant-info">Pizza • Fast Food Restaurant</div>
+
+        <div class="restaurant-bottom">
+          <div class="restaurant-rating">
+            <span>4.5</span>
+            <span class="restaurant-stars">  
+              <i class="fas fa-star"></i>  
+              <i class="fas fa-star"></i>  
+              <i class="fas fa-star"></i>  
+              <i class="fas fa-star"></i>  
+              <i class="fas fa-star"></i>  
+            </span>  
+          </div>
+          <a href="#" class="restaurant-btn">View</a>
+        </div>
+      </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    
+
+  </div>
+
+</section>
+
+
+
+<br>
+
+<section class="mph-latest-wrap">
+
+  <div class="mph-latest-head">
+    <h2>Latest Blog Posts</h2>
+    <a href="#">View All</a>
+  </div>
+
+  <div class="mph-latest-main">
+
+    <!-- Featured Post -->
+    <a href="#" class="mph-latest-featured">
+      <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200" alt="Featured Post">
+
+      <div class="mph-latest-overlay">
+        <span>Featured</span>
+        <h3>McDonald's Menu Prices Updated 2026</h3>
+      </div>
+    </a>
+
+    <!-- Sidebar Posts -->
+    <div class="mph-latest-list">
+
+      <a href="#" class="mph-latest-item">
+        <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=300" alt="">
+        <h4>Top Burger Restaurants in America</h4>
+      </a>
+
+      <a href="#" class="mph-latest-item">
+        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=300" alt="">
+        <h4>Best Pizza Deals This Month</h4>
+      </a>
+
+      <a href="#" class="mph-latest-item">
+        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=300" alt="">
+        <h4>KFC Menu Prices & Family Buckets</h4>
+      </a>    
+
+  <a href="#" class="mph-latest-item">
+        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=300" alt="">
+        <h4>Best Pizza Deals This Month</h4>
+      </a>
+         
+
+    </div>
+
+  </div>
+
+</section>
+
+<style>
+
+/* ===== WRAPPER ===== */
+
+.mph-latest-wrap{
+  margin:40px 0;
+}
+
+/* ===== HEADER ===== */
+
+.mph-latest-head{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:15px;
+  margin-bottom:20px;
+}
+
+.mph-latest-head h2{
+  margin:0;
+  font-size:28px;
+  font-weight:700;
+  color:#111827;
+}
+
+.mph-latest-head a{
+  text-decoration:none;
+  color:#2563eb;
+  font-weight:600;
+  font-size:15px;
+}
+
+/* ===== MAIN GRID ===== */
+
+.mph-latest-main{
+  display:grid;
+  grid-template-columns:2fr 1fr;
+  gap:20px;
+  align-items:start;
+}
+
+/* ===== FEATURED POST ===== */
+
+.mph-latest-featured{
+  position:relative;
+  display:block;
+  overflow:hidden;
+  border-radius:20px;
+  text-decoration:none;
+}
+
+.mph-latest-featured img{
+  width:100%;
+  height:430px;
+  object-fit:cover;
+  display:block;
+  transition:.4s;
+}
+
+.mph-latest-featured:hover img{
+  transform:scale(1.05);
+}
+
+.mph-latest-overlay{
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:0;
+  padding:25px;
+  background:linear-gradient(
+    to top,
+    rgba(0,0,0,.85),
+    rgba(0,0,0,.2),
+    transparent
+  );
+}
+
+.mph-latest-overlay span{
+  display:inline-block;
+  background:#2563eb;
+  color:#fff;
+  padding:6px 12px;
+  border-radius:30px;
+  font-size:12px;
+  font-weight:600;
+}
+
+.mph-latest-overlay h3{
+  margin:12px 0 0;
+  color:#fff;
+  font-size:30px;
+  line-height:1.4;
+  font-weight:700;
+}
+
+/* ===== SIDEBAR POSTS ===== */
+
+.mph-latest-list{
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
+
+.mph-latest-item{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  padding:10px;
+  background:#fff;
+  border-radius:16px;
+  text-decoration:none;
+  box-shadow:0 2px 12px rgba(0,0,0,.06);
+  transition:.25s;
+}
+
+.mph-latest-item:hover{
+  transform:translateY(-3px);
+}
+
+.mph-latest-item img{
+  width:110px;
+  height:80px;
+  object-fit:cover;
+  border-radius:12px;
+  flex-shrink:0;
+}
+
+.mph-latest-item h4{
+  margin:0;
+  color:#111827;
+  font-size:15px;
+  line-height:1.5;
+  font-weight:600;
+}
+
+/* ===== TABLET ===== */
+
+@media (max-width:1024px){
+
+  .mph-latest-main{
+    grid-template-columns:1.6fr 1fr;
+  }
+
+  .mph-latest-featured img{
+    height:350px;
+  }
+
+  .mph-latest-overlay h3{
+    font-size:24px;
+  }
+
+}
+
+/* ===== MOBILE ===== */
+
+@media (max-width:768px){
+
+  .mph-latest-main{
+    grid-template-columns:1fr;
+  }
+
+  .mph-latest-head h2{
+    font-size:22px;
+  }
+
+  .mph-latest-featured{
+    margin-bottom:5px;
+  }
+
+  .mph-latest-featured img{
+    height:240px;
+  }
+
+  .mph-latest-overlay{
+    padding:18px;
+  }
+
+  .mph-latest-overlay h3{
+    font-size:20px;
+  }
+
+  .mph-latest-item img{
+    width:90px;
+    height:70px;
+  }
+
+  .mph-latest-item h4{
+    font-size:14px;
+  }
+
+}
+
+</style>
+
+<!-- ===== Browse By City Widget ===== -->
+<style>
+.city-widget{
+  width:100%;
+  margin:20px 0;
+  font-family:Arial,sans-serif;
+}
+
+.city-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:15px;
+}
+
+.city-title{
+  font-size:20px;
+  font-weight:700;
+  color:#111;
+}
+
+.city-scroll{
+  display:flex;
+  gap:18px;
+  overflow-x:auto;
+  scroll-behavior:smooth;
+  padding-bottom:10px;
+  -webkit-overflow-scrolling:touch;
+  scrollbar-width:none;
+}
+
+.city-scroll::-webkit-scrollbar{
+  display:none;
+}
+
+.city-item{
+  flex:0 0 auto;
+  text-align:center;
+  text-decoration:none;
+  color:#222;
+  width:95px;
+}
+
+.city-photo{
+  width:85px;
+  height:85px;
+  border-radius:50%;
+  overflow:hidden;
+  margin:0 auto 8px;
+  border:3px solid #fff;
+  box-shadow:0 4px 12px rgba(0,0,0,.12);
+  transition:.3s;
+}
+
+.city-item:hover .city-photo{
+  transform:translateY(-4px);
+}
+
+.city-photo img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.city-name{
+  font-size:14px;
+  font-weight:600;
+  white-space:nowrap;
+}
+
+.explore-more{
+  width:85px;
+  height:85px;
+  border-radius:50%;
+  background:linear-gradient(135deg,#2563eb,#4f46e5);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#fff;
+  font-size:28px;
+  font-weight:bold;
+  margin:0 auto 8px;
+  box-shadow:0 4px 12px rgba(37,99,235,.3);
+}
+
+@media (max-width:768px){
+  .city-photo,
+  .explore-more{
+    width:75px;
+    height:75px;
+  }
+
+  .city-item{
+    width:85px;
+  }
+
+  .city-name{
+    font-size:13px;
+  }
+}
+</style>
+<br>
+<div class="city-widget">
+
+  <div class="city-header">
+    <div class="city-title">Browse By City</div>
+  </div>
+
+  <div class="city-scroll">
+
+    <a href="#" class="city-item">
+      <div class="city-photo">
+        <img src="https://images.unsplash.com/photo-1499092346589-b9b6be3e94b2?w=300" alt="New York">
+      </div>
+      <div class="city-name">New York</div>
+    </a>
+
+    <a href="#" class="city-item">
+      <div class="city-photo">
+        <img src="https://images.unsplash.com/photo-1534190760961-74e8c1c5c3da?w=300" alt="Los Angeles">
+      </div>
+      <div class="city-name">Los Angeles</div>
+    </a>
+
+    <a href="#" class="city-item">
+      <div class="city-photo">
+        <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?w=300" alt="Chicago">
+      </div>
+      <div class="city-name">Chicago</div>
+    </a>
+
+    <a href="#" class="city-item">
+      <div class="city-photo">
+        <img src="https://images.unsplash.com/photo-1514214246283-d427a95c5d2f?w=300" alt="Houston">
+      </div>
+      <div class="city-name">Houston</div>
+    </a>
+
+    <a href="#" class="city-item">
+      <div class="city-photo">
+        <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=300" alt="Miami">
+      </div>
+      <div class="city-name">Miami</div>
+    </a>
+
+    <a href="#" class="city-item">
+      <div class="city-photo">
+        <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=300" alt="Las Vegas">
+      </div>
+      <div class="city-name">Las Vegas</div>
+    </a>
+
+    <a href="#" class="city-item">
+      <div class="city-photo">
+        <img src="https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=300" alt="Dallas">
+      </div>
+      <div class="city-name">Dallas</div>
+    </a>
+
+    <a href="#" class="city-item">
+      <div class="city-photo">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=300" alt="Seattle">
+      </div>
+      <div class="city-name">Seattle</div>
+    </a>
+
+    <a href="#" class="city-item">
+      <div class="explore-more">+</div>
+      <div class="city-name">Explore More</div>
+    </a>
+
+  </div>
+
+</div>
 
 
 <!-- ===================================
@@ -1810,45 +2538,7 @@ document.addEventListener(
 
 
 
-<!-- QUICK INFO -->
 
-<div class="quick-info">
-<div class="info-box">
-<i class="fa fa-check-circle" style="font-size:15px;color:red"></i> Verified
-</div>
-
-<a href="#reviews">
-<div class="info-box">
-<i class="fa fa-star" style="font-size:15px;color:red"></i>  4.5 Rating
-</div></a>
-
-<a href="#openhours">
-<div class="info-box">
-<i class="fa fa-clock" style="font-size:15px;color:red"></i> Open Hours
-</div></a>
-
-<a href="#location">
-<div class="info-box">
-<i class="fa fa-location-dot" style="font-size:15px;color:red"></i>  New York
-</div></a>
-
-<a href="#menu">
-<div class="info-box">
-<i class="fa fa-spoon" style="font-size:15px;color:red"></i>  Latest Menu
-</div></a>
-
-
-
-<div class="info-box">
-<i class="fa fa-phone" style="font-size:15px;color:red"></i> Call Now
-</div>
-<div class="info-box">
-<i class="fa fa-receipt" style="font-size:15px;color:red"></i> $10-$30
-</div>
-
-
-
-</div>
 
 <!-- SECTION NAV -->
 
@@ -2988,7 +3678,7 @@ Similar Restaurants
 
 <div class="similar-card">
 <a href="https://www.shakeshack.com/">
-Shake Shack Menu</a>
+Shake Shack MenuShake Shack Menu</a>
 </div>
 
 <div class="similar-card">
