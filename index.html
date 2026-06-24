@@ -8,9 +8,18 @@
 
 
 
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
 <!-- PWA -->
 <link rel="manifest" href="/manifest.json">
-<meta name="theme-color" content="#ff5722">
+<meta name="theme-color" content="#ff5722" id="theme-color-meta">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
@@ -27,8 +36,9 @@
 
 <!-- Baad mein-->
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
   
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4850266028754096"
      crossorigin="anonymous"></script>
@@ -138,14 +148,13 @@ border:1px solid white;
 position:relative;
 top:0px;
 z-index:999;
-background:#fff;
+background:transparent;
 display:flex;
 gap:12px;
 overflow-x:auto;
 padding:14px 10px;
 margin-bottom:30px;
 border-radius:16px;
-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 scroll-behavior:smooth;
 scroll-snap-type:x mandatory;
 
@@ -157,7 +166,7 @@ display:none;
 
 .section-tabs a{
 text-decoration:none;
-background:#f5f5f5;
+background:#fff;
 color:#222;
 padding:5px 18px;
 border-radius:50px;
@@ -677,6 +686,21 @@ max-height: 500px;
 overflow-y: auto;
 }
 
+.nav-menu {
+  overflow-y: auto; /* ya overflow-x: auto */  
+  /* Firefox */
+  scrollbar-width: none;
+
+  /* IE & Edge */
+  -ms-overflow-style: none;
+}
+
+/* Chrome, Safari, Opera */
+.nav-menu::-webkit-scrollbar {
+  display: none;
+}
+
+
 .nav-menu.active{
 right:0;
 }
@@ -1048,10 +1072,10 @@ navMenu.classList.remove("active");
       style="background-image:url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1600');">
       <div class="overlay"></div>
 
-      <div class="content">
+      <div class="top-slider-content">
         <h1>Discover Amazing Restaurants</h1>
         <p>Find menus, prices and reviews from top restaurants near you.</p>
-        <a href="#" class="btn">Explore Now</a>
+        <a href="#" class="slide-action-btn">Explore Now</a>
       </div>
     </div>
 
@@ -1060,10 +1084,10 @@ navMenu.classList.remove("active");
       style="background-image:url('https://images.unsplash.com/photo-1552566626-52f8b828add9?w=1600');">
       <div class="overlay"></div>
 
-      <div class="content">
+      <div class="top-slider-content">
         <h1>Best Food Deals</h1>
         <p>Explore latest offers and restaurant specials instantly.</p>
-        <a href="#" class="btn">View Deals</a>
+        <a href="#" class="slide-action-btn">View Deals</a>
       </div>
     </div>
 
@@ -1072,10 +1096,10 @@ navMenu.classList.remove("active");
       style="background-image:url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1600');">
       <div class="overlay"></div>
 
-      <div class="content">
+      <div class="top-slider-content">
         <h1>Restaurant Menus</h1>
         <p>Browse updated menu prices before your next visit.</p>
-        <a href="#" class="btn">Check Menus</a>
+        <a href="#" class="slide-action-btn">Check Menus</a>
       </div>
     </div>
 
@@ -1132,7 +1156,7 @@ navMenu.classList.remove("active");
     rgba(0,0,0,.1) 100%);
 }
 
-.content{
+.top-slider-content{
     position:relative;
     z-index:5;
     max-width:550px;
@@ -1140,19 +1164,19 @@ navMenu.classList.remove("active");
     color:#fff;
 }
 
-.content h1{
+.top-slider-content h1{
     font-size:52px;
     line-height:1.1;
     margin-bottom:15px;
 }
 
-.content p{
+.top-slider-content p{
     font-size:18px;
     line-height:1.7;
     margin-bottom:25px;
 }
 
-.btn{
+.slide-action-btn{
     display:inline-block;
     padding:14px 28px;
     background:#fff;
@@ -1221,16 +1245,16 @@ navMenu.classList.remove("active");
     border-radius:18px;
 }
 
-.content{
+.top-slider-content{
     padding:25px;
     max-width:90%;
 }
 
-.content h1{
+.top-slider-content h1{
     font-size:30px;
 }
 
-.content p{
+.top-slider-content p{
     font-size:15px;
 }
 
@@ -1238,12 +1262,23 @@ navMenu.classList.remove("active");
     display:none;
 }
 
-.btn{
+.slide-action-btn{
     padding:12px 22px;
     font-size:14px;
+    color:#000;
 }
 
 }
+.slide-action-btn,
+.slide-action-btn:visited,
+.slide-action-btn:active,
+.slide-action-btn:focus{
+    color:#111 !important;
+    background:#fff;
+    outline:none;
+    -webkit-tap-highlight-color: transparent;
+}
+
 </style>
 
 <script>
@@ -1469,7 +1504,7 @@ document.querySelector(".hero-slider")
   
 <!-- TITLE -->
 <!-- POPULAR RESTAURANTS WIDGET -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
 
 <style>
 .popular-restaurants{
@@ -1580,7 +1615,7 @@ color:white;
   padding: 12px 5px;
   width: 100%;
   box-sizing: border-box;
-  background: transparent;
+  background:transparent;
   margin-bottom:10px;
 }
 
@@ -1863,7 +1898,7 @@ color:white;
 
 <div class="menu-card">
 
-<img src="https://plus.unsplash.com/premium_photo-1683121324474-83460636b0ed?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="menupricehub" loading="lazy">
+<img src="https://plus.unsplash.com/premium_photo-1683121324474-83460636b0ed?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="menupricehub" loading="lazy" class="restaurant-img">
 
 <div class="menu-content">
 
@@ -2280,7 +2315,7 @@ $14.99
 <div class="city-widget">
 
   <div class="city-header">
-    <div class="city-title">Browse By City</div>
+    <div class="city-title">Popular Cities</div>
   </div>
 
   <div class="city-scroll">
@@ -2744,6 +2779,15 @@ document.addEventListener(
 
 <!-- SECTION NAV -->
 
+<div class="section-header">
+  <h2 class="section-left">Looking for a menu?
+  </h2>
+  <a href="#" class="section-right">
+    View All
+    <i class="fa-solid fa-chevron-right icon"></i>
+  </a>
+</div>
+
 <div class="section-tabs">
 
 <a href="#overview" class="nav-tab active-tab">
@@ -2751,10 +2795,10 @@ Overview
 </a>
 
 <a href="#menu" class="nav-tab">
-Menu
+Menu With Prices
 </a>
 <a href="#ptg-prices" class="nav-tab">
-Price List
+mcdonald's menu with prices
 </a>
 
 
@@ -2780,6 +2824,233 @@ FAQ
 </a>
 
 </div>
+
+
+
+
+
+
+
+
+<style>
+.elb-hero-slider{
+    position:relative;
+    width:100%;
+    height:520px;
+    overflow:hidden;
+    border-radius:24px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    backgroundx:linear-gradient(135deg,#ffb300,#ff5722,#6a11cb,#2575fc);
+}
+
+.elb-hero-slider:before{
+  content:"";
+  position:absolute;
+  width:350px;
+  height:350px;
+  background:rgba(255,255,255,.12);
+  border-radius:50%;
+  top:-100px;
+  right:-100px;
+  z-index:1;
+}
+
+.elb-hero-slides{
+    width:100%;
+    height:100%;
+    position:relative;  z-index:2;
+}
+
+.elb-hero-slide{
+    position:absolute;
+    inset:0;
+    opacity:0;
+    transition:all .8s ease;
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+}
+
+.elb-hero-slide.elb-active{
+    opacity:1;
+    z-index:2;
+}
+
+.elb-hero-overlayX{
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+    90deg,
+    rgba(0,0,0,.75) 0%,
+    rgba(0,0,0,.45) 40%,
+    rgba(0,0,0,.1) 100%);
+}
+
+.elb-hero-content{
+    position:relative;
+    z-index:5;
+    max-width:550px;
+    padding:50px;
+    color:#fff;
+}
+
+.elb-hero-content h1{
+    font-size:52px;
+    line-height:1.1;
+    margin-bottom:15px;
+}
+
+.elb-hero-content p{
+    font-size:18px;
+    line-height:1.7;
+    margin-bottom:25px;
+}
+
+.elb-hero-btn{
+    display:inline-block;
+    padding:14px 28px;
+    background:#fff;
+    color:#111;
+    text-decoration:none;
+    border-radius:50px;
+    font-weight:700;
+    transition: all 0.3s ease;
+}
+
+
+
+.elb-hero-nav{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    width:50px;
+    height:50px;
+    border:none;
+    border-radius:50%;
+    background:rgba(255,255,255,.2);
+    backdrop-filter:blur(5px);
+    color:#fff;
+    font-size:20px;
+    cursor:pointer;
+    z-index:10;
+    opacity:0.5;
+    transition:all .35s ease;
+}
+
+.elb-hero-slider:hover .elb-hero-nav{
+   opacity:1;
+   visibility:visible;
+}
+
+.elb-prev{left:20px;}
+.elb-next{right:20px;}
+
+.elb-hero-dots{
+    position:absolute;
+    bottom:25px;
+    left:50%;
+    transform:translateX(-50%);
+    display:flex;
+    gap:10px;
+    z-index:10;
+}
+
+.elb-hero-dot{
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    background:rgba(255,255,255,.5);
+    cursor:pointer;
+}
+
+.elb-hero-dot.elb-active{
+    background:#fff;
+    width:30px;
+    border-radius:20px;
+}
+
+/* Mobile */
+@media(max-width:768px){
+
+.elb-hero-slider{
+    height:420px;
+    border-radius:18px;
+}
+
+.elb-hero-content{
+    padding:25px;
+    max-width:90%;
+}
+
+.elb-hero-content h1{
+    font-size:30px;
+}
+
+.elb-hero-content p{
+    font-size:15px;
+}
+
+.elb-hero-nav{
+    display:none;
+}
+
+.elb-hero-btn{
+    padding:12px 22px;
+    font-size:14px;
+    color:#000;
+}
+
+
+}
+
+
+.elb-hero-btn:hover, 
+.elb-hero-btn:focus{
+    color:#fff !important;
+    background:black;
+    outline:none;
+    transform: scale(1.05);
+    border:1px solid white;
+    -webkit-tap-highlight-color: transparent;
+}
+.elb-hero-content span{
+  color:#ffe600;}
+  
+  .subtitle{
+  font-size:22px;
+  font-weight:600;
+  margin-bottom:0px;
+}
+.descX{
+  font-size:16px;
+  max-width:600px;
+  opacity:.95;
+}
+</style>
+
+<section class="elb-hero-slider">
+
+  <div class="elb-hero-slides">
+
+    <!-- Slide 1 -->
+    <div class="elb-hero-slide elb-active"
+      style="background-image:url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhQObpsHoeagJ3VEucNW-vygCajeXeM98-gmF68C6PY6nBh-7q11uZ4f-1B2K93ZtPF22_LMBM79Vyi9dI-nipI_gh8YPgmEWQlWudlHf159kN3PFe3VY7-f7z7BbzzZGTxzwYI1kPu1U8BYalI5SlF9u0rmJ1-CfTIAKskXbLy2jn3Vyv1dwHKmkkFDHA/s1600/3d-restaurant-img.webp');
+background-color:blue;">
+      
+      <div class="elb-hero-overlay"></div>
+
+      <div class="elb-hero-content">
+        <h1>Get a <span>FREE</span><br> Business<br> Listing</h1>
+        <p class="subtitlex">List Your Restaurant, Cafe, Fast Food or Online Business
+Get discovered by thousands of customers every day.</p>
+
+        <a href="https://menupriceshub.github.io/list-your-business.html" class="elb-hero-btn">List Your Business</a>
+      </div>
+    </div>
+
+  </div>
+</section>
 
 <!-- OVERVIEW -->
 
@@ -3227,8 +3498,7 @@ Restaurant ka menu kaafi impressive hai, jismein har taste ke liye achhe options
 
 </section>
 
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
 
 <style>
 #star-rating{
@@ -3758,7 +4028,7 @@ document.querySelectorAll(".similar-card").forEach(async (card)=>{
   </div>
 
   <div class="nav-item" onclick="move(1)">
-<i class="fa fa-location-arrow" style="font-size:15px;color:#666;"></i>  Directions
+<i class="fa fa-map-marker" style="font-size:15px;color:#666;"></i>  Cities
   </div>
   
   <div class="nav-item"  onclick="move(2)">
