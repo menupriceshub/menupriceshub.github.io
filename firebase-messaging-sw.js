@@ -1,3 +1,4 @@
+// v2
 importScripts('https://www.gstatic.com/firebasejs/12.14.0/firebase-app-compat.js');
 importScripts('https://www.gstatic.com/firebasejs/12.14.0/firebase-messaging-compat.js');
 
@@ -13,17 +14,11 @@ firebase.initializeApp({
 const messaging = firebase.messaging();
 
 self.addEventListener('notificationclick', function(event) {
-  console.log('FULL DATA:', JSON.stringify(event.notification.data)); // <-- YEH ADD KIYA
   event.notification.close();
 
-  let url = '/';
+  let url = 'https://menupriceshub.github.io/';
 
-  if (
-    event.notification.data &&
-    event.notification.data.FCM_MSG &&
-    event.notification.data.FCM_MSG.data &&
-    event.notification.data.FCM_MSG.data.url
-  ) {
+  if (event.notification.data && event.notification.data.FCM_MSG && event.notification.data.FCM_MSG.data && event.notification.data.FCM_MSG.data.url) {
     url = event.notification.data.FCM_MSG.data.url;
   }
 
