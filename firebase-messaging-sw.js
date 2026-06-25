@@ -12,33 +12,26 @@ firebase.initializeApp({
 
 const messaging = firebase.messaging();
 
-messaging.onBackgroundMessage(function(payload) {
-  const notificationTitle = payload.notification.title;
-  const notificationOptions = {
-    body: payload.notification.body,
-    icon: payload.notification.image || '/icon.png',
-    data: payload.data
-  };
-  self.registration.showNotification(notificationTitle, notificationOptions);
-});
-
 self.addEventListener('notificationclick', function(event) {
   event.notification.close();
 
-  let url = 'https://menupriceshub.github.io/';
-
-  if (event.notification.data && event.notification.data.url) {
-    url = event.notification.data.url;
-  }
+  const targetUrl = 'https://menupriceshub.com/notification.html';
 
   event.waitUntil(
-    clients.matchAll({ type: 'window', includeUncontrolled: true }).then(function(clientList) {
+    clients.matchAll({
+      type: 'window',
+      includeUncontrolled: true
+    }).then(function(clientList) {
+
       for (let client of clientList) {
-        if (client.url === url && 'focus' in client) {
+        if (client.url === targetUrl && 'focus' in client) {
           return client.focus();
         }
       }
-      return clients.openWindow(url);
+
+      if (clients.openWindow) {
+        return clients.openWindow(targetUrl);
+      }
     })
   );
 });
