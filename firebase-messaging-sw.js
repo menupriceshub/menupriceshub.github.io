@@ -1,7 +1,6 @@
 importScripts('https://www.gstatic.com/firebasejs/12.14.0/firebase-app-compat.js');
 importScripts('https://www.gstatic.com/firebasejs/12.14.0/firebase-messaging-compat.js');
 
-
 firebase.initializeApp({
   apiKey: "AIzaSyCod1_H1HEGw2wUg3lzkC1OCKNfzQ17eho",
   authDomain: "menupriceshub-964c0.firebaseapp.com",
@@ -14,6 +13,7 @@ firebase.initializeApp({
 const messaging = firebase.messaging();
 
 self.addEventListener('notificationclick', function(event) {
+  console.log('FULL DATA:', JSON.stringify(event.notification.data)); // <-- YEH ADD KIYA
   event.notification.close();
 
   let url = '/';
