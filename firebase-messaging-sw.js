@@ -16,6 +16,6 @@ self.addEventListener('notificationclick', function(event) {
   event.notification.close();
 
   event.waitUntil(
-    clients.openWindow('https://menupriceshub.com/notification.html')
+    clients.openWindow('https://menupriceshub.github.io/notification.html')
   );
 });
