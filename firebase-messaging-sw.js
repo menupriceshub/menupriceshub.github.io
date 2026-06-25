@@ -10,28 +10,12 @@ firebase.initializeApp({
   appId: "1:846490180206:web:dfac3b25ad118c0810e47f"
 });
 
-const messaging = firebase.messaging();
+firebase.messaging();
 
 self.addEventListener('notificationclick', function(event) {
   event.notification.close();
 
-  const targetUrl = 'https://menupriceshub.com/notification.html';
-
   event.waitUntil(
-    clients.matchAll({
-      type: 'window',
-      includeUncontrolled: true
-    }).then(function(clientList) {
-
-      for (let client of clientList) {
-        if (client.url === targetUrl && 'focus' in client) {
-          return client.focus();
-        }
-      }
-
-      if (clients.openWindow) {
-        return clients.openWindow(targetUrl);
-      }
-    })
+    clients.openWindow('https://menupriceshub.com/notification.html')
   );
 });
