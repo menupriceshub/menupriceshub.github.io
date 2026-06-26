@@ -1,0 +1,127 @@
+[
+  {
+    "title": "McDonalds Menu",
+    "url": "/mcdonalds.html",
+    "content": "burger fries coke combo price list"
+  },
+  {
+    "title": "KFC Menu",
+    "url": "/kfc.html",
+    "content": "chicken bucket wings zinger price"
+  },
+  {
+    "title": "Pizza Hut Menu",
+    "url": "/pizzahut.html",
+    "content": "pizza cheese pasta garlic bread price"
+  },
+  {
+    "title": "Dominos Menu",
+    "url": "/dominos.html",
+    "content": "pizza burger drinks offers menu price"
+  },
+  {
+    "title": "Burger King Menu",
+    "url": "/burgerking.html",
+    "content": "whopper fries burger drinks combo"
+  },
+  {
+    "title": "Subway Menu",
+    "url": "/subway.html",
+    "content": "sandwich subs salad healthy food price"
+  },
+  {
+    "title": "Starbucks Menu",
+    "url": "/starbucks.html",
+    "content": "coffee latte cappuccino frappuccino drinks"
+  },
+  {
+    "title": "Taco Bell Menu",
+    "url": "/tacobell.html",
+    "content": "tacos burritos nachos mexican food price"
+  },
+  {
+    "title": "Haldiram Menu",
+    "url": "/haldiram.html",
+    "content": "snacks sweets indian food thali price"
+  },
+  {
+    "title": "Bikanervala Menu",
+    "url": "/bikanervala.html",
+    "content": "sweets snacks chaat north indian food"
+  },
+  {
+    "title": "Krispy Kreme Menu",
+    "url": "/krispykreme.html",
+    "content": "donuts coffee sweets glaze chocolate"
+  },
+  {
+    "title": "Pizza Express Menu",
+    "url": "/pizzaexpress.html",
+    "content": "italian pizza pasta garlic bread wine"
+  },
+  {
+    "title": "La Pinoz Pizza",
+    "url": "/lapinoz.html",
+    "content": "pizza cheesy crust indian style pizza"
+  },
+  {
+    "title": "Wow Momo Menu",
+    "url": "/wowmomo.html",
+    "content": "momos street food steamed fried spicy"
+  },
+  {
+    "title": "Chaayos Menu",
+    "url": "/chaayos.html",
+    "content": "tea snacks bun maska indian chai"
+  },
+  {
+    "title": "CCD Menu",
+    "url": "/ccd.html",
+    "content": "coffee cafe cappuccino sandwich snacks"
+  },
+  {
+    "title": "Barista Menu",
+    "url": "/barista.html",
+    "content": "coffee espresso latte cold coffee"
+  },
+  {
+    "title": "Pizza Corner Menu",
+    "url": "/pizzacorner.html",
+    "content": "pizza cheesy crust fast food combo"
+  },
+  {
+    "title": "McCafe Menu",
+    "url": "/mccafe.html",
+    "content": "coffee dessert muffins cappuccino drinks"
+  },
+  {
+    "title": "Jumbo King Menu",
+    "url": "/jumboking.html",
+    "content": "vada pav burger indian street food"
+  },
+  {
+    "title": "Chinese Wok Menu",
+    "url": "/chinesewok.html",
+    "content": "chinese noodles rice manchurian spicy"
+  },
+  {
+    "title": "Behrouz Biryani",
+    "url": "/behrouz.html",
+    "content": "biryani royal rice mutton chicken kebab"
+  },
+  {
+    "title": "Faasos Menu",
+    "url": "/faasos.html",
+    "content": "wraps rolls fast food snacks combo"
+  },
+  {
+    "title": "Sweet Truth Menu",
+    "url": "/sweettruth.html",
+    "content": "dessert cakes brownies sweets bakery"
+  },
+  {
+    "title": "LunchBox Menu",
+    "url": "/lunchbox.html",
+    "content": "home style meals thali indian food"
+  }
+]
