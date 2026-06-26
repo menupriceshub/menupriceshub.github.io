@@ -4521,10 +4521,6 @@ if ('serviceWorker' in navigator) {
 }
 </script>
 
-
-
-
-
 <script type="module">
 import { initializeApp } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-app.js";
 import { getMessaging, getToken } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-messaging.js";
@@ -4539,19 +4535,21 @@ const firebaseConfig = {
   appId: "1:846490180206:web:dfac3b25ad118c0810e47f"
 };
 
-// INIT
+const VAPID_KEY = "BMF7VaLIylgT6m6g1LQi6V2Z0T5huntAO4rGEA_IRO40YjYpZkwBqg1o9g93RvLIO0-w0V-r5ffPr3C6XXAp5SA";
+
+// ✅ Single Firebase Init
 const app = initializeApp(firebaseConfig);
 const messaging = getMessaging(app);
 const db = getFirestore(app);
 
-// SERVICE WORKER
-if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/firebase-messaging-sw.js')
-  .then(() => console.log("SW Registered"))
-  .catch(err => console.log(err));
+// ✅ Single Service Worker Register
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("/firebase-messaging-sw.js")
+    .then(() => console.log("SW Registered"))
+    .catch(err => console.error("SW Error:", err));
 }
 
-// GET LOCATION FUNCTION
+// ✅ Get Location
 async function getLocation() {
   try {
     const res = await fetch("https://ipapi.co/json/");
@@ -4561,9 +4559,56 @@ async function getLocation() {
   }
 }
 
-// ENABLE NOTIFICATIONS
-document.getElementById("notifyBtn").addEventListener("click", async () => {
+// ✅ Save Subscriber
+async function saveSubscriber(token) {
+  const loc = await getLocation();
+  await setDoc(doc(db, "subscribers", token), {
+    token,
+    status: "active",
+    website: location.origin,
+    pageUrl: location.href,
+    pagePath: location.pathname,
+    pageTitle: document.title,
+    ip: loc?.ip || "",
+    country: loc?.country_name || "",
+    region: loc?.region || "",
+    city: loc?.city || "",
+    latitude: loc?.latitude || "",
+    longitude: loc?.longitude || "",
+    userAgent: navigator.userAgent,
+    lastVisit: new Date().toISOString(),
+    timestamp: Date.now()
+  }, { merge: true });
+}
 
+// ✅ Update Subscriber Count
+async function updateCount() {
+  const countEl = document.getElementById("count");
+  if (!countEl) return;
+  const snapshot = await getDocs(collection(db, "subscribers"));
+  countEl.innerText = snapshot.size;
+}
+
+// ✅ Auto Save (agar permission pehle se granted ho)
+async function autoSave() {
+  if (Notification.permission !== "granted") return;
+  try {
+    const registration = await navigator.serviceWorker.ready;
+    const token = await getToken(messaging, {
+      vapidKey: VAPID_KEY,
+      serviceWorkerRegistration: registration
+    });
+    if (token) {
+      await saveSubscriber(token);
+      console.log("Auto-saved token:", token);
+    }
+  } catch (err) {
+    console.error("AutoSave Error:", err);
+  }
+}
+
+// ✅ Bell Button Click — Notification Enable
+document.getElementById("notifyBtn").addEventListener("click", async () => {
   const permission = await Notification.requestPermission();
 
   if (permission !== "granted") {
@@ -4572,185 +4617,7 @@ document.getElementById("notifyBtn").addEventListener("click", async () => {
   }
 
   try {
-
     const registration = await navigator.serviceWorker.ready;
-
-    const token = await getToken(messaging, {
-      vapidKey: "BMF7VaLIylgT6m6g1LQi6V2Z0T5huntAO4rGEA_IRO40YjYpZkwBqg1o9g93RvLIO0-w0V-r5ffPr3C6XXAp5SA",
-      serviceWorkerRegistration: registration
-    });
-
-    if (token) {
-
-      // 🌍 GET IP + LOCATION
-      const loc = await getLocation();
-
-      // 💾 SAVE TO FIREBASE
-      await setDoc(doc(db, "subscribers", token), {
-        token: token,
-        status: "active",
-        createdAt: new Date(),
-
-        // 🔗 PAGE INFO
-        page_url: window.location.href,
-        page_path: window.location.pathname,
-        page_title: document.title,
-
-        ip: loc?.ip || "N/A",
-        city: loc?.city || "N/A",
-        region: loc?.region || "N/A",
-        country: loc?.country_name || "N/A",
-        latitude: loc?.latitude || "N/A",
-        longitude: loc?.longitude || "N/A"
-      });
-
-      alert("Notifications Enabled ✅");
-      updateCount();
-      document.getElementById("notifyBtn").innerHTML = `
-    <a href="https://menupriceshub.github.io/notifications.html">
-      <i class="fa-regular fa-bell bell-icon"></i>
-    </a>`;
-    } else {
-      alert("Token not generated ❌");
-    }
-
-  } catch (error) {
-    console.error(error);
-  }
-
-});
-
-// COUNT FUNCTION
-async function updateCount() {
-  const snapshot = await getDocs(collection(db, "subscribers"));
-  document.getElementById("count").innerText = snapshot.size;
-}
-
-// LOAD COUNT ON START
-updateCount();
-
-</script>
-
-<script>
-function updateNotificationStatus() {
-
-  const badge = document.getElementById("notifyStatus");
-  const notifyBtn = document.getElementById("notifyBtn");
-
-  if (!badge) return;
-
-  if (!("Notification" in window)) {
-
-    badge.innerHTML =
-      '<i class="fas fa-times-circle" style="color:red"></i>';
-
-    return;
-  }
-
-  if (Notification.permission === "granted") {
-
-    badge.innerHTML =
-      '<i class="fas fa-check-circle" style="color:#28a745"></i>';
-
-    if (notifyBtn) {
-      notifyBtn.style.animation = "none";
-    }
-
-  } else {
-
-    badge.innerHTML =
-      '<i class="fas fa-times-circle" style="color:red"></i>';
-  }
-}
-
-updateNotificationStatus();
-</script>
-  
- <!-- auto sav -->
-<script type="module">
-import { initializeApp } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-app.js";
-import { getMessaging, getToken } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-messaging.js";
-import { getFirestore, doc, setDoc } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-firestore.js";
-
-const firebaseConfig = {
-  apiKey: "AIzaSyCod1_H1HEGw2wUg3lzkC1OCKNfzQ17eho",
-  authDomain: "menupriceshub-964c0.firebaseapp.com",
-  projectId: "menupriceshub-964c0",
-  storageBucket: "menupriceshub-964c0.firebasestorage.app",
-  messagingSenderId: "846490180206",
-  appId: "1:846490180206:web:dfac3b25ad118c0810e47f"
-};
-
-const VAPID_KEY =
-  "BMF7VaLIylgT6m6g1LQi6V2Z0T5huntAO4rGEA_IRO40YjYpZkwBqg1o9g93RvLIO0-w0V-r5ffPr3C6XXAp5SA";
-
-const app = initializeApp(firebaseConfig);
-const messaging = getMessaging(app);
-const db = getFirestore(app);
-
-// Register Service Worker
-if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.register("/firebase-messaging-sw.js")
-    .then(() => console.log("Service Worker Registered"))
-    .catch(err => console.error(err));
-}
-
-// Get IP Location
-async function getLocation() {
-  try {
-    const res = await fetch("https://ipapi.co/json/");
-    return await res.json();
-  } catch (e) {
-    console.error(e);
-    return null;
-  }
-}
-
-// Save Subscriber Data
-async function saveSubscriber(token) {
-  const loc = await getLocation();
-
-  const data = {
-    token: token,
-
-    website: location.origin,
-    pageUrl: location.href,
-    pagePath: location.pathname,
-    pageTitle: document.title,
-
-    ip: loc?.ip || "",
-    country: loc?.country_name || "",
-    state: loc?.region || "",
-    city: loc?.city || "",
-    latitude: loc?.latitude || "",
-    longitude: loc?.longitude || "",
-
-    userAgent: navigator.userAgent,
-
-    lastVisit: new Date().toISOString(),
-    timestamp: Date.now()
-  };
-
-  await setDoc(
-    doc(db, "subscribers", token),
-    data,
-    { merge: true }
-  );
-
-  console.log("Subscriber Saved:", data);
-}
-
-// Auto Save If Notification Already Allowed
-async function autoSave() {
-
-  if (Notification.permission !== "granted") {
-    console.log("Notification permission not granted");
-    return;
-  }
-
-  try {
-    const registration = await navigator.serviceWorker.ready;
-
     const token = await getToken(messaging, {
       vapidKey: VAPID_KEY,
       serviceWorkerRegistration: registration
@@ -4758,21 +4625,49 @@ async function autoSave() {
 
     if (token) {
       await saveSubscriber(token);
-      console.log("Token Saved:", token);
+      await updateCount();
+      alert("Notifications Enabled ✅");
+      document.getElementById("notifyBtn").innerHTML = `
+        <a href="https://menupriceshub.github.io/notifications.html">
+          <i class="fa-regular fa-bell bell-icon"></i>
+        </a>`;
     } else {
-      console.log("No token generated");
+      alert("Token not generated ❌");
     }
+  } catch (error) {
+    console.error("Token Error:", error);
+    alert("Error: " + error.message);
+  }
+});
 
-  } catch (err) {
-    console.error("Error:", err);
+// ✅ Notification Status Badge Update
+function updateNotificationStatus() {
+  const badge = document.getElementById("notifyStatus");
+  const notifyBtn = document.getElementById("notifyBtn");
+  if (!badge) return;
+
+  if (!("Notification" in window)) {
+    badge.innerHTML = '<i class="fas fa-times-circle" style="color:red"></i>';
+    return;
+  }
+
+  if (Notification.permission === "granted") {
+    badge.innerHTML = '<i class="fas fa-check-circle" style="color:#28a745"></i>';
+    if (notifyBtn) notifyBtn.style.animation = "none";
+  } else {
+    badge.innerHTML = '<i class="fas fa-times-circle" style="color:red"></i>';
   }
 }
 
-window.addEventListener("load", autoSave);
-</script>
+// ✅ On Page Load
+window.addEventListener("load", () => {
+  updateNotificationStatus();
+  updateCount();
+  autoSave();
+});
 
-  
- </body>
+</script>
+</body>
 </html>
 
 
