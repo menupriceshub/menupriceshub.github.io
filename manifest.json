@@ -5,6 +5,7 @@
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#ff5722",
+  "gcm_sender_id": "846490180206",
   "icons": [
     {
       "src": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Android-icon-192x192.png",
