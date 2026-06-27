@@ -1,5 +1,5 @@
-importScripts('https://www.gstatic.com/firebasejs/12.14.0/firebase-app-compat.js');
-importScripts('https://www.gstatic.com/firebasejs/12.14.0/firebase-messaging-compat.js');
+importScripts("https://www.gstatic.com/firebasejs/12.14.0/firebase-app-compat.js");
+importScripts("https://www.gstatic.com/firebasejs/12.14.0/firebase-messaging-compat.js");
 
 firebase.initializeApp({
   apiKey: "AIzaSyCod1_H1HEGw2wUg3lzkC1OCKNfzQ17eho",
@@ -12,25 +12,53 @@ firebase.initializeApp({
 
 const messaging = firebase.messaging();
 
-// ✅ YEH ADD KARO - Background message handler
-messaging.onBackgroundMessage(function(payload) {
-  console.log('Background message:', payload);
-  
-  const title = payload.notification?.title || 'New Notification';
+messaging.onBackgroundMessage((payload) => {
+  console.log("Background Message:", payload);
+
+  const title =
+    payload.data?.title ||
+    payload.notification?.title ||
+    "MenuPricesHub";
+
   const options = {
-    body: payload.notification?.body || '',
-    icon: '/icon-192x192.png',
-    data: payload.data
+    body:
+      payload.data?.body ||
+      payload.notification?.body ||
+      "",
+    icon:
+      payload.data?.icon ||
+      "/icon-192x192.png",
+    badge:
+      payload.data?.badge ||
+      "/badge-72x72.png",
+    image:
+      payload.data?.image || "",
+    data: {
+      url: payload.data?.url || "/"
+    },
+    vibrate: [200, 100, 200],
+    requireInteraction: true
   };
 
   return self.registration.showNotification(title, options);
 });
 
-self.addEventListener('notificationclick', function(event) {
+self.addEventListener("notificationclick", function(event) {
   event.notification.close();
-  let url = '/';
-  if (event.notification.data?.FCM_MSG?.data?.url) {
-    url = event.notification.data.FCM_MSG.data.url;
-  }
-  event.waitUntil(clients.openWindow(url));
+
+  const url = event.notification.data?.url || "/";
+
+  event.waitUntil(
+    clients.matchAll({
+      type: "window",
+      includeUncontrolled: true
+    }).then((clientList) => {
+      for (const client of clientList) {
+        if (client.url === url && "focus" in client) {
+          return client.focus();
+        }
+      }
+      return clients.openWindow(url);
+    })
+  );
 });
