@@ -43,3 +43,8 @@ self.addEventListener("fetch", event => {
       .catch(() => caches.match("/index.html"))
   );
 });
+
+// ✅ PUSH — Firebase SW handle karega, yahan sirf ignore karo
+self.addEventListener("push", function(event) {
+  event.waitUntil(Promise.resolve());
+});
