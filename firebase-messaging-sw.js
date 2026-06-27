@@ -1,7 +1,6 @@
 importScripts('https://www.gstatic.com/firebasejs/12.14.0/firebase-app-compat.js');
 importScripts('https://www.gstatic.com/firebasejs/12.14.0/firebase-messaging-compat.js');
 
-
 firebase.initializeApp({
   apiKey: "AIzaSyCod1_H1HEGw2wUg3lzkC1OCKNfzQ17eho",
   authDomain: "menupriceshub-964c0.firebaseapp.com",
@@ -13,21 +12,25 @@ firebase.initializeApp({
 
 const messaging = firebase.messaging();
 
+// ✅ YEH ADD KARO - Background message handler
+messaging.onBackgroundMessage(function(payload) {
+  console.log('Background message:', payload);
+  
+  const title = payload.notification?.title || 'New Notification';
+  const options = {
+    body: payload.notification?.body || '',
+    icon: '/icon-192x192.png',
+    data: payload.data
+  };
+
+  return self.registration.showNotification(title, options);
+});
+
 self.addEventListener('notificationclick', function(event) {
   event.notification.close();
-
   let url = '/';
-
-  if (
-    event.notification.data &&
-    event.notification.data.FCM_MSG &&
-    event.notification.data.FCM_MSG.data &&
-    event.notification.data.FCM_MSG.data.url
-  ) {
+  if (event.notification.data?.FCM_MSG?.data?.url) {
     url = event.notification.data.FCM_MSG.data.url;
   }
-
-  event.waitUntil(
-    clients.openWindow(url)
-  );
+  event.waitUntil(clients.openWindow(url));
 });
