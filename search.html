@@ -4521,11 +4521,16 @@ if ('serviceWorker' in navigator) {
 }
 </script>
 
+
+
+
+
 <script type="module">
 import { initializeApp } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-app.js";
 import { getMessaging, getToken } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-messaging.js";
 import { getFirestore, collection, getDocs, doc, setDoc } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-firestore.js";
 
+// ✅ SIRF EK BAAR INIT
 const firebaseConfig = {
   apiKey: "AIzaSyCod1_H1HEGw2wUg3lzkC1OCKNfzQ17eho",
   authDomain: "menupriceshub-964c0.firebaseapp.com",
@@ -4537,19 +4542,18 @@ const firebaseConfig = {
 
 const VAPID_KEY = "BMF7VaLIylgT6m6g1LQi6V2Z0T5huntAO4rGEA_IRO40YjYpZkwBqg1o9g93RvLIO0-w0V-r5ffPr3C6XXAp5SA";
 
-// ✅ Single Firebase Init
 const app = initializeApp(firebaseConfig);
 const messaging = getMessaging(app);
 const db = getFirestore(app);
 
-// ✅ Single Service Worker Register
+// SW Register
 if ("serviceWorker" in navigator) {
   navigator.serviceWorker.register("/firebase-messaging-sw.js")
     .then(() => console.log("SW Registered"))
-    .catch(err => console.error("SW Error:", err));
+    .catch(err => console.error(err));
 }
 
-// ✅ Get Location
+// Location fetch
 async function getLocation() {
   try {
     const res = await fetch("https://ipapi.co/json/");
@@ -4559,114 +4563,79 @@ async function getLocation() {
   }
 }
 
-// ✅ Save Subscriber
-async function saveSubscriber(token) {
+// Token save karo
+async function saveToken(token) {
   const loc = await getLocation();
   await setDoc(doc(db, "subscribers", token), {
     token,
-    status: "active",
     website: location.origin,
     pageUrl: location.href,
     pagePath: location.pathname,
     pageTitle: document.title,
     ip: loc?.ip || "",
     country: loc?.country_name || "",
-    region: loc?.region || "",
     city: loc?.city || "",
+    region: loc?.region || "",
     latitude: loc?.latitude || "",
     longitude: loc?.longitude || "",
     userAgent: navigator.userAgent,
     lastVisit: new Date().toISOString(),
-    timestamp: Date.now()
+    timestamp: Date.now(),
+    status: "active"
   }, { merge: true });
+  console.log("Token saved!");
 }
 
-// ✅ Update Subscriber Count
-async function updateCount() {
-  const countEl = document.getElementById("count");
-  if (!countEl) return;
-  const snapshot = await getDocs(collection(db, "subscribers"));
-  countEl.innerText = snapshot.size;
-}
-
-// ✅ Auto Save (agar permission pehle se granted ho)
+// Auto save if already allowed
 async function autoSave() {
   if (Notification.permission !== "granted") return;
   try {
-    const registration = await navigator.serviceWorker.ready;
+    const reg = await navigator.serviceWorker.ready;
     const token = await getToken(messaging, {
       vapidKey: VAPID_KEY,
-      serviceWorkerRegistration: registration
+      serviceWorkerRegistration: reg
     });
-    if (token) {
-      await saveSubscriber(token);
-      console.log("Auto-saved token:", token);
-    }
+    if (token) await saveToken(token);
   } catch (err) {
-    console.error("AutoSave Error:", err);
+    console.error("AutoSave error:", err);
   }
 }
 
-// ✅ Bell Button Click — Notification Enable
-document.getElementById("notifyBtn").addEventListener("click", async () => {
+// Manual allow button
+window.enableNotifications = async function() {
   const permission = await Notification.requestPermission();
-
   if (permission !== "granted") {
     alert("Permission Denied ❌");
     return;
   }
-
   try {
-    const registration = await navigator.serviceWorker.ready;
+    const reg = await navigator.serviceWorker.ready;
     const token = await getToken(messaging, {
       vapidKey: VAPID_KEY,
-      serviceWorkerRegistration: registration
+      serviceWorkerRegistration: reg
     });
-
     if (token) {
-      await saveSubscriber(token);
-      await updateCount();
+      await saveToken(token);
+      // Count update
+      const snapshot = await getDocs(collection(db, "subscribers"));
+      const countEl = document.getElementById("count");
+      if (countEl) countEl.innerText = snapshot.size;
+
       alert("Notifications Enabled ✅");
       document.getElementById("notifyBtn").innerHTML = `
-        <a href="https://menupriceshub.github.io/notifications.html">
+        <a href="/notifications.html">
           <i class="fa-regular fa-bell bell-icon"></i>
         </a>`;
-    } else {
-      alert("Token not generated ❌");
     }
-  } catch (error) {
-    console.error("Token Error:", error);
-    alert("Error: " + error.message);
-  }
-});
-
-// ✅ Notification Status Badge Update
-function updateNotificationStatus() {
-  const badge = document.getElementById("notifyStatus");
-  const notifyBtn = document.getElementById("notifyBtn");
-  if (!badge) return;
-
-  if (!("Notification" in window)) {
-    badge.innerHTML = '<i class="fas fa-times-circle" style="color:red"></i>';
-    return;
-  }
-
-  if (Notification.permission === "granted") {
-    badge.innerHTML = '<i class="fas fa-check-circle" style="color:#28a745"></i>';
-    if (notifyBtn) notifyBtn.style.animation = "none";
-  } else {
-    badge.innerHTML = '<i class="fas fa-times-circle" style="color:red"></i>';
+  } catch (err) {
+    console.error("Enable error:", err);
+    alert("Error: " + err.message);
   }
 }
 
-// ✅ On Page Load
-window.addEventListener("load", () => {
-  updateNotificationStatus();
-  updateCount();
-  autoSave();
-});
-
+window.addEventListener("load", autoSave);
 </script>
+  
 </body>
 </html>
 
