@@ -1,19 +1,19 @@
 {
-  "name": "MyFirstapp",
-  "short_name": "AkshayShort",
+  "name": "MENUPRICESHUB",
+  "short_name": "MENUPRICESHUB",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#ffffff",
+  "background_color": "#021e3d",
   "theme_color": "#ff5722",
   "gcm_sender_id": "846490180206",
   "icons": [
     {
-      "src": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Android-icon-192x192.png",
+      "src": "https://menupriceshub.github.io/menupriceshub-192x192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "https://icons.iconarchive.com/icons/papirus-team/papirus-apps/512/firefox-developer-icon-icon.png",
+      "src": "https://menupriceshub.github.io/menupriceshub-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
