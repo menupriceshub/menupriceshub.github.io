@@ -1,35 +1,37 @@
-[
-  {
-    "id": 1,
-    "title": "Welcome to MenuPricesHub",
-    "message": "Thank you for subscribing to notifications.",
-    "icon": "https://menupriceshub.github.io/icon-192.png",
-    "url": "/",
-    "date": "2026-06-28 10:00"
-  },
-  {
-    "id": 2,
-    "title": "New Restaurant Menu Added",
-    "message": "Check out the latest restaurant menu prices.",
-    "icon": "https://menupriceshub.github.io/icon-192.png",
-    "url": "/restaurant.html",
-    "date": "2026-06-28 11:30"
-  },
-  {
-    "id": 3,
-    "title": "Special Update",
-    "message": "We've added new menu categories.",
-    "icon": "https://menupriceshub.github.io/icon-192.png",
-    "url": "/categories.html",
-    "date": "2026-06-28 12:00"
-  }, 
-  {
-  "id": 4,
-  "title": "Special Offer",
-  "message": "New update is live.",
-  "icon": "icon-192.png",
-  "url": "/offer.html",
-  "date": "2026-06-28T13:00:00"
+{
+  "version": 4,
+  "notifications": [
+    {
+      "id": 1,
+      "title": "Welcome to MenuPricesHub",
+      "message": "Thank you for subscribing to notifications.",
+      "icon": "https://menupriceshub.github.io/icon-192.png",
+      "url": "/",
+      "date": "2026-06-28 10:00"
+    },
+    {
+      "id": 2,
+      "title": "New Restaurant Menu Added",
+      "message": "Check out the latest restaurant menu prices.",
+      "icon": "https://menupriceshub.github.io/icon-192.png",
+      "url": "/restaurant.html",
+      "date": "2026-06-28 11:30"
+    },
+    {
+      "id": 3,
+      "title": "Special Update",
+      "message": "We've added new menu categories.",
+      "icon": "https://menupriceshub.github.io/icon-192.png",
+      "url": "/categories.html",
+      "date": "2026-06-28 12:00"
+    },
+    {
+      "id": 4,
+      "title": "Special Offer",
+      "message": "New update is live.",
+      "icon": "https://menupriceshub.github.io/icon-192.png",
+      "url": "/offer.html",
+      "date": "2026-06-28 13:00"
+    }
+  ]
 }
-  
-]
