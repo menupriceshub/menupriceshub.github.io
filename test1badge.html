@@ -1,0 +1,30 @@
+<a href="notification.html" id="bell">
+  🔔
+  <span id="badge" style="display:none;"></span>
+</a>
+
+<script>
+async function checkNotifications() {
+  const res = await fetch("notifications.json?t=" + Date.now());
+  const data = await res.json();
+
+  const version = data.version;
+  const seen = Number(localStorage.getItem("seenVersion") || 0);
+
+  const unread = version - seen;
+  const badge = document.getElementById("badge");
+
+  if (unread > 0) {
+    badge.textContent = unread;
+    badge.style.display = "inline-block";
+  }
+}
+
+checkNotifications();
+
+document.getElementById("bell").addEventListener("click", async () => {
+  const res = await fetch("notifications.json");
+  const data = await res.json();
+  localStorage.setItem("seenVersion", data.version);
+});
+</script>
