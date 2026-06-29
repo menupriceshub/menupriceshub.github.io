@@ -4645,7 +4645,45 @@ document.getElementById("searchBox").value = searchTerm;
 
 <h2 id="searchText"></h2>
 
-  
+  <input type="search" id="searchBox" placeholder="Search menu...">
+<button onclick="searchData()">Search</button>
+
+<div id="results"></div>
+
+<script>
+function searchData() {
+  const keyword = document.getElementById("searchBox").value
+    .trim()
+    .toLowerCase();
+
+  fetch("search-data.json")
+    .then(res => res.json())
+    .then(data => {
+
+      const results = data.filter(item =>
+        item.title.toLowerCase().includes(keyword) ||
+        item.content.toLowerCase().includes(keyword)
+      );
+
+      const container = document.getElementById("results");
+
+      if (!results.length) {
+        container.innerHTML = "<p>No results found.</p>";
+        return;
+      }
+
+      container.innerHTML = results.map(item => `
+        <div class="result">
+          <a href="${item.url}">
+            <h3>${item.title}</h3>
+          </a>
+          <p>${item.content}</p>
+        </div>
+      `).join("");
+
+    });
+}
+</script>
   
 </body>
 </html>
