@@ -4635,6 +4635,17 @@ window.enableNotifications = async function() {
 
 window.addEventListener("load", autoSave);
 </script>
+
+<script>
+const params = new URLSearchParams(window.location.search);
+const searchTerm = params.get("q") || "";
+
+document.getElementById("searchBox").textContent = searchTerm;
+</script>
+
+<h2 id="searchText"></h2>
+
+  
   
 </body>
 </html>
