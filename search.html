@@ -4640,7 +4640,7 @@ window.addEventListener("load", autoSave);
 const params = new URLSearchParams(window.location.search);
 const searchTerm = params.get("q") || "";
 
-document.getElementById("searchBox").textContent = searchTerm;
+document.getElementById("searchBox").value = searchTerm;
 </script>
 
 <h2 id="searchText"></h2>
