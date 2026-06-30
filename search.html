@@ -4650,6 +4650,50 @@ searchBox.addEventListener("input", function () {
 </script>
 
 
+
+
+<script>
+const searchBox = document.getElementById("searchBox");
+
+// URL se q parameter load karo
+const params = new URLSearchParams(window.location.search);
+const keyword = params.get("q");
+
+if (keyword) {
+  searchBox.value = keyword;
+  searchData(keyword); // Tumhara search function
+}
+
+// User type kare to URL update + search
+searchBox.addEventListener("input", function () {
+  const q = this.value.trim();
+
+  const url = new URL(window.location);
+
+  if (q) {
+    url.searchParams.set("q", q);
+  } else {
+    url.searchParams.delete("q");
+  }
+
+  history.replaceState({}, "", url);
+
+  searchData(q);
+});
+
+// Apna search function
+function searchData(keyword) {
+  console.log("Searching:", keyword);
+
+  // fetch("search-data.json")
+  //   .then(res => res.json())
+  //   .then(data => {
+  //      // filter results
+  //   });
+}
+</script>
+
+  
   
 </body>
 </html>
