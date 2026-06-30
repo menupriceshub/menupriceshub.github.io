@@ -4602,69 +4602,29 @@ window.addEventListener("load", autoSave);
 
 
 
-
-<script>
-const params = new URLSearchParams(window.location.search);
-const searchTerm = params.get("q") || "";
-
-document.getElementById("searchBox").value = searchTerm;
-</script>
-  
+ 
 <script>
 let data = [];
-
-// Load JSON
-fetch('/search-data.json')
-.then(res => res.json())
-.then(json => data = json);
 
 const searchBox = document.getElementById("searchBox");
 const results = document.getElementById("results");
 
-// Live Search
-searchBox.addEventListener("input", function () {
+// Load JSON
+fetch("/search-data.json")
+  .then(res => res.json())
+  .then(json => {
+    data = json;
 
-    let query = this.value.toLowerCase().trim();
+    // URL se search
+    const params = new URLSearchParams(window.location.search);
+    const q = params.get("q");
 
-    if(query === ""){
-        results.innerHTML = "";
-        return;
+    if (q) {
+      searchBox.value = q;
+      searchData(q);
     }
+  });
 
-    let filtered = data.filter(item =>
-        item.title.toLowerCase().includes(query) ||
-        item.content.toLowerCase().includes(query)
-    );
-
-    if(filtered.length === 0){
-        results.innerHTML = `<div class="no-result">No results found</div>`;
-        return;
-    }
-
-    results.innerHTML = filtered.map(item => `
-        <div class="result-item">
-            <a href="${item.url}">${item.title}</a>
-        </div>
-    `).join("");
-});
-</script>
-
-
-
-
-<script>
-const searchBox = document.getElementById("searchBox");
-
-// URL se q parameter load karo
-const params = new URLSearchParams(window.location.search);
-const keyword = params.get("q");
-
-if (keyword) {
-  searchBox.value = keyword;
-  searchData(keyword); // Tumhara search function
-}
-
-// User type kare to URL update + search
 searchBox.addEventListener("input", function () {
   const q = this.value.trim();
 
@@ -4681,20 +4641,33 @@ searchBox.addEventListener("input", function () {
   searchData(q);
 });
 
-// Apna search function
 function searchData(keyword) {
-  console.log("Searching:", keyword);
+  keyword = keyword.toLowerCase().trim();
 
-  // fetch("search-data.json")
-  //   .then(res => res.json())
-  //   .then(data => {
-  //      // filter results
-  //   });
+  if (!keyword) {
+    results.innerHTML = "";
+    return;
+  }
+
+  const filtered = data.filter(item =>
+    item.title.toLowerCase().includes(keyword) ||
+    item.content.toLowerCase().includes(keyword)
+  );
+
+  if (!filtered.length) {
+    results.innerHTML = "<div class='no-result'>No results found</div>";
+    return;
+  }
+
+  results.innerHTML = filtered.map(item => `
+    <div class="result-item">
+      <a href="${item.url}">${item.title}</a>
+    </div>
+  `).join("");
 }
 </script>
 
-  
-  
+
 </body>
 </html>
 
