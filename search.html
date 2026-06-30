@@ -4668,11 +4668,14 @@ function openSearch(keyword) {
 
 
 
-<script>
+ <script>
 let data = [];
 
 const searchBox = document.getElementById("searchBox");
 const keywordsuggest = document.getElementById("keywordsuggest");
+
+// Hide initially
+keywordsuggest.style.display = "none";
 
 // Load JSON
 fetch("/search-data.json")
@@ -4680,7 +4683,6 @@ fetch("/search-data.json")
   .then(json => {
     data = json;
 
-    // URL se search
     const params = new URLSearchParams(window.location.search);
     const q = params.get("q");
 
@@ -4711,6 +4713,7 @@ function searchData(keyword) {
 
   if (!keyword) {
     keywordsuggest.innerHTML = "";
+    keywordsuggest.style.display = "none";
     return;
   }
 
@@ -4719,14 +4722,17 @@ function searchData(keyword) {
     item.content.toLowerCase().includes(keyword)
   );
 
+  keywordsuggest.style.display = "block";
+
   if (!filtered.length) {
-    keywordsuggest.innerHTML = "<div class='no-result-suggest'>No keywordsuggest found</div>";
+    keywordsuggest.innerHTML =
+      "<div class='no-result-suggest'>No results found</div>";
     return;
   }
 
   keywordsuggest.innerHTML = filtered.map(item => `
     <div class="keywordsuggest-item">
-      <a href="#" onclick="openSearch('${encodeURIComponent(item.title)}'); return false;">
+      <a href="#" onclick="openSearch('${encodeURIComponent(item.title)}');return false;">
         ${item.title}
       </a>
     </div>
@@ -4738,14 +4744,15 @@ function openSearch(keyword) {
 
   const url = new URL(window.location);
   url.searchParams.set("q", keyword);
-
   history.pushState({}, "", url);
 
   searchBox.value = keyword;
+  keywordsuggest.style.display = "none";
+
   searchData(keyword);
 }
- </script>
- 
+</script>
+
  
  
  
