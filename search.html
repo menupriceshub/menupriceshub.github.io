@@ -1130,13 +1130,13 @@ navMenu.classList.remove("active");
 
 <div class="search-wrapper">
   
-<div id="results"></div>
+
 
     <!-- SEARCH BOX -->
     <input type="text" id="searchBox" placeholder="Search restaurants, burgers, pizza...">
 
     <!-- RESULTS -->
-    <div id="results"></div>
+    <div id="keywordsuggest"></div>
 
 </div>
 
@@ -4727,6 +4727,153 @@ function openSearch(keyword) {
 }
    
  </style>
+
+
+
+<script>
+let data = [];
+
+const searchBox = document.getElementById("searchBox");
+const keywordsuggest = document.getElementById("keywordsuggest");
+
+// Load JSON
+fetch("/search-data.json")
+  .then(res => res.json())
+  .then(json => {
+    data = json;
+
+    // URL se search
+    const params = new URLSearchParams(window.location.search);
+    const q = params.get("q");
+
+    if (q) {
+      searchBox.value = q;
+      searchData(q);
+    }
+  });
+
+searchBox.addEventListener("input", function () {
+  const q = this.value.trim();
+
+  const url = new URL(window.location);
+
+  if (q) {
+    url.searchParams.set("q", q);
+  } else {
+    url.searchParams.delete("q");
+  }
+
+  history.replaceState({}, "", url);
+
+  searchData(q);
+});
+
+function searchData(keyword) {
+  keyword = keyword.toLowerCase().trim();
+
+  if (!keyword) {
+    keywordsuggest.innerHTML = "";
+    return;
+  }
+
+  const filtered = data.filter(item =>
+    item.title.toLowerCase().includes(keyword) ||
+    item.content.toLowerCase().includes(keyword)
+  );
+
+  if (!filtered.length) {
+    keywordsuggest.innerHTML = "<div class='no-keywordsuggest'>No keywordsuggest found</div>";
+    return;
+  }
+
+  keywordsuggest.innerHTML = filtered.map(item => `
+    <div class="keywordsuggest-item">
+      <a href="#" onclick="openSearch('${encodeURIComponent(item.title)}'); return false;">
+        ${item.title}
+      </a>
+    </div>
+  `).join("");
+}
+
+function openSearch(keyword) {
+  keyword = decodeURIComponent(keyword);
+
+  const url = new URL(window.location);
+  url.searchParams.set("q", keyword);
+
+  history.pushState({}, "", url);
+
+  searchBox.value = keyword;
+  searchData(keyword);
+}
+ </script>
+ 
+ 
+ 
+ 
+<style>
+
+
+/* SEARCH BOX */
+.search-wrapper{
+    max-width:600px;
+    margin:auto;
+    position:relative;
+}
+
+#searchBox{
+    width:100%;
+    padding:14px 18px;
+    font-size:16px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    outline:none;
+    box-shadow:0 2px 10px rgba(0,0,0,0.05);
+}
+
+/* keywordsuggest BOX */
+#keywordsuggest{
+  display:block;
+    position:absolute;
+    top:55px;
+    left:0;
+    right:0;
+    background:#fff;
+    border-radius:10px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.15);
+    overflow:hidden;
+    max-height:300px;
+    overflow-y:auto;
+    z-index:999;
+}
+
+/* keywordsuggest ITEM */
+.keywordsuggest-item{
+    padding:12px 15px;
+    border-bottom:1px solid #eee;
+    transition:0.2s;
+}
+
+.keywordsuggest-item:hover{
+    background:#f0f8ff;
+}
+
+.keywordsuggest-item a{
+    text-decoration:none;
+    color:#333;
+    font-weight:600;
+    display:block;
+}
+
+.no-result-suggest{
+    padding:15px;
+    text-align:center;
+    color:#888;
+}
+</style>
+ 
+
+  
 </body>
 </html>
 
