@@ -1085,8 +1085,8 @@ navMenu.classList.remove("active");
     box-shadow:0 2px 10px rgba(0,0,0,0.05);
 }
 
-/* RESULTS BOX */
-#results{
+/* results1S BOX */
+#results1s{
   display:block;
     position:absolute;
     top:55px;
@@ -1101,25 +1101,25 @@ navMenu.classList.remove("active");
     z-index:999;
 }
 
-/* RESULT ITEM */
-.result-item{
+/* results1 ITEM */
+.results1-item{
     padding:12px 15px;
     border-bottom:1px solid #eee;
     transition:0.2s;
 }
 
-.result-item:hover{
+.results1-item:hover{
     background:#f0f8ff;
 }
 
-.result-item a{
+.results1-item a{
     text-decoration:none;
     color:#333;
     font-weight:600;
     display:block;
 }
 
-.no-result{
+.no-results1{
     padding:15px;
     text-align:center;
     color:#888;
@@ -1132,8 +1132,8 @@ navMenu.classList.remove("active");
     <!-- SEARCH BOX -->
     <input type="text" id="searchBox" placeholder="Search restaurants, burgers, pizza...">
 
-    <!-- RESULTS -->
-    <div id="results"></div>
+    <!-- results1S -->
+    <div id="results1s"></div>
 
 </div>
 
@@ -4456,7 +4456,7 @@ document.getElementById('installBtn').addEventListener('click', async () => {
 
     const { outcome } = await deferredPrompt.userChoice;
 
-    console.log('Install Result:', outcome);
+    console.log('Install results1:', outcome);
 
     deferredPrompt = null;
     document.getElementById('installBtn').style.display = 'none';
@@ -4603,7 +4603,7 @@ window.addEventListener("load", autoSave);
 let data = [];
 
 const searchBox = document.getElementById("searchBox");
-const results = document.getElementById("results");
+const results1s = document.getElementById("results1s");
 
 // Load JSON
 fetch("/search-data.json")
@@ -4641,7 +4641,7 @@ function searchData(keyword) {
   keyword = keyword.toLowerCase().trim();
 
   if (!keyword) {
-    results.innerHTML = "";
+    results1s.innerHTML = "";
     return;
   }
 
@@ -4651,12 +4651,12 @@ function searchData(keyword) {
   );
 
   if (!filtered.length) {
-    results.innerHTML = "<div class='no-result'>No results found</div>";
+    results1s.innerHTML = "<div class='no-results1'>No results1s found</div>";
     return;
   }
 
-  results.innerHTML = filtered.map(item => `
-    <div class="result-item">
+  results1s.innerHTML = filtered.map(item => `
+    <div class="results1-item">
       <a href="#" onclick="openSearch('${encodeURIComponent(item.title)}'); return false;">
         ${item.title}
       </a>
