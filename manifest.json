@@ -1,6 +1,6 @@
 {
-  "name": "MENUPRICESHUB",
-  "short_name": "MENUPRICESHUB",
+  "name": "MenuPricesHub",
+  "short_name": "MenuPricesHub",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#021e3d",
