@@ -1140,45 +1140,6 @@ navMenu.classList.remove("active");
 
 </div>
 
-<script>
-let data = [];
-
-// Load JSON
-fetch('/search-data.json')
-.then(res => res.json())
-.then(json => data = json);
-
-const searchBox = document.getElementById("searchBox");
-const results = document.getElementById("results");
-
-// Live Search
-searchBox.addEventListener("input", function () {
-
-    let query = this.value.toLowerCase().trim();
-
-    if(query === ""){
-        results.innerHTML = "";
-        return;
-    }
-
-    let filtered = data.filter(item =>
-        item.title.toLowerCase().includes(query) ||
-        item.content.toLowerCase().includes(query)
-    );
-
-    if(filtered.length === 0){
-        results.innerHTML = `<div class="no-result">No results found</div>`;
-        return;
-    }
-
-    results.innerHTML = filtered.map(item => `
-        <div class="result-item">
-            <a href="${item.url}">${item.title}</a>
-        </div>
-    `).join("");
-});
-</script>
-
 
 
     
@@ -4639,51 +4600,56 @@ window.enableNotifications = async function() {
 window.addEventListener("load", autoSave);
 </script>
 
+
+
+
 <script>
 const params = new URLSearchParams(window.location.search);
 const searchTerm = params.get("q") || "";
 
 document.getElementById("searchBox").value = searchTerm;
 </script>
-
-<h2 id="searchText"></h2>
-
   
-
 <script>
-function searchData() {
-  const keyword = document.getElementById("searchBox").value
-    .trim()
-    .toLowerCase();
+let data = [];
 
-  fetch("search-data.json")
-    .then(res => res.json())
-    .then(data => {
+// Load JSON
+fetch('/search-data.json')
+.then(res => res.json())
+.then(json => data = json);
 
-      const results = data.filter(item =>
-        item.title.toLowerCase().includes(keyword) ||
-        item.content.toLowerCase().includes(keyword)
-      );
+const searchBox = document.getElementById("searchBox");
+const results = document.getElementById("results");
 
-      const container = document.getElementById("results");
+// Live Search
+searchBox.addEventListener("input", function () {
 
-      if (!results.length) {
-        container.innerHTML = "<p>No results found.</p>";
+    let query = this.value.toLowerCase().trim();
+
+    if(query === ""){
+        results.innerHTML = "";
         return;
-      }
+    }
 
-      container.innerHTML = results.map(item => `
-        <div class="result">
-          <a href="${item.url}">
-            <h3>${item.title}</h3>
-          </a>
-          <p>${item.content}</p>
+    let filtered = data.filter(item =>
+        item.title.toLowerCase().includes(query) ||
+        item.content.toLowerCase().includes(query)
+    );
+
+    if(filtered.length === 0){
+        results.innerHTML = `<div class="no-result">No results found</div>`;
+        return;
+    }
+
+    results.innerHTML = filtered.map(item => `
+        <div class="result-item">
+            <a href="${item.url}">${item.title}</a>
         </div>
-      `).join("");
-
-    });
-}
+    `).join("");
+});
 </script>
+
+
   
 </body>
 </html>
