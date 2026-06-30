@@ -4692,8 +4692,6 @@ function openSearch(keyword) {
 
 
 
-
-
  <script>
 let data = [];
 
@@ -4714,6 +4712,10 @@ fetch("/search-data.json")
       searchBox.value = q;
       searchData(q);
     }
+  })
+  .catch(err => {
+    console.error("Failed to load search-data.json:", err);
+    results.innerHTML = "<div class='no-result'>Data load nahi ho payi</div>";
   });
 
 searchBox.addEventListener("input", function () {
@@ -4741,8 +4743,8 @@ function searchData(keyword) {
   }
 
   const filtered = data.filter(item =>
-    item.title.toLowerCase().includes(keyword) ||
-    item.content.toLowerCase().includes(keyword)
+    (item.title || "").toLowerCase().includes(keyword) ||
+    (item.content || "").toLowerCase().includes(keyword)
   );
 
   if (!filtered.length) {
@@ -4752,13 +4754,13 @@ function searchData(keyword) {
 
   results.innerHTML = filtered.map(item => `
 <div class="search-card">
-    <img src="${item.image}" alt="${item.title}" class="search-img">
+    <img src="${item.image || ''}" alt="${item.title || ''}" class="search-img">
 
     <div class="search-info">
-        <h3>${item.title}</h3>
-        <p>${item.description}</p>
+        <h3>${item.title || ''}</h3>
+        <p>${item.description || ''}</p>
 
-        <a href="${item.url}" class="view-btn">View Menu</a>
+        <a href="${item.url || '#'}" class="view-btn">View Menu</a>
     </div>
 </div>
 `).join("");
@@ -4776,7 +4778,17 @@ function openSearch(keyword) {
   searchData(keyword);
 }
  </script>
- <style>
+<style>
+.search-input{
+    width:100%;
+    padding:10px 14px;
+    border:1px solid #ddd;
+    border-radius:20px;
+    font-size:15px;
+    box-sizing:border-box;
+    margin-bottom:10px;
+}
+
 .search-card{
     display:flex;
     gap:12px;
@@ -4817,12 +4829,14 @@ function openSearch(keyword) {
     border-radius:20px;
     text-decoration:none;
 }
-   
- </style>
 
+.no-result{
+    text-align:center;
+    color:#888;
+    padding:20px;
+}
+</style>
 
-
-  
 </body>
 </html>
 
