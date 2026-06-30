@@ -1126,11 +1126,8 @@ navMenu.classList.remove("active");
 }
 </style>
 
-<h2 style="text-align:center;">🔎 Search Menu Website</h2>
 
 <div class="search-wrapper">
-  
-<div id="results"></div>
 
     <!-- SEARCH BOX -->
     <input type="text" id="searchBox" placeholder="Search restaurants, burgers, pizza...">
@@ -4602,8 +4599,7 @@ window.addEventListener("load", autoSave);
 
 
 
- 
-<script>
+ <script>
 let data = [];
 
 const searchBox = document.getElementById("searchBox");
@@ -4661,13 +4657,26 @@ function searchData(keyword) {
 
   results.innerHTML = filtered.map(item => `
     <div class="result-item">
-      <a href="${item.url}">${item.title}</a>
+      <a href="#" onclick="openSearch('${encodeURIComponent(item.title)}'); return false;">
+        ${item.title}
+      </a>
     </div>
   `).join("");
 }
-</script>
 
+function openSearch(keyword) {
+  keyword = decodeURIComponent(keyword);
 
+  const url = new URL(window.location);
+  url.searchParams.set("q", keyword);
+
+  history.pushState({}, "", url);
+
+  searchBox.value = keyword;
+  searchData(keyword);
+}
+ </script>
+ 
 </body>
 </html>
 
