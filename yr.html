@@ -149,5 +149,55 @@ function openSearch(keyword) {
 
 
 
-.......... new code. .... remove
+.......... new code. ...1
 
+<script>
+let data = [];
+
+const searchBox = document.getElementById("searchBox");
+const results1s = document.getElementById("results1s");
+
+// Load JSON
+fetch("/search-data.json")
+  .then(res => res.json())
+  .then(json => {
+    data = json;
+  });
+
+searchBox.addEventListener("input", function () {
+  searchData(this.value);
+});
+
+function searchData(keyword) {
+  keyword = keyword.toLowerCase().trim();
+
+  if (!keyword) {
+    results1s.innerHTML = "";
+    return;
+  }
+
+  const filtered = data.filter(item =>
+    item.title.toLowerCase().includes(keyword) ||
+    item.content.toLowerCase().includes(keyword)
+  );
+
+  if (!filtered.length) {
+    results1s.innerHTML = "<div class='no-results1'>No results found</div>";
+    return;
+  }
+
+  results1s.innerHTML = filtered.map(item => `
+    <div class="results1-item">
+      <a href="#" onclick="openSearch('${encodeURIComponent(item.title)}'); return false;">
+        ${item.title}
+      </a>
+    </div>
+  `).join("");
+}
+
+function openSearch(keyword) {
+  keyword = decodeURIComponent(keyword);
+  searchBox.value = keyword;
+  searchData(keyword);
+}
+</script>
