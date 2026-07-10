@@ -1,11 +1,14 @@
 <div class="search-box">
-  <input
-    type="text"
-    id="searchBox"
-    placeholder="Search..."
-    class="search-input"
-    autocomplete="off"
-  >
+  <div class="search-row">
+    <input
+      type="text"
+      id="searchBox"
+      placeholder="Search..."
+      class="search-input"
+      autocomplete="off"
+    >
+    <button id="searchBtn" class="search-btn" type="button">Search</button>
+  </div>
 
   <div id="results1s"></div>
 </div>
@@ -16,14 +19,35 @@
     position:relative;
 }
 
+.search-row{
+    display:flex;
+    gap:8px;
+    margin-bottom:10px;
+}
+
 .search-input{
+    flex:1;
     width:100%;
     padding:10px 14px;
     border:1px solid #ddd;
     border-radius:20px;
     font-size:15px;
     box-sizing:border-box;
-    margin-bottom:10px;
+}
+
+.search-btn{
+    padding:10px 20px;
+    background:#ff3b30;
+    color:#fff;
+    border:none;
+    border-radius:20px;
+    font-size:15px;
+    cursor:pointer;
+    white-space:nowrap;
+}
+
+.search-btn:hover{
+    background:#e6352b;
 }
 
 .search-card{
@@ -76,7 +100,7 @@
 /* suggestions dropdown */
 #results1s{
     position:absolute;
-    top:100%;
+    top:48px;
     left:0;
     width:100%;
     background:#fff;
@@ -115,6 +139,7 @@
 let data = [];
 
 const searchBox = document.getElementById("searchBox");
+const searchBtn = document.getElementById("searchBtn");
 const results = document.getElementById("results");
 const results1s = document.getElementById("results1s");
 
@@ -124,13 +149,18 @@ fetch("/search-data.json")
   .then(json => {
     data = json;
 
-    // URL se search (agar ?q= param already hai)
+    // URL se search (agar ?q= param already hai — reload ke baad ye chalega)
     const params = new URLSearchParams(window.location.search);
     const q = params.get("q");
 
     if (q) {
       searchBox.value = q;
-      searchData(q);
+      renderResults(q);
+
+      // Reload ke baad results tak auto-scroll
+      setTimeout(() => {
+        results.scrollIntoView({ behavior: "smooth", block: "start" });
+      }, 200);
     }
   })
   .catch(err => {
@@ -138,41 +168,25 @@ fetch("/search-data.json")
     results.innerHTML = "<div class='no-result'>Data load nahi ho payi</div>";
   });
 
-// Ek hi listener — dono results aur suggestions update karega
-searchBox.addEventListener("input", function () {
-  const q = this.value.trim();
-
-  const url = new URL(window.location);
-  if (q) {
-    url.searchParams.set("q", q);
-  } else {
-    url.searchParams.delete("q");
-  }
-  history.replaceState({}, "", url);
-
-  searchData(q);
-});
-
-function searchData(keyword) {
+function getFiltered(keyword) {
   keyword = keyword.toLowerCase().trim();
-
-  if (!keyword) {
-    results.innerHTML = "";
-    results1s.innerHTML = "";
-    results1s.style.display = "none";
-    return;
-  }
-
-  const filtered = data.filter(item =>
+  if (!keyword) return [];
+  return data.filter(item =>
     (item.title || "").toLowerCase().includes(keyword) ||
     (item.content || "").toLowerCase().includes(keyword)
   );
+}
 
-  // Main results (cards)
+// Page load hone ke baad (naye URL par) results cards dikhata hai
+function renderResults(keyword) {
+  const filtered = getFiltered(keyword);
+
   if (!filtered.length) {
     results.innerHTML = "<div class='no-result'>No results found</div>";
-  } else {
-    results.innerHTML = filtered.map(item => `
+    return;
+  }
+
+  results.innerHTML = filtered.map(item => `
 <div class="search-card">
     <img src="${item.image || ''}" alt="${item.title || ''}" class="search-img">
     <div class="search-info">
@@ -182,9 +196,20 @@ function searchData(keyword) {
     </div>
 </div>
 `).join("");
+}
+
+// ---- TYPING: sirf suggestions dropdown update hoga (Google jaisa) ----
+searchBox.addEventListener("input", function () {
+  const keyword = this.value.trim();
+
+  if (!keyword) {
+    results1s.innerHTML = "";
+    results1s.style.display = "none";
+    return;
   }
 
-  // Suggestions dropdown (sirf titles)
+  const filtered = getFiltered(keyword);
+
   if (!filtered.length) {
     results1s.innerHTML = "<div class='no-results1'>No results found</div>";
   } else {
@@ -197,18 +222,35 @@ function searchData(keyword) {
     `).join("");
   }
   results1s.style.display = "block";
+});
+
+// Enter dabane par bhi search chale (real navigation)
+searchBox.addEventListener("keydown", function (e) {
+  if (e.key === "Enter") {
+    goToSearch(this.value);
+  }
+});
+
+// Button click par naye URL par navigate karo
+searchBtn.addEventListener("click", function () {
+  goToSearch(searchBox.value);
+});
+
+// ---- Real navigation: naye URL par jaayega (jaise yr.html?q=Pizza+Hut+Menu+Price) ----
+function goToSearch(keyword) {
+  keyword = keyword.trim();
+  if (!keyword) return;
+
+  const url = new URL(window.location.href.split("?")[0]); // sirf base path (yr.html)
+  url.searchParams.set("q", keyword);
+
+  window.location.href = url.toString(); // asli page reload / navigation
 }
 
+// Suggestion par click karne par naye URL par navigate karo (jaise Google)
 function openSearch(keyword) {
   keyword = decodeURIComponent(keyword);
-
-  const url = new URL(window.location);
-  url.searchParams.set("q", keyword);
-  history.pushState({}, "", url);
-
-  searchBox.value = keyword;
-  searchData(keyword);
-  results1s.style.display = "none"; // suggestion select karne par dropdown band
+  goToSearch(keyword);
 }
 
 // dropdown ke bahar click karne par band ho jaye
