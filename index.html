@@ -49,7 +49,9 @@ margin:0;
 padding:0;
 box-sizing:border-box;
 font-family:'Poppins',sans-serif;
+-webkit-tap-highlight-color: transparent;
 }
+
 
 html{
 scroll-behavior:smooth;
@@ -107,6 +109,7 @@ max-width:1100px;
 margin:auto;
 padding:20px;
 }
+
 
 /* BREADCRUMB */
 
@@ -508,7 +511,16 @@ border-radius:15px 15px 0px 0px;
 
   transition:all .35s ease;
 }
+.bottom-nav a{
+    flex: 1;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+}
 
+.bottom-nav a .nav-item{
+    width: 100%;
+}
 .bottom-nav.show{
   bottom:0;
   opacity:1;
@@ -530,7 +542,7 @@ border-radius:15px 15px 0px 0px;
   font-weight:600;
   color:#222;
   line-height:1.2;
-  transition:0.3s;
+  transition:0.1s;
   border:2px solid #fff;
 }
 
@@ -540,8 +552,7 @@ border-radius:15px 15px 0px 0px;
 }
 
 .nav-item.active:hover{
-  border:0px solid #222;
-  
+  border:0px solid #fff;
 }
 
 .nav-item:hover{
@@ -1066,22 +1077,36 @@ navMenu.classList.remove("active");
 <section class="hero-slider">
 
   <div class="slides">
-
-    <!-- Slide 1 -->
+  
+  <!-- Slide 1 -->
     <div class="slide active"
-      style="background-image:url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1600');">
+      style="background-image:url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi-oFXC_BoOdWKSu6MFhbCmDLqxrm9I-n5U-NsoJZnmyVjOJSAp2_MGaIqX7ie_GKgFLNqZ1PakUeWXV7bgdT1NlMEMDeb0jzqdn7PQR7UF1mkMmmHMHOWAZBzsqqHzx8MZZVT0NwsPo8VXk0s4OOBsv_RfJYQY02hRHsTWv9N8kIkrThR5E6-XWgt8TiU/s1600/women-model-01-menupriceshub.webp');">
+      <div class="overlay"></div>
+
+      <div class="top-slider-content">
+        <h1>Find Restaurant Menus & Price's
+All in One Place</h1>
+        <p>Find menus, prices and reviews from top restaurants near you.</p>
+        <a href="#" class="slide-action-btn">Search</a>
+      </div>
+    </div>
+  
+
+    <!-- Slide 2 -->
+    <div class="slide"
+      style="background-image:url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhoUpanGGNbCr8i8MQXqtKBntKmIQvTvw3FfJTfPcrDZngZJ_kF_AJhJ9Y3RaVcczCW4yWbeH4xwbd6wrkXccXB7KW3VqlerMuPtm2_JdwJKFDcjg4lEybjcObkO0SILBl3E6Za8Mp7F3yDm3XuCzOdQUrLRVBv1hEB9k_39uNKUMHvBa6th8YjNNukxG0/s1600/cafe-menupriceshub.webp');">
       <div class="overlay"></div>
 
       <div class="top-slider-content">
         <h1>Discover Amazing Restaurants</h1>
-        <p>Find menus, prices and reviews from top restaurants near you.</p>
+        <p>Explore popular restaurants, cafés, and fast-food chains with updated menus, prices, and customer ratings.</p>
         <a href="#" class="slide-action-btn">Explore Now</a>
       </div>
     </div>
 
-    <!-- Slide 2 -->
+    <!-- Slide 3 -->
     <div class="slide"
-      style="background-image:url('https://images.unsplash.com/photo-1552566626-52f8b828add9?w=1600');">
+      style="background-image:url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgAVMgzv-NhP5yJp2tz_mVGMJk_teRe2RIWHjlZT38of2tUau4AabqIS0HgKxjjBDZ3IbVqJueHg0UN8C0J4QIOPsK0lLi8Bu5m5yDWsW9zA-N7h8ZQ_1LoaWWENVLQQTBHfg1eaKT9B3uGyaTmaP9ACp9_mNRgZ52TEpSSZmXrXBloiRi_6nGNmUsUVGA/s1600/dishes-menupriceshub.webp');">
       <div class="overlay"></div>
 
       <div class="top-slider-content">
@@ -1091,14 +1116,78 @@ navMenu.classList.remove("active");
       </div>
     </div>
 
-    <!-- Slide 3 -->
+    <!-- Slide 4 -->
     <div class="slide"
-      style="background-image:url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1600');">
+      style="background-image:url('https://png.pngtree.com/background/20250104/original/pngtree-taking-slice-picture-of-prepared-delicious-pizza-with-sausage-rings-and-picture-image_15628798.jpg');">
       <div class="overlay"></div>
 
       <div class="top-slider-content">
-        <h1>Restaurant Menus</h1>
+        <h1>Popular Restaurant Menus</h1>
         <p>Browse updated menu prices before your next visit.</p>
+        <a href="#" class="slide-action-btn">Check Menus</a>
+      </div>
+    </div>
+    
+    <!-- Slide 5 -->
+    <div class="slide"
+      style="background-image:url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0OveWDGwKTb8D7xJkNVawEDJLwnCCYc5E7lQxqFyblWTub6yrdyKcH2g039s1xrSyDRWBnENSCKBMK9NdEwVrDDMZM4lDlDPj3iI6dikTzJH8U-BaTz37k84MLyAS2HjrD1UodzPwfSv7h3u2eChalQcNs4YNbGkPfDwWsE5RJFUImwsdJLFwovfjcuA/s1600/pizzaslice-menupriceshub.webp');">
+      <div class="overlay"></div>
+
+      <div class="top-slider-content">
+        <h1>Stay Updated with Latest Menus</h1>
+        <p>Get the latest restaurant menus, new food items, and updated prices—all in one place.</p>
+        <a href="#" class="slide-action-btn">Check Menus</a>
+      </div>
+    </div>
+    
+    <!-- Slide 6 -->
+    <div class="slide"
+      style="background-image:url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhqMHhca2wb_O3DQGGrlI2sttp-DNqkcGn_rF5ntmd9D19BL05DrL_-p4WwUTPFGtQLPurR73OlzE0N_00kX-I7iAPsbw_2zvp7gP9gYjgtPRJYfIZxcPg1QjT0dYXTydWnYOD3AI_tSszyu0D42CLRGOfp2j-gsZp2VCB7eZazu8j-QmVxWs1Toi3Zdg8/s1600/spring-roll-menupriceshub.webp');">
+      <div class="overlay"></div>
+
+      <div class="top-slider-content">
+        <h1>Stay Updated with Latest Menus</h1>
+        <p>Get the latest restaurant menus, new food items, and updated prices—all in one place.</p>
+        <a href="#" class="slide-action-btn">Check Menus</a>
+      </div>
+    </div>
+    
+    <!-- Slide 7 -->
+    <div class="slide"
+      style="background-image:url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3i_oq1B3r1XeRR-594pMh4aGinveOZRPO2E4szxRS0vPoKfXDS7-zJODS83jYl4_CpjZc8ZKSeN4ywlbj9Ij6olQ2L7g0mFJNgfqg_BXXy8CoprH8NMh6cLYaoCoqkJhz7pvSkvEVA5_Qm7oxDWbNJ10-u2Rx5ouipAdCFEg3DotM-KzCBRpfcK7itDI/s1600/pizza-mojito-menupriceshub.webp');">
+      <div class="overlay"></div>
+
+      <div class="top-slider-content">
+        <h1>Stay Updated with Latest Menus</h1>
+        <p>Get the latest restaurant menus, new food items, and updated prices—all in one place.</p>
+        <a href="#" class="slide-action-btn">Check Menus</a>
+      </div>
+    </div>
+    
+    
+    
+    <!-- Slide 8 -->
+    <div class="slide"
+      style="background-image:url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgL_aAjN35lKNS6pA1fchyphenhyphenwXsnPry41S2UHikF-IRZ5nh83Qj49pe6yZCuGfSGd3K1acWoUbAb8qO9lbLPcKfALm9EjII_ErW8iY4r4Esnw0EXlpNJ9ZsZvFv555EVnNvl9ZYcm2VsCAsqoZSHLS55zdXp2WrA4cK8-yZe758D0QjpiBtCdCjkSX2CZ2no/s1600/cake-piece-menupriceshub.webp');">
+      <div class="overlay"></div>
+
+      <div class="top-slider-content">
+        <h1>Stay Updated with Latest Menus</h1>
+        <p>Get the latest restaurant menus, new food items, and updated prices—all in one place.</p>
+        <a href="#" class="slide-action-btn">Check Menus</a>
+      </div>
+    </div>
+    
+    
+    
+    <!-- Slide 9 -->
+    <div class="slide"
+      style="background-image:url('https://media.istockphoto.com/id/1923701138/photo/mobile-phone-mockup-for-advetising-mock-up-image-of-man-hand-holding-and-using-smartphone.jpg');">
+      <div class="overlay"></div>
+
+      <div class="top-slider-content">
+        <h1>Stay Updated with Latest Menus</h1>
+        <p>Get the latest restaurant menus, new food items, and updated prices—all in one place.</p>
         <a href="#" class="slide-action-btn">Check Menus</a>
       </div>
     </div>
@@ -1267,7 +1356,6 @@ navMenu.classList.remove("active");
     font-size:14px;
     color:#000;
 }
-
 }
 .slide-action-btn,
 .slide-action-btn:visited,
@@ -1381,6 +1469,15 @@ document.querySelector(".hero-slider")
   font-family:Arial;
  background:transparent;
   border-radius:5px;  
+}
+
+.category-icon:active{
+    outline:2px solid black;
+    outline-offset:5px; /* Border aur icon ke beech gap */
+}
+.category-icon:hover{
+    outline:2px solid skyblue;
+    outline-offset:5px;
 }
 
 .category-icon{
@@ -1958,7 +2055,7 @@ $14.99
   <h2 class="section-left">
     Latest Blog Post
   </h2>
-  <a href="#" class="section-right">
+  <a href="https://menupriceshub.github.io/blog.html" class="section-right">
     View All
     <i class="fa-solid fa-chevron-right icon"></i>
   </a>
@@ -2238,6 +2335,7 @@ $14.99
   overflow-x:auto;
   scroll-behavior:smooth;
   padding-bottom:10px;
+  padding-top:10px;
   -webkit-overflow-scrolling:touch;
   scrollbar-width:none;
 }
@@ -2264,9 +2362,13 @@ $14.99
   box-shadow:0 4px 12px rgba(0,0,0,.12);
   transition:.3s;
 }
+.city-photo:hover{
+  outline:2px solid skyblue;
+    outline-offset:5px;
+}
 
 .city-item:hover .city-photo{
-  transform:translateY(-4px);
+  transform:translateY(0px);
 }
 
 .city-photo img{
@@ -2688,7 +2790,7 @@ document.addEventListener(
 
 
   let autoSlide =
-  setInterval(nextSlide,4000);
+  setInterval(nextSlide,3000);
 
 
 
@@ -2761,7 +2863,7 @@ document.addEventListener(
       autoSlide =
       setInterval(
         nextSlide,
-        4000
+        3000
       );
 
     }
@@ -3051,17 +3153,17 @@ Get discovered by thousands of customers every day.</p>
 
   </div>
 </section>
-
-<!-- OVERVIEW -->
+ <!-- OVERVIEW -->
 
 <section id="overview">
 
 <h2 class="section-title">
-Overview
+About MenuPricesHub
 </h2>
 
 <div class="card">
-Chipotle is one of the most popular fast-food restaurants known for burritos, tacos, bowls and Mexican grills. Here you can check latest menu prices, photos, reviews and opening hours.
+MenuPricesHub helps you discover restaurant menus, prices, and popular food items from restaurants and cafés in one place. Whether you're planning your next meal, comparing menu prices, or exploring new dining options, our platform makes it simple to find the latest restaurant menus quickly and easily.<br>
+We regularly update our listings so you can browse menu prices, food categories, and restaurant information with confidence. Our goal is to make choosing your next meal faster, easier, and more convenient.
 </div>
 
 </section>
@@ -3070,404 +3172,8 @@ Chipotle is one of the most popular fast-food restaurants known for burritos, ta
 
 
 
-<!-- PHOTOS -->
 
-<section id="photos">
 
-<h2 class="section-title">
-Photos
-</h2>
-
-<div class="gallery">
-
-<img src="https://menupriceshub.github.io/photo-1626700051175-6818013e1d4f.webp"  alt="menupricehub" loading="lazy">
-
-<img src="https://menupriceshub.github.io/photo-1626700051175-6818013e1d4f.webp" alt="menupricehub" loading="lazy">
-
-<img src="https://menupriceshub.github.io/photo-1626700051175-6818013e1d4f.webp" alt="menupricehub" loading="lazy">
-
-</div>
-
-</section>
-
-<!-- LOCATION -->
-
-<section id="location">
-
-<h2 class="section-title">
-Location
-</h2>
-
-
-
-
-
-
-
-<style>
-
-/* =========================
-   LOCATION SECTION
-========================= */
-
-.location-card{
-background:#fff;
-padding:24px;
-border-radius:24px;
-box-shadow:0 2px 10px rgba(0,0,0,.05);
-display:flex;
-flex-direction:column;
-gap:22px;
-}
-.location-info{
-background:#fff;
-padding:24px;
-border-radius:24px;
-display:flex;
-flex-direction:column;
-gap:22px;
-border-radius:20px;
-box-shadow:0 2px 10px rgba(0,0,0,.05);
-border:1px solid #eee;
-}
-
-.location-item{
-display:flex;
-align-items:flex-start;
-gap:16px;
-}
-
-.location-item i{
-width:48px;
-height:48px;
-border-radius:14px;
-background:#fff3ed;
-color:#ff4d00;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:20px;
-flex-shrink:0;
-}
-
-.location-item h3{
-font-size:18px;
-font-weight:600;
-color:#222;
-line-height:1.5;
-margin-bottom:2px;
-}
-
-.location-item p{
-font-size:14px;
-color:#777;
-}
-
-/* MOBILE */
-
-@media(max-width:768px){
-
-.location-card{
-padding:20px;
-border-radius:20px;
-}
-
-.location-item{
-gap:14px;
-}
-
-.location-item i{
-width:44px;
-height:44px;
-font-size:18px;
-}
-
-.location-item h3{
-font-size:16px;
-}
-
-.location-item p{
-font-size:13px;
-}
-
-}
-
-
-
-.rating-widget{
-background:#fff;
-border:1px solid #eee;
-border-radius:18px;
-padding:20px;
-display:flex;
-align-items:center;
-gap:20px;
-box-shadow:0 4px 15px rgba(0,0,0,.05);
-}
-
-.rating-left{
-width:110px;
-flex-shrink:0;
-text-align:center;
-}
-
-.rating-score{
-font-size:48px;
-font-weight:800;
-color:#ff4d00;
-line-height:1;
-}
-
-.rating-stars{
-font-size:16px;
-color:#ffb400;
-margin:5px 0;
-}
-
-.rating-text{
-font-size:11px;
-color:#666;
-line-height:1.4;
-}
-
-.rating-right{
-flex:1;
-display:flex;
-flex-direction:column;
-gap:8px;
-}
-
-.r-row{
-display:flex;
-align-items:center;
-gap:8px;
-font-size:12px;
-font-weight:600;
-}
-
-.r-bar{
-flex:1;
-height:8px;
-background:#eee;
-border-radius:20px;
-overflow:hidden;
-}
-
-.fill{
-height:100%;
-background:linear-gradient(90deg,#ff4d00,#ff7a00);
-border-radius:20px;
-}
-
-/* Mobile */
-@media(max-width:768px){
-
-.rating-widget{
-padding:15px;
-gap:12px;
-}
-
-.rating-left{
-width:85px;
-}
-
-.rating-score{
-font-size:38px;
-}
-
-.rating-stars{
-font-size:13px;
-}
-
-.rating-text{
-font-size:10px;
-}
-
-}
-</style>
-
-
-
-
-<div class="location-card">
-
-
-
-
-<div class="map-container">
-  <iframe
-    src="https://maps.google.com/maps?q=19.2512445,72.8634726&z=15&output=embed"
-    width="100%"
-    height="400"
-    style="border:0;border-radius:8px;"
-    loading="lazy"
-    allowfullscreen
-title="Chipotle Restaurant Location Map">
->
-  </iframe>
-</div>
-
-
-<div class="location-info">
-
-
-
-<div class="location-item">
-<i class="fa fa-building"></i>
-<div>
-<h3>Chipotle Mexican Grill</h3>
-<p>Restaurant</p>
-</div>
-</div>
-
-
-
-<div class="location-item">
-<i class="fa fa-location-dot"></i>
-<div>
-<h3>123 Main Street, New York, USA</h3>
-<p>Store Address</p>
-</div>
-</div>
-
-<div class="location-item">
-<i class="fa fa-phone"></i>
-<div>
-<h3>+91 987654321</h3>
-<p>Phone Number</p>
-</div>
-</div>
-
-
-<div class="location-item">
-<i class="fa fa-globe"></i>
-<div>
-<h3>example.com</h3>
-<p>Website</p>
-</div>
-</div>
-
-
-<div class="location-item">
-<i class="fa fa-location-arrow"></i>
-<div>
-<h3>Directions Available</h3>
-<p>Get route instantly</p>
-</div>
-</div>
-
-</div>
-
-
-
-
-
-
-
-</section>
-
-<!-- Open Hours-->
-
-<section id="openhours">
-
-<h2 class="section-title">
-Open Hours
-
-</h2><div class="card">
- <table class="hours-table">
-    <tbody>
-      <tr>
-        <td>Monday</td>
-    
-      </tr>
-      <tr>
-        <td>Tuesday</td>
-        <td>3:00 PM – 12:00 AM</td>
-      </tr>
-      <tr>
-        <td>Wednesday</td>
-        <td>3:00 PM – 12:00 AM</td>
-      </tr>
-      <tr>
-        <td>Thursday</td>
-        <td>3:00 PM – 12:00 AM</td>
-      </tr>
-      <tr>
-        <td>Friday</td>
-        <td>3:00 PM – 12:00 AM</td>
-      </tr>
-      <tr>
-        <td>Saturday</td>
-        <td>3:00 PM – 2:00 AM</td>
-      </tr>
-      <tr>
-        <td>Sunday</td>
-        <td>3:00 PM – 12:00 AM</td>
-      </tr>
-    </tbody>
-  </table>
-
-
-</div>
-</section>
-
-<!-- REVIEWS -->
-
-<section id="reviews">
-
-<h2 class="section-title">
-Reviews
-</h2>
-<div class="card">
-<!-- Rating Widget -->
-<div class="rating-widget">
-  <div class="rating-left">
-    <div class="rating-score">4.5</div>
-    <div class="rating-stars">★★★★★</div>
-    <div class="rating-text">Based on Google Reviews (8,000)</div>
-  </div>
-
-  <div class="rating-right">
-
-    <div class="r-row">
-      <span>5</span>
-      <div class="r-bar"><div class="fill" style="width:72%"></div></div>
-      <span>72%</span>
-    </div>
-
-    <div class="r-row">
-      <span>4</span>
-      <div class="r-bar"><div class="fill" style="width:18%"></div></div>
-      <span>18%</span>
-    </div>
-
-    <div class="r-row">
-      <span>3</span>
-      <div class="r-bar"><div class="fill" style="width:6%"></div></div>
-      <span>6%</span>
-    </div>
-
-    <div class="r-row">
-      <span>2</span>
-      <div class="r-bar"><div class="fill" style="width:3%"></div></div>
-      <span>3%</span>
-    </div>
-
-    <div class="r-row">
-      <span>1</span>
-      <div class="r-bar"><div class="fill" style="width:1%"></div></div>
-      <span>1%</span>
-    </div>
-
-  </div>
-</div>
-<br>
-Restaurant ka menu kaafi impressive hai, jismein har taste ke liye achhe options maujood hain. Khane ki quality aur taste dono bahut achhe lage. Overall, ek satisfying dining experience raha."
-</div>
-
-
-
-</section>
 
 <section id="star-rating">
 
@@ -4023,24 +3729,24 @@ document.querySelectorAll(".similar-card").forEach(async (card)=>{
 <!-- MOBILE STICKY BAR -->
 
 <div class="bottom-nav" id="mobileBar">
-  <div class="nav-item" onclick="move(0)">
-<i class="fa fa-home" style="font-size:15px;color:red"></i>  Home
-  </div>
+<a href="https://menupriceshub.github.io" class="nav-item" onclick="move(0)">
+<i class="fa fa-home" style="font-size:15px;color:#666"></i>  Home
+</a>
 
-  <div class="nav-item" onclick="move(1)">
+<a href="https://menupriceshub.github.io/city.html" class="nav-item"  onclick="move(1)">
 <i class="fa fa-map-marker" style="font-size:15px;color:#666;"></i>  Cities
-  </div>
+  </a>
   
-  <div class="nav-item"  onclick="move(2)">
+<a href="https://menupriceshub.github.io/search.html" class="nav-item"  onclick="move(2)">
 <i class="fa fa-search" style="font-size:15px;color:#666;"></i>  Search
-  </div>
+ </a>
 
-  <div class="nav-item"  onclick="move(2)">
+ <a href="https://menupriceshub.github.io/menu.html" class="nav-item"  onclick="move(2)">
 <i class="fa fa-coffee" style="font-size:15px;color:#666"></i>  Menu
-  </div>
+ </a>
   
   <div class="nav-item " onclick="shareCurrentUrl()"  onclick="move(3)">
-<i class="fa fa-share" style="font-size:15px;color:"></i> Share
+<i class="fa fa-share" style="font-size:15px;color:#666;"></i> Share
   </div>
 
 </div>
@@ -4493,10 +4199,11 @@ document.getElementById("notifyBtn").addEventListener("click", async () => {
         status: "active",
         createdAt: new Date(),
 
-        // 🔗 PAGE INFO
-        page_url: window.location.href,
-        page_path: window.location.pathname,
-        page_title: document.title,
+        // 🔗 PAGE INFO              
+    website: location.origin,
+    pageUrl: location.href,
+    pagePath: location.pathname,
+    pageTitle: document.title,
 
         ip: loc?.ip || "N/A",
         city: loc?.city || "N/A",
