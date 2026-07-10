@@ -215,7 +215,7 @@ searchBox.addEventListener("input", function () {
   } else {
     results1s.innerHTML = filtered.map(item => `
       <div class="results1-item">
-        <a href="#" onclick="openSearch('${encodeURIComponent(item.title)}'); return false;">
+        <a href="#" class="suggestion-link" data-title="${item.title.replace(/"/g, '&quot;')}">
           ${item.title}
         </a>
       </div>
@@ -247,9 +247,16 @@ function goToSearch(keyword) {
   window.location.href = url.toString(); // asli page reload / navigation
 }
 
-// Suggestion par click karne par pehle input me text aaye, phir naye URL par navigate ho
+// Suggestion list par click (event delegation — apostrophe/quote-safe)
+results1s.addEventListener("click", function (e) {
+  const link = e.target.closest(".suggestion-link");
+  if (!link) return;
+  e.preventDefault();
+  openSearch(link.dataset.title);
+});
+
+// Suggestion select hone par pehle input me text aaye, phir naye URL par navigate ho
 function openSearch(keyword) {
-  keyword = decodeURIComponent(keyword);
   searchBox.value = keyword; // input box me text set karo
   goToSearch(keyword);
 }
