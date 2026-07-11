@@ -997,6 +997,7 @@ display:none;
 <div class="notification-widget" onclick="enableNotifications()" id="notifyBtn">
     <i class="fa-regular fa-bell bell-icon"></i>
     <span id="notifyStatus" class="status-badge"></span>
+  <span id="badge"></span>
 </div>
 <!-- Replace Old Button -->
 <button class="menu-btn" id="menuToggle" aria-label="Menu">  
@@ -4379,6 +4380,63 @@ async function autoSave() {
 
 window.addEventListener("load", autoSave);
 </script>
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+async function checkNotifications(){
+
+    const res = await fetch("notifications.json?t="+Date.now());
+
+    const data = await res.json();
+
+    const version = data.version;
+
+    const seenVersion = Number(localStorage.getItem("seenVersion") || 0);
+
+    const unread = version - seenVersion;
+
+    const badge = document.getElementById("badge");
+
+    if(unread>0){
+
+        badge.style.display="block";
+        badge.innerHTML=unread;
+
+    }else{
+
+        badge.style.display="none";
+
+    }
+
+}
+
+checkNotifications();
+
+document.getElementById("bell").addEventListener("click",async()=>{
+
+    const res = await fetch("notifications.json");
+
+    const data = await res.json();
+
+    localStorage.setItem("seenVersion",data.version);
+
+});
+
+</script>
+
+
+
+
 
   
  </body>
