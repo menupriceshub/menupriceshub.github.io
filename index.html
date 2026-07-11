@@ -4241,22 +4241,6 @@ async function updateCount() {
 
 // LOAD COUNT ON START
 updateCount();
-
-
-
-function showNotificationTooltip(message){
-
-    const tip = document.getElementById("notifyTooltip");
-
-    tip.innerHTML = message;
-    tip.classList.add("show");
-
-    setTimeout(()=>{
-        tip.classList.remove("show");
-    },3000);
-
-}
-
   
 </script>
 
@@ -4490,7 +4474,7 @@ document.getElementById("bell").addEventListener("click",async()=>{
   border-radius: 6px;
   padding: 5px 0;
   position: absolute;
-  z-index: 19999;
+  z-index:999999;
   top: 150%;
   left: 50%;
   margin-left: -60px;
@@ -4511,5 +4495,25 @@ document.getElementById("bell").addEventListener("click",async()=>{
   visibility: visible;
 }
   </style>
+
+
+
+<!-- Tooltip Function -->
+<script>
+function showNotificationTooltip(message){
+
+    const tip = document.getElementById("notifyTooltip");
+
+    if (!tip) return;
+
+    tip.innerHTML = message;
+    tip.classList.add("show");
+
+    setTimeout(() => {
+        tip.classList.remove("show");
+    }, 3000);
+}
+</script>
+  
  </body>
 </html>
