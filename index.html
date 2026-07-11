@@ -959,7 +959,30 @@ display:none;
     order: 1;
   }
 }
-  
+  [data-tooltip] {
+  position: relative;
+}
+[data-tooltip]::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 130%;
+  left: 50%;
+  transform: translateX(-50%) translateY(5px);
+  background: #222;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.2s ease;
+  z-index: 9999;
+}
+[data-tooltip]:hover::after {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
 
 </style>
  
@@ -994,7 +1017,7 @@ display:none;
  
 
 <div class="header-right">
-<div class="notification-widget" onclick="enableNotifications()" id="notifyBtn">
+<div class="notification-widget" onclick="enableNotifications()" id="notifyBtn" data-tooltip="Checking...">
     <i class="fa-regular fa-bell bell-icon"></i>
     <span id="notifyStatus" class="status-badge"></span>
   <span id="badge"></span>
