@@ -4242,6 +4242,22 @@ async function updateCount() {
 // LOAD COUNT ON START
 updateCount();
 
+
+
+function showNotificationTooltip(message){
+
+    const tip = document.getElementById("notifyTooltip");
+
+    tip.innerHTML = message;
+    tip.classList.add("show");
+
+    setTimeout(()=>{
+        tip.classList.remove("show");
+    },3000);
+
+}
+
+  
 </script>
 
 <script>
