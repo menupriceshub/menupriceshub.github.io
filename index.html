@@ -959,16 +959,15 @@ display:none;
     order: 1;
   }
 }
-  [data-tooltip] {
 [data-tooltip] {
   position: relative;
 }
 [data-tooltip]::after {
   content: attr(data-tooltip);
   position: absolute;
-  top: 130%;
+  bottom: 130%;
   left: 50%;
-  transform: translateX(-50%) translateY(-5px);
+  transform: translateX(-50%) translateY(5px);
   background: #222;
   color: #fff;
   padding: 6px 12px;
@@ -984,7 +983,6 @@ display:none;
   opacity: 1;
   transform: translateX(-50%) translateY(0);
 }
-
 </style>
  
 
