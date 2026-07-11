@@ -959,38 +959,8 @@ display:none;
     order: 1;
   }
 }
-
-
   
 
-.tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-  position: absolute;
-  z-index: 1;
-  top: 150%;
-  left: 50%;
-  margin-left: -60px;
-}
-
-.tooltiptext::after {
-  content: "";
-  position: absolute;
-  bottom: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;  
-  border-color: transparent transparent black transparent;
-  
-.notification-widget:hover .tooltiptext {
-  visibility: visible;
-}
 </style>
  
 
@@ -1028,8 +998,6 @@ display:none;
     <i class="fa-regular fa-bell bell-icon"></i>
     <span id="notifyStatus" class="status-badge"></span>
   <span id="badge"></span>
-   <div id="customTooltip" class="custom-tooltip"></div>
-  <span class="tooltiptext">Tooltip text</span>
 </div>
 <!-- Replace Old Button -->
 <button class="menu-btn" id="menuToggle" aria-label="Menu">  
@@ -4519,6 +4487,6 @@ function showTooltip(message, duration = 2500) {
   transform: translateX(-50%) translateY(0);
 }
   </style>
- 
+  <div id="customTooltip" class="custom-tooltip"></div>
  </body>
 </html>
