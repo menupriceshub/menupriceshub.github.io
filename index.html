@@ -998,6 +998,9 @@ display:none;
     <i class="fa-regular fa-bell bell-icon"></i>
     <span id="notifyStatus" class="status-badge"></span>
   <span id="badge"></span>
+  <span class="tooltiptext" id="notifyTooltip">
+        🔔 Notifications Enabled Successfully
+    </span>
 </div>
 <!-- Replace Old Button -->
 <button class="menu-btn" id="menuToggle" aria-label="Menu">  
@@ -4214,7 +4217,7 @@ document.getElementById("notifyBtn").addEventListener("click", async () => {
         longitude: loc?.longitude || "N/A"
       });
 
-      alert("Notifications Enabled ✅");
+      showNotificationTooltip("🔔 Notifications Enabled Successfully");
       updateCount();
       document.getElementById("notifyBtn").innerHTML = `
     <a href="https://menupriceshub.github.io/notifications.html">
@@ -4454,6 +4457,43 @@ document.getElementById("bell").addEventListener("click",async()=>{
 </style>
 
 
-  
+  <style>
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+  cursor: pointer;  
+}
+
+.tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 150%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltiptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+  </style>
  </body>
 </html>
