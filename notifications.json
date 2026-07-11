@@ -34,7 +34,23 @@
       "date": "2026-06-28 13:00"
     }, 
     {
-  "id": 5,
+      "id": 5,
+      "title": "Special Offer",
+      "message": "New update is live.",
+      "icon": "https://menupriceshub.github.io/icon-192.png",
+      "url": "/offer.html",
+      "date": "2026-06-28 13:00"
+    }, 
+    {
+      "id": 6,
+      "title": "Special Offer",
+      "message": "New update is live.",
+      "icon": "https://menupriceshub.github.io/icon-192.png",
+      "url": "/offer.html",
+      "date": "2026-06-28 13:00"
+    }, 
+    {
+  "id": 7,
   "title": "Breaking News",
   "message": "Today's latest update.",
   "icon": "https://menupriceshub.github.io/icon-192.png",
