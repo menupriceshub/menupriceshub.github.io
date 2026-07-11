@@ -213,15 +213,26 @@ searchBox.addEventListener("input", function () {
   if (!filtered.length) {
     results1s.innerHTML = "<div class='no-results1'>No results found</div>";
   } else {
+    // FIX: onclick+encodeURIComponent hata diya (apostrophe jaise "Domino's" se
+    // string/HTML break ho raha tha). Ab title ek data-attribute mein rakha
+    // jaata hai aur click ko event delegation se handle kiya jaata hai.
     results1s.innerHTML = filtered.map(item => `
       <div class="results1-item">
-        <a href="#" onclick="openSearch('${encodeURIComponent(item.title)}'); return false;">
+        <a href="#" data-title="${(item.title || '').replace(/"/g, '&quot;')}">
           ${item.title}
         </a>
       </div>
     `).join("");
   }
   results1s.style.display = "block";
+});
+
+// Suggestion par click karne par naye URL par navigate karo (event delegation)
+results1s.addEventListener("click", function (e) {
+  const link = e.target.closest("a[data-title]");
+  if (!link) return;
+  e.preventDefault();
+  goToSearch(link.dataset.title);
 });
 
 // Enter dabane par bhi search chale (real navigation)
@@ -245,12 +256,6 @@ function goToSearch(keyword) {
   url.searchParams.set("q", keyword);
 
   window.location.href = url.toString(); // asli page reload / navigation
-}
-
-// Suggestion par click karne par naye URL par navigate karo (jaise Google)
-function openSearch(keyword) {
-  keyword = decodeURIComponent(keyword);
-  goToSearch(keyword);
 }
 
 // dropdown ke bahar click karne par band ho jaye
