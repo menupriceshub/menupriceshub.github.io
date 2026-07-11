@@ -4464,6 +4464,17 @@ document.getElementById("bell").addEventListener("click",async()=>{
   border-bottom: 1px dotted black;
   cursor: pointer;  
 }
+.tooltiptext{
+  visibility:hidden;
+  opacity:0;
+  transition:.3s;
+}
+
+.tooltiptext.show{
+  visibility:visible;
+  opacity:1;
+}
+    
 
 .tooltiptext {
   visibility: hidden;
