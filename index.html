@@ -4242,7 +4242,7 @@ updateCount();
 </script>
 
 <script>
-function updateNotificationStatus() {
+ function updateNotificationStatus() {
 
   const badge = document.getElementById("notifyStatus");
   const notifyBtn = document.getElementById("notifyBtn");
@@ -4253,6 +4253,7 @@ function updateNotificationStatus() {
 
     badge.innerHTML =
       '<i class="fas fa-times-circle" style="color:red"></i>';
+    if (notifyBtn) notifyBtn.setAttribute("data-tooltip", "Not Supported ❌"); // ADD
 
     return;
   }
@@ -4264,12 +4265,14 @@ function updateNotificationStatus() {
 
     if (notifyBtn) {
       notifyBtn.style.animation = "none";
+      notifyBtn.setAttribute("data-tooltip", "Notifications Allowed ✅"); // ADD
     }
 
   } else {
 
     badge.innerHTML =
       '<i class="fas fa-times-circle" style="color:red"></i>';
+    if (notifyBtn) notifyBtn.setAttribute("data-tooltip", "Not Allowed ❌"); // ADD
   }
 }
 
