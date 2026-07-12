@@ -48,3 +48,44 @@ self.addEventListener("fetch", (event) => {
     })
   );
 });
+
+// 🔔 Push Notification aane par
+self.addEventListener("push", (event) => {
+  let data = {};
+  try {
+    data = event.data.json();
+  } catch (err) {
+    data = { title: "New Notification", body: event.data ? event.data.text() : "" };
+  }
+
+  // 1. System notification dikhao (tray me)
+  event.waitUntil(
+    self.registration.showNotification(data.title || "MenuPricesHub", {
+      body: data.body || "",
+      icon: "/favicon.ico"
+    })
+  );
+
+  // 2. Khuli hui tabs ko batao ki naya push aaya (badge update karne ke liye)
+  event.waitUntil(
+    self.clients.matchAll({ type: "window" }).then((clients) => {
+      clients.forEach((client) => {
+        client.postMessage({ type: "NEW_NOTIFICATION" });
+      });
+    })
+  );
+});
+
+// Notification pe click hone par (optional but useful)
+self.addEventListener("notificationclick", (event) => {
+  event.notification.close();
+  event.waitUntil(
+    clients.matchAll({ type: "window" }).then((clientsArr) => {
+      if (clientsArr.length > 0) {
+        clientsArr[0].focus();
+      } else {
+        clients.openWindow("/notification.html");
+      }
+    })
+  );
+});
