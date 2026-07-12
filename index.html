@@ -963,7 +963,6 @@ display:none;
   position: relative;
   cursor: pointer;
 }
-
 .tooltiptext {
   visibility: hidden;
   opacity: 0;
@@ -976,7 +975,7 @@ display:none;
   font-size: 12px;
   position: absolute;
   z-index: 999;
-  bottom: 150%;
+  top: 150%;              /* bottom se top kar diya */
   left: 50%;
   margin-left: -70px;
   transition: opacity 0.2s ease;
@@ -986,15 +985,14 @@ display:none;
 .tooltiptext::after {
   content: "";
   position: absolute;
-  top: 100%;
+  bottom: 100%;            /* top se bottom kar diya (arrow upar point kare) */
   left: 50%;
   margin-left: -5px;
   border-width: 5px;
   border-style: solid;
-  border-color: #222 transparent transparent transparent;
+  border-color: transparent transparent #222 transparent;  /* arrow direction flip */
 }
-
-.notification-widget:hover .tooltiptext {
+  .notification-widget:hover .tooltiptext {
   visibility: visible;
   opacity: 1;
 }
