@@ -4392,44 +4392,64 @@ window.addEventListener("load", autoSave);
 
 
 <script>
+ 
+const NOTIF_URL = "notifications.json";
+const RESET_HOURS = 24;
+const RESET_MS = RESET_HOURS * 60 * 60 * 1000;
 
-async function checkNotifications(){
-
-    const res = await fetch("notifications.json?t="+Date.now());
-
-    const data = await res.json();
-
-    const version = data.version;
-
-    const seenVersion = Number(localStorage.getItem("seenVersion") || 0);
-
-    const unread = version - seenVersion;
-
-    const badge = document.getElementById("badge");
-
-    if(unread>0){
-
-        badge.style.display="block";
-        badge.innerHTML=unread;
-
-    }else{
-
-        badge.style.display="none";
-
+async function getNotificationData() {
+    try {
+        const res = await fetch(NOTIF_URL + "?t=" + Date.now());
+        if (!res.ok) throw new Error("Fetch failed: " + res.status);
+        return await res.json();
+    } catch (err) {
+        console.error("Notification fetch error:", err);
+        return null;
     }
+}
 
+function isSeen() {
+    const seenTime = Number(localStorage.getItem("seenTime") || 0);
+    const now = Date.now();
+
+    // 24 ghante ho gaye toh purana "seen" bhool jao
+    if (now - seenTime > RESET_MS) {
+        localStorage.removeItem("seenTime");
+        return false;
+    }
+    return localStorage.getItem("seenTime") !== null;
+}
+
+function markSeen() {
+    localStorage.setItem("seenTime", Date.now());
+}
+
+function updateBadge(count) {
+    const badge = document.getElementById("badge");
+    if (count > 0) {
+        badge.style.display = "block";
+        badge.innerHTML = count;
+    } else {
+        badge.style.display = "none";
+    }
+}
+
+async function checkNotifications() {
+    const data = await getNotificationData();
+    if (!data) return;
+
+    const count = data.notifications ? data.notifications.length : 0;
+
+    // Agar already dekh liya hai (24hr ke andar), toh badge mat dikhao
+    updateBadge(isSeen() ? 0 : count);
 }
 
 checkNotifications();
 
-document.getElementById("bell").addEventListener("click",async()=>{
-
-    const res = await fetch("notifications.json");
-
-    const data = await res.json();
-
-    localStorage.setItem("seenVersion",data.version);
-
+document.getElementById("bell").addEventListener("click", async () => {
+    markSeen(); // "dekh liya" mark kar do current time ke saath
+    updateBadge(0);
+    window.location.href = "notification.html";
 });
 
 </script>
