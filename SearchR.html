@@ -1,6 +1,3 @@
-
-
-
 <div class="search-box">
   <div class="search-row">
     <input
@@ -15,6 +12,7 @@
 
   <div id="searchSuggestions"></div>
 </div>
+
 <div id="results"></div>
 
 <style>
@@ -100,8 +98,8 @@
     padding:20px;
 }
 
-/* suggestions dropdown */
-#search-suggestions1{
+/* Search Suggestions */
+#searchSuggestions{
     position:absolute;
     top:48px;
     left:0;
@@ -113,10 +111,10 @@
     max-height:300px;
     overflow-y:auto;
     z-index:999;
-    display:none; /* jab empty ho tab hidden rahe */
+    display:none;
 }
 
-.suggestion-item a{
+.search-suggestion-item a{
     display:block;
     padding:12px 15px;
     color:#222;
@@ -124,15 +122,15 @@
     border-bottom:1px solid #eee;
 }
 
-.suggestion-item:last-child a{
+.search-suggestion-item:last-child a{
     border-bottom:none;
 }
 
-.suggestion-item a:hover{
+.search-suggestion-item a:hover{
     background:#f5f5f5;
 }
 
-.suggestion-empty{
+.search-suggestion-empty{
     padding:12px 15px;
     color:#777;
 }
@@ -144,127 +142,145 @@ let data = [];
 const searchBox = document.getElementById("searchBox");
 const searchBtn = document.getElementById("searchBtn");
 const results = document.getElementById("results");
-const search-suggestions1 = document.getElementById("search-suggestions1");
+const searchSuggestions = document.getElementById("searchSuggestions");
 
 // Load JSON once
 fetch("/search-data.json")
-  .then(res => res.json())
-  .then(json => {
+.then(res => res.json())
+.then(json => {
     data = json;
 
-    // URL se search (agar ?q= param already hai — reload ke baad ye chalega)
     const params = new URLSearchParams(window.location.search);
     const q = params.get("q");
 
-    if (q) {
-      searchBox.value = q;
-      renderResults(q);
+    if(q){
+        searchBox.value = q;
+        renderResults(q);
 
-      // Reload ke baad results tak auto-scroll
-      setTimeout(() => {
-        results.scrollIntoView({ behavior: "smooth", block: "start" });
-      }, 200);
+        setTimeout(()=>{
+            results.scrollIntoView({behavior:"smooth",block:"start"});
+        },200);
     }
-  })
-  .catch(err => {
-    console.error("Failed to load search-data.json:", err);
-    results.innerHTML = "<div class='no-result'>Data load nahi ho payi</div>";
-  });
+})
+.catch(()=>{
+    results.innerHTML="<div class='no-result'>Data load nahi ho payi</div>";
+});
 
-function getFiltered(keyword) {
-  keyword = keyword.toLowerCase().trim();
-  if (!keyword) return [];
-  return data.filter(item =>
-    (item.title || "").toLowerCase().includes(keyword) ||
-    (item.content || "").toLowerCase().includes(keyword)
-  );
+function getFiltered(keyword){
+    keyword=keyword.toLowerCase().trim();
+
+    if(!keyword) return [];
+
+    return data.filter(item =>
+        (item.title||"").toLowerCase().includes(keyword) ||
+        (item.content||"").toLowerCase().includes(keyword)
+    );
 }
 
-// Page load hone ke baad (naye URL par) results cards dikhata hai
-function renderResults(keyword) {
-  const filtered = getFiltered(keyword);
+function renderResults(keyword){
+    const filtered=getFiltered(keyword);
 
-  if (!filtered.length) {
-    results.innerHTML = "<div class='no-result'>No results found</div>";
-    return;
-  }
+    if(!filtered.length){
+        results.innerHTML="<div class='no-result'>No results found</div>";
+        return;
+    }
 
-  results.innerHTML = filtered.map(item => `
+    results.innerHTML=filtered.map(item=>`
 <div class="search-card">
-    <img src="${item.image || ''}" alt="${item.title || ''}" class="search-img">
+    <img src="${item.image||''}" alt="${item.title||''}" class="search-img">
     <div class="search-info">
-        <h3>${item.title || ''}</h3>
-        <p>${item.description || ''}</p>
-        <a href="${item.url || '#'}" class="view-btn">View Menu</a>
+        <h3>${item.title||''}</h3>
+        <p>${item.description||''}</p>
+        <a href="${item.url||'#'}" class="view-btn">View Menu</a>
     </div>
 </div>
 `).join("");
 }
 
-// ---- TYPING: sirf suggestions dropdown update hoga (Google jaisa) ----
-searchBox.addEventListener("input", function () {
-  const keyword = this.value.trim();
+// Search Suggestions
+searchBox.addEventListener("input",function(){
 
-  if (!keyword) {
-    search-suggestions1.innerHTML = "";
-    search-suggestions1.style.display = "none";
-    return;
-  }
+    const keyword=this.value.trim();
 
-  const filtered = getFiltered(keyword);
+    if(!keyword){
+        searchSuggestions.innerHTML="";
+        searchSuggestions.style.display="none";
+        return;
+    }
 
-  if (!filtered.length) {
-    search-suggestions1.innerHTML = "<div class='no-results-suggestions1'>No results found</div>";
-  } else {
-    // FIX: onclick+encodeURIComponent hata diya (apostrophe jaise "Domino's" se
-    // string/HTML break ho raha tha). Ab title ek data-attribute mein rakha
-    // jaata hai aur click ko event delegation se handle kiya jaata hai.
-    search-suggestions1.innerHTML = filtered.map(item => `
-      <div class="suggestions-item">
-        <a href="#" data-title="${(item.title || '').replace(/"/g, '&quot;')}">
-          ${item.title}
-        </a>
-      </div>
-    `).join("");
-  }
-  search-suggestions1.style.display = "block";
+    const filtered=getFiltered(keyword);
+
+    if(!filtered.length){
+
+        searchSuggestions.innerHTML=
+        "<div class='search-suggestion-empty'>No results found</div>";
+
+    }else{
+
+        searchSuggestions.innerHTML=filtered.map(item=>`
+<div class="search-suggestion-item">
+<a href="#" data-title="${(item.title||'').replace(/"/g,'&quot;')}">
+${item.title}
+</a>
+</div>
+`).join("");
+
+    }
+
+    searchSuggestions.style.display="block";
+
 });
 
-// Suggestion par click karne par naye URL par navigate karo (event delegation)
-search-suggestions1.addEventListener("click", function (e) {
-  const link = e.target.closest("a[data-title]");
-  if (!link) return;
-  e.preventDefault();
-  goToSearch(link.dataset.title);
+// Suggestion Click
+searchSuggestions.addEventListener("click",function(e){
+
+    const link=e.target.closest("a[data-title]");
+
+    if(!link) return;
+
+    e.preventDefault();
+
+    goToSearch(link.dataset.title);
+
 });
 
-// Enter dabane par bhi search chale (real navigation)
-searchBox.addEventListener("keydown", function (e) {
-  if (e.key === "Enter") {
-    goToSearch(this.value);
-  }
+// Enter Search
+searchBox.addEventListener("keydown",function(e){
+
+    if(e.key==="Enter"){
+        goToSearch(this.value);
+    }
+
 });
 
-// Button click par naye URL par navigate karo
-searchBtn.addEventListener("click", function () {
-  goToSearch(searchBox.value);
+// Button Search
+searchBtn.addEventListener("click",function(){
+
+    goToSearch(searchBox.value);
+
 });
 
-// ---- Real navigation: naye URL par jaayega (jaise yr.html?q=Pizza+Hut+Menu+Price) ----
-function goToSearch(keyword) {
-  keyword = keyword.trim();
-  if (!keyword) return;
+// Navigate
+function goToSearch(keyword){
 
-  const url = new URL(window.location.href.split("?")[0]); // sirf base path (yr.html)
-  url.searchParams.set("q", keyword);
+    keyword=keyword.trim();
 
-  window.location.href = url.toString(); // asli page reload / navigation
+    if(!keyword) return;
+
+    const url=new URL(window.location.href.split("?")[0]);
+
+    url.searchParams.set("q",keyword);
+
+    window.location.href=url.toString();
+
 }
 
-// dropdown ke bahar click karne par band ho jaye
-document.addEventListener("click", function (e) {
-  if (!e.target.closest(".search-box")) {
-    search-suggestions1.style.display = "none";
-  }
+// Hide Suggestions
+document.addEventListener("click",function(e){
+
+    if(!e.target.closest(".search-box")){
+        searchSuggestions.style.display="none";
+    }
+
 });
 </script>
