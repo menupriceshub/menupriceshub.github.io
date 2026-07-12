@@ -4879,6 +4879,22 @@ window.addEventListener("load", () => {
 });
 
 </script>
+
+
+
+
+
+
+<script>
+fetch("notifications.json?t=" + Date.now())
+.then(res => res.json())
+.then(data => {
+    localStorage.setItem("seenCount", data.notifications.length);
+});
+</script>
+
+  
+  
 </body>
 </html>
 
