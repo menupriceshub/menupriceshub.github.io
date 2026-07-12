@@ -959,7 +959,45 @@ display:none;
     order: 1;
   }
 }
-  
+  .notification-widget {
+  position: relative;
+  cursor: pointer;
+}
+
+.tooltiptext {
+  visibility: hidden;
+  opacity: 0;
+  width: 140px;
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 6px 0;
+  font-size: 12px;
+  position: absolute;
+  z-index: 999;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -70px;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+
+.tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #222 transparent transparent transparent;
+}
+
+.notification-widget:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
 
 </style>
  
@@ -998,6 +1036,7 @@ display:none;
     <i class="fa-regular fa-bell bell-icon"></i>
     <span id="notifyStatus" class="status-badge"></span>
   <span id="badge"></span>
+  <span class="tooltiptext" id="notifyTooltipText">Checking...</span>
 </div>
 <!-- Replace Old Button -->
 <button class="menu-btn" id="menuToggle" aria-label="Menu">  
@@ -4239,42 +4278,36 @@ window.addEventListener("load", async () => {
   }
 });
 </script>
-
-
-<script>
+  <script>
 function updateNotificationStatus() {
 
   const badge = document.getElementById("notifyStatus");
   const notifyBtn = document.getElementById("notifyBtn");
-
-  if (!badge) return;
+  const tooltipText = document.getElementById("notifyTooltipText");
 
   if (!("Notification" in window)) {
-
-    badge.innerHTML =
-      '<i class="fas fa-times-circle" style="color:red"></i>';
-
+    if (badge) badge.innerHTML = '<i class="fas fa-times-circle" style="color:red"></i>';
+    if (tooltipText) tooltipText.innerText = "Not Supported";
     return;
   }
 
   if (Notification.permission === "granted") {
+    if (badge) badge.innerHTML = '<i class="fas fa-check-circle" style="color:#28a745"></i>';
+    if (tooltipText) tooltipText.innerText = "Notifications On ✅";
+    if (notifyBtn) notifyBtn.style.animation = "none";
 
-    badge.innerHTML =
-      '<i class="fas fa-check-circle" style="color:#28a745"></i>';
-
-    if (notifyBtn) {
-      notifyBtn.style.animation = "none";
-    }
+  } else if (Notification.permission === "denied") {
+    if (badge) badge.innerHTML = '<i class="fas fa-times-circle" style="color:red"></i>';
+    if (tooltipText) tooltipText.innerText = "Notifications Blocked ❌";
 
   } else {
-
-    badge.innerHTML =
-      '<i class="fas fa-times-circle" style="color:red"></i>';
+    if (badge) badge.innerHTML = '<i class="fas fa-times-circle" style="color:red"></i>';
+    if (tooltipText) tooltipText.innerText = "Notifications Off";
   }
 }
 
 updateNotificationStatus();
-</script>
+    </script>
   
  <!-- auto sav -->
 <script type="module">
@@ -4488,5 +4521,148 @@ function showTooltip(message, duration = 2500) {
 }
   </style>
   <div id="customTooltip" class="custom-tooltip"></div>
+
+
+
+<script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-app.js";
+import { getMessaging, getToken } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-messaging.js";
+import { getFirestore, collection, getDocs, doc, setDoc } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-firestore.js";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyCod1_H1HEGw2wUg3lzkC1OCKNfzQ17eho",
+  authDomain: "menupriceshub-964c0.firebaseapp.com",
+  projectId: "menupriceshub-964c0",
+  storageBucket: "menupriceshub-964c0.firebasestorage.app",
+  messagingSenderId: "846490180206",
+  appId: "1:846490180206:web:dfac3b25ad118c0810e47f"
+};
+
+const app = initializeApp(firebaseConfig);
+const messaging = getMessaging(app);
+const db = getFirestore(app);
+
+// SERVICE WORKER
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/firebase-messaging-sw.js')
+    .then(() => console.log("SW Registered"))
+    .catch(err => console.log(err));
+}
+
+// GET LOCATION
+async function getLocation() {
+  try {
+    const res = await fetch("https://ipapi.co/json/");
+    return await res.json();
+  } catch (e) {
+    return null;
+  }
+}
+
+// SAVE SUBSCRIBER
+async function saveSubscriber(token) {
+  const loc = await getLocation();
+  await setDoc(doc(db, "subscribers", token), {
+    token: token,
+    status: "active",
+    createdAt: new Date(),
+    website: location.origin,
+    pageUrl: location.href,
+    pagePath: location.pathname,
+    pageTitle: document.title,
+    ip: loc?.ip || "N/A",
+    city: loc?.city || "N/A",
+    region: loc?.region || "N/A",
+    country: loc?.country_name || "N/A",
+    latitude: loc?.latitude || "N/A",
+    longitude: loc?.longitude || "N/A",
+    userAgent: navigator.userAgent,
+    lastVisit: new Date().toISOString(),
+    timestamp: Date.now()
+  }, { merge: true });
+}
+
+// COUNT
+async function updateCount() {
+  const snapshot = await getDocs(collection(db, "subscribers"));
+  const el = document.getElementById("count");
+  if (el) el.innerText = snapshot.size;
+}
+updateCount();
+
+// TOOLTIP + BADGE STATUS
+function updateNotificationStatus() {
+  const badge = document.getElementById("notifyStatus");
+  const notifyBtn = document.getElementById("notifyBtn");
+  const tooltipText = document.getElementById("notifyTooltipText");
+
+  if (!("Notification" in window)) {
+    if (badge) badge.innerHTML = '<i class="fas fa-times-circle" style="color:red"></i>';
+    if (tooltipText) tooltipText.innerText = "Not Supported";
+    return;
+  }
+
+  if (Notification.permission === "granted") {
+    if (badge) badge.innerHTML = '<i class="fas fa-check-circle" style="color:#28a745"></i>';
+    if (tooltipText) tooltipText.innerText = "Notifications On ✅";
+    if (notifyBtn) notifyBtn.style.animation = "none";
+  } else if (Notification.permission === "denied") {
+    if (badge) badge.innerHTML = '<i class="fas fa-times-circle" style="color:red"></i>';
+    if (tooltipText) tooltipText.innerText = "Notifications Blocked ❌";
+  } else {
+    if (badge) badge.innerHTML = '<i class="fas fa-times-circle" style="color:red"></i>';
+    if (tooltipText) tooltipText.innerText = "Notifications Off";
+  }
+}
+updateNotificationStatus();
+
+// ENABLE NOTIFICATIONS (click handler — window par attach kiya taaki onclick="" ise dhoondh sake)
+window.enableNotifications = async function () {
+
+  const permission = await Notification.requestPermission();
+  if (permission !== "granted") {
+    updateNotificationStatus();
+    return;
+  }
+
+  try {
+    const registration = await navigator.serviceWorker.ready;
+
+    const token = await getToken(messaging, {
+      vapidKey: "BMF7VaLIylgT6m6g1LQi6V2Z0T5huntAO4rGEA_IRO40YjYpZkwBqg1o9g93RvLIO0-w0V-r5ffPr3C6XXAp5SA",
+      serviceWorkerRegistration: registration
+    });
+
+    if (token) {
+      await saveSubscriber(token);
+      updateCount();
+      updateNotificationStatus();
+      window.location.href = "https://menupriceshub.github.io/notifications.html";
+    } else {
+      console.warn("Token not generated");
+    }
+
+  } catch (error) {
+    console.error(error);
+  }
+};
+
+// AUTO SAVE (agar already granted hai, silently update)
+window.addEventListener("load", async () => {
+  if (Notification.permission !== "granted") return;
+  try {
+    const registration = await navigator.serviceWorker.ready;
+    const token = await getToken(messaging, {
+      vapidKey: "BMF7VaLIylgT6m6g1LQi6V2Z0T5huntAO4rGEA_IRO40YjYpZkwBqg1o9g93RvLIO0-w0V-r5ffPr3C6XXAp5SA",
+      serviceWorkerRegistration: registration
+    });
+    if (token) await saveSubscriber(token);
+  } catch (e) {
+    console.error(e);
+  }
+});
+</script>
+
+  
  </body>
 </html>
