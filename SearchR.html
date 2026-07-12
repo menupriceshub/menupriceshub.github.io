@@ -101,7 +101,7 @@
 }
 
 /* suggestions dropdown */
-#searchSuggestions{
+#search-suggestions1{
     position:absolute;
     top:48px;
     left:0;
@@ -144,7 +144,7 @@ let data = [];
 const searchBox = document.getElementById("searchBox");
 const searchBtn = document.getElementById("searchBtn");
 const results = document.getElementById("results");
-const results1s = document.getElementById("results1s");
+const search-suggestions1 = document.getElementById("search-suggestions1");
 
 // Load JSON once
 fetch("/search-data.json")
@@ -206,32 +206,32 @@ searchBox.addEventListener("input", function () {
   const keyword = this.value.trim();
 
   if (!keyword) {
-    results1s.innerHTML = "";
-    results1s.style.display = "none";
+    search-suggestions1.innerHTML = "";
+    search-suggestions1.style.display = "none";
     return;
   }
 
   const filtered = getFiltered(keyword);
 
   if (!filtered.length) {
-    results1s.innerHTML = "<div class='no-results1'>No results found</div>";
+    search-suggestions1.innerHTML = "<div class='no-results-suggestions1'>No results found</div>";
   } else {
     // FIX: onclick+encodeURIComponent hata diya (apostrophe jaise "Domino's" se
     // string/HTML break ho raha tha). Ab title ek data-attribute mein rakha
     // jaata hai aur click ko event delegation se handle kiya jaata hai.
-    results1s.innerHTML = filtered.map(item => `
-      <div class="results1-item">
+    search-suggestions1.innerHTML = filtered.map(item => `
+      <div class="suggestions-item">
         <a href="#" data-title="${(item.title || '').replace(/"/g, '&quot;')}">
           ${item.title}
         </a>
       </div>
     `).join("");
   }
-  results1s.style.display = "block";
+  search-suggestions1.style.display = "block";
 });
 
 // Suggestion par click karne par naye URL par navigate karo (event delegation)
-results1s.addEventListener("click", function (e) {
+search-suggestions1.addEventListener("click", function (e) {
   const link = e.target.closest("a[data-title]");
   if (!link) return;
   e.preventDefault();
@@ -264,7 +264,7 @@ function goToSearch(keyword) {
 // dropdown ke bahar click karne par band ho jaye
 document.addEventListener("click", function (e) {
   if (!e.target.closest(".search-box")) {
-    results1s.style.display = "none";
+    search-suggestions1.style.display = "none";
   }
 });
 </script>
