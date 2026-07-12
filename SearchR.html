@@ -1,0 +1,270 @@
+
+
+
+<div class="search-box">
+  <div class="search-row">
+    <input
+      type="text"
+      id="searchBox"
+      placeholder="Search..."
+      class="search-input"
+      autocomplete="off"
+    >
+    <button id="searchBtn" class="search-btn" type="button">Search</button>
+  </div>
+
+  <div id="results1s"></div>
+</div>
+<div id="results"></div>
+
+<style>
+.search-box{
+    position:relative;
+}
+
+.search-row{
+    display:flex;
+    gap:8px;
+    margin-bottom:10px;
+}
+
+.search-input{
+    flex:1;
+    width:100%;
+    padding:10px 14px;
+    border:1px solid #ddd;
+    border-radius:20px;
+    font-size:15px;
+    box-sizing:border-box;
+}
+
+.search-btn{
+    padding:10px 20px;
+    background:#ff3b30;
+    color:#fff;
+    border:none;
+    border-radius:20px;
+    font-size:15px;
+    cursor:pointer;
+    white-space:nowrap;
+}
+
+.search-btn:hover{
+    background:#e6352b;
+}
+
+.search-card{
+    display:flex;
+    gap:12px;
+    background:#fff;
+    border-radius:12px;
+    padding:10px;
+    margin:12px 0;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+}
+
+.search-img{
+    width:110px;
+    height:90px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.search-info{
+    flex:1;
+}
+
+.search-info h3{
+    margin:0 0 6px;
+    font-size:18px;
+}
+
+.search-info p{
+    margin:0 0 10px;
+    color:#666;
+    font-size:14px;
+}
+
+.view-btn{
+    display:inline-block;
+    padding:8px 16px;
+    background:#ff3b30;
+    color:#fff;
+    border-radius:20px;
+    text-decoration:none;
+}
+
+.no-result{
+    text-align:center;
+    color:#888;
+    padding:20px;
+}
+
+/* suggestions dropdown */
+#searchSuggestions{
+    position:absolute;
+    top:48px;
+    left:0;
+    width:100%;
+    background:#fff;
+    border:1px solid #ddd;
+    border-radius:12px;
+    box-shadow:0 4px 12px rgba(0,0,0,.1);
+    max-height:300px;
+    overflow-y:auto;
+    z-index:999;
+    display:none; /* jab empty ho tab hidden rahe */
+}
+
+.suggestion-item a{
+    display:block;
+    padding:12px 15px;
+    color:#222;
+    text-decoration:none;
+    border-bottom:1px solid #eee;
+}
+
+.suggestion-item:last-child a{
+    border-bottom:none;
+}
+
+.suggestion-item a:hover{
+    background:#f5f5f5;
+}
+
+.suggestion-empty{
+    padding:12px 15px;
+    color:#777;
+}
+</style>
+
+<script>
+let data = [];
+
+const searchBox = document.getElementById("searchBox");
+const searchBtn = document.getElementById("searchBtn");
+const results = document.getElementById("results");
+const results1s = document.getElementById("results1s");
+
+// Load JSON once
+fetch("/search-data.json")
+  .then(res => res.json())
+  .then(json => {
+    data = json;
+
+    // URL se search (agar ?q= param already hai — reload ke baad ye chalega)
+    const params = new URLSearchParams(window.location.search);
+    const q = params.get("q");
+
+    if (q) {
+      searchBox.value = q;
+      renderResults(q);
+
+      // Reload ke baad results tak auto-scroll
+      setTimeout(() => {
+        results.scrollIntoView({ behavior: "smooth", block: "start" });
+      }, 200);
+    }
+  })
+  .catch(err => {
+    console.error("Failed to load search-data.json:", err);
+    results.innerHTML = "<div class='no-result'>Data load nahi ho payi</div>";
+  });
+
+function getFiltered(keyword) {
+  keyword = keyword.toLowerCase().trim();
+  if (!keyword) return [];
+  return data.filter(item =>
+    (item.title || "").toLowerCase().includes(keyword) ||
+    (item.content || "").toLowerCase().includes(keyword)
+  );
+}
+
+// Page load hone ke baad (naye URL par) results cards dikhata hai
+function renderResults(keyword) {
+  const filtered = getFiltered(keyword);
+
+  if (!filtered.length) {
+    results.innerHTML = "<div class='no-result'>No results found</div>";
+    return;
+  }
+
+  results.innerHTML = filtered.map(item => `
+<div class="search-card">
+    <img src="${item.image || ''}" alt="${item.title || ''}" class="search-img">
+    <div class="search-info">
+        <h3>${item.title || ''}</h3>
+        <p>${item.description || ''}</p>
+        <a href="${item.url || '#'}" class="view-btn">View Menu</a>
+    </div>
+</div>
+`).join("");
+}
+
+// ---- TYPING: sirf suggestions dropdown update hoga (Google jaisa) ----
+searchBox.addEventListener("input", function () {
+  const keyword = this.value.trim();
+
+  if (!keyword) {
+    results1s.innerHTML = "";
+    results1s.style.display = "none";
+    return;
+  }
+
+  const filtered = getFiltered(keyword);
+
+  if (!filtered.length) {
+    results1s.innerHTML = "<div class='no-results1'>No results found</div>";
+  } else {
+    // FIX: onclick+encodeURIComponent hata diya (apostrophe jaise "Domino's" se
+    // string/HTML break ho raha tha). Ab title ek data-attribute mein rakha
+    // jaata hai aur click ko event delegation se handle kiya jaata hai.
+    results1s.innerHTML = filtered.map(item => `
+      <div class="results1-item">
+        <a href="#" data-title="${(item.title || '').replace(/"/g, '&quot;')}">
+          ${item.title}
+        </a>
+      </div>
+    `).join("");
+  }
+  results1s.style.display = "block";
+});
+
+// Suggestion par click karne par naye URL par navigate karo (event delegation)
+results1s.addEventListener("click", function (e) {
+  const link = e.target.closest("a[data-title]");
+  if (!link) return;
+  e.preventDefault();
+  goToSearch(link.dataset.title);
+});
+
+// Enter dabane par bhi search chale (real navigation)
+searchBox.addEventListener("keydown", function (e) {
+  if (e.key === "Enter") {
+    goToSearch(this.value);
+  }
+});
+
+// Button click par naye URL par navigate karo
+searchBtn.addEventListener("click", function () {
+  goToSearch(searchBox.value);
+});
+
+// ---- Real navigation: naye URL par jaayega (jaise yr.html?q=Pizza+Hut+Menu+Price) ----
+function goToSearch(keyword) {
+  keyword = keyword.trim();
+  if (!keyword) return;
+
+  const url = new URL(window.location.href.split("?")[0]); // sirf base path (yr.html)
+  url.searchParams.set("q", keyword);
+
+  window.location.href = url.toString(); // asli page reload / navigation
+}
+
+// dropdown ke bahar click karne par band ho jaye
+document.addEventListener("click", function (e) {
+  if (!e.target.closest(".search-box")) {
+    results1s.style.display = "none";
+  }
+});
+</script>
