@@ -1,0 +1,108 @@
+{
+  "name": "Chipotle Mexican Grill",
+  "tagline": "Popular fast-food restaurant known for burritos, tacos, bowls and Mexican grills",
+  "rating": 4.5,
+  "reviewCount": 8000,
+  "priceRange": "$10–$30",
+  "cuisine": "Mexican",
+  "phone": "+19876543210",
+  "phoneDisplay": "+1 987 654 3210",
+  "address": {
+    "street": "123 Main Street",
+    "city": "New York",
+    "country": "USA",
+    "full": "123 Main Street, New York, USA"
+  },
+  "mapsUrl": "https://maps.google.com/?q=Chipotle+123+Main+Street+New+York",
+
+  "sliderImages": [
+    "https://images.unsplash.com/photo-1626700051175-6818013e1d4f?q=80&w=1200&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=1200&auto=format&fit=crop",
+    "https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?q=80&w=1200&auto=format&fit=crop"
+  ],
+
+  "featuredMenu": [
+    {
+      "name": "Chicken Burrito",
+      "price": 12.99,
+      "image": "https://images.unsplash.com/photo-1626700051175-6818013e1d4f?q=80&w=800&auto=format&fit=crop",
+      "alt": "Chipotle Chicken Burrito – grilled chicken wrapped in a flour tortilla"
+    },
+    {
+      "name": "Veg Bowl",
+      "price": 10.99,
+      "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=800&auto=format&fit=crop",
+      "alt": "Chipotle Veg Bowl – fresh vegetables with rice and beans"
+    },
+    {
+      "name": "Tacos Combo",
+      "price": 14.99,
+      "image": "https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?q=80&w=800&auto=format&fit=crop",
+      "alt": "Chipotle Tacos Combo – three tacos with choice of filling"
+    }
+  ],
+
+  "fullMenu": [
+    { "name": "Chicken Burrito",  "category": "Burrito", "calories": 1080, "price": 12.99 },
+    { "name": "Steak Burrito",    "category": "Burrito", "calories": 1050, "price": 13.99 },
+    { "name": "Barbacoa Burrito", "category": "Burrito", "calories": 1020, "price": 13.99 },
+    { "name": "Carnitas Burrito", "category": "Burrito", "calories": 1060, "price": 13.49 },
+    { "name": "Veggie Burrito",   "category": "Burrito", "calories": 935,  "price": 11.49 },
+    { "name": "Chicken Bowl",     "category": "Bowl",    "calories": 750,  "price": 12.99 },
+    { "name": "Steak Bowl",       "category": "Bowl",    "calories": 720,  "price": 13.99 },
+    { "name": "Veggie Bowl",      "category": "Bowl",    "calories": 695,  "price": 10.99 },
+    { "name": "Sofritas Bowl",    "category": "Bowl",    "calories": 710,  "price": 10.99 }
+  ],
+
+  "gallery": [
+    {
+      "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=800&auto=format&fit=crop",
+      "alt": "Chipotle restaurant interior with modern seating and warm lighting"
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1552566626-52f8b828add9?q=80&w=800&auto=format&fit=crop",
+      "alt": "Chipotle kitchen counter with fresh ingredients"
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1514933651103-005eec06c04b?q=80&w=800&auto=format&fit=crop",
+      "alt": "Chipotle dining area with customers"
+    }
+  ],
+
+  "hours": [
+    { "day": "Monday",    "time": "3:00 PM – 12:00 AM" },
+    { "day": "Tuesday",   "time": "3:00 PM – 12:00 AM" },
+    { "day": "Wednesday", "time": "3:00 PM – 12:00 AM" },
+    { "day": "Thursday",  "time": "3:00 PM – 12:00 AM" },
+    { "day": "Friday",    "time": "3:00 PM – 12:00 AM" },
+    { "day": "Saturday",  "time": "3:00 PM – 2:00 AM" },
+    { "day": "Sunday",    "time": "3:00 PM – 12:00 AM" }
+  ],
+
+  "ratingBreakdown": [
+    { "stars": 5, "percent": 72 },
+    { "stars": 4, "percent": 18 },
+    { "stars": 3, "percent": 6 },
+    { "stars": 2, "percent": 3 },
+    { "stars": 1, "percent": 1 }
+  ],
+
+  "reviewText": "Restaurant ka menu kaafi impressive hai, jismein har taste ke liye achhe options maujood hain. Khane ki quality aur taste dono bahut achhe lage. Overall, ek satisfying dining experience raha.",
+
+  "faq": [
+    {
+      "question": "Does Chipotle offer vegetarian food?",
+      "answer": "Yes, multiple vegetarian options are available including Veggie Burrito, Veggie Bowl, and Sofritas Bowl."
+    },
+    {
+      "question": "What are Chipotle's opening hours?",
+      "answer": "Chipotle is open Monday to Friday and Sunday from 3:00 PM to 12:00 AM, and Saturday from 3:00 PM to 2:00 AM."
+    }
+  ],
+
+  "similarRestaurants": [
+    { "name": "Shake Shack Menu", "link": "#" },
+    { "name": "Panera Bread Menu", "link": "#" },
+    { "name": "Texas Roadhouse Menu", "link": "#" }
+  ]
+}
