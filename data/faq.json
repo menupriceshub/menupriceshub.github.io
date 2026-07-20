@@ -1,0 +1,24 @@
+[
+  {
+    "slug": "mcdonalds",
+    "faq": [
+      {
+        "question": "What is the most popular McDonald's meal?",
+        "answer": "Big Mac is one of the most popular meals."
+      },
+      {
+        "question": "Does McDonald's serve breakfast all day?",
+        "answer": "It depends on the location."
+      }
+    ]
+  },
+  {
+    "slug": "kfc",
+    "faq": [
+      {
+        "question": "Does KFC offer family meals?",
+        "answer": "Yes, KFC offers several family meal options."
+      }
+    ]
+  }
+]
