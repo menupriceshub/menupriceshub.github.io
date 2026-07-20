@@ -5,7 +5,7 @@
 
 const slug = location.pathname.split("/").pop().replace(".html", "");
 
-fetch("/faq.json")
+fetch("/data/faq.json")
   .then(res => res.json())
   .then(data => {
     const page = data.find(item => item.slug === slug);
