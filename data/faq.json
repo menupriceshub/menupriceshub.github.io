@@ -20,5 +20,22 @@
         "answer": "Yes, KFC offers several family meal options."
       }
     ]
+  },
+  {
+    "slug": "chipotle",
+    "faq": [
+      {
+        "question": "Does Chipotle offer vegetarian food?",
+        "answer": "Yes, multiple veg options are available."
+      },
+      {
+        "question": "What are opening hours?",
+        "answer": "10AM to 11PM Daily."
+      },
+      {
+        "question": "What is the address of this restaurant?",
+        "answer": "New York"
+      }
+    ]
   }
 ]
