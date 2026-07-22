@@ -13,6 +13,43 @@
     ]
   },
   {
+    "slug": "kfc",
+    "faq": [
+      {
+        "question": "What is KFC famous for?",
+        "answer": "KFC is famous for its Original Recipe fried chicken made with 11 herbs and spices."
+      },
+      {
+        "question": "Does KFC offer delivery?",
+        "answer": "Yes, delivery is available at many locations through the KFC app and third-party delivery services."
+      },
+      {
+        "question": "Can I order KFC online?",
+        "answer": "Yes, you can place orders through the KFC website or mobile app for pickup or delivery."
+      },
+      {
+        "question": "Does KFC have vegetarian options?",
+        "answer": "Yes, KFC offers select vegetarian items depending on the location."
+      },
+      {
+        "question": "Does KFC have a kids menu?",
+        "answer": "Yes, KFC offers Kids Meals with smaller portions and sides."
+      },
+      {
+        "question": "Are KFC menu prices the same at every location?",
+        "answer": "No, prices may vary depending on the restaurant location."
+      },
+      {
+        "question": "Can I customize my KFC order?",
+        "answer": "Yes, you can customize meals with different sides, sauces, and add-ons."
+      },
+      {
+        "question": "Does KFC provide nutritional information?",
+        "answer": "Yes, nutrition facts and calorie information are available for all menu items."
+      }
+    ]
+  },
+  {
     "slug": "chipotle",
     "faq": [
       {
