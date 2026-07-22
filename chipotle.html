@@ -2567,14 +2567,16 @@ function clearStorage() {
 </div>
 
 </section>
-
 <script>
-const slug = location.pathname.split("/").pop().replace(".html", "") || "chipotle";
+const slug = location.pathname.split("/").pop().replace(".html", "").toLowerCase() || "chipotle";
 
 fetch("/data/faq.json")
   .then(res => res.json())
   .then(data => {
-    const page = data.find(item => item.slug === slug);
+    const page = data.find(item =>
+      slug.includes(item.slug.toLowerCase())
+    );
+
     if (!page) return;
 
     const grid = document.getElementById("faq-grid");
@@ -2592,9 +2594,11 @@ fetch("/data/faq.json")
           ${faq.answer}
         </div>
       `;
+
       item.querySelector(".faq-question").addEventListener("click", () => {
         item.classList.toggle("active");
       });
+
       grid.appendChild(item);
     });
   })
