@@ -2590,6 +2590,60 @@ Yes, multiple veg options are available.
 
 </div>
 
+
+
+
+
+
+
+
+
+  <!-- FAQ -->
+
+<section id="faq">
+
+<h2 class="section-title">FAQ</h2>
+
+<div class="faq-grid" id="faq-grid">
+<!-- FAQ items will be injected here automatically -->
+</div>
+
+</section>
+
+<script>
+const slug = location.pathname.split("/").pop().replace(".html", "") || "chipotle";
+
+fetch("/data/faq.json")
+  .then(res => res.json())
+  .then(data => {
+    const page = data.find(item => item.slug === slug);
+    if (!page) return;
+
+    const grid = document.getElementById("faq-grid");
+    grid.innerHTML = "";
+
+    page.faq.slice(0, 5).forEach(faq => {
+      const item = document.createElement("div");
+      item.className = "faq-item";
+      item.innerHTML = `
+        <div class="faq-question">
+          ${faq.question}
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-answer">
+          ${faq.answer}
+        </div>
+      `;
+      item.querySelector(".faq-question").addEventListener("click", () => {
+        item.classList.toggle("open");
+      });
+      grid.appendChild(item);
+    });
+  })
+  .catch(err => console.error("FAQ load failed:", err));
+</script>
+
+
 </section>
 
 
