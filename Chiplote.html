@@ -2547,48 +2547,6 @@ function clearStorage() {
 
 <!-- FAQ -->
 
-<section id="faq">
-
-<h2 class="section-title">FAQ</h2>
-
-<div class="faq-grid">
-
-<div class="faq-item">
-<div class="faq-question">
-Does Chipotle offer vegDoes Chipotle offer vegetarian food?
-<span class="faq-icon">+</span>
-</div>
-<div class="faq-answer">
-Yes, multiple veg options are available.
-Yes, multiple veg options are available.
-Yes, multiple veg options are available.
-</div>
-</div>
-
-<div class="faq-item">
-<div class="faq-question">
-What are opening hours?
-<span class="faq-icon">+</span>
-</div>
-<div class="faq-answer">
-10AM to 11PM Daily.
-</div>
-</div>
-
-<div class="faq-item">
-<div class="faq-question">
-What is the address of this Resturant? 
-<span class="faq-icon">+</span>
-</div>
-<div class="faq-answer">
-NewYork multiple veg options are available.
-Yes, multiple veg options are available.
-Yes, multiple veg options are available.
-</div>
-</div>
-
-
-</div>
 
 
 
@@ -2598,7 +2556,7 @@ Yes, multiple veg options are available.
 
 
 
-  <!-- FAQ -->
+ <!-- FAQ -->
 
 <section id="faq">
 
@@ -2635,7 +2593,7 @@ fetch("/data/faq.json")
         </div>
       `;
       item.querySelector(".faq-question").addEventListener("click", () => {
-        item.classList.toggle("open");
+        item.classList.toggle("active");
       });
       grid.appendChild(item);
     });
@@ -2644,7 +2602,6 @@ fetch("/data/faq.json")
 </script>
 
 
-</section>
 
 
 <!-- SIMILAR -->
