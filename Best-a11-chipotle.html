@@ -123,18 +123,7 @@ box-shadow:0 2px 10px rgba(0,0,0,.05);
 font-size:20px;
 color:#ff4d00;
 }
-/* menu old code remove ❌*/
-/*
-.menu-btn{
-background:#ff4d00;
-color:#fff;
-border:none;
-padding:10px 18px;
-border-radius:10px;
-font-weight:600;
-cursor:pointer;
-}
-*/
+
 
 /* CONTAINER */
 
@@ -248,7 +237,29 @@ padding:22px;
 border-radius:20px;
 box-shadow:0 2px 10px rgba(0,0,0,.05);
 }
+.card-text-box{
+    background:#fff;
+    padding:22px;
+    border-radius:20px;
+    box-shadow:0 2px 10px rgba(0,0,0,.05);
+}
 
+.overview-text{
+    overflow:hidden;
+    max-height:140px;
+    transition:max-height .4s ease-in-out;
+    position:relative;
+}
+
+.overview-text.collapsed::after{
+    content:"";
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    height:50px;
+    background:linear-gradient(transparent,#fff);
+}
 /* MENU */
 
 .menu-grid{
@@ -1657,9 +1668,32 @@ FAQ
 Overview
 </h2>
 
-<div class="card">
+<div class="card-text-box">
 Chipotle is one of the most popular fast-food restaurants known for burritos, tacos, bowls and Mexican grills. Here you can check latest menu prices, photos, reviews and opening hours.
 </div>
+
+..... 
+<div class="card-text-box">
+
+<h2>Overview</h2>
+
+<div class="overview-text collapsed" id="overviewText">
+    <p>
+    Chipotle is one of the most popular fast-food restaurants known for burritos,
+    tacos, bowls and Mexican grills. Here you can check latest menu prices,
+    photos, reviews and opening hours.
+    </p>
+
+    <p>
+    More restaurant information, history, nutrition details and other useful
+    information can be added here.
+    </p>
+</div>
+
+<button id="readBtn" class="read-btn">Read More</button>
+
+</div>
+  
 
 </section>
 
