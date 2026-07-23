@@ -1,7 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script>
+const path = location.pathname
+  .replace(".html", "")
+  .split("/")
+  .filter(Boolean);
 
+let itemList = [{
+  "@type": "ListItem",
+  "position": 1,
+  "name": "Home",
+  "item": location.origin + "/"
+}];
+
+let url = location.origin;
+
+path.forEach((part, index) => {
+  url += "/" + part;
+
+  itemList.push({
+    "@type": "ListItem",
+    "position": index + 2,
+    "name": part.replace(/-/g, " ").replace(/\b\w/g, c => c.toUpperCase()),
+    "item": url + ".html"
+  });
+});
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": itemList
+};
+
+const script = document.createElement("script");
+script.type = "application/ld+json";
+script.text = JSON.stringify(schema);
+document.head.appendChild(script);
+</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
