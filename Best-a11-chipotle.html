@@ -934,7 +934,80 @@ display:none;
   }
 }
   
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 5px;
+  width: 100%;
+  box-sizing: border-box;
+  background:transparent;
+  margin-bottom:10px;
+}
 
+/* LEFT TITLE */
+.section-left {
+  font-size: 20px;
+  font-weight: 700;
+  color: #111;
+  background:transparent;
+}
+
+/* RIGHT LINK */
+.section-right {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #000;
+  text-decoration: none;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+/* ICON */
+.section-right .icon {
+  font-size: 13px;
+  transition: transform 0.3s ease;
+}
+
+/* HOVER EFFECT */
+.section-right:hover { color: #ff4d00; }
+.section-right:hover .icon { transform: translateX(2px); }
+
+/* UNDERLINE ANIMATION */
+.section-right::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0%;
+  height: 2px;
+  background: #ff4d00;
+  transition: 0.3s;
+}
+.section-right:hover::after { width: 100%; }
+
+/* ✅ FIXED MOBILE */
+@media (max-width: 600px) {
+  .section-header {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;     
+  }
+
+  .section-left {
+    font-size: 22px;   
+    margin-bottom: 0;    
+  }
+
+  .section-right {
+    font-size: 13px;
+    margin-bottom: 0;
+    white-space: nowrap; 
+  }
+}
 </style>
  
 
@@ -2586,8 +2659,15 @@ function clearStorage() {
 
 <section id="faq">
 
-<h2 class="section-title">FAQ</h2>
-
+<div class="section-header">
+  <h2 class="section-left">FAQ
+  </h2>
+  <a href="#" class="section-right">
+    View All
+    <i class="fa-solid fa-chevron-right icon"></i>
+  </a>
+</div>
+  
 <div class="faq-grid" id="faq-grid">
 <!-- FAQ items will be injected here automatically -->
 </div>
