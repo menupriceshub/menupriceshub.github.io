@@ -1599,7 +1599,7 @@ document.addEventListener(
 
 <a href="#reviews">
 <div class="info-box">
-<i class="fa fa-star" style="font-size:15px;color:red"></i><span id="quick-rating-info1"></span>Rating
+<i class="fa fa-star" style="font-size:15px;color:red"></i><span id="quick-rating-info1"></span>&nbsp;Rating
 </div></a>
 
 <a href="#openhours">
@@ -1609,7 +1609,7 @@ document.addEventListener(
 
 <a href="#location">
 <div class="info-box">
-<i class="fa fa-location-dot" style="font-size:15px;color:red"></i><span id="quick-location-info1"></span>
+<i class="fa fa-location-dot" style="font-size:15px;color:red"></i>&nbsp;<span id="quick-location-info1"></span>
 </div></a>
 
 <a href="#menu">
@@ -1877,7 +1877,8 @@ let photoHTML="";
 
 restaurant.photos.forEach(photo=>{
 photoHTML += `
-<img src="${photo}" width="200">
+<div class="gallery">
+<img src="${photo}" width="200"></div>
 `;
 });
 
