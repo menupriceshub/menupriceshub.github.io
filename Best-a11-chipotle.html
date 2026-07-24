@@ -2939,61 +2939,6 @@ fetch("/data/faq.json")
   .catch(err => console.error("FAQ load failed:", err));
 </script>
 
-<!-- FAQ -->
-<section id="faq">
-
-<div class="section-header">
-  <h2 class="section-left">FAQ
-  </h2>
-  <a href="#" class="section-right">
-    View All
-    <i class="fa-solid fa-chevron-right icon"></i>
-  </a>
-</div>
-  
-<div class="faq-grid" id="faq-grid2">
-<!-- FAQ items will be injected here automatically -->
-</div>
-
-</section>
-<script>
-const slug = location.pathname.split("/").pop().replace(".html", "").toLowerCase() || "chipotle";
-
-fetch("/data/faq.json")
-  .then(res => res.json())
-  .then(data => {
-    const page = data.find(item =>
-      slug.includes(item.slug.toLowerCase())
-    );
-
-    if (!page) return;
-
-    const grid = document.getElementById("faq-grid2");
-    grid.innerHTML = "";
-
-    page.faq.slice(0, 5).forEach(faq => {
-      const item = document.createElement("div");
-      item.className = "faq-item";
-      item.innerHTML = `
-        <div class="faq-question">
-          ${faq.question}
-          <span class="faq-icon">+</span>
-        </div>
-        <div class="faq-answer">
-          ${faq.answer}
-        </div>
-      `;
-
-      item.querySelector(".faq-question").addEventListener("click", () => {
-        item.classList.toggle("active");
-      });
-
-      grid.appendChild(item);
-    });
-  })
-  .catch(err => console.error("FAQ load failed:", err));
-</script>
-  ..... 
 
 
 <!-- SIMILAR -->
