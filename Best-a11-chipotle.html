@@ -2870,7 +2870,7 @@ function submitReview() {
   </a>
 </div>
   
-<div class="faq-grid" id="faq-grid">
+<div class="faq-grid" id="faq-grid1">
 <!-- FAQ items will be injected here automatically -->
 </div>
 
@@ -2887,7 +2887,7 @@ fetch("/data/faq.json")
 
     if (!page) return;
 
-    const grid = document.getElementById("faq-grid");
+    const grid = document.getElementById("faq-grid1");
     grid.innerHTML = "";
 
     page.faq.slice(0, 5).forEach(faq => {
