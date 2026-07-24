@@ -1926,6 +1926,23 @@ menuHTML += `
 
 document.getElementById("menu2grid").innerHTML = menuHTML;
 
+
+  // Open Hours
+let hoursHTML = "";
+
+for(let day in restaurant.hours){
+
+hoursHTML += `
+<tr>
+<td>${day}</td>
+<td>${restaurant.hours[day]}</td>
+</tr>
+`;
+
+}
+
+document.getElementById("hours-table-body").innerHTML = hoursHTML;
+
   // map location 
 document.getElementById("restaurant-map").src =
 `https://maps.google.com/maps?q=${restaurant.lat},${restaurant.lng}&z=15&output=embed`;
@@ -2545,46 +2562,20 @@ title="Chipotle Restaurant Location Map">
 <!-- Open Hours-->
 
 <section id="openhours">
+<section id="openhours">
 
 <h2 class="section-title">
 Open Hours
+</h2>
 
-</h2><div class="card">
- <table class="hours-table">
-    <tbody>
-      <tr>
-        <td>Monday</td>
-        <td>3:00 PM – 12:00 AM</td>
-      </tr>
-      <tr>
-        <td>Tuesday</td>
-        <td>3:00 PM – 12:00 AM</td>
-      </tr>
-      <tr>
-        <td>Wednesday</td>
-        <td>3:00 PM – 12:00 AM</td>
-      </tr>
-      <tr>
-        <td>Thursday</td>
-        <td>3:00 PM – 12:00 AM</td>
-      </tr>
-      <tr>
-        <td>Friday</td>
-        <td>3:00 PM – 12:00 AM</td>
-      </tr>
-      <tr>
-        <td>Saturday</td>
-        <td>3:00 PM – 2:00 AM</td>
-      </tr>
-      <tr>
-        <td>Sunday</td>
-        <td>3:00 PM – 12:00 AM</td>
-      </tr>
-    </tbody>
-  </table>
+<div class="card">
+<table class="hours-table">
+<tbody id="hours-table-body">
 
-
+</tbody>
+</table>
 </div>
+
 </section>
 
 <!-- REVIEWS -->
