@@ -1834,13 +1834,8 @@ $14.99
 <!-- MENU2 -->
 
 <section id="menu2">
-
-<h2 class="section-title">
-Menu 2
-</h2>
-
-<div class="menu-grid">
-  <div>
+<h2 class="section-title">Menu 2</h2>
+<div class="menu-grid" id="menu2Grid"></div>
 </section>
 
 <script>
@@ -1904,7 +1899,7 @@ menuHTML += `
 `;
 });
 
-document.getElementById("menu2").innerHTML = menuHTML;
+document.getElementById("menu2grid").innerHTML = menuHTML;
 
 }
 
