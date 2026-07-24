@@ -21,21 +21,110 @@
         "name": "Cheese Pizza",
         "price": "₹399",
         "photo": "https://placehold.co/300x300?text=Cheese+Pizza"
+      }
+    ]
+  },
+
+  {
+    "id": "02dominos",
+    "name": "Domino's Pizza",
+    "location": "Surat, Gujarat",
+    "phone": "+91 9876543211",
+    "website": "https://www.dominos.co.in",
+    "rating": 4.3,
+    "photos": [
+      "https://placehold.co/800x600?text=Dominos+1",
+      "https://placehold.co/800x600?text=Dominos+2",
+      "https://placehold.co/800x600?text=Dominos+3"
+    ],
+    "menu": [
+      {
+        "name": "Farmhouse Pizza",
+        "price": "₹329",
+        "photo": "https://placehold.co/300x300?text=Farmhouse"
       },
       {
-        "name": "Garlic Bread",
-        "price": "₹149",
-        "photo": "https://placehold.co/300x300?text=Garlic+Bread"
+        "name": "Peppy Paneer",
+        "price": "₹349",
+        "photo": "https://placehold.co/300x300?text=Peppy+Paneer"
+      }
+    ]
+  },
+
+  {
+    "id": "03kfc",
+    "name": "KFC",
+    "location": "Ahmedabad, Gujarat",
+    "phone": "+91 9876543212",
+    "website": "https://online.kfc.co.in",
+    "rating": 4.2,
+    "photos": [
+      "https://placehold.co/800x600?text=KFC+1",
+      "https://placehold.co/800x600?text=KFC+2",
+      "https://placehold.co/800x600?text=KFC+3"
+    ],
+    "menu": [
+      {
+        "name": "Zinger Burger",
+        "price": "₹199",
+        "photo": "https://placehold.co/300x300?text=Zinger"
       },
       {
-        "name": "Pasta",
+        "name": "Chicken Bucket",
+        "price": "₹699",
+        "photo": "https://placehold.co/300x300?text=Chicken+Bucket"
+      }
+    ]
+  },
+
+  {
+    "id": "04mcdonalds",
+    "name": "McDonald's",
+    "location": "Delhi",
+    "phone": "+91 9876543213",
+    "website": "https://www.mcdonaldsindia.com",
+    "rating": 4.5,
+    "photos": [
+      "https://placehold.co/800x600?text=McDonalds+1",
+      "https://placehold.co/800x600?text=McDonalds+2",
+      "https://placehold.co/800x600?text=McDonalds+3"
+    ],
+    "menu": [
+      {
+        "name": "McAloo Tikki",
+        "price": "₹69",
+        "photo": "https://placehold.co/300x300?text=McAloo+Tikki"
+      },
+      {
+        "name": "McVeggie Burger",
+        "price": "₹189",
+        "photo": "https://placehold.co/300x300?text=McVeggie"
+      }
+    ]
+  },
+
+  {
+    "id": "05burgerking",
+    "name": "Burger King",
+    "location": "Pune, Maharashtra",
+    "phone": "+91 9876543214",
+    "website": "https://www.burgerking.in",
+    "rating": 4.1,
+    "photos": [
+      "https://placehold.co/800x600?text=Burger+King+1",
+      "https://placehold.co/800x600?text=Burger+King+2",
+      "https://placehold.co/800x600?text=Burger+King+3"
+    ],
+    "menu": [
+      {
+        "name": "Whopper",
         "price": "₹249",
-        "photo": "https://placehold.co/300x300?text=Pasta"
+        "photo": "https://placehold.co/300x300?text=Whopper"
       },
       {
-        "name": "Brownie",
-        "price": "₹129",
-        "photo": "https://placehold.co/300x300?text=Brownie"
+        "name": "Veg Crisper",
+        "price": "₹99",
+        "photo": "https://placehold.co/300x300?text=Veg+Crisper"
       }
     ]
   }
