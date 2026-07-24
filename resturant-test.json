@@ -1,0 +1,42 @@
+[
+  {
+    "id": "01pizzahut",
+    "name": "Pizza Hut",
+    "location": "Mumbai, Maharashtra",
+    "phone": "+91 9876543210",
+    "website": "https://www.pizzahut.co.in",
+    "rating": 4.4,
+    "photos": [
+      "https://placehold.co/800x600?text=Pizza+Hut+1",
+      "https://placehold.co/800x600?text=Pizza+Hut+2",
+      "https://placehold.co/800x600?text=Pizza+Hut+3"
+    ],
+    "menu": [
+      {
+        "name": "Veggie Pizza",
+        "price": "₹299",
+        "photo": "https://placehold.co/300x300?text=Veggie+Pizza"
+      },
+      {
+        "name": "Cheese Pizza",
+        "price": "₹399",
+        "photo": "https://placehold.co/300x300?text=Cheese+Pizza"
+      },
+      {
+        "name": "Garlic Bread",
+        "price": "₹149",
+        "photo": "https://placehold.co/300x300?text=Garlic+Bread"
+      },
+      {
+        "name": "Pasta",
+        "price": "₹249",
+        "photo": "https://placehold.co/300x300?text=Pasta"
+      },
+      {
+        "name": "Brownie",
+        "price": "₹129",
+        "photo": "https://placehold.co/300x300?text=Brownie"
+      }
+    ]
+  }
+]
