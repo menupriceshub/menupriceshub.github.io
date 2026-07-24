@@ -1599,7 +1599,7 @@ document.addEventListener(
 
 <a href="#reviews">
 <div class="info-box">
-<i class="fa fa-star" style="font-size:15px;color:red"></i>  4.5 Rating
+<i class="fa fa-star" style="font-size:15px;color:red"></i><span id="quick-rating-info1"></span>Rating
 </div></a>
 
 <a href="#openhours">
@@ -1609,7 +1609,7 @@ document.addEventListener(
 
 <a href="#location">
 <div class="info-box">
-<i class="fa fa-location-dot" style="font-size:15px;color:red"></i>  New York
+<i class="fa fa-location-dot" style="font-size:15px;color:red"></i><span id="quick-location-info1"></span>
 </div></a>
 
 <a href="#menu">
@@ -1622,8 +1622,9 @@ document.addEventListener(
 <div class="info-box">
 <i class="fa fa-phone" style="font-size:15px;color:red"></i> Call Now
 </div>
+  
 <div class="info-box">
-<i class="fa fa-receipt" style="font-size:15px;color:red"></i> $10-$30
+<i class="fa fa-receipt" style="font-size:15px;color:red"></i><span id="quick-avgperperson-info1"></span> $10-$30
 </div>
 
 
@@ -2372,7 +2373,7 @@ title="Chipotle Restaurant Location Map">
 <div class="location-item">
 <i class="fa fa-building"></i>
 <div>
-<h3>Chipotle Mexican Grill</h3>
+<h3 id="resturant-name1">Chipotle Mexican Grill</h3>
 <p>Restaurant</p>
 </div>
 </div>
@@ -2382,7 +2383,7 @@ title="Chipotle Restaurant Location Map">
 <div class="location-item">
 <i class="fa fa-location-dot"></i>
 <div>
-<h3>123 Main Street, New York, USA</h3>
+<h3 id="location-info1">123 Main Street, New York, USA</h3>
 <p>Store Address</p>
 </div>
 </div>
@@ -2390,7 +2391,7 @@ title="Chipotle Restaurant Location Map">
 <div class="location-item">
 <i class="fa fa-phone"></i>
 <div>
-<h3>+91 987654321</h3>
+<h3 id="phonenumber-info1">+91 987654321</h3>
 <p>Phone Number</p>
 </div>
 </div>
@@ -2399,7 +2400,7 @@ title="Chipotle Restaurant Location Map">
 <div class="location-item">
 <i class="fa fa-globe"></i>
 <div>
-<h3>example.com</h3>
+<h3 id="websiteurl-info1">example.com</h3>
 <p>Website</p>
 </div>
 </div>
