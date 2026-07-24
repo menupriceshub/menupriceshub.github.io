@@ -1926,6 +1926,9 @@ menuHTML += `
 
 document.getElementById("menu2grid").innerHTML = menuHTML;
 
+  // map location 
+document.getElementById("restaurant-map").src =
+`https://maps.google.com/maps?q=${restaurant.lat},${restaurant.lng}&z=15&output=embed`;
 }
 
 });
@@ -2469,7 +2472,7 @@ title="Chipotle Restaurant Location Map">
 >
   </iframe>
 </div>
-
+<div class="map-container" id="restaurant-map"></div>
 
 <div class="location-info">
 
