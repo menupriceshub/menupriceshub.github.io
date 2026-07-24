@@ -1,0 +1,70 @@
+<html><body>
+
+<h1 id="name"></h1>
+
+<p id="location"></p>
+<p id="phone"></p>
+<a id="website" target="_blank">Website</a>
+
+<h2>Photos</h2>
+<div id="photos"></div>
+
+<h2>Popular Menu</h2>
+<div id="menu"></div>
+
+
+<script>
+const id = "01pizzahut";
+
+fetch("data/restaurants.json")
+.then(res => res.json())
+.then(data => {
+
+let restaurant = data.find(item => item.id === id);
+
+if(restaurant){
+
+document.getElementById("name").innerHTML = restaurant.name;
+
+document.getElementById("location").innerHTML =
+"📍 " + restaurant.location;
+
+document.getElementById("phone").innerHTML =
+"☎ " + restaurant.phone;
+
+document.getElementById("website").href =
+restaurant.website;
+
+
+// Photos
+let photoHTML="";
+
+restaurant.photos.forEach(photo=>{
+photoHTML += `
+<img src="${photo}" width="200">
+`;
+});
+
+document.getElementById("photos").innerHTML = photoHTML;
+
+
+// Menu
+let menuHTML="";
+
+restaurant.menu.forEach(item=>{
+menuHTML += `
+<div>
+<img src="${item.photo}" width="150">
+<h3>${item.name}</h3>
+<p>${item.price}</p>
+</div>
+`;
+});
+
+document.getElementById("menu").innerHTML = menuHTML;
+
+}
+
+});
+</script>
+</body></html>
