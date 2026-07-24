@@ -1872,8 +1872,7 @@ let photoHTML="";
 
 restaurant.photos.forEach(photo=>{
 photoHTML += `
-<div class="gallery">
-<img src="${photo}" width="200"></div>
+<img src="${photo}" width="200">
 `;
 });
 
@@ -2206,6 +2205,7 @@ document.getElementById("menu2grid").innerHTML = menuHTML;
 
 <!-- PHOTOS -->
     <section id="photos2">
+      <div class="gallery" id="photos2"></div>
 </section>
 <section id="photos">
 
