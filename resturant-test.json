@@ -41,17 +41,6 @@
     "https://placehold.co/800x600?text=Dominos+2",
     "https://placehold.co/800x600?text=Dominos+3"
   ],
-
-  "hours": {
-    "Monday": "3:00 PM – 12:00 AM",
-    "Tuesday": "3:00 PM – 12:00 AM",
-    "Wednesday": "3:00 PM – 12:00 AM",
-    "Thursday": "3:00 PM – 12:00 AM",
-    "Friday": "3:00 PM – 12:00 AM",
-    "Saturday": "3:00 PM – 2:00 AM",
-    "Sunday": "3:00 PM – 12:00 AM"
-  },
-
   "menu": [
     {
       "name": "Farmhouse Pizza",
