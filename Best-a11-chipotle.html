@@ -299,7 +299,7 @@ width:100%;
 }
 
 .menu-content{
-padding:15px;
+padding:18px;
 }
 
 .menu-content h3{
@@ -313,6 +313,16 @@ font-weight:700;
 color:#ff4d00;
 }
 
+/* responsive */
+@media(max-width:768px){
+  .menu-grid{grid-template-columns:repeat(2,1fr);}
+}
+
+@media(max-width:600px){
+  .menu-grid{grid-template-columns:1fr;}
+}
+
+  
 /* GALLERY */
 
 .gallery{
