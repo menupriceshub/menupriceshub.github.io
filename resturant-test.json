@@ -46,6 +46,15 @@
         "price": "₹329",
         "photo": "https://placehold.co/300x300?text=Farmhouse"
       },
+      "hours": {
+    "Monday": "3:00 PM – 12:00 AM",
+    "Tuesday": "3:00 PM – 12:00 AM",
+    "Wednesday": "3:00 PM – 12:00 AM",
+    "Thursday": "3:00 PM – 12:00 AM",
+    "Friday": "3:00 PM – 12:00 AM",
+    "Saturday": "3:00 PM – 2:00 AM",
+    "Sunday": "3:00 PM – 12:00 AM"
+      }, 
       {
         "name": "Peppy Paneer",
         "price": "₹349",
