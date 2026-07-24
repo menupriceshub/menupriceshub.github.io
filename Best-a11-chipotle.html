@@ -1831,7 +1831,81 @@ $14.99
 
 </section>
 
+<!-- MENU2 -->
 
+<section id="menu2">
+
+<h2 class="section-title">
+Menu 2
+</h2>
+
+<div class="menu-grid">
+  <div>
+</section>
+
+<script>
+const id = "02dominos";
+
+fetch("resturant-test.json")
+.then(res => res.json())
+.then(data => {
+
+let restaurant = data.find(item => item.id === id);
+
+if(restaurant){
+
+document.getElementById("resturant-name1").innerHTML = restaurant.name;
+
+document.getElementById("location-info1").innerHTML =
+"📍 " + restaurant.location;
+
+document.getElementById("phonenumber-info1").innerHTML =
+"☎ " + restaurant.phone;
+
+document.getElementById("websiteurl-info1").href =
+restaurant.website;
+
+
+// Photos
+let photoHTML="";
+
+restaurant.photos.forEach(photo=>{
+photoHTML += `
+<img src="${photo}" width="200">
+`;
+});
+
+document.getElementById("photos2").innerHTML = photoHTML;
+
+
+// Menu
+let menuHTML="";
+
+restaurant.menu.forEach(item=>{
+menuHTML += `
+<div class="menu-card">
+
+<img src="${item.photo}" alt="{item.name}" loading="lazy">
+
+<div class="menu-content">
+<h3>${item.name}</h3>
+<div class="price">${item.price}</div>
+</div>
+
+
+</div>
+`;
+});
+
+document.getElementById("menu2").innerHTML = menuHTML;
+
+}
+
+});
+</script>
+
+
+  
 <style>
 
 /* =========================
@@ -2129,7 +2203,8 @@ $14.99
 
 
 <!-- PHOTOS -->
-
+    <section id="photos2">
+</section>
 <section id="photos">
 
 <h2 class="section-title">
