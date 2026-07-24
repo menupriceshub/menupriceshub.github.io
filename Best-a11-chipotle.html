@@ -1911,9 +1911,7 @@ let menuHTML="";
 restaurant.menu.forEach(item=>{
 menuHTML += `
 <div class="menu-card">
-
-<img src="${item.photo}" alt="{item.name}" loading="lazy">
-
+<img src="${item.photo}" alt="${item.name}" loading="lazy">
 <div class="menu-content">
 <h3>${item.name}</h3>
 <div class="price">${item.price}</div>
@@ -1926,22 +1924,6 @@ menuHTML += `
 
 document.getElementById("menu2grid").innerHTML = menuHTML;
 
-
-  // Open Hours
-let hoursHTML = "";
-
-for(let day in restaurant.hours){
-
-hoursHTML += `
-<tr>
-<td>${day}</td>
-<td>${restaurant.hours[day]}</td>
-</tr>
-`;
-
-}
-
-document.getElementById("hours-table-body").innerHTML = hoursHTML;
 
   // map location 
 document.getElementById("restaurant-map").src =
