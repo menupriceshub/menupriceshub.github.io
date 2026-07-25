@@ -1933,8 +1933,8 @@ similar.forEach(item => {
     html += `
     <div class="similar-card">
         <a href="${item.url}">
-        <img src="${item.thumbnail}" alt="${item.name}" loading="lazy">
-        ${item.name} Menu
+        <img src="${item.thumbnail}" alt="${item.name}" loading="lazy"></a>
+        <a href="${item.url}">${item.name} Menu
       </a>
     </div>`;
 });
