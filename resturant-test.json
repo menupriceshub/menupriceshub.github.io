@@ -2,6 +2,7 @@
   {
     "id": "01pizzahut",
     "name": "Pizza Hut",
+    "city": "Surat",
     "location": "Mumbai, Maharashtra",
     "phone": "+91 9876543210",
     "website": "https://www.pizzahut.co.in",
