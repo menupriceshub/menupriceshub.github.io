@@ -3,6 +3,8 @@
     "id": "01pizzahut",
     "name": "Pizza Hut",
     "city": "Surat",
+    "url": "best-pizzahut.html",
+    "thumbnail": "https://placehold.co/800x600?text=Pizza+Hut+1"
     "location": "Mumbai, Maharashtra",
     "phone": "+91 9876543210",
     "website": "https://www.pizzahut.co.in",
