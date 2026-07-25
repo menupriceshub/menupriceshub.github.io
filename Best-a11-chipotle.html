@@ -1877,11 +1877,9 @@ if(restaurant){
 
 document.getElementById("resturant-name1").innerHTML = restaurant.name;
 
-document.getElementById("location-info1").innerHTML =
-"📍 " + restaurant.location;
+document.getElementById("location-info1").innerHTML = restaurant.location;
 
-document.getElementById("phonenumber-info1").innerHTML =
-"☎ " + restaurant.phone;
+document.getElementById("phonenumber-info1").innerHTML = restaurant.phone;
 
 document.getElementById("websiteurl-info1").href =
 restaurant.website;
@@ -1934,7 +1932,10 @@ let html = "";
 similar.forEach(item => {
     html += `
     <div class="similar-card">
-        <a href="${item.url}">${item.name} Menu</a>
+        <a href="${item.url}">
+        <img src="${item.thumbnail}" alt="${item.name}" loading="lazy">
+        <span>${item.name} Menu</span>
+      </a>
     </div>`;
 });
 
