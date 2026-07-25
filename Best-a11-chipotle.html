@@ -1924,6 +1924,21 @@ menuHTML += `
 
 document.getElementById("menu2grid").innerHTML = menuHTML;
 
+  const similar = data.filter(item =>
+    item.id !== restaurant.id &&
+    item.city === restaurant.city
+);
+
+let html = "";
+
+similar.forEach(item => {
+    html += `
+    <div class="similar-card">
+        <a href="${item.url}">${item.name} Menu</a>
+    </div>`;
+});
+
+document.getElementById("similar-grid1").innerHTML = html;
 
   // map location 
 document.getElementById("restaurant-map").src =
@@ -2926,7 +2941,7 @@ fetch("/data/faq.json")
 </script>
 
 
-
+<div class="similar-grid1"></div>
 <!-- SIMILAR -->
 
 <section>
