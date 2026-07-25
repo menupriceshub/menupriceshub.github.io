@@ -1887,6 +1887,12 @@ restaurant.website;
 document.getElementById("quick-rating-info1").innerHTML =
 restaurant.rating;
   
+document.getElementById("card-rating-info1").innerHTML =
+restaurant.rating;
+  
+document.getElementById("total-rating1").innerHTML =
+restaurant.totalrating;  
+  
 document.getElementById("quick-location-info1").innerHTML =
 restaurant.city;
 
@@ -2586,9 +2592,9 @@ Reviews
 <!-- Rating Widget -->
 <div class="rating-widget">
   <div class="rating-left">
-    <div class="rating-score">4.5</div>
+    <div class="rating-score" id="card-rating-info1”>4.5</div>
     <div class="rating-stars">★★★★★</div>
-    <div class="rating-text">Based on Google Reviews (8,000)</div>
+    <div class="rating-text">Based on Google Reviews ( <div id="total-rating1"></div> )</div>
   </div>
 
   <div class="rating-right">
