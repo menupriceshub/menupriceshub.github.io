@@ -1932,8 +1932,7 @@ let html = "";
 similar.forEach(item => {
     html += `
     <div class="similar-card">
-        <a href="${item.url}">
-        <img src="${item.thumbnail}" alt="${item.name}" loading="lazy"></a>
+        
         <a href="${item.url}">${item.name} Menu
       </a>
     </div>`;
@@ -2945,28 +2944,7 @@ fetch("/data/faq.json")
 <div class="similar-grid" id="similar-grid1"></div>
 <!-- SIMILAR -->
 
-<section>
-<h2 class="section-title">
-Similar Restaurants
-</h2>
 
-<div class="similar-grid">
-
-<div class="similar-card">
-<a href="https://www.shakeshack.com/">
-Shake Shack Menu</a>
-</div>
-
-<div class="similar-card">
-<a href="https://www.panerabread.com/">Panera Bread Menu</a>
-</div>
-<div class="similar-card">
-<a href="https://www.texasroadhouse.com">Texas Roadhouse Menu</a>
-</div>
-
-</div>
-
-</section>
 
 
 <style>
