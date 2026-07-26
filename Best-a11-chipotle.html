@@ -1891,7 +1891,7 @@ document.getElementById("card-rating-info1").innerHTML =
 restaurant.rating;
   
 document.getElementById("total-rating1").innerHTML =
-restaurant.totalrating;  
+`Based on Google Reviews (${restaurant.totalrating})`;
   
 document.getElementById("quick-location-info1").innerHTML =
 restaurant.city;
@@ -2594,7 +2594,7 @@ Reviews
   <div class="rating-left">
     <div class="rating-score" id="card-rating-info1"></div>
     <div class="rating-stars">★★★★★</div>
-    <div class="rating-text" id="total-rating1">Based on Google Reviews </div>
+    <div class="rating-text" id="total-rating1"> </div>
   </div>
 
   <div class="rating-right">
