@@ -2589,6 +2589,9 @@ Open Hours
 Reviews
 </h2>
 <div class="card">
+<div class="mp-widget-wrapper">
+  <div class="mp-widget-left">
+  
 <!-- Rating Widget -->
 <div class="rating-widget">
   <div class="rating-left">
@@ -2631,14 +2634,54 @@ Reviews
 
   </div>
 </div>
-<br>
-Restaurant ka menu kaafi impressive hai, jismein har taste ke liye achhe options maujood hain. Khane ki quality aur taste dono bahut achhe lage. Overall, ek satisfying dining experience raha."
 </div>
+  <div class="mp-widget-right">
+Restaurant ka menu kaafi impressive hai, jismein har taste ke liye achhe options maujood hain. Khane ki quality aur taste dono bahut achhe lage. Overall, ek satisfying dining experience raha."
+  </div>
+  </div>
 
 
-
+</div>
 </section>
+<style>
+.mp-widget-wrapper{
+  display:flex;
+  gap:20px;
+  width:100%;
+  box-sizing:border-box;
+}
 
+
+.mp-widget-left,
+.mp-widget-right{
+  box-sizing:border-box;
+}
+
+
+/* Desktop */
+.mp-widget-left{
+  width:35%;
+}
+
+.mp-widget-right{
+  width:65%;
+}
+
+
+/* Mobile */
+@media(max-width:768px){
+
+  .mp-widget-wrapper{
+    flex-direction:column;
+  }
+
+  .mp-widget-left,
+  .mp-widget-right{
+    width:100%;
+  }
+
+}
+</style>
 <section id="star-rating">
 
 <div class="rating-card">
