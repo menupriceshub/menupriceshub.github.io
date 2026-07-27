@@ -1946,6 +1946,33 @@ similar.forEach(item => {
 
 document.getElementById("similar-grid1").innerHTML = html;
 
+
+let rating = restaurant.rating;
+
+let fullStars = Math.floor(rating);
+let halfStar = rating % 1 >= 0.5;
+
+let stars = "";
+
+for(let i = 1; i <= 5; i++){
+
+  if(i <= fullStars){
+    stars += '<i class="fa-solid fa-star"></i>';
+  }
+  else if(i === fullStars + 1 && halfStar){
+    stars += '<i class="fa-solid fa-star-half-stroke"></i>';
+  }
+  else{
+    stars += '<i class="fa-regular fa-star"></i>';
+  }
+
+}
+
+document.querySelector(".rating-stars").innerHTML = stars;
+
+
+  
+
   // map location 
 document.getElementById("restaurant-map").src =
 `https://maps.google.com/maps?q=${restaurant.lat},${restaurant.lng}&z=15&output=embed`;
@@ -2864,6 +2891,11 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
   }
 
 }
+  .rating-stars i{
+  color:#ffb400;
+  font-size:18px;
+  margin-right:3px;
+  }
 </style>
 
 
