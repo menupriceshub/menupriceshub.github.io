@@ -47,10 +47,30 @@
   ],
   "menu": [
     {
+      "name": "Panipuri",
+      "price": "₹329",
+      "photo": "https://placehold.co/300x300?text=panipuri"
+    },
+     {
+      "name": "sandwich",
+      "price": "₹329",
+      "photo": "https://placehold.co/300x300?text=sandwich"
+    }, 
+    {
       "name": "Farmhouse Pizza",
       "price": "₹329",
       "photo": "https://placehold.co/300x300?text=Farmhouse"
-    },
+    },   
+    {
+      "name": "Bhelpuri",
+      "price": "₹329",
+      "photo": "https://placehold.co/300x300?text=bhelpuri"
+    },   
+     {
+      "name": "masala dosa",
+      "price": "₹329",
+      "photo": "https://placehold.co/300x300?text=dosa"
+    },  
     {
       "name": "Peppy Paneer",
       "price": "₹349",
