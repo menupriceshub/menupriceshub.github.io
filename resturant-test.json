@@ -76,6 +76,36 @@
       "price": "₹349",
       "photo": "https://placehold.co/300x300?text=Peppy+Paneer"
     }
+  ], 
+   "hours": [
+    {
+      "day": "Monday",
+      "time": "3:00 PM – 12:00 AM"
+    },
+    {
+      "day": "Tuesday",
+      "time": "3:00 PM – 12:00 AM"
+    },
+    {
+      "day": "Wednesday",
+      "time": "3:00 PM – 12:00 AM"
+    },
+    {
+      "day": "Thursday",
+      "time": "3:00 PM – 12:00 AM"
+    },
+    {
+      "day": "Friday",
+      "time": "3:00 PM – 12:00 AM"
+    },
+    {
+      "day": "Saturday",
+      "time": "3:00 PM – 2:00 AM"
+    },
+    {
+      "day": "Sunday",
+      "time": "3:00 PM – 12:00 AM"
+    }
   ]
  }, 
 
