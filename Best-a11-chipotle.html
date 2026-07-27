@@ -2598,7 +2598,7 @@ Reviews
 <div class="rating-widget">
   <div class="rating-left">
     <div class="rating-score" id="card-rating-info1"></div>
-    <div class="rating-stars">★★★★★</div>
+    <div class="rating-stars"></div>
     <div class="rating-text" id="total-rating1"> </div>
   </div>
 
@@ -2713,6 +2713,37 @@ Restaurant ka menu kaafi impressive hai, jismein har taste ke liye achhe options
 
 </section>
 
+
+
+
+<script>
+let ratingText = document.getElementById("card-rating-info1").innerText;
+let rating = parseFloat(ratingText);
+
+let fullStars = Math.floor(rating);
+let halfStar = rating % 1 >= 0.5;
+
+let stars = "";
+
+for(let i = 1; i <= 5; i++){
+
+  if(i <= fullStars){
+    stars += "★";
+  }
+  else if(i === fullStars + 1 && halfStar){
+    stars += "⯨";
+  }
+  else{
+    stars += "☆";
+  }
+
+}
+
+document.querySelector(".rating-stars").innerHTML = stars;
+</script>
+
+
+  
 <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
