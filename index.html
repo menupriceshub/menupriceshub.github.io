@@ -3153,21 +3153,7 @@ Get discovered by thousands of customers every day.</p>
 
   </div>
 </section>
- <!-- OVERVIEW -->
-
-<section id="overview">
-
-<h2 class="section-title">
-About MenuPricesHub
-</h2>
-
-<div class="card">
-MenuPricesHub helps you discover restaurant menus, prices, and popular food items from restaurants and cafés in one place. Whether you're planning your next meal, comparing menu prices, or exploring new dining options, our platform makes it simple to find the latest restaurant menus quickly and easily.<br>
-We regularly update our listings so you can browse menu prices, food categories, and restaurant information with confidence. Our goal is to make choosing your next meal faster, easier, and more convenient.
-</div>
-
-</section>
-
+ 
 
 
 
@@ -3512,112 +3498,24 @@ Yes, MenuPricesHub allows users to explore restaurant menu prices, popular resta
 
 </section>
 
-<!-- SIMILAR -->
 
-<section>
+<!-- OVERVIEW -->
+
+<section id="overview">
+
 <h2 class="section-title">
-Similar Restaurants
+About MenuPricesHub
 </h2>
 
-<div class="similar-grid">
-
-<div class="similar-card">
-<a href="https://www.shakeshack.com/">
-Shake Shack MenuShake Shack Menu</a>
-</div>
-
-<div class="similar-card">
-<a href="https://www.panerabread.com/">Panera Bread Menu</a>
-</div>
-<div class="similar-card">
-<a href="https://www.texasroadhouse.com">Texas Roadhouse Menu</a>
-</div>
-
+<div class="card">
+MenuPricesHub helps you discover restaurant menus, prices, and popular food items from restaurants and cafés in one place. Whether you're planning your next meal, comparing menu prices, or exploring new dining options, our platform makes it simple to find the latest restaurant menus quickly and easily.<br>
+We regularly update our listings so you can browse menu prices, food categories, and restaurant information with confidence. Our goal is to make choosing your next meal faster, easier, and more convenient.
 </div>
 
 </section>
 
 
-<style>
-.similar-card{
-  display:flex;
-  align-items:center;
-  gap:12px;
-  padding:10px;
-  margin:0px 0;
-  background:#fff;
-  border-radius:10px;
-  box-shadow:0 3px 10px rgba(0,0,0,0.1);
-  font-family:Arial;
-}
 
-.similar-card img{
-  width:50px;
-  height:50px;
-  border-radius:10px;
-  object-fit:cover;
-  background:#eee;
-}
-
-.similar-card a{
-  text-decoration:none;
-  color:#000;
-  font-weight:600;
-}
-
-</style>
-
-
-
-<script>
-// Auto add thumbnail from link
-document.querySelectorAll(".similar-card").forEach(async (card)=>{
-
-  let link = card.querySelector("a");
-  if(!link) return;
-
-  let url = link.href;
-
-  // Use link text as alt
-  let titleText = link.textContent.trim();
-
-  // Microlink API
-  let api = "https://api.microlink.io/?url=" + encodeURIComponent(url);
-
-  try{
-    let res = await fetch(api);
-    let data = await res.json();
-
-    let imgUrl = data.data.image?.url;
-
-    let img = document.createElement("img");
-    img.src = imgUrl || "https://via.placeholder.com/50";
-
-    // ✅ lazy loading add
-    img.loading = "lazy";
-
-    // ✅ alt text add
-    img.alt = titleText || "thumbnail";
-
-    img.style.width = "50px";
-    img.style.height = "50px";
-    img.style.objectFit = "cover";
-
-    // insert image before text
-    card.insertBefore(img, link);
-
-  }catch(e){
-    let img = document.createElement("img");
-    img.src = "https://via.placeholder.com/50";
-
-    img.loading = "lazy";
-    img.alt = titleText || "thumbnail";
-
-    card.insertBefore(img, link);
-  }
-
-});
-</script>
 
 
 </main>  <!-- container end -->
