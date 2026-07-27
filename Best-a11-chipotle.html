@@ -1114,75 +1114,7 @@ display:none;
 </div>
   
 
-<style>
-.breadcrumb{
-    display:flex;
-    flex-wrap:wrap;
-    align-items:center;
-    gap:6px;
-    font-family:Arial,sans-serif;
-    font-size:15px;
-    padding:12px 0;
-}
 
-.breadcrumb a{
-    color:#ff4d00;
-    text-decoration:none;
-}
-
-.breadcrumb a:hover{
-    text-decoration:underline;
-}
-
-.breadcrumb span{
-    color:#555;
-}
-
-.separator{
-    color:#999;
-}
-</style>
-
-
-<nav class="breadcrumb" id="breadcrumb"></nav>
-
-<script>
-(function(){
-
-const container = document.getElementById("breadcrumb");
-
-const path = window.location.pathname
-.replace(/^\/|\/$/g,"")
-.split("/")
-.filter(Boolean);
-
-let html = '<a href="/">Home</a>';
-
-let currentPath = "";
-
-path.forEach((part,index)=>{
-
-currentPath += "/" + part;
-
-let name = part
-.replace(".html","")
-.replace(/[-_]/g," ")
-.replace(/\b\w/g,c=>c.toUpperCase());
-
-html += '<span class="separator">›</span>';
-
-if(index === path.length-1){
-html += '<span>'+name+'</span>';
-}else{
-html += '<a href="'+currentPath+'/">'+name+'</a>';
-}
-
-});
-
-container.innerHTML = html;
-
-})();
-</script>
 
 
 <!-- Header menu navigation -->
@@ -1293,6 +1225,77 @@ navMenu.classList.remove("active");
 <i class="fa fa-home" style="font-size:15px;color:#777;"></i>&nbsp;&nbsp;Home > Restaurants > Chipotle Menu
 </div>
 
+<style>
+.breadcrumb{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    gap:6px;
+    font-family:Arial,sans-serif;
+    font-size:15px;
+    padding:12px 0;
+}
+
+.breadcrumb a{
+    color:#ff4d00;
+    text-decoration:none;
+}
+
+.breadcrumb a:hover{
+    text-decoration:underline;
+}
+
+.breadcrumb span{
+    color:#555;
+}
+
+.separator{
+    color:#999;
+}
+</style>
+
+
+<nav class="breadcrumb" id="breadcrumb"></nav>
+
+<script>
+(function(){
+
+const container = document.getElementById("breadcrumb");
+
+const path = window.location.pathname
+.replace(/^\/|\/$/g,"")
+.split("/")
+.filter(Boolean);
+
+let html = '<a href="/">Home</a>';
+
+let currentPath = "";
+
+path.forEach((part,index)=>{
+
+currentPath += "/" + part;
+
+let name = part
+.replace(".html","")
+.replace(/[-_]/g," ")
+.replace(/\b\w/g,c=>c.toUpperCase());
+
+html += '<span class="separator">›</span>';
+
+if(index === path.length-1){
+html += '<span>'+name+'</span>';
+}else{
+html += '<a href="'+currentPath+'/">'+name+'</a>';
+}
+
+});
+
+container.innerHTML = html;
+
+})();
+</script>
+
+  
 <!-- TITLE -->
 
 <h1>Chipotle Menu With Prices 2026</h1>
