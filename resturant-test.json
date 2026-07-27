@@ -82,6 +82,8 @@
   {
     "id": "03kfc",
     "name": "KFC",
+    "city": "Surat",
+    "url": "best-pizzahut.html",
     "location": "Ahmedabad, Gujarat",
     "phone": "+91 9876543212",
     "website": "https://online.kfc.co.in",
@@ -108,6 +110,8 @@
   {
     "id": "04mcdonalds",
     "name": "McDonald's",
+    "city": "Surat",
+    "url": "best-pizzahut.html",
     "location": "Delhi",
     "phone": "+91 9876543213",
     "website": "https://www.mcdonaldsindia.com",
