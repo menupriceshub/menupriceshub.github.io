@@ -1971,6 +1971,21 @@ for(let i = 1; i <= 5; i++){
 document.querySelector(".rating-stars").innerHTML = stars;
 
 
+// Open Hours
+let hoursHTML = "";
+
+restaurant.hours.forEach(hour => {
+
+hoursHTML += `
+<tr>
+<td>${hour.day}</td>
+<td>${hour.time}</td>
+</tr>
+`;
+
+});
+
+document.getElementById("hours-table1").innerHTML = hoursHTML;
   
 
   // map location 
@@ -2581,7 +2596,6 @@ font-size:10px;
 <!-- Open Hours-->
 
 <section id="openhours">
-<section id="openhours">
 
 <h2 class="section-title">
 Open Hours
@@ -2595,6 +2609,13 @@ Open Hours
 </table>
 </div>
 
+</section>
+
+<section id="openhours">
+<table class="hours-table">
+<tbody id="hours-table1">
+</tbody>
+</table>
 </section>
 
 <!-- REVIEWS -->
