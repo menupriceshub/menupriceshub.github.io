@@ -3321,7 +3321,23 @@ document.querySelectorAll(".similar-card").forEach(async (card)=>{
 </section>
 
 </main>  <!-- container end -->
+<style>
+  .trust-logos{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(120px,1fr));
+  gap:15px;
+  align-items:center;
+  justify-items:center;
+  margin:20px 0;
+}
 
+.trust-logos img{
+  max-width:100%;
+  width:120px;
+  height:auto;
+  display:block;
+}
+</style>
 
 <footer id="footer"></footer>
 <script src="./footer-widget.js" defer></script>
