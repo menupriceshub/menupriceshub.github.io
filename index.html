@@ -3513,6 +3513,30 @@ We regularly update our listings so you can browse menu prices, food categories,
 </div>
 
 </section>
+<section id="overview">
+
+<h2 class="section-title" id="about-title"></h2>
+
+<div class="card" id="about-content"></div>
+
+</section>
+  
+  <script>
+fetch("/about.json")
+.then(response => response.json())
+.then(data => {
+
+document.getElementById("about-title").innerHTML = data.title;
+
+document.getElementById("about-content").innerHTML =
+`
+${data.description}<br>
+${data.description2}
+`;
+
+});
+    
+  </script>
 
 
 
