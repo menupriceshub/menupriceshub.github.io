@@ -1,0 +1,89 @@
+{
+  "columns": [
+    {
+      "title": "MenuPricesHub",
+      "links": [
+        {
+          "name": "Home",
+          "url": "/"
+        },
+        {
+          "name": "Categories",
+          "url": "/categories.html"
+        },
+        {
+          "name": "Latest Menus",
+          "url": "/latest-menus.html"
+        },
+        {
+          "name": "List Your Business",
+          "url": "/list-your-business.html"
+        },
+        {
+          "name": "Feedback",
+          "url": "/feedback.html"
+        }
+      ]
+    },
+    {
+      "title": "Company",
+      "links": [
+        {
+          "name": "About",
+          "url": "/about.html"
+        },
+        {
+          "name": "Contact",
+          "url": "/contact.html"
+        },
+        {
+          "name": "Disclaimer",
+          "url": "/disclaimer.html"
+        },
+        {
+          "name": "Sitemap",
+          "url": "/sitemap.html"
+        },
+        {
+          "name": "Author",
+          "url": "/author.html"
+        }
+      ]
+    },
+    {
+      "title": "Legal",
+      "links": [
+        {
+          "name": "Privacy Policy",
+          "url": "/privacy-policy.html"
+        },
+        {
+          "name": "Terms & Conditions",
+          "url": "/terms-conditions.html"
+        },
+        {
+          "name": "DMCA",
+          "url": "/dmca.html"
+        }
+      ]
+    },
+    {
+      "title": "Follow Us",
+      "links": [
+        {
+          "name": "Facebook",
+          "url": "#"
+        },
+        {
+          "name": "Whatsapp",
+          "url": "#"
+        },
+        {
+          "name": "Instagram",
+          "url": "#"
+        }
+      ]
+    }
+  ],
+  "copyright": "© 2026 MenuPricesHub. All Rights Reserved."
+}
