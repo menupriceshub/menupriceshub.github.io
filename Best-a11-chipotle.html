@@ -3225,9 +3225,19 @@ fetch("/data/faq.json")
   .catch(err => console.error("FAQ load failed:", err));
 </script>
 
-
-<div class="similar-grid" id="similar-grid1"></div>
 <!-- SIMILAR -->
+  <section id="similars">
+<div class="section-header">
+  <h2 class="section-left">Similar Restaurant
+  </h2>
+  <a href="https://menupriceshub.github.io/faq/" class="section-right">
+    View All
+    <i class="fa-solid fa-chevron-right icon"></i>
+  </a>
+</div>
+<div class="similar-grid" id="similar-grid1"></div>
+    </section>
+
 
 
 
@@ -3312,11 +3322,16 @@ document.querySelectorAll(".similar-card").forEach(async (card)=>{
 
 });
 </script>
-
-<section id="overview">
-<div class="card" id="about-content"><h2 class="section-title" id="about-title"></h2></div>
+  
+<!-- About us -->
+<section id="aboutsection">
+  <div class="card">
+<h2 class="section-title" id="about-title"></h2>
+<div id="about-content"></div>
+  </div>
 </section>
 
+  
 </main>  <!-- container end -->
 <style>
   .trust-logos{
@@ -3335,7 +3350,8 @@ document.querySelectorAll(".similar-card").forEach(async (card)=>{
   display:block;
 }
 </style>
-
+  
+<!-- footer -->
 <footer id="footer"></footer>
 <script src="./footer-widget.js" defer></script>
 
