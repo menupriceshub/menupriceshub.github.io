@@ -71,16 +71,20 @@
       "title": "Follow Us",
       "links": [
         {
+          "name": "Instagram",
+          "url": "#"
+        },
+        {
           "name": "Facebook",
           "url": "#"
         },
         {
-          "name": "Whatsapp",
-          "url": "#"
+          "name": "thread",
+          "url": "https://www.threads.com/@menupriceshub"
         },
         {
-          "name": "Instagram",
-          "url": "#"
+          "name": "YouTube",
+          "url": "https://youtube.com/@menupriceshub"
         }
       ]
     }
