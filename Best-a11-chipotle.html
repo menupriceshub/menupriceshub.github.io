@@ -2952,8 +2952,8 @@ background-color:#0865fe;
   }
 </style>
 
+<!-- submit restaurant rating -->
 
-।।।।।।।।।।। 
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -3115,7 +3115,6 @@ background-color:#0865fe;
   height:auto;
   z-index:1000;
   border-radius:0px;
-  border:2px solid red;
 }
 .star-container{
 max-width:500px;
@@ -3167,27 +3166,26 @@ let ratingText = document.getElementById("card-rating-info1").innerText;
 let rating = parseFloat(ratingText);
 
 let fullStars = Math.floor(rating);
-let halfStar = rating % 1 >= 0.5;
+let halfStar = (rating % 1) >= 0.5;
 
 let stars = "";
 
-for(let i = 1; i <= 5; i++){
+for (let i = 1; i <= 5; i++) {
 
-  if(i <= fullStars){
-    stars += "★";
+  if (i <= fullStars) {
+    stars += '<i class="fa-solid fa-star"></i>';
   }
-  else if(i === fullStars + 1 && halfStar){
-    stars += "⯨";
+  else if (i === fullStars + 1 && halfStar) {
+    stars += '<i class="fa-solid fa-star-half-stroke"></i>';
   }
-  else{
-    stars += "☆";
+  else {
+    stars += '<i class="fa-regular fa-star"></i>';
   }
 
 }
 
 document.querySelector(".rating-stars").innerHTML = stars;
 </script>
-
 
 
 <script>
@@ -3286,8 +3284,7 @@ function submitReview() {
 }
 </script>
 
-
-  ।।।।।।।।।।। 
+<!-- submit rating end-->
 
 
 
