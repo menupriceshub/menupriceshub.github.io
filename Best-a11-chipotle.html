@@ -2307,16 +2307,14 @@ document.getElementById("restaurant-map").src =
 </section>
 
 
-<!-- PHOTOS -->
+ <!-- PHOTOS -->
 <section id="photos">
-      <h2 class="section-title">Photos</h2>
-      <div class="gallery" id="photos2"></div>
+  <h2 class="section-title">Photos</h2>
+  <div class="gallery" id="photos2"></div>
 </section>
 
-  
-
-  <style>
-    /* Fullscreen Overlay */
+<style>
+/* Fullscreen Overlay */
 #overlay2{
   position:fixed;
   inset:0;
@@ -2329,7 +2327,8 @@ document.getElementById("restaurant-map").src =
 
 #overlay2 img{
   max-width:95%;
-  max-height:90%;
+  max-height:90vh;
+  object-fit:contain;
   border-radius:10px;
 }
 
@@ -2342,42 +2341,45 @@ document.getElementById("restaurant-map").src =
   cursor:pointer;
   user-select:none;
 }
-    </style>
+</style>
 
 <div id="overlay2">
   <span id="close">&times;</span>
-  <img id="fullImg" src="">
+  <img id="fullImg" src="" alt="">
 </div>
 
-  <script>
+<script>
 const overlay = document.getElementById("overlay2");
 const fullImg = document.getElementById("fullImg");
 const closeBtn = document.getElementById("close");
 
-document.querySelectorAll("#photos2 img").forEach(img=>{
-  img.addEventListener("click",()=>{
-    fullImg.src = img.src;
+// Dynamic images ke liye
+document.getElementById("photos2").addEventListener("click", function(e){
+  if(e.target.tagName === "IMG"){
+    fullImg.src = e.target.src;
     overlay.style.display = "flex";
-  });
+  }
 });
 
-closeBtn.onclick = ()=>{
+// Close button
+closeBtn.addEventListener("click", function(){
   overlay.style.display = "none";
-};
+});
 
-overlay.onclick = (e)=>{
+// Click outside image
+overlay.addEventListener("click", function(e){
   if(e.target === overlay){
     overlay.style.display = "none";
   }
-};
+});
 
-document.addEventListener("keydown",(e)=>{
-  if(e.key==="Escape"){
-    overlay.style.display="none";
+// ESC key
+document.addEventListener("keydown", function(e){
+  if(e.key === "Escape"){
+    overlay.style.display = "none";
   }
 });
 </script>
-
 <!-- LOCATION -->
 
 <section id="location">
