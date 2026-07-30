@@ -1,3 +1,5 @@
+(function(){
+
 document.getElementById("star-rating").innerHTML = `
 
 <div class="star-container">
@@ -37,36 +39,36 @@ Submit Review
 `;
 
 
-let selectedRating = 0;
+let widgetSelectedRating = 0;
 
 
-const pageKey = "comment_" + window.location.pathname;
+const widgetPageKey = "comment_" + window.location.pathname;
 
-const submittedKey =
+const widgetSubmittedKey =
 "review_submitted_" + window.location.pathname;
 
 
 
-const expiryTime = 24 * 60 * 60 * 1000;
+const widgetExpiryTime = 24 * 60 * 60 * 1000;
 
-const now = Date.now();
-
-
-const savedTime = localStorage.getItem(submittedKey+"_time");
+const widgetNow = Date.now();
 
 
-if(savedTime && now - savedTime > expiryTime){
+const widgetSavedTime = localStorage.getItem(widgetSubmittedKey+"_time");
 
-localStorage.removeItem(submittedKey);
 
-localStorage.removeItem(submittedKey+"_time");
+if(widgetSavedTime && widgetNow - widgetSavedTime > widgetExpiryTime){
+
+localStorage.removeItem(widgetSubmittedKey);
+
+localStorage.removeItem(widgetSubmittedKey+"_time");
 
 }
 
 
 
 
-if(localStorage.getItem(submittedKey)){
+if(localStorage.getItem(widgetSubmittedKey)){
 
 
 document.querySelector(".rating-card").innerHTML =
@@ -88,12 +90,12 @@ let box=document.getElementById("comment");
 if(box){
 
 box.value =
-localStorage.getItem(pageKey) || "";
+localStorage.getItem(widgetPageKey) || "";
 
 
 box.addEventListener("input",function(){
 
-localStorage.setItem(pageKey,this.value);
+localStorage.setItem(widgetPageKey,this.value);
 
 });
 
@@ -104,9 +106,9 @@ localStorage.setItem(pageKey,this.value);
 
 
 
-function setRating(rating){
+window.setRating = function(rating){
 
-selectedRating = rating;
+widgetSelectedRating = rating;
 
 
 document.querySelectorAll(".stars span")
@@ -132,16 +134,16 @@ star.classList.add("fa-regular");
 
 });
 
-}
+};
 
 
 
 
 
-function submitReview(){
+window.submitReview = function(){
 
 
-if(selectedRating===0){
+if(widgetSelectedRating===0){
 
 alert("Please select a rating.");
 
@@ -163,14 +165,14 @@ let formUrl =
 +
 "&entry.379203129="+encodeURIComponent(comment)
 +
-"&entry.1418687276="+encodeURIComponent(selectedRating);
+"&entry.1418687276="+encodeURIComponent(widgetSelectedRating);
 
 
 
-localStorage.setItem(submittedKey,"yes");
+localStorage.setItem(widgetSubmittedKey,"yes");
 
 localStorage.setItem(
-submittedKey+"_time",
+widgetSubmittedKey+"_time",
 Date.now()
 );
 
@@ -188,4 +190,6 @@ document.querySelector(".rating-card").innerHTML =
 window.open(formUrl,"_blank");
 
 
-}
+};
+
+})();
