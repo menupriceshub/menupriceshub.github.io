@@ -179,7 +179,7 @@ Date.now()
 document.querySelector(".rating-card").innerHTML =
 `
 <div class="review-success">
-✅ Thanks for your review!
+ Thanks for your review!
 </div>
 `;
 
