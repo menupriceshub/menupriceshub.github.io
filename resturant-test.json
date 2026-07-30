@@ -46,15 +46,15 @@
    "ratingDistribution": [
     {
       "star": 5,
-      "percent": 72
+      "percent": 55
     },
     {
       "star": 4,
-      "percent": 18
+      "percent": 28
     },
     {
       "star": 3,
-      "percent": 6
+      "percent": 5
     },
     {
       "star": 2,
@@ -62,7 +62,7 @@
     },
     {
       "star": 1,
-      "percent": 1
+      "percent": 2
     }
   ], 
 
