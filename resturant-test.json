@@ -42,6 +42,30 @@
   "rating": 4.5,
   "totalrating": "5500",
 
+
+   "ratingDistribution": [
+    {
+      "star": 5,
+      "percent": 72
+    },
+    {
+      "star": 4,
+      "percent": 18
+    },
+    {
+      "star": 3,
+      "percent": 6
+    },
+    {
+      "star": 2,
+      "percent": 3
+    },
+    {
+      "star": 1,
+      "percent": 1
+    }
+  ], 
+
   "photos": [
     "https://placehold.co/800x600?text=Dominos+1",
     "https://placehold.co/800x600?text=Dominos+2",
