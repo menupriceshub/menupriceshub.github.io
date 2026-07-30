@@ -6,8 +6,7 @@ document.getElementById("about-title").innerHTML = data.title;
 
 document.getElementById("about-content").innerHTML =
 `
-${data.description}<br>
-${data.description2}
+${data.description}
 `;
 
 });
