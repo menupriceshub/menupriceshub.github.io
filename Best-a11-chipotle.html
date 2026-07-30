@@ -1766,7 +1766,7 @@ FAQ
 
 
 
-
+<div id="rating-distribution1"></div>
   
 
 <!-- OVERVIEW -->
@@ -1984,6 +1984,34 @@ for(let i = 1; i <= 5; i++){
 document.querySelector(".rating-stars").innerHTML = stars;
 
 
+// Rating Distribution
+
+let ratingHTML = "";
+
+restaurant.ratingDistribution.forEach(item => {
+
+ratingHTML += `
+
+<div class="r-row">
+
+<span>${item.star}</span>
+
+<div class="r-bar">
+<div class="fill" style="width:${item.percent}%"></div>
+</div>
+
+<span>${item.percent}%</span>
+
+</div>
+
+`;
+
+});
+
+document.getElementById("rating-distribution1").innerHTML = ratingHTML;
+
+
+  
 // Open Hours
 let hoursHTML = "";
 
