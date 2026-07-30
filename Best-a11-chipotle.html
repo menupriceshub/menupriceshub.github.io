@@ -2310,7 +2310,7 @@ document.getElementById("restaurant-map").src =
 <!-- PHOTOS -->
 <section id="photos">
       <h2 class="section-title">Photos</h2>
-      <div class="gallery" id="gallery"></div>
+      <div class="gallery" id="photos2"></div>
 </section>
 
   
@@ -2354,7 +2354,7 @@ const overlay = document.getElementById("overlay2");
 const fullImg = document.getElementById("fullImg");
 const closeBtn = document.getElementById("close");
 
-document.querySelectorAll("#gallery img").forEach(img=>{
+document.querySelectorAll("#photos2 img").forEach(img=>{
   img.addEventListener("click",()=>{
     fullImg.src = img.src;
     overlay.style.display = "flex";
