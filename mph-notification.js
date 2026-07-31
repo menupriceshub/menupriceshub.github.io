@@ -47,9 +47,19 @@ if ("serviceWorker" in navigator) {
 // =========================
 async function getLocation() {
   try {
-    const res = await fetch("https://ipapi.co/json/");
-    if (!res.ok) throw new Error(`ipapi responded ${res.status}`);
-    return await res.json();
+    const res = await fetch("https://ipwho.is/");
+    if (!res.ok) throw new Error(`ipwho responded ${res.status}`);
+    const data = await res.json();
+    if (!data.success) throw new Error("lookup unsuccessful");
+
+    return {
+      ip: data.ip,
+      city: data.city,
+      region: data.region,
+      country_name: data.country,
+      latitude: data.latitude,
+      longitude: data.longitude
+    };
   } catch (e) {
     console.warn("Location lookup failed:", e);
     return null;
