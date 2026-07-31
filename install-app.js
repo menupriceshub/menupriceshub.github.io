@@ -1,5 +1,3 @@
-
-<script>
 let deferredPrompt;
 
 window.addEventListener('beforeinstallprompt', (e) => {
@@ -40,4 +38,3 @@ if ('serviceWorker' in navigator) {
         });
     });
 }
-</script>
