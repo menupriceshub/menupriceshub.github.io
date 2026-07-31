@@ -1,38 +1,43 @@
+
+<script>
 let deferredPrompt;
 
 window.addEventListener('beforeinstallprompt', (e) => {
     e.preventDefault();
     deferredPrompt = e;
 
-    const btn = document.getElementById('installBtn');
-    if (btn) btn.style.display = 'inline-block';
+    document.getElementById('installBtn').style.display = 'inline-block';
 });
 
-function setupInstallButton() {
-    const installBtn = document.getElementById('installBtn');
-    if (!installBtn) return;
+document.getElementById('installBtn').addEventListener('click', async () => {
+    if (!deferredPrompt) return;
 
-    installBtn.addEventListener('click', async () => {
-        if (!deferredPrompt) return;
+    deferredPrompt.prompt();
 
-        deferredPrompt.prompt();
+    const { outcome } = await deferredPrompt.userChoice;
 
-        const { outcome } = await deferredPrompt.userChoice;
-        console.log('Install Result:', outcome);
+    console.log('Install Result:', outcome);
 
-        deferredPrompt = null;
-        installBtn.style.display = 'none';
-    });
-}
-
-// header-widget.js dispatches "headerReady" after injecting #installBtn
-document.addEventListener('headerReady', setupInstallButton);
-
-// fallback: agar headerReady kabhi miss ho jaye (script order badal jaye)
-if (document.getElementById('installBtn')) {
-    setupInstallButton();
-}
+    deferredPrompt = null;
+    document.getElementById('installBtn').style.display = 'none';
+});
 
 window.addEventListener('appinstalled', () => {
     alert('App Installed Successfully!');
 });
+</script>
+
+<!-- Service Worker Register -->
+<script>
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js')
+        .then(reg => {
+            console.log('Service Worker Registered');
+        })
+        .catch(err => {
+            console.log('SW Error:', err);
+        });
+    });
+}
+</script>
