@@ -10,11 +10,22 @@ favicon.rel = 'icon';
 favicon.href = 'favicon.ico';
 document.head.appendChild(favicon);
 
-// 2. <script> - Google Analytics/AdSense
-const script = document.createElement('script');
-script.src = 'https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX';
-script.async = true;
-document.head.appendChild(script);
+
+
+// ===== Google Analytics (gtag.js) =====
+const gaScript = document.createElement('script');
+gaScript.async = true;
+gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-120B2PKSDH';
+document.head.appendChild(gaScript);
+
+const gaInlineScript = document.createElement('script');
+gaInlineScript.textContent = `
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-120B2PKSDH');
+`;
+document.head.appendChild(gaInlineScript);
 
 // 3. <meta> - SEO tags
 const meta = document.createElement('meta');
