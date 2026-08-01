@@ -25,6 +25,14 @@ document.addEventListener("DOMContentLoaded", () => {
         item.className = "faq-item";
 
         item.innerHTML = `
+        <div class="section-header">
+  <h2 class="section-left">FAQ by js
+  </h2>
+  <a href="https://menupriceshub.github.io/faq/" class="section-right">
+    View All
+    <i class="fa-solid fa-chevron-right icon"></i>
+  </a>
+</div>
           <div class="faq-question">
             ${faq.question}
             <span class="faq-icon">+</span>
