@@ -1,0 +1,46 @@
+document.addEventListener("DOMContentLoaded", () => {
+
+  const slug = location.pathname
+    .split("/")
+    .pop()
+    .replace(".html", "")
+    .toLowerCase() || "chipotle";
+
+  fetch("/data/faq.json")
+    .then(res => res.json())
+    .then(data => {
+      const page = data.find(item =>
+        slug.includes(item.slug.toLowerCase())
+      );
+
+      if (!page) return;
+
+      const grid = document.getElementById("faq-grid1");
+      if (!grid) return;
+
+      grid.innerHTML = "";
+
+      page.faq.slice(0, 5).forEach(faq => {
+        const item = document.createElement("div");
+        item.className = "faq-item";
+
+        item.innerHTML = `
+          <div class="faq-question">
+            ${faq.question}
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-answer">
+            ${faq.answer}
+          </div>
+        `;
+
+        item.querySelector(".faq-question").addEventListener("click", () => {
+          item.classList.toggle("active");
+        });
+
+        grid.appendChild(item);
+      });
+    })
+    .catch(err => console.error("FAQ load failed:", err));
+
+});
