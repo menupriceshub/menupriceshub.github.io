@@ -1,40 +1,73 @@
 let deferredPrompt;
 
+// PWA Install Button
 window.addEventListener('beforeinstallprompt', (e) => {
     e.preventDefault();
+
     deferredPrompt = e;
 
-    const btn = document.getElementById('installBtn');
-    if (btn) btn.style.display = 'inline-block';
-});
+    const installBtn = document.getElementById('installBtn');
 
-document.addEventListener('click', async (e) => {
-    if (e.target && e.target.id === 'installBtn') {
-        if (!deferredPrompt) return;
-
-        deferredPrompt.prompt();
-
-        const { outcome } = await deferredPrompt.userChoice;
-        console.log('Install Result:', outcome);
-
-        deferredPrompt = null;
-        e.target.style.display = 'none';
+    if (installBtn) {
+        installBtn.style.display = 'inline-block';
     }
 });
 
-window.addEventListener('appinstalled', () => {
-    alert('App Installed Successfully!');
+
+document.addEventListener('DOMContentLoaded', () => {
+
+    const installBtn = document.getElementById('installBtn');
+
+    if (installBtn) {
+
+        installBtn.addEventListener('click', async () => {
+
+            if (!deferredPrompt) return;
+
+            deferredPrompt.prompt();
+
+            const { outcome } = await deferredPrompt.userChoice;
+
+            console.log('Install Result:', outcome);
+
+            deferredPrompt = null;
+
+            installBtn.style.display = 'none';
+        });
+    }
+
 });
+
+
+// App Installed Event
+window.addEventListener('appinstalled', () => {
+    console.log('PWA Installed Successfully');
+});
+
 
 // Service Worker Register
 if ('serviceWorker' in navigator) {
+
     window.addEventListener('load', () => {
+
         navigator.serviceWorker.register('/sw.js')
-            .then(() => {
-                console.log('Service Worker Registered');
-            })
-            .catch((err) => {
-                console.log('SW Error:', err);
-            });
+        .then((reg) => {
+
+            console.log(
+                'Service Worker Registered:',
+                reg.scope
+            );
+
+        })
+        .catch((err) => {
+
+            console.log(
+                'Service Worker Error:',
+                err
+            );
+
+        });
+
     });
+
 }
