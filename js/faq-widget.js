@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
       // Header (only once)
       grid.innerHTML = `
         <div class="section-header">
-          <h2 class="section-left">Frequently Asked Questions</h2>
+          <h2 class="section-left">FAQ</h2>
           <a href="https://menupriceshub.github.io/faq/" class="section-right">
             View All
             <i class="fa-solid fa-chevron-right icon"></i>
