@@ -297,13 +297,6 @@
   </header>
   `;
 
-  const mount = document.getElementById("site-header");
-  if (mount) {
-    mount.outerHTML = headerHTML;
-  } else {
-    // fallback: agar placeholder nahi mila to body ke start me daal do
-    document.body.insertAdjacentHTML("afterbegin", headerHTML);
-  }
 
   /* =========================================================
      3) JS BEHAVIOUR (menu toggle, close on outside click, more-menu)
