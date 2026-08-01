@@ -271,7 +271,6 @@
   ).join("\n");
 
   const headerHTML = `
-  <header>
     <div class="logo">
       <span class="menulogotext1">Menu</span><span class="menulogotext2">Prices</span><span class="menulogotext3">Hub</span>
     </div>
@@ -294,9 +293,14 @@
         <span class="span2"></span>
       </button>
     </div>
-  </header>
   `;
 
+  const mount = document.getElementById("site-header");
+if (mount) {
+  mount.innerHTML = headerHTML;
+} else {
+  document.body.insertAdjacentHTML("afterbegin", `<header id="site-header">${headerHTML}</header>`);
+}
 
   /* =========================================================
      3) JS BEHAVIOUR (menu toggle, close on outside click, more-menu)
