@@ -1,1 +1,223 @@
+[
+  {
+    "id": "01pizzahut",
+    "name": "Pizza Hut",
+    "city": "Surat",
+    "url": "best-pizzahut.html",
+    "thumbnail": "https://placehold.co/800x600?text=Pizza+Hut+1", 
+    "location": "Mumbai, Maharashtra",
+    "phone": "+91 9876543210",
+    "website": "https://www.pizzahut.co.in",
+    "rating": 4.4,
+    "photos": [
+      "https://placehold.co/800x600?text=Pizza+Hut+1",
+      "https://placehold.co/800x600?text=Pizza+Hut+2",
+      "https://placehold.co/800x600?text=Pizza+Hut+3"
+    ],
+    "menu": [
+      {
+        "name": "Veggie Pizza",
+        "price": "₹299",
+        "photo": "https://placehold.co/300x300?text=Veggie+Pizza"
+      },
+      {
+        "name": "Cheese Pizza",
+        "price": "₹399",
+        "photo": "https://placehold.co/300x300?text=Cheese+Pizza"
+      }
+    ]
+  },
 
+ {
+  "id": "02dominos",
+  "city": "Surat",
+   "url": "best-pizzahut.html",
+    "thumbnail": "https://placehold.co/800x600?text=dominos", 
+  "name": "Domino's Pizza",
+  "location": "Surat, Gujarat",
+  "lat": 19.2512445,
+  "lng": 72.8634726,
+  "phone": "+91 9876543211",
+  "website": "https://www.dominos.co.in",
+   "description":"Domino's Pizza ka menu kaafi popular hai. Food quality aur taste customers ko pasand aata hai.", 
+   "reviewSummary": "Restaurant ka menu kaafi impressive hai. Food quality aur taste dono achhe hain. Overall dining experience satisfying raha.", 
+  "rating": 4.5,
+  "totalrating": "5500",
+
+
+   "ratingDistribution": [
+    {
+      "star": 5,
+      "percent": 55
+    },
+    {
+      "star": 4,
+      "percent": 28
+    },
+    {
+      "star": 3,
+      "percent": 5
+    },
+    {
+      "star": 2,
+      "percent": 3
+    },
+    {
+      "star": 1,
+      "percent": 2
+    }
+  ], 
+
+  "photos": [
+    "https://placehold.co/800x600?text=Dominos+1",
+    "https://placehold.co/800x600?text=Dominos+2",
+    "https://placehold.co/800x600?text=Dominos+3"
+  ],
+  "menu": [
+    {
+      "name": "Panipuri",
+      "price": "₹329",
+      "photo": "https://placehold.co/300x300?text=panipuri"
+    },
+     {
+      "name": "sandwich",
+      "price": "₹329",
+      "photo": "https://placehold.co/300x300?text=sandwich"
+    }, 
+    {
+      "name": "Farmhouse Pizza",
+      "price": "₹329",
+      "photo": "https://placehold.co/300x300?text=Farmhouse"
+    },   
+    {
+      "name": "Bhelpuri",
+      "price": "₹329",
+      "photo": "https://placehold.co/300x300?text=bhelpuri"
+    },   
+     {
+      "name": "masala dosa",
+      "price": "₹329",
+      "photo": "https://placehold.co/300x300?text=dosa"
+    },  
+    {
+      "name": "Peppy Paneer",
+      "price": "₹349",
+      "photo": "https://placehold.co/300x300?text=Peppy+Paneer"
+    }
+  ], 
+   "hours": [
+    {
+      "day": "Monday",
+      "time": "3:00 PM – 12:00 AM"
+    },
+    {
+      "day": "Tuesday",
+      "time": "3:00 PM – 12:00 AM"
+    },
+    {
+      "day": "Wednesday",
+      "time": "3:00 PM – 12:00 AM"
+    },
+    {
+      "day": "Thursday",
+      "time": "3:00 PM – 12:00 AM"
+    },
+    {
+      "day": "Friday",
+      "time": "3:00 PM – 12:00 AM"
+    },
+    {
+      "day": "Saturday",
+      "time": "3:00 PM – 2:00 AM"
+    },
+    {
+      "day": "Sunday",
+      "time": "3:00 PM – 12:00 AM"
+    }
+  ]
+ }, 
+
+  {
+    "id": "03kfc",
+    "name": "KFC",
+    "city": "Surat",
+    "url": "best-pizzahut.html",
+    "thumbnail": "https://placehold.co/800x600?text=kfc", 
+    "location": "Ahmedabad, Gujarat",
+    "phone": "+91 9876543212",
+    "website": "https://online.kfc.co.in",
+    "rating": 4.2,
+    "photos": [
+      "https://placehold.co/800x600?text=KFC+1",
+      "https://placehold.co/800x600?text=KFC+2",
+      "https://placehold.co/800x600?text=KFC+3"
+    ],
+    "menu": [
+      {
+        "name": "Zinger Burger",
+        "price": "₹199",
+        "photo": "https://placehold.co/300x300?text=Zinger"
+      },
+      {
+        "name": "Chicken Bucket",
+        "price": "₹699",
+        "photo": "https://placehold.co/300x300?text=Chicken+Bucket"
+      }
+    ]
+  },
+
+  {
+    "id": "04mcdonalds",
+    "name": "McDonald's",
+    "city": "Surat",
+    "url": "best-pizzahut.html",
+    "thumbnail": "https://placehold.co/800x600?text=mcdonalds", 
+    "location": "Delhi",
+    "phone": "+91 9876543213",
+    "website": "https://www.mcdonaldsindia.com",
+    "rating": 4.5,
+    "photos": [
+      "https://placehold.co/800x600?text=McDonalds+1",
+      "https://placehold.co/800x600?text=McDonalds+2",
+      "https://placehold.co/800x600?text=McDonalds+3"
+    ],
+    "menu": [
+      {
+        "name": "McAloo Tikki",
+        "price": "₹69",
+        "photo": "https://placehold.co/300x300?text=McAloo+Tikki"
+      },
+      {
+        "name": "McVeggie Burger",
+        "price": "₹189",
+        "photo": "https://placehold.co/300x300?text=McVeggie"
+      }
+    ]
+  },
+
+  {
+    "id": "05burgerking",
+    "name": "Burger King",
+    "location": "Pune, Maharashtra",
+    "phone": "+91 9876543214",
+    "website": "https://www.burgerking.in",
+    "rating": 4.1,
+    "photos": [
+      "https://placehold.co/800x600?text=Burger+King+1",
+      "https://placehold.co/800x600?text=Burger+King+2",
+      "https://placehold.co/800x600?text=Burger+King+3"
+    ],
+    "menu": [
+      {
+        "name": "Whopper",
+        "price": "₹249",
+        "photo": "https://placehold.co/300x300?text=Whopper"
+      },
+      {
+        "name": "Veg Crisper",
+        "price": "₹99",
+        "photo": "https://placehold.co/300x300?text=Veg+Crisper"
+      }
+    ]
+  }
+]
