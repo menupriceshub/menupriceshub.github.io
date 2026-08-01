@@ -4,10 +4,10 @@ const FILES_TO_CACHE = [
   "/",
   "/index.html",
   "/manifest.json",
-  "/offline.html",
-  "/css/style.css",
-  "/js/app.js",
-  "/favicon.ico"
+  "/header-widget.js",
+  "/review-widget.js",
+  "/review-widget.css",
+  "/install-app.js"
 ];
 
 // Install
