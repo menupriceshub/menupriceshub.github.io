@@ -7,29 +7,43 @@ document.addEventListener("DOMContentLoaded", () => {
     .toLowerCase() || "chipotle";
 
   fetch("/data/faq.json")
-    .then(res => res.json())
+    .then(res => {
+      if (!res.ok) throw new Error("FAQ JSON not found");
+      return res.json();
+    })
     .then(data => {
+
       const page = data.find(item =>
         slug.includes(item.slug.toLowerCase())
       );
 
-      if (!page) return;
+      if (!page || !page.faq) return;
 
       const grid = document.getElementById("faq-grid1");
       if (!grid) return;
 
-      grid.innerHTML = "";
+      // Header (only once)
+      grid.innerHTML = `
+        <div class="section-header">
+          <h2 class="section-left">Frequently Asked Questions</h2>
+          <a href="https://menupriceshub.github.io/faq/" class="section-right">
+            View All
+            <i class="fa-solid fa-chevron-right icon"></i>
+          </a>
+        </div>
+      `;
 
       page.faq.slice(0, 5).forEach(faq => {
+
         const item = document.createElement("div");
         item.className = "faq-item";
 
         item.innerHTML = `
-        <h1>hello</h1>
           <div class="faq-question">
             ${faq.question}
             <span class="faq-icon">+</span>
           </div>
+
           <div class="faq-answer">
             ${faq.answer}
           </div>
@@ -40,8 +54,12 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
         grid.appendChild(item);
+
       });
+
     })
-    .catch(err => console.error("FAQ load failed:", err));
+    .catch(err => {
+      console.error("FAQ load failed:", err);
+    });
 
 });
