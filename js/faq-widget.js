@@ -40,8 +40,8 @@ document.addEventListener("DOMContentLoaded", () => {
             </a>
           </div>
 
-
-          <div id="faq-grid1"></div>
+<div class="faq-grid" id="faq-grid1">
+          
 
         
       `;
