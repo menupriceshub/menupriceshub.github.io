@@ -12,35 +12,22 @@ document.addEventListener("DOMContentLoaded", () => {
       const restaurant = data.find(item => item.id === id);
       if (!restaurant) return;
 
-      // ===== Baaki sara existing code (name, location, menu etc) yahan =====
+      // ===== Baaki existing code (name, location, menu etc) =====
       document.getElementById("resturant-name1").innerHTML = restaurant.name;
       // ... etc
 
-      // ===== PHOTOS INJECT =====
-      const photosSection = document.getElementById("hero-slider-photo1"); 
-      // ya "photos2" - jo bhi tumhara actual container id hai jisme img dalni hai
-
-      let photoHTML = "";
-      restaurant.photos.forEach(photo => {
-        photoHTML += `<img src="${photo}" alt="${restaurant.name}">`;
-      });
-      photosSection.innerHTML = photoHTML;
-
-      // ===== AB SLIDER CHALAO (photos ready hone ke baad) =====
-      initSlider();
+      // ===== SLIDER DIRECTLY JSON SE BANAO =====
+      initSlider(restaurant.photos, restaurant.name);
 
     });
 
   /* =========================
-     SLIDER FUNCTION
+     SLIDER FUNCTION (JSON images se)
   ========================= */
-  function initSlider() {
+  function initSlider(photos, altText) {
 
-    const targetSection = document.querySelector("#photos");
-    if (!targetSection) return;
-
-    const images = targetSection.querySelectorAll("img");
-    if (images.length === 0) return;
+    const sliderBox = document.querySelector(".auto-slider");
+    if (!sliderBox || !photos || photos.length === 0) return;
 
     const slider = document.createElement("div");
     slider.className = "photo-slider";
@@ -48,13 +35,13 @@ document.addEventListener("DOMContentLoaded", () => {
     const track = document.createElement("div");
     track.className = "photo-track";
 
-    images.forEach((img) => {
+    photos.forEach((photoUrl) => {
       const slide = document.createElement("div");
       slide.className = "photo-slide";
 
       const image = document.createElement("img");
-      image.src = img.src;
-      image.alt = img.alt || "Photo";
+      image.src = photoUrl;
+      image.alt = altText || "Photo";
 
       slide.appendChild(image);
       track.appendChild(slide);
@@ -65,7 +52,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const dotsWrap = document.createElement("div");
     dotsWrap.className = "slider-dots";
 
-    images.forEach((_, i) => {
+    photos.forEach((_, i) => {
       const dot = document.createElement("span");
       if (i === 0) dot.classList.add("active");
       dotsWrap.appendChild(dot);
@@ -73,11 +60,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     slider.appendChild(dotsWrap);
 
-    const sliderBox = document.querySelector(".auto-slider");
-    if (sliderBox) sliderBox.appendChild(slider);
+    sliderBox.appendChild(slider);
 
     let current = 0;
-    const total = images.length;
+    const total = photos.length;
 
     function updateSlider() {
       track.style.transform = `translateX(-${current * 100}%)`;
