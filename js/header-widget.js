@@ -24,8 +24,8 @@
   ========================================================= */
   const css = `
   header{
-    position:fixed;
-    top:0;
+    position:sticky;
+    top:0; 
     z-index:1000;
     background:#fff;
     padding:15px 20px;
