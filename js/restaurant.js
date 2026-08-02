@@ -30,7 +30,23 @@ const website = document.getElementById("websiteurl-info1");
 
 website.href = restaurant.website;
 website.target = "_blank";
-website.rel = "nofollow external noopener noreferrer";
+website.rel = "nofollow noopener noreferrer";
+
+website.textContent = new URL(restaurant.website).hostname.replace("www.", "");
+
+website.addEventListener("click", function(e) {
+
+  let confirmOpen = confirm(
+    "You are leaving MenuPricesHub and opening an external website. Continue?"
+  );
+
+  if(!confirmOpen){
+    e.preventDefault();
+  }
+
+});
+
+  
   
   
 document.getElementById("quick-rating-info1").innerHTML =
