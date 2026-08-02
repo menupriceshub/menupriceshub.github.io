@@ -1539,7 +1539,9 @@ document.getElementById("resturant-name1").innerHTML = restaurant.name;
 
 document.getElementById("location-info1").innerHTML = restaurant.location;
 
-document.getElementById("phonenumber-info1").innerHTML = restaurant.phone;
+  document.getElementById("phonenumber-info1").innerHTML = `
+  <a href="tel:${restaurant.phone}">${restaurant.phone}</a>
+`;
 
 document.getElementById("websiteurl-info1").href =
 restaurant.website;
