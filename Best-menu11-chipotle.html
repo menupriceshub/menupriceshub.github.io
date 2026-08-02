@@ -2163,6 +2163,26 @@ font-size:10px;
 </div>
 </div>
 
+
+  
+<div class="action-buttons">
+    <a id="call-btn" href="#" class="btn-action">
+        📞 Call
+    </a>
+
+    <a id="direction-btn"
+       href="#"
+       target="_blank"
+       rel="nofollow noopener noreferrer"
+       class="btn-action">
+        📍 Directions
+    </a>
+</div>
+
+
+  
+
+  
 </div>
 
 
@@ -2172,6 +2192,55 @@ font-size:10px;
 
 
 </section>
+
+
+<style>
+.action-buttons{
+    display:flex;
+    gap:12px;
+    width:100%;
+    margin:15px 0;
+}
+
+.btn-action{
+    flex:1;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:14px 18px;
+    border:2px solid #e53935;
+    border-radius:25px;
+    background:#fff;
+    color:#e53935;
+    text-decoration:none;
+    font-size:16px;
+    font-weight:600;
+    transition:all .25s ease;
+    box-sizing:border-box;
+}
+
+.btn-action:hover,
+.btn-action:active{
+    background:#e53935;
+    color:#fff;
+}
+
+@media (max-width:480px){
+    .action-buttons{
+        gap:10px;
+    }
+
+    .btn-action{
+        padding:13px;
+        font-size:15px;
+    }
+}
+</style>
+
+
+
+
+  
 
 <!-- Open Hours-->
 
