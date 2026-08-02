@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
       // ... etc
 
       // ===== PHOTOS INJECT =====
-      const photosSection = document.getElementById("photos"); 
+      const photosSection = document.getElementById("hero-slider-photo1"); 
       // ya "photos2" - jo bhi tumhara actual container id hai jisme img dalni hai
 
       let photoHTML = "";
