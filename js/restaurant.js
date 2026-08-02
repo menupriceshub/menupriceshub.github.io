@@ -26,11 +26,11 @@ document.getElementById("direction-btn").href =
 `;
 
 // Website button
-document.getElementById("websiteurl-info1").innerHTML = `
-<a href="${restaurant.website}" target="_blank" rel="nofollow external noopener noreferrer">
-${restaurant.website}
-</a>
-`;
+const website = document.getElementById("websiteurl-info1");
+
+website.href = restaurant.website;
+website.target = "_blank";
+website.rel = "nofollow external noopener noreferrer";
   
   
 document.getElementById("quick-rating-info1").innerHTML =
