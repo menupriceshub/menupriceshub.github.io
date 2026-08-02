@@ -12,8 +12,17 @@ document.getElementById("resturant-name1").innerHTML = restaurant.name;
 
 document.getElementById("location-info1").innerHTML = restaurant.location;
 
+  // Call Button
+document.getElementById("call-btn").href =
+`tel:${restaurant.phone}`;
+
+// Direction Button
+document.getElementById("direction-btn").href =
+`https://www.google.com/maps/search/?api=1&query=${restaurant.lat},${restaurant.lng}`;
+
   document.getElementById("phonenumber-info1").innerHTML = `
   <a href="tel:${restaurant.phone}">${restaurant.phone}</a>
+  
 `;
 
 document.getElementById("websiteurl-info1").href =
