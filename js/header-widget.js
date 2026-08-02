@@ -25,7 +25,7 @@
   const css = `
   header{
     position:sticky;
-    top:5px; 
+    top:0px; 
     z-index:1000;
     background:#fff;
     padding:15px 20px;
