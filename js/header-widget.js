@@ -24,16 +24,15 @@
   ========================================================= */
   const css = `
   header{
-  height:70px;
     position:sticky;
-    top:0; 
+    top:5px; 
     z-index:1000;
     background:#fff;
     padding:15px 20px;
     display:flex;
     justify-content:space-between;
     align-items:center;
-    box-shadow:0 2px 10px rgba(0,0,0,.05);overflow:hidden;
+    box-shadow:0 2px 10px rgba(0,0,0,.05);
   }
 
   .logo{
