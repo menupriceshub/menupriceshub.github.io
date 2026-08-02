@@ -24,6 +24,7 @@
   ========================================================= */
   const css = `
   header{
+  height:70px;
     position:sticky;
     top:0; 
     z-index:1000;
@@ -32,7 +33,7 @@
     display:flex;
     justify-content:space-between;
     align-items:center;
-    box-shadow:0 2px 10px rgba(0,0,0,.05);
+    box-shadow:0 2px 10px rgba(0,0,0,.05);overflow:hidden;
   }
 
   .logo{
