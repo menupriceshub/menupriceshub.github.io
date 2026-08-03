@@ -1042,6 +1042,7 @@ display:none;
 .auto-slider{
   width:100%;
   padding:12px;
+  margin-bottom:45px;
 }
 
 .photo-slider{
@@ -1129,7 +1130,8 @@ display:none;
 ========================= */
 
 #ptg-prices{
-  margin-top:20px;
+  margin-top:25px;
+  
 }
 
 .ptg-sec-title{
