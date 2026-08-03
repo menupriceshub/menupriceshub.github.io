@@ -1725,3 +1725,17 @@ margin-right:10px;
   opacity: 1;
   transform: translateX(-50%) translateY(0);
 }
+
+
+#websiteurl-info1 {
+    font-size: 1.17em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#websiteurl-info1 a {
+    font-size: 1.17em;
+    font-weight: bold;
+    text-decoration: none;
+    color: inherit;
+}
