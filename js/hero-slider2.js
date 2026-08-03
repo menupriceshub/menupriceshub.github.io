@@ -35,13 +35,13 @@ document.addEventListener("DOMContentLoaded", () => {
     const track = document.createElement("div");
     track.className = "photo-track";
 
-    photos.forEach((photoUrl) => {
+    photos.forEach((photo) => {
       const slide = document.createElement("div");
       slide.className = "photo-slide";
 
       const image = document.createElement("img");
-      image.src = photoUrl;
-      image.alt = altText || "Photo";
+      image.src = photo.src;                        // FIX: object se .src nikala
+      image.alt = photo.alt || altText || "Photo";   // FIX: per-photo alt use kiya
 
       slide.appendChild(image);
       track.appendChild(slide);
