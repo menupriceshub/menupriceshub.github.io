@@ -5,7 +5,7 @@ document.getElementById("star-rating").innerHTML = `
 <div class="star-container">
 
 <div class="review-header-city">
-<img src="https://menupriceshub.github.io/file_000000002d3481f69c0b215437b5b895.png" class="corner-img" alt="menupriceshub rating">
+<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgSp9B5hff0YxjJyxXRBD_V-buHxXbFoawz93T4_MVTDjZnItH3Pu0aD6tG9yA0o5EZE5jrO-YUgCpOHobL-9pbqcqZ0BsRoslrghLcH8EsOyrMh2sa1fL_PxG5tSSnRLtYKPd7VWdHT3dqtu9uCH_AjbvvpHvOLKmH_r4QXBWxyrHbP_x7GTJ22tVwvqg/s1600/girl-img-rating.webp" class="corner-img" alt="menupriceshub rating">
 </div>
 
 <div class="rating-card">
