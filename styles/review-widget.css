@@ -103,11 +103,11 @@
   text-align:center;
   font-weight:600;
 }
-
+/* mobile */
 @media(max-width:600px){
 
   .rating-card{
-    padding:25px;
+    padding:40px;
   }
 
   .stars span{
