@@ -68,11 +68,20 @@
     }
   ], 
 
-  "photos": [
-    "https://placehold.co/800x600?text=Dominos+1",
-    "https://placehold.co/800x600?text=Dominos+2",
-    "https://placehold.co/800x600?text=Dominos+3"
-  ],
+"photos": [
+  {
+    "src": "https://placehold.co/800x600?text=KFC+1",
+    "alt": "KFC restaurant interior and dining area"
+  },
+  {
+    "src": "https://placehold.co/800x600?text=KFC+2",
+    "alt": "KFC food menu items"
+  },
+  {
+    "src": "https://placehold.co/800x600?text=KFC+3",
+    "alt": "KFC restaurant exterior view"
+  }
+], 
   "menu": [
     {
       "name": "Panipuri",
