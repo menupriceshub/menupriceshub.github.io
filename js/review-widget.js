@@ -5,7 +5,7 @@ document.getElementById("star-rating").innerHTML = `
 <div class="star-container">
 
 <div class="review-header-city">
-<img src="https://menupriceshub.github.io/file_000000002d3481f69c0b215437b5b895.png" class="corner-img">
+<img src="https://menupriceshub.github.io/file_000000002d3481f69c0b215437b5b895.png" class="corner-img" alt="menupriceshub rating">
 </div>
 
 <div class="rating-card">
