@@ -12,6 +12,7 @@
 <script src="/js/faq-widget.js" defer></script>
 <script src="/js/hero-slider2.js" defer></script>
   <script src="/js/restaurant-table.js" defer></script>
+  <script src="/js/read-more1.js" defer></script>
   
 <script>
 const path = location.pathname
@@ -197,37 +198,6 @@ container.innerHTML = html;
 
 
 
-<div id="page-wrapper" data-restaurant-id="02dominos">
-
-<section id="ptg-prices">
-
-  <div class="ptg-sec-title">
-    <div class="ptg-sec-title-icon">💰</div>
-    <span id="ptg-title-text">Menu With Price List</span>
-  </div>
-
-  <div class="ptg-table-wrap">
-    <table class="ptg-price-table">
-      <thead>
-        <tr>
-          <th>Menu Item</th>
-          <th>Category</th>
-          <th>Calories</th>
-          <th>Price</th>
-        </tr>
-      </thead>
-      <tbody id="ptg-table-body">
-        <tr><td colspan="4">Loading...</td></tr>
-      </tbody>
-    </table>
-  </div>
-
-  <div class="ptg-scroll-note">↔ Swipe table to see more</div>
-  <p class="ptg-price-note">* Prices may vary by location.</p>
-
-</section>
-
-</div>
 
 
 
@@ -368,61 +338,14 @@ Overview
   
 
 </section>
-  <script>
-const text = document.getElementById("overviewText");
-const btn = document.getElementById("readBtn");
-
-const collapsedHeight = 140;
-
-// Word count check
-const wordCount = text.innerText.trim().split(/\s+/).length;
-
-if(wordCount <= 100){
-    // 100 ya kam words hai
-    btn.style.display = "none";
-    text.classList.remove("collapsed");
-    text.style.maxHeight = "none";
-
-}else{
-    // 100 se zyada words hai
-    text.style.maxHeight = collapsedHeight + "px";
-
-    btn.addEventListener("click", () => {
-
-        if (text.classList.contains("collapsed")) {
-
-            text.classList.remove("collapsed");
-            text.style.maxHeight = text.scrollHeight + "px";
-
-            text.addEventListener("transitionend", function handler() {
-                text.style.maxHeight = "none";
-                text.removeEventListener("transitionend", handler);
-            });
-
-            btn.textContent = "Read Less";
-
-        } else {
-
-            text.style.maxHeight = text.scrollHeight + "px";
-
-            requestAnimationFrame(() => {
-                text.classList.add("collapsed");
-                text.style.maxHeight = collapsedHeight + "px";
-            });
-
-            btn.textContent = "Read More";
-        }
-
-    });
-}
-</script>
-
+  
+  
 
 <!-- MENU -->
 
 <!-- MENU2 -->
 <div id="page-wrapper" data-restaurant-id="02dominos">
-  <!-- baaki sab HTML content yahan -->
+  
 </div>
 <script src="js/restaurant.js" defer></script>
 
