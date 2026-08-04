@@ -1,0 +1,8 @@
+{
+  "title": "Domino's Menu With Price List",
+  "items": [
+    { "name": "Margherita Pizza", "category": "Pizza", "calories": 850, "price": "$8.99" },
+    { "name": "Farmhouse Pizza", "category": "Pizza", "calories": 920, "price": "$10.99" },
+    { "name": "Peppy Paneer Pizza", "category": "Pizza", "calories": 900, "price": "$10.49" }
+  ]
+}
