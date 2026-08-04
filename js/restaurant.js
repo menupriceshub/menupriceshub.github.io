@@ -70,7 +70,7 @@ let photoHTML="";
 
 restaurant.photos.forEach(photo=>{
 photoHTML += `
-<img src="${photo.src}" alt="${photo.alt}" width="200">
+<img src="${photo.src}" alt="${photo.alt}" width="200" loading="lazy">
 `;
 });
 
