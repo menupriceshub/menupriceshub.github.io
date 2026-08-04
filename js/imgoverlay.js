@@ -10,6 +10,15 @@ document.getElementById("photos2").addEventListener("click", function(e){
   }
 });
 
+
+// Dynamic images ke liye
+document.getElementById("img-slide1").addEventListener("click", function(e){
+  if(e.target.tagName === "IMG"){
+    fullImg.src = e.target.src;
+    overlay.style.display = "flex";
+  }
+});
+
 // Close button
 closeBtn.addEventListener("click", function(){
   overlay.style.display = "none";
