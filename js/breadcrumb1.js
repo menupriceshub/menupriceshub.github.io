@@ -1,4 +1,3 @@
-<script>
 (function(){
 
 const container = document.getElementById("breadcrumb1");
@@ -34,4 +33,3 @@ html += '<a href="'+currentPath+'/">'+name+'</a>';
 container.innerHTML = html;
 
 })();
-</script>
