@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   if (!restaurantId) return;
 
-  fetch(`/data/${restaurantId}.json`)
+  fetch(`/data/restaurant-table/${restaurantId}.json`)
     .then(res => {
       if (!res.ok) throw new Error('Not found');
       return res.json();
