@@ -1735,12 +1735,14 @@ margin-right:10px;
 
 
 #websiteurl-info1 {
-    font-weight: bold;
+  font-size: 1.17em;
+    font-weight:600;
     text-decoration: none;
 }
 
 #websiteurl-info1 a {
-    font-weight: bold;
+    font-size: 1.17em;
+    font-weight:600;
     text-decoration: none;
     color: inherit;
 }
