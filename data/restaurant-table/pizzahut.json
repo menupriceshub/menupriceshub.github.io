@@ -1,0 +1,7 @@
+{
+  "title": "Pizza Hut Menu With Price List",
+  "items": [
+    { "name": "Pan Pizza", "category": "Pizza", "calories": 980, "price": "$9.99" },
+    { "name": "Stuffed Crust", "category": "Pizza", "calories": 1100, "price": "$12.99" }
+  ]
+}
