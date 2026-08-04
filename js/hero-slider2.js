@@ -42,7 +42,8 @@ document.addEventListener("DOMContentLoaded", () => {
       const image = document.createElement("img");
       image.src = photo.src;                        // FIX: object se .src nikala
       image.alt = photo.alt || altText || "Photo";   // FIX: per-photo alt use kiya
-
+image.id = "img-slide1";
+      
       slide.appendChild(image);
       track.appendChild(slide);
     });
