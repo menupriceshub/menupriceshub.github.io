@@ -7,7 +7,7 @@ document.head.appendChild(link);
 // Favicon
 const favicon = document.createElement('link');
 favicon.rel = 'icon';
-favicon.href = 'favicon.ico';
+favicon.href = 'https://menupriceshub.github.io/menupriceshub-512x512.png';
 document.head.appendChild(favicon);
 
 
