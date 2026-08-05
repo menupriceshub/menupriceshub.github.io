@@ -1,0 +1,12 @@
+# robots.txt for MenuPricesHub
+User-agent: *
+Allow: /
+
+# Block unnecessary files (optional)
+Disallow: /404.html
+
+# Sitemap
+Sitemap: https://menupriceshub.github.io/sitemap.xml
+
+# Host
+Host: https://menupriceshub.github.io
