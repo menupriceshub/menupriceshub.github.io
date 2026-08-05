@@ -1,1 +1,24 @@
+<div id="sitemap-list"></div>
 
+<script>
+fetch("/restaurants.json")
+.then(res => res.json())
+.then(data => {
+
+let html = "<ul>";
+
+data.forEach(item => {
+  html += `
+  <li>
+    <a href="/${item.url}">
+      ${item.name} - ${item.city}
+    </a>
+  </li>`;
+});
+
+html += "</ul>";
+
+document.getElementById("sitemap-list").innerHTML = html;
+
+});
+</script>
