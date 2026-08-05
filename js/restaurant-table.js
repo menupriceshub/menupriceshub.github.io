@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const wrapper = document.getElementById("page-wrapper");
   const restaurantId = wrapper?.dataset.restaurantId;
   const container = document.getElementById("menu-price-table-section1");
+  const priceRangeEl = document.getElementById("ptg-price-range");
 
   if (!restaurantId || !container) return;
 
@@ -11,15 +12,61 @@ document.addEventListener("DOMContentLoaded", () => {
       return res.json();
     })
     .then(data => {
+
+      const toNum = (p) => parseFloat(p.replace(/[^0-9.]/g, ""));
+
+      const byCategory = {};
+      data.items.forEach(item => {
+        if (!byCategory[item.category]) byCategory[item.category] = [];
+        byCategory[item.category].push(toNum(item.price));
+      });
+
+      const mainCategories = ["Pizza", "Burger"];
+      const getMinMax = (categories) => {
+        let all = [];
+        categories.forEach(cat => {
+          if (byCategory[cat]) all = all.concat(byCategory[cat]);
+        });
+        return { min: Math.min(...all), max: Math.max(...all) };
+      };
+
+      const main = getMinMax(mainCategories);
+      const side = byCategory["Sides"]
+        ? { min: Math.min(...byCategory["Sides"]), max: Math.max(...byCategory["Sides"]) }
+        : { min: 0, max: 0 };
+      const bev = byCategory["Beverages"]
+        ? { min: Math.min(...byCategory["Beverages"]), max: Math.max(...byCategory["Beverages"]) }
+        : { min: 0, max: 0 };
+
+      const perPersonMin = Math.round(main.min + side.min + bev.min);
+      const perPersonMax = Math.round(main.max + side.max + bev.max);
+      const forTwoMin = perPersonMin * 2;
+      const forTwoMax = perPersonMax * 2;
+
+      // ===== User-friendly badge with clear labels =====
+      if (priceRangeEl) {
+        priceRangeEl.innerHTML = `
+          <div class="ptg-price-card">
+            <div class="ptg-price-main">
+              <span class="ptg-price-icon">💰</span>
+              <span class="ptg-price-value">₹${forTwoMin} – ₹${forTwoMax}</span>
+              <span class="ptg-price-label">for two people</span>
+            </div>
+            <div class="ptg-price-sub">
+              (approx. ₹${perPersonMin} – ₹${perPersonMax} per person, based on 1 main course + 1 side + 1 drink)
+            </div>
+          </div>
+        `;
+      }
+
+      // ===== Table (unchanged) =====
       container.innerHTML = `
         <section id="ptg-prices">
-
           <div class="ptg-sec-title">
             <div class="ptg-sec-title-line"></div>
             <h2>${data.title}</h2>
             <div class="ptg-sec-title-line"></div>
           </div>
-
           <div class="ptg-table-wrap">
             <table class="ptg-table">
               <thead>
@@ -30,7 +77,6 @@ document.addEventListener("DOMContentLoaded", () => {
                   <th>Price</th>
                 </tr>
               </thead>
-
               <tbody>
                 ${data.items.map(item => `
                   <tr>
@@ -41,18 +87,12 @@ document.addEventListener("DOMContentLoaded", () => {
                   </tr>
                 `).join("")}
               </tbody>
-
             </table>
           </div>
-
         </section>
       `;
     })
     .catch(() => {
-      container.innerHTML = `
-        <p class="ptg-no-menu">
-          Menu is currently unavailable.
-        </p>
-      `;
+      container.innerHTML = `<p class="ptg-no-menu">Menu is currently unavailable.</p>`;
     });
 });
