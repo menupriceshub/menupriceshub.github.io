@@ -2,11 +2,13 @@
 
 <xsl:stylesheet 
 version="1.0"
-xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+xmlns:s="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <xsl:template match="/">
 
 <html>
+
 <head>
 
 <title>MenuPricesHub Sitemap</title>
@@ -56,6 +58,7 @@ text-align:left;
 td{
 padding:14px;
 border-bottom:1px solid #eee;
+word-break:break-word;
 }
 
 tr:hover{
@@ -68,6 +71,10 @@ text-decoration:none;
 font-weight:600;
 }
 
+a:hover{
+color:#ff4d00;
+}
+
 .badge{
 background:#fff0e8;
 color:#ff4d00;
@@ -75,6 +82,12 @@ padding:5px 10px;
 border-radius:20px;
 font-size:13px;
 }
+
+.priority{
+font-weight:bold;
+color:#16a34a;
+}
+
 
 @media(max-width:600px){
 
@@ -87,7 +100,7 @@ padding:15px;
 }
 
 table{
-font-size:14px;
+font-size:13px;
 }
 
 th,td{
@@ -104,6 +117,7 @@ padding:10px;
 <body>
 
 <div class="container">
+
 
 <h1>🍕 MenuPricesHub Sitemap</h1>
 
@@ -125,51 +139,69 @@ All pages indexed by MenuPricesHub
 </tr>
 
 
-<xsl:for-each select="urlset/url">
+<xsl:for-each select="s:urlset/s:url">
+
 
 <tr>
+
 
 <td>
 
 <a>
 
 <xsl:attribute name="href">
-<xsl:value-of select="loc"/>
+
+<xsl:value-of select="s:loc"/>
+
 </xsl:attribute>
 
-<xsl:value-of select="loc"/>
+<xsl:value-of select="s:loc"/>
 
 </a>
 
 </td>
 
 
+
 <td>
 
 <span class="badge">
-<xsl:value-of select="changefreq"/>
+
+<xsl:value-of select="s:changefreq"/>
+
 </span>
 
 </td>
 
 
+
 <td>
-<xsl:value-of select="priority"/>
+
+<span class="priority">
+
+<xsl:value-of select="s:priority"/>
+
+</span>
+
 </td>
 
 
 </tr>
+
 
 </xsl:for-each>
 
 
 </table>
 
+
 </div>
+
 
 </body>
 
 </html>
+
 
 </xsl:template>
 
