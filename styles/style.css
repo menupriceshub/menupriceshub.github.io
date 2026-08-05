@@ -1745,3 +1745,135 @@ margin-right:10px;
     text-decoration: none;
     color: inherit;
 }
+
+
+/* ===== Section ===== */
+#ptg-prices{
+    margin:40px 0;
+    font-family:Arial,sans-serif;
+}
+
+/* ===== Title ===== */
+.ptg-sec-title{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:12px;
+    margin-bottom:20px;
+}
+
+.ptg-sec-title h2{
+    margin:0;
+    font-size:28px;
+    font-weight:700;
+    color:#222;
+    text-align:center;
+}
+
+.ptg-sec-title-line{
+    flex:1;
+    max-width:70px;
+    height:3px;
+    background:#ff4d00;
+    border-radius:20px;
+}
+
+/* ===== Table Wrapper ===== */
+.ptg-table-wrap{
+    overflow-x:auto;
+    border-radius:14px;
+    background:#fff;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+}
+
+/* ===== Table ===== */
+.ptg-table{
+    width:100%;
+    border-collapse:collapse;
+    min-width:700px;
+    background:#fff;
+}
+
+.ptg-table thead{
+    background:#ff4d00;
+}
+
+.ptg-table th{
+    color:#fff;
+    padding:16px;
+    font-size:15px;
+    font-weight:700;
+    text-align:left;
+    white-space:nowrap;
+}
+
+.ptg-table td{
+    padding:15px 16px;
+    font-size:15px;
+    color:#333;
+    border-bottom:1px solid #eee;
+}
+
+/* Alternate Rows */
+.ptg-table tbody tr:nth-child(even){
+    background:#fafafa;
+}
+
+/* Hover */
+.ptg-table tbody tr:hover{
+    background:#fff4ef;
+    transition:.3s;
+}
+
+/* Calories */
+.ptg-td-cal{
+    text-align:center;
+    font-weight:600;
+    color:#444;
+}
+
+/* Price */
+.ptg-td-price{
+    font-weight:700;
+    color:#ff4d00;
+}
+
+/* No Menu */
+.ptg-no-menu{
+    padding:25px;
+    text-align:center;
+    background:#fff4ef;
+    border:1px solid #ffd2bf;
+    border-radius:12px;
+    color:#ff4d00;
+    font-weight:600;
+}
+
+/* Scrollbar */
+.ptg-table-wrap::-webkit-scrollbar{
+    height:8px;
+}
+
+.ptg-table-wrap::-webkit-scrollbar-thumb{
+    background:#ff4d00;
+    border-radius:20px;
+}
+
+.ptg-table-wrap::-webkit-scrollbar-track{
+    background:#f2f2f2;
+}
+
+/* ===== Mobile ===== */
+@media(max-width:768px){
+
+    .ptg-sec-title h2{
+        font-size:22px;
+    }
+
+    .ptg-table th,
+    .ptg-table td{
+        padding:12px;
+        font-size:14px;
+    }
+
+}
