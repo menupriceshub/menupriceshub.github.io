@@ -1,60 +1,29 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const wrapper = document.getElementById("page-wrapper");
-  const restaurantId = wrapper?.dataset.restaurantId;
-  const container = document.getElementById("menu-price-table-section1");
+document.addEventListener('DOMContentLoaded', function () {
+  const wrapper = document.getElementById('page-wrapper');
+  const restaurantId = wrapper?.getAttribute('data-restaurant-id');
+  const tbody = document.getElementById('ptg-table-body');
+  const titleEl = document.getElementById('ptg-title-text');
 
-  if (!restaurantId || !container) return;
+  if (!restaurantId) return;
 
   fetch(`/data/restaurant-table/${restaurantId}.json`)
     .then(res => {
-      if (!res.ok) throw new Error("Not found");
+      if (!res.ok) throw new Error('Not found');
       return res.json();
     })
     .then(data => {
+      if (titleEl && data.title) titleEl.textContent = data.title;
 
-      const categories = [...new Set(data.items.map(item => item.category))];
-
-      container.innerHTML = `
-        <section id="ptg-prices">
-
-          <div class="ptg-sec-title">
-            <div class="ptg-sec-title-line"></div>
-            <h2>${data.title}</h2>
-            <div class="ptg-sec-title-line"></div>
-          </div>
-
-          ${categories.map(category => `
-            <h3 class="ptg-category-title">${category}</h3>
-
-            <div class="ptg-table-wrap">
-              <table class="ptg-table">
-                <thead>
-                  <tr>
-                    <th>Menu Item</th>
-                    <th>Calories</th>
-                    <th>Price</th>
-                  </tr>
-                </thead>
-
-                <tbody>
-                  ${data.items
-                    .filter(item => item.category === category)
-                    .map(item => `
-                      <tr>
-                        <td>${item.name}</td>
-                        <td class="ptg-td-cal">${item.calories}</td>
-                        <td class="ptg-td-price">${item.price}</td>
-                      </tr>
-                    `).join("")}
-                </tbody>
-              </table>
-            </div>
-          `).join("")}
-
-        </section>
-      `;
+      tbody.innerHTML = data.items.map(item => `
+        <tr>
+          <td>${item.name}</td>
+          <td>${item.category}</td>
+          <td class="ptg-td-cal">${item.calories}</td>
+          <td class="ptg-td-price">${item.price}</td>
+        </tr>
+      `).join('');
     })
     .catch(() => {
-      container.innerHTML = "<p>Menu is currently unavailable.</p>";
+      tbody.innerHTML = '<tr><td colspan="4">Menu abhi available nahi hai.</td></tr>';
     });
 });
