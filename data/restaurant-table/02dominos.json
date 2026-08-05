@@ -1,8 +1,24 @@
 {
   "title": "Domino's Menu With Price List",
   "items": [
-    { "name": "Margherita Pizza", "category": "Pizza", "calories": 850, "price": "$8.99" },
-    { "name": "Farmhouse Pizza", "category": "Pizza", "calories": 920, "price": "$10.99" },
-    { "name": "Peppy Paneer Pizza", "category": "Pizza", "calories": 900, "price": "$10.49" }
-  ]
+  { "name": "Margherita Pizza", "category": "Pizza", "calories": 850, "price": "$8.99" },
+  { "name": "Farmhouse Pizza", "category": "Pizza", "calories": 920, "price": "$10.99" },
+  { "name": "Pepperoni Pizza", "category": "Pizza", "calories": 980, "price": "$11.99" },
+
+  { "name": "Classic Veg Burger", "category": "Burger", "calories": 620, "price": "$6.99" },
+  { "name": "Cheese Burger", "category": "Burger", "calories": 710, "price": "$7.99" },
+  { "name": "Chicken Burger", "category": "Burger", "calories": 760, "price": "$8.49" },
+
+  { "name": "French Fries", "category": "Sides", "calories": 340, "price": "$3.49" },
+  { "name": "Garlic Bread", "category": "Sides", "calories": 290, "price": "$3.99" },
+  { "name": "Onion Rings", "category": "Sides", "calories": 360, "price": "$4.49" },
+
+  { "name": "Coca-Cola", "category": "Beverages", "calories": 140, "price": "$1.99" },
+  { "name": "Orange Juice", "category": "Beverages", "calories": 120, "price": "$2.49" },
+  { "name": "Cold Coffee", "category": "Beverages", "calories": 220, "price": "$3.49" },
+
+  { "name": "Chocolate Brownie", "category": "Desserts", "calories": 430, "price": "$4.99" },
+  { "name": "Vanilla Ice Cream", "category": "Desserts", "calories": 250, "price": "$3.99" },
+  { "name": "Chocolate Sundae", "category": "Desserts", "calories": 390, "price": "$5.49" }
+]
 }
