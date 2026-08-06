@@ -5,7 +5,7 @@ const container = document.getElementById("mph-latest-blog");
 if(!container) return;
 
 
-fetch("/data/blog-posts.json")
+fetch("/data/blog-post.json")
 .then(res => res.json())
 .then(data => {
 
