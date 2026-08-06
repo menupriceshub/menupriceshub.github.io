@@ -59,9 +59,9 @@ if (avgInfoEl) {
       container.innerHTML = `
         <section id="ptg-prices">
           <div class="ptg-sec-title">
-            <div class="ptg-sec-title-line"></div>
+            <div class="ptg-sec-title-line">line</div>
             <h2>${data.title}</h2>
-            <div class="ptg-sec-title-line"></div>
+            <div class="ptg-sec-title-line">line2</div>
           </div>
           <div class="ptg-table-wrap">
             <table class="ptg-table">
