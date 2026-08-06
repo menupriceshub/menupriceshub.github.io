@@ -1,4 +1,14 @@
 
+
+#mobileBar .nav-item.active i {
+  color: red !important;
+}
+
+#mobileBar .nav-item.active {
+  color: red;
+}
+
+
 .elb-hero-slider{
     position:relative;
     width:100%;
