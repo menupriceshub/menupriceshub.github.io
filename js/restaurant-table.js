@@ -49,8 +49,8 @@ if (avgInfoEl) {
   avgInfoEl.parentElement.innerHTML = `
     <i class="fa fa-receipt" style="font-size:15px;color:red"></i>
     <span class="ptg-tooltip-wrap">
-      ₹${perPersonMin} – ₹${perPersonMax} per person
-      <span class="ptg-tooltip-text">per person, based on 1 main course + 1 side + 1 drink)For two: ₹${forTwoMin} – ₹${forTwoMax}</span>
+      ₹${perPersonMin} – ₹${perPersonMax}
+      <span class="ptg-tooltip-text">₹${perPersonMin} – ₹${perPersonMax}per person, based on 1 main course + 1 side + 1 drink)For two: ₹${forTwoMin} – ₹${forTwoMax}</span>
     </span>
   `;
 }
