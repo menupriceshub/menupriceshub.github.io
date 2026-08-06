@@ -1,31 +1,69 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-const grid = document.getElementById("popular-restaurants-grid");
-
-if(!grid) return;
-
 fetch("/data/restaurants.json")
 .then(res => res.json())
 .then(restaurants => {
 
 
-const popular = restaurants
+renderPopular(
+  restaurants,
+  "popular-restaurant-section1",
+  "Restaurant"
+);
+
+
+renderPopular(
+  restaurants,
+  "popular-cafe-section1",
+  "Cafe"
+);
+
+
+});
+
+
+});
+
+
+function renderPopular(data, sectionId, category){
+
+const section = document.getElementById(sectionId);
+
+if(!section) return;
+
+
+// filter category
+const items = data
+.filter(r => r.category === category)
 .map(r => ({
-    ...r,
-    score: (Number(r.rating) * 20) + (Number(r.totalrating) / 100)
+ ...r,
+ score: (Number(r.rating)*20) + (Number(r.totalrating)/100)
 }))
-.sort((a,b)=> b.score - a.score)
+.sort((a,b)=>b.score-a.score)
 .slice(0,6);
 
 
 
-grid.innerHTML = popular.map(r => `
+section.innerHTML = `
+
+<div class="section-header">
+<h2 class="section-left">Popular ${category}s</h2>
+
+<a href="#" class="section-right">
+View All
+<i class="fa-solid fa-chevron-right icon"></i>
+</a>
+
+</div>
+
+
+<div class="restaurant-grid">
+
+${items.map(r=>`
 
 <div class="restaurant-card">
 
-<img class="restaurant-img" 
-src="${r.thumbnail}" 
-alt="${r.name}">
+<img class="restaurant-img" src="${r.thumbnail}">
 
 <div class="restaurant-content">
 
@@ -34,20 +72,17 @@ ${r.name}
 </h3>
 
 <div class="restaurant-info">
-${r.city} • Restaurant
+${r.city} • ${category}
 </div>
 
 
 <div class="restaurant-bottom">
 
 <div class="restaurant-rating">
-
 <span>${r.rating}</span>
-
 <span class="restaurant-stars">
 ${generateStars(r.rating)}
 </span>
-
 </div>
 
 
@@ -55,42 +90,34 @@ ${generateStars(r.rating)}
 View
 </a>
 
-
 </div>
 
 </div>
 
 </div>
 
-`).join("");
+`).join("")}
+
+</div>
+
+`;
+
+}
 
 
 
-})
-.catch(err=>{
-console.log("Restaurant JSON Error:",err);
-});
-
-
-});
-
-
-// Star generate function
 function generateStars(rating){
 
-let stars="";
+let html="";
 
 for(let i=1;i<=5;i++){
 
-if(i <= Math.round(rating)){
-stars += `<i class="fas fa-star"></i>`;
-}
-else{
-stars += `<i class="far fa-star"></i>`;
-}
+html += i <= Math.round(rating)
+? `<i class="fas fa-star"></i>`
+: `<i class="far fa-star"></i>`;
 
 }
 
-return stars;
+return html;
 
 }
