@@ -9,7 +9,8 @@ Overview
 <a href="#menu" class="nav-tab">
 Menu
 </a>
-<a href="#ptg-prices" class="nav-tab">
+
+<a href="#menu-price-table-section1" class="nav-tab">
 Price List
 </a>
 
