@@ -1881,30 +1881,32 @@ margin-right:10px;
 
 
 
-.ptg-price-value {
+.ptg-tooltip-wrap {
   position: relative;
-  display: inline-block;
-  border-bottom: 1px dotted black;
-  cursor: pointer;  
+  cursor: pointer;
+  border-bottom: 1px dashed #999;
 }
 
-.tooltip-ptg-price-sub {
+.ptg-tooltip-text {
   visibility: hidden;
-  width: 130px;
-  background-color: black;
-  color: #ffffff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
+  opacity: 0;
   position: absolute;
-  z-index: 1;
-  top: 100%;
-  left: 65%;
-  margin-left: -65px;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #333;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  white-space: nowrap;
+  transition: opacity 0.2s;
+  z-index: 10;
 }
 
-.ptg-price-value:hover .tooltip-ptg-price-sub {
+.ptg-tooltip-wrap:hover .ptg-tooltip-text {
   visibility: visible;
+  opacity: 1;
 }
 
  
