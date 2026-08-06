@@ -48,7 +48,10 @@ const avgInfoEl = document.getElementById("quick-avgperperson-info1");
 if (avgInfoEl) {
   avgInfoEl.parentElement.innerHTML = `
     <i class="fa fa-receipt" style="font-size:15px;color:red"></i>
-    <span id="quick-avgperperson-info1"></span> ₹${perPersonMin} – ₹${perPersonMax}
+    <span class="ptg-tooltip-wrap">
+      ₹${perPersonMin} – ₹${perPersonMax} per person
+      <span class="ptg-tooltip-text">For two: ₹${forTwoMin} – ₹${forTwoMax}</span>
+    </span>
   `;
 }
 
