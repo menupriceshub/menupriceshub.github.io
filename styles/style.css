@@ -1877,3 +1877,49 @@ margin-right:10px;
     }
 
 }
+
+
+
+
+
+.ptg-price-value{
+    position:relative;
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    cursor:pointer;
+}
+.tooltip-ptg-price-sub{
+    position:absolute;
+    bottom:130%;
+    left:50%;
+    transform:translateX(-50%);
+    width:220px;
+    background:#222;
+    color:#fff;
+    padding:10px;
+    border-radius:8px;
+    font-size:14px;
+    line-height:1.5;
+    text-align:center;
+    opacity:0;
+    visibility:hidden;
+    transition:.25s ease;
+    z-index:999;
+}
+
+.tooltip-ptg-price-sub::after{
+    content:"";
+    position:absolute;
+    top:100%;
+    left:50%;
+    transform:translateX(-50%);
+    border:7px solid transparent;
+    border-top-color:#222;
+}
+
+.ptg-price-value:hover .tooltip-ptg-price-sub{
+    opacity:1;
+    visibility:visible;
+}
+
