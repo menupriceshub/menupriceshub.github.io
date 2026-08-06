@@ -56,6 +56,10 @@ document.addEventListener("DOMContentLoaded", () => {
               (approx. ₹${perPersonMin} – ₹${perPersonMax} per person, based on 1 main course + 1 side + 1 drink)
             </div>
           </div>
+          <div class="info-box">
+  <i class="fa fa-receipt" style="font-size:15px;color:red"></i>
+  <span id="quick-avgperperson-info1"></span> ${forTwoMin} – ₹${forTwoMax}
+</div>
         `;
       }
 
