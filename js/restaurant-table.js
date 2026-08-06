@@ -50,26 +50,10 @@ if (avgInfoEl) {
     <i class="fa fa-receipt" style="font-size:15px;color:red"></i>
     <span class="ptg-tooltip-wrap">
       ₹${perPersonMin} – ₹${perPersonMax} per person
-      <span class="ptg-tooltip-text">For two: ₹${forTwoMin} – ₹${forTwoMax}</span>
+      <span class="ptg-tooltip-text">per person, based on 1 main course + 1 side + 1 drink)For two: ₹${forTwoMin} – ₹${forTwoMax}</span>
     </span>
   `;
 }
-
-      // ===== User-friendly badge with clear labels =====
-      if (priceRangeEl) {
-        priceRangeEl.innerHTML = `
-          <div class="ptg-price-card">
-            <div class="ptg-price-main">
-              <span class="ptg-price-icon">💰</span>
-              <span class="ptg-price-value">₹${forTwoMin} – ₹${forTwoMax}</span>
-              <span class="ptg-price-label">for two people</span>
-            </div>
-            <div class="ptg-price-sub">
-              (approx. ₹${perPersonMin} – ₹${perPersonMax} per person, based on 1 main course + 1 side + 1 drink)
-            </div>
-          </div>
-        `;
-      }
 
       // ===== Table (unchanged) =====
       container.innerHTML = `
