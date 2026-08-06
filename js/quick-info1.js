@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const quickInfo = document.getElementById("quick-info");
+  const quickInfo = document.getElementById("quickinfo-container1");
 
   quickInfo.innerHTML = `
     <div class="info-box">
