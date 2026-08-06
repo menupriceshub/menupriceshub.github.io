@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
         priceRangeEl.innerHTML = `
           <div class="ptg-price-card">
             <div class="ptg-price-main">
-              
+              <span class="ptg-price-icon">💰</span>
               <span class="ptg-price-value">₹${forTwoMin} – ₹${forTwoMax}</span>
               <span class="ptg-price-label">for two people</span>
             </div>
