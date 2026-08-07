@@ -1,5 +1,34 @@
 [
   {
+  "slug": "home",
+  "faq": [
+    {
+      "question": "What is MenuPricesHub?",
+      "answer": "MenuPricesHub is a restaurant discovery platform that helps users find restaurant menu prices, nutrition information, opening hours, reviews, and dining options across different cities."
+    },
+    {
+      "question": "How accurate are the menu prices on MenuPricesHub?",
+      "answer": "We regularly update restaurant menu prices and related information. However, prices may vary depending on the restaurant location, promotions, and local taxes."
+    },
+    {
+      "question": "Does MenuPricesHub provide calorie and nutrition information?",
+      "answer": "Yes, many restaurant pages include calorie counts, nutrition facts, and food details to help users make informed dining choices."
+    },
+    {
+      "question": "Why use MenuPricesHub to compare restaurant menus?",
+      "answer": "MenuPricesHub makes it easy to compare restaurant menu prices, discover new restaurants, check food categories, and stay updated with the latest menu changes in one place."
+    },
+    {
+      "question": "Why should I use MenuPricesHub?",
+      "answer": "MenuPricesHub helps you compare restaurant menu prices, discover new restaurants, explore food categories, and stay updated with the latest menu information in one place."
+    },
+    {
+      "question": "Can I find restaurant menu prices near me?",
+      "answer": "Yes, MenuPricesHub allows users to explore restaurant menu prices, popular restaurants, cafes, and dining options by city and location."
+    }
+  ]
+}, 
+  {
     "slug": "mcdonalds",
     "faq": [
       {
