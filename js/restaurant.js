@@ -82,24 +82,37 @@ menuHTML += `
 });
 
 document.getElementById("menu2grid").innerHTML = menuHTML;
+  
 
-  const similar = data.filter(item =>
-    item.id !== restaurant.id &&
-    item.city === restaurant.city
+const similar = data.filter(item =>
+  item.id !== restaurant.id &&
+  item.city === restaurant.city
 );
 
-let html = "";
+let html = `
+<div class="section-header">
+  <h2 class="section-left">Similar Restaurants</h2>
+  <a href="/restaurants.html" class="section-right">
+    View All
+    <i class="fa-solid fa-chevron-right icon"></i>
+  </a>
+</div>
+
+<div class="similar-grid">
+`;
 
 similar.forEach(item => {
-    html += `
+  html += `
     <div class="similar-card">
-        <img src="${item.thumbnail}" alt="${item.name}" loading="lazy">
-        <a href="${item.url}">${item.name} Menu
-      </a>
-    </div>`;
+      <img src="${item.thumbnail}" alt="${item.name}" loading="lazy">
+      <a href="${item.url}">${item.name} Menu</a>
+    </div>
+  `;
 });
 
-document.getElementById("similar-grid1").innerHTML = html;
+html += `</div>`;
+
+document.getElementById("similar-restaurants1").innerHTML = html;
 
 
 let rating = restaurant.rating;
