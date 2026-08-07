@@ -2,6 +2,7 @@
   {
     "id": "01pizzahut",
     "name": "Pizza Hut",
+    "category": "Restaurant",
     "city": "Surat",
     "url": "best-pizzahut.html",
     "thumbnail": "https://placehold.co/800x600?text=Pizza+Hut+1",
@@ -43,6 +44,7 @@
 
   {
     "id": "02dominos",
+    "category": "Restaurant",
     "city": "Surat",
     "url": "best-pizzahut.html",
     "thumbnail": "https://placehold.co/800x600?text=dominos",
@@ -89,6 +91,7 @@
 
   {
     "id": "03kfc",
+    "category": "Restaurant",
     "name": "KFC",
     "city": "Surat",
     "url": "best-pizzahut.html",
@@ -131,6 +134,7 @@
 
   {
     "id": "04mcdonalds",
+    "category": "Restaurant",
     "name": "McDonald's",
     "city": "Surat",
     "url": "best-pizzahut.html",
@@ -173,6 +177,7 @@
 
   {
     "id": "05burgerking",
+    "category": "Restaurant",
     "name": "Burger King",
     "city": "Surat",
     "url": "best-pizzahut.html",
@@ -211,5 +216,132 @@
       { "day": "Saturday", "time": "10:00 AM – 12:00 AM" },
       { "day": "Sunday", "time": "10:00 AM – 11:00 PM" }
     ]
-  }
+  }, 
+{
+    "id": "06starbuck",
+    "category": "cafe",
+    "name": "starbucks cafe",
+    "city": "Surat",
+    "url": "best-pizzahut.html",
+    "thumbnail": "https://placehold.co/800x600?text=mcdonalds",
+    "location": "Delhi",
+    "lat": 28.7040592,
+    "lng": 77.1024902,
+    "phone": "+91 9876543213",
+    "website": "https://www.mcdonaldsindia.com",
+    "description": "McDonald's ka menu kaafi popular hai. Food quality aur taste customers ko pasand aata hai.",
+    "reviewSummary": "Restaurant ka menu kaafi impressive hai. Food quality aur taste dono achhe hain. Overall dining experience satisfying raha.",
+    "rating": 4.5,
+    "totalrating": "6100",
+    "ratingDistribution": [
+      { "star": 5, "percent": 58 },
+      { "star": 4, "percent": 26 },
+      { "star": 3, "percent": 8 },
+      { "star": 2, "percent": 5 },
+      { "star": 1, "percent": 3 }
+    ],
+    "photos": [
+      { "src": "https://placehold.co/800x600?text=McDonalds+1", "alt": "McDonald's restaurant interior and dining area" },
+      { "src": "https://placehold.co/800x600?text=McDonalds+2", "alt": "McDonald's food menu items" },
+      { "src": "https://placehold.co/800x600?text=McDonalds+3", "alt": "McDonald's restaurant exterior view" }
+    ],
+    "menu": [
+      { "name": "McAloo Tikki", "price": "₹69", "photo": "https://placehold.co/300x300?text=McAloo+Tikki" },
+      { "name": "McVeggie Burger", "price": "₹189", "photo": "https://placehold.co/300x300?text=McVeggie" }
+    ],
+    "hours": [
+      { "day": "Monday", "time": "8:00 AM – 11:00 PM" },
+      { "day": "Tuesday", "time": "8:00 AM – 11:00 PM" },
+      { "day": "Wednesday", "time": "8:00 AM – 11:00 PM" },
+      { "day": "Thursday", "time": "8:00 AM – 11:00 PM" },
+      { "day": "Friday", "time": "8:00 AM – 11:30 PM" },
+      { "day": "Saturday", "time": "8:00 AM – 12:00 AM" },
+      { "day": "Sunday", "time": "8:00 AM – 11:00 PM" }
+    ]
+  },
+  {
+    "id": "07mcdonalds",
+    "category": "cafe",
+    "name": "Cafe Coffee Day",
+    "city": "Surat",
+    "url": "best-pizzahut.html",
+    "thumbnail": "https://placehold.co/800x600?text=mcdonalds",
+    "location": "Delhi",
+    "lat": 28.7040592,
+    "lng": 77.1024902,
+    "phone": "+91 9876543213",
+    "website": "https://www.mcdonaldsindia.com",
+    "description": "McDonald's ka menu kaafi popular hai. Food quality aur taste customers ko pasand aata hai.",
+    "reviewSummary": "Restaurant ka menu kaafi impressive hai. Food quality aur taste dono achhe hain. Overall dining experience satisfying raha.",
+    "rating": 4.5,
+    "totalrating": "6100",
+    "ratingDistribution": [
+      { "star": 5, "percent": 58 },
+      { "star": 4, "percent": 26 },
+      { "star": 3, "percent": 8 },
+      { "star": 2, "percent": 5 },
+      { "star": 1, "percent": 3 }
+    ],
+    "photos": [
+      { "src": "https://placehold.co/800x600?text=McDonalds+1", "alt": "McDonald's restaurant interior and dining area" },
+      { "src": "https://placehold.co/800x600?text=McDonalds+2", "alt": "McDonald's food menu items" },
+      { "src": "https://placehold.co/800x600?text=McDonalds+3", "alt": "McDonald's restaurant exterior view" }
+    ],
+    "menu": [
+      { "name": "McAloo Tikki", "price": "₹69", "photo": "https://placehold.co/300x300?text=McAloo+Tikki" },
+      { "name": "McVeggie Burger", "price": "₹189", "photo": "https://placehold.co/300x300?text=McVeggie" }
+    ],
+    "hours": [
+      { "day": "Monday", "time": "8:00 AM – 11:00 PM" },
+      { "day": "Tuesday", "time": "8:00 AM – 11:00 PM" },
+      { "day": "Wednesday", "time": "8:00 AM – 11:00 PM" },
+      { "day": "Thursday", "time": "8:00 AM – 11:00 PM" },
+      { "day": "Friday", "time": "8:00 AM – 11:30 PM" },
+      { "day": "Saturday", "time": "8:00 AM – 12:00 AM" },
+      { "day": "Sunday", "time": "8:00 AM – 11:00 PM" }
+    ]
+  },
+  {
+    
+    "id": "07meraki", 
+    "category": "cafe",
+    "name": "Meraki Coffee House",
+    "city": "Surat",
+    "url": "best-pizzahut.html",
+    "thumbnail": "https://placehold.co/800x600?text=mcdonalds",
+    "location": "Delhi",
+    "lat": 28.7040592,
+    "lng": 77.1024902,
+    "phone": "+91 9876543213",
+    "website": "https://www.mcdonaldsindia.com",
+    "description": "McDonald's ka menu kaafi popular hai. Food quality aur taste customers ko pasand aata hai.",
+    "reviewSummary": "Restaurant ka menu kaafi impressive hai. Food quality aur taste dono achhe hain. Overall dining experience satisfying raha.",
+    "rating": 4.5,
+    "totalrating": "6100",
+    "ratingDistribution": [
+      { "star": 5, "percent": 58 },
+      { "star": 4, "percent": 26 },
+      { "star": 3, "percent": 8 },
+      { "star": 2, "percent": 5 },
+      { "star": 1, "percent": 3 }
+    ],
+    "photos": [
+      { "src": "https://placehold.co/800x600?text=McDonalds+1", "alt": "McDonald's restaurant interior and dining area" },
+      { "src": "https://placehold.co/800x600?text=McDonalds+2", "alt": "McDonald's food menu items" },
+      { "src": "https://placehold.co/800x600?text=McDonalds+3", "alt": "McDonald's restaurant exterior view" }
+    ],
+    "menu": [
+      { "name": "McAloo Tikki", "price": "₹69", "photo": "https://placehold.co/300x300?text=McAloo+Tikki" },
+      { "name": "McVeggie Burger", "price": "₹189", "photo": "https://placehold.co/300x300?text=McVeggie" }
+    ],
+    "hours": [
+      { "day": "Monday", "time": "8:00 AM – 11:00 PM" },
+      { "day": "Tuesday", "time": "8:00 AM – 11:00 PM" },
+      { "day": "Wednesday", "time": "8:00 AM – 11:00 PM" },
+      { "day": "Thursday", "time": "8:00 AM – 11:00 PM" },
+      { "day": "Friday", "time": "8:00 AM – 11:30 PM" },
+      { "day": "Saturday", "time": "8:00 AM – 12:00 AM" },
+      { "day": "Sunday", "time": "8:00 AM – 11:00 PM" }
+    ]
+  },
 ]
