@@ -83,11 +83,13 @@ menuHTML += `
 
 document.getElementById("menu2grid").innerHTML = menuHTML;
   
-  // similar restaurant
-const similar = data.filter(item =>
-  item.id !== restaurant.id &&
-  item.city === restaurant.city
-);
+  // Similar Restaurants
+const similar = data
+  .filter(item =>
+    item.id !== restaurant.id &&
+    item.city === restaurant.city
+  )
+  .slice(0, 5);
 
 let html = `
 <div class="section-header">
@@ -113,7 +115,7 @@ similar.forEach(item => {
 html += `</div>`;
 
 document.getElementById("similar-restaurants1").innerHTML = html;
-
+  
 
 let rating = restaurant.rating;
 
