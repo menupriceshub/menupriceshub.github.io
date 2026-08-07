@@ -513,3 +513,56 @@
 }
 
 
+
+
+/* SECTION NAVIGATION */
+
+.popular-search-sec-tabs{
+position:relative;
+top:0px;
+z-index:999;
+background:transparent;
+display:flex;
+gap:12px;
+overflow-x:auto;
+padding:14px 10px;
+margin-bottom:30px;
+border-radius:16px;
+scroll-behavior:smooth;
+scroll-snap-type:x mandatory;
+
+}
+
+.popular-search-sec-tabs::-webkit-scrollbar{
+display:none;
+}
+
+.popular-search-sec-tabs a{
+text-decoration:none;
+background:#fff;
+color:#222;
+padding:5px 18px;
+border-radius:50px;
+white-space:nowrap;
+font-size:14px;
+font-weight:600;
+transition:.3s;
+flex:none;
+scroll-snap-align:center;
+}
+
+.popular-search-sec-tabs a:hover{
+background:#ff4d00;
+color:#fff;
+
+}
+
+.search-active-tab1{
+background:#ff4d00 !important;
+color:#fff !important;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+
+
