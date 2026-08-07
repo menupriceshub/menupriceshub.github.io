@@ -219,7 +219,7 @@
   }, 
 {
     "id": "06starbuck",
-    "category": "cafe",
+    "category": "Cafe",
     "name": "starbucks cafe",
     "city": "Surat",
     "url": "best-pizzahut.html",
@@ -261,7 +261,7 @@
   },
   {
     "id": "07mcdonalds",
-    "category": "cafe",
+    "category": "Cafe",
     "name": "Cafe Coffee Day",
     "city": "Surat",
     "url": "best-pizzahut.html",
@@ -304,7 +304,7 @@
   {
     
     "id": "07meraki", 
-    "category": "cafe",
+    "category": "Cafe",
     "name": "Meraki Coffee House",
     "city": "Surat",
     "url": "best-pizzahut.html",
