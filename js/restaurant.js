@@ -83,7 +83,7 @@ menuHTML += `
 
 document.getElementById("menu2grid").innerHTML = menuHTML;
   
-
+  // similar restaurant
 const similar = data.filter(item =>
   item.id !== restaurant.id &&
   item.city === restaurant.city
