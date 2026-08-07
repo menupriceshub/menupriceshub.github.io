@@ -1,217 +1,123 @@
-[
-  {
-    "id": "01pizzahut",
-    "category": "Restaurant",
-    "name": "Pizza Hut",
-    "city": "Surat",
-    "url": "best-pizzahut.html",
-    "thumbnail": "https://placehold.co/800x600?text=Pizza+Hut+1",
-    "location": "Mumbai, Maharashtra",
-    "lat": 19.0759837,
-    "lng": 72.8776559,
-    "phone": "+91 9876543210",
-    "website": "https://www.pizzahut.co.in",
-    "description": "Pizza Hut ka menu kaafi popular hai. Food quality aur taste customers ko pasand aata hai.",
-    "reviewSummary": "Restaurant ka menu kaafi impressive hai. Food quality aur taste dono achhe hain. Overall dining experience satisfying raha.",
-    "rating": 4.4,
-    "totalrating": "4200",
-    "ratingDistribution": [
-      { "star": 5, "percent": 52 },
-      { "star": 4, "percent": 30 },
-      { "star": 3, "percent": 10 },
-      { "star": 2, "percent": 5 },
-      { "star": 1, "percent": 3 }
-    ],
-    "photos": [
-      { "src": "https://placehold.co/800x600?text=Pizza+Hut+1", "alt": "Pizza Hut restaurant interior and dining area" },
-      { "src": "https://placehold.co/800x600?text=Pizza+Hut+2", "alt": "Pizza Hut food menu items" },
-      { "src": "https://placehold.co/800x600?text=Pizza+Hut+3", "alt": "Pizza Hut restaurant exterior view" }
-    ],
-    "menu": [
-      { "name": "Veggie Pizza", "price": "₹299", "photo": "https://placehold.co/300x300?text=Veggie+Pizza" },
-      { "name": "Cheese Pizza", "price": "₹399", "photo": "https://placehold.co/300x300?text=Cheese+Pizza" }
-    ],
-    "hours": [
-      { "day": "Monday", "time": "11:00 AM – 11:00 PM" },
-      { "day": "Tuesday", "time": "11:00 AM – 11:00 PM" },
-      { "day": "Wednesday", "time": "11:00 AM – 11:00 PM" },
-      { "day": "Thursday", "time": "11:00 AM – 11:00 PM" },
-      { "day": "Friday", "time": "11:00 AM – 11:30 PM" },
-      { "day": "Saturday", "time": "11:00 AM – 12:00 AM" },
-      { "day": "Sunday", "time": "11:00 AM – 11:00 PM" }
-    ]
-  },
+document.addEventListener("DOMContentLoaded", () => {
 
-  {
-    "id": "02dominos",
-    "category": "Restaurant",
-    "city": "Surat",
-    "url": "best-pizzahut.html",
-    "thumbnail": "https://placehold.co/800x600?text=dominos",
-    "name": "Domino's Pizza",
-    "location": "Surat, Gujarat",
-    "lat": 19.2512445,
-    "lng": 72.8634726,
-    "phone": "+91 9876543211",
-    "website": "https://www.dominos.co.in",
-    "description": "Domino's Pizza ka menu kaafi popular hai. Food quality aur taste customers ko pasand aata hai.",
-    "reviewSummary": "Restaurant ka menu kaafi impressive hai. Food quality aur taste dono achhe hain. Overall dining experience satisfying raha.",
-    "rating": 4.5,
-    "totalrating": "5500",
-    "ratingDistribution": [
-      { "star": 5, "percent": 55 },
-      { "star": 4, "percent": 28 },
-      { "star": 3, "percent": 5 },
-      { "star": 2, "percent": 3 },
-      { "star": 1, "percent": 2 }
-    ],
-    "photos": [
-      { "src": "https://placehold.co/800x600?text=KFC+1", "alt": "KFC restaurant interior and dining area" },
-      { "src": "https://placehold.co/800x600?text=KFC+2", "alt": "KFC food menu items" },
-      { "src": "https://placehold.co/800x600?text=KFC+3", "alt": "KFC restaurant exterior view" }
-    ],
-    "menu": [
-      { "name": "Panipuri", "price": "₹329", "photo": "https://placehold.co/300x300?text=panipuri" },
-      { "name": "sandwich", "price": "₹329", "photo": "https://placehold.co/300x300?text=sandwich" },
-      { "name": "Farmhouse Pizza", "price": "₹329", "photo": "https://placehold.co/300x300?text=Farmhouse" },
-      { "name": "Bhelpuri", "price": "₹329", "photo": "https://placehold.co/300x300?text=bhelpuri" },
-      { "name": "masala dosa", "price": "₹329", "photo": "https://placehold.co/300x300?text=dosa" },
-      { "name": "Peppy Paneer", "price": "₹349", "photo": "https://placehold.co/300x300?text=Peppy+Paneer" }
-    ],
-    "hours": [
-      { "day": "Monday", "time": "3:00 PM – 12:00 AM" },
-      { "day": "Tuesday", "time": "3:00 PM – 12:00 AM" },
-      { "day": "Wednesday", "time": "3:00 PM – 12:00 AM" },
-      { "day": "Thursday", "time": "3:00 PM – 12:00 AM" },
-      { "day": "Friday", "time": "3:00 PM – 12:00 AM" },
-      { "day": "Saturday", "time": "3:00 PM – 2:00 AM" },
-      { "day": "Sunday", "time": "3:00 PM – 12:00 AM" }
-    ]
-  },
+fetch("/data/restaurants.json")
+.then(res => res.json())
+.then(restaurants => {
 
-  {
-    "id": "03kfc",
-    "name": "KFC",
-    "city": "Surat",
-    "url": "best-pizzahut.html",
-    "thumbnail": "https://placehold.co/800x600?text=kfc",
-    "location": "Ahmedabad, Gujarat",
-    "lat": 23.0224909,
-    "lng": 72.5713621,
-    "phone": "+91 9876543212",
-    "website": "https://online.kfc.co.in",
-    "description": "KFC ka menu kaafi popular hai. Food quality aur taste customers ko pasand aata hai.",
-    "reviewSummary": "Restaurant ka menu kaafi impressive hai. Food quality aur taste dono achhe hain. Overall dining experience satisfying raha.",
-    "rating": 4.2,
-    "totalrating": "3800",
-    "ratingDistribution": [
-      { "star": 5, "percent": 48 },
-      { "star": 4, "percent": 30 },
-      { "star": 3, "percent": 12 },
-      { "star": 2, "percent": 6 },
-      { "star": 1, "percent": 4 }
-    ],
-    "photos": [
-      { "src": "https://placehold.co/800x600?text=KFC+1", "alt": "KFC restaurant interior and dining area" },
-      { "src": "https://placehold.co/800x600?text=KFC+2", "alt": "KFC food menu items" },
-      { "src": "https://placehold.co/800x600?text=KFC+3", "alt": "KFC restaurant exterior view" }
-    ],
-    "menu": [
-      { "name": "Zinger Burger", "price": "₹199", "photo": "https://placehold.co/300x300?text=Zinger" },
-      { "name": "Chicken Bucket", "price": "₹699", "photo": "https://placehold.co/300x300?text=Chicken+Bucket" }
-    ],
-    "hours": [
-      { "day": "Monday", "time": "10:00 AM – 11:00 PM" },
-      { "day": "Tuesday", "time": "10:00 AM – 11:00 PM" },
-      { "day": "Wednesday", "time": "10:00 AM – 11:00 PM" },
-      { "day": "Thursday", "time": "10:00 AM – 11:00 PM" },
-      { "day": "Friday", "time": "10:00 AM – 11:30 PM" },
-      { "day": "Saturday", "time": "10:00 AM – 12:00 AM" },
-      { "day": "Sunday", "time": "10:00 AM – 11:00 PM" }
-    ]
-  },
 
-  {
-    "id": "04mcdonalds",
-    "name": "McDonald's",
-    "city": "Surat",
-    "url": "best-pizzahut.html",
-    "thumbnail": "https://placehold.co/800x600?text=mcdonalds",
-    "location": "Delhi",
-    "lat": 28.7040592,
-    "lng": 77.1024902,
-    "phone": "+91 9876543213",
-    "website": "https://www.mcdonaldsindia.com",
-    "description": "McDonald's ka menu kaafi popular hai. Food quality aur taste customers ko pasand aata hai.",
-    "reviewSummary": "Restaurant ka menu kaafi impressive hai. Food quality aur taste dono achhe hain. Overall dining experience satisfying raha.",
-    "rating": 4.5,
-    "totalrating": "6100",
-    "ratingDistribution": [
-      { "star": 5, "percent": 58 },
-      { "star": 4, "percent": 26 },
-      { "star": 3, "percent": 8 },
-      { "star": 2, "percent": 5 },
-      { "star": 1, "percent": 3 }
-    ],
-    "photos": [
-      { "src": "https://placehold.co/800x600?text=McDonalds+1", "alt": "McDonald's restaurant interior and dining area" },
-      { "src": "https://placehold.co/800x600?text=McDonalds+2", "alt": "McDonald's food menu items" },
-      { "src": "https://placehold.co/800x600?text=McDonalds+3", "alt": "McDonald's restaurant exterior view" }
-    ],
-    "menu": [
-      { "name": "McAloo Tikki", "price": "₹69", "photo": "https://placehold.co/300x300?text=McAloo+Tikki" },
-      { "name": "McVeggie Burger", "price": "₹189", "photo": "https://placehold.co/300x300?text=McVeggie" }
-    ],
-    "hours": [
-      { "day": "Monday", "time": "8:00 AM – 11:00 PM" },
-      { "day": "Tuesday", "time": "8:00 AM – 11:00 PM" },
-      { "day": "Wednesday", "time": "8:00 AM – 11:00 PM" },
-      { "day": "Thursday", "time": "8:00 AM – 11:00 PM" },
-      { "day": "Friday", "time": "8:00 AM – 11:30 PM" },
-      { "day": "Saturday", "time": "8:00 AM – 12:00 AM" },
-      { "day": "Sunday", "time": "8:00 AM – 11:00 PM" }
-    ]
-  },
+renderPopular(
+  restaurants,
+  "popular-restaurants-section1",
+  "Restaurant"
+);
 
-  {
-    "id": "05burgerking",
-    "name": "Burger King",
-    "city": "Surat",
-    "url": "best-pizzahut.html",
-    "thumbnail": "https://placehold.co/800x600?text=burgerking",
-    "location": "Pune, Maharashtra",
-    "lat": 18.5204303,
-    "lng": 73.8567437,
-    "phone": "+91 9876543214",
-    "website": "https://www.burgerking.in",
-    "description": "Burger King ka menu kaafi popular hai. Food quality aur taste customers ko pasand aata hai.",
-    "reviewSummary": "Restaurant ka menu kaafi impressive hai. Food quality aur taste dono achhe hain. Overall dining experience satisfying raha.",
-    "rating": 4.1,
-    "totalrating": "3100",
-    "ratingDistribution": [
-      { "star": 5, "percent": 45 },
-      { "star": 4, "percent": 32 },
-      { "star": 3, "percent": 12 },
-      { "star": 2, "percent": 7 },
-      { "star": 1, "percent": 4 }
-    ],
-    "photos": [
-      { "src": "https://placehold.co/800x600?text=Burger+King+1", "alt": "Burger King restaurant interior and dining area" },
-      { "src": "https://placehold.co/800x600?text=Burger+King+2", "alt": "Burger King food menu items" },
-      { "src": "https://placehold.co/800x600?text=Burger+King+3", "alt": "Burger King restaurant exterior view" }
-    ],
-    "menu": [
-      { "name": "Whopper", "price": "₹249", "photo": "https://placehold.co/300x300?text=Whopper" },
-      { "name": "Veg Crisper", "price": "₹99", "photo": "https://placehold.co/300x300?text=Veg+Crisper" }
-    ],
-    "hours": [
-      { "day": "Monday", "time": "10:00 AM – 11:00 PM" },
-      { "day": "Tuesday", "time": "10:00 AM – 11:00 PM" },
-      { "day": "Wednesday", "time": "10:00 AM – 11:00 PM" },
-      { "day": "Thursday", "time": "10:00 AM – 11:00 PM" },
-      { "day": "Friday", "time": "10:00 AM – 11:30 PM" },
-      { "day": "Saturday", "time": "10:00 AM – 12:00 AM" },
-      { "day": "Sunday", "time": "10:00 AM – 11:00 PM" }
-    ]
-  }
-]
+
+renderPopular(
+  restaurants,
+  "popular-cafe-section1",
+  "Cafe"
+);
+
+
+});
+
+
+});
+
+
+function renderPopular(data, sectionId, category){
+
+const section = document.getElementById(sectionId);
+
+if(!section) return;
+
+
+// filter category
+const items = data
+.filter(r => r.category === category)
+.map(r => ({
+ ...r,
+ score: (Number(r.rating)*20) + (Number(r.totalrating)/100)
+}))
+.sort((a,b)=>b.score-a.score)
+.slice(0,6);
+
+
+
+section.innerHTML = `
+
+<div class="section-header">
+<h2 class="section-left">Popular ${category}s</h2>
+
+<a href="#" class="section-right">
+View All
+<i class="fa-solid fa-chevron-right icon"></i>
+</a>
+
+</div>
+
+
+<div class="restaurant-grid">
+
+${items.map(r=>`
+
+<div class="restaurant-card">
+
+<img class="restaurant-img" src="${r.thumbnail}">
+
+<div class="restaurant-content">
+
+<h3 class="restaurant-name">
+${r.name}
+</h3>
+
+<div class="restaurant-info">
+${r.city} • ${category}
+</div>
+
+
+<div class="restaurant-bottom">
+
+<div class="restaurant-rating">
+<span>${r.rating}</span>
+<span class="restaurant-stars">
+${generateStars(r.rating)}
+</span>
+</div>
+
+
+<a href="${r.url}" class="restaurant-btn">
+View
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+`).join("")}
+
+</div>
+
+`;
+
+}
+
+
+
+function generateStars(rating){
+
+let html="";
+
+for(let i=1;i<=5;i++){
+
+html += i <= Math.round(rating)
+? `<i class="fas fa-star"></i>`
+: `<i class="far fa-star"></i>`;
+
+}
+
+return html;
+
+}
