@@ -832,3 +832,101 @@ color:white;
 }
 
 
+
+
+/* ===== Popular Restaurant Category ===== */
+.category-wrapper{
+  width:100%;
+  padding:0px 5px;
+  background:transparent;
+  margin-bottom:20px;
+}
+
+/* ===== HORIZONTAL SCROLL ===== */
+.category-scroll{
+  display:flex;
+  gap:12px;
+  overflow-x:auto;
+  scroll-behavior:smooth;
+  -webkit-overflow-scrolling:touch;
+  padding:10px 5px;
+}
+
+/* hide scrollbar */
+.category-scroll::-webkit-scrollbar{
+  display:none;
+}
+
+/* ===== CATEGORY ITEM ===== */
+.category-item{
+  flex:0 0 auto;
+  width:80px;
+  text-align:center;
+  text-decoration:none;
+  color:#fff;
+  font-family:Arial;
+ background:transparent;
+  border-radius:5px;  
+}
+
+.category-icon:active{
+    outline:2px solid black;
+    outline-offset:5px; /* Border aur icon ke beech gap */
+}
+.category-icon:hover{
+    outline:2px solid skyblue;
+    outline-offset:5px;
+}
+
+.category-icon{
+  width:55px;
+  height:55px;
+  margin:auto;
+  border-radius:20px;  
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:20px;
+  transition:0.3s;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  margin-bottom:15px;
+  background:transparent;
+  margin-top:13px;
+  color:#fff;
+}
+.category-item:hover .category-icon{
+  background:#007bff;
+  color:#fff;
+}
+
+
+/* different soft colors per item */
+.category-item:nth-child(1) .category-icon{ background:red; }
+.category-item:nth-child(2) .category-icon{ background:blue; }
+.category-item:nth-child(3) .category-icon{ background:orange; }
+.category-item:nth-child(4) .category-icon{ background:green; }
+.category-item:nth-child(5) .category-icon{ background:pink; }
+
+/* NEXT 10 ITEMS */
+.category-item:nth-child(6) .category-icon{ background:#ff6b6b; }   /* light red */
+.category-item:nth-child(7) .category-icon{ background:#4dabf7; }   /* sky blue */
+.category-item:nth-child(8) .category-icon{ background:#ffd43b; }   /* soft yellow */
+.category-item:nth-child(9) .category-icon{ background:#69db7c; }   /* light green */
+
+    
+
+.category-text{
+  font-size:12px;
+  margin-top:3px;
+  display:block;
+  color:#000;
+}
+
+/* ===== VIEW MORE STYLE ===== */
+.view-more .category-icon{
+  background:#111;
+  color:#fff;
+}
+
+
+
