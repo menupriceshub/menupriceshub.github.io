@@ -1,32 +1,171 @@
+
 <!DOCTYPE html>
 <html>
 <head>
+<title id="page-title">Burger Restaurants</title>
 
-!-- font -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
 
-  
-<link rel="canonical" href="https://menupriceshub.github.io" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-<link rel="stylesheet" href="styles/style.css">
-<link rel="stylesheet" href="styles/review-widget.css">
-  <link rel="stylesheet" href="/styles/home.css">
-  
-<title>Burger Restaurants</title>
+body{
+ font-family:Arial;
+ background:#f8f8f8;
+ margin:0;
+}
+
+.container{
+ max-width:1200px;
+ margin:auto;
+ padding:20px;
+}
+
+
+.hero{
+ background:#ff4d00;
+ color:white;
+ padding:30px;
+ border-radius:20px;
+}
+
+
+.grid{
+ display:grid;
+ grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+ gap:20px;
+ margin-top:25px;
+}
+
+
+.card{
+ background:white;
+ border-radius:15px;
+ overflow:hidden;
+ box-shadow:0 5px 20px #ddd;
+}
+
+
+.card img{
+ width:100%;
+ height:180px;
+ object-fit:cover;
+}
+
+
+.card-content{
+ padding:15px;
+}
+
+
+.card h3{
+ margin:5px 0;
+}
+
+
+.card a{
+ color:#ff4d00;
+ text-decoration:none;
+ font-weight:bold;
+}
+
+
+</style>
+
 </head>
+
 
 <body>
 
-<section class="popular-restaurants" id="category-restaurants-section">
-</section>
+
+<div class="container">
 
 
-<script src="/js/category1.js" defer></script>
+<div class="hero">
+
+<h1 id="category-title">
+Burger Restaurants
+</h1>
+
+<p id="category-desc">
+Find best burger restaurants, menu prices and locations.
+</p>
+
+</div>
 
 
-  <section id="category-restaurants-section" data-category="burger">
-  </section>
+
+<h2 id="count"></h2>
+
+
+<div class="grid" id="restaurant-list"></div>
+
+
+
+</div>
+
+
+
+<script>
+
+
+const slug = location.pathname
+.split("/")
+.filter(Boolean)
+.pop()
+.toLowerCase();
+
+
+
+fetch("/data/restaurants.json")
+.then(res=>res.json())
+.then(data=>{
+const filtered = data.filter(item=>
+
+item.category
+.toLowerCase()
+.includes(slug)
+
+);
+
+document.getElementById("page-title").innerHTML =
+slug + " Restaurants";
+
+document.getElementById("category-title").innerHTML =
+slug.charAt(0).toUpperCase()+slug.slice(1)
++" Restaurants";
+
+document.getElementById("count").innerHTML =
+filtered.length+" Restaurants Found";
+
+let html="";
+filtered.forEach(item=>{
+html += `
+<div class="card">
+<img src="${item.thumbnail}" loading="lazy">
+<div class="card-content">
+<h3>${item.name}</h3>
+
+<p>
+ЁЯУН ${item.city}
+</p>
+
+<p>
+тнР ${item.rating}
+</p>
+
+<a href="/${item.url}">
+View Menu
+</a>
+
+</div>
+</div>
+
+`;
+});
+document.getElementById("restaurant-list").innerHTML=html;
+});
+
+
+</script>
+
+
 </body>
 </html>
