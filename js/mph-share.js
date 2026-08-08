@@ -8,7 +8,7 @@ const navItems = [
   {
     icon: "fa-location-dot",
     label: "Cities",
-    link: "https://menupriceshub.github.io/city.html"
+    link: "https://menupriceshub.github.io/cities/"
   },
   {
     icon: "fa-search",
@@ -18,7 +18,7 @@ const navItems = [
   {
     icon: "fa-coffee",
     label: "Menu",
-    link: "https://menupriceshub.github.io/menu.html"
+    link: "https://menupriceshub.github.io/restaurants/"
   },
   {
     icon: "fa-share",
