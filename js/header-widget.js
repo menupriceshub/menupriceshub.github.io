@@ -271,9 +271,9 @@
   ).join("\n");
 
   const headerHTML = `
-    <div class="logo">
+    <div class="logo"><a href="/">
       <span class="menulogotext1">Menu</span><span class="menulogotext2">Prices</span><span class="menulogotext3">Hub</span>
-    </div>
+    </a></div>
 
     <nav class="nav-menu" id="navMenu">
       ${linksHTML}
