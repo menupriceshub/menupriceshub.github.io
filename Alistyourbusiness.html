@@ -444,6 +444,66 @@ margin-right:20px;
 padding:10px;
 }
 </style>
+  <style>.containerhero{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:30px;
+    width:100%;
+}
+
+.left-div{
+    flex:1;
+}
+
+.right-div{
+    flex:1;
+    text-align:center;
+        
+}
+
+.right-div img{
+    width:100%;
+    max-width:550px;
+    height:auto;
+    display:block;
+    margin:auto;object-fit: contain;
+}
+.hero-img{
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+  0%,100%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(-12px);
+  }
+}
+/* Mobile */
+@media (max-width:768px){
+
+    .containerhero{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .left-div,
+    .right-div{
+        width:100%;
+        flex:none;
+       
+    }
+
+    .right-div img{
+        width:100%;
+        max-width:350px;
+        margin:auto;
+    }
+}
+
+  </style>
 
 
 <center><h2>3 <span class="red"> Easy Steps to Get Listed</span></h2></center>
