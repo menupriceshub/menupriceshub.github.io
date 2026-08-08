@@ -639,6 +639,17 @@ Yes, MenuPricesHub allows users to explore restaurant menu prices, popular resta
 <!--tooltip -->
   <div id="customTooltip" class="custom-tooltip"></div>
 
-  
+  <script>
+document.querySelectorAll('.faq-question').forEach(question=>{
+
+question.addEventListener('click',()=>{
+
+question.parentElement.classList.toggle('active');
+
+});
+
+});
+</script>
+
  </body>
 </html>
