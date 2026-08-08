@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Search with History</title>
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+body{
+    background:#f5f5f5;
+}
+.container{
+    max-width:600px;
+    margin:40px auto;
+    padding:20px;
+}
+.search-box{
+    position:relative;
+    display:flex;
+    gap:10px;
+}
+.search-box input{
+    flex:1;
+    padding:12px;
+    border:1px solid #ddd;
+    border-radius:8px;
+    font-size:16px;
+}
+.search-box button{
+    padding:12px 20px;
+    background:#ff4d00;
+    color:#fff;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+/* Suggestions dropdown */
+#searchSuggestions{
+    position:absolute;
+    top:52px;
+    left:0;
+    right:90px;
+    background:#fff;
+    border-radius:8px;
+    box-shadow:0 4px 12px rgba(0,0,0,.15);
+    z-index:10;
+    display:none;
+    max-height:260px;
+    overflow-y:auto;
+}
+.search-suggestion-item a{
+    display:block;
+    padding:10px 14px;
+    text-decoration:none;
+    color:#222;
+}
+.search-suggestion-item a:hover{
+    background:#f5f5f5;
+}
+.search-suggestion-empty{
+    padding:10px 14px;
+    color:#888;
+}
+
+/* Recent searches */
+.recent-search{
+    margin-top:25px;
+}
+.recent-search h2{
+    margin-bottom:15px;
+    font-size:22px;
+}
+#recentList{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+.recent-item{
+    padding:10px 15px;
+    border:none;
+    border-radius:25px;
+    background:#fff;
+    box-shadow:0 2px 5px rgba(0,0,0,.1);
+    cursor:pointer;
+}
+.recent-item:hover{
+    background:#ff4d00;
+    color:#fff;
+}
+#clearBtn{
+    margin-top:15px;
+    padding:10px 18px;
+    border:none;
+    border-radius:8px;
+    background:#222;
+    color:#fff;
+    cursor:pointer;
+}
+
+/* Results */
+#results{
+    margin-top:25px;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+.search-card{
+    display:flex;
+    gap:12px;
+    background:#fff;
+    border-radius:8px;
+    box-shadow:0 2px 5px rgba(0,0,0,.1);
+    overflow:hidden;
+}
+.search-img{
+    width:90px;
+    height:90px;
+    object-fit:cover;
+}
+.search-info{
+    padding:10px;
+}
+.view-btn{
+    display:inline-block;
+    margin-top:6px;
+    color:#ff4d00;
+    text-decoration:none;
+    font-weight:bold;
+}
+.no-result{
+    padding:15px;
+    background:#fff;
+    border-radius:8px;
+    text-align:center;
+    color:#888;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="search-box">
+        <input type="text" id="searchBox" placeholder="Search..." class="search-input" autocomplete="off">
+        <button id="searchBtn" class="search-btn" type="button">Search</button>
+        <div id="searchSuggestions"></div>
+    </div>
+
+    <div class="recent-search" id="recentSection">
+        <h2>Recent Searches</h2>
+        <div id="recentList"></div>
+        <button id="clearBtn">Clear All</button>
+    </div>
+
+    <div id="results"></div>
+
+</div>
+
+<script>
+const STORAGE_KEY = "recentSearches";
+let data = [];
+
+const searchBox = document.getElementById("searchBox");
+const searchBtn = document.getElementById("searchBtn");
+const results = document.getElementById("results");
+const searchSuggestions = document.getElementById("searchSuggestions");
+const recentList = document.getElementById("recentList");
+const recentSection = document.getElementById("recentSection");
+const clearBtn = document.getElementById("clearBtn");
+
+// ---------- Recent Search (history) ----------
+function saveSearch(text){
+    text = text.trim();
+    if(!text) return;
+
+    let searches = JSON.parse(localStorage.getItem(STORAGE_KEY)) || [];
+
+    searches = searches.filter(item => item.toLowerCase() !== text.toLowerCase());
+
+    searches.unshift(text);
+    searches = searches.slice(0, 5);
+
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(searches));
+
+    renderRecent();
+}
+
+function renderRecent(){
+    const searches = JSON.parse(localStorage.getItem(STORAGE_KEY)) || [];
+
+    if(searches.length === 0){
+        recentSection.style.display = "none";
+        return;
+    }
+
+    recentSection.style.display = "block";
+    recentList.innerHTML = "";
+
+    searches.forEach(item => {
+        const btn = document.createElement("button");
+        btn.className = "recent-item";
+        btn.textContent = "🕒 " + item;
+
+        btn.onclick = function(){
+            searchBox.value = item;
+            goToSearch(item);
+        };
+
+        recentList.appendChild(btn);
+    });
+}
+
+clearBtn.onclick = function(){
+    localStorage.removeItem(STORAGE_KEY);
+    renderRecent();
+};
+
+// ---------- Load JSON data ----------
+fetch("/search-data.json")
+.then(res => res.json())
+.then(json => {
+    data = json;
+
+    const params = new URLSearchParams(window.location.search);
+    const q = params.get("q");
+
+    if(q){
+        searchBox.value = q;
+        renderResults(q);
+
+        setTimeout(() => {
+            results.scrollIntoView({behavior:"smooth", block:"start"});
+        }, 200);
+    }
+})
+.catch(() => {
+    results.innerHTML = "<div class='no-result'>Data load nahi ho payi</div>";
+});
+
+function getFiltered(keyword){
+    keyword = keyword.toLowerCase().trim();
+    if(!keyword) return [];
+
+    return data.filter(item =>
+        (item.title || "").toLowerCase().includes(keyword) ||
+        (item.content || "").toLowerCase().includes(keyword)
+    );
+}
+
+function renderResults(keyword){
+    const filtered = getFiltered(keyword);
+
+    if(!filtered.length){
+        results.innerHTML = "<div class='no-result'>No results found</div>";
+        return;
+    }
+
+    results.innerHTML = filtered.map(item => `
+        <div class="search-card">
+            <img src="${item.image || ''}" alt="${item.title || ''}" class="search-img">
+            <div class="search-info">
+                <h3>${item.title || ''}</h3>
+                <p>${item.description || ''}</p>
+                <a href="${item.url || '#'}" class="view-btn">View Menu</a>
+            </div>
+        </div>
+    `).join("");
+}
+
+// ---------- Search Suggestions ----------
+searchBox.addEventListener("input", function(){
+    const keyword = this.value.trim();
+
+    if(!keyword){
+        searchSuggestions.innerHTML = "";
+        searchSuggestions.style.display = "none";
+        return;
+    }
+
+    const filtered = getFiltered(keyword);
+
+    if(!filtered.length){
+        searchSuggestions.innerHTML = "<div class='search-suggestion-empty'>No results found</div>";
+    } else {
+        searchSuggestions.innerHTML = filtered.map(item => `
+            <div class="search-suggestion-item">
+                <a href="#" data-title="${(item.title || '').replace(/"/g, '&quot;')}">
+                    ${item.title}
+                </a>
+            </div>
+        `).join("");
+    }
+
+    searchSuggestions.style.display = "block";
+});
+
+// Suggestion Click
+searchSuggestions.addEventListener("click", function(e){
+    const link = e.target.closest("a[data-title]");
+    if(!link) return;
+
+    e.preventDefault();
+    goToSearch(link.dataset.title);
+});
+
+// Enter Search
+searchBox.addEventListener("keydown", function(e){
+    if(e.key === "Enter"){
+        goToSearch(this.value);
+    }
+});
+
+// Button Search
+searchBtn.addEventListener("click", function(){
+    goToSearch(searchBox.value);
+});
+
+// Navigate + save to history
+function goToSearch(keyword){
+    keyword = keyword.trim();
+    if(!keyword) return;
+
+    saveSearch(keyword);
+
+    const url = new URL(window.location.href.split("?")[0]);
+    url.searchParams.set("q", keyword);
+    window.location.href = url.toString();
+}
+
+// Hide Suggestions on outside click
+document.addEventListener("click", function(e){
+    if(!e.target.closest(".search-box")){
+        searchSuggestions.style.display = "none";
+    }
+});
+
+// Init
+renderRecent();
+</script>
+</body>
+</html>
