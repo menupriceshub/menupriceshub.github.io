@@ -39,7 +39,7 @@ html += `
 
 <a href="//www.dmca.com/Protection/Status.aspx?ID=c82fef17-989f-4eb1-8fe1-8d43f5f18b6e"
 title="DMCA.com Protection Status"
-class="dmca-badge">
+class="dmca-badge" rel="nofollow">
 
 <img src="https://images.dmca.com/Badges/dmca_protected_sml_120n.png?ID=c82fef17-989f-4eb1-8fe1-8d43f5f18b6e"
 alt="DMCA.com Protection Status"
