@@ -74,6 +74,106 @@
 </head>
 <body>
 
+/* CATEGORY RESTAURANTS WIDGET */
+.catrest-wrapper{
+  width:100%;
+  max-width:1400px;
+  margin:auto;
+  padding:20px 15px;
+}
+
+.catrest-heading{
+  font-size:28px;
+  font-weight:700;
+  margin-bottom:20px;
+}
+
+.catrest-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.catrest-card{
+  background:#fff;
+  border-radius:24px;
+  overflow:hidden;
+  box-shadow:0 8px 25px rgba(0,0,0,.08);
+  transition:.3s;
+  display:flex;
+  flex-direction:column;
+}
+
+.catrest-card:hover{
+  transform:translateY(-6px);
+}
+
+.catrest-img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+  border-radius:24px;
+}
+
+.catrest-content{
+  padding:18px;
+  display:flex;
+  flex-direction:column;
+  flex:1;
+}
+
+.catrest-name{
+  font-size:20px;
+  font-weight:800;
+  margin-bottom:6px;
+}
+
+.catrest-info{
+  font-size:14px;
+  color:#666;
+  margin-bottom:16px;
+}
+
+.catrest-bottom{
+  margin-top:auto;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.catrest-rating{
+  font-weight:600;
+}
+
+.catrest-stars {
+  color: #FFD43B;
+  font-size: 14px;
+}
+
+.catrest-btn{
+  padding:8px 18px;
+  background:#ff1d25;
+  color:#fff;
+  border-radius:999px;
+  text-decoration:none;
+  font-weight:700;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.catrest-btn:hover{
+  background:darkblue;
+  color:white;
+}
+
+/* responsive */
+@media(max-width:768px){
+  .catrest-grid{grid-template-columns:repeat(2,1fr);}
+}
+
+@media(max-width:600px){
+  .catrest-grid{grid-template-columns:1fr;}
+}
+ 
+</style>
   <!-- HEADER -->
 <header id="site-header">
 </header>
@@ -81,6 +181,13 @@
 
 <!-- MAIN -->
 <main class="container">
+
+
+
+<div id="category-restaurants-section"></div>
+
+
+  
 
 <!-- search box -->
 <div class="search-box">
