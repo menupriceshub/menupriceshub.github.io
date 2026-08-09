@@ -76,7 +76,6 @@ body{
 
 <body>
 
-<div class="container">
 
 
 <div class="hero">
@@ -92,81 +91,13 @@ Find best burger restaurants, menu prices and locations.
 </div>
 
 
+<div id=category-restaurants-section"></div>
 
-<h2 id="count"></h2>
-
-
-<div class="grid" id="restaurant-list"></div>
+category-restaurants-sectionn1yyyyy
 
 
 
-</div>
 
-
-
-<script>
-
-
-const slug = location.pathname
-.split("/")
-.filter(Boolean)
-.pop()
-.toLowerCase();
-
-
-
-fetch("/data/restaurants.json")
-.then(res=>res.json())
-.then(data=>{
-const filtered = data.filter(item=>
-
-item.category
-.toLowerCase()
-.includes(slug)
-
-);
-
-document.getElementById("page-title").innerHTML =
-slug.charAt(0).toUpperCase()+slug.slice(1)
-+" Restaurants";
-
-document.getElementById("category-title").innerHTML =
-slug.charAt(0).toUpperCase()+slug.slice(1)
-+" Restaurants";
-
-document.getElementById("count").innerHTML =
-filtered.length+" Restaurants Found";
-
-let html="";
-filtered.forEach(item=>{
-html += `
-<div class="card">
-<img src="${item.thumbnail}" loading="lazy">
-<div class="card-content">
-<h3>${item.name}</h3>
-
-<p>
-📍 ${item.city}
-</p>
-
-<p>
-⭐ ${item.rating}
-</p>
-
-<a href="/${item.url}">
-View Menu
-</a>
-
-</div>
-</div>
-
-`;
-});
-document.getElementById("restaurant-list").innerHTML=html;
-});
-
-
-</script>
 
 
 </body>
