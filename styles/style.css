@@ -326,32 +326,6 @@ transform:rotate(45deg);
   
 
   
-/* SIMILAR */
-
-.similar-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
-}
-
-.similar-cardx{
-background:#fff;
-padding:20px;
-border-radius:18px;
-font-weight:600;
-box-shadow:0 2px 10px rgba(0,0,0,.05);
-}
-.similar-card{
-  display:flex;
-  align-items:center;
-  gap:12px;
-  padding:10px;
-  margin:10px 0;
-  background:#fff;
-  border-radius:10px;
-  box-shadow:0 3px 10px rgba(0,0,0,0.1);
-  font-family:Arial;
-}
 /* FOOTER */
 
 footer{
@@ -1463,12 +1437,29 @@ margin-right:10px;
 
 }
 
+
+/* SIMILAR */
+
+.similar-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+/* Desktop - 3 columns */
+@media (min-width: 992px){
+  .similar-grid{
+    grid-template-columns:repeat(3,1fr);
+  }
+}
+
+
 .similar-card{
   display:flex;
   align-items:center;
   gap:12px;
   padding:10px;
-  margin:0px 0;
+  margin:10px 0;
   background:#fff;
   border-radius:10px;
   box-shadow:0 3px 10px rgba(0,0,0,0.1);
@@ -1488,7 +1479,7 @@ margin-right:10px;
   color:#000;
   font-weight:600;
 }
-
+/* ===== trust logo Section ===== */
 .trust-logos{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(120px,1fr));
@@ -1520,7 +1511,7 @@ margin-right:10px;
     display:none;
     font-weight:bold;
 }
-
+/* ===== tooltip div ===== */
 .custom-tooltip {
   position: fixed;
   bottom: 30px;
@@ -1544,7 +1535,7 @@ margin-right:10px;
   transform: translateX(-50%) translateY(0);
 }
 
-
+/* ===== website info url ===== */
 #websiteurl-info1 {
   font-size: 1.17em;
     font-weight:500;
