@@ -1671,17 +1671,16 @@ gap:20px;
 
 
 /* Scrollbar */
+ .ptg-table-wrap{
+    overflow-x: auto;
+    -ms-overflow-style: none;  /* IE & Edge */
+    scrollbar-width: none;     /* Firefox */
+}
+
 .ptg-table-wrap::-webkit-scrollbar{
-    height:8px;
-}
-
-.ptg-table-wrap::-webkit-scrollbar-thumb{
-    background:#ff4d00;
-    border-radius:20px;
-}
-
-.ptg-table-wrap::-webkit-scrollbar-track{
-    background:#f2f2f2;
+    width: 0;
+    height: 0;
+    display: none;             /* Chrome, Safari, Edge */
 }
 
 /* ===== Mobile ===== */
