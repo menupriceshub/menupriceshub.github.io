@@ -27,10 +27,8 @@ fetch("/data/restaurants.json")
 
 const items = restaurants.filter(r =>
 
-r.foodCategory &&
-r.foodCategory.some(cat =>
-cat.toLowerCase() === category
-)
+r.category &&
+r.category.toLowerCase() === category
 
 );
 
@@ -65,7 +63,7 @@ Popular ${category.charAt(0).toUpperCase()+category.slice(1)} Restaurants
 </h2>
 
 
-<a href="/categories/" class="section-right">
+<a href="/categories/${category}/" class="section-right">
 View All
 <i class="fa-solid fa-chevron-right icon"></i>
 </a>
