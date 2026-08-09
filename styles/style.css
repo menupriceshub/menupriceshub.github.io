@@ -1652,6 +1652,24 @@ gap:20px;
     font-weight:600;
 }
 
+
+
+
+.ptg-scroll-note{
+  text-align:center;
+  font-size:11px;
+  color:#9ca3af;
+  margin-top:8px;
+}
+
+.ptg-price-note{
+  font-size:12px;
+  color:#8b8b8b;
+  margin-top:10px;
+  line-height:1.6;
+}
+
+
 /* Scrollbar */
 .ptg-table-wrap::-webkit-scrollbar{
     height:8px;
