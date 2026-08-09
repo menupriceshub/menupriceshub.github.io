@@ -52,105 +52,61 @@ category
 
 function renderCategory(data, section, category){
 
+  section.innerHTML = `
 
-section.innerHTML = `
+    <div class="section-header">
+      <h2 class="section-left">
+        Popular ${category.charAt(0).toUpperCase()+category.slice(1)} Restaurants
+      </h2>
 
+      <a href="/categories/${category}/" class="section-right">
+        View All
+        <i class="fa-solid fa-chevron-right icon"></i>
+      </a>
+    </div>
 
-<div class="section-header">
+    <div class="catrest-grid">
 
-<h2 class="section-left">
-Popular ${category.charAt(0).toUpperCase()+category.slice(1)} Restaurants
-</h2>
+      ${data.map(r=>`
+        <div class="catrest-card">
 
+          <img 
+            class="catrest-img"
+            src="${r.thumbnail}"
+            alt="${r.name}"
+            loading="lazy"
+          >
 
-<a href="/categories/${category}/" class="section-right">
-View All
-<i class="fa-solid fa-chevron-right icon"></i>
-</a>
+          <div class="catrest-content">
 
+            <h3 class="catrest-name">
+              ${r.name}
+            </h3>
 
-</div>
+            <div class="catrest-info">
+              ${r.city} • ${category}
+            </div>
 
+            <div class="catrest-bottom">
 
+              <div class="catrest-rating">
+                <span>${r.rating}</span>
+                <span class="catrest-stars">
+                  ${generateStars(r.rating)}
+                </span>
+              </div>
 
-<div class="restaurant-grid">
+              <a href="/${r.url}" class="catrest-btn">
+                View
+              </a>
 
+            </div>
+          </div>
+        </div>
+      `).join("")}
 
-${data.map(r=>`
-
-
-<div class="restaurant-card">
-
-
-<img 
-class="restaurant-img"
-src="${r.thumbnail}"
-alt="${r.name}"
-loading="lazy"
->
-
-
-<div class="restaurant-content">
-
-
-<h3 class="restaurant-name">
-${r.name}
-</h3>
-
-
-
-<div class="restaurant-info">
-
-${r.city} • ${category}
-
-</div>
-
-
-
-<div class="restaurant-bottom">
-
-
-<div class="restaurant-rating">
-
-<span>
-${r.rating}
-</span>
-
-
-<span class="restaurant-stars">
-${generateStars(r.rating)}
-</span>
-
-
-</div>
-
-
-
-<a 
-href="/${r.url}" 
-class="restaurant-btn">
-View
-</a>
-
-
-</div>
-
-
-</div>
-
-
-</div>
-
-
-
-`).join("")}
-
-
-</div>
-
-
-`;
-
+    </div>
+  `;
 }
 
 
