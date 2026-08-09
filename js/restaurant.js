@@ -94,7 +94,7 @@ const similar = data
 let html = `
 <div class="section-header">
   <h2 class="section-left">Similar Restaurants</h2>
-  <a href="/restaurants.html" class="section-right">
+  <a href="/restaurants/" class="section-right">
     View All
     <i class="fa-solid fa-chevron-right icon"></i>
   </a>
