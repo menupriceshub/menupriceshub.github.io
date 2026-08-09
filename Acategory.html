@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Category | MenuPricesHub</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#241C15;
+    --paper:#FAF8F4;
+    --card:#FFFFFF;
+    --chili:#E4572E;
+    --chili-dark:#C2451F;
+    --gold:#F4B400;
+    --line:#E9E2D6;
+    --muted:#8A8073;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Inter',sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  /* ---------- Ticket header ---------- */
+  .ticket{
+    background:var(--ink);
+    color:var(--paper);
+    padding:56px 24px 40px;
+    position:relative;
+    overflow:hidden;
+  }
+  .ticket::after{
+    content:"";
+    position:absolute;
+    left:0; right:0; bottom:0;
+    height:16px;
+    background-image:radial-gradient(circle at 12px 0, var(--paper) 10px, transparent 11px);
+    background-size:24px 16px;
+    background-repeat:repeat-x;
+  }
+  .crumb{
+    font-size:13px;
+    letter-spacing:.06em;
+    text-transform:uppercase;
+    color:#C9BFAF;
+    margin:0 0 18px;
+    font-weight:600;
+  }
+  .crumb a{color:#C9BFAF; text-decoration:none;}
+  .crumb a:hover{color:var(--gold);}
+  .ticket h1{
+    font-family:'Fraunces',serif;
+    font-weight:900;
+    font-size:clamp(38px,7vw,64px);
+    line-height:1.02;
+    margin:0 0 10px;
+    text-transform:capitalize;
+  }
+  .ticket .stub{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    margin-top:22px;
+    font-size:14px;
+    color:#C9BFAF;
+  }
+  .stub .count{
+    font-family:'Fraunces',serif;
+    font-weight:700;
+    font-size:20px;
+    color:var(--gold);
+  }
+  .stub .dot{width:4px;height:4px;border-radius:50%;background:#5B5142;}
+
+  /* ---------- Grid ---------- */
+  .wrap{max-width:1120px; margin:0 auto; padding:36px 24px 80px;}
+  .grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill, minmax(240px,1fr));
+    gap:22px;
+  }
+
+  .card{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:18px;
+    overflow:hidden;
+    display:flex;
+    flex-direction:column;
+    transition:transform .18s ease, box-shadow .18s ease;
+  }
+  .card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 14px 28px -14px rgba(36,28,21,0.25);
+  }
+  .card .thumb{
+    width:100%;
+    aspect-ratio:4/3;
+    object-fit:cover;
+    display:block;
+    background:var(--line);
+  }
+  .card .body{
+    padding:18px 18px 20px;
+    display:flex;
+    flex-direction:column;
+    gap:6px;
+    flex:1;
+  }
+  .card h3{
+    font-family:'Fraunces',serif;
+    font-weight:700;
+    font-size:20px;
+    margin:0;
+    line-height:1.15;
+  }
+  .card .meta{
+    font-size:14px;
+    color:var(--muted);
+    margin:0 0 10px;
+  }
+  .card .foot{
+    margin-top:auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:12px;
+  }
+  .rating{
+    display:flex;
+    align-items:center;
+    gap:6px;
+    font-weight:700;
+    font-size:15px;
+  }
+  .stars{display:flex; gap:2px;}
+  .stars svg{width:15px; height:15px;}
+  .star-full{fill:var(--gold);}
+  .star-empty{fill:var(--line);}
+
+  .view-btn{
+    background:var(--chili);
+    color:#fff;
+    border:none;
+    padding:10px 22px;
+    border-radius:999px;
+    font-weight:700;
+    font-size:14px;
+    text-decoration:none;
+    white-space:nowrap;
+    transition:background .15s ease;
+  }
+  .view-btn:hover{background:var(--chili-dark);}
+
+  /* ---------- Empty state ---------- */
+  .empty{
+    text-align:center;
+    padding:70px 20px;
+    color:var(--muted);
+  }
+  .empty .big{
+    font-family:'Fraunces',serif;
+    font-weight:700;
+    font-size:26px;
+    color:var(--ink);
+    margin-bottom:8px;
+  }
+
+  @media (max-width:480px){
+    .ticket{padding:44px 18px 34px;}
+  }
+</style>
+</head>
+<body>
+
+<header class="ticket">
+  <p class="crumb"><a href="/">Home</a> &nbsp;/&nbsp; <a href="/categories/">Categories</a> &nbsp;/&nbsp; <span id="crumbCurrent">Loading…</span></p>
+  <h1 id="pageTitle">Loading…</h1>
+  <div class="stub">
+    <span><span class="count" id="resultCount">–</span> spots found</span>
+    <span class="dot"></span>
+    <span id="cityLine">Surat</span>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="grid" id="cardGrid"></div>
+  <div class="empty" id="emptyState" style="display:none;">
+    <div class="big">No restaurants here yet</div>
+    <div>We haven't added any spots for this category. Check back soon.</div>
+  </div>
+</main>
+
+<script>
+(function () {
+  // 1. Work out the category from the URL: last non-empty path segment.
+  //    e.g. /categories/burger/  ->  "burger"
+  function getCategoryFromUrl() {
+    const path = window.location.pathname.replace(/\/+$/, '');
+    const parts = path.split('/').filter(Boolean);
+    return decodeURIComponent(parts[parts.length - 1] || '');
+  }
+
+  const category = getCategoryFromUrl();
+  const prettyCategory = category
+    ? category.charAt(0).toUpperCase() + category.slice(1)
+    : 'All';
+
+  document.getElementById('pageTitle').textContent = prettyCategory + ' Spots';
+  document.getElementById('crumbCurrent').textContent = prettyCategory;
+  document.title = prettyCategory + ' | MenuPricesHub';
+
+  // 2. Fetch the shared dataset.
+  //    Site root is assumed to be the domain root (menupriceshub.github.io/data/restaurants.json).
+  //    If this site instead lives in a project subfolder, change this to a relative
+  //    path such as "../../data/restaurants.json".
+  fetch('/data/restaurants.json')
+    .then(res => res.json())
+    .then(renderCategory)
+    .catch(err => {
+      console.error('Could not load restaurants.json', err);
+      document.getElementById('cardGrid').style.display = 'none';
+      const empty = document.getElementById('emptyState');
+      empty.style.display = 'block';
+      empty.querySelector('.big').textContent = 'Could not load restaurants';
+      empty.querySelector('div:last-child').textContent = 'Please check data/restaurants.json.';
+    });
+
+  function starsHtml(rating) {
+    const full = Math.round(rating);
+    let html = '<div class="stars">';
+    for (let i = 1; i <= 5; i++) {
+      const cls = i <= full ? 'star-full' : 'star-empty';
+      html += `<svg viewBox="0 0 20 20" class="${cls}"><path d="M10 1.5l2.6 5.4 5.9.7-4.3 4.1 1.1 5.8L10 14.7l-5.3 2.8 1.1-5.8-4.3-4.1 5.9-.7L10 1.5z"/></svg>`;
+    }
+    html += '</div>';
+    return html;
+  }
+
+  function cardHtml(r) {
+    const rating = typeof r.rating === 'number' ? r.rating.toFixed(1) : '–';
+    return `
+      <article class="card">
+        <img class="thumb" src="${r.thumbnail || 'https://placehold.co/800x600?text=' + encodeURIComponent(r.name)}" alt="${r.name}" loading="lazy">
+        <div class="body">
+          <h3>${r.name}</h3>
+          <p class="meta">${r.city || ''}${r.category ? ' • ' + r.category : ''}</p>
+          <div class="foot">
+            <div class="rating">${rating} ${starsHtml(parseFloat(rating) || 0)}</div>
+            <a class="view-btn" href="${r.url || '#'}">View</a>
+          </div>
+        </div>
+      </article>`;
+  }
+
+  function renderCategory(data) {
+    const matches = data.filter(r =>
+      (r.category || '').trim().toLowerCase() === category.trim().toLowerCase()
+    );
+
+    document.getElementById('resultCount').textContent = matches.length;
+
+    const grid = document.getElementById('cardGrid');
+    const empty = document.getElementById('emptyState');
+
+    if (matches.length === 0) {
+      grid.style.display = 'none';
+      empty.style.display = 'block';
+      return;
+    }
+
+    grid.style.display = 'grid';
+    empty.style.display = 'none';
+    grid.innerHTML = matches.map(cardHtml).join('');
+  }
+})();
+</script>
+
+</body>
+</html>
