@@ -81,7 +81,13 @@ if (avgInfoEl) {
                   </tr>
                 `).join("")}
               </tbody>
-            </table>
+            </table> <div class="ptg-scroll-note">
+    ↔ Swipe table to see more
+  </div>
+
+  <p class="ptg-price-note">
+    * Prices may vary by location.
+  </p>
           </div>
         </section>
       `;
