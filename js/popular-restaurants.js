@@ -1,123 +1,110 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-fetch("/data/restaurants.json")
-.then(res => res.json())
-.then(restaurants => {
+  fetch("/data/restaurants.json")
+    .then(res => res.json())
+    .then(restaurants => {
 
+      renderPopular(
+        restaurants,
+        "popular-restaurants-section1",
+        "Restaurant"
+      );
 
-renderPopular(
-  restaurants,
-  "popular-restaurants-section1",
-  "Restaurant"
-);
+      renderPopular(
+        restaurants,
+        "popular-cafe-section1",
+        "Cafe"
+      );
 
-
-renderPopular(
-  restaurants,
-  "popular-cafe-section1",
-  "Cafe"
-);
-
-
-});
-
+    });
 
 });
 
 
 function renderPopular(data, sectionId, category){
 
-const section = document.getElementById(sectionId);
+  const section = document.getElementById(sectionId);
+  if(!section) return;
 
-if(!section) return;
+  const items = data
+    .filter(r => r.category === category)
+    .map(r => ({
+      ...r,
+      score: (Number(r.rating)*20) + (Number(r.totalrating)/100)
+    }))
+    .sort((a,b)=>b.score-a.score)
+    .slice(0,6);
 
+  section.innerHTML = `
 
-// filter category
-const items = data
-.filter(r => r.category === category)
-.map(r => ({
- ...r,
- score: (Number(r.rating)*20) + (Number(r.totalrating)/100)
-}))
-.sort((a,b)=>b.score-a.score)
-.slice(0,6);
+  <div class="popular-restaurants">
 
+    <div class="section-header">
+      <h2 class="popular-heading">Popular ${category}s</h2>
+      <a href="#" class="section-right">
+        View All
+        <i class="fa-solid fa-chevron-right icon"></i>
+      </a>
+    </div>
 
+    <div class="restaurant-grid">
 
-section.innerHTML = `
+      ${items.map(r=>`
 
-<div class="section-header">
-<h2 class="section-left">Popular ${category}s</h2>
+        <div class="restaurant-card">
 
-<a href="#" class="section-right">
-View All
-<i class="fa-solid fa-chevron-right icon"></i>
-</a>
+          <img class="restaurant-img" src="${r.thumbnail}">
 
-</div>
+          <div class="restaurant-content">
 
+            <h3 class="restaurant-name">
+              ${r.name}
+            </h3>
 
-<div class="restaurant-grid">
+            <div class="restaurant-info">
+              ${r.city} • ${category}
+            </div>
 
-${items.map(r=>`
+            <div class="restaurant-bottom">
 
-<div class="restaurant-card">
+              <div class="restaurant-rating">
+                <span>${r.rating}</span>
+                <span class="restaurant-stars">
+                  ${generateStars(r.rating)}
+                </span>
+              </div>
 
-<img class="restaurant-img" src="${r.thumbnail}">
+              <a href="${r.url}" class="restaurant-btn">
+                View
+              </a>
 
-<div class="restaurant-content">
+            </div>
 
-<h3 class="restaurant-name">
-${r.name}
-</h3>
+          </div>
 
-<div class="restaurant-info">
-${r.city} • ${category}
-</div>
+        </div>
 
+      `).join("")}
 
-<div class="restaurant-bottom">
+    </div>
 
-<div class="restaurant-rating">
-<span>${r.rating}</span>
-<span class="restaurant-stars">
-${generateStars(r.rating)}
-</span>
-</div>
+  </div>
 
-
-<a href="${r.url}" class="restaurant-btn">
-View
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-`).join("")}
-
-</div>
-
-`;
+  `;
 
 }
-
 
 
 function generateStars(rating){
 
-let html="";
+  let html="";
 
-for(let i=1;i<=5;i++){
+  for(let i=1;i<=5;i++){
+    html += i <= Math.round(rating)
+      ? `<i class="fas fa-star"></i>`
+      : `<i class="far fa-star"></i>`;
+  }
 
-html += i <= Math.round(rating)
-? `<i class="fas fa-star"></i>`
-: `<i class="far fa-star"></i>`;
-
-}
-
-return html;
+  return html;
 
 }
