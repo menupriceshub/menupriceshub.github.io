@@ -79,7 +79,7 @@ ${r.city} • ${category}
 <div class="restaurant-bottom">
 
 <div class="restaurant-rating">
-<span>${r.rating}</span>
+<span id="card-rating-info1">${r.rating}</span>
 <span class="restaurant-stars">
 ${generateStars(r.rating)}
 </span>
