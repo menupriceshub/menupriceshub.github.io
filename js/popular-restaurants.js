@@ -79,7 +79,7 @@ ${r.city} • ${category}
 <div class="restaurant-bottom">
 
 <div class="restaurant-rating">
-<span>{r.rating}</span>
+<span>${r.rating}</span>
 <span class="restaurant-stars">
 ${generateStars(r.rating)}
 </span>
@@ -107,21 +107,17 @@ View
 
 
 function generateStars(rating){
-  let html = "";
-  rating = Number(rating);
 
-  const fullStars = Math.floor(rating);
-  const hasHalf = (rating - fullStars) >= 0.5;
+let html="";
 
-  for (let i = 1; i <= 5; i++) {
-    if (i <= fullStars) {
-      html += `<i class="fas fa-star"></i>`;
-    } else if (i === fullStars + 1 && hasHalf) {
-      html += `<i class="fas fa-star-half-alt"></i>`;
-    } else {
-      html += `<i class="far fa-star"></i>`;
-    }
-  }
+for(let i=1;i<=5;i++){
 
-  return html;
+html += i <= Math.round(rating)
+? `<i class="fas fa-star"></i>`
+: `<i class="far fa-star"></i>`;
+
+}
+
+return html;
+
 }
