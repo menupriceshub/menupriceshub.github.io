@@ -56,7 +56,7 @@ function renderCategory(data, section, category){
 
     <div class="section-header">
       <h2 class="section-left">
-        Popular ${category.charAt(0).toUpperCase()+category.slice(1)} Restaurants
+         ${category.charAt(0).toUpperCase()+category.slice(1)} Restaurants
       </h2>
 
       <a href="/categories/${category}/" class="section-right">
