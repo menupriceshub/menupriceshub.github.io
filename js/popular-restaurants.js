@@ -108,16 +108,32 @@ View
 
 function generateStars(rating){
 
-let html="";
+  let html = "";
+  rating = Number(rating);
 
-for(let i=1;i<=5;i++){
+  const fullStars = Math.floor(rating);
+  const decimal = rating - fullStars;
 
-html += i <= Math.round(rating)
-? `<i class="fas fa-star"></i>`
-: `<i class="far fa-star"></i>`;
+  // decide half star: agar decimal >= 0.25 aur < 0.75 to half, >=0.75 to round up as full
+  let hasHalf = false;
+  let full = fullStars;
 
-}
+  if (decimal >= 0.75) {
+    full = fullStars + 1;
+  } else if (decimal >= 0.25) {
+    hasHalf = true;
+  }
 
-return html;
+  for (let i = 1; i <= 5; i++) {
+    if (i <= full) {
+      html += `<i class="fas fa-star"></i>`;
+    } else if (i === full + 1 && hasHalf) {
+      html += `<i class="fas fa-star-half-alt"></i>`; // FontAwesome 5
+      // FontAwesome 6 ho to: fa-star-half-stroke
+    } else {
+      html += `<i class="far fa-star"></i>`;
+    }
+  }
 
+  return html;
 }
