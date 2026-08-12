@@ -5,13 +5,43 @@ document.addEventListener("DOMContentLoaded", () => {
       renderPopular(restaurants, "popular-restaurants-section1", "Restaurant");
       renderPopular(restaurants, "popular-cafe-section1", "Cafe");
 
-      // naya: all restaurants list with load more
+      // all restaurants list with see more
       initAllRestaurants(restaurants, "all-restaurants-section");
 
-      // naya: near me feature
+      // near me feature (native device location, no third-party API)
       initNearMe(restaurants, "nearby-section");
     });
 });
+
+/* ---------------- POPULAR SECTIONS ---------------- */
+
+function renderPopular(data, sectionId, category) {
+  const section = document.getElementById(sectionId);
+  if (!section) return;
+
+  const items = data
+    .filter(r => r.category === category)
+    .map(r => ({
+      ...r,
+      score: (Number(r.rating) * 20) + (Number(r.totalrating) / 100)
+    }))
+    .sort((a, b) => b.score - a.score)
+    .slice(0, 6);
+
+  section.innerHTML = `
+    <div class="section-header">
+      <h2 class="section-left">Popular ${category}s</h2>
+      <a href="#" class="section-right">
+        View All
+        <i class="fa-solid fa-chevron-right icon"></i>
+      </a>
+    </div>
+
+    <div class="restaurant-grid">
+      ${items.map(r => restaurantCardHTML(r, category)).join("")}
+    </div>
+  `;
+}
 
 /* ---------------- ALL RESTAURANTS + SEE MORE ---------------- */
 
@@ -27,6 +57,16 @@ function initAllRestaurants(data, sectionId) {
 function renderAllList(sectionId) {
   const section = document.getElementById(sectionId);
   if (!section) return;
+
+  if (!allData || allData.length === 0) {
+    section.innerHTML = `
+      <div class="no-data-message">
+        <i class="fa-solid fa-utensils"></i>
+        <p>No restaurants available</p>
+      </div>
+    `;
+    return;
+  }
 
   const items = allData.slice(0, visibleCount);
   const hasMore = visibleCount < allData.length;
@@ -55,53 +95,50 @@ function renderAllList(sectionId) {
   }
 }
 
-/* ---------------- NEAR ME ---------------- */
+/* ---------------- NEAR ME (native device location only) ---------------- */
 
 function initNearMe(data, nearbySectionId) {
   const btn = document.getElementById("near-me-btn");
-  if (!btn) return; // agar HTML me button nahi hai to skip
+  if (!btn) return;
 
   btn.addEventListener("click", () => {
     const locationLabel = document.getElementById("user-location-label");
 
     if (!navigator.geolocation) {
+      if (locationLabel) {
+        locationLabel.innerHTML = `<i class="fa-solid fa-triangle-exclamation"></i> Geolocation not supported`;
+      }
       showNearbyError(nearbySectionId, "Geolocation is not supported by your browser");
       return;
     }
 
-    if (locationLabel) locationLabel.innerHTML = `<i class="fa-solid fa-spinner fa-spin"></i> Locating you...`;
+    if (locationLabel) {
+      locationLabel.innerHTML = `<i class="fa-solid fa-spinner fa-spin"></i> Locating you...`;
+    }
 
     navigator.geolocation.getCurrentPosition(
       pos => {
         const { latitude, longitude } = pos.coords;
-        showUserLocationName(latitude, longitude);
+
+        if (locationLabel) {
+          locationLabel.innerHTML = `<i class="fa-solid fa-location-dot"></i> Lat: ${latitude.toFixed(4)}, Lng: ${longitude.toFixed(4)}`;
+        }
+
         renderNearby(data, latitude, longitude, nearbySectionId);
       },
       err => {
-        // user ne allow nahi kiya ya error aaya
         if (locationLabel) {
           locationLabel.innerHTML = `<i class="fa-solid fa-location-crosshairs"></i> Location access denied`;
         }
         showNearbyError(nearbySectionId, "Please allow location access to see nearby restaurants");
+      },
+      {
+        enableHighAccuracy: true,
+        timeout: 10000,
+        maximumAge: 0
       }
     );
   });
-}
-
-// Reverse geocode karke user ko unka area/city naam dikhana (free, no API key - OpenStreetMap Nominatim)
-function showUserLocationName(lat, lng) {
-  const locationLabel = document.getElementById("user-location-label");
-  if (!locationLabel) return;
-
-  fetch(`https://nominatim.openstreetmap.org/reverse?lat=${lat}&lon=${lng}&format=json`)
-    .then(res => res.json())
-    .then(data => {
-      const place = data.address?.suburb || data.address?.city || data.address?.town || data.display_name || "Your area";
-      locationLabel.innerHTML = `<i class="fa-solid fa-location-dot"></i> ${place}`;
-    })
-    .catch(() => {
-      locationLabel.innerHTML = `<i class="fa-solid fa-location-dot"></i> Lat: ${lat.toFixed(2)}, Lng: ${lng.toFixed(2)}`;
-    });
 }
 
 function renderNearby(data, lat, lng, sectionId) {
@@ -178,21 +215,33 @@ function restaurantCardHTML(r, category, distance = null) {
   `;
 }
 
+/* ---------------- STAR RATING ---------------- */
+
 function generateStars(rating) {
   let html = "";
   rating = Number(rating);
+
   const fullStars = Math.floor(rating);
   const decimal = rating - fullStars;
+
   let hasHalf = false;
   let full = fullStars;
 
-  if (decimal >= 0.75) full = fullStars + 1;
-  else if (decimal >= 0.25) hasHalf = true;
+  if (decimal >= 0.75) {
+    full = fullStars + 1;
+  } else if (decimal >= 0.25) {
+    hasHalf = true;
+  }
 
   for (let i = 1; i <= 5; i++) {
-    if (i <= full) html += `<i class="fas fa-star"></i>`;
-    else if (i === full + 1 && hasHalf) html += `<i class="fas fa-star-half-alt"></i>`;
-    else html += `<i class="far fa-star"></i>`;
+    if (i <= full) {
+      html += `<i class="fas fa-star"></i>`;
+    } else if (i === full + 1 && hasHalf) {
+      html += `<i class="fas fa-star-half-alt"></i>`;
+    } else {
+      html += `<i class="far fa-star"></i>`;
+    }
   }
+
   return html;
 }
