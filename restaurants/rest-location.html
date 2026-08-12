@@ -1,48 +1,32 @@
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
 <div id="map" style="height:500px;"></div>
 
 <script>
-let map;
+const map = L.map("map").setView([20.5937, 78.9629], 5);
 
-async function initMap() {
-  map = new google.maps.Map(document.getElementById("map"), {
-    center: { lat: 20.5937, lng: 78.9629 },
-    zoom: 5
-  });
+L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+  attribution: "&copy; OpenStreetMap contributors"
+}).addTo(map);
 
-  const response = await fetch("/data/restaurants.json");
-  const restaurants = await response.json();
+fetch("/data/restaurants.json")
+  .then(res => res.json())
+  .then(data => {
+    const bounds = [];
 
-  const bounds = new google.maps.LatLngBounds();
+    data.forEach(item => {
+      if (item.lat && item.lng) {
+        L.marker([item.lat, item.lng])
+          .addTo(map)
+          .bindPopup(`<b>${item.name}</b><br>${item.address}`);
 
-  restaurants.forEach(item => {
-    if (item.lat && item.lng) {
-      const marker = new google.maps.Marker({
-        position: {
-          lat: Number(item.lat),
-          lng: Number(item.lng)
-        },
-        map: map,
-        title: item.name
-      });
+        bounds.push([item.lat, item.lng]);
+      }
+    });
 
-      const infoWindow = new google.maps.InfoWindow({
-        content: `<b>${item.name}</b><br>${item.address}`
-      });
-
-      marker.addListener("click", () => {
-        infoWindow.open(map, marker);
-      });
-
-      bounds.extend(marker.getPosition());
+    if (bounds.length) {
+      map.fitBounds(bounds);
     }
   });
-
-  if (restaurants.length) {
-    map.fitBounds(bounds);
-  }
-}
-</script>
-
-<script async
-src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
 </script>
