@@ -306,7 +306,45 @@ fetch("notifications.json?t=" + Date.now())
 
 
 
-  
+ .... 
+
+<div class="mph-notify-list">
+  <!-- existing cards yahan -->
+</div>
+
+<div class="mph-empty-state" style="display:none; text-align:center; padding:40px 20px; color:#888;">
+  <p>Koi notification available nahi hai</p>
+</div>
+
+  <script>
+
+
+    function checkNotifications() {
+  const list = document.querySelector(".mph-notify-list");
+  const emptyState = document.querySelector(".mph-empty-state");
+  const cards = list.querySelectorAll(".mph-notify-card");
+
+  if (cards.length === 0) {
+    list.style.display = "none";
+    emptyState.style.display = "block";
+  } else {
+    list.style.display = "block";
+    emptyState.style.display = "none";
+  }
+}
+
+// Page load par check karein
+checkNotifications();
+
+// Agar API se notifications aa rahe hain:
+fetch("notifications.json?t=" + Date.now())
+  .then(res => res.json())
+  .then(data => {
+    localStorage.setItem("seenCount", data.notifications.length);
+    checkNotifications(); // yahan bhi call karein
+  });
+  </script>
+  ... 
 
 
 <!-- submit rating -->
