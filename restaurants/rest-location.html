@@ -1,0 +1,48 @@
+<div id="map" style="height:500px;"></div>
+
+<script>
+let map;
+
+async function initMap() {
+  map = new google.maps.Map(document.getElementById("map"), {
+    center: { lat: 20.5937, lng: 78.9629 },
+    zoom: 5
+  });
+
+  const response = await fetch("/data/restaurants.json");
+  const restaurants = await response.json();
+
+  const bounds = new google.maps.LatLngBounds();
+
+  restaurants.forEach(item => {
+    if (item.lat && item.lng) {
+      const marker = new google.maps.Marker({
+        position: {
+          lat: Number(item.lat),
+          lng: Number(item.lng)
+        },
+        map: map,
+        title: item.name
+      });
+
+      const infoWindow = new google.maps.InfoWindow({
+        content: `<b>${item.name}</b><br>${item.address}`
+      });
+
+      marker.addListener("click", () => {
+        infoWindow.open(map, marker);
+      });
+
+      bounds.extend(marker.getPosition());
+    }
+  });
+
+  if (restaurants.length) {
+    map.fitBounds(bounds);
+  }
+}
+</script>
+
+<script async
+src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+</script>
