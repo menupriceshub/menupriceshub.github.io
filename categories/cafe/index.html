@@ -94,7 +94,47 @@
 
 <h1>Cafe</h1>
   
+<div id="category-nav">
+  <a href="/asian-food" class="cat-tab">Asian Food</a>
+  <a href="/burger" class="cat-tab">Burger</a>
+  <a href="/cafe" class="cat-tab">Cafe</a>
+  <a href="/desserts" class="cat-tab">Desserts</a>
+  <a href="/healthy-food" class="cat-tab">Healthy Food</a>
+  <a href="/italian" class="cat-tab">Italian</a>
+  <a href="/mexican" class="cat-tab">Mexican</a>
+  <a href="/pizza" class="cat-tab">Pizza</a>
+</div>
+  <script>
+/* =========================
+   3. ACTIVE CATEGORY TAB (based on current URL)
+========================= */
+(function setActiveCategoryTab() {
+  const categoryTabs = document.querySelectorAll(".cat-tab");
+  if (!categoryTabs.length) return;
 
+  // current URL ka last path segment nikalna (query/hash ignore karke)
+  const currentPath = window.location.pathname
+    .replace(/\/+$/, "")   // trailing slash hatao
+    .split("/")
+    .filter(Boolean)
+    .pop() || "";
+
+  categoryTabs.forEach(tab => {
+    const tabPath = tab.getAttribute("href")
+      .replace(/\/+$/, "")
+      .split("/")
+      .filter(Boolean)
+      .pop() || "";
+
+    tab.classList.remove("active-tab");
+
+    if (tabPath === currentPath) {
+      tab.classList.add("active-tab");
+    }
+  });
+})();
+    
+  </script>
 <section class="popular-restaurants" id="category-section1"><div id="category-restaurants-section"></div>
 </section>
 
