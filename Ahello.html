@@ -1,0 +1,44 @@
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js";
+  import { 
+    getAuth, 
+    GoogleAuthProvider, 
+    signInWithPopup, 
+    onAuthStateChanged 
+  } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-auth.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyCod1_H1HEGw2wUg3lzkC1OCKNfzQ17eho",
+    authDomain: "menupriceshub-964c0.firebaseapp.com",
+    projectId: "menupriceshub-964c0",
+    storageBucket: "menupriceshub-964c0.firebasestorage.app",
+    messagingSenderId: "846490180206",
+    appId: "1:846490180206:web:dfac3b25ad118c0810e47f"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const auth = getAuth(app);
+  const provider = new GoogleAuthProvider();
+
+  // Login button
+  document.getElementById("login-btn").addEventListener("click", () => {
+    signInWithPopup(auth, provider)
+      .then(result => {
+        console.log("Logged in:", result.user.displayName, result.user.email);
+      })
+      .catch(err => console.error("Login error:", err));
+  });
+
+  // Login state track karo
+  onAuthStateChanged(auth, (user) => {
+    if (user) {
+      console.log("User logged in:", user.displayName);
+      document.getElementById("user-info").textContent = `Welcome, ${user.displayName}`;
+    } else {
+      console.log("No user logged in");
+    }
+  });
+</script>
+
+<button id="login-btn">Sign in with Google</button>
+<p id="user-info"></p>
