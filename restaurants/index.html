@@ -1,43 +1,302 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Restaurants</title>
+<!-- ============================================================
+  SURAT FOOD WIDGET
+  Copy everything between the START/END markers into your website's
+  HTML where you want the widget to appear. It's fully self-contained
+  (scoped styles + scoped script) so it won't clash with your site's
+  existing CSS/JS. Fonts load from Google Fonts automatically.
+============================================================= -->
 
-  <!-- FontAwesome icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<!-- START: sfw-widget -->
+<div class="sfw-widget" id="sfw-widget">
 
-  <!-- tumhara CSS file -->
-  <link rel="stylesheet" href="/styles/style.css">
-</head>
-<body>
-<div id="all-restaurants-section"></div>
+  <div class="sfw-filters" id="sfw-filters"></div>
 
-<button id="near-me-btn">Near Me <i class="fa-solid fa-location-crosshairs"></i></button>
-<span id="user-location-label"></span>
-<div id="nearby-section"></div>
-  <!-- Popular Restaurants -->
-  <section id="popular-restaurants-section1"></section>
+  <div class="sfw-grid" id="sfw-grid"></div>
 
-  <!-- Popular Cafes -->
-  <section id="popular-cafe-section1"></section>
-
-  <!-- Near Me button + location label -->
-  <div class="near-me-wrapper">
-    <button id="near-me-btn">
-      <i class="fa-solid fa-location-crosshairs"></i> Near Me
-    </button>
-    <span id="user-location-label"></span>
+  <div class="sfw-loadmore-wrap" id="sfw-loadmore-wrap">
+    <div class="sfw-progress-track"><div class="sfw-progress-fill" id="sfw-progress-fill"></div></div>
+    <div class="sfw-progress-label" id="sfw-progress-label"></div>
+    <button id="sfw-loadmore-btn">Load more places</button>
   </div>
 
-  <!-- Nearby restaurants render yaha -->
-  <section id="nearby-section"></section>
+</div>
 
-  <!-- All Restaurants with See More -->
-  <section id="all-restaurants-section"></section>
+<style>
+  #sfw-widget, #sfw-widget *{ box-sizing:border-box; }
+  #sfw-widget{
+    --sfw-bg:#1C1712;
+    --sfw-card:#F3EDE4;
+    --sfw-ink:#241a12;
+    --sfw-ink-soft:#5c4f40;
+    --sfw-cream:#F3EDE4;
+    --sfw-mustard:#E3A008;
+    --sfw-chili:#B93A1B;
+    --sfw-olive:#5F6F3A;
+    --sfw-line:rgba(28,23,18,0.12);
+    font-family:'Work Sans', sans-serif;
+    background:var(--sfw-bg);
+    padding:32px 24px 44px;
+    border-radius:14px;
+    max-width:1180px;
+    margin:0 auto;
+  }
+  #sfw-widget .sfw-filters{
+    display:flex; gap:10px; flex-wrap:wrap; margin-bottom:24px;
+  }
+  #sfw-widget .sfw-filter-btn{
+    font-family:'JetBrains Mono', monospace;
+    font-size:12px; letter-spacing:0.05em; text-transform:uppercase;
+    background:transparent; color:rgba(243,237,228,0.7);
+    border:1px solid rgba(243,237,228,0.18);
+    border-radius:100px; padding:9px 18px; cursor:pointer;
+    transition:all .2s ease;
+  }
+  #sfw-widget .sfw-filter-btn:hover{ border-color:var(--sfw-mustard); color:var(--sfw-mustard); }
+  #sfw-widget .sfw-filter-btn.active{
+    background:var(--sfw-mustard); border-color:var(--sfw-mustard);
+    color:#1C1712; font-weight:600;
+  }
 
-  <!-- script tag hamesha body ke end me, HTML ke baad -->
-  <script src="/js/restaurant-script1.js"></script>
-</body>
-</html>
+  #sfw-widget .sfw-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill, minmax(280px, 1fr));
+    gap:20px;
+  }
+
+  #sfw-widget .sfw-card{
+    background:var(--sfw-card); color:var(--sfw-ink);
+    border-radius:4px; overflow:hidden; position:relative;
+    display:flex; flex-direction:column;
+    opacity:0; transform:translateY(14px);
+    animation:sfw-rise .5s ease forwards;
+  }
+  @keyframes sfw-rise{ to{ opacity:1; transform:translateY(0); } }
+
+  #sfw-widget .sfw-stripe{ height:6px; width:100%; }
+  #sfw-widget .sfw-stripe-restaurant{ background:var(--sfw-chili); }
+  #sfw-widget .sfw-stripe-burger{ background:var(--sfw-mustard); }
+  #sfw-widget .sfw-stripe-cafe{ background:var(--sfw-olive); }
+
+  #sfw-widget .sfw-media{
+    position:relative; height:160px; overflow:hidden; background:#0f0c08;
+  }
+  #sfw-widget .sfw-media img{
+    width:100%; height:100%; object-fit:cover; transition:transform .5s ease;
+  }
+  #sfw-widget .sfw-card:hover .sfw-media img{ transform:scale(1.06); }
+
+  #sfw-widget .sfw-cat-tag{
+    position:absolute; top:12px; left:12px;
+    font-family:'JetBrains Mono', monospace; font-size:10.5px;
+    letter-spacing:0.08em; text-transform:uppercase;
+    background:rgba(28,23,18,0.85); color:var(--sfw-cream);
+    padding:5px 10px; border-radius:100px;
+  }
+  #sfw-widget .sfw-rating-badge{
+    position:absolute; top:12px; right:12px;
+    font-family:'JetBrains Mono', monospace; font-size:13px; font-weight:600;
+    background:var(--sfw-cream); color:var(--sfw-ink);
+    padding:5px 9px; border-radius:6px;
+  }
+  #sfw-widget .sfw-rating-badge.low{ background:var(--sfw-chili); color:var(--sfw-cream); }
+  #sfw-widget .sfw-rating-badge.mid{ background:var(--sfw-mustard); color:#1C1712; }
+  #sfw-widget .sfw-rating-badge.high{ background:var(--sfw-olive); color:var(--sfw-cream); }
+
+  #sfw-widget .sfw-body{
+    padding:16px 18px 18px; display:flex; flex-direction:column; gap:8px; flex:1;
+  }
+  #sfw-widget .sfw-body h3{
+    font-family:'Fraunces', serif; font-weight:600; font-size:20px; margin:0;
+  }
+  #sfw-widget .sfw-loc{ font-size:13px; color:var(--sfw-ink-soft); }
+  #sfw-widget .sfw-loc::before{ content:"📍 "; }
+  #sfw-widget .sfw-desc{ font-size:13px; line-height:1.5; color:#4a3d2e; margin:0; }
+
+  #sfw-widget .sfw-foot{
+    margin-top:auto; display:flex; justify-content:space-between; align-items:center;
+    padding-top:10px; border-top:1px dashed var(--sfw-line);
+    font-family:'JetBrains Mono', monospace; font-size:12px;
+  }
+  #sfw-widget .sfw-votes{ color:var(--sfw-ink-soft); }
+  #sfw-widget .sfw-visit{
+    color:var(--sfw-chili); text-decoration:none; font-weight:600;
+  }
+  #sfw-widget .sfw-visit:hover{ text-decoration:underline; }
+
+  #sfw-widget .sfw-loadmore-wrap{
+    display:flex; flex-direction:column; align-items:center; gap:12px; margin-top:36px;
+  }
+  #sfw-widget .sfw-progress-track{
+    width:200px; height:4px; background:rgba(243,237,228,0.12);
+    border-radius:4px; overflow:hidden;
+  }
+  #sfw-widget .sfw-progress-fill{
+    height:100%; background:linear-gradient(90deg, var(--sfw-chili), var(--sfw-mustard));
+    width:0%; transition:width .4s ease;
+  }
+  #sfw-widget .sfw-progress-label{
+    font-family:'JetBrains Mono', monospace; font-size:11px;
+    letter-spacing:0.08em; text-transform:uppercase; color:rgba(243,237,228,0.55);
+  }
+  #sfw-widget #sfw-loadmore-btn{
+    font-family:'Fraunces', serif; font-weight:600; font-size:16px;
+    background:var(--sfw-cream); color:var(--sfw-ink); border:none;
+    padding:13px 34px; border-radius:100px; cursor:pointer;
+    transition:transform .18s ease, box-shadow .18s ease;
+  }
+  #sfw-widget #sfw-loadmore-btn:hover{
+    transform:translateY(-2px); box-shadow:0 8px 24px rgba(227,160,8,0.25);
+  }
+  #sfw-widget #sfw-loadmore-btn:disabled{ opacity:0.4; cursor:default; transform:none; box-shadow:none; }
+
+  #sfw-widget .sfw-empty{
+    text-align:center; padding:50px 20px; color:rgba(243,237,228,0.5);
+    font-family:'JetBrains Mono', monospace; font-size:13px; grid-column:1/-1;
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    #sfw-widget .sfw-card{ animation:none; opacity:1; transform:none; }
+  }
+</style>
+
+<!-- Fonts (skip this line if your site already loads these) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Work+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+<script>
+(function(){
+  // ---- Path/URL to your JSON file. Change this to wherever you host it. ----
+  const SFW_JSON_URL = 'restaurants.json';
+
+  const PAGE_SIZE = 5;
+  let visibleCount = PAGE_SIZE;
+  let activeFilter = "All";
+  let SFW_DATA = [];
+  let shuffled = [];
+
+  const grid = document.getElementById('sfw-grid');
+  const btn = document.getElementById('sfw-loadmore-btn');
+  const wrap = document.getElementById('sfw-loadmore-wrap');
+  const fill = document.getElementById('sfw-progress-fill');
+  const label = document.getElementById('sfw-progress-label');
+  const filtersEl = document.getElementById('sfw-filters');
+
+  function stripeClass(cat){
+    const c = cat.toLowerCase();
+    if(c === 'burger') return 'sfw-stripe-burger';
+    if(c === 'cafe') return 'sfw-stripe-cafe';
+    return 'sfw-stripe-restaurant';
+  }
+  function ratingClass(r){
+    if(r < 2.5) return 'low';
+    if(r < 4) return 'mid';
+    return 'high';
+  }
+  function cardHTML(item){
+    return `
+    <article class="sfw-card">
+      <div class="sfw-stripe ${stripeClass(item.category)}"></div>
+      <div class="sfw-media">
+        <img src="${item.thumbnail}" alt="${item.name}" loading="lazy">
+        <span class="sfw-cat-tag">${item.category}</span>
+        <span class="sfw-rating-badge ${ratingClass(item.rating)}">★ ${item.rating.toFixed(1)}</span>
+      </div>
+      <div class="sfw-body">
+        <h3>${item.name}</h3>
+        <div class="sfw-loc">${item.location}</div>
+        <p class="sfw-desc">${item.description}</p>
+        <div class="sfw-foot">
+          <span class="sfw-votes">${item.totalrating} ratings</span>
+          <a class="sfw-visit" href="${item.website}" target="_blank" rel="noopener">Visit site →</a>
+        </div>
+      </div>
+    </article>`;
+  }
+
+  function getFiltered(){
+    if(activeFilter === 'All') return shuffled;
+    return shuffled.filter(d => d.category.toLowerCase() === activeFilter.toLowerCase());
+  }
+
+  function render(){
+    const filtered = getFiltered();
+    grid.innerHTML = '';
+    if(filtered.length === 0){
+      grid.innerHTML = '<div class="sfw-empty">Is category mein abhi koi place nahi hai.</div>';
+      wrap.style.display = 'none';
+      return;
+    }
+    const shown = filtered.slice(0, visibleCount);
+    shown.forEach((item, i) => {
+      const tmp = document.createElement('div');
+      tmp.innerHTML = cardHTML(item);
+      const el = tmp.firstElementChild;
+      el.style.animationDelay = (i % PAGE_SIZE) * 0.06 + 's';
+      grid.appendChild(el);
+    });
+
+    const remaining = filtered.length - shown.length;
+    if(remaining > 0){
+      wrap.style.display = 'flex';
+      btn.style.display = 'inline-block';
+      btn.textContent = `Load more places (${remaining} left)`;
+    } else {
+      btn.style.display = 'none';
+      wrap.style.display = filtered.length > PAGE_SIZE ? 'flex' : 'none';
+    }
+
+    const pct = Math.min(100, (shown.length / filtered.length) * 100);
+    fill.style.width = pct + '%';
+    label.textContent = `Showing ${shown.length} of ${filtered.length}`;
+  }
+
+  btn.addEventListener('click', () => {
+    visibleCount += PAGE_SIZE;
+    render();
+  });
+
+  function setupFilters(){
+    const cats = ['All', ...new Set(SFW_DATA.map(d => d.category))];
+    filtersEl.innerHTML = cats.map(c =>
+      `<button class="sfw-filter-btn${c==='All' ? ' active' : ''}" data-cat="${c}">${c}</button>`
+    ).join('');
+    filtersEl.querySelectorAll('.sfw-filter-btn').forEach(b => {
+      b.addEventListener('click', () => {
+        filtersEl.querySelectorAll('.sfw-filter-btn').forEach(x => x.classList.remove('active'));
+        b.classList.add('active');
+        activeFilter = b.dataset.cat;
+        visibleCount = PAGE_SIZE;
+        render();
+      });
+    });
+  }
+
+  function showLoading(){
+    grid.innerHTML = '<div class="sfw-empty">Loading places…</div>';
+    wrap.style.display = 'none';
+  }
+  function showError(){
+    grid.innerHTML = '<div class="sfw-empty">Data load nahi ho paaya. "' + SFW_JSON_URL + '" path check karo.</div>';
+    wrap.style.display = 'none';
+  }
+
+  showLoading();
+  fetch(SFW_JSON_URL)
+    .then(res => {
+      if(!res.ok) throw new Error('HTTP ' + res.status);
+      return res.json();
+    })
+    .then(data => {
+      SFW_DATA = data;
+      // Shuffle once so the order is random on load, not city/grouped
+      shuffled = SFW_DATA.map(d => d).sort(() => Math.random() - 0.5);
+      setupFilters();
+      render();
+    })
+    .catch(err => {
+      console.error('sfw-widget: failed to load JSON', err);
+      showError();
+    });
+})();
+</script>
+<!-- END: sfw-widget -->
