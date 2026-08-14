@@ -166,7 +166,7 @@
 <script>
 (function(){
   // ---- Path/URL to your JSON file. Change this to wherever you host it. ----
-  const SFW_JSON_URL = '/data/restaurants.json';
+  const SFW_JSON_URL = 'restaurants.json';
 
   const PAGE_SIZE = 5;
   let visibleCount = PAGE_SIZE;
@@ -255,6 +255,12 @@
     render();
   });
 
+  // Category -> existing page URL. Pattern: categories/<category-lowercase>
+  // Edit this if your pages use a different naming (e.g. add ".html").
+  function categoryUrl(cat){
+    return `categories/${cat.toLowerCase()}`;
+  }
+
   function setupFilters(){
     const cats = ['All', ...new Set(SFW_DATA.map(d => d.category))];
     filtersEl.innerHTML = cats.map(c =>
@@ -262,11 +268,17 @@
     ).join('');
     filtersEl.querySelectorAll('.sfw-filter-btn').forEach(b => {
       b.addEventListener('click', () => {
-        filtersEl.querySelectorAll('.sfw-filter-btn').forEach(x => x.classList.remove('active'));
-        b.classList.add('active');
-        activeFilter = b.dataset.cat;
-        visibleCount = PAGE_SIZE;
-        render();
+        const cat = b.dataset.cat;
+        if(cat === 'All'){
+          filtersEl.querySelectorAll('.sfw-filter-btn').forEach(x => x.classList.remove('active'));
+          b.classList.add('active');
+          activeFilter = 'All';
+          visibleCount = PAGE_SIZE;
+          render();
+        } else {
+          // Navigate to the dedicated category page instead of filtering in place
+          window.location.href = categoryUrl(cat);
+        }
       });
     });
   }
