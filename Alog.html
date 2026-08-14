@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Owner Dashboard — MenuPricesHub</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --board:#1F2A24;
+    --board-line: rgba(241,239,231,0.08);
+    --card:#28352E;
+    --card-raised:#2E3C34;
+    --chalk:#F1EFE7;
+    --chalk-dim: rgba(241,239,231,0.62);
+    --chalk-faint: rgba(241,239,231,0.32);
+    --mustard:#E8A33D;
+    --mustard-dim: rgba(232,163,61,0.16);
+    --paprika:#C1502E;
+    --paprika-dim: rgba(193,80,46,0.16);
+    --sage:#7FA687;
+    --radius: 10px;
+    --serif: 'Fraunces', Georgia, serif;
+    --sans: 'IBM Plex Sans', system-ui, sans-serif;
+    --mono: 'IBM Plex Mono', ui-monospace, monospace;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:
+      linear-gradient(var(--board-line) 1px, transparent 1px) 0 0 / 100% 32px,
+      var(--board);
+    color:var(--chalk);
+    font-family:var(--sans);
+    min-height:100vh;
+    padding-bottom:80px;
+  }
+  a{color:inherit;}
+
+  /* Topbar */
+  .topbar{
+    display:flex;align-items:center;justify-content:space-between;
+    padding:18px 20px;
+    border-bottom:1px solid var(--board-line);
+    position:sticky;top:0;
+    background:rgba(31,42,36,0.92);
+    backdrop-filter: blur(6px);
+    z-index:10;
+  }
+  .brand{
+    font-family:var(--serif);
+    font-weight:600;
+    font-size:1.15rem;
+    letter-spacing:0.01em;
+  }
+  .brand span{color:var(--mustard);}
+  .auth-area{display:flex;align-items:center;gap:10px;}
+  .user-chip{
+    display:flex;align-items:center;gap:8px;
+    font-family:var(--mono);
+    font-size:0.78rem;
+    color:var(--chalk-dim);
+    background:var(--card);
+    border:1px solid var(--board-line);
+    padding:6px 10px 6px 6px;
+    border-radius:999px;
+  }
+  .user-chip img{width:24px;height:24px;border-radius:50%;display:block;}
+  .btn{
+    font-family:var(--sans);
+    font-weight:600;
+    font-size:0.85rem;
+    border:none;
+    border-radius:8px;
+    padding:10px 16px;
+    cursor:pointer;
+    transition:transform .12s ease, filter .12s ease;
+  }
+  .btn:active{transform:scale(0.97);}
+  .btn-primary{background:var(--mustard);color:#1F2A24;}
+  .btn-primary:hover{filter:brightness(1.08);}
+  .btn-ghost{background:transparent;color:var(--chalk-dim);border:1px solid var(--board-line);}
+  .btn-ghost:hover{color:var(--chalk);border-color:var(--chalk-faint);}
+  .btn-danger{background:var(--paprika-dim);color:#F3B7A2;border:1px solid rgba(193,80,46,0.4);}
+
+  /* Container */
+  .wrap{max-width:760px;margin:0 auto;padding:28px 18px 0;}
+
+  /* Landing / gate states */
+  .gate{
+    text-align:center;
+    padding:64px 24px;
+  }
+  .gate .eyebrow{
+    font-family:var(--mono);
+    font-size:0.72rem;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--mustard);
+    margin-bottom:14px;
+  }
+  .gate h1{
+    font-family:var(--serif);
+    font-weight:600;
+    font-size:2rem;
+    line-height:1.15;
+    margin:0 0 12px;
+  }
+  .gate p{
+    color:var(--chalk-dim);
+    max-width:420px;
+    margin:0 auto 26px;
+    line-height:1.55;
+    font-size:0.95rem;
+  }
+
+  /* Ticket header */
+  .ticket-head{
+    background:var(--card);
+    border:1px solid var(--board-line);
+    border-radius:var(--radius);
+    padding:22px 22px 20px;
+    margin-bottom:18px;
+    position:relative;
+    overflow:hidden;
+  }
+  .ticket-head::before{
+    content:"";
+    position:absolute; left:0; top:0; bottom:0; width:5px;
+    background:repeating-linear-gradient(180deg, var(--mustard) 0 10px, transparent 10px 18px);
+  }
+  .ticket-row{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;flex-wrap:wrap;}
+  .ticket-label{
+    font-family:var(--mono);
+    font-size:0.7rem;
+    letter-spacing:0.1em;
+    text-transform:uppercase;
+    color:var(--chalk-faint);
+    margin-bottom:6px;
+  }
+  .ticket-head h2{
+    font-family:var(--serif);
+    font-size:1.6rem;
+    font-weight:600;
+    margin:0 0 4px;
+  }
+  .ticket-head .sub{color:var(--chalk-dim);font-size:0.88rem;}
+  .status-pill{
+    font-family:var(--mono);
+    font-size:0.72rem;
+    letter-spacing:0.06em;
+    padding:5px 11px;
+    border-radius:999px;
+    background:var(--mustard-dim);
+    color:var(--mustard);
+    border:1px solid rgba(232,163,61,0.35);
+    white-space:nowrap;
+  }
+
+  /* Section cards */
+  .section{
+    background:var(--card);
+    border:1px solid var(--board-line);
+    border-radius:var(--radius);
+    margin-bottom:16px;
+    overflow:hidden;
+  }
+  .section-head{
+    display:flex;align-items:center;gap:10px;
+    padding:16px 20px;
+    border-bottom:1px solid var(--board-line);
+  }
+  .section-num{
+    font-family:var(--mono);
+    font-size:0.75rem;
+    color:var(--mustard);
+    background:var(--mustard-dim);
+    border-radius:5px;
+    padding:2px 7px;
+  }
+  .section-head h3{
+    font-family:var(--serif);
+    font-weight:600;
+    font-size:1.05rem;
+    margin:0;
+  }
+  .section-body{padding:18px 20px 20px;}
+
+  .field{margin-bottom:14px;}
+  .field label{
+    display:block;
+    font-family:var(--mono);
+    font-size:0.72rem;
+    letter-spacing:0.06em;
+    text-transform:uppercase;
+    color:var(--chalk-faint);
+    margin-bottom:6px;
+  }
+  .field input, .field textarea{
+    width:100%;
+    background:var(--card-raised);
+    border:1px solid var(--board-line);
+    color:var(--chalk);
+    font-family:var(--sans);
+    font-size:0.92rem;
+    padding:10px 12px;
+    border-radius:7px;
+    outline:none;
+    transition:border-color .12s ease;
+  }
+  .field input:focus, .field textarea:focus{border-color:var(--mustard);}
+  .field textarea{resize:vertical;min-height:70px;line-height:1.5;}
+  .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+  @media (max-width:520px){.grid-2{grid-template-columns:1fr;}}
+
+  /* Hours */
+  .hours-row{
+    display:grid;grid-template-columns:100px 1fr;gap:10px;align-items:center;
+    margin-bottom:8px;
+  }
+  .hours-row span{font-family:var(--mono);font-size:0.78rem;color:var(--chalk-dim);}
+  .hours-row input{
+    background:var(--card-raised);border:1px solid var(--board-line);color:var(--chalk);
+    font-family:var(--sans);font-size:0.85rem;padding:8px 10px;border-radius:6px;outline:none;
+  }
+  .hours-row input:focus{border-color:var(--mustard);}
+
+  /* Menu items */
+  .menu-item{
+    display:grid;grid-template-columns:1fr 100px 32px;gap:8px;
+    margin-bottom:10px;align-items:center;
+  }
+  .menu-item input{
+    background:var(--card-raised);border:1px solid var(--board-line);color:var(--chalk);
+    font-family:var(--sans);font-size:0.88rem;padding:9px 10px;border-radius:6px;outline:none;
+  }
+  .menu-item input:focus{border-color:var(--mustard);}
+  .icon-btn{
+    width:32px;height:32px;
+    display:flex;align-items:center;justify-content:center;
+    background:var(--paprika-dim);
+    color:#F3B7A2;
+    border:1px solid rgba(193,80,46,0.4);
+    border-radius:6px;
+    cursor:pointer;
+    font-size:1rem;
+    line-height:1;
+  }
+  .add-row-btn{
+    font-family:var(--mono);
+    font-size:0.8rem;
+    color:var(--mustard);
+    background:transparent;
+    border:1px dashed rgba(232,163,61,0.4);
+    border-radius:7px;
+    padding:9px 14px;
+    cursor:pointer;
+    width:100%;
+    text-align:center;
+    margin-top:4px;
+  }
+  .add-row-btn:hover{background:var(--mustard-dim);}
+
+  /* Reviews */
+  .review{
+    padding:12px 0;
+    border-bottom:1px solid var(--board-line);
+  }
+  .review:last-child{border-bottom:none;}
+  .review-top{display:flex;justify-content:space-between;font-family:var(--mono);font-size:0.75rem;color:var(--chalk-faint);margin-bottom:5px;}
+  .review-stars{color:var(--mustard);letter-spacing:1px;}
+  .review p{margin:0;font-size:0.88rem;color:var(--chalk-dim);line-height:1.5;}
+  .empty-note{
+    font-family:var(--mono);font-size:0.82rem;color:var(--chalk-faint);
+    text-align:center;padding:18px 0;
+  }
+
+  /* Save bar */
+  .save-bar{
+    position:sticky;bottom:0;
+    display:flex;justify-content:flex-end;gap:10px;
+    padding:14px 0 20px;
+  }
+  .save-status{
+    font-family:var(--mono);
+    font-size:0.78rem;
+    color:var(--sage);
+    align-self:center;
+    margin-right:auto;
+    opacity:0;
+    transition:opacity .2s ease;
+  }
+  .save-status.show{opacity:1;}
+
+  .hidden{display:none !important;}
+  .spinner{
+    width:16px;height:16px;border-radius:50%;
+    border:2px solid rgba(31,42,36,0.3);
+    border-top-color:#1F2A24;
+    display:inline-block;
+    animation:spin .7s linear infinite;
+    vertical-align:middle;margin-right:6px;
+  }
+  @keyframes spin{to{transform:rotate(360deg);}}
+</style>
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="brand">Menu<span>Prices</span>Hub — Owner</div>
+    <div class="auth-area" id="auth-area">
+      <button class="btn btn-primary" id="login-btn">Sign in with Google</button>
+    </div>
+  </div>
+
+  <div class="wrap">
+
+    <!-- Not logged in -->
+    <div class="gate" id="gate-loggedout">
+      <div class="eyebrow">Owner access</div>
+      <h1>Manage your restaurant's listing</h1>
+      <p>Sign in with the Google account linked to your restaurant to update hours, menu prices, and contact details — and see what customers are saying.</p>
+      <button class="btn btn-primary" id="login-btn-2">Sign in with Google</button>
+    </div>
+
+    <!-- Logged in, no restaurant linked -->
+    <div class="gate hidden" id="gate-nomatch">
+      <div class="eyebrow" style="color:var(--paprika);">No listing found</div>
+      <h1>This account isn't linked to a restaurant</h1>
+      <p>We couldn't find a restaurant where your account is set as the owner. If you believe this is a mistake, contact MenuPricesHub support with your registered email so we can link your account.</p>
+    </div>
+
+    <!-- Dashboard -->
+    <div id="dashboard" class="hidden">
+
+      <div class="ticket-head">
+        <div class="ticket-row">
+          <div>
+            <div class="ticket-label">Order Ticket · Your Listing</div>
+            <h2 id="dh-name">—</h2>
+            <div class="sub" id="dh-sub">—</div>
+          </div>
+          <div class="status-pill" id="dh-rating">— ★</div>
+        </div>
+      </div>
+
+      <!-- Basic info -->
+      <div class="section">
+        <div class="section-head">
+          <span class="section-num">01</span>
+          <h3>Basic details</h3>
+        </div>
+        <div class="section-body">
+          <div class="field">
+            <label>Restaurant name</label>
+            <input type="text" id="f-name">
+          </div>
+          <div class="grid-2">
+            <div class="field">
+              <label>Phone</label>
+              <input type="text" id="f-phone">
+            </div>
+            <div class="field">
+              <label>City</label>
+              <input type="text" id="f-city">
+            </div>
+          </div>
+          <div class="field">
+            <label>Website</label>
+            <input type="text" id="f-website">
+          </div>
+          <div class="field">
+            <label>Description</label>
+            <textarea id="f-description"></textarea>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hours -->
+      <div class="section">
+        <div class="section-head">
+          <span class="section-num">02</span>
+          <h3>Opening hours</h3>
+        </div>
+        <div class="section-body" id="hours-body">
+          <!-- filled by JS -->
+        </div>
+      </div>
+
+      <!-- Menu -->
+      <div class="section">
+        <div class="section-head">
+          <span class="section-num">03</span>
+          <h3>Menu</h3>
+        </div>
+        <div class="section-body">
+          <div id="menu-body"></div>
+          <button class="add-row-btn" id="add-menu-item">+ Add menu item</button>
+        </div>
+      </div>
+
+      <!-- Reviews -->
+      <div class="section">
+        <div class="section-head">
+          <span class="section-num">04</span>
+          <h3>Customer reviews</h3>
+        </div>
+        <div class="section-body" id="reviews-body">
+          <div class="empty-note">Loading reviews…</div>
+        </div>
+      </div>
+
+      <div class="save-bar">
+        <span class="save-status" id="save-status">Saved</span>
+        <button class="btn btn-ghost" id="logout-btn">Sign out</button>
+        <button class="btn btn-primary" id="save-btn">Save changes</button>
+      </div>
+    </div>
+
+  </div>
+
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js";
+  import {
+    getAuth, GoogleAuthProvider, signInWithPopup, signOut, onAuthStateChanged
+  } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-auth.js";
+  import {
+    getFirestore, collection, query, where, getDocs, doc, updateDoc
+  } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-firestore.js";
+
+  // --- Firebase config ---
+  const firebaseConfig = {
+    apiKey: "AIzaSyCod1_H1HEGw2wUg3lzkC1OCKNfzQ17eho",
+    authDomain: "menupriceshub-964c0.firebaseapp.com",
+    projectId: "menupriceshub-964c0",
+    storageBucket: "menupriceshub-964c0.firebasestorage.app",
+    messagingSenderId: "846490180206",
+    appId: "1:846490180206:web:dfac3b25ad118c0810e47f"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const auth = getAuth(app);
+  const db = getFirestore(app);
+  const provider = new GoogleAuthProvider();
+
+  const DAYS = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
+
+  let currentRestaurantRef = null;
+  let currentRestaurantData = null;
+  let menuIdCounter = 0;
+
+  // --- DOM refs ---
+  const gateLoggedOut = document.getElementById("gate-loggedout");
+  const gateNoMatch   = document.getElementById("gate-nomatch");
+  const dashboard      = document.getElementById("dashboard");
+  const authArea        = document.getElementById("auth-area");
+  const hoursBody       = document.getElementById("hours-body");
+  const menuBody        = document.getElementById("menu-body");
+  const reviewsBody     = document.getElementById("reviews-body");
+  const saveStatus      = document.getElementById("save-status");
+
+  function showOnly(el){
+    [gateLoggedOut, gateNoMatch, dashboard].forEach(e => e.classList.add("hidden"));
+    el.classList.remove("hidden");
+  }
+
+  // --- Auth ---
+  function doLogin(){
+    signInWithPopup(auth, provider).catch(err => {
+      alert("Sign-in failed: " + err.message);
+    });
+  }
+  document.getElementById("login-btn").addEventListener("click", doLogin);
+  document.getElementById("login-btn-2").addEventListener("click", doLogin);
+
+  document.addEventListener("click", (e) => {
+    if(e.target && e.target.id === "logout-btn") signOut(auth);
+  });
+
+  onAuthStateChanged(auth, async (user) => {
+    if (!user) {
+      authArea.innerHTML = `<button class="btn btn-primary" id="login-btn">Sign in with Google</button>`;
+      document.getElementById("login-btn").addEventListener("click", doLogin);
+      showOnly(gateLoggedOut);
+      return;
+    }
+
+    authArea.innerHTML = `
+      <div class="user-chip">
+        <img src="${user.photoURL || ''}" alt="">
+        ${user.displayName || user.email}
+      </div>
+      <button class="btn btn-ghost" id="logout-btn">Sign out</button>
+    `;
+
+    await loadRestaurantForOwner(user.uid);
+  });
+
+  // --- Load restaurant owned by this user ---
+  async function loadRestaurantForOwner(uid){
+    try {
+      const q = query(collection(db, "restaurants"), where("ownerId", "==", uid));
+      const snap = await getDocs(q);
+
+      if (snap.empty) {
+        showOnly(gateNoMatch);
+        return;
+      }
+
+      const docSnap = snap.docs[0];
+      currentRestaurantRef = doc(db, "restaurants", docSnap.id);
+      currentRestaurantData = docSnap.data();
+
+      populateDashboard(currentRestaurantData);
+      loadReviews(docSnap.id);
+      showOnly(dashboard);
+    } catch (err) {
+      console.error("Error loading restaurant:", err);
+      reviewsBody.innerHTML = `<div class="empty-note">Could not load your listing. Check your connection and try again.</div>`;
+      showOnly(gateNoMatch);
+    }
+  }
+
+  function populateDashboard(r){
+    document.getElementById("dh-name").textContent = r.name || "Unnamed restaurant";
+    document.getElementById("dh-sub").textContent = [r.category, r.city].filter(Boolean).join(" · ") || "—";
+    document.getElementById("dh-rating").textContent = r.rating ? `${r.rating} ★ · ${r.totalrating || 0} reviews` : "No rating yet";
+
+    document.getElementById("f-name").value = r.name || "";
+    document.getElementById("f-phone").value = r.phone || "";
+    document.getElementById("f-city").value = r.city || "";
+    document.getElementById("f-website").value = r.website || "";
+    document.getElementById("f-description").value = r.description || "";
+
+    // Hours
+    hoursBody.innerHTML = "";
+    const hoursMap = {};
+    (r.hours || []).forEach(h => hoursMap[h.day] = h.time);
+    DAYS.forEach(day => {
+      const row = document.createElement("div");
+      row.className = "hours-row";
+      row.innerHTML = `<span>${day}</span><input type="text" data-day="${day}" value="${hoursMap[day] || ''}" placeholder="e.g. 11:00 AM – 11:00 PM">`;
+      hoursBody.appendChild(row);
+    });
+
+    // Menu
+    menuBody.innerHTML = "";
+    menuIdCounter = 0;
+    (r.menu || []).forEach(item => addMenuRow(item.name, item.price));
+    if ((r.menu || []).length === 0) addMenuRow("", "");
+  }
+
+  function addMenuRow(name = "", price = ""){
+    const id = "menu-" + (menuIdCounter++);
+    const row = document.createElement("div");
+    row.className = "menu-item";
+    row.dataset.id = id;
+    row.innerHTML = `
+      <input type="text" class="menu-name" placeholder="Item name" value="${escapeHtml(name)}">
+      <input type="text" class="menu-price" placeholder="₹0" value="${escapeHtml(price)}">
+      <div class="icon-btn remove-menu-item" title="Remove">✕</div>
+    `;
+    row.querySelector(".remove-menu-item").addEventListener("click", () => row.remove());
+    menuBody.appendChild(row);
+  }
+
+  document.getElementById("add-menu-item").addEventListener("click", () => addMenuRow());
+
+  function escapeHtml(str){
+    return String(str).replace(/[&<>"']/g, c => ({
+      "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"
+    }[c]));
+  }
+
+  // --- Reviews (read-only) ---
+  async function loadReviews(restaurantId){
+    reviewsBody.innerHTML = `<div class="empty-note">Loading reviews…</div>`;
+    try {
+      const q = query(collection(db, "reviews"), where("restaurantId", "==", restaurantId));
+      const snap = await getDocs(q);
+
+      if (snap.empty) {
+        reviewsBody.innerHTML = `<div class="empty-note">No customer reviews yet.</div>`;
+        return;
+      }
+
+      reviewsBody.innerHTML = "";
+      snap.forEach(docSnap => {
+        const rev = docSnap.data();
+        const stars = "★".repeat(rev.rating || 0) + "☆".repeat(5 - (rev.rating || 0));
+        const div = document.createElement("div");
+        div.className = "review";
+        div.innerHTML = `
+          <div class="review-top">
+            <span>${escapeHtml(rev.userName || "Anonymous")}</span>
+            <span class="review-stars">${stars}</span>
+          </div>
+          <p>${escapeHtml(rev.comment || "")}</p>
+        `;
+        reviewsBody.appendChild(div);
+      });
+    } catch (err) {
+      console.error("Error loading reviews:", err);
+      reviewsBody.innerHTML = `<div class="empty-note">Could not load reviews right now.</div>`;
+    }
+  }
+
+  // --- Save ---
+  document.getElementById("save-btn").addEventListener("click", async () => {
+    if (!currentRestaurantRef) return;
+
+    const btn = document.getElementById("save-btn");
+    const originalText = btn.textContent;
+    btn.disabled = true;
+    btn.innerHTML = `<span class="spinner"></span>Saving…`;
+
+    const hours = Array.from(hoursBody.querySelectorAll("input")).map(input => ({
+      day: input.dataset.day,
+      time: input.value.trim()
+    }));
+
+    const menu = Array.from(menuBody.querySelectorAll(".menu-item")).map(row => ({
+      name: row.querySelector(".menu-name").value.trim(),
+      price: row.querySelector(".menu-price").value.trim()
+    })).filter(item => item.name);
+
+    const updatedData = {
+      name: document.getElementById("f-name").value.trim(),
+      phone: document.getElementById("f-phone").value.trim(),
+      city: document.getElementById("f-city").value.trim(),
+      website: document.getElementById("f-website").value.trim(),
+      description: document.getElementById("f-description").value.trim(),
+      hours,
+      menu
+    };
+
+    try {
+      await updateDoc(currentRestaurantRef, updatedData);
+      document.getElementById("dh-name").textContent = updatedData.name;
+      document.getElementById("dh-sub").textContent = [currentRestaurantData.category, updatedData.city].filter(Boolean).join(" · ");
+      saveStatus.textContent = "Saved ✓";
+      saveStatus.classList.add("show");
+      setTimeout(() => saveStatus.classList.remove("show"), 2500);
+    } catch (err) {
+      console.error("Save failed:", err);
+      alert("Couldn't save changes: " + err.message);
+    } finally {
+      btn.disabled = false;
+      btn.textContent = originalText;
+    }
+  });
+</script>
+</body>
+</html>
