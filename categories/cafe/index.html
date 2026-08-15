@@ -138,20 +138,49 @@
   <a href="/mexican" class="cat-tab nav-tab">Mexican</a>
   <a href="/pizza" class="cat-tab nav-tab">Pizza</a>
 </div>
-  <script>
-/* =========================
-   3. ACTIVE CATEGORY TAB (based on current URL)
-========================= */
-(function setActiveCategoryTab() {
+  
+  <div class="category-section-nav-tabs" id="category-nav1"></div>
+
+<script>
+(function () {
+  /* =========================
+     1. CATEGORY TABS GENERATE KARO
+  ========================= */
+  const categories = [
+    { name: "All", url: "/restaurants/" },
+    { name: "Asian Food", url: "/asian-food" },
+    { name: "Burger", url: "/burger" },
+    { name: "Cafe", url: "/cafe" },
+    { name: "Desserts", url: "/desserts" },
+    { name: "Healthy Food", url: "/healthy-food" },
+    { name: "Italian", url: "/italian" },
+    { name: "Mexican", url: "/mexican" },
+    { name: "Pizza", url: "/pizza" }
+  ];
+
+  const navContainer = document.getElementById("category-nav1");
+
+  categories.forEach(cat => {
+    const a = document.createElement("a");
+    a.href = cat.url;
+    a.className = "cat-tab nav-tab";
+    a.textContent = cat.name;
+    navContainer.appendChild(a);
+  });
+
+  /* =========================
+     2. ACTIVE TAB SET KARO (URL ke last segment se)
+  ========================= */
   const categoryTabs = document.querySelectorAll(".cat-tab");
   if (!categoryTabs.length) return;
 
-  // current URL ka last path segment nikalna (query/hash ignore karke)
   const currentPath = window.location.pathname
-    .replace(/\/+$/, "")   // trailing slash hatao
+    .replace(/\/+$/, "")
     .split("/")
     .filter(Boolean)
     .pop() || "";
+
+  let activeTab = null;
 
   categoryTabs.forEach(tab => {
     const tabPath = tab.getAttribute("href")
@@ -164,12 +193,22 @@
 
     if (tabPath === currentPath) {
       tab.classList.add("active-tab");
+      activeTab = tab;
     }
   });
+
+  /* =========================
+     3. ACTIVE TAB KO AUTO-CENTER SCROLL KARO
+  ========================= */
+  if (activeTab) {
+    activeTab.scrollIntoView({
+      behavior: "smooth",
+      inline: "center",
+      block: "nearest"
+    });
+  }
 })();
-    
-  </script>
-  
+</script>
 <section class="popular-restaurants" id="category-section1">
   <div id="category-restaurants-section"></div>
 </section>
