@@ -100,7 +100,7 @@
 /* category SECTION NAVIGATION */
 
 .category-section-nav-tabs{
-position:relative;
+position:sticky;
 top:86px;
 z-index:999;
 background:transparent;
@@ -109,6 +109,8 @@ gap:12px;
 overflow-x:auto;
 padding:14px 10px;
 margin-bottom:30px;
+  margin-left: -20px;
+  margin-right: -20px;
 border-radius:16px;
 scroll-behavior:smooth;
 scroll-snap-type:x mandatory;
