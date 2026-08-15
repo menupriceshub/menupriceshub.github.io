@@ -132,6 +132,7 @@ font-weight:600;
 transition:.3s;
 flex:none;
 scroll-snap-align:center;
+  border: 2px solid transparent !important;
 }
 
 .category-section-nav-tabs a:hover{
