@@ -144,7 +144,7 @@ color:#fff;
 
 /* ACTIVE CATEGORY TAB */
 .category-section-nav-tabs a.active-tab {
-  background: transparent !important;
+  background:#fff !important;
   color: #ff5722 !important;
   border: 1px solid #ff5722 !important;
   font-weight: 600;
