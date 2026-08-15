@@ -141,10 +141,16 @@ color:#fff;
 }
 
 
-.active-tab {
+.active-tabX {
   border: 1px solid #ff5722;  /* orange outline */
   background: transparent;     /* background hata diya */
   color: #ff5722;               /* text bhi orange */
   font-weight: 600;
 }
-
+/* Active tab - specificity badhai gayi */
+.category-section-nav-tabs a.active-tab {
+  border: 1px solid #ff5722;
+  background: transparent;
+  color: #ff5722;
+  font-weight: 600;
+}
