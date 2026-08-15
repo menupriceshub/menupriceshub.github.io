@@ -138,15 +138,10 @@ scroll-snap-align:center;
 .category-section-nav-tabs a:hover{
 background:#ff4d00;
 color:#fff;
-
 }
 
-.active-tabX{
-background:#ff4d00 !important;
-color:#fff !important;
-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-.cat-tab.active-tab {
+
+.active-tab {
   border: 1px solid #ff5722;  /* orange outline */
   background: transparent;     /* background hata diya */
   color: #ff5722;               /* text bhi orange */
