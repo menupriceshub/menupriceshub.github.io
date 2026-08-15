@@ -1,4 +1,4 @@
-fetch("/data/footer.json")
+fetch("data/footer.json")
 .then(res => res.json())
 .then(data => {
 
