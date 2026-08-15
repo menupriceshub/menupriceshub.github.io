@@ -131,3 +131,19 @@ html += i <= Math.round(rating)
 return html;
 
 }
+
+
+
+function fixCategoryTabsPosition(){
+  const header = document.getElementById('site-header');
+  const catTabs = document.querySelector('.category-section-nav-tabs');
+  if(header && catTabs){
+    catTabs.style.top = header.offsetHeight + 'px';
+  }
+}
+
+// Header load hone ke baad chalao
+window.addEventListener('load', fixCategoryTabsPosition);
+
+// Resize par bhi update karo (mobile rotate / responsive change)
+window.addEventListener('resize', fixCategoryTabsPosition);
