@@ -174,7 +174,7 @@ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 
-@media(max-width:768px){
+@media(min-width:768px){
   .category-section-nav-tabs{
     top:82px;
     margin-top:-15px;
