@@ -113,7 +113,7 @@ margin-bottom:30px;
 border-radius:16px;
 scroll-behavior:smooth;
 scroll-snap-type:x mandatory;
-
+border: 2px solid transparent;
 }
 
 .category-section-nav-tabs::-webkit-scrollbar{
