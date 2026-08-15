@@ -103,14 +103,14 @@
 position:sticky;
 top:86px;
 z-index:999;
-background:#fff;
+background:transparent;
 display:flex;
 gap:12px;
 overflow-x:auto;
 padding:14px 10px;
 margin-bottom:30px;
 border-radius:16px;
-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
 scroll-behavior:smooth;
 scroll-snap-type:x mandatory;
 
