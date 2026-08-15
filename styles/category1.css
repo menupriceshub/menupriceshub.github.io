@@ -110,7 +110,7 @@
   overflow-x: auto;
 
   padding: 14px 10px;
-  margin-top: 0;
+  margin-top:-20px;
   margin-bottom: 0;
 
   margin-left: -20px;
@@ -171,4 +171,12 @@ color:#fff;
 background:#ff4d00 !important;
 color:#fff !important;
 box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+@media(max-width:768px){
+  .category-section-nav-tabs{
+    top:82px;
+    margin-top:-15px;
+  }
 }
