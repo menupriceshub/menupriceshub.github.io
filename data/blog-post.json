@@ -16,20 +16,11 @@
       "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=300",
       "url": "/blog/pizza-deals.html"
     },
-    {
-      "title": "KFC Menu Prices & Family Buckets",
-      "image": "https://images.unsplash.com/photo-1544025162-d76694265947?w=300",
-      "url": "/blog/kfc-menu-prices.html"
-    },
+    
     {
       "title": "Starbucks Coffee Menu Prices 2026",
       "image": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=300",
       "url": "/blog/starbucks-menu-prices.html"
-    },
-    {
-      "title": "Domino's Pizza Menu With Latest Prices",
-      "image": "https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=300",
-      "url": "/blog/dominos-menu-prices.html"
-    }
+    }    
   ]
 }
