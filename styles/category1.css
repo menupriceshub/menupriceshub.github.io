@@ -141,11 +141,15 @@ color:#fff;
 
 }
 
-.active-tab{
+.active-tabX{
 background:#ff4d00 !important;
 color:#fff !important;
 box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-
-
+.active-tab {
+  border: 1px solid #ff5722;  /* orange outline */
+  background: transparent;     /* background hata diya */
+  color: #ff5722;               /* text bhi orange */
+  font-weight: 600;
+}
 
