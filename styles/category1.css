@@ -122,7 +122,7 @@ display:none;
 .category-section-nav-tabs a{
 text-decoration:none;
 background:transparent;
-  border:1px solid #666;
+  border:1px solid #fff;
 color:#222;
 padding:5px 18px;
 border-radius:50px;
@@ -144,4 +144,5 @@ color:#fff;
 background:#ff4d00 !important;
 color:#fff !important;
 box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border:0px solid #fff;
 }
