@@ -110,7 +110,7 @@ padding:14px 10px;
 margin-bottom:30px;
   margin-left: -10px;
   margin-right: -10px;
-border-radius:16px;
+border-radius:0px;
 scroll-behavior:smooth;
 scroll-snap-type:x mandatory;
 }
