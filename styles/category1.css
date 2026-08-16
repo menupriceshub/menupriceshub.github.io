@@ -150,9 +150,9 @@ color:#fff;
 }
 
 .category-section-nav-tabs a.active-tab2:hover {
-  background:#111 !important;   /* !important add kiya */
+  background:#01008A !important;   /* !important add kiya */
   color:#fff !important;            /* !important add kiya */
-  border: 2px solid #ff4d00 !important;
+  border: 2px solid transparent !important;
   font-weight: 600;
   box-sizing: border-box;
 }
