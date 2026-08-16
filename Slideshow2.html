@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coffee Promo Card</title>
+<style>
+  :root{
+    --green-dark: #0e3324;
+    --green-deep: #0a2318;
+    --cream: #ffffff;
+    --pill-text: #123526;
+    --radius: 28px;
+  }
+
+  *{ box-sizing: border-box; margin:0; padding:0; }
+
+  body{
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #eeeeee;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-height:100vh;
+    padding: 24px;
+  }
+
+  .promo-card{
+    position: relative;
+    width: 100%;
+    max-width: 1100px;
+    border-radius: var(--radius);
+    background: radial-gradient(120% 160% at 78% 50%, var(--green-dark) 0%, var(--green-deep) 70%);
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    align-items: center;
+    box-shadow: 0 20px 45px rgba(0,0,0,0.25);
+  }
+
+  .promo-content{
+    position: relative;
+    z-index: 2;
+    padding: 56px 40px 56px 56px;
+    color: var(--cream);
+  }
+
+  .promo-title{
+    font-size: clamp(28px, 4vw, 44px);
+    font-weight: 800;
+    line-height: 1.15;
+    margin-bottom: 20px;
+    letter-spacing: -0.5px;
+  }
+
+  .promo-subtitle{
+    font-size: clamp(15px, 1.6vw, 18px);
+    line-height: 1.6;
+    opacity: 0.92;
+    max-width: 420px;
+    margin-bottom: 32px;
+    font-weight: 400;
+  }
+
+  .promo-btn{
+    display: inline-block;
+    background: var(--cream);
+    color: var(--pill-text);
+    font-weight: 700;
+    font-size: 16px;
+    padding: 16px 32px;
+    border-radius: 999px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .promo-btn:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  }
+
+  .promo-btn:focus-visible{
+    outline: 3px solid #ffffff;
+    outline-offset: 3px;
+  }
+
+  .promo-image-wrap{
+    position: relative;
+    height: 100%;
+    min-height: 320px;
+  }
+
+  .promo-image-wrap img{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  /* Tablet */
+  @media (max-width: 860px){
+    .promo-card{
+      grid-template-columns: 1fr;
+    }
+    .promo-image-wrap{
+      order: -1;
+      min-height: 260px;
+    }
+    .promo-content{
+      padding: 36px 28px 44px;
+      text-align: center;
+    }
+    .promo-subtitle{
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  /* Mobile */
+  @media (max-width: 480px){
+    .promo-image-wrap{
+      min-height: 200px;
+    }
+    .promo-content{
+      padding: 28px 20px 36px;
+    }
+    .promo-title{
+      font-size: 26px;
+    }
+    .promo-btn{
+      width: 100%;
+      text-align: center;
+      padding: 14px 24px;
+    }
+  }
+</style>
+</head>
+<body>
+
+  <div class="promo-card">
+    <div class="promo-content">
+      <h1 class="promo-title">This week's<br>fresh coffee picks</h1>
+      <p class="promo-subtitle">
+        100% gourmet, delivered within 3 hours.
+        Discover handcrafted blends and single origin beans.
+      </p>
+      <a href="#" class="promo-btn">Shop Now</a>
+    </div>
+    <div class="promo-image-wrap">
+      <img src="assets/coffee-cup.png" alt="Latte art coffee cup with coffee splash">
+    </div>
+  </div>
+
+</body>
+</html>
+
