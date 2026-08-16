@@ -141,16 +141,16 @@ color:#fff;
 
 
 /* ACTIVE CATEGORY TAB */
-.category-section-nav-tabs a.active-tab2 {
-  background:#fff !important;
-  color: #000 !important;
-  border: 2px solid #000 !important;
+  .category-section-nav-tabs a.active-tab2 {
+  background:#ff4d00 !important;   /* !important add kiya */
+  color:#fff !important;            /* !important add kiya */
+  border: 2px solid #ff4d00 !important;
   font-weight: 600;
   box-sizing: border-box;
 }
 
 .category-section-nav-tabs a.active-tab2:hover {
-  background:#ff4d00 !important;   /* !important add kiya */
+  background:#111 !important;   /* !important add kiya */
   color:#fff !important;            /* !important add kiya */
   border: 2px solid #ff4d00 !important;
   font-weight: 600;
