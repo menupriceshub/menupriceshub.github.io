@@ -50,65 +50,103 @@ category
 
 
 
-function renderCategory(data, section, category){
+function renderCategory(data, section, category) {
 
-  section.innerHTML = `
+  let visibleCount = 10;
 
-    <div class="section-header">
-      <h2 class="section-left">
-         ${category.charAt(0).toUpperCase()+category.slice(1)} Restaurants
-      </h2>
+  function renderCards() {
 
-      <a href="/categories/${category}/" class="section-right">
-        View All
-        <i class="fa-solid fa-chevron-right icon"></i>
-      </a>
-    </div>
+    const visibleData = data.slice(0, visibleCount);
 
-    <div class="catrest-grid">
+    section.innerHTML = `
 
-      ${data.map(r=>`
-        <div class="catrest-card">
+      <div class="section-header">
+        <h2 class="section-left">
+          ${category.charAt(0).toUpperCase() + category.slice(1)} Restaurants
+        </h2>
 
-          <img 
-            class="catrest-img"
-            src="${r.thumbnail}"
-            alt="${r.name}"
-            loading="lazy"
-          >
+        <a href="/categories/${category}/" class="section-right">
+          View All
+          <i class="fa-solid fa-chevron-right icon"></i>
+        </a>
+      </div>
 
-          <div class="catrest-content">
+      <div class="catrest-grid">
 
-            <h3 class="catrest-name">
-              ${r.name}
-            </h3>
+        ${visibleData.map(r => `
+          <div class="catrest-card">
 
-            <div class="catrest-info">
-              ${r.city} • ${category}
-            </div>
+            <img 
+              class="catrest-img"
+              src="${r.thumbnail}"
+              alt="${r.name}"
+              loading="lazy"
+            >
 
-            <div class="catrest-bottom">
+            <div class="catrest-content">
 
-              <div class="catrest-rating">
-                <span>${r.rating}</span>
-                <span class="catrest-stars">
-                  ${generateStars(r.rating)}
-                </span>
+              <h3 class="catrest-name">
+                ${r.name}
+              </h3>
+
+              <div class="catrest-info">
+                ${r.city} • ${category}
               </div>
 
-              <a href="/${r.url}" class="catrest-btn">
-                View
-              </a>
+              <div class="catrest-bottom">
+
+                <div class="catrest-rating">
+                  <span>${r.rating}</span>
+
+                  <span class="catrest-stars">
+                    ${generateStars(r.rating)}
+                  </span>
+                </div>
+
+                <a href="/${r.url}" class="catrest-btn">
+                  View
+                </a>
+
+              </div>
 
             </div>
           </div>
-        </div>
-      `).join("")}
+        `).join("")}
 
-    </div>
-  `;
+      </div>
+
+      ${
+        visibleCount < data.length
+        ? `
+          <div class="load-more-wrap">
+            <button id="loadMoreCategory" class="load-more-btn">
+              Load More
+            </button>
+          </div>
+        `
+        : ""
+      }
+
+    `;
+
+    const loadMoreBtn = document.getElementById("loadMoreCategory");
+
+    if (loadMoreBtn) {
+
+      loadMoreBtn.addEventListener("click", () => {
+
+        visibleCount += 5;
+
+        renderCards();
+
+      });
+
+    }
+
+  }
+
+  renderCards();
 }
-
 
 
 
