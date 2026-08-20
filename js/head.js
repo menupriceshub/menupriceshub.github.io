@@ -32,8 +32,3 @@ const meta = document.createElement('meta');
 meta.name = 'description';
 meta.content = 'My website description';
 document.head.appendChild(meta);
-
-// 4. <style> - inline CSS
-const style = document.createElement('style');
-style.textContent = 'body { margin: 0; }';
-document.head.appendChild(style);
