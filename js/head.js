@@ -1,8 +1,3 @@
-// 1. <link> - CSS file ya favicon
-const link = document.createElement('link');
-link.rel = 'stylesheet';
-link.href = 'style.css';
-document.head.appendChild(link);
 
 // Favicon
 const favicon = document.createElement('link');
