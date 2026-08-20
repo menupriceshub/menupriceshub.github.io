@@ -516,7 +516,7 @@ border-radius:15px 15px 0px 0px;
 .nav-item:hover{
   transform:translateY(-2px);
   border:0px solid #222;
-  background:red;
+  background:transparent;
   color:white;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
