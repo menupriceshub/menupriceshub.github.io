@@ -1051,22 +1051,25 @@ display:none;
   }
 }
 
+/* Breadcrumbs  */
 .breadcrumb {
     display: flex;
     align-items: center;
     gap: 6px;
     font-size: 15px;
     padding: 12px 0;
-    flex-wrap: nowrap;
     white-space: nowrap;
     overflow: hidden;
 }
 
-.breadcrumb a,
-.breadcrumb span {
+.breadcrumb a {
     color: #777;
     text-decoration: none;
     flex-shrink: 0;
+}
+
+.breadcrumb span {
+    color: #777;
 }
 
 .breadcrumb .separator {
@@ -1074,15 +1077,14 @@ display:none;
     flex-shrink: 0;
 }
 
-/* Last breadcrumb/title */
-.breadcrumb a:last-child,
-.breadcrumb span:last-child {
+/* Last breadcrumb title */
+.breadcrumb > span:last-child {
+    flex: 1;
+    min-width: 0;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    min-width: 0;
 }
-
 
 
 /* =========================
