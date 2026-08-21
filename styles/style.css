@@ -1051,31 +1051,39 @@ display:none;
   }
 }
 
-.breadcrumb{
-    display:flex;
-    flex-wrap:wrap;
-    align-items:center;
-    gap:6px;
-    font-size:15px;
-    padding:12px 0;
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 15px;
+    padding: 12px 0;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
-.breadcrumb a{
-    color:#777;
-    text-decoration:none;
+.breadcrumb a,
+.breadcrumb span {
+    color: #777;
+    text-decoration: none;
+    flex-shrink: 0;
 }
 
-.breadcrumb a:hover{
-    text-decoration:none;
+.breadcrumb .separator {
+    color: #999;
+    flex-shrink: 0;
 }
 
-.breadcrumb span{
-    color:#777;
+/* Last breadcrumb/title */
+.breadcrumb a:last-child,
+.breadcrumb span:last-child {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    min-width: 0;
 }
 
-.separator{
-    color:#999;
-}
+
 
 /* =========================
    AUTO SLIDER
