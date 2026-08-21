@@ -1061,6 +1061,7 @@ display:none;
     padding: 12px 0;
     white-space: nowrap;
     overflow: hidden;
+  margin-bottom: 10px;
 }
 
 .breadcrumb a {
