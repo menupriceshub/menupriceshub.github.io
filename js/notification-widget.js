@@ -122,7 +122,7 @@ function updateNotificationStatus() {
 ========================================================= */
 async function checkUnreadNotifications() {
   try {
-    const res = await fetch("notifications.json?t=" + Date.now());
+    const res = await fetch("/data/notifications.json?t=" + Date.now());
     const data = await res.json();
 
     const total = data.notifications.length;
@@ -199,7 +199,7 @@ document.addEventListener("click", async (e) => {
 
   } catch (error) {
     console.error("Notification enable error:", error);
-    showTooltip("Kuch error aaya, console check karo ❌");
+    showTooltip(" Error console check karo ❌");
   }
 
 });
