@@ -133,22 +133,33 @@ document.addEventListener("DOMContentLoaded", () => {
       const STICKY_OFFSET = 260; // apni sticky header/tabs height ke hisab se adjust karo
 
       tabButtons.forEach(btn => {
-        btn.addEventListener("click", () => {
-          tabButtons.forEach(b => b.classList.remove("active"));
-          btn.classList.add("active");
+  btn.addEventListener("click", () => {
+    tabButtons.forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
 
-          const targetPanel = document.getElementById(btn.dataset.tab);
+    const targetPanel = document.getElementById(btn.dataset.tab);
 
-          // ✅ Panel ki height auto hi rahegi — hum poore page ko us panel tak scroll karte hain
-          if (targetPanel) {
-            const targetY = targetPanel.getBoundingClientRect().top + window.pageYOffset - STICKY_OFFSET;
-            window.scrollTo({ top: targetY, behavior: "smooth" });
-          }
+    if (targetPanel) {
+      const header = document.getElementById("site-header");
+      const sectionNav = document.getElementById("top-section-nav1");
 
-          // Active tab ko tab-bar me center me la do (mobile horizontal scroll)
-          btn.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
-        });
-      });
+      // dono sticky elements ki real height jodo + thoda buffer
+      const stickyOffset =
+        (header?.offsetHeight || 0) +
+        (sectionNav?.offsetHeight || 0) +
+        10;
+
+      const targetY =
+        targetPanel.getBoundingClientRect().top +
+        window.pageYOffset -
+        stickyOffset;
+
+      window.scrollTo({ top: targetY, behavior: "smooth" });
+    }
+
+    btn.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
+  });
+});
     })
     .catch(() => {
       container.innerHTML = `<p class="ptg-no-menu">Menu is currently unavailable.</p>`;
