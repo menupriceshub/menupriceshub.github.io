@@ -19,14 +19,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   /* =========================
      2. ACTIVE TAB + AUTO CENTER
+     (ab tabs DOM me ban chuke hain, isliye
+     yahan query karna safe hai)
   ========================= */
 
   const sections = document.querySelectorAll("section");
   const navLinks = topsectionnav.querySelectorAll(".nav-tab");
-  const tabsContainer = topsectionnav;
-
-  // ✅ CHANGE 1: force scroll-behavior via JS bhi (CSS fallback ke sath)
-  tabsContainer.style.scrollBehavior = "smooth";
+  const tabsContainer = topsectionnav; // ye hi scrollable container hai
 
   function centerActiveTab(tab) {
     const left =
@@ -34,10 +33,10 @@ document.addEventListener("DOMContentLoaded", () => {
       (tabsContainer.offsetWidth / 2) +
       (tab.offsetWidth / 2);
 
-    // ✅ CHANGE 2: scrollTo({behavior}) hata kar scrollLeft use kiya
-    // Kiwi ke purane Chromium me scrollTo({behavior:"smooth"}) fail hota hai,
-    // scrollLeft + CSS scroll-behavior zyada reliable hai
-    tabsContainer.scrollLeft = left;
+    tabsContainer.scrollTo({
+      left: left,
+      behavior: "smooth"
+    });
   }
 
   /* ACTIVE TAB ON SCROLL */
@@ -46,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     sections.forEach(section => {
       const sectionTop = section.offsetTop;
-      if (window.pageYOffset >= sectionTop - 180) {   // ✅ CHANGE 3: window.pageYOffset explicit
+      if (pageYOffset >= sectionTop - 180) {
         current = section.getAttribute("id");
       }
     });
@@ -76,7 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (active) {
       setTimeout(() => {
         centerActiveTab(active);
-      }, 300);   // ✅ CHANGE 4: 200ms se 300ms — Kiwi thoda slow render karta hai
+      }, 200);
     }
   });
 
