@@ -76,9 +76,10 @@ document.addEventListener("DOMContentLoaded", () => {
         </button>
       `).join("");
 
-      // ===== Build one table per category =====
-      const tablesHtml = categoryOrder.map((cat, idx) => `
-        <div class="ptg-tab-panel${idx === 0 ? " active" : ""}" id="ptg-tab-${slug(cat)}">
+      // ===== Build one table per category (sab hamesha visible) =====
+      const tablesHtml = categoryOrder.map((cat) => `
+        <div class="ptg-tab-panel" id="ptg-tab-${slug(cat)}">
+          <h3 class="ptg-panel-title">${cat}</h3>
           <div class="ptg-table-wrap">
             <table class="ptg-table">
               <thead>
@@ -126,23 +127,20 @@ document.addEventListener("DOMContentLoaded", () => {
         </section>
       `;
 
-      // ===== Tab switching logic =====
+      // ===== Tab click = sirf scroll + active highlight (sab tables hamesha visible) =====
       const tabButtons = container.querySelectorAll(".ptg-tab-btn");
-      const tabPanels = container.querySelectorAll(".ptg-tab-panel");
 
       tabButtons.forEach(btn => {
         btn.addEventListener("click", () => {
           tabButtons.forEach(b => b.classList.remove("active"));
-          tabPanels.forEach(p => p.classList.remove("active"));
-
           btn.classList.add("active");
+
           const targetPanel = document.getElementById(btn.dataset.tab);
-          targetPanel.classList.add("active");
+          if (targetPanel) {
+            targetPanel.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
 
-          // ✅ Click karte hi us table tak smooth scroll
-          targetPanel.scrollIntoView({ behavior: "smooth", block: "start" });
-
-          // ✅ Active tab ko bhi tab-bar me center me la do (mobile scroll)
+          // Active tab ko tab-bar me center me la do (mobile horizontal scroll)
           btn.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
         });
       });
