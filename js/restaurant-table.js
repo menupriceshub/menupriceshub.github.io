@@ -127,10 +127,10 @@ document.addEventListener("DOMContentLoaded", () => {
         </section>
       `;
 
-      // ===== Tab click = page scroll + active highlight (sab tables hamesha visible) =====
+      // ===== Tab click = sirf scroll + active highlight (sab tables hamesha visible) =====
+  // ===== Tab click = sirf scroll + active highlight (sab tables hamesha visible) =====
       const tabButtons = container.querySelectorAll(".ptg-tab-btn");
-
-      const STICKY_OFFSET = 260; // apni sticky header/tabs height ke hisab se adjust karo
+      const panelsWrap = container.querySelector(".ptg-tab-panels");
 
       tabButtons.forEach(btn => {
         btn.addEventListener("click", () => {
@@ -139,10 +139,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
           const targetPanel = document.getElementById(btn.dataset.tab);
 
-          // ✅ Panel ki height auto hi rahegi — hum poore page ko us panel tak scroll karte hain
-          if (targetPanel) {
-            const targetY = targetPanel.getBoundingClientRect().top + window.pageYOffset - STICKY_OFFSET;
-            window.scrollTo({ top: targetY, behavior: "smooth" });
+          // ✅ sirf .ptg-tab-panels ke andar scroll, page level scroll nahi hoga
+          if (targetPanel && panelsWrap) {
+            const offset = targetPanel.offsetTop - panelsWrap.offsetTop;
+            panelsWrap.scrollTo({ top: offset, behavior: "smooth" });
           }
 
           // Active tab ko tab-bar me center me la do (mobile horizontal scroll)
