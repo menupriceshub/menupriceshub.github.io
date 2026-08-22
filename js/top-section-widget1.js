@@ -88,14 +88,31 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   /* CLICK TAB */
-  navLinks.forEach(link => {
-    link.addEventListener("click", () => {
-      navLinks.forEach(item => item.classList.remove("active-tab"));
-      link.classList.add("active-tab");
-      centerActiveTab(link);
-    });
-  });
+ /* CLICK TAB */
+navLinks.forEach(link => {
+  link.addEventListener("click", (e) => {
+    e.preventDefault();                 // native jump band
+    const id = link.getAttribute("href").slice(1);
+    const target = document.getElementById(id);
+    if (!target) return;
 
+    navLinks.forEach(item => item.classList.remove("active-tab"));
+    link.classList.add("active-tab");
+    centerActiveTab(link);
+
+    const cs = window.getComputedStyle(target);
+    const marginTop = parseFloat(cs.scrollMarginTop) || 0;
+    const targetY = target.getBoundingClientRect().top + window.pageYOffset - marginTop;
+
+    try {
+      window.scrollTo({ top: targetY, behavior: "smooth" });
+    } catch (err) {
+      window.scrollTo(0, targetY);
+    }
+
+    history.pushState(null, "", "#" + id);
+  });
+});
   /* INITIAL CENTER */
   setTimeout(() => {
     const active = topsectionnav.querySelector(".active-tab");
