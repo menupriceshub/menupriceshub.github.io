@@ -1713,7 +1713,7 @@ gap:20px;
 
 /* Hover */
 .ptg-table tbody tr:hover{
-    background:#fff4ef;
+    background:#F8FAFC;
     transition:.25s;
 }
 
@@ -1900,7 +1900,7 @@ gap:20px;
   flex:none;
   scroll-snap-align:center;
   padding:10px 20px;
-  border:2px solid #ff4d00;
+  border:1px solid #ff4d00;
   border-radius:50px;
   background:#fff;
   color:#ff4d00;
@@ -1927,7 +1927,7 @@ gap:20px;
 .ptg-tab-panel{
   margin-bottom:35px;
   /* sticky header height ke barabar offset, taaki scroll-jump pe table header ke niche na chhupe */
-  scroll-margin-top:170px;
+  
 }
 
 .ptg-tab-panel:last-child{
@@ -1967,7 +1967,7 @@ gap:20px;
 
 /* ===== Tab Panels Wrapper — sirf isi ke andar scroll ho, page nahi ===== */
 .ptg-tab-panels{
-  max-height:480px;
+  height:auto;
   overflow-y:auto;
   scroll-behavior:smooth;
   -ms-overflow-style:none;
