@@ -92,9 +92,9 @@ document.addEventListener("DOMContentLoaded", () => {
               <tbody>
                 ${itemsByCategory[cat].map(item => `
                   <tr>
-                    <td>${item.name}</td>
-                    <td class="ptg-td-cal">${item.calories}</td>
-                    <td class="ptg-td-price">${item.price}</td>
+                    <td data-label="Menu Item">${item.name}</td>
+                    <td class="ptg-td-cal" data-label="Calories">${item.calories}</td>
+                    <td class="ptg-td-price" data-label="Price">${item.price}</td>
                   </tr>
                 `).join("")}
               </tbody>
