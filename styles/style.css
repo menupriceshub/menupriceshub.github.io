@@ -1662,7 +1662,6 @@ gap:20px;
 }
 
 /* ===== Table Wrapper ===== */
- /* ===== Table Wrapper ===== */
 .ptg-table-wrap{
     overflow-x:auto;
     border-radius:16px;
@@ -1735,6 +1734,14 @@ gap:20px;
     color:#ff4d00;
     font-size:15px;
   text-align:center;
+}
+
+/* Calories & Price columns हमेशा center (desktop + default) */
+.ptg-table th:nth-child(2),
+.ptg-table td:nth-child(2),
+.ptg-table th:nth-child(3),
+.ptg-table td:nth-child(3){
+    text-align:center;
 }
 
 /* No Menu */
@@ -1813,7 +1820,7 @@ gap:20px;
     .ptg-table th:nth-child(3),
     .ptg-table td:nth-child(3){
         width:25%;
-        text-align:right;
+        text-align:center;
     }
 
     .ptg-td-price{
@@ -1831,7 +1838,7 @@ gap:20px;
     }
 
 }
-
+ 
 
 .ptg-tooltip-wrap {
   position: relative;
