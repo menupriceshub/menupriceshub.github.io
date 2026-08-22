@@ -1908,10 +1908,10 @@ gap:20px;
   flex:none;
   scroll-snap-align:center;
   padding:10px 20px;
-  border:1px solid #ff4d00;
+  border:1px solid #000;
   border-radius:50px;
   background:#fff;
-  color:#ff4d00;
+  color:#000;
   cursor:pointer;
   font-size:14px;
   font-weight:600;
@@ -1925,8 +1925,8 @@ gap:20px;
 }
 
 .ptg-tab-btn.active{
-  background:#ff4d00;
-  border-color:#ff4d00;
+  background:#000;
+  border-color:#000;
   color:#fff;
   box-shadow:0 4px 12px rgba(255,77,0,.25);
 }
