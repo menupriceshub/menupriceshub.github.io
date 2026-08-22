@@ -1889,6 +1889,11 @@ gap:20px;
 /* ===== Category Tabs (Pizza / Burger / etc) ===== */
 /* ===== Category Tabs (Pizza / Burger / etc) ===== */
 .ptg-tabs{
+  position:sticky;
+  top:200px;
+  z-index:998;
+  background:#fff;
+  
   display:flex;
   gap:10px;
   overflow-x:auto;
