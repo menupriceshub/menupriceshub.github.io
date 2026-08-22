@@ -1680,7 +1680,7 @@ gap:20px;
 
 .ptg-table thead{
     background:transparent;
-  border-bottom: 0px dashed #ccc;
+  border-bottom: 1px solid #E5E7EB;
 }
 
 .ptg-table th{
@@ -1698,7 +1698,7 @@ gap:20px;
     padding:15px 16px;
     font-size:15px;
     color:#333;
-    border-bottom:1px solid #f0f0f0;
+  border-bottom: 1px solid #E5E7EB;
 }
 
 .ptg-table tbody tr:last-child td{
