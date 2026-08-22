@@ -1662,11 +1662,13 @@ gap:20px;
 }
 
 /* ===== Table Wrapper ===== */
+/* ===== Table Wrapper ===== */
 .ptg-table-wrap{
     overflow-x:auto;
-    border-radius:14px;
+    border-radius:16px;
     background:#fff;
     box-shadow:0 8px 25px rgba(0,0,0,.08);
+    border:1px solid #f0f0f0;
 }
 
 /* ===== Table ===== */
@@ -1678,47 +1680,59 @@ gap:20px;
 }
 
 .ptg-table thead{
-    background:#ff4d00;
+    background:linear-gradient(90deg,#ff4d00,#ff7a2e);
 }
 
 .ptg-table th{
     color:#fff;
     padding:16px;
-    font-size:15px;
+    font-size:14px;
     font-weight:700;
     text-align:left;
     white-space:nowrap;
+    letter-spacing:.3px;
+    text-transform:uppercase;
 }
 
 .ptg-table td{
     padding:15px 16px;
     font-size:15px;
     color:#333;
-    border-bottom:1px solid #eee;
+    border-bottom:1px solid #f0f0f0;
+}
+
+.ptg-table tbody tr:last-child td{
+    border-bottom:none;
 }
 
 /* Alternate Rows */
 .ptg-table tbody tr:nth-child(even){
-    background:#fafafa;
+    background:#fbfbfb;
 }
 
 /* Hover */
 .ptg-table tbody tr:hover{
     background:#fff4ef;
-    transition:.3s;
+    transition:.25s;
+}
+
+.ptg-table td:first-child{
+    font-weight:600;
+    color:#1a1a1a;
 }
 
 /* Calories */
 .ptg-td-cal{
     text-align:center;
     font-weight:600;
-    color:#444;
+    color:#666;
 }
 
 /* Price */
 .ptg-td-price{
-    font-weight:700;
+    font-weight:800;
     color:#ff4d00;
+    font-size:15px;
 }
 
 /* No Menu */
@@ -1731,9 +1745,6 @@ gap:20px;
     color:#ff4d00;
     font-weight:600;
 }
-
-
-
 
 .ptg-scroll-note{
   text-align:center;
@@ -1749,35 +1760,114 @@ gap:20px;
   line-height:1.6;
 }
 
-
-/* Scrollbar */
- .ptg-table-wrap{
-    overflow-x: auto;
-    -ms-overflow-style: none;  /* IE & Edge */
-    scrollbar-width: none;     /* Firefox */
-}
-
+/* Scrollbar hide (desktop wide-screen ke liye jab zoom-out ho) */
 .ptg-table-wrap::-webkit-scrollbar{
-    width: 0;
-    height: 0;
-    display: none;             /* Chrome, Safari, Edge */
+    width:0;
+    height:0;
+    display:none;
 }
 
-/* ===== Mobile ===== */
+/* =========================================================
+   MOBILE — Table ko card/stacked layout me convert karo
+   Isse horizontal scroll ki zaroorat hi nahi padegi
+========================================================= */
 @media(max-width:768px){
 
     .ptg-sec-title h2{
         font-size:22px;
     }
 
-    .ptg-table th,
+    .ptg-table-wrap{
+        overflow-x:visible;
+        box-shadow:none;
+        background:transparent;
+        border:none;
+    }
+
+    .ptg-table{
+        min-width:0;
+        width:100%;
+        border-collapse:separate;
+        border-spacing:0 12px;
+    }
+
+    /* Header ko chhupa do, ab labels har row me inline dikhenge */
+    .ptg-table thead{
+        display:none;
+    }
+
+    .ptg-table tbody tr{
+        display:block;
+        background:#fff;
+        border-radius:16px;
+        box-shadow:0 4px 14px rgba(0,0,0,.07);
+        border:1px solid #f2f2f2;
+        padding:14px 16px;
+        position:relative;
+        overflow:hidden;
+    }
+
+    .ptg-table tbody tr::before{
+        content:"";
+        position:absolute;
+        left:0;
+        top:0;
+        bottom:0;
+        width:4px;
+        background:linear-gradient(180deg,#ff4d00,#ff7a2e);
+    }
+
+    .ptg-table tbody tr:nth-child(even){
+        background:#fff;
+    }
+
+    .ptg-table tbody tr:hover{
+        background:#fff;
+    }
+
     .ptg-table td{
-        padding:12px;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        padding:6px 0;
+        border-bottom:none;
         font-size:14px;
     }
 
-}
+    /* Har cell ke andar label (Menu Item / Calories / Price) dikhana */
+    .ptg-table td::before{
+        content:attr(data-label);
+        font-size:11px;
+        font-weight:700;
+        color:#9a9a9a;
+        text-transform:uppercase;
+        letter-spacing:.4px;
+    }
 
+    /* Menu item ka naam bada aur alag row me — label ke bina, top pe */
+    .ptg-table td:first-child{
+        display:block;
+        padding:0 0 8px 0;
+        border-bottom:1px dashed #eee;
+        margin-bottom:6px;
+        font-size:16px;
+        font-weight:700;
+        color:#1a1a1a;
+    }
+
+    .ptg-table td:first-child::before{
+        content:none;
+    }
+
+    .ptg-td-cal{
+        text-align:right;
+    }
+
+    .ptg-td-price{
+        font-size:16px;
+    }
+
+}
 
 
 
