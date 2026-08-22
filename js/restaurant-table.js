@@ -127,23 +127,28 @@ document.addEventListener("DOMContentLoaded", () => {
         </section>
       `;
 
-      // ===== Tab click = sirf scroll + active highlight (sab tables hamesha visible) =====
- tabButtons.forEach(btn => {
-  btn.addEventListener("click", () => {
-    tabButtons.forEach(b => b.classList.remove("active"));
-    btn.classList.add("active");
+      // ===== Tab click = page scroll + active highlight (sab tables hamesha visible) =====
+      const tabButtons = container.querySelectorAll(".ptg-tab-btn");
 
-    const targetPanel = document.getElementById(btn.dataset.tab);
+      const STICKY_OFFSET = 160; // apni sticky header/tabs height ke hisab se adjust karo
 
-    if (targetPanel) {
-      const stickyOffset = 160; // apni sticky header/tabs height ke hisab se adjust karo
-      const targetY = targetPanel.getBoundingClientRect().top + window.pageYOffset - stickyOffset;
-      window.scrollTo({ top: targetY, behavior: "smooth" });
-    }
+      tabButtons.forEach(btn => {
+        btn.addEventListener("click", () => {
+          tabButtons.forEach(b => b.classList.remove("active"));
+          btn.classList.add("active");
 
-    btn.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
-  });
-});
+          const targetPanel = document.getElementById(btn.dataset.tab);
+
+          // ✅ Panel ki height auto hi rahegi — hum poore page ko us panel tak scroll karte hain
+          if (targetPanel) {
+            const targetY = targetPanel.getBoundingClientRect().top + window.pageYOffset - STICKY_OFFSET;
+            window.scrollTo({ top: targetY, behavior: "smooth" });
+          }
+
+          // Active tab ko tab-bar me center me la do (mobile horizontal scroll)
+          btn.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
+        });
+      });
     })
     .catch(() => {
       container.innerHTML = `<p class="ptg-no-menu">Menu is currently unavailable.</p>`;
