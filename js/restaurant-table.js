@@ -128,27 +128,22 @@ document.addEventListener("DOMContentLoaded", () => {
       `;
 
       // ===== Tab click = sirf scroll + active highlight (sab tables hamesha visible) =====
-  // ===== Tab click = sirf scroll + active highlight (sab tables hamesha visible) =====
-      const tabButtons = container.querySelectorAll(".ptg-tab-btn");
-      const panelsWrap = container.querySelector(".ptg-tab-panels");
+ tabButtons.forEach(btn => {
+  btn.addEventListener("click", () => {
+    tabButtons.forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
 
-      tabButtons.forEach(btn => {
-        btn.addEventListener("click", () => {
-          tabButtons.forEach(b => b.classList.remove("active"));
-          btn.classList.add("active");
+    const targetPanel = document.getElementById(btn.dataset.tab);
 
-          const targetPanel = document.getElementById(btn.dataset.tab);
+    if (targetPanel) {
+      const stickyOffset = 160; // apni sticky header/tabs height ke hisab se adjust karo
+      const targetY = targetPanel.getBoundingClientRect().top + window.pageYOffset - stickyOffset;
+      window.scrollTo({ top: targetY, behavior: "smooth" });
+    }
 
-          // ✅ sirf .ptg-tab-panels ke andar scroll, page level scroll nahi hoga
-          if (targetPanel && panelsWrap) {
-            const offset = targetPanel.offsetTop - panelsWrap.offsetTop;
-            panelsWrap.scrollTo({ top: offset, behavior: "smooth" });
-          }
-
-          // Active tab ko tab-bar me center me la do (mobile horizontal scroll)
-          btn.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
-        });
-      });
+    btn.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
+  });
+});
     })
     .catch(() => {
       container.innerHTML = `<p class="ptg-no-menu">Menu is currently unavailable.</p>`;
