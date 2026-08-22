@@ -1962,3 +1962,19 @@ gap:20px;
   }
 
 }
+
+
+
+/* ===== Tab Panels Wrapper — sirf isi ke andar scroll ho, page nahi ===== */
+.ptg-tab-panels{
+  max-height:480px;
+  overflow-y:auto;
+  scroll-behavior:smooth;
+  -ms-overflow-style:none;
+  scrollbar-width:none;
+}
+
+.ptg-tab-panels::-webkit-scrollbar{
+  display:none;
+}
+
