@@ -1822,4 +1822,84 @@ gap:20px;
   visibility: visible;
   opacity: 1;
 }
+
+
+
+
+
+/* ===== Category Tabs (Pizza / Burger / etc) ===== */
+.ptg-tabs{
+  display:flex;
+  gap:10px;
+  overflow-x:auto;
+  padding:6px 4px 14px;
+  margin-bottom:20px;
+  scroll-behavior:smooth;
+  scroll-snap-type:x mandatory;
+  -ms-overflow-style:none;
+  scrollbar-width:none;
+}
+
+.ptg-tabs::-webkit-scrollbar{
+  display:none;
+}
+
+.ptg-tab-btn{
+  flex:none;
+  scroll-snap-align:center;
+  padding:10px 20px;
+  border:2px solid #ff4d00;
+  border-radius:50px;
+  background:#fff;
+  color:#ff4d00;
+  cursor:pointer;
+  font-size:14px;
+  font-weight:600;
+  font-family:'Poppins',sans-serif;
+  white-space:nowrap;
+  transition:.25s ease;
+}
+
+.ptg-tab-btn:hover{
+  background:#fff4ef;
+}
+
+.ptg-tab-btn.active{
+  background:#ff4d00;
+  border-color:#ff4d00;
+  color:#fff;
+  box-shadow:0 4px 12px rgba(255,77,0,.25);
+}
+
+/* ===== Tab Panels (each category's table) ===== */
+.ptg-tab-panel{
+  display:none;
+  /* sticky header height ke barabar offset, taaki scroll-jump pe table header ke niche na chhupe */
+  scroll-margin-top:170px;
+}
+
+.ptg-tab-panel.active{
+  display:block;
+}
+
+/* ===== Mobile ===== */
+@media(max-width:768px){
+
+  .ptg-tabs{
+    gap:8px;
+    padding:4px 2px 12px;
+  }
+
+  .ptg-tab-btn{
+    padding:8px 16px;
+    font-size:13px;
+  }
+
+  .ptg-tab-panel{
+    scroll-margin-top:150px;
+  }
+
+}
+
+
  
