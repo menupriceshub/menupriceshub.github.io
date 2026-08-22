@@ -17,50 +17,77 @@ document.addEventListener("DOMContentLoaded", () => {
     <a href="#faq" class="nav-tab">FAQ</a>
   `;
 
+  const navLinks = Array.from(topsectionnav.querySelectorAll(".nav-tab"));
+  const tabsContainer = topsectionnav;
+
   /* =========================
-     2. ACTIVE TAB + AUTO CENTER
-     (ab tabs DOM me ban chuke hain, isliye
-     yahan query karna safe hai)
+     2. SAFE SMOOTH SCROLL
+     (Kiwi/old WebView me object-form
+     scrollTo kabhi kabhi fail/ignore hota hai)
   ========================= */
 
-  const sections = document.querySelectorAll("section");
-  const navLinks = topsectionnav.querySelectorAll(".nav-tab");
-  const tabsContainer = topsectionnav; // ye hi scrollable container hai
-
   function centerActiveTab(tab) {
+    if (!tab) return;
     const left =
       tab.offsetLeft -
       (tabsContainer.offsetWidth / 2) +
       (tab.offsetWidth / 2);
 
-    tabsContainer.scrollTo({
-      left: left,
-      behavior: "smooth"
+    try {
+      tabsContainer.scrollTo({ left, behavior: "smooth" });
+    } catch (e) {
+      tabsContainer.scrollLeft = left;
+    }
+  }
+
+  function setActiveTab(id) {
+    navLinks.forEach(link => {
+      const isActive = link.getAttribute("href") === "#" + id;
+      link.classList.toggle("active-tab", isActive);
+      if (isActive) centerActiveTab(link);
     });
   }
 
-  /* ACTIVE TAB ON SCROLL */
-  window.addEventListener("scroll", () => {
-    let current = "";
+  /* =========================
+     3. ACTIVE TAB VIA IntersectionObserver
+     (scroll event + offsetTop reflow ki jagah;
+     ye lightweight hai aur sticky sections ke
+     saath reliably kaam karta hai)
+  ========================= */
 
-    sections.forEach(section => {
-      const sectionTop = section.offsetTop;
-      if (pageYOffset >= sectionTop - 180) {
-        current = section.getAttribute("id");
+  function initObserver() {
+    // Har section ke liye target uska "top edge" - hum ek thin
+    // marker rakhte hain jo header/tabs ki height ke hisaab se
+    // rootMargin adjust karta hai
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            setActiveTab(entry.target.id);
+          }
+        });
+      },
+      {
+        // top se ~180px neeche jab section aaye tab active maano
+        // (sticky header + tabs height ke barabar)
+        rootMargin: "-180px 0px -70% 0px",
+        threshold: 0
       }
-    });
+    );
 
-    navLinks.forEach(link => {
-      link.classList.remove("active-tab");
-
-      if (link.getAttribute("href") === "#" + current) {
-        link.classList.add("active-tab");
-        centerActiveTab(link);
-      }
+    document.querySelectorAll("main section[id]").forEach(section => {
+      observer.observe(section);
     });
+  }
+
+  // Kai sections ka content async load hota hai (menu, photos, etc.)
+  // isliye thoda delay de kar observer init karo taaki sections
+  // apni final position le chuke hon
+  window.addEventListener("load", () => {
+    setTimeout(initObserver, 300);
   });
 
-  /* CLICK TAB CENTER */
+  /* CLICK TAB */
   navLinks.forEach(link => {
     link.addEventListener("click", () => {
       navLinks.forEach(item => item.classList.remove("active-tab"));
@@ -69,14 +96,10 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  /* PAGE LOAD ACTIVE CENTER */
-  window.addEventListener("load", () => {
+  /* INITIAL CENTER */
+  setTimeout(() => {
     const active = topsectionnav.querySelector(".active-tab");
-    if (active) {
-      setTimeout(() => {
-        centerActiveTab(active);
-      }, 200);
-    }
-  });
+    centerActiveTab(active);
+  }, 200);
 
 });
