@@ -1974,7 +1974,7 @@ gap:20px;
 
 /* ===== Tab Panels Wrapper — sirf isi ke andar scroll ho, page nahi ===== */
 .ptg-tab-panels{
-  height:450px;
+  height:auto;
   overflow-y:auto;
   scroll-behavior:smooth;
   -ms-overflow-style:none;
