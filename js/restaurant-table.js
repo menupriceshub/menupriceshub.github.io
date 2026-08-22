@@ -136,7 +136,14 @@ document.addEventListener("DOMContentLoaded", () => {
           tabPanels.forEach(p => p.classList.remove("active"));
 
           btn.classList.add("active");
-          document.getElementById(btn.dataset.tab).classList.add("active");
+          const targetPanel = document.getElementById(btn.dataset.tab);
+          targetPanel.classList.add("active");
+
+          // ✅ Click karte hi us table tak smooth scroll
+          targetPanel.scrollIntoView({ behavior: "smooth", block: "start" });
+
+          // ✅ Active tab ko bhi tab-bar me center me la do (mobile scroll)
+          btn.scrollIntoView({ behavior: "smooth", block: "nearest", inline: "center" });
         });
       });
     })
