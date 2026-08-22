@@ -1681,11 +1681,11 @@ gap:20px;
 
 .ptg-table thead{
     background:transparent;
-  border-bottom-style:dashed;
+  border-bottom: 1px dashed #ccc;
 }
 
 .ptg-table th{
-    color:#fff;
+    color:#01008a;
     padding:16px;
     font-size:14px;
     font-weight:700;
