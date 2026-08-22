@@ -1680,7 +1680,8 @@ gap:20px;
 }
 
 .ptg-table thead{
-    background:linear-gradient(90deg,#ff4d00,#ff7a2e);
+    background:transparent;
+  border-bottom-style:dashed;
 }
 
 .ptg-table th{
