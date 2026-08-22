@@ -1680,11 +1680,11 @@ gap:20px;
 
 .ptg-table thead{
     background:transparent;
-  border-bottom: 1px dashed #ccc;
+  border-bottom: 0px dashed #ccc;
 }
 
 .ptg-table th{
-    color:#01008a;
+    color: #172033;;
     padding:16px;
     font-size:14px;
     font-weight:700;
@@ -1908,7 +1908,7 @@ gap:20px;
   flex:none;
   scroll-snap-align:center;
   padding:10px 20px;
-  border:1px solid #000;
+  border:0px solid #000;
   border-radius:50px;
   background:#fff;
   color:#000;
