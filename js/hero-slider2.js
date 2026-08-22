@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (!id) return;
 
-  fetch("./data/restaurants.json")
+  fetch("/data/restaurants.json")
     .then(res => res.json())
     .then(data => {
 
