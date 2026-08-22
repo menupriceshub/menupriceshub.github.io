@@ -1707,7 +1707,7 @@ gap:20px;
 
 /* Alternate Rows */
 .ptg-table tbody tr:nth-child(even){
-    
+    background:transparent;
 }
 
 /* Hover */
@@ -1925,8 +1925,8 @@ gap:20px;
 }
 
 .ptg-tab-btn.active{
-  background:#000;
-  border-color:#000;
+  background:#ff4d00;;
+  border:0px solid #000;
   color:#fff;
 }
 
