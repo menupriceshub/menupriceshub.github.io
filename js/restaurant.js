@@ -1,6 +1,6 @@
 const id = document.getElementById("page-wrapper").dataset.restaurantId;
 
-fetch("./data/restaurants.json")
+fetch("/data/restaurants.json")
 .then(res => res.json())
 .then(data => {
 
