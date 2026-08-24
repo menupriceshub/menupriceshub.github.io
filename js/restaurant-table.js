@@ -104,7 +104,7 @@ document.addEventListener("DOMContentLoaded", () => {
       `).join("");
 
       container.innerHTML = `
-        <section id="ptg-prices">
+        <section id="menu-price-table-section1">
           <div class="ptg-sec-title">
             <h2>${data.title}</h2>
           </div>
