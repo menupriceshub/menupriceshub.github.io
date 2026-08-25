@@ -103,7 +103,7 @@
     "website": "https://online.kfc.co.in",
     "description": "KFC ka menu kaafi popular hai. Food quality aur taste customers ko pasand aata hai.",
     "reviewSummary": "Restaurant ka menu kaafi impressive hai. Food quality aur taste dono achhe hain. Overall dining experience satisfying raha.",
-    "rating":2,
+    "rating": 2,
     "totalrating": "3800",
     "ratingDistribution": [
       { "star": 5, "percent": 48 },
@@ -146,7 +146,7 @@
     "website": "https://www.mcdonaldsindia.com",
     "description": "McDonald's ka menu kaafi popular hai. Food quality aur taste customers ko pasand aata hai.",
     "reviewSummary": "Restaurant ka menu kaafi impressive hai. Food quality aur taste dono achhe hain. Overall dining experience satisfying raha.",
-    "rating":2.5,
+    "rating": 2.5,
     "totalrating": "6100",
     "ratingDistribution": [
       { "star": 5, "percent": 58 },
@@ -216,8 +216,9 @@
       { "day": "Saturday", "time": "10:00 AM – 12:00 AM" },
       { "day": "Sunday", "time": "10:00 AM – 11:00 PM" }
     ]
-  }, 
-{
+  },
+
+  {
     "id": "06starbuck",
     "category": "Cafe",
     "name": "starbucks cafe",
@@ -259,8 +260,8 @@
       { "day": "Sunday", "time": "8:00 AM – 11:00 PM" }
     ]
   },
-  
-{
+
+  {
     "id": "010starbuck",
     "category": "Cafe",
     "name": "starbucks cafe",
@@ -302,8 +303,8 @@
       { "day": "Sunday", "time": "8:00 AM – 11:00 PM" }
     ]
   },
-  
-{
+
+  {
     "id": "0611starbuck",
     "category": "Cafe",
     "name": "starbucks cafe",
@@ -345,8 +346,8 @@
       { "day": "Sunday", "time": "8:00 AM – 11:00 PM" }
     ]
   },
-  
-{
+
+  {
     "id": "012starbuck",
     "category": "Cafe",
     "name": "starbucks cafe",
@@ -388,8 +389,8 @@
       { "day": "Sunday", "time": "8:00 AM – 11:00 PM" }
     ]
   },
-  
-{
+
+  {
     "id": "013starbuck",
     "category": "Cafe",
     "name": "starbucks cafe",
@@ -431,8 +432,8 @@
       { "day": "Sunday", "time": "8:00 AM – 11:00 PM" }
     ]
   },
-  
-{
+
+  {
     "id": "0614starbuck",
     "category": "Cafe",
     "name": "starbucks cafe",
@@ -474,8 +475,8 @@
       { "day": "Sunday", "time": "8:00 AM – 11:00 PM" }
     ]
   },
-  
-{
+
+  {
     "id": "0156starbuck",
     "category": "Cafe",
     "name": "starbucks cafe",
@@ -560,8 +561,7 @@
     ]
   },
   {
-    
-    "id": "076meraki", 
+    "id": "076meraki",
     "category": "Cafe",
     "name": "Meraki Coffee House",
     "city": "Surat",
