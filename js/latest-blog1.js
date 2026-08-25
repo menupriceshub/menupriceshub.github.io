@@ -4,11 +4,9 @@ const container = document.getElementById("mph-latest-blog");
 
 if(!container) return;
 
-
 fetch("/data/blog-post.json")
 .then(res => res.json())
 .then(data => {
-
 
 let html = `
 
@@ -51,9 +49,8 @@ ${data.featured.title}
 
 `;
 
-
-
-data.posts.forEach(post => {
+// Only 4 blog posts
+data.posts.slice(0, 4).forEach(post => {
 
 html += `
 
@@ -82,10 +79,8 @@ html += `
 
 container.innerHTML = html;
 
-
 })
 
-.catch(err => console.log("Blog Load Error:",err));
-
+.catch(err => console.log("Blog Load Error:", err));
 
 });
