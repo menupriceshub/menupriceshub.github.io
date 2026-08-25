@@ -1,7 +1,253 @@
 <html>
-  <body>
+  <head><style>
+#mph-blog-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
 
-<script src="/js/latest-blog1.js" defer></script>
+.mph-blog-card {
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid #eee;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+}
+
+.mph-blog-image-link {
+  display: block;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
+.mph-blog-image-link img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform .3s ease;
+}
+
+.mph-blog-card:hover .mph-blog-image-link img {
+  transform: scale(1.04);
+}
+
+.mph-blog-content {
+  padding: 18px;
+}
+
+.mph-blog-title {
+  margin: 0 0 16px;
+  font-size: 20px;
+  line-height: 1.4;
+  color: #111827;
+}
+
+.mph-blog-read-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: #ff4d00;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.mph-blog-read-more:hover {
+  text-decoration: underline;
+}
+
+.mph-load-more {
+  display: block;
+  margin: 35px auto 10px;
+  padding: 13px 28px;
+  border: 0;
+  border-radius: 8px;
+  background: #ff4d00;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.mph-load-more:hover {
+  opacity: .9;
+}
+
+.mph-blog-error {
+  text-align: center;
+  padding: 30px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+  #mph-blog-list {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .mph-blog-title {
+    font-size: 18px;
+  }
+
+}
+    
+  </style></head>
+  <body>
+<div id="mph-blog-list"></div>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+  const container = document.getElementById("mph-blog-list");
+
+  if (!container) return;
+
+  const BLOG_JSON = "/data/blog-post.json";
+
+  const POSTS_PER_LOAD = 5;
+
+  let allPosts = [];
+  let currentIndex = 0;
+
+  fetch(BLOG_JSON)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error("Failed to load blog JSON");
+      }
+
+      return response.json();
+    })
+
+    .then(data => {
+
+      /*
+       * Featured + posts dono ko include karna hai
+       * Featured ko bhi blog list me show kiya jayega.
+       */
+
+      allPosts = [];
+
+      if (data.featured) {
+        allPosts.push(data.featured);
+      }
+
+      if (Array.isArray(data.posts)) {
+        allPosts = allPosts.concat(data.posts);
+      }
+
+      renderPosts();
+
+    })
+
+    .catch(error => {
+
+      console.error("Blog Load Error:", error);
+
+      container.innerHTML = `
+        <p class="mph-blog-error">
+          Unable to load blog posts.
+        </p>
+      `;
+
+    });
+
+
+  function renderPosts() {
+
+    const postsToShow = allPosts.slice(
+      currentIndex,
+      currentIndex + POSTS_PER_LOAD
+    );
+
+    postsToShow.forEach(post => {
+
+      const article = document.createElement("article");
+
+      article.className = "mph-blog-card";
+
+      article.innerHTML = `
+
+        <a href="${post.url}" class="mph-blog-image-link">
+
+          <img
+            src="${post.image}"
+            alt="${post.title}"
+            loading="lazy"
+          >
+
+        </a>
+
+        <div class="mph-blog-content">
+
+          <h2 class="mph-blog-title">
+            ${post.title}
+          </h2>
+
+          <a
+            href="${post.url}"
+            class="mph-blog-read-more"
+          >
+            Read More
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+
+        </div>
+
+      `;
+
+      container.appendChild(article);
+
+    });
+
+
+    currentIndex += postsToShow.length;
+
+    updateLoadMoreButton();
+
+  }
+
+
+  function updateLoadMoreButton() {
+
+    let button = document.getElementById("mph-load-more");
+
+    if (currentIndex < allPosts.length) {
+
+      if (!button) {
+
+        button = document.createElement("button");
+
+        button.id = "mph-load-more";
+
+        button.className = "mph-load-more";
+
+        button.textContent = "Load More";
+
+        button.addEventListener("click", () => {
+
+          renderPosts();
+
+        });
+
+        container.parentNode.appendChild(button);
+
+      }
+
+    } else {
+
+      if (button) {
+        button.remove();
+      }
+
+    }
+
+  }
+
+});
+  
+</script>
 <section class="mph-latest-blog-section" id="mph-latest-blog">
 </section>
 </body></html>
