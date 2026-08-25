@@ -16,7 +16,7 @@ let html = `
 Latest Blog Post
 </h2>
 
-<a href="/blog.html" class="section-right">
+<a href="https://menupriceshub.github.io/blog/" class="section-right">
 View All
 <i class="fa-solid fa-chevron-right icon"></i>
 </a>
