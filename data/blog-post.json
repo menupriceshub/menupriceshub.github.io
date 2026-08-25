@@ -1,26 +1,49 @@
 {
   "featured": {
-    "title": "McDonald's Menu Prices Updated 2026",
-    "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200",
-    "url": "/blog/mcdonalds-menu-prices.html"
+    "title": "Starbucks vs Dunkin: Coffee Menu Comparison Guide",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjAX9AAjnILIwYujmQ7w8dRJVqh7gwF0yoG6D_EtdqMq8P7h4YX0siqpjWBgbCtYnUTyJGCGntuOQAlHY0VXNkSlz7wsrUwC6z53zQXnmEPbd7xbnxHFiqGryAEKgJnr3se7bnnq2Y84sUCnstpHHpwkO5BVR1O9XVgriFfu4jc4-D-C9ANugjRLgBLD1o/s1600/starbucks-vs-dunkin-comparison.webp",
+    "url": "/blog/starbucks-vs-dunkin-comparison.html"
   },
-
   "posts": [
     {
-      "title": "Top Burger Restaurants in America",
-      "image": "https://images.unsplash.com/photo-1552566626-52f8b828add9?w=300",
-      "url": "/blog/top-burger-restaurants.html"
+      "title": "10 Olive Garden Menu Hacks Every Pasta Lover Should Know",
+      "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgw1YiRbNk5H9Ivbda3w_ao7wE6Hbnn6b750MjJ5KTmPcaZqV-36owf33NUF7qw9kG0xcB_gkHibmm7_e60wk_JdCoYJgUNvPH9xr4UlAEbVM2jyZauZqw7-_G3tW-jpkiEfhgkHzndqYUwR_v52rv4KiLQ6LNin_D0auyK0Y0STTsrdtoylrBIci5ICjY/s1600/10-olive-garden-menu-hacks-pasta-lovers.webp",
+      "url": "/blog/10-olive-garden-menu-hacks-pasta-lovers.html"
     },
     {
-      "title": "Best Pizza Deals This Month",
-      "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=300",
-      "url": "/blog/pizza-deals.html"
+      "title": "Applebee's 2 for $25 Deal: What You Need to Know",
+      "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhmnNBe92hRCZmZV9IOycS8ca0PCgHxn5FxXUQSwOdLnljhJwgAZeZKWGXOTkjurH1o5LYnNut7rETaXFT9QWRY8dZPk66B70J1tWf56cK-8Jf-koDXQXrq3q8Tyl5NBHfbTrHzyckj_ttr07Eu6mnMgZ_H9a7mmh5yrJQlrIWtXmQejphYZ69ID0_jUfM/s1600/applebees-2-for-25-deal.webp",
+      "url": "/blog/applebees-2-for-25-deal.html"
     },
-    
     {
-      "title": "Starbucks Coffee Menu Prices 2026",
-      "image": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=300",
-      "url": "/blog/starbucks-menu-prices.html"
-    }    
+      "title": "Cheesecake Factory Menu 101: Where to Even Start",
+      "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhS0sZ6NVX-1ZLY7azXKBLg1fZCb7ljqE6-yNutkc-JePY15z1qJ3cum0hUF1ox8HZPD7MdBCchXIcUirbdktrgoypox5tGyUP06_qgbHkJyVekr8pRb0vIqDjXMEucVxM-xSrD-N81hQTi63aLKA3Jck2bIZXveJiaa8kZfTc7mX2MjfpyvWNyb0Qmdi4/s1600/cheesecake-factory-menu-101.webp",
+      "url": "/blog/cheesecake-factory-menu-101.html"
+    },
+    {
+      "title": "Chipotle vs Taco Bell: Which Offers Better Value?",
+      "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhxvuV9GMCTR0ugK03_WBDtY8JI3R9W-KyAx1w8a3LourstYqoi0P5pboyZoJQmtChHj0CI4p9XTIjTA4gRkT-gmhWWjdiG75lUEVvh_RU31KI-tCJ2tivrsw_F1w7rGiPLbRevYegpjVEgXV9lthvxA5UKd4_Ys9_KH7F7CXpZz9h_wTxNfbs78rU5Qik/s1600/chipotle-vs-taco-bell-value.webp",
+      "url": "/blog/chipotle-vs-taco-bell-value.html"
+    },
+    {
+      "title": "Does Chipotle Have a Kids Menu?",
+      "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiTzie40G66r0VJywqzDdLgAQXx4QdKuIxCxgEE9piV7JHqB__SjgkrAip0nqnpu42KwI1d7urzEb5JA6Z_J6-qPLuOWr1j7f7moWSGx0rsCPjUC0qfSR4tQeHdFSMGkwwApjRl14JCL5SaoASuVpb4E7PNAWPvglDLSoxVrI2RtAacrjFZoJxNri_-r6I/s1600/does-chipotle-have-a-kids-menu.webp",
+      "url": "/blog/does-chipotle-have-a-kids-menu.html"
+    },
+    {
+      "title": "Healthiest Fast Food Choices Under 500 Calories",
+      "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgTAMFnIf5ZAoIw4ofIeuTw_vN_zigiigi3GRpKixjp0FqhyN0dvmHK6Dv9AitHiPBhUh5p4P20kPKyh7leNWW0UUA4J5MyHKRW5WvfY1D2F7-1G6abDuX7gfT37ncg2_ZZD1qsoNk-pvSWadUy4IR6WpRo9DbXMuQqbZDepEsV6qly0cGvuQot_5EAbUM/s1600/healthiest-fast-food-under-500-calories.webp",
+      "url": "/blog/healthiest-fast-food-under-500-calories.html"
+    },
+    {
+      "title": "How to Save Money on Fast Food",
+      "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimn4bU6rQlcTAeZLPLa2Wek4p4PuVqscBZ04TiCdcy13kFV8scNJPiL2833El422UK6OmJsPGcCMFljqdD9dgWzH_K_FDWJq9P8hCCRxtRqhPA2cnKZCe6hzNJ0-GJIMP1hktfMJ0-ATfGo5h0l0GkuZOuPb6WBtelJ0RGCZi78aeQkcDYoV2DVz-yXlw/s1600/save-money-fastfood-menupriceshub.webp",
+      "url": "/blog/save-money-fast-food.html"
+    },
+    {
+      "title": "How to Get the Best Deal at Texas Roadhouse Every Time",
+      "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiRHprcfS9czz7-kpKlN__yniGB58nb7oOi0fjQdaJ_dVMhNi1XP4gHYZas8yPDKQdY5i52Tf4UuvcZeCy0mE-ksUkDrLUIsn2nnsywObnZlgrIK2pMYISCtvPVI26lXWpzc6FX9biNcRenNDSGiMsy9NIK-nMVoFCOrHQ2GGOZDh8CCDGYS7RiyWW7iXg/s1600/texas-roadhouse-best-deal.webp",
+      "url": "/blog/texas-roadhouse-best-deal.html"
+    }
   ]
 }
