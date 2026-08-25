@@ -1,6 +1,57 @@
+document.addEventListener("DOMContentLoaded", () => {
+
+
+const section = document.getElementById(
+"category-restaurants-section"
+);
+
+if(!section) return;
+
+
+
+// URL se category nikalo
+const category = location.pathname
+.split("/")
+.filter(Boolean)
+.pop()
+.toLowerCase();
+
+
+
+fetch("/data/restaurants.json")
+
+.then(res=>res.json())
+
+.then(restaurants=>{
+
+
+const items = restaurants.filter(r =>
+
+r.category &&
+r.category.toLowerCase() === category
+
+);
+
+
+
+renderCategory(
+items,
+section,
+category
+);
+
+
+});
+
+
+});
+
+
+
+
+
 function renderCategory(data, section, category) {
 
-  // Pehle sirf 10 restaurants
   let visibleCount = 10;
 
   function renderCards() {
@@ -84,7 +135,6 @@ function renderCategory(data, section, category) {
 
       loadMoreBtn.addEventListener("click", () => {
 
-        // Har click par sirf 5 aur
         visibleCount += 5;
 
         renderCards();
@@ -97,3 +147,41 @@ function renderCategory(data, section, category) {
 
   renderCards();
 }
+
+
+
+function generateStars(rating){
+
+let html="";
+
+
+for(let i=1;i<=5;i++){
+
+html += i <= Math.round(rating)
+
+? `<i class="fas fa-star"></i>`
+
+: `<i class="far fa-star"></i>`;
+
+}
+
+
+return html;
+
+}
+
+
+
+function fixCategoryTabsPosition(){
+  const header = document.getElementById('site-header');
+  const catTabs = document.querySelector('.category-section-nav-tabs');
+  if(header && catTabs){
+    catTabs.style.top = header.offsetHeight + 'px';
+  }
+}
+
+// Header load hone ke baad chalao
+window.addEventListener('load', fixCategoryTabsPosition);
+
+// Resize par bhi update karo (mobile rotate / responsive change)
+window.addEventListener('resize', fixCategoryTabsPosition);
