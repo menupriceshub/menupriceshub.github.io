@@ -1,14 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>  <script src="/js/main.js" defer></script>
-  <script src="/js/pwa.js" defer></script>
+<head>  
 <link rel="canonical" href="https://menupriceshub.github.io/Axyz.html" />
   <link rel="stylesheet" href="/styles/style.css">
   <meta name="robots" content="index, follow, max-image-preview:large">
   
+<script src="/js/review-widget.js" defer></script>
+<script src="/js/about-widget.js" defer></script>
+<script src="/js/install-app.js" defer></script>
+<script type="module" src="/js/notification-widget.js"></script>
+<script src="/js/faq-widget.js" defer></script>
+<script src="/js/hero-slider2.js" defer></script>
+  <script src="/js/restaurant-table.js" defer></script>
+  <script src="/js/read-more1.js" defer></script>
+  <script src="/js/my-script1.js" defer></script>
 
 
+  <script src="/js/browser1.js" defer></script>
+<script src="/js/star-graphics.js" defer></script>
+<script src="/js/breadcrumb1.js" defer></script>
+<script src="/js/center-tab1.js" defer></script>
+<script src="/js/mph-scroll.js" defer></script>
+<script src="/js/mph-share.js" defer></script>
+<script src="/js/mph-tooltip.js" defer></script>
+<script src="/js/head.js" defer></script>
+  
+  <script src="/js/quick-info1.js" defer></script>
+  <script src="/js/top-section-widget1.js" defer></script>
+<script src="/js/restaurant-schema.js"></script>
+  
+<script>
+const path = location.pathname
+  .replace(".html", "")
+  .split("/")
+  .filter(Boolean);
 
+let itemList = [{
+  "@type": "ListItem",
+  "position": 1,
+  "name": "Home",
+  "item": location.origin + "/"
+}];
+
+let url = location.origin;
+
+path.forEach((part, index) => {
+  url += "/" + part;
+
+  itemList.push({
+    "@type": "ListItem",
+    "position": index + 2,
+    "name": part.replace(/-/g, " ").replace(/\b\w/g, c => c.toUpperCase()),
+    "item": url + ".html"
+  });
+});
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": itemList
+};
+
+const script = document.createElement("script");
+script.type = "application/ld+json";
+script.text = JSON.stringify(schema);
+document.head.appendChild(script);
+</script>
 
 
 
@@ -69,7 +126,7 @@
 <header id="site-header">
 </header>
   
- 
+  <script src="/js/header-widget.js" defer></script>
 
 
 
@@ -184,7 +241,7 @@ Overview
 <!-- Restaurant id -->
 <div id="page-wrapper" data-restaurant-id="02dominos">
 </div>
-
+<script src="/js/restaurant.js" defer></script>
 
   <!-- Popular Menu itme Card -->
 <section id="menu">
@@ -211,7 +268,7 @@ Overview
   <span id="close">&times;</span>
   <img id="fullImg" src="" alt="">
 </div>
-
+<script src="/js/imgoverlay.js" defer></script>
 
 
 <!-- LOCATION and Otherinfo -->
@@ -391,7 +448,7 @@ Reviews
 <!-- footer -->
   <section id="footer-section1">
 <footer id="footer"></footer>
-
+<script src="/js/footer-widget.js" defer></script>
   </section>
 
 
