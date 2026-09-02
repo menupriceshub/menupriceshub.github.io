@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>MenuPricesHub Admin</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #ff4d00;
+    }
+
+    input, button {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 12px;
+      margin-top: 12px;
+    }
+
+    button {
+      background: #ff4d00;
+      color: white;
+      border: 0;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    #status {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>MenuPricesHub Admin</h1>
+
+  <label>Admin Key</label>
+  <input
+    type="password"
+    id="adminKey"
+    placeholder="Enter Admin Key"
+  >
+
+  <label>Select restaurants.json</label>
+  <input
+    type="file"
+    id="jsonFile"
+    accept=".json,application/json"
+  >
+
+  <button onclick="uploadData()">
+    Upload Restaurants
+  </button>
+
+  <div id="status"></div>
+
+  <script>
+
+    async function uploadData() {
+
+      const adminKey =
+        document.getElementById("adminKey").value;
+
+      const fileInput =
+        document.getElementById("jsonFile");
+
+      const status =
+        document.getElementById("status");
+
+      if (!adminKey) {
+        status.textContent = "❌ Admin Key enter karo";
+        return;
+      }
+
+      if (!fileInput.files.length) {
+        status.textContent = "❌ restaurants.json select karo";
+        return;
+      }
+
+      try {
+
+        status.textContent = "⏳ File read ho rahi hai...";
+
+        const file = fileInput.files[0];
+
+        const text = await file.text();
+
+        const restaurants = JSON.parse(text);
+
+        if (!Array.isArray(restaurants)) {
+          status.textContent =
+            "❌ JSON array format mein nahi hai";
+          return;
+        }
+
+        status.textContent =
+          `⏳ ${restaurants.length} restaurants upload ho rahe hain...`;
+
+        const response = await fetch(
+          "https://menupriceshub-api.cricrock24.workers.dev/import",
+          {
+            method: "POST",
+
+            headers: {
+              "Content-Type": "application/json",
+              "Authorization": "Bearer " + adminKey
+            },
+
+            body: JSON.stringify(restaurants)
+          }
+        );
+
+        const result = await response.json();
+
+        if (!response.ok) {
+          status.textContent =
+            "❌ Error: " +
+            (result.error || "Upload failed");
+          return;
+        }
+
+        status.textContent =
+          `✅ Successfully imported: ${result.imported} restaurants`;
+
+      } catch (error) {
+
+        status.textContent =
+          "❌ Error: " + error.message;
+
+      }
+    }
+
+  </script>
+
+</body>
+</html>
