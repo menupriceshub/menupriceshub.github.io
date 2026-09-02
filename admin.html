@@ -1,147 +1,990 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>MenuPricesHub — Admin</title>
+<style>
+  :root{
+    --orange:#ff4d00;
+    --orange-dark:#d94100;
+    --navy:#141b2e;
+    --navy-soft:#3c4560;
+    --bg:#ffffff;
+    --panel:#f7f7f9;
+    --border:#e4e4ea;
+    --danger:#c62828;
+    --success:#1e7e34;
+    --radius:10px;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    background:var(--bg);
+    color:var(--navy);
+    -webkit-tap-highlight-color:transparent;
+  }
+  header{
+    position:sticky;
+    top:0;
+    z-index:50;
+    background:var(--navy);
+    color:#fff;
+    padding:14px 16px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:10px;
+  }
+  header .brand{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-weight:700;
+    font-size:17px;
+  }
+  header .brand .dot{
+    width:10px;height:10px;border-radius:50%;background:var(--orange);
+  }
+  header button{
+    background:transparent;
+    border:1px solid rgba(255,255,255,.35);
+    color:#fff;
+    padding:8px 14px;
+    border-radius:8px;
+    font-size:14px;
+  }
+  main{
+    max-width:1100px;
+    margin:0 auto;
+    padding:16px;
+  }
+  /* ---------- Login ---------- */
+  #loginScreen{
+    max-width:420px;
+    margin:12vh auto;
+    padding:0 16px;
+  }
+  #loginScreen h1{
+    font-size:22px;
+    margin-bottom:4px;
+  }
+  #loginScreen p{
+    color:var(--navy-soft);
+    margin-top:0;
+    font-size:14px;
+  }
+  .field{
+    margin-bottom:14px;
+  }
+  .field label{
+    display:block;
+    font-size:13px;
+    font-weight:600;
+    margin-bottom:6px;
+    color:var(--navy-soft);
+  }
+  input[type=text],
+  input[type=password],
+  input[type=number],
+  input[type=search],
+  textarea,
+  select{
+    width:100%;
+    padding:12px 12px;
+    font-size:16px;
+    border:1px solid var(--border);
+    border-radius:8px;
+    background:#fff;
+    color:var(--navy);
+    font-family:inherit;
+  }
+  textarea{
+    min-height:90px;
+    resize:vertical;
+    font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+    font-size:13px;
+  }
+  .btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:6px;
+    border:none;
+    border-radius:8px;
+    padding:12px 18px;
+    font-size:15px;
+    font-weight:600;
+    cursor:pointer;
+    min-height:44px;
+  }
+  .btn-primary{ background:var(--orange); color:#fff; }
+  .btn-primary:active{ background:var(--orange-dark); }
+  .btn-secondary{ background:var(--panel); color:var(--navy); border:1px solid var(--border); }
+  .btn-danger{ background:#fff; color:var(--danger); border:1px solid var(--danger); }
+  .btn-block{ width:100%; }
+  .btn-sm{ padding:8px 12px; font-size:13px; min-height:36px; }
 
-  <title>MenuPricesHub Admin</title>
+  #loginError{
+    color:var(--danger);
+    font-size:13px;
+    margin-top:4px;
+    min-height:16px;
+  }
 
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 600px;
-      margin: 40px auto;
-      padding: 20px;
-    }
+  /* ---------- Dashboard ---------- */
+  #dashboard{ display:none; }
 
-    h1 {
-      color: #ff4d00;
-    }
+  .toolbar{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin:16px 0;
+  }
+  .toolbar input[type=search]{
+    flex:1 1 220px;
+  }
+  .toolbar .spacer{ flex:1 1 auto; }
 
-    input, button {
-      width: 100%;
-      box-sizing: border-box;
-      padding: 12px;
-      margin-top: 12px;
-    }
+  .table-wrap{
+    border:1px solid var(--border);
+    border-radius:var(--radius);
+    overflow-x:auto;
+    -webkit-overflow-scrolling:touch;
+  }
+  table{
+    width:100%;
+    border-collapse:collapse;
+    min-width:640px;
+    font-size:14px;
+  }
+  thead th{
+    position:sticky;
+    top:0;
+    background:var(--navy);
+    color:#fff;
+    text-align:left;
+    padding:10px 12px;
+    font-weight:600;
+    white-space:nowrap;
+  }
+  tbody td{
+    padding:10px 12px;
+    border-top:1px solid var(--border);
+    white-space:nowrap;
+  }
+  tbody tr:nth-child(even){ background:var(--panel); }
+  td.actions{ white-space:nowrap; }
+  td.actions button{ margin-right:6px; }
 
-    button {
-      background: #ff4d00;
-      color: white;
-      border: 0;
-      border-radius: 6px;
-      font-size: 16px;
-      cursor: pointer;
-    }
+  .pagination{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:6px;
+    flex-wrap:wrap;
+    margin:16px 0;
+  }
+  .pagination button{
+    min-width:40px;
+    min-height:40px;
+    border-radius:8px;
+    border:1px solid var(--border);
+    background:#fff;
+    font-size:14px;
+  }
+  .pagination button.active{
+    background:var(--orange);
+    color:#fff;
+    border-color:var(--orange);
+  }
+  .pagination button:disabled{
+    opacity:.4;
+  }
 
-    #status {
-      margin-top: 20px;
-      font-weight: bold;
-    }
-  </style>
+  .meta-line{
+    font-size:13px;
+    color:var(--navy-soft);
+    margin:6px 0 0;
+  }
+
+  /* ---------- Toast ---------- */
+  #toast{
+    position:fixed;
+    left:50%;
+    bottom:24px;
+    transform:translateX(-50%);
+    background:var(--navy);
+    color:#fff;
+    padding:12px 18px;
+    border-radius:8px;
+    font-size:14px;
+    max-width:90vw;
+    z-index:200;
+    display:none;
+    box-shadow:0 6px 18px rgba(0,0,0,.25);
+  }
+  #toast.success{ background:var(--success); }
+  #toast.error{ background:var(--danger); }
+
+  /* ---------- Modal ---------- */
+  .modal-backdrop{
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(20,27,46,.55);
+    z-index:100;
+    padding:16px;
+    overflow-y:auto;
+  }
+  .modal-backdrop.open{ display:block; }
+  .modal{
+    background:#fff;
+    max-width:640px;
+    margin:24px auto;
+    border-radius:var(--radius);
+    padding:20px;
+  }
+  .modal h2{
+    margin-top:0;
+    font-size:19px;
+  }
+  .modal .close-x{
+    float:right;
+    background:none;
+    border:none;
+    font-size:22px;
+    line-height:1;
+    color:var(--navy-soft);
+    cursor:pointer;
+  }
+  .form-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:0 12px;
+  }
+  .form-grid .field.full{ grid-column:1 / -1; }
+  @media (max-width:520px){
+    .form-grid{ grid-template-columns:1fr; }
+  }
+  .section-label{
+    font-size:13px;
+    font-weight:700;
+    text-transform:none;
+    color:var(--orange);
+    margin:18px 0 8px;
+    border-top:1px solid var(--border);
+    padding-top:14px;
+  }
+  .hint{
+    font-size:12px;
+    color:var(--navy-soft);
+    margin-top:-8px;
+    margin-bottom:10px;
+  }
+  .modal-actions{
+    display:flex;
+    gap:10px;
+    margin-top:18px;
+  }
+  .modal-actions .btn{ flex:1; }
+
+  /* confirm dialog reuses modal styles, smaller */
+  #confirmModal .modal{ max-width:380px; }
+
+  /* import modal */
+  #importLog{
+    background:var(--panel);
+    border:1px solid var(--border);
+    border-radius:8px;
+    padding:10px;
+    font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+    font-size:12px;
+    max-height:220px;
+    overflow-y:auto;
+    white-space:pre-wrap;
+    margin-top:12px;
+  }
+  progress{ width:100%; height:10px; margin-top:10px; accent-color:var(--orange); }
+
+  .empty-state{
+    text-align:center;
+    padding:40px 16px;
+    color:var(--navy-soft);
+  }
+</style>
 </head>
-
 <body>
 
+<!-- ============ LOGIN ============ -->
+<div id="loginScreen">
   <h1>MenuPricesHub Admin</h1>
+  <p>Enter your admin key to manage the restaurant database.</p>
+  <div class="field">
+    <label for="adminKeyInput">Admin Key</label>
+    <input type="password" id="adminKeyInput" autocomplete="off" placeholder="Enter admin key">
+  </div>
+  <button class="btn btn-primary btn-block" id="loginBtn">Login</button>
+  <div id="loginError"></div>
+</div>
 
-  <label>Admin Key</label>
-  <input
-    type="password"
-    id="adminKey"
-    placeholder="Enter Admin Key"
-  >
+<!-- ============ DASHBOARD ============ -->
+<div id="dashboard">
+  <header>
+    <div class="brand"><span class="dot"></span>MenuPricesHub Admin</div>
+    <button id="logoutBtn">Logout</button>
+  </header>
 
-  <label>Select restaurants.json</label>
-  <input
-    type="file"
-    id="jsonFile"
-    accept=".json,application/json"
-  >
+  <main>
+    <div class="toolbar">
+      <input type="search" id="searchInput" placeholder="Search by name, id, city or category">
+      <div class="spacer"></div>
+      <button class="btn btn-secondary" id="importBtn">Bulk Import</button>
+      <button class="btn btn-primary" id="addBtn">Add Restaurant</button>
+    </div>
 
-  <button onclick="uploadData()">
-    Upload Restaurants
-  </button>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Category</th>
+            <th>City</th>
+            <th>URL</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody">
+          <tr><td colspan="6" class="empty-state">Loading…</td></tr>
+        </tbody>
+      </table>
+    </div>
 
-  <div id="status"></div>
+    <p class="meta-line" id="metaLine"></p>
+    <div class="pagination" id="pagination"></div>
+  </main>
+</div>
 
-  <script>
+<!-- ============ ADD/EDIT MODAL ============ -->
+<div class="modal-backdrop" id="editModal">
+  <div class="modal">
+    <button class="close-x" data-close="editModal">&times;</button>
+    <h2 id="editModalTitle">Add Restaurant</h2>
+    <form id="restaurantForm">
+      <div class="form-grid">
+        <div class="field">
+          <label for="f_id">ID *</label>
+          <input type="text" id="f_id" required>
+        </div>
+        <div class="field">
+          <label for="f_name">Name *</label>
+          <input type="text" id="f_name" required>
+        </div>
+        <div class="field">
+          <label for="f_category">Category</label>
+          <input type="text" id="f_category">
+        </div>
+        <div class="field">
+          <label for="f_city">City</label>
+          <input type="text" id="f_city">
+        </div>
+        <div class="field full">
+          <label for="f_url">URL</label>
+          <input type="text" id="f_url">
+        </div>
+        <div class="field full">
+          <label for="f_thumbnail">Thumbnail (image URL)</label>
+          <input type="text" id="f_thumbnail">
+        </div>
+        <div class="field full">
+          <label for="f_location">Location (address)</label>
+          <input type="text" id="f_location">
+        </div>
+        <div class="field">
+          <label for="f_lat">Latitude</label>
+          <input type="number" step="any" id="f_lat">
+        </div>
+        <div class="field">
+          <label for="f_lng">Longitude</label>
+          <input type="number" step="any" id="f_lng">
+        </div>
+        <div class="field">
+          <label for="f_phone">Phone</label>
+          <input type="text" id="f_phone">
+        </div>
+        <div class="field">
+          <label for="f_website">Website</label>
+          <input type="text" id="f_website">
+        </div>
+        <div class="field">
+          <label for="f_rating">Rating</label>
+          <input type="number" step="any" id="f_rating">
+        </div>
+        <div class="field">
+          <label for="f_totalrating">Total Ratings</label>
+          <input type="number" step="any" id="f_totalrating">
+        </div>
+        <div class="field full">
+          <label for="f_description">Description</label>
+          <textarea id="f_description" style="min-height:60px;font-family:inherit;font-size:14px;"></textarea>
+        </div>
+        <div class="field full">
+          <label for="f_reviewSummary">Review Summary</label>
+          <textarea id="f_reviewSummary" style="min-height:60px;font-family:inherit;font-size:14px;"></textarea>
+        </div>
+      </div>
 
-    async function uploadData() {
+      <div class="section-label">Advanced fields (JSON)</div>
+      <div class="hint">Edit these as raw JSON. Leave as-is if you don't need to change them.</div>
 
-      const adminKey =
-        document.getElementById("adminKey").value;
+      <div class="field">
+        <label for="f_ratingDistribution">ratingDistribution (JSON object)</label>
+        <textarea id="f_ratingDistribution" placeholder='{"5":10,"4":3,"3":1,"2":0,"1":0}'></textarea>
+      </div>
+      <div class="field">
+        <label for="f_photos">photos (JSON array of URLs)</label>
+        <textarea id="f_photos" placeholder='["https://...","https://..."]'></textarea>
+      </div>
+      <div class="field">
+        <label for="f_menu">menu (JSON array/object)</label>
+        <textarea id="f_menu" placeholder='[{"item":"Margherita Pizza","price":"₹299"}]'></textarea>
+      </div>
+      <div class="field">
+        <label for="f_hours">hours (JSON object)</label>
+        <textarea id="f_hours" placeholder='{"mon":"11:00-23:00","tue":"11:00-23:00"}'></textarea>
+      </div>
 
-      const fileInput =
-        document.getElementById("jsonFile");
+      <div id="formError" style="color:#c62828;font-size:13px;min-height:16px;"></div>
 
-      const status =
-        document.getElementById("status");
+      <div class="modal-actions">
+        <button type="button" class="btn btn-secondary" data-close="editModal">Cancel</button>
+        <button type="submit" class="btn btn-primary" id="saveBtn">Save</button>
+      </div>
+    </form>
+  </div>
+</div>
 
-      if (!adminKey) {
-        status.textContent = "❌ Admin Key enter karo";
-        return;
+<!-- ============ CONFIRM DELETE MODAL ============ -->
+<div class="modal-backdrop" id="confirmModal">
+  <div class="modal">
+    <h2>Delete restaurant?</h2>
+    <p id="confirmText">Are you sure you want to delete this restaurant?</p>
+    <div class="modal-actions">
+      <button class="btn btn-secondary" data-close="confirmModal">Cancel</button>
+      <button class="btn btn-danger" id="confirmDeleteBtn">Delete</button>
+    </div>
+  </div>
+</div>
+
+<!-- ============ BULK IMPORT MODAL ============ -->
+<div class="modal-backdrop" id="importModal">
+  <div class="modal">
+    <button class="close-x" data-close="importModal">&times;</button>
+    <h2>Bulk JSON Import</h2>
+    <p class="hint" style="margin-top:-2px;">Select a .json file containing an array of restaurant objects (e.g. restaurants2.json). Uploaded in batches of 25.</p>
+    <div class="field">
+      <input type="file" id="importFile" accept=".json,application/json">
+    </div>
+    <p id="importSummary" class="meta-line"></p>
+    <progress id="importProgress" value="0" max="1" style="display:none;"></progress>
+    <div id="importLog" style="display:none;"></div>
+    <div class="modal-actions">
+      <button class="btn btn-secondary" data-close="importModal">Close</button>
+      <button class="btn btn-primary" id="startImportBtn" disabled>Start Import</button>
+    </div>
+  </div>
+</div>
+
+<div id="toast"></div>
+
+<script>
+(function(){
+  "use strict";
+
+  // ---- Configuration ----
+  var API_BASE = "https://menupriceshub-api.cricrock24.workers.dev";
+  var PAGE_SIZE = 50;
+  var IMPORT_BATCH_SIZE = 25;
+
+  // ---- In-memory session state (never persisted to disk/storage) ----
+  var state = {
+    adminKey: null,
+    page: 1,
+    totalPages: 1,
+    total: 0,
+    query: "",
+    editingId: null, // null = add mode, string = edit mode
+    pendingDeleteId: null,
+    importRecords: null
+  };
+
+  // ---- Small DOM helpers ----
+  function $(id){ return document.getElementById(id); }
+  function openModal(id){ $(id).classList.add("open"); }
+  function closeModal(id){ $(id).classList.remove("open"); }
+
+  document.querySelectorAll("[data-close]").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      closeModal(btn.getAttribute("data-close"));
+    });
+  });
+
+  var toastTimer = null;
+  function showToast(message, type){
+    var el = $("toast");
+    el.textContent = message;
+    el.className = type || "";
+    el.style.display = "block";
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ el.style.display = "none"; }, 3200);
+  }
+
+  function friendlyError(status, fallback){
+    if (status === 401) return "Unauthorized. Please log in again.";
+    if (status === 404) return "Restaurant not found.";
+    if (status === 0) return "Network error. Check your connection.";
+    return fallback || "Something went wrong.";
+  }
+
+  // ---- API wrapper ----
+  function api(path, options){
+    options = options || {};
+    var headers = options.headers || {};
+    if (state.adminKey) headers["Authorization"] = "Bearer " + state.adminKey;
+    if (options.body) headers["Content-Type"] = "application/json";
+
+    return fetch(API_BASE + path, {
+      method: options.method || "GET",
+      headers: headers,
+      body: options.body ? JSON.stringify(options.body) : undefined
+    }).then(function(res){
+      return res.json().catch(function(){ return {}; }).then(function(data){
+        if (!res.ok){
+          var err = new Error(data.error || "Request failed");
+          err.status = res.status;
+          err.data = data;
+          throw err;
+        }
+        return data;
+      });
+    }, function(){
+      var err = new Error("Network error");
+      err.status = 0;
+      throw err;
+    });
+  }
+
+  // ---- Auth ----
+  $("loginBtn").addEventListener("click", function(){
+    var key = $("adminKeyInput").value.trim();
+    if (!key){
+      $("loginError").textContent = "Please enter your admin key.";
+      return;
+    }
+    $("loginError").textContent = "";
+    var btn = $("loginBtn");
+    btn.disabled = true; btn.textContent = "Logging in…";
+
+    var tmpKey = state.adminKey;
+    state.adminKey = key;
+
+    api("/admin/restaurants?page=1&pageSize=" + PAGE_SIZE)
+      .then(function(data){
+        $("loginScreen").style.display = "none";
+        $("dashboard").style.display = "block";
+        renderList(data);
+      })
+      .catch(function(err){
+        state.adminKey = tmpKey;
+        if (err.status === 401){
+          $("loginError").textContent = "Login failed. Incorrect admin key.";
+        } else {
+          $("loginError").textContent = friendlyError(err.status, "Login failed. Please try again.");
+        }
+      })
+      .finally(function(){
+        btn.disabled = false; btn.textContent = "Login";
+      });
+  });
+
+  $("adminKeyInput").addEventListener("keydown", function(e){
+    if (e.key === "Enter") $("loginBtn").click();
+  });
+
+  $("logoutBtn").addEventListener("click", function(){
+    state.adminKey = null;
+    state.page = 1;
+    state.query = "";
+    $("searchInput").value = "";
+    $("dashboard").style.display = "none";
+    $("loginScreen").style.display = "block";
+    $("adminKeyInput").value = "";
+    $("adminKeyInput").focus();
+  });
+
+  // ---- List / Search / Pagination ----
+  var searchDebounce = null;
+  $("searchInput").addEventListener("input", function(){
+    clearTimeout(searchDebounce);
+    var val = this.value;
+    searchDebounce = setTimeout(function(){
+      state.query = val.trim();
+      state.page = 1;
+      loadList();
+    }, 350);
+  });
+
+  function loadList(){
+    var body = $("tableBody");
+    body.innerHTML = '<tr><td colspan="6" class="empty-state">Loading…</td></tr>';
+
+    var path;
+    if (state.query){
+      path = "/admin/restaurants/search?q=" + encodeURIComponent(state.query) +
+             "&page=" + state.page + "&pageSize=" + PAGE_SIZE;
+    } else {
+      path = "/admin/restaurants?page=" + state.page + "&pageSize=" + PAGE_SIZE;
+    }
+
+    api(path)
+      .then(renderList)
+      .catch(function(err){
+        body.innerHTML = '<tr><td colspan="6" class="empty-state">' +
+          escapeHtml(friendlyError(err.status, "Could not load restaurants.")) + '</td></tr>';
+      });
+  }
+
+  function renderList(data){
+    var body = $("tableBody");
+    var rows = data.restaurants || [];
+    state.total = data.total || 0;
+    state.totalPages = Math.max(1, Math.ceil(state.total / PAGE_SIZE));
+
+    if (rows.length === 0){
+      body.innerHTML = '<tr><td colspan="6" class="empty-state">No restaurants found.</td></tr>';
+    } else {
+      body.innerHTML = rows.map(function(r){
+        return '<tr>' +
+          '<td>' + escapeHtml(r.id) + '</td>' +
+          '<td>' + escapeHtml(r.name || "") + '</td>' +
+          '<td>' + escapeHtml(r.category || "") + '</td>' +
+          '<td>' + escapeHtml(r.city || "") + '</td>' +
+          '<td>' + (r.url ? '<a href="' + escapeAttr(r.url) + '" target="_blank" rel="noopener">link</a>' : "") + '</td>' +
+          '<td class="actions">' +
+            '<button class="btn btn-secondary btn-sm" data-edit="' + escapeAttr(r.id) + '">Edit</button>' +
+            '<button class="btn btn-danger btn-sm" data-delete="' + escapeAttr(r.id) + '">Delete</button>' +
+          '</td>' +
+        '</tr>';
+      }).join("");
+    }
+
+    $("metaLine").textContent = state.total + " restaurant" + (state.total === 1 ? "" : "s") +
+      (state.query ? ' matching "' + state.query + '"' : "") +
+      " — page " + state.page + " of " + state.totalPages;
+
+    renderPagination();
+
+    body.querySelectorAll("[data-edit]").forEach(function(btn){
+      btn.addEventListener("click", function(){ openEdit(btn.getAttribute("data-edit")); });
+    });
+    body.querySelectorAll("[data-delete]").forEach(function(btn){
+      btn.addEventListener("click", function(){ askDelete(btn.getAttribute("data-delete")); });
+    });
+  }
+
+  function renderPagination(){
+    var el = $("pagination");
+    var totalPages = state.totalPages;
+    var page = state.page;
+    var html = "";
+
+    html += '<button ' + (page <= 1 ? "disabled" : "") + ' data-page="' + (page - 1) + '">‹</button>';
+
+    var start = Math.max(1, page - 2);
+    var end = Math.min(totalPages, start + 4);
+    start = Math.max(1, end - 4);
+
+    for (var p = start; p <= end; p++){
+      html += '<button class="' + (p === page ? "active" : "") + '" data-page="' + p + '">' + p + '</button>';
+    }
+
+    html += '<button ' + (page >= totalPages ? "disabled" : "") + ' data-page="' + (page + 1) + '">›</button>';
+
+    el.innerHTML = html;
+    el.querySelectorAll("[data-page]").forEach(function(btn){
+      btn.addEventListener("click", function(){
+        var p = parseInt(btn.getAttribute("data-page"), 10);
+        if (p < 1 || p > state.totalPages || p === state.page) return;
+        state.page = p;
+        loadList();
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    });
+  }
+
+  // ---- Add / Edit ----
+  var jsonFields = ["ratingDistribution", "photos", "menu", "hours"];
+  var scalarFields = ["id","name","category","city","url","thumbnail","location",
+    "lat","lng","phone","website","description","reviewSummary","rating","totalrating"];
+
+  function clearForm(){
+    scalarFields.forEach(function(f){ var el = $("f_" + f); if (el) el.value = ""; });
+    jsonFields.forEach(function(f){ $("f_" + f).value = ""; });
+    $("formError").textContent = "";
+    $("f_id").disabled = false;
+  }
+
+  $("addBtn").addEventListener("click", function(){
+    clearForm();
+    state.editingId = null;
+    $("editModalTitle").textContent = "Add Restaurant";
+    openModal("editModal");
+  });
+
+  function openEdit(id){
+    clearForm();
+    $("editModalTitle").textContent = "Edit Restaurant";
+    state.editingId = id;
+    openModal("editModal");
+    $("f_id").disabled = true;
+
+    api("/admin/restaurants/" + encodeURIComponent(id))
+      .then(function(data){
+        var r = data.restaurant || {};
+        scalarFields.forEach(function(f){
+          if (r[f] !== undefined && r[f] !== null) $("f_" + f).value = r[f];
+        });
+        jsonFields.forEach(function(f){
+          if (r[f] !== undefined) $("f_" + f).value = JSON.stringify(r[f], null, 2);
+        });
+      })
+      .catch(function(err){
+        closeModal("editModal");
+        showToast(friendlyError(err.status, "Could not load restaurant."), "error");
+      });
+  }
+
+  $("restaurantForm").addEventListener("submit", function(e){
+    e.preventDefault();
+    $("formError").textContent = "";
+
+    var restaurant = {};
+    scalarFields.forEach(function(f){
+      var val = $("f_" + f).value.trim();
+      if (val === "") return;
+      if (["lat","lng","rating","totalrating"].indexOf(f) !== -1){
+        var num = Number(val);
+        restaurant[f] = isNaN(num) ? val : num;
+      } else {
+        restaurant[f] = val;
       }
+    });
 
-      if (!fileInput.files.length) {
-        status.textContent = "❌ restaurants.json select karo";
-        return;
-      }
+    if (!restaurant.id || !restaurant.name){
+      $("formError").textContent = "ID and Name are required.";
+      return;
+    }
 
+    for (var i = 0; i < jsonFields.length; i++){
+      var f = jsonFields[i];
+      var raw = $("f_" + f).value.trim();
+      if (raw === "") continue;
       try {
-
-        status.textContent = "⏳ File read ho rahi hai...";
-
-        const file = fileInput.files[0];
-
-        const text = await file.text();
-
-        const restaurants = JSON.parse(text);
-
-        if (!Array.isArray(restaurants)) {
-          status.textContent =
-            "❌ JSON array format mein nahi hai";
-          return;
-        }
-
-        status.textContent =
-          `⏳ ${restaurants.length} restaurants upload ho rahe hain...`;
-
-        const response = await fetch(
-          "https://menupriceshub-api.cricrock24.workers.dev/import",
-          {
-            method: "POST",
-
-            headers: {
-              "Content-Type": "application/json",
-              "Authorization": "Bearer " + adminKey
-            },
-
-            body: JSON.stringify(restaurants)
-          }
-        );
-
-        const result = await response.json();
-
-        if (!response.ok) {
-          status.textContent =
-            "❌ Error: " +
-            (result.error || "Upload failed");
-          return;
-        }
-
-        status.textContent =
-          `✅ Successfully imported: ${result.imported} restaurants`;
-
-      } catch (error) {
-
-        status.textContent =
-          "❌ Error: " + error.message;
-
+        restaurant[f] = JSON.parse(raw);
+      } catch (err){
+        $("formError").textContent = "Invalid JSON in '" + f + "'. Please fix it before saving.";
+        return;
       }
     }
 
-  </script>
+    var saveBtn = $("saveBtn");
+    saveBtn.disabled = true;
+    saveBtn.textContent = "Saving…";
 
+    var request = state.editingId
+      ? api("/admin/restaurants/" + encodeURIComponent(state.editingId), { method: "PUT", body: restaurant })
+      : api("/admin/restaurants", { method: "POST", body: restaurant });
+
+    request
+      .then(function(){
+        closeModal("editModal");
+        showToast(state.editingId ? "Updated successfully" : "Saved successfully", "success");
+        loadList();
+      })
+      .catch(function(err){
+        $("formError").textContent = friendlyError(err.status, "Save failed. Please try again.");
+      })
+      .finally(function(){
+        saveBtn.disabled = false;
+        saveBtn.textContent = "Save";
+      });
+  });
+
+  // ---- Delete ----
+  function askDelete(id){
+    state.pendingDeleteId = id;
+    $("confirmText").textContent = "Are you sure you want to delete \"" + id + "\"?";
+    openModal("confirmModal");
+  }
+
+  $("confirmDeleteBtn").addEventListener("click", function(){
+    var id = state.pendingDeleteId;
+    if (!id) return;
+    var btn = $("confirmDeleteBtn");
+    btn.disabled = true; btn.textContent = "Deleting…";
+
+    api("/admin/restaurants/" + encodeURIComponent(id), { method: "DELETE" })
+      .then(function(){
+        closeModal("confirmModal");
+        showToast("Deleted successfully", "success");
+        loadList();
+      })
+      .catch(function(err){
+        closeModal("confirmModal");
+        showToast(friendlyError(err.status, "Delete failed."), "error");
+      })
+      .finally(function(){
+        btn.disabled = false; btn.textContent = "Delete";
+        state.pendingDeleteId = null;
+      });
+  });
+
+  // ---- Bulk Import ----
+  $("importBtn").addEventListener("click", function(){
+    state.importRecords = null;
+    $("importFile").value = "";
+    $("importSummary").textContent = "";
+    $("importProgress").style.display = "none";
+    $("importProgress").value = 0;
+    $("importLog").style.display = "none";
+    $("importLog").innerHTML = "";
+    $("startImportBtn").disabled = true;
+    openModal("importModal");
+  });
+
+  $("importFile").addEventListener("change", function(){
+    var file = this.files[0];
+    if (!file) return;
+    var reader = new FileReader();
+    reader.onload = function(){
+      var parsed;
+      try {
+        parsed = JSON.parse(reader.result);
+      } catch (e){
+        $("importSummary").textContent = "Invalid JSON file.";
+        $("startImportBtn").disabled = true;
+        return;
+      }
+      if (!Array.isArray(parsed)){
+        $("importSummary").textContent = "Invalid JSON: file must contain an array of restaurants.";
+        $("startImportBtn").disabled = true;
+        return;
+      }
+      state.importRecords = parsed;
+      $("importSummary").textContent = "Found: " + parsed.length + " restaurants";
+      $("startImportBtn").disabled = parsed.length === 0;
+    };
+    reader.onerror = function(){
+      $("importSummary").textContent = "Could not read file.";
+    };
+    reader.readAsText(file);
+  });
+
+  $("startImportBtn").addEventListener("click", function(){
+    var records = state.importRecords;
+    if (!records || records.length === 0) return;
+
+    var btn = $("startImportBtn");
+    btn.disabled = true;
+    $("importFile").disabled = true;
+
+    var log = $("importLog");
+    log.style.display = "block";
+    log.innerHTML = "";
+    var progress = $("importProgress");
+    progress.style.display = "block";
+    progress.max = records.length;
+    progress.value = 0;
+
+    var totalSuccess = 0;
+    var totalFailed = 0;
+    var allErrors = [];
+    var batches = [];
+    for (var i = 0; i < records.length; i += IMPORT_BATCH_SIZE){
+      batches.push(records.slice(i, i + IMPORT_BATCH_SIZE));
+    }
+
+    var uploaded = 0;
+
+    function appendLog(line){
+      log.textContent += line + "\n";
+      log.scrollTop = log.scrollHeight;
+    }
+
+    function runBatch(index){
+      if (index >= batches.length){
+        appendLog("\nCompleted:");
+        appendLog("Imported: " + totalSuccess);
+        appendLog("Failed: " + totalFailed);
+        if (allErrors.length){
+          appendLog("\nErrors:");
+          allErrors.slice(0, 20).forEach(function(e){
+            appendLog("  [" + e.index + "] " + (e.id || "(no id)") + ": " + e.error);
+          });
+          if (allErrors.length > 20){
+            appendLog("  … and " + (allErrors.length - 20) + " more.");
+          }
+        }
+        $("importSummary").textContent = "Imported " + totalSuccess + " of " + records.length +
+          (totalFailed ? (" — " + totalFailed + " failed") : "");
+        $("importFile").disabled = false;
+        showToast(totalFailed ? "Import finished with some errors" : "Import completed", totalFailed ? "error" : "success");
+        loadList();
+        return;
+      }
+
+      var batch = batches[index];
+      appendLog("Uploading batch " + (index + 1) + "/" + batches.length + " (" +
+        (uploaded + 1) + "-" + Math.min(uploaded + batch.length, records.length) + " of " + records.length + ")…");
+
+      api("/import", { method: "POST", body: { restaurants: batch } })
+        .then(function(result){
+          totalSuccess += result.success || 0;
+          totalFailed += (result.errors || []).length;
+          allErrors = allErrors.concat((result.errors || []).map(function(e){
+            e.index = e.index + uploaded;
+            return e;
+          }));
+        })
+        .catch(function(err){
+          totalFailed += batch.length;
+          batch.forEach(function(r, i){
+            allErrors.push({ index: uploaded + i, id: r && r.id, error: friendlyError(err.status, "Upload failed.") });
+          });
+        })
+        .finally(function(){
+          uploaded += batch.length;
+          progress.value = uploaded;
+          runBatch(index + 1);
+        });
+    }
+
+    runBatch(0);
+  });
+
+  // ---- Utilities ----
+  function escapeHtml(str){
+    return String(str == null ? "" : str)
+      .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  }
+  function escapeAttr(str){
+    return escapeHtml(str).replace(/"/g, "&quot;");
+  }
+
+})();
+</script>
 </body>
 </html>
