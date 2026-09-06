@@ -188,7 +188,7 @@ document.getElementById("hours-table-body").innerHTML = hoursHTML;
 
   // map location 
 document.getElementById("restaurant-map").src =
-`https://maps.google.com/maps?q=${restaurant.lat},${restaurant.lng}&z=15&output=embed`;
+`https://maps.google.com/maps?q=${encodeURIComponent(restaurant.name + ", " + restaurant.location)}&z=15&output=embed`;
 }
 
 });
