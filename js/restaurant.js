@@ -1,4 +1,4 @@
-?const id = document.getElementById("page-wrapper").dataset.restaurantId;
+const id = document.getElementById("page-wrapper").dataset.restaurantId;
 
 fetch("/data/restaurants.json")
 .then(res => res.json())
@@ -16,11 +16,10 @@ document.getElementById("location-info1").innerHTML = restaurant.location;
 document.getElementById("call-btn").href =
 `tel:${restaurant.phone}`;
 
-
 // Direction Button
 document.getElementById("direction-btn").href =
-`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(restaurant.name + ", " + restaurant.location)}`;
-  
+`https://www.google.com/maps/search/?api=1&query=${restaurant.lat},${restaurant.lng}`;
+
   document.getElementById("phonenumber-info1").innerHTML = `
   <a href="tel:${restaurant.phone}">${restaurant.phone}</a>
   
