@@ -17,8 +17,17 @@ document.getElementById("call-btn").href =
 `tel:${restaurant.phone}`;
 
 // Direction Button
-document.getElementById("direction-btn").href =
-`https://www.google.com/maps/search/?api=1&query=${restaurant.lat},${restaurant.lng}`;
+const directionBtn = document.getElementById("direction-btn");
+
+directionBtn.href =
+  `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+    restaurant.name + ", " + restaurant.location
+  )}`;
+
+directionBtn.target = "_blank";
+directionBtn.rel = "noopener";
+
+  
 
   document.getElementById("phonenumber-info1").innerHTML = `
   <a href="tel:${restaurant.phone}">${restaurant.phone}</a>
