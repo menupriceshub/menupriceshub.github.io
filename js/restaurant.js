@@ -1,6 +1,6 @@
 const id = document.getElementById("page-wrapper").dataset.restaurantId;
 
-fetch("/data/restaurants.json")
+fetch("https://menupriceshub-api.cricrock24.workers.dev/")
 .then(res => res.json())
 .then(data => {
 
@@ -201,5 +201,3 @@ document.getElementById("restaurant-map").src =
 }
 
 });
-
-  
