@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Restaurant JSON Builder</title>
+<style>
+  :root{
+    --orange:#ff4d00;
+    --orange-dark:#d94100;
+    --navy:#141b2e;
+    --navy-soft:#3c4560;
+    --bg:#ffffff;
+    --panel:#f7f7f9;
+    --border:#e4e4ea;
+    --danger:#c62828;
+    --success:#1e7e34;
+    --radius:10px;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    background:var(--bg);
+    color:var(--navy);
+    -webkit-tap-highlight-color:transparent;
+  }
+  header{
+    position:sticky;
+    top:0;
+    z-index:50;
+    background:var(--navy);
+    color:#fff;
+    padding:14px 16px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:10px;
+  }
+  header .brand{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-weight:700;
+    font-size:17px;
+  }
+  header .brand .dot{ width:10px;height:10px;border-radius:50%;background:var(--orange); }
+  header .count{ font-size:13px; color:rgba(255,255,255,.75); }
+
+  main{ max-width:760px; margin:0 auto; padding:16px 16px 60px; }
+
+  .field{ margin-bottom:14px; }
+  .field label{ display:block; font-size:13px; font-weight:600; margin-bottom:6px; color:var(--navy-soft); }
+  input[type=text], input[type=number], input[type=url], input[type=time], textarea{
+    width:100%; padding:12px; font-size:16px; border:1px solid var(--border);
+    border-radius:8px; background:#fff; color:var(--navy); font-family:inherit;
+  }
+  textarea{ min-height:70px; resize:vertical; font-family:inherit; font-size:14px; }
+  .btn{
+    display:inline-flex; align-items:center; justify-content:center; gap:6px;
+    border:none; border-radius:8px; padding:12px 18px; font-size:15px;
+    font-weight:600; cursor:pointer; min-height:44px;
+  }
+  .btn-primary{ background:var(--orange); color:#fff; }
+  .btn-primary:active{ background:var(--orange-dark); }
+  .btn-secondary{ background:var(--panel); color:var(--navy); border:1px solid var(--border); }
+  .btn-danger{ background:#fff; color:var(--danger); border:1px solid var(--danger); }
+  .btn-sm{ padding:8px 12px; font-size:13px; min-height:36px; }
+  .btn-block{ width:100%; }
+  .btn-row{ display:flex; gap:10px; flex-wrap:wrap; margin-top:6px; }
+  .btn-row .btn{ flex:1 1 auto; }
+
+  .card{
+    border:1px solid var(--border); border-radius:var(--radius);
+    padding:16px; margin-bottom:18px; background:#fff;
+  }
+  .card h2{
+    margin:0 0 4px; font-size:16px; color:var(--orange); display:flex; align-items:center; gap:8px;
+  }
+  .card .sub{ font-size:12px; color:var(--navy-soft); margin:0 0 14px; }
+
+  .form-grid{ display:grid; grid-template-columns:1fr 1fr; gap:0 12px; }
+  .form-grid .field.full{ grid-column:1 / -1; }
+  @media (max-width:520px){ .form-grid{ grid-template-columns:1fr; } }
+
+  /* rating sliders */
+  .rating-row{ display:flex; align-items:center; gap:10px; margin-bottom:10px; }
+  .rating-row .star-label{ width:52px; font-size:13px; font-weight:700; color:var(--navy); flex-shrink:0; }
+  .rating-row input[type=range]{ flex:1; accent-color:var(--orange); height:26px; }
+  .rating-row .val{ width:34px; text-align:right; font-size:13px; font-weight:600; color:var(--navy-soft); }
+
+  /* photos */
+  .photo-add-row{ display:flex; gap:8px; }
+  .photo-add-row input{ flex:1; }
+  .photo-grid{ display:flex; flex-wrap:wrap; gap:10px; margin-top:12px; }
+  .photo-thumb{
+    position:relative; width:84px; height:84px; border-radius:8px; overflow:hidden;
+    border:1px solid var(--border); background:var(--panel);
+  }
+  .photo-thumb img{ width:100%; height:100%; object-fit:cover; display:block; }
+  .photo-thumb .broken{
+    display:flex; align-items:center; justify-content:center; height:100%;
+    font-size:11px; color:var(--navy-soft); text-align:center; padding:4px;
+  }
+  .photo-thumb button{
+    position:absolute; top:2px; right:2px; width:20px; height:20px; border-radius:50%;
+    border:none; background:rgba(20,27,46,.75); color:#fff; font-size:13px; line-height:1; cursor:pointer;
+  }
+
+  /* menu table */
+  .menu-table-wrap{ border:1px solid var(--border); border-radius:8px; overflow-x:auto; }
+  table{ width:100%; border-collapse:collapse; min-width:520px; font-size:13px; }
+  thead th{ background:var(--panel); text-align:left; padding:8px 10px; font-weight:700; color:var(--navy-soft); white-space:nowrap; border-bottom:1px solid var(--border); }
+  tbody td{ padding:6px 8px; border-top:1px solid var(--border); }
+  tbody td input{ padding:8px; font-size:13px; }
+  tbody td.rm{ text-align:center; width:36px; }
+  tbody td.rm button{ background:none; border:none; color:var(--danger); font-size:18px; cursor:pointer; }
+
+  /* hours */
+  .hour-row{ display:flex; align-items:center; gap:10px; padding:8px 0; border-top:1px solid var(--border); }
+  .hour-row:first-child{ border-top:none; }
+  .hour-row .day{ width:44px; font-size:13px; font-weight:700; flex-shrink:0; }
+  .hour-row input[type=time]{ flex:1; min-width:0; }
+  .hour-row label.closed-toggle{ display:flex; align-items:center; gap:5px; font-size:12px; color:var(--navy-soft); flex-shrink:0; margin:0; white-space:nowrap; }
+  .hour-row .times{ display:flex; gap:6px; flex:1; align-items:center; min-width:0; }
+  .hour-row .times span{ font-size:12px; color:var(--navy-soft); }
+
+  /* output json */
+  #jsonOutput{
+    width:100%; min-height:220px; font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+    font-size:12px; background:var(--navy); color:#d9e3ff; border-radius:8px; border:none; padding:14px;
+    white-space:pre; overflow:auto;
+  }
+
+  /* saved list */
+  .saved-table-wrap{ border:1px solid var(--border); border-radius:var(--radius); overflow-x:auto; }
+  .saved-table-wrap table{ min-width:0; }
+  .empty-state{ text-align:center; padding:24px 12px; color:var(--navy-soft); font-size:13px; }
+
+  #toast{
+    position:fixed; left:50%; bottom:20px; transform:translateX(-50%);
+    background:var(--navy); color:#fff; padding:11px 16px; border-radius:8px;
+    font-size:13px; max-width:90vw; z-index:200; display:none; box-shadow:0 6px 18px rgba(0,0,0,.25);
+  }
+  #toast.success{ background:var(--success); }
+  #toast.error{ background:var(--danger); }
+
+  .note{
+    font-size:12px; color:var(--navy-soft); background:var(--panel);
+    border:1px dashed var(--border); border-radius:8px; padding:10px 12px; margin-bottom:16px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand"><span class="dot"></span>Restaurant JSON Builder</div>
+  <div class="count" id="savedCount">0 saved</div>
+</header>
+
+<main>
+  <p class="note">Data is kept in this page's memory only (no browser storage is used here). Use <strong>Download All (.json)</strong> before you close the tab so you don't lose anything.</p>
+
+  <!-- BASIC INFO -->
+  <div class="card">
+    <h2>Basic info</h2>
+    <p class="sub">Core details about the restaurant</p>
+    <div class="form-grid">
+      <div class="field"><label for="f_id">ID *</label><input type="text" id="f_id"></div>
+      <div class="field"><label for="f_name">Name *</label><input type="text" id="f_name"></div>
+      <div class="field"><label for="f_category">Category</label><input type="text" id="f_category"></div>
+      <div class="field"><label for="f_city">City</label><input type="text" id="f_city"></div>
+      <div class="field full"><label for="f_url">URL</label><input type="text" id="f_url"></div>
+      <div class="field full"><label for="f_location">Location (address)</label><input type="text" id="f_location"></div>
+      <div class="field"><label for="f_lat">Latitude</label><input type="number" step="any" id="f_lat"></div>
+      <div class="field"><label for="f_lng">Longitude</label><input type="number" step="any" id="f_lng"></div>
+      <div class="field"><label for="f_phone">Phone</label><input type="text" id="f_phone"></div>
+      <div class="field"><label for="f_website">Website</label><input type="text" id="f_website"></div>
+      <div class="field"><label for="f_rating">Rating</label><input type="number" step="any" id="f_rating"></div>
+      <div class="field"><label for="f_totalrating">Total ratings</label><input type="number" step="any" id="f_totalrating"></div>
+      <div class="field full"><label for="f_description">Description</label><textarea id="f_description"></textarea></div>
+      <div class="field full"><label for="f_reviewSummary">Review summary</label><textarea id="f_reviewSummary"></textarea></div>
+    </div>
+  </div>
+
+  <!-- RATING DISTRIBUTION -->
+  <div class="card">
+    <h2>Rating distribution</h2>
+    <p class="sub">Drag each slider to set how many reviews gave that star count</p>
+    <div id="ratingRows"></div>
+  </div>
+
+  <!-- PHOTOS -->
+  <div class="card">
+    <h2>Photos</h2>
+    <p class="sub">Thumbnail image, plus any extra photo links</p>
+    <div class="field">
+      <label for="f_thumbnail">Thumbnail image URL</label>
+      <div class="photo-add-row">
+        <input type="text" id="f_thumbnail" placeholder="https://example.com/thumb.jpg">
+      </div>
+    </div>
+    <div class="field" style="margin-bottom:0;">
+      <label for="photoUrlInput">Add a photo link</label>
+      <div class="photo-add-row">
+        <input type="text" id="photoUrlInput" placeholder="https://example.com/photo.jpg">
+        <button type="button" class="btn btn-secondary" id="addPhotoBtn">Add photo</button>
+      </div>
+    </div>
+    <div class="photo-grid" id="photoGrid"></div>
+  </div>
+
+  <!-- MENU -->
+  <div class="card">
+    <h2>Menu</h2>
+    <p class="sub">Give the menu a title, then add one row per item</p>
+    <div class="field">
+      <label for="f_menuTitle">Menu title</label>
+      <input type="text" id="f_menuTitle" placeholder="e.g. Pizza Hut Menu With Price List">
+    </div>
+    <div class="menu-table-wrap">
+      <table>
+        <thead>
+          <tr><th>Name</th><th>Category</th><th>Calories</th><th>Price</th><th></th></tr>
+        </thead>
+        <tbody id="menuBody"></tbody>
+      </table>
+    </div>
+    <div class="btn-row">
+      <button type="button" class="btn btn-secondary btn-sm" id="addMenuRowBtn">+ Add item</button>
+    </div>
+  </div>
+
+  <!-- HOURS -->
+  <div class="card">
+    <h2>Opening hours</h2>
+    <p class="sub">Pick open/close time per day, or mark a day closed</p>
+    <div id="hoursRows"></div>
+  </div>
+
+  <!-- GENERATE -->
+  <div class="card">
+    <h2>Generate</h2>
+    <p class="sub">Build the JSON from everything above</p>
+    <div class="btn-row">
+      <button type="button" class="btn btn-primary" id="generateBtn">Generate JSON</button>
+      <button type="button" class="btn btn-secondary" id="copyJsonBtn">Copy JSON</button>
+    </div>
+    <textarea id="jsonOutput" readonly placeholder="Click &quot;Generate JSON&quot; to see the output here…" style="margin-top:12px;"></textarea>
+    <div class="btn-row" style="margin-top:12px;">
+      <button type="button" class="btn btn-primary btn-block" id="saveBtn">Save this restaurant</button>
+    </div>
+  </div>
+
+  <!-- SAVED LIST -->
+  <div class="card">
+    <h2>Saved restaurants</h2>
+    <p class="sub">Everything you've saved in this session</p>
+    <div class="saved-table-wrap">
+      <table>
+        <thead><tr><th>ID</th><th>Name</th><th>City</th><th></th></tr></thead>
+        <tbody id="savedBody"><tr><td colspan="4" class="empty-state">Nothing saved yet.</td></tr></tbody>
+      </table>
+    </div>
+    <div class="btn-row" style="margin-top:14px;">
+      <button type="button" class="btn btn-secondary btn-block" id="downloadBtn">Download all (.json)</button>
+    </div>
+  </div>
+</main>
+
+<div id="toast"></div>
+
+<script>
+(function(){
+  "use strict";
+
+  function $(id){ return document.getElementById(id); }
+
+  var toastTimer = null;
+  function showToast(msg, type){
+    var el = $("toast");
+    el.textContent = msg;
+    el.className = type || "";
+    el.style.display = "block";
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ el.style.display = "none"; }, 2600);
+  }
+
+  function escapeHtml(str){
+    return String(str == null ? "" : str).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+  }
+  function escapeAttr(str){ return escapeHtml(str).replace(/"/g, "&quot;"); }
+
+  // ---------- state (in-memory only) ----------
+  var photos = [];
+  var menuRowCount = 0;
+  var savedRestaurants = []; // array of full restaurant objects
+
+  // ---------- rating distribution ----------
+  var stars = ["5","4","3","2","1"];
+  (function initRatingRows(){
+    var wrap = $("ratingRows");
+    wrap.innerHTML = stars.map(function(s){
+      return '<div class="rating-row">' +
+        '<span class="star-label">' + s + ' star' + (s === "1" ? "" : "s") + '</span>' +
+        '<input type="range" min="0" max="200" value="0" id="star_' + s + '">' +
+        '<span class="val" id="star_' + s + '_val">0</span>' +
+      '</div>';
+    }).join("");
+    stars.forEach(function(s){
+      var range = $("star_" + s), val = $("star_" + s + "_val");
+      range.addEventListener("input", function(){ val.textContent = range.value; });
+    });
+  })();
+
+  // ---------- photos ----------
+  function renderPhotos(){
+    var grid = $("photoGrid");
+    if (photos.length === 0){ grid.innerHTML = ""; return; }
+    grid.innerHTML = photos.map(function(url, i){
+      return '<div class="photo-thumb">' +
+        '<img src="' + escapeAttr(url) + '" alt="" onerror="this.parentNode.innerHTML=\'<div class=&quot;broken&quot;>Can\\'t load image</div>\'">' +
+        '<button type="button" data-rm-photo="' + i + '">&times;</button>' +
+      '</div>';
+    }).join("");
+    grid.querySelectorAll("[data-rm-photo]").forEach(function(btn){
+      btn.addEventListener("click", function(){
+        photos.splice(parseInt(btn.getAttribute("data-rm-photo"), 10), 1);
+        renderPhotos();
+      });
+    });
+  }
+
+  $("addPhotoBtn").addEventListener("click", function(){
+    var input = $("photoUrlInput");
+    var url = input.value.trim();
+    if (!url){ showToast("Enter an image link first", "error"); return; }
+    photos.push(url);
+    input.value = "";
+    renderPhotos();
+  });
+
+  // ---------- menu rows ----------
+  function addMenuRow(data){
+    data = data || {};
+    var id = "mrow_" + (menuRowCount++);
+    var row = document.createElement("tr");
+    row.dataset.rowId = id;
+    row.innerHTML =
+      '<td><input type="text" class="m_name" value="' + escapeAttr(data.name || "") + '" placeholder="Pan Pizza"></td>' +
+      '<td><input type="text" class="m_category" value="' + escapeAttr(data.category || "") + '" placeholder="Pizza"></td>' +
+      '<td><input type="text" class="m_calories" value="' + escapeAttr(data.calories || "") + '" placeholder="980"></td>' +
+      '<td><input type="text" class="m_price" value="' + escapeAttr(data.price || "") + '" placeholder="$9.99"></td>' +
+      '<td class="rm"><button type="button" title="Remove">&times;</button></td>';
+    row.querySelector(".rm button").addEventListener("click", function(){ row.remove(); });
+    $("menuBody").appendChild(row);
+  }
+  $("addMenuRowBtn").addEventListener("click", function(){ addMenuRow(); });
+  addMenuRow(); addMenuRow(); // start with two empty rows
+
+  function readMenu(){
+    var items = [];
+    $("menuBody").querySelectorAll("tr").forEach(function(row){
+      var name = row.querySelector(".m_name").value.trim();
+      var category = row.querySelector(".m_category").value.trim();
+      var calories = row.querySelector(".m_calories").value.trim();
+      var price = row.querySelector(".m_price").value.trim();
+      if (!name && !category && !calories && !price) return;
+      var item = { name: name };
+      if (category) item.category = category;
+      if (calories) item.calories = isNaN(Number(calories)) ? calories : Number(calories);
+      if (price) item.price = price;
+      items.push(item);
+    });
+    return { title: $("f_menuTitle").value.trim(), items: items };
+  }
+
+  // ---------- hours ----------
+  var days = [
+    { key: "mon", label: "Mon" }, { key: "tue", label: "Tue" }, { key: "wed", label: "Wed" },
+    { key: "thu", label: "Thu" }, { key: "fri", label: "Fri" }, { key: "sat", label: "Sat" },
+    { key: "sun", label: "Sun" }
+  ];
+  (function initHours(){
+    var wrap = $("hoursRows");
+    wrap.innerHTML = days.map(function(d){
+      return '<div class="hour-row">' +
+        '<span class="day">' + d.label + '</span>' +
+        '<div class="times">' +
+          '<input type="time" id="h_' + d.key + '_open" value="11:00">' +
+          '<span>to</span>' +
+          '<input type="time" id="h_' + d.key + '_close" value="23:00">' +
+        '</div>' +
+        '<label class="closed-toggle"><input type="checkbox" id="h_' + d.key + '_closed"> Closed</label>' +
+      '</div>';
+    }).join("");
+    days.forEach(function(d){
+      var closedBox = $("h_" + d.key + "_closed");
+      var openInp = $("h_" + d.key + "_open");
+      var closeInp = $("h_" + d.key + "_close");
+      closedBox.addEventListener("change", function(){
+        openInp.disabled = closedBox.checked;
+        closeInp.disabled = closedBox.checked;
+      });
+    });
+  })();
+
+  function readHours(){
+    var hours = {};
+    days.forEach(function(d){
+      if ($("h_" + d.key + "_closed").checked){
+        hours[d.key] = "closed";
+      } else {
+        hours[d.key] = $("h_" + d.key + "_open").value + "-" + $("h_" + d.key + "_close").value;
+      }
+    });
+    return hours;
+  }
+
+  // ---------- form <-> object ----------
+  var scalarIds = ["id","name","category","city","url","thumbnail","location",
+    "lat","lng","phone","website","rating","totalrating","description","reviewSummary"];
+  var numericIds = ["lat","lng","rating","totalrating"];
+
+  function buildObject(){
+    var obj = {};
+    scalarIds.forEach(function(f){
+      var val = $("f_" + f).value.trim();
+      if (val === "") return;
+      if (numericIds.indexOf(f) !== -1){
+        var num = Number(val);
+        obj[f] = isNaN(num) ? val : num;
+      } else {
+        obj[f] = val;
+      }
+    });
+
+    var dist = {};
+    stars.forEach(function(s){ dist[s] = Number($("star_" + s).value); });
+    obj.ratingDistribution = dist;
+
+    obj.photos = photos.slice();
+    obj.menu = readMenu();
+    obj.hours = readHours();
+
+    return obj;
+  }
+
+  function loadObjectIntoForm(obj){
+    clearForm();
+    scalarIds.forEach(function(f){
+      if (obj[f] !== undefined && obj[f] !== null) $("f_" + f).value = obj[f];
+    });
+    if (obj.ratingDistribution){
+      stars.forEach(function(s){
+        var v = obj.ratingDistribution[s];
+        if (v !== undefined){ $("star_" + s).value = v; $("star_" + s + "_val").textContent = v; }
+      });
+    }
+    photos = (obj.photos || []).slice();
+    renderPhotos();
+
+    $("menuBody").innerHTML = "";
+    var menu = obj.menu || {};
+    $("f_menuTitle").value = menu.title || "";
+    (menu.items || []).forEach(function(item){ addMenuRow(item); });
+    if ((menu.items || []).length === 0){ addMenuRow(); addMenuRow(); }
+
+    if (obj.hours){
+      days.forEach(function(d){
+        var v = obj.hours[d.key];
+        var closedBox = $("h_" + d.key + "_closed");
+        var openInp = $("h_" + d.key + "_open");
+        var closeInp = $("h_" + d.key + "_close");
+        if (v === "closed"){
+          closedBox.checked = true; openInp.disabled = true; closeInp.disabled = true;
+        } else if (typeof v === "string" && v.indexOf("-") !== -1){
+          var parts = v.split("-");
+          openInp.value = parts[0]; closeInp.value = parts[1];
+        }
+      });
+    }
+  }
+
+  function clearForm(){
+    scalarIds.forEach(function(f){ $("f_" + f).value = ""; });
+    stars.forEach(function(s){ $("star_" + s).value = 0; $("star_" + s + "_val").textContent = "0"; });
+    photos = [];
+    renderPhotos();
+    $("menuBody").innerHTML = "";
+    $("f_menuTitle").value = "";
+    addMenuRow(); addMenuRow();
+    days.forEach(function(d){
+      $("h_" + d.key + "_closed").checked = false;
+      $("h_" + d.key + "_open").disabled = false;
+      $("h_" + d.key + "_open").value = "11:00";
+      $("h_" + d.key + "_close").disabled = false;
+      $("h_" + d.key + "_close").value = "23:00";
+    });
+    $("jsonOutput").value = "";
+  }
+
+  // ---------- generate / copy ----------
+  $("generateBtn").addEventListener("click", function(){
+    var obj = buildObject();
+    if (!obj.id || !obj.name){
+      showToast("ID and Name are required", "error");
+      return;
+    }
+    $("jsonOutput").value = JSON.stringify(obj, null, 2);
+    showToast("JSON generated", "success");
+  });
+
+  $("copyJsonBtn").addEventListener("click", function(){
+    var text = $("jsonOutput").value;
+    if (!text){ showToast("Generate the JSON first", "error"); return; }
+    navigator.clipboard.writeText(text).then(function(){
+      showToast("Copied to clipboard", "success");
+    }, function(){
+      showToast("Could not copy — select and copy manually", "error");
+    });
+  });
+
+  // ---------- save (in-memory list) ----------
+  function renderSavedList(){
+    var body = $("savedBody");
+    $("savedCount").textContent = savedRestaurants.length + " saved";
+    if (savedRestaurants.length === 0){
+      body.innerHTML = '<tr><td colspan="4" class="empty-state">Nothing saved yet.</td></tr>';
+      return;
+    }
+    body.innerHTML = savedRestaurants.map(function(r, i){
+      return '<tr>' +
+        '<td>' + escapeHtml(r.id) + '</td>' +
+        '<td>' + escapeHtml(r.name || "") + '</td>' +
+        '<td>' + escapeHtml(r.city || "") + '</td>' +
+        '<td class="rm">' +
+          '<button type="button" class="btn btn-secondary btn-sm" data-edit="' + i + '" style="margin-right:6px;">Edit</button>' +
+          '<button type="button" class="btn btn-danger btn-sm" data-del="' + i + '">Delete</button>' +
+        '</td>' +
+      '</tr>';
+    }).join("");
+    body.querySelectorAll("[data-edit]").forEach(function(btn){
+      btn.addEventListener("click", function(){
+        loadObjectIntoForm(savedRestaurants[parseInt(btn.getAttribute("data-edit"), 10)]);
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        showToast("Loaded into form for editing", "success");
+      });
+    });
+    body.querySelectorAll("[data-del]").forEach(function(btn){
+      btn.addEventListener("click", function(){
+        savedRestaurants.splice(parseInt(btn.getAttribute("data-del"), 10), 1);
+        renderSavedList();
+        showToast("Removed from saved list", "success");
+      });
+    });
+  }
+
+  $("saveBtn").addEventListener("click", function(){
+    var obj = buildObject();
+    if (!obj.id || !obj.name){
+      showToast("ID and Name are required", "error");
+      return;
+    }
+    var existingIndex = savedRestaurants.findIndex(function(r){ return r.id === obj.id; });
+    if (existingIndex !== -1){
+      savedRestaurants[existingIndex] = obj;
+      showToast("Updated \"" + obj.id + "\"", "success");
+    } else {
+      savedRestaurants.push(obj);
+      showToast("Saved \"" + obj.id + "\"", "success");
+    }
+    $("jsonOutput").value = JSON.stringify(obj, null, 2);
+    renderSavedList();
+  });
+
+  // ---------- download all ----------
+  $("downloadBtn").addEventListener("click", function(){
+    if (savedRestaurants.length === 0){
+      showToast("Save at least one restaurant first", "error");
+      return;
+    }
+    var blob = new Blob([JSON.stringify(savedRestaurants, null, 2)], { type: "application/json" });
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement("a");
+    a.href = url;
+    a.download = "restaurants-export.json";
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+    showToast("Download started", "success");
+  });
+
+})();
+</script>
+</body>
+</html>
