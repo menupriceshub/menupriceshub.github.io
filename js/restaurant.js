@@ -1,205 +1,105 @@
-const id = document.getElementById("page-wrapper").dataset.restaurantId;
+// restaurant.js
+// Reads data-restaurant-id from #page-wrapper, fetches data from the API,
+// and fills in the restaurant details on the page.
 
-fetch("/data/restaurants.json")
-.then(res => res.json())
-.then(data => {
+document.addEventListener("DOMContentLoaded", () => {
+  const wrapper = document.getElementById("page-wrapper");
+  if (!wrapper) return;
 
-let restaurant = data.find(item => item.id === id);
-
-if(restaurant){
-
-document.getElementById("resturant-name1").innerHTML = restaurant.name;
-
-document.getElementById("location-info1").innerHTML = restaurant.location;
-
-  // Call Button
-document.getElementById("call-btn").href =
-`tel:${restaurant.phone}`;
-
-// Direction Button
-const directionBtn = document.getElementById("direction-btn");
-
-directionBtn.href =
-  `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
-    restaurant.name + ", " + restaurant.location
-  )}`;
-
-directionBtn.target = "_blank";
-directionBtn.rel = "noopener";
-
-  
-
-  document.getElementById("phonenumber-info1").innerHTML = `
-  <a href="tel:${restaurant.phone}">${restaurant.phone}</a>
-  
-`;
-
-  // Website button
-const website = document.getElementById("websiteurl-info1");
-
-website.href = restaurant.website;
-website.target = "_blank";
-website.rel = "nofollow noopener noreferrer";
-website.textContent = new URL(restaurant.website).hostname.replace("www.", "");
-
-  
-  
-  
-document.getElementById("quick-rating-info1").innerHTML =
-restaurant.rating;
-  
-document.getElementById("card-rating-info1").innerHTML =
-restaurant.rating;
-  
-document.getElementById("total-rating1").innerHTML =
-`Based on Google Reviews (${restaurant.totalrating})`;
-  
-document.getElementById("quick-location-info1").innerHTML =
-restaurant.city;
-  
-// Review Summary
-document.getElementById("comment-summary1").innerHTML =
-restaurant.reviewSummary;
-  
-// Photos
-let photoHTML="";
-
-restaurant.photos.forEach(photo=>{
-photoHTML += `
-<img src="${photo.src}" alt="${photo.alt}" width="200" loading="lazy">
-`;
-});
-
-document.getElementById("photos2").innerHTML = photoHTML;
-
-
-// Menu
-let menuHTML="";
-
-restaurant.menu.forEach(item=>{
-menuHTML += `
-<div class="menu-card">
-<img src="${item.photo}" alt="${item.name}" loading="lazy">
-<div class="menu-content">
-<h3>${item.name}</h3>
-<div class="price">${item.price}</div>
-</div>
-
-
-</div>
-`;
-});
-
-document.getElementById("menu2grid").innerHTML = menuHTML;
-  
-  // Similar Restaurants
-const similar = data
-  .filter(item =>
-    item.id !== restaurant.id &&
-    item.city === restaurant.city
-  )
-  .slice(0, 5);
-
-let html = `
-<div class="section-header">
-  <h2 class="section-left">Similar Restaurants</h2>
-  <a href="/restaurants/" class="section-right">
-    View All
-    <i class="fa-solid fa-chevron-right icon"></i>
-  </a>
-</div>
-
-<div class="similar-grid">
-`;
-
-similar.forEach(item => {
-  html += `
-    <div class="similar-card">
-      <img src="${item.thumbnail}" alt="${item.name}" loading="lazy">
-      <a href="${item.url}">${item.name} Menu</a>
-    </div>
-  `;
-});
-
-html += `</div>`;
-
-document.getElementById("similar-restaurants1").innerHTML = html;
-  
-
-let rating = restaurant.rating;
-
-let fullStars = Math.floor(rating);
-let halfStar = rating % 1 >= 0.5;
-
-let stars = "";
-
-for(let i = 1; i <= 5; i++){
-
-  if(i <= fullStars){
-    stars += '<i class="fa-solid fa-star"></i>';
-  }
-  else if(i === fullStars + 1 && halfStar){
-    stars += '<i class="fa-solid fa-star-half-stroke"></i>';
-  }
-  else{
-    stars += '<i class="fa-regular fa-star"></i>';
+  const restaurantId = wrapper.getAttribute("data-restaurant-id");
+  if (!restaurantId) {
+    console.error("restaurant.js: data-restaurant-id missing on #page-wrapper");
+    return;
   }
 
+  const API_URL = `https://menupriceshub-api.cricrock24.workers.dev/?id=${encodeURIComponent(restaurantId)}`;
+
+  fetch(API_URL)
+    .then((res) => {
+      if (!res.ok) throw new Error(`API error: ${res.status}`);
+      return res.json();
+    })
+    .then((data) => populateRestaurant(data))
+    .catch((err) => {
+      console.error("Failed to load restaurant data:", err);
+    });
+});
+
+function populateRestaurant(data) {
+  // --- Name ---
+  const nameEl = document.getElementById("resturant-name1");
+  if (nameEl) nameEl.textContent = data.name || "";
+
+  // --- Address / Location ---
+  const locationEl = document.getElementById("location-info1");
+  if (locationEl) locationEl.textContent = data.location || "";
+
+  // --- Phone (only if API returns it) ---
+  const phoneEl = document.getElementById("phonenumber-info1");
+  const phoneWrapper = phoneEl ? phoneEl.closest(".location-item") : null;
+  if (data.phone) {
+    if (phoneEl) phoneEl.textContent = data.phone;
+  } else if (phoneWrapper) {
+    phoneWrapper.style.display = "none"; // hide phone row if no phone in data
+  }
+
+  // --- Website ---
+  const websiteEl = document.getElementById("websiteurl-info1");
+  if (websiteEl && data.website) {
+    const url = data.website.startsWith("http")
+      ? data.website
+      : `https://${data.website}`;
+    websiteEl.href = url;
+    websiteEl.textContent = data.website;
+    websiteEl.target = "_blank";
+    websiteEl.rel = "nofollow noopener noreferrer";
+  }
+
+  // --- Call button ---
+  const callBtn = document.getElementById("call-btn");
+  if (callBtn) {
+    if (data.phone) {
+      callBtn.href = `tel:${data.phone}`;
+    } else {
+      callBtn.style.display = "none";
+    }
+  }
+
+  // --- Directions button (Google Maps search by address) ---
+  const directionBtn = document.getElementById("direction-btn");
+  if (directionBtn && data.location) {
+    directionBtn.href = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+      data.location
+    )}`;
+  }
+
+  // --- Map iframe ---
+  const mapFrame = document.getElementById("restaurant-map");
+  if (mapFrame && data.location) {
+    mapFrame.src = `https://www.google.com/maps?q=${encodeURIComponent(
+      data.location
+    )}&output=embed`;
+  }
+
+  // --- Rating ---
+  const ratingScoreEl = document.getElementById("card-rating-info1");
+  if (ratingScoreEl && data.rating !== undefined) {
+    ratingScoreEl.textContent = data.rating;
+  }
+
+  const totalRatingEl = document.getElementById("total-rating1");
+  if (totalRatingEl && data.totalrating !== undefined) {
+    totalRatingEl.textContent = `(${data.totalrating} reviews)`;
+  }
+
+  // --- Page title / meta (optional, nice touch) ---
+  if (data.name) {
+    document.title = `${data.name} Menu With Prices 2026`;
+  }
+
+  // --- Hero image / thumbnail (if a hero image element exists) ---
+  const heroSlider = document.getElementById("hero-slider-photo1");
+  if (heroSlider && data.thumbnail) {
+    heroSlider.innerHTML = `<img src="${data.thumbnail}" alt="${data.name || "Restaurant"}" style="width:100%;border-radius:8px;">`;
+  }
 }
-
-document.querySelector(".rating-stars").innerHTML = stars;
-
-
-// Rating Distribution
-
-let ratingHTML = "";
-
-restaurant.ratingDistribution.forEach(item => {
-
-ratingHTML += `
-
-<div class="r-row">
-
-<span>${item.star}</span>
-
-<div class="r-bar">
-<div class="fill" style="width:${item.percent}%"></div>
-</div>
-
-<span>${item.percent}%</span>
-
-</div>
-
-`;
-
-});
-
-document.getElementById("rating-distribution1").innerHTML = ratingHTML;
-
-
-  
-// Open Hours
-let hoursHTML = "";
-
-restaurant.hours.forEach(hour => {
-
-hoursHTML += `
-<tr>
-<td>${hour.day}</td>
-<td>${hour.time}</td>
-</tr>
-`;
-
-});
-
-document.getElementById("hours-table-body").innerHTML = hoursHTML;
-  
-
-  // map location 
-document.getElementById("restaurant-map").src =
-`https://maps.google.com/maps?q=${encodeURIComponent(restaurant.name + ", " + restaurant.location)}&z=15&output=embed`;
-}
-
-});
-
-  
