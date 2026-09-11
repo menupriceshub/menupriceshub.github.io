@@ -1,179 +1,205 @@
-/**
- * restaurant.js
- * -------------------------------------------------------------
- * Reads the restaurant id from #page-wrapper[data-restaurant-id],
- * fetches the record from the MenuPricesHub Worker API, and fills
- * in the page elements (name, address, phone, website, map,
- * open hours, menu grid, price table).
- *
- * IMPORTANT: This assumes your stored restaurant JSON looks like:
- * {
- *   "id": "03peterlugersteakhouse",
- *   "name": "Peter Luger Steak House",
- *   "category": "Steakhouse",
- *   "city": "New York",
- *   "url": "https://peterluger.com",
- *   "address": "178 Broadway, Brooklyn, NY 11211",
- *   "phone": "+1 718-387-7400",
- *   "lat": 40.7099,
- *   "lng": -73.9626,
- *   "hours": [
- *     { "day": "Monday", "open": "11:45 AM", "close": "9:45 PM" }
- *   ],
- *   "menu": [
- *     { "name": "Porterhouse Steak", "price": "$54.90", "image": "https://..." }
- *   ]
- * }
- *
- * Agar aapke actual data ke field names alag hain (jaise "address"
- * ki jagah "location", ya "phone" ki jagah "phoneNumber"), to bas
- * neeche "data.xxx" wali lines mein field names badal dijiye —
- * baaki sab as-is chalega.
- * -------------------------------------------------------------
- */
+const id = document.getElementById("page-wrapper").dataset.restaurantId;
 
-(function () {
-  const WORKER_URL = "https://menupriceshub-api.cricrock24.workers.dev";
+fetch("/data/restaurants.json")
+.then(res => res.json())
+.then(data => {
 
-  const wrapper = document.getElementById("page-wrapper");
-  const id = wrapper ? wrapper.dataset.restaurantId : null;
+let restaurant = data.find(item => item.id === id);
 
-  if (!id) {
-    console.error("restaurant.js: #page-wrapper par data-restaurant-id nahi mila.");
-    return;
+if(restaurant){
+
+document.getElementById("resturant-name1").innerHTML = restaurant.name;
+
+document.getElementById("location-info1").innerHTML = restaurant.location;
+
+  // Call Button
+document.getElementById("call-btn").href =
+`tel:${restaurant.phone}`;
+
+// Direction Button
+const directionBtn = document.getElementById("direction-btn");
+
+directionBtn.href =
+  `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+    restaurant.name + ", " + restaurant.location
+  )}`;
+
+directionBtn.target = "_blank";
+directionBtn.rel = "noopener";
+
+  
+
+  document.getElementById("phonenumber-info1").innerHTML = `
+  <a href="tel:${restaurant.phone}">${restaurant.phone}</a>
+  
+`;
+
+  // Website button
+const website = document.getElementById("websiteurl-info1");
+
+website.href = restaurant.website;
+website.target = "_blank";
+website.rel = "nofollow noopener noreferrer";
+website.textContent = new URL(restaurant.website).hostname.replace("www.", "");
+
+  
+  
+  
+document.getElementById("quick-rating-info1").innerHTML =
+restaurant.rating;
+  
+document.getElementById("card-rating-info1").innerHTML =
+restaurant.rating;
+  
+document.getElementById("total-rating1").innerHTML =
+`Based on Google Reviews (${restaurant.totalrating})`;
+  
+document.getElementById("quick-location-info1").innerHTML =
+restaurant.city;
+  
+// Review Summary
+document.getElementById("comment-summary1").innerHTML =
+restaurant.reviewSummary;
+  
+// Photos
+let photoHTML="";
+
+restaurant.photos.forEach(photo=>{
+photoHTML += `
+<img src="${photo.src}" alt="${photo.alt}" width="200" loading="lazy">
+`;
+});
+
+document.getElementById("photos2").innerHTML = photoHTML;
+
+
+// Menu
+let menuHTML="";
+
+restaurant.menu.forEach(item=>{
+menuHTML += `
+<div class="menu-card">
+<img src="${item.photo}" alt="${item.name}" loading="lazy">
+<div class="menu-content">
+<h3>${item.name}</h3>
+<div class="price">${item.price}</div>
+</div>
+
+
+</div>
+`;
+});
+
+document.getElementById("menu2grid").innerHTML = menuHTML;
+  
+  // Similar Restaurants
+const similar = data
+  .filter(item =>
+    item.id !== restaurant.id &&
+    item.city === restaurant.city
+  )
+  .slice(0, 5);
+
+let html = `
+<div class="section-header">
+  <h2 class="section-left">Similar Restaurants</h2>
+  <a href="/restaurants/" class="section-right">
+    View All
+    <i class="fa-solid fa-chevron-right icon"></i>
+  </a>
+</div>
+
+<div class="similar-grid">
+`;
+
+similar.forEach(item => {
+  html += `
+    <div class="similar-card">
+      <img src="${item.thumbnail}" alt="${item.name}" loading="lazy">
+      <a href="${item.url}">${item.name} Menu</a>
+    </div>
+  `;
+});
+
+html += `</div>`;
+
+document.getElementById("similar-restaurants1").innerHTML = html;
+  
+
+let rating = restaurant.rating;
+
+let fullStars = Math.floor(rating);
+let halfStar = rating % 1 >= 0.5;
+
+let stars = "";
+
+for(let i = 1; i <= 5; i++){
+
+  if(i <= fullStars){
+    stars += '<i class="fa-solid fa-star"></i>';
+  }
+  else if(i === fullStars + 1 && halfStar){
+    stars += '<i class="fa-solid fa-star-half-stroke"></i>';
+  }
+  else{
+    stars += '<i class="fa-regular fa-star"></i>';
   }
 
-  fetch(`${WORKER_URL}/?id=${encodeURIComponent(id)}`)
-    .then((res) => {
-      if (!res.ok) throw new Error(`Restaurant not found (status ${res.status})`);
-      return res.json();
-    })
-    .then((data) => renderRestaurant(data))
-    .catch((err) => {
-      console.error("restaurant.js:", err.message);
-    });
+}
 
-  function renderRestaurant(data) {
-    // --- Name ---
-    setText("resturant-name1", data.name);
+document.querySelector(".rating-stars").innerHTML = stars;
 
-    // --- Address ---
-    setText("location-info1", data.address || data.city);
 
-    // --- Phone ---
-    setText("phonenumber-info1", data.phone);
-    const callBtn = document.getElementById("call-btn");
-    if (callBtn && data.phone) {
-      callBtn.href = `tel:${data.phone}`;
-    }
+// Rating Distribution
 
-    // --- Website ---
-    const websiteEl = document.getElementById("websiteurl-info1");
-    if (websiteEl && data.url) {
-      websiteEl.href = data.url;
-      websiteEl.textContent = data.url;
-    }
+let ratingHTML = "";
 
-    // --- Directions button ---
-    const directionBtn = document.getElementById("direction-btn");
-    if (directionBtn) {
-      if (data.lat && data.lng) {
-        directionBtn.href = `https://www.google.com/maps/dir/?api=1&destination=${data.lat},${data.lng}`;
-      } else if (data.address) {
-        directionBtn.href = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(
-          data.address
-        )}`;
-      }
-    }
+restaurant.ratingDistribution.forEach(item => {
 
-    // --- Embedded map ---
-    const mapFrame = document.getElementById("restaurant-map");
-    if (mapFrame) {
-      if (data.lat && data.lng) {
-        mapFrame.src = `https://www.google.com/maps?q=${data.lat},${data.lng}&output=embed`;
-      } else if (data.address) {
-        mapFrame.src = `https://www.google.com/maps?q=${encodeURIComponent(
-          data.address
-        )}&output=embed`;
-      }
-    }
+ratingHTML += `
 
-    // --- Open hours table ---
-    renderHours(data.hours);
+<div class="r-row">
 
-    // --- Menu cards (top items) ---
-    renderMenuGrid(data.menu);
+<span>${item.star}</span>
 
-    // --- Full price table ---
-    renderPriceTable(data.menu);
+<div class="r-bar">
+<div class="fill" style="width:${item.percent}%"></div>
+</div>
 
-    // --- Page <title>, if you want it dynamic instead of static ---
-    // document.title = `${data.name} Menu With Prices 2026`;
-  }
+<span>${item.percent}%</span>
 
-  function setText(elId, value) {
-    const el = document.getElementById(elId);
-    if (el && value) el.textContent = value;
-  }
+</div>
 
-  function renderHours(hours) {
-    const tbody = document.getElementById("hours-table-body");
-    if (!tbody || !Array.isArray(hours) || hours.length === 0) return;
+`;
 
-    tbody.innerHTML = hours
-      .map(
-        (h) => `
-        <tr>
-          <td>${escapeHtml(h.day)}</td>
-          <td>${escapeHtml(h.open)} - ${escapeHtml(h.close)}</td>
-        </tr>`
-      )
-      .join("");
-  }
+});
 
-  function renderMenuGrid(menu) {
-    const grid = document.getElementById("menu2grid");
-    if (!grid || !Array.isArray(menu) || menu.length === 0) return;
+document.getElementById("rating-distribution1").innerHTML = ratingHTML;
 
-    grid.innerHTML = menu
-      .slice(0, 8)
-      .map(
-        (item) => `
-        <div class="menu-card">
-          ${item.image ? `<img src="${item.image}" alt="${escapeHtml(item.name)}">` : ""}
-          <h3>${escapeHtml(item.name)}</h3>
-          <p>${escapeHtml(item.price)}</p>
-        </div>`
-      )
-      .join("");
-  }
 
-  function renderPriceTable(menu) {
-    const section = document.getElementById("menu-price-table-section1");
-    if (!section || !Array.isArray(menu) || menu.length === 0) return;
+  
+// Open Hours
+let hoursHTML = "";
 
-    section.innerHTML = `
-      <h2 class="section-title">Menu Prices</h2>
-      <table class="price-table">
-        <thead>
-          <tr><th>Item</th><th>Price</th></tr>
-        </thead>
-        <tbody>
-          ${menu
-            .map(
-              (item) =>
-                `<tr><td>${escapeHtml(item.name)}</td><td>${escapeHtml(item.price)}</td></tr>`
-            )
-            .join("")}
-        </tbody>
-      </table>`;
-  }
+restaurant.hours.forEach(hour => {
 
-  function escapeHtml(str) {
-    if (str === undefined || str === null) return "";
-    return String(str)
-      .replace(/&/g, "&amp;")
-      .replace(/</g, "&lt;")
-      .replace(/>/g, "&gt;");
-  }
-})();
+hoursHTML += `
+<tr>
+<td>${hour.day}</td>
+<td>${hour.time}</td>
+</tr>
+`;
+
+});
+
+document.getElementById("hours-table-body").innerHTML = hoursHTML;
+  
+
+  // map location 
+document.getElementById("restaurant-map").src =
+`https://maps.google.com/maps?q=${encodeURIComponent(restaurant.name + ", " + restaurant.location)}&z=15&output=embed`;
+}
+
+});
+
+  
