@@ -832,6 +832,31 @@ function getFiltered(keyword){
     );
 }
 
+function getRestaurantUrl(url){
+    if(!url) return "#";
+
+    if(url.startsWith("/restaurants/")){
+        return url;
+    }
+
+    url = url.replace(/^\/+/, "");
+
+    return "/restaurants/" + url;
+}
+
+    
+function getRestaurantUrl(url){
+    if(!url) return "#";
+
+    if(url.startsWith("/restaurants/")){
+        return url;
+    }
+
+    url = url.replace(/^\/+/, "");
+
+    return "/restaurants/" + url;
+}
+
 function renderResults(keyword){
     const filtered=getFiltered(keyword);
 
@@ -843,15 +868,20 @@ function renderResults(keyword){
     results.innerHTML=filtered.map(item=>`
 <div class="search-card">
     <img src="${item.image||''}" alt="${item.title||''}" class="search-img">
+
     <div class="search-info">
         <h3>${item.title||''}</h3>
         <p>${item.description||''}</p>
-        <a href="${item.url||'#'}" class="view-btn">View Menu</a>
+
+        <a href="${getRestaurantUrl(item.url)}" class="view-btn">
+            View Menu
+        </a>
     </div>
 </div>
 `).join("");
 }
 
+    
 // Search Suggestions
 searchBox.addEventListener("input",function(){
 
