@@ -1618,15 +1618,24 @@ gap:20px;
 /* ===== website info url ===== */
 #websiteurl-info1 {
   font-size: 1.17em;
-    font-weight:500;
-    text-decoration: none;
+  font-weight: 500;
+  text-decoration: none;
+  max-width: 100%;
+  overflow: hidden;
+  word-wrap: break-word;      /* lambe words bhi wrap ho jayenge */
+  overflow-wrap: break-word;
+  white-space: normal;        /* agar kahin white-space: nowrap set hai to override */
 }
 
 #websiteurl-info1 a {
-    font-size: 1.17em;
-    font-weight:500;
-    text-decoration: none;
-    color: inherit;
+  font-size: 1.17em;
+  font-weight: 500;
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  max-width: 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 
