@@ -1243,6 +1243,7 @@ border:1px solid #eee;
 display:flex;
 align-items:flex-start;
 gap:16px;
+  min-width:0;
 }
 
 .location-item i{
@@ -1620,11 +1621,12 @@ gap:20px;
   font-size: 1.17em;
   font-weight: 500;
   text-decoration: none;
+  display: block;
+  width: 100%;
   max-width: 100%;
   overflow: hidden;
-  word-wrap: break-word;      /* lambe words bhi wrap ho jayenge */
+  word-break: break-all;
   overflow-wrap: break-word;
-  white-space: normal;        /* agar kahin white-space: nowrap set hai to override */
 }
 
 #websiteurl-info1 a {
@@ -1638,6 +1640,12 @@ gap:20px;
   overflow-wrap: break-word;
 }
 
+
+.location-item > div{
+  min-width:0;
+  flex:1;
+  overflow:hidden;
+}
 
 /* ===== Section ===== */
 #ptg-prices{
