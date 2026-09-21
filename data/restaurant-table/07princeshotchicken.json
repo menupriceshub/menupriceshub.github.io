@@ -1,0 +1,69 @@
+{
+  "title": "Prince's Hot Chicken Menu With Price List",
+  "items": [
+    { "name": "Veggie Salads - Catering ONLY", "category": "Veggie Salads (Catering Size)", "calories": null, "price": "$77.00" },
+
+    { "name": "25 Tenders", "category": "Chicken - Tenders (Catering Sizes)", "calories": null, "price": "$63.50" },
+    { "name": "50 Tenders", "category": "Chicken - Tenders (Catering Sizes)", "calories": null, "price": "$122.00" },
+    { "name": "75 Tenders", "category": "Chicken - Tenders (Catering Sizes)", "calories": null, "price": "$180.00" },
+    { "name": "100 Tenders", "category": "Chicken - Tenders (Catering Sizes)", "calories": null, "price": "$230.00" },
+
+    { "name": "25 Whole Wings", "category": "Chicken - Wings (Catering Sizes)", "calories": null, "price": "$80.00" },
+    { "name": "50 Whole Wings", "category": "Chicken - Wings (Catering Sizes)", "calories": null, "price": "$155.00" },
+    { "name": "75 Whole Wings", "category": "Chicken - Wings (Catering Sizes)", "calories": null, "price": "$230.00" },
+    { "name": "100 Whole Wings", "category": "Chicken - Wings (Catering Sizes)", "calories": null, "price": "$301.00" },
+
+    { "name": "Side - Sweet Heat", "category": "Extras - Dressings/Pickles/Bread", "calories": null, "price": "$3.00" },
+    { "name": "Sandwich Bun", "category": "Extras - Dressings/Pickles/Bread", "calories": null, "price": "$3.75" },
+    { "name": "Slice Bread", "category": "Extras - Dressings/Pickles/Bread", "calories": null, "price": "$2.50" },
+    { "name": "Side - Blue Cheese (Individual Packet)", "category": "Extras - Dressings/Pickles/Bread", "calories": null, "price": "$3.00" },
+    { "name": "Side - BBQ Sauce", "category": "Extras - Dressings/Pickles/Bread", "calories": null, "price": "$3.00" },
+    { "name": "Side - Honey Mustard (Individual Packet)", "category": "Extras - Dressings/Pickles/Bread", "calories": null, "price": "$3.00" },
+    { "name": "Cup - Pickles (Individual)", "category": "Extras - Dressings/Pickles/Bread", "calories": null, "price": "$3.00" },
+    { "name": "Side - Ranch (Individual Packet)", "category": "Extras - Dressings/Pickles/Bread", "calories": null, "price": "$3.00" },
+    { "name": "Side - Kickin' Ranch", "category": "Extras - Dressings/Pickles/Bread", "calories": null, "price": "$3.00" },
+    { "name": "Whole Pickle", "category": "Extras - Dressings/Pickles/Bread", "calories": null, "price": "$4.00" },
+    { "name": "Pint - Pickles", "category": "Extras - Dressings/Pickles/Bread", "calories": null, "price": "$5.50" },
+    { "name": "Side - Sweet N Spicy Honey Mustard Sauce", "category": "Extras - Dressings/Pickles/Bread", "calories": null, "price": "$3.00" },
+    { "name": "Corn Muffin", "category": "Extras - Dressings/Pickles/Bread", "calories": null, "price": "$2.25" },
+
+    { "name": "Minute Maid Lemonade", "category": "Drinks", "calories": null, "price": "$3.80" },
+    { "name": "Minute Maid PINK Lemonade", "category": "Drinks", "calories": null, "price": "$3.80" },
+    { "name": "Dasani Bottled Water", "category": "Drinks", "calories": null, "price": "$3.80" },
+    { "name": "Sprite", "category": "Drinks", "calories": null, "price": "$3.80" },
+
+    { "name": "Baked Beans", "category": "Sides - Individual Sides", "calories": null, "price": "$4.75" },
+    { "name": "Potato Salad", "category": "Sides - Individual Sides", "calories": null, "price": "$4.00" },
+    { "name": "\"Get It Get It\" Greens", "category": "Sides - Individual Sides", "calories": null, "price": "$5.00" },
+    { "name": "Cole Slaw", "category": "Sides - Individual Sides", "calories": null, "price": "$4.00" },
+
+    { "name": "3 Whole Wings", "category": "Entrees - Chicken", "calories": null, "price": "$10.75" },
+    { "name": "Leg Quarter (Leg & Thigh)", "category": "Entrees - Chicken", "calories": null, "price": "$10.75" },
+    { "name": "Whole Chicken (2 Breast Quarters + 2 Leg Quarters)", "category": "Entrees - Chicken", "calories": null, "price": "$40.00" },
+    { "name": "Breast Quarter (Breast & Wing)", "category": "Entrees - Chicken", "calories": null, "price": "$10.75" },
+    { "name": "1/2 Chicken (1 Breast Quarter + 1 Leg Quarter)", "category": "Entrees - Chicken", "calories": null, "price": "$21.00" },
+    { "name": "Chicken Salad (Includes Boneless Chicken)", "category": "Entrees - Chicken", "calories": null, "price": "$10.00" },
+    { "name": "Add Whole Wing", "category": "Entrees - Chicken", "calories": null, "price": "$3.50" },
+    { "name": "Chicken Salad (No Chicken)", "category": "Entrees - Chicken", "calories": null, "price": "$7.25" },
+    { "name": "Add Boneless Tender", "category": "Entrees - Chicken", "calories": null, "price": "$5.00" },
+    { "name": "4 Wings (Boneless Tenders)", "category": "Entrees - Chicken", "calories": null, "price": "$11.00" },
+
+    { "name": "Small Pan - Coleslaw", "category": "Sides (Catering Sizes)", "calories": null, "price": "$19.10" },
+    { "name": "Large Pan - Coleslaw", "category": "Sides (Catering Sizes)", "calories": null, "price": "$36.20" },
+    { "name": "Small Pan - Mac & Cheese", "category": "Sides (Catering Sizes)", "calories": null, "price": "$23.00" },
+    { "name": "Large Pan - Mac & Cheese", "category": "Sides (Catering Sizes)", "calories": null, "price": "$44.00" },
+    { "name": "Small Pan - Baked Beans", "category": "Sides (Catering Sizes)", "calories": null, "price": "$20.40" },
+    { "name": "Large Pan - Baked Beans", "category": "Sides (Catering Sizes)", "calories": null, "price": "$43.00" },
+    { "name": "Small Pan - Potato Salad", "category": "Sides (Catering Sizes)", "calories": null, "price": "$19.10" },
+    { "name": "Large Pan - Potato Salad", "category": "Sides (Catering Sizes)", "calories": null, "price": "$36.20" },
+    { "name": "Small Pan - \"Get It Get It\" Greens", "category": "Sides (Catering Sizes)", "calories": null, "price": "$41.00" },
+    { "name": "Large Pan - \"Get It Get It\" Greens", "category": "Sides (Catering Sizes)", "calories": null, "price": "$80.00" },
+
+    { "name": "Pint - Coleslaw", "category": "Sides - Pint Size Sides", "calories": null, "price": "$8.00" },
+    { "name": "Pint - Potato Salad", "category": "Sides - Pint Size Sides", "calories": null, "price": "$8.00" },
+    { "name": "Pint - \"Get It Get It\" Greens", "category": "Sides - Pint Size Sides", "calories": null, "price": "$10.00" },
+    { "name": "Pint - Baked Beans", "category": "Sides - Pint Size Sides", "calories": null, "price": "$9.35" },
+    { "name": "Pint - Mac & Cheese", "category": "Sides - Pint Size Sides", "calories": null, "price": "$9.25" }
+  ]
+}
+
