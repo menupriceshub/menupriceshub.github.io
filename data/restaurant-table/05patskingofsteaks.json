@@ -1,0 +1,33 @@
+{
+  "title": "Pat's King of Steaks Menu With Price List",
+  "items": [
+    { "name": "Steak", "category": "Steaks", "calories": null, "price": "$17.00" },
+    { "name": "Cheese Steak", "category": "Steaks", "calories": null, "price": "$18.00" },
+    { "name": "Extra Cheese Steak", "category": "Steaks", "calories": null, "price": "$19.00" },
+    { "name": "Pizza Steak", "category": "Steaks", "calories": null, "price": "$19.00" },
+    { "name": "Mushroom Steak", "category": "Steaks", "calories": null, "price": "$18.00" },
+    { "name": "Mushroom Cheese Steak", "category": "Steaks", "calories": null, "price": "$19.00" },
+    { "name": "Mushroom Pizza Steak", "category": "Steaks", "calories": null, "price": "$20.00" },
+    { "name": "Pepper Steak", "category": "Steaks", "calories": null, "price": "$18.00" },
+    { "name": "Pepper Cheese Steak", "category": "Steaks", "calories": null, "price": "$19.00" },
+    { "name": "Pepper Pizza Steak", "category": "Steaks", "calories": null, "price": "$20.00" },
+    { "name": "Mushroom Pepper Steak", "category": "Steaks", "calories": null, "price": "$19.00" },
+    { "name": "Mushroom Pepper Cheese Steak", "category": "Steaks", "calories": null, "price": "$20.00" },
+    { "name": "Mushroom Pepper Pizza Steak", "category": "Steaks", "calories": null, "price": "$21.00" },
+    { "name": "Chicken Steak", "category": "Steaks", "calories": null, "price": "$17.00" },
+    { "name": "Chicken Cheese Steak", "category": "Steaks", "calories": null, "price": "$18.00" },
+    { "name": "Roast Pork", "category": "Steaks", "calories": null, "price": "$17.00" },
+    { "name": "Hot Dog", "category": "Steaks", "calories": null, "price": "$6.00" },
+    { "name": "Large Hot Dog", "category": "Steaks", "calories": null, "price": "$17.00" },
+    { "name": "Fish Cake", "category": "Steaks", "calories": null, "price": "$8.00" },
+    { "name": "Large Fish Cake", "category": "Steaks", "calories": null, "price": "$17.00" },
+
+    { "name": "Egg Sandwich", "category": "Breakfast (Served 6-11 AM)", "calories": null, "price": "$9.00" },
+    { "name": "Egg & Cheese", "category": "Breakfast (Served 6-11 AM)", "calories": null, "price": "$10.00" },
+    { "name": "Egg & Meat (Bacon, Sausage or Steak)", "category": "Breakfast (Served 6-11 AM)", "calories": null, "price": "$13.00" },
+    { "name": "Widow Maker (Egg, Cheese, Bacon, Roll, Steak & Hashbrown)", "category": "Breakfast (Served 6-11 AM)", "calories": null, "price": "$20.00" },
+    { "name": "Hashbrown", "category": "Breakfast (Served 6-11 AM)", "calories": null, "price": "$1.00" },
+    { "name": "Orange Juice", "category": "Breakfast (Served 6-11 AM)", "calories": null, "price": "$4.00" }
+  ]
+}
+
