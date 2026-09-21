@@ -1,0 +1,50 @@
+{
+  "title": "Peter Luger Steak House Menu With Price List",
+  "items": [
+    { "name": "Sliced Tomatoes, With Luger's Own Sauce (for 2)", "category": "Appetizers", "calories": null, "price": "$17.95" },
+    { "name": "Sliced Tomato & Onion, With Luger's Own Sauce (for 2)", "category": "Appetizers", "calories": null, "price": "$17.95" },
+    { "name": "Luger's Sizzling Bacon, Extra Thick, By The Slice", "category": "Appetizers", "calories": null, "price": "$8.95" },
+    { "name": "Caesar Salad, Grated Pecorino Romano, Homemade Croutons", "category": "Appetizers", "calories": null, "price": "$18.95" },
+    { "name": "Iceberg Wedge Salad, Chopped Tomato, Bacon, Crumbled Blue Cheese", "category": "Appetizers", "calories": null, "price": "$23.95" },
+    { "name": "House Salad, Hearts of Palm, Roasted Pumpkin Seeds, Vinaigrette", "category": "Appetizers", "calories": null, "price": "$17.95" },
+    { "name": "Crumbled Blue Cheese (add-on)", "category": "Appetizers", "calories": null, "price": "$5.95" },
+    { "name": "Chopped Bacon (add-on)", "category": "Appetizers", "calories": null, "price": "$8.95" },
+    { "name": "Jumbo Shrimp Cocktail (4)", "category": "Appetizers", "calories": null, "price": "$22.95" },
+    { "name": "Jumbo Shrimp Cocktail (6)", "category": "Appetizers", "calories": null, "price": "$33.95" },
+    { "name": "Jumbo Lump Crabmeat Cocktail", "category": "Appetizers", "calories": null, "price": "$29.95" },
+    { "name": "Jumbo Lump Crab Cake", "category": "Appetizers", "calories": null, "price": "$35.95" },
+    { "name": "Lamb, Double Thick Chop Split", "category": "Appetizers", "calories": null, "price": "$36.95" },
+
+    { "name": "Luger-Burger, USDA Prime, Over 1/2 lb. on Bun", "category": "Burger & Sandwich", "calories": null, "price": "$22.95" },
+    { "name": "Luger-Burger with French Fries", "category": "Burger & Sandwich", "calories": null, "price": "$4.95 Extra" },
+    { "name": "Luger-Burger with Cheese", "category": "Burger & Sandwich", "calories": null, "price": "$1.95 Extra" },
+    { "name": "Luger-Burger with Bacon", "category": "Burger & Sandwich", "calories": null, "price": "$8.95 Extra" },
+    { "name": "Steak Sandwich USDA Prime, Dry Aged Strip Steak with caramelized onions and Luger horseradish spread", "category": "Burger & Sandwich", "calories": null, "price": "$37.95" },
+    { "name": "Steak Sandwich with French Fries", "category": "Burger & Sandwich", "calories": null, "price": "$4.95 Extra" },
+
+    { "name": "Steak For Two", "category": "USDA Prime Beef", "calories": null, "price": "$155.90" },
+    { "name": "Steak For Three", "category": "USDA Prime Beef", "calories": null, "price": "$233.85" },
+    { "name": "Steak For Four", "category": "USDA Prime Beef", "calories": null, "price": "$311.80" },
+    { "name": "Single Steak", "category": "USDA Prime Beef", "calories": null, "price": "$77.95" },
+    { "name": "Rib Steak", "category": "USDA Prime Beef", "calories": null, "price": "$94.95" },
+    { "name": "Rib Steak For Two", "category": "USDA Prime Beef", "calories": null, "price": "$157.95" },
+
+    { "name": "Lamb Chops, 2 Double Thick Loin Chops Extra Large", "category": "Entrees", "calories": null, "price": "$72.95" },
+    { "name": "Chicken Broiled, One Half", "category": "Entrees", "calories": null, "price": "$29.95" },
+    { "name": "Chopped Steak, USDA Prime Smothered with Onions", "category": "Entrees", "calories": null, "price": "$34.95" },
+    { "name": "Grilled Atlantic Salmon", "category": "Entrees", "calories": null, "price": "$39.95" },
+    { "name": "Filet of Sole", "category": "Entrees", "calories": null, "price": "$43.95" },
+    { "name": "Jumbo Lump Crab Cake (2)", "category": "Entrees", "calories": null, "price": "$69.95" },
+    { "name": "Lobster, Broiled Maine, Whole (2.25-2.5 lbs.)", "category": "Entrees", "calories": null, "price": "Market Price" },
+
+    { "name": "French Fried Potatoes (for 1)", "category": "Vegetables", "calories": null, "price": "$9.95" },
+    { "name": "French Fried Potatoes (for 2)", "category": "Vegetables", "calories": null, "price": "$18.95" },
+    { "name": "Luger's Special German Fried Potatoes", "category": "Vegetables", "calories": null, "price": "$18.95" },
+    { "name": "Baked Oversized Potato with Sour Cream (as available)", "category": "Vegetables", "calories": null, "price": "$9.95" },
+    { "name": "Broccoli", "category": "Vegetables", "calories": null, "price": "$16.95" },
+    { "name": "Creamed Spinach", "category": "Vegetables", "calories": null, "price": "$18.95" },
+    { "name": "Grilled Asparagus", "category": "Vegetables", "calories": null, "price": "$16.95" },
+    { "name": "Mushrooms", "category": "Vegetables", "calories": null, "price": "$17.95" }
+  ]
+}
+
