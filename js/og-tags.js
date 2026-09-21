@@ -1,243 +1,73 @@
 (async function () {
   try {
-    // ==========================================
-    // LOAD RESTAURANT DATA
-    // ==========================================
+    // Load restaurant data
     const response = await fetch("/data/restaurants.json");
-
-    if (!response.ok) {
-      throw new Error("Failed to load restaurants.json");
-    }
-
     const restaurants = await response.json();
 
-    // ==========================================
-    // CURRENT PAGE
-    // ==========================================
-    const currentPage =
-      window.location.pathname.split("/").filter(Boolean).pop() || "";
+    // Current HTML page filename
+    const currentPage = window.location.pathname.split("/").pop();
 
-    // ==========================================
-    // FIND RESTAURANT
-    // ==========================================
-    const restaurant = restaurants.find(item => {
-      const itemUrl = (item.url || "").split("/").filter(Boolean).pop();
-      return itemUrl === currentPage;
-    });
+    // Find matching restaurant
+    const restaurant = restaurants.find(item => item.url === currentPage);
 
+    // Restaurant not found
     if (!restaurant) {
-      console.warn(
-        "Restaurant data not found for:",
-        currentPage
-      );
+      console.warn("Restaurant data not found for:", currentPage);
       return;
     }
 
-    // ==========================================
-    // REMOVE OLD OG / TWITTER TAGS
-    // ==========================================
-    document
-      .querySelectorAll(
-        'meta[property^="og:"], meta[name^="twitter:"]'
-      )
-      .forEach(meta => meta.remove());
+    // Remove existing OG/Twitter tags to avoid duplicates
+    document.querySelectorAll(
+      'meta[property^="og:"], meta[name^="twitter:"]'
+    ).forEach(meta => meta.remove());
 
-    // ==========================================
-    // HELPER
-    // ==========================================
+    // Helper function
     function addMeta(attribute, value, content) {
       if (!content) return;
 
       const meta = document.createElement("meta");
-
       meta.setAttribute(attribute, value);
       meta.setAttribute("content", content);
 
       document.head.appendChild(meta);
     }
 
-    // ==========================================
-    // SITE URL
-    // ==========================================
+    // Canonical URL
     const siteUrl = "https://menupriceshub.github.io";
+    const pageUrl = new URL(restaurant.url, siteUrl + "/").href;
 
-    // Restaurant page URL
-    const pageUrl = new URL(
-      restaurant.url,
-      siteUrl + "/"
-    ).href;
+    // Title
+    document.title = `${restaurant.name} Menu, Prices & Details`;
 
-    // ==========================================
-    // TITLE
-    // ==========================================
-    const title =
-      `${restaurant.name} Menu, Prices & Details`;
+    // Description
+    const description =
+      restaurant.description ||
+      `${restaurant.name} menu, prices, location, reviews and restaurant details.`;
 
-    document.title = title;
-
-    // ==========================================
-    // DESCRIPTION
-    // ==========================================
-    let description = restaurant.description;
-
-    // Ignore "-", empty or invalid description
-    if (
-      !description ||
-      description.trim() === "-" ||
-      description.trim().length < 20
-    ) {
-      description =
-        `${restaurant.name} menu, prices, location, reviews, hours and restaurant details.`;
-    }
-
-    // ==========================================
-    // IMAGE
-    // ==========================================
-    let image =
+    // Main image
+    const image =
       restaurant.thumbnail ||
-      (
-        restaurant.photos &&
-        restaurant.photos.length > 0
-          ? restaurant.photos[0].src
-          : ""
-      );
+      (restaurant.photos && restaurant.photos.length
+        ? restaurant.photos[0].src
+        : "");
 
-    // Convert relative image URL to absolute
-    if (image) {
-      image = new URL(
-        image,
-        siteUrl + "/"
-      ).href;
-    }
+    // Open Graph
+    addMeta("property", "og:type", "restaurant");
+    addMeta("property", "og:title", `${restaurant.name} Menu, Prices & Details`);
+    addMeta("property", "og:description", description);
+    addMeta("property", "og:url", pageUrl);
+    addMeta("property", "og:image", image);
+    addMeta("property", "og:site_name", "MenuPricesHub");
 
-    // ==========================================
-    // IMAGE ALT
-    // ==========================================
-    let imageAlt =
-      restaurant.photos &&
-      restaurant.photos.length > 0 &&
-      restaurant.photos[0].alt
-        ? restaurant.photos[0].alt
-        : `${restaurant.name} restaurant`;
+    // Twitter Card
+    addMeta("name", "twitter:card", "summary_large_image");
+    addMeta("name", "twitter:title", `${restaurant.name} Menu, Prices & Details`);
+    addMeta("name", "twitter:description", description);
+    addMeta("name", "twitter:image", image);
 
-    // ==========================================
-    // OPEN GRAPH
-    // ==========================================
-
-    addMeta(
-      "property",
-      "og:type",
-      "website"
-    );
-
-    addMeta(
-      "property",
-      "og:title",
-      title
-    );
-
-    addMeta(
-      "property",
-      "og:description",
-      description
-    );
-
-    addMeta(
-      "property",
-      "og:url",
-      pageUrl
-    );
-
-    addMeta(
-      "property",
-      "og:site_name",
-      "MenuPricesHub"
-    );
-
-    addMeta(
-      "property",
-      "og:image",
-      image
-    );
-
-    addMeta(
-      "property",
-      "og:image:alt",
-      imageAlt
-    );
-
-    // ==========================================
-    // TWITTER CARD
-    // ==========================================
-
-    addMeta(
-      "name",
-      "twitter:card",
-      "summary_large_image"
-    );
-
-    addMeta(
-      "name",
-      "twitter:title",
-      title
-    );
-
-    addMeta(
-      "name",
-      "twitter:description",
-      description
-    );
-
-    addMeta(
-      "name",
-      "twitter:image",
-      image
-    );
-
-    addMeta(
-      "name",
-      "twitter:image:alt",
-      imageAlt
-    );
-
-    // ==========================================
-    // CANONICAL
-    // ==========================================
-
-    let canonical =
-      document.querySelector('link[rel="canonical"]');
-
-    if (!canonical) {
-      canonical = document.createElement("link");
-      canonical.setAttribute("rel", "canonical");
-      document.head.appendChild(canonical);
-    }
-
-    canonical.setAttribute("href", pageUrl);
-
-    // ==========================================
-    // DEBUG
-    // ==========================================
-
-    console.log(
-      "OG tags generated:",
-      restaurant.name
-    );
-
-    console.log(
-      "OG URL:",
-      pageUrl
-    );
-
-    console.log(
-      "OG Image:",
-      image
-    );
+    console.log("OG tags generated for:", restaurant.name);
 
   } catch (error) {
-    console.error(
-      "OG Tags Error:",
-      error
-    );
+    console.error("OG Tags Error:", error);
   }
 })();
