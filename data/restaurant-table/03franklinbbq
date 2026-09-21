@@ -1,0 +1,41 @@
+{
+  "title": "BBQ Restaurant Menu With Price List",
+  "items": [
+    { "name": "Brisket (per lb)", "category": "By The Pound", "calories": null, "price": "$39.00" },
+    { "name": "Pork Ribs (per lb)", "category": "By The Pound", "calories": null, "price": "$34.00" },
+    { "name": "Pulled Pork (per lb)", "category": "By The Pound", "calories": null, "price": "$32.00" },
+    { "name": "Turkey (per lb)", "category": "By The Pound", "calories": null, "price": "$32.00" },
+    { "name": "Sausage (per lb)", "category": "By The Pound", "calories": null, "price": "$26.00" },
+    { "name": "Jalapeno Cheddar Sausage (per lb)", "category": "By The Pound", "calories": null, "price": "$26.00" },
+
+    { "name": "Tipsy Texan", "category": "Sandwiches", "calories": null, "price": "$14.00" },
+    { "name": "Brisket Sandwich", "category": "Sandwiches", "calories": null, "price": "$18.50" },
+    { "name": "Pulled Pork Sandwich", "category": "Sandwiches", "calories": null, "price": "$16.00" },
+    { "name": "Chop Beef Sandwich", "category": "Sandwiches", "calories": null, "price": "$7.00" },
+    { "name": "Turkey Sandwich", "category": "Sandwiches", "calories": null, "price": "$16.00" },
+
+    { "name": "Potato Salad", "category": "Sides", "calories": null, "price": "$4.00" },
+    { "name": "Slaw", "category": "Sides", "calories": null, "price":: "$6.00"  },
+    { "name": "Pinto Beans", "category": "Sides", "calories": null, "price": "$11.00"  },
+
+    { "name": "Side - Single", "category": "Sizes", "calories": null, "price": "$5.00" },
+    { "name": "Side - Pint", "category": "Sizes", "calories": null, "price": "$7.40" },
+    { "name": "Side - Quart", "category": "Sizes", "calories": null, "price": "$14.00" },
+
+    { "name": "Water", "category": "Non-Alcoholic Beverages", "calories": null, "price": "$2.00" },
+    { "name": "Rambler Sparkling", "category": "Non-Alcoholic Beverages", "calories": null, "price": "$2.00" },
+    { "name": "Natales Lemonade/OJ", "category": "Non-Alcoholic Beverages", "calories": null, "price": "$3.00" },
+    { "name": "Mexican Coke", "category": "Non-Alcoholic Beverages", "calories": null, "price": "$3.00" },
+    { "name": "St. Arnold Root Beer", "category": "Non-Alcoholic Beverages", "calories": null, "price": "$3.00" },
+    { "name": "Big Red", "category": "Non-Alcoholic Beverages", "calories": null, "price": "$3.00" },
+    { "name": "Diet/Zero Coke", "category": "Non-Alcoholic Beverages", "calories": null, "price": "$1.50" },
+    { "name": "Dr. Pepper", "category": "Non-Alcoholic Beverages", "calories": null, "price": "$1.50" },
+    { "name": "Sprite", "category": "Non-Alcoholic Beverages", "calories": null, "price": "$1.50" },
+    { "name": "Tea (Family/Crowd)", "category": "Non-Alcoholic Beverages", "calories": null, "price": "$13.00" },
+
+    { "name": "Electric Jellyfish IPA (16oz)", "category": "Beers", "calories": null, "price": "$15.00" },
+    { "name": "Custom Lager (16oz)", "category": "Beers", "calories": null, "price": "$15.00" },
+    { "name": "Jester King Hot Luck Lager (16oz)", "category": "Beers", "calories": null, "price": "$15.00" },
+    { "name": "Mimosa Kit", "category": "Beers", "calories": null, "price": "$30.00" }
+  ]
+}
