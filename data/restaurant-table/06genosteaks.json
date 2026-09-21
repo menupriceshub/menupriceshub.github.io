@@ -1,0 +1,25 @@
+{
+  "title": "Geno's Steaks Menu With Price List",
+  "items": [
+    { "name": "Steak", "category": "Steaks", "calories": null, "price": "$8.33" },
+    { "name": "Cheesesteak (Whiz, American, or Provolone)", "category": "Steaks", "calories": null, "price": "$9.25" },
+    { "name": "Steak Milano (Cheesesteak with Fried Tomatoes & Oregano)", "category": "Steaks", "calories": null, "price": "$9.95" },
+    { "name": "Mushroom Steak", "category": "Steaks", "calories": null, "price": "$9.25" },
+    { "name": "Mushroom Cheesesteak", "category": "Steaks", "calories": null, "price": "$10.18" },
+    { "name": "Pepper Steak", "category": "Steaks", "calories": null, "price": "$9.25" },
+    { "name": "Pepper Cheesesteak", "category": "Steaks", "calories": null, "price": "$10.18" },
+
+    { "name": "Steak Hoagie (Steak with Lettuce, Tomato & Oregano)", "category": "Hoagies & Sandwiches", "calories": null, "price": "$9.72" },
+    { "name": "Cheesesteak Hoagie (with Lettuce, Tomato & Oregano)", "category": "Hoagies & Sandwiches", "calories": null, "price": "$10.65" },
+    { "name": "Italian Hoagie (Chicken, Onion, Vegetable Oil, Sour Cream Sauce, Pepper, Salt)", "category": "Hoagies & Sandwiches", "calories": null, "price": "$9.25" },
+    { "name": "Roast Pork Sandwich", "category": "Hoagies & Sandwiches", "calories": null, "price": "$8.80" },
+    { "name": "Meatball Sandwich", "category": "Hoagies & Sandwiches", "calories": null, "price": "$8.80" },
+
+    { "name": "French Fries", "category": "Sides & Drinks", "calories": null, "price": "$4.00" },
+    { "name": "Cheese Fries", "category": "Sides & Drinks", "calories": null, "price": "$5.00" },
+    { "name": "Soda & Bottled Water", "category": "Sides & Drinks", "calories": null, "price": "$3.00" },
+    { "name": "Hot Chocolate", "category": "Sides & Drinks", "calories": null, "price": "$0.75" },
+    { "name": "Coffee & Tea", "category": "Sides & Drinks", "calories": null, "price": "$0.75" }
+  ]
+}
+
