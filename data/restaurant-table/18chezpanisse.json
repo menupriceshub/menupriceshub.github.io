@@ -1,0 +1,74 @@
+{
+  "title": "Bar Menu With Price List",
+  "items": [
+    { "name": "2023 Sparkling Pear Cider, Poire Granit, Eric Bordelet, Normandy, France (glass)", "category": "Sparkling", "calories": null, "price": "$18" },
+    { "name": "2023 Sparkling Pear Cider, Poire Granit, Eric Bordelet, Normandy, France (bottle)", "category": "Sparkling", "calories": null, "price": "$72" },
+    { "name": "NV Cava Brut, Solstici, Castell d'Age, Penedes, Spain (glass)", "category": "Sparkling", "calories": null, "price": "$14" },
+    { "name": "NV Cava Brut, Solstici, Castell d'Age, Penedes, Spain (bottle)", "category": "Sparkling", "calories": null, "price": "$56" },
+    { "name": "2023 Sparkling Riesling, Wirz Vineyard, Ser, Cienega Valley, California (glass)", "category": "Sparkling", "calories": null, "price": "$18" },
+    { "name": "2023 Sparkling Riesling, Wirz Vineyard, Ser, Cienega Valley, California (bottle)", "category": "Sparkling", "calories": null, "price": "$72" },
+    { "name": "NV Champagne Brut, Cachet Or, J. Lassalle, Montagne de Reims, France (glass)", "category": "Sparkling", "calories": null, "price": "$26" },
+    { "name": "NV Champagne Brut, Cachet Or, J. Lassalle, Montagne de Reims, France (bottle)", "category": "Sparkling", "calories": null, "price": "$104" },
+
+    { "name": "2024 Bourgogne Aligote, La Pie Rouette, Domaine Coteaux des Margots, France (glass)", "category": "White", "calories": null, "price": "$15" },
+    { "name": "2024 Bourgogne Aligote, La Pie Rouette, Domaine Coteaux des Margots, France (bottle)", "category": "White", "calories": null, "price": "$60" },
+    { "name": "2024 Muesling, Lerzi, Willamette Valley, Oregon (glass)", "category": "White", "calories": null, "price": "$16" },
+    { "name": "2024 Muesling, Lerzi, Willamette Valley, Oregon (bottle)", "category": "White", "calories": null, "price": "$64" },
+    { "name": "2024 Chenin Blanc, Ernesto Wickenden Vineyard, Foxen, Santa Maria Valley (glass)", "category": "White", "calories": null, "price": "$17" },
+    { "name": "2024 Chenin Blanc, Ernesto Wickenden Vineyard, Foxen, Santa Maria Valley (bottle)", "category": "White", "calories": null, "price": "$68" },
+    { "name": "2024 Matao\u0300ssu, Vigneto Reine, Punta Crena, Liguria, Italy (glass)", "category": "White", "calories": null, "price": "$18" },
+    { "name": "2024 Matao\u0300ssu, Vigneto Reine, Punta Crena, Liguria, Italy (bottle)", "category": "White", "calories": null, "price": "$72" },
+    { "name": "2024 Chablis, Bardet & Fils, Burgundy, France (glass)", "category": "White", "calories": null, "price": "$23" },
+    { "name": "2024 Chablis, Bardet & Fils, Burgundy, France (bottle)", "category": "White", "calories": null, "price": "$92" },
+
+    { "name": "2024 Rose, Cistercien, Schlosskellerei Gobelsburg, Austria (glass)", "category": "Rose", "calories": null, "price": "$14" },
+    { "name": "2024 Rose, Cistercien, Schlosskellerei Gobelsburg, Austria (bottle)", "category": "Rose", "calories": null, "price": "$56" },
+    { "name": "2024 Bandol Rose, Domaine Tempier, Provence, France (glass)", "category": "Rose", "calories": null, "price": "$24" },
+    { "name": "2024 Bandol Rose, Domaine Tempier, Provence, France (bottle)", "category": "Rose", "calories": null, "price": "$96" },
+
+    { "name": "2023 Chez Panisse Zinfandel, Green & Red Vineyards, Napa Valley (glass)", "category": "Red", "calories": null, "price": "$15" },
+    { "name": "2023 Chez Panisse Zinfandel, Green & Red Vineyards, Napa Valley (bottle)", "category": "Red", "calories": null, "price": "$60" },
+    { "name": "2023 Touriga Nacional, Freire Lobo, Dao, Portugal (glass)", "category": "Red", "calories": null, "price": "$16" },
+    { "name": "2023 Touriga Nacional, Freire Lobo, Dao, Portugal (bottle)", "category": "Red", "calories": null, "price": "$64" },
+    { "name": "2022 Grenache, Stained Glass, Enfield, California (glass)", "category": "Red", "calories": null, "price": "$18" },
+    { "name": "2022 Grenache, Stained Glass, Enfield, California (bottle)", "category": "Red", "calories": null, "price": "$72" },
+    { "name": "2022 Langhe Nebbiolo, Ferdinando Principiano, Piedmont, Italy (glass)", "category": "Red", "calories": null, "price": "$22" },
+    { "name": "2022 Langhe Nebbiolo, Ferdinando Principiano, Piedmont, Italy (bottle)", "category": "Red", "calories": null, "price": "$88" },
+    { "name": "2023 Bourgogne Pinot Noir, Domaine Chapelle & Fils, France (glass)", "category": "Red", "calories": null, "price": "$24" },
+    { "name": "2023 Bourgogne Pinot Noir, Domaine Chapelle & Fils, France (bottle)", "category": "Red", "calories": null, "price": "$96" },
+
+    { "name": "Lillet Blanc, France", "category": "Aperitifs", "calories": null, "price": "$7" },
+    { "name": "Americano Aperitivo Spritz, Sirene, Italy", "category": "Aperitifs", "calories": null, "price": "$12" },
+    { "name": "Vermouth di Torino, Berto Ross da Travaj, Italy", "category": "Aperitifs", "calories": null, "price": "$7" },
+    { "name": "Manzanilla Deliciosa Sherry, Valdespino, Spain", "category": "Aperitifs", "calories": null, "price": "$6" },
+
+    { "name": "Cellarmaker Pretty Pretty Pils, Berkeley (glass)", "category": "Beer - Draft", "calories": null, "price": "$6" },
+    { "name": "Cellarmaker Pretty Pretty Pils, Berkeley (pint)", "category": "Beer - Draft", "calories": null, "price": "$9" },
+    { "name": "Russian River Blind Pig IPA, Santa Rosa (glass)", "category": "Beer - Draft", "calories": null, "price": "$6" },
+    { "name": "Russian River Blind Pig IPA, Santa Rosa (pint)", "category": "Beer - Draft", "calories": null, "price": "$9" },
+    { "name": "2025 Hanabi Hourani Pilsner Style Lager, Napa (16.9 oz)", "category": "Beer - Bottles", "calories": null, "price": "$24" },
+
+    { "name": "NA Fieldwork Headliner West Coast IPA, Berkeley (16 oz)", "category": "Non-Alcoholic", "calories": null, "price": "$8" },
+    { "name": "NA Sparkling Blanc de Blancs, Eins Zwei Zero, Leitz, Germany (glass)", "category": "Non-Alcoholic", "calories": null, "price": "$16" },
+    { "name": "NA Sparkling Blanc de Blancs, Eins Zwei Zero, Leitz, Germany (bottle)", "category": "Non-Alcoholic", "calories": null, "price": "$64" },
+    { "name": "NA Cocktail, White Phony Negroni, St. Agrestis, Brooklyn, New York (from draft)", "category": "Non-Alcoholic", "calories": null, "price": "$9" },
+    { "name": "Casamara Amaro Club Soda, Onda, Detroit, Michigan (12.7 oz)", "category": "Non-Alcoholic", "calories": null, "price": "$7" },
+    { "name": "Brightleaf Sparkling Citrus Jasmine Tea, California (12 oz)", "category": "Non-Alcoholic", "calories": null, "price": "$6" },
+    { "name": "Elderflower or Raspberry Spritzer, D'arbo, Austria", "category": "Non-Alcoholic", "calories": null, "price": "$6" },
+    { "name": "2024 Navarro Pinot Noir Grape Juice, Mendocino (glass)", "category": "Non-Alcoholic", "calories": null, "price": "$7" },
+    { "name": "2024 Navarro Pinot Noir Grape Juice, Mendocino (bottle)", "category": "Non-Alcoholic", "calories": null, "price": "$28" },
+
+    { "name": "2023 Moscato d'Asti, La Morandina, Piedmont, Italy", "category": "Dessert Wine", "calories": null, "price": "$10" },
+    { "name": "2022 Sauternes, Chateau Roumieu-Lacoste, France", "category": "Dessert Wine", "calories": null, "price": "$22" },
+    { "name": "NV Savannah Verdelho Madeira, The Rare Wine Co. Historic Series, Vinhos Barbeito, Portugal", "category": "Dessert Wine", "calories": null, "price": "$18" },
+
+    { "name": "Espresso", "category": "Coffee & Tea", "calories": null, "price": "$4" },
+    { "name": "Macchiato", "category": "Coffee & Tea", "calories": null, "price": "$5" },
+    { "name": "Cappuccino", "category": "Coffee & Tea", "calories": null, "price": "$6" },
+    { "name": "Caffe Latte", "category": "Coffee & Tea", "calories": null, "price": "$6" },
+    { "name": "Tisane", "category": "Coffee & Tea", "calories": null, "price": "$8" },
+    { "name": "Organic Teas (Yunnan Black, White Peony, Pearl Jasmine, Dragon Well, Rooibos, Elderflower Nectar)", "category": "Coffee & Tea", "calories": null, "price": "$7" },
+    { "name": "Silk Road Organic Black Iced Tea, California", "category": "Coffee & Tea", "calories": null, "price": "$7" }
+  ]
+}
+
