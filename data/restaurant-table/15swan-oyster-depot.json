@@ -1,0 +1,25 @@
+{
+  "title": "Seafood Shack Menu With Price List",
+  "items": [
+    { "name": "Lobster (The Maine Attraction, served with drawn butter, cooked to order, allow 25 min)", "category": "Seafood", "calories": null, "price": "$80.00" },
+    { "name": "6 Cherry Stone Clams (on the half shell)", "category": "Seafood", "calories": null, "price": "$22.00" },
+    { "name": "6 Blue Point Oysters (on the half shell)", "category": "Seafood", "calories": null, "price": "$22.00" },
+    { "name": "Half Cracked Crab (served with bread & butter, choice of cocktail sauce, louie sauce or mayonnaise)", "category": "Seafood", "calories": null, "price": "$28.00" },
+    { "name": "Smoked Trout or Smoked White Fish (served with salad, bread and butter)", "category": "Seafood", "calories": null, "price": "$30.00" },
+    { "name": "Oyster Pick - Mixed Dozen (Miyagi, Kumamoto, Blue Point)", "category": "Seafood", "calories": null, "price": "$42.00" },
+    { "name": "Smoked Salmon (served on rye or french bread with shrimp salad)", "category": "Seafood", "calories": null, "price": "$35.00" },
+    { "name": "Boston Clam Chowder (cup)", "category": "Seafood", "calories": null, "price": "$5.00" },
+    { "name": "Octopus Salad / Calamari", "category": "Seafood", "calories": null, "price": "$8.00" },
+    { "name": "Crab (special sign)", "category": "Seafood", "calories": null, "price": "$12.00" },
+
+    { "name": "Draft Beer (small)", "category": "Beverages", "calories": null, "price": "$8.00" },
+    { "name": "Draft Beer (large)", "category": "Beverages", "calories": null, "price": "$12.00" },
+    { "name": "Wine", "category": "Beverages", "calories": null, "price": "$5.00" },
+    { "name": "Lemon Lime", "category": "Beverages", "calories": null, "price": "$5.00" },
+    { "name": "Pepsi", "category": "Beverages", "calories": null, "price": "$5.00" },
+    { "name": "Coffee", "category": "Beverages", "calories": null, "price": "$5.00" },
+    { "name": "Tea", "category": "Beverages", "calories": null, "price": "$5.00" },
+    { "name": "Milk", "category": "Beverages", "calories": null, "price": "$5.00" }
+  ]
+}
+
