@@ -1,0 +1,21 @@
+{
+  "title": "Zuni Dessert Menu With Price List (Sunday Dinner, July 12, 2026)",
+  "items": [
+    { "name": "Gateau Victoire with whipped cream", "category": "Dessert", "calories": null, "price": "$16.00" },
+    { "name": "Warm fig-frangipane tart with yogurt ice cream and pistachios", "category": "Dessert", "calories": null, "price": "$18.00" },
+    { "name": "Berry pavlova with creme Chantilly and candied tangelo", "category": "Dessert", "calories": null, "price": "$15.00" },
+    { "name": "Canary melon sorbet with pecan shortbread cookies", "category": "Dessert", "calories": null, "price": "$15.00" },
+    { "name": "Espresso granita with whipped cream", "category": "Dessert", "calories": null, "price": "$13.00" },
+    { "name": "Almond-anise biscottini with a glass of Cardamaro amaro", "category": "Dessert", "calories": null, "price": "$12.00" },
+    { "name": "Rogue Creamery Smoky Blue cheese with wildflower honey and warm levain", "category": "Dessert", "calories": null, "price": "$10.00" },
+    { "name": "Parmigiano-Reggiano with Medjool dates", "category": "Dessert", "calories": null, "price": "$8.00" },
+
+    { "name": "Almond-anise biscottini - bag of 6", "category": "Take-Away Treats", "calories": null, "price": "$10.00" },
+    { "name": "Pecan shortbread cookies - bag of 6", "category": "Take-Away Treats", "calories": null, "price": "$12.00" },
+    { "name": "Italian chocolate-almond cookies - bag of 6", "category": "Take-Away Treats", "calories": null, "price": "$12.00" },
+    { "name": "Buttermilk-berry swirl ice cream - pint", "category": "Take-Away Treats", "calories": null, "price": "$18.00" },
+    { "name": "Canary melon sorbet - pint", "category": "Take-Away Treats", "calories": null, "price": "$18.00" },
+    { "name": "Summer berry preserves - 8 oz", "category": "Take-Away Treats", "calories": null, "price": "$15.00" }
+  ]
+}
+
