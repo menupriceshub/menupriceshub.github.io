@@ -1,0 +1,437 @@
+{
+  "title": "BBQ Restaurant Menu With Price List",
+  "items": [
+    {
+      "name": "Ribs - Full Slab",
+      "category": "Ribs",
+      "calories": null,
+      "price": "$29.99"
+    },
+    {
+      "name": "Ribs - Half Slab",
+      "category": "Ribs",
+      "calories": null,
+      "price": "$19.99"
+    },
+    {
+      "name": "Ribs - Combo",
+      "category": "Ribs",
+      "calories": null,
+      "price": "+$5.99"
+    },
+    {
+      "name": "Baked Beans",
+      "category": "Sides",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Vinegar Slaw",
+      "category": "Sides",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Potato Salad",
+      "category": "Sides",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Sweet Potato Fries",
+      "category": "Sides",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Crinkle Fries",
+      "category": "Sides",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Fire & Ice Pickles",
+      "category": "Sides",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Green Beans",
+      "category": "Sides",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Fried Corn on the Cob",
+      "category": "Sides",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Applesauce",
+      "category": "Sides",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Baked Potato",
+      "category": "Sides",
+      "calories": null,
+      "price": "+$1.50"
+    },
+    {
+      "name": "Extra Side",
+      "category": "Sides",
+      "calories": null,
+      "price": "$3.59"
+    },
+    {
+      "name": "Pulled Pork - Regular",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$13.99"
+    },
+    {
+      "name": "Pulled Pork - Large",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$15.99"
+    },
+    {
+      "name": "Smoked Chicken - Regular",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$13.99"
+    },
+    {
+      "name": "Smoked Chicken - Large",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$15.99"
+    },
+    {
+      "name": "Turkey Breast - Regular",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$14.99"
+    },
+    {
+      "name": "Turkey Breast - Large",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$16.99"
+    },
+    {
+      "name": "Burnt Ends - Regular",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$16.99"
+    },
+    {
+      "name": "Burnt Ends - Large",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$18.99"
+    },
+    {
+      "name": "Beef Brisket - Regular",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$16.99"
+    },
+    {
+      "name": "Beef Brisket - Large",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$18.99"
+    },
+    {
+      "name": "Hot Links - Regular",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$15.99"
+    },
+    {
+      "name": "Pulled Pork - Regular",
+      "category": "Platters",
+      "calories": null,
+      "price": "$16.99"
+    },
+    {
+      "name": "Pulled Pork - Large",
+      "category": "Platters",
+      "calories": null,
+      "price": "$18.99"
+    },
+    {
+      "name": "Smoked Chicken - Regular",
+      "category": "Platters",
+      "calories": null,
+      "price": "$16.99"
+    },
+    {
+      "name": "Smoked Chicken - Large",
+      "category": "Platters",
+      "calories": null,
+      "price": "$18.99"
+    },
+    {
+      "name": "Turkey Breast - Regular",
+      "category": "Platters",
+      "calories": null,
+      "price": "$17.99"
+    },
+    {
+      "name": "Turkey Breast - Large",
+      "category": "Platters",
+      "calories": null,
+      "price": "$19.99"
+    },
+    {
+      "name": "Burnt Ends - Regular",
+      "category": "Platters",
+      "calories": null,
+      "price": "$20.49"
+    },
+    {
+      "name": "Burnt Ends - Large",
+      "category": "Platters",
+      "calories": null,
+      "price": "$22.49"
+    },
+    {
+      "name": "Beef Brisket - Regular",
+      "category": "Platters",
+      "calories": null,
+      "price": "$20.49"
+    },
+    {
+      "name": "Beef Brisket - Large",
+      "category": "Platters",
+      "calories": null,
+      "price": "$22.49"
+    },
+    {
+      "name": "Pick 2 Meats - Regular",
+      "category": "Platters",
+      "calories": null,
+      "price": "$20.49"
+    },
+    {
+      "name": "Pick 2 Meats - Large",
+      "category": "Platters",
+      "calories": null,
+      "price": "$22.49"
+    },
+    {
+      "name": "BBQ Salad",
+      "category": "Specialties",
+      "calories": null,
+      "price": "$13.99"
+    },
+    {
+      "name": "Frito Pie",
+      "category": "Specialties",
+      "calories": null,
+      "price": "$13.99"
+    },
+    {
+      "name": "BBQ Spud",
+      "category": "Specialties",
+      "calories": null,
+      "price": "$13.99"
+    },
+    {
+      "name": "The Big Ben Combo",
+      "category": "Specialties",
+      "calories": null,
+      "price": "$65.99"
+    },
+    {
+      "name": "The Adam Bomb Combo",
+      "category": "Specialties",
+      "calories": null,
+      "price": "$74.99"
+    },
+    {
+      "name": "Fountain Drink",
+      "category": "Soda",
+      "calories": null,
+      "price": "$2.79"
+    },
+    {
+      "name": "Pulled Pork - 1/4 lb",
+      "category": "Carry Out Only",
+      "calories": null,
+      "price": "$6.25"
+    },
+    {
+      "name": "Pulled Pork - 1/2 lb",
+      "category": "Carry Out Only",
+      "calories": null,
+      "price": "$10.99"
+    },
+    {
+      "name": "Pulled Pork - 1 lb",
+      "category": "Carry Out Only",
+      "calories": null,
+      "price": "$18.99"
+    },
+    {
+      "name": "Smoked Chicken - 1/4 lb",
+      "category": "Carry Out Only",
+      "calories": null,
+      "price": "$6.25"
+    },
+    {
+      "name": "Smoked Chicken - 1/2 lb",
+      "category": "Carry Out Only",
+      "calories": null,
+      "price": "$10.99"
+    },
+    {
+      "name": "Smoked Chicken - 1 lb",
+      "category": "Carry Out Only",
+      "calories": null,
+      "price": "$18.99"
+    },
+    {
+      "name": "Turkey Breast - 1/4 lb",
+      "category": "Carry Out Only",
+      "calories": null,
+      "price": "$6.79"
+    },
+    {
+      "name": "Turkey Breast - 1/2 lb",
+      "category": "Carry Out Only",
+      "calories": null,
+      "price": "$11.99"
+    },
+    {
+      "name": "Turkey Breast - 1 lb",
+      "category": "Carry Out Only",
+      "calories": null,
+      "price": "$19.99"
+    },
+    {
+      "name": "Burnt Ends - 1/4 lb",
+      "category": "Carry Out Only",
+      "calories": null,
+      "price": "$6.99"
+    },
+    {
+      "name": "Burnt Ends - 1/2 lb",
+      "category": "Carry Out Only",
+      "calories": null,
+      "price": "$13.49"
+    },
+    {
+      "name": "Burnt Ends - 1 lb",
+      "category": "Carry Out Only",
+      "calories": null,
+      "price": "$22.99"
+    },
+    {
+      "name": "Beef Brisket - 1/4 lb",
+      "category": "Carry Out Only",
+      "calories": null,
+      "price": "$6.99"
+    },
+    {
+      "name": "Beef Brisket - 1/2 lb",
+      "category": "Carry Out Only",
+      "calories": null,
+      "price": "$13.49"
+    },
+    {
+      "name": "Beef Brisket - 1 lb",
+      "category": "Carry Out Only",
+      "calories": null,
+      "price": "$22.99"
+    },
+    {
+      "name": "Hot Link - 1/2 lb",
+      "category": "Carry Out Only",
+      "calories": null,
+      "price": "$12.99"
+    },
+    {
+      "name": "Hot Link - 1 lb",
+      "category": "Carry Out Only",
+      "calories": null,
+      "price": "$20.99"
+    },
+    {
+      "name": "Ribs - Full Slab (No Sides)",
+      "category": "Carry Out Only",
+      "calories": null,
+      "price": "$28.99"
+    },
+    {
+      "name": "Ribs - Half Slab (No Sides)",
+      "category": "Carry Out Only",
+      "calories": null,
+      "price": "$18.99"
+    },
+    {
+      "name": "Any Side - Quart",
+      "category": "Carry Out Sides",
+      "calories": null,
+      "price": "$12.99"
+    },
+    {
+      "name": "Any Side - Gallon",
+      "category": "Carry Out Sides",
+      "calories": null,
+      "price": "$35.99"
+    },
+    {
+      "name": "Pappy's Sauce by the Bottle",
+      "category": "Carry Out Sides",
+      "calories": null,
+      "price": "$6.99"
+    },
+    {
+      "name": "Pappy's Rub by the Bottle",
+      "category": "Carry Out Sides",
+      "calories": null,
+      "price": "$9.99"
+    },
+    {
+      "name": "8 Pack Buns",
+      "category": "Carry Out Sides",
+      "calories": null,
+      "price": "$2.99"
+    },
+    {
+      "name": "E-Z Carry-Out Combination #1 - 2 Full Slabs of Ribs",
+      "category": "E-Z Carry-Out Combinations",
+      "calories": null,
+      "price": "$79.99"
+    },
+    {
+      "name": "E-Z Carry-Out Combination #2 - 1 Full Slab of Ribs & 1 Pound of Meat",
+      "category": "E-Z Carry-Out Combinations",
+      "calories": null,
+      "price": "$71.99"
+    },
+    {
+      "name": "E-Z Carry-Out Combination #3 - 1 Full Slab of Ribs & 2 Pounds of Any Meat",
+      "category": "E-Z Carry-Out Combinations",
+      "calories": null,
+      "price": "$86.99"
+    },
+    {
+      "name": "E-Z Carry-Out Combination #4 - 2 Pounds Any Meat",
+      "category": "E-Z Carry-Out Combinations",
+      "calories": null,
+      "price": "$65.99"
+    },
+    {
+      "name": "E-Z Carry-Out Combination #5 - 2 Full Slabs of Ribs & 1 Pound of Any Meat",
+      "category": "E-Z Carry-Out Combinations",
+      "calories": null,
+      "price": "$91.99"
+    }
+  ]
+}
