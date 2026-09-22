@@ -1,0 +1,18 @@
+{
+  "title": "House of Prime Rib Menu With Price List",
+  "items": [
+    { "name": "The City Cut (a smaller cut for those with a lighter appetite)", "category": "Roast Prime Rib of Beef", "calories": null, "price": "$64.85" },
+    { "name": "House of Prime Rib Cut (a hearty portion of juicy, tender beef)", "category": "Roast Prime Rib of Beef", "calories": null, "price": "$68.85" },
+    { "name": "The English Cut (a thinner slice)", "category": "Roast Prime Rib of Beef", "calories": null, "price": "$68.85" },
+    { "name": "King Henry VIII Cut (extra-generous thick cut)", "category": "Roast Prime Rib of Beef", "calories": null, "price": "$74.85" },
+    { "name": "Children's Prime Rib Dinner (complete with milk and ice cream, for children 8 and under)", "category": "Roast Prime Rib of Beef", "calories": null, "price": "$18.85" },
+
+    { "name": "Prime Rib A La Carte (slices of beef with creamed spinach, choice of potato, and Yorkshire pudding)", "category": "A La Carte", "calories": null, "price": "$58.85" },
+
+    { "name": "Coffee", "category": "Beverages", "calories": null, "price": "$5.50" },
+    { "name": "Cappuccino (with hot steamed milk)", "category": "Beverages", "calories": null, "price": "$6.00" },
+    { "name": "Espresso", "category": "Beverages", "calories": null, "price": "$5.50" },
+    { "name": "Tea", "category": "Beverages", "calories": null, "price": "$5.50" },
+    { "name": "Milk", "category": "Beverages", "calories": null, "price": "$2.50" }
+  ]
+}
