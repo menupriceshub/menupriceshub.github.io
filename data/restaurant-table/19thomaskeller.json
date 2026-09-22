@@ -1,0 +1,129 @@
+{
+  "title": "Tasting of Vegetables & Chef's Tasting Menu",
+  "items": [
+    {
+      "name": "Vidalia Onion-Tapioca Ragoût, Poached Oyster Mushrooms and Quinoa Caviar",
+      "category": "Vegetables"
+    },
+    {
+      "name": "Garden Heirloom Tomato Salad",
+      "category": "Vegetables"
+    },
+    {
+      "name": "Whipped Kendall Farms Crème Fraîche, Cured Garden Cucumbers and Everything Bagel Tuile",
+      "category": "Vegetables"
+    },
+    {
+      "name": "Nantes Carrot Tartelette",
+      "category": "Vegetables"
+    },
+    {
+      "name": "Vidalia Onion Relish, Garden Sylvetta Arugula and Spearmint Vierge",
+      "category": "Vegetables"
+    },
+    {
+      "name": "Garden Summer Squash en Escabèche",
+      "category": "Vegetables"
+    },
+    {
+      "name": "Charred Poblano Pepper Panisse, Preserved Meyer Lemon, Cilantro Shoots and Rumi Saffron Glaze",
+      "category": "Vegetables"
+    },
+    {
+      "name": "Laminated Brioche and Hilary Haigh's Animal Farm Butter",
+      "category": "Bread & Butter"
+    },
+    {
+      "name": "Garden King Richard Leeks Raviolo, Wilted Arrowleaf Spinach and Fontina Cheese Emulsion",
+      "category": "Vegetables"
+    },
+    {
+      "name": "Hand Cut Macaroni, Aged Parmigiano Reggiano and Preserved Australian Black Winter Truffles",
+      "category": "Mac & Cheese"
+    },
+    {
+      "name": "Wild Oregon Chanterelle Mushroom Pithivier, Yukon Gold Potato Confit, Sunny Side Up Quail Egg and Crème de Champignons",
+      "category": "Vegetables"
+    },
+    {
+      "name": "Crispy Von Trapp Farmstead Mad River Blue Cheese",
+      "category": "Cheese"
+    },
+    {
+      "name": "K&J Orchards Hawaiian Apple Terrine, Toasted English Walnut and Wildflower Honey Gel",
+      "category": "Desserts"
+    },
+    {
+      "name": "K&J Orchards Anise Poached Bartlett Pear, Buckwheat Sablé and Poire Williams Shaved Ice",
+      "category": "Desserts"
+    },
+    {
+      "name": "Garden Melon Sorbet with Jacobsen Orchards Lemon Verbena Jus",
+      "category": "Desserts"
+    },
+    {
+      "name": "K+M Chocolate-Caramel Chouquette, Roasted Macadamia Nut Anglaise and Dark Chocolate Croquant",
+      "category": "Desserts"
+    },
+    {
+      "name": "Sabayon of Pearl Tapioca with Island Creek Oysters and Regiis Ova Caviar",
+      "category": "Oysters & Caviar"
+    },
+    {
+      "name": "Regiis Ova Royal Ossetra Caviar",
+      "category": "Oysters & Caviar"
+    },
+    {
+      "name": "Sacramento Delta Sturgeon Cheesecake, Pickled Red Pearl Onion and Everything Bagel Arlette",
+      "category": "Seafood"
+    },
+    {
+      "name": "Garden Eggplant Medley, Garden Heirloom Tomatoes, Compressed Frisée Lettuce, Fragrant Basils and Meyer Lemon Vinaigrette",
+      "category": "Vegetables"
+    },
+    {
+      "name": "Crispy Spanish Octopus, Masa Beignet, Cured Garden Radishes, Cilantro Shoots and Garden Red Kuri Squash Mole",
+      "category": "Seafood"
+    },
+    {
+      "name": "Sautéed Fillet of Pacific Yellowtail, Wilted Arrowleaf Spinach, Preserved Meyer Lemon and Crème de Homard",
+      "category": "Seafood"
+    },
+    {
+      "name": "Laminated Brioche and Hilary Haigh's Animal Farm Butter",
+      "category": "Bread & Butter"
+    },
+    {
+      "name": "Applewood Smoked Thomas Farms Squab, Jacobsen Orchards Poached Quince Barquette, Whipped Ricotta Cheese, Ruby Beet Confit and Balsamic Reduction",
+      "category": "Poultry"
+    },
+    {
+      "name": "Hand Cut Macaroni, Aged Parmigiano Reggiano and Preserved Australian Black Winter Truffles",
+      "category": "Mac & Cheese"
+    },
+    {
+      "name": "Herb Roasted Prime Rib of Elysian Fields Farm Lamb, Cauliflower Potage, Wild Oregon Matsutake Mushrooms, Boudin Noir and Forest Mushroom Bouillon",
+      "category": "Lamb"
+    },
+    {
+      "name": "Japanese Miyazaki Wagyu, Pommes Maxim, Red Wine Glazed Hakurei Turnip and Sauce Entrecôte",
+      "category": "Steak & Potato"
+    },
+    {
+      "name": "Quesería 1605 Manchego Cheese, Concord Grapes and Toasted Pine Nuts",
+      "category": "Cheese"
+    },
+    {
+      "name": "Jacobsen Orchards Figs, Coriander Seed Panna Cotta and Brown Butter Pâte Sucrée",
+      "category": "Desserts"
+    },
+    {
+      "name": "K&J Orchards Bartlett Pear Sorbet, Chamomile Whip and Pink Peppercorns",
+      "category": "Desserts"
+    },
+    {
+      "name": "85% Abinao Chocolate Mousseux, Sablé Breton and Madagascan Vanilla Crémeux",
+      "category": "Desserts"
+    }
+  ]
+}
