@@ -1,0 +1,69 @@
+{
+  "title": "Veselka Menu With Price List",
+  "items": [
+    { "name": "Potato Pancakes (single)", "category": "Latkes", "calories": null, "price": "$8" },
+    { "name": "Potato Pancakes (plate)", "category": "Latkes", "calories": null, "price": "$22" },
+    { "name": "Vegetarian Reuben Potato Pancakes", "category": "Latkes", "calories": null, "price": "$22" },
+    { "name": "Potato Pancake Combo Plate (with Beef Stroganoff, Chicken Paprikash or Bigos, incl. cup of soup)", "category": "Latkes", "calories": null, "price": "$23" },
+
+    { "name": "Add Grilled Chicken (to salad)", "category": "Salads", "calories": null, "price": "$7" },
+    { "name": "Add Chicken Schnitzel (to salad)", "category": "Salads", "calories": null, "price": "$9" },
+    { "name": "Mixed Greens Salad (with a scoop of tuna salad)", "category": "Salads", "calories": null, "price": "$16" },
+    { "name": "Lentil Salad (Brinza feta, tomatoes, cucumbers, bell peppers, carrots)", "category": "Salads", "calories": null, "price": "$17" },
+    { "name": "Roasted Beet & Goat Cheese Salad (toasted walnuts, sunflower seeds, pepitas)", "category": "Salads", "calories": null, "price": "$18" },
+    { "name": "Ukrainian Fattoush Salad (cucumber, heirloom tomatoes, pickled beets, Brinza feta, fried challah croutons, dill)", "category": "Salads", "calories": null, "price": "$16" },
+    { "name": "Cobb Salad (avocado, blue cheese, hard boiled egg, double smoked bacon, cucumbers, cherry tomatoes)", "category": "Salads", "calories": null, "price": "$20" },
+
+    { "name": "Homemade Soup - Cup", "category": "Homemade Soups", "calories": null, "price": "$7" },
+    { "name": "Homemade Soup - Bowl", "category": "Homemade Soups", "calories": null, "price": "$13" },
+    { "name": "Homemade Soup - To-Go Pint", "category": "Homemade Soups", "calories": null, "price": "$9" },
+    { "name": "Homemade Soup - Quart", "category": "Homemade Soups", "calories": null, "price": "$15" },
+
+    { "name": "Weekday Lunch Special (choice of four pierogi + a cup of soup, Mon-Fri 11am-5pm, dine in only)", "category": "Weekday Lunch Special", "calories": null, "price": "$16" },
+
+    { "name": "Veselka Reuben (Krakovska ham, sauerkraut, Swiss cheese, Ukrainian dressing, pickles on rye)", "category": "Sandwiches & Burgers", "calories": null, "price": "$19" },
+    { "name": "Madame Alexander (smoked turkey, Vermont sharp cheddar, chipotle cranberry chutney on walnut raisin bread)", "category": "Sandwiches & Burgers", "calories": null, "price": "$19" },
+    { "name": "Chicken Schnitzel (crispy panko-crusted chicken breast, lemon pepper mayo, baby arugula, sliced pickles)", "category": "Sandwiches & Burgers", "calories": null, "price": "$19" },
+    { "name": "Grilled Cheese (Vermont Cheddar / Swiss / American)", "category": "Sandwiches & Burgers", "calories": null, "price": "$13" },
+    { "name": "Classic BLT", "category": "Sandwiches & Burgers", "calories": null, "price": "$15" },
+    { "name": "Add Smoked Turkey (to sandwich)", "category": "Sandwiches & Burgers", "calories": null, "price": "$5" },
+    { "name": "Blue Plate Special (cup of soup and 1/2 tuna salad sandwich)", "category": "Sandwiches & Burgers", "calories": null, "price": "$17" },
+    { "name": "Veselka Burger (Black Angus beef, lettuce, tomatoes, onions, Ukrainian dressing on sesame seed bun)", "category": "Sandwiches & Burgers", "calories": null, "price": "$18" },
+    { "name": "Veggie Burger (lettuce, tomatoes, onions, Ukrainian dressing on sesame seed bun)", "category": "Sandwiches & Burgers", "calories": null, "price": "$16" },
+    { "name": "Grilled Chicken Sandwich (sauteed peppers & onions, melted swiss, lemon pepper mayo, coleslaw, pickle)", "category": "Sandwiches & Burgers", "calories": null, "price": "$17" },
+    { "name": "Smoked Salmon on a Bagel (cream cheese, sliced tomato, red onion, cucumber, capers, dill)", "category": "Sandwiches & Burgers", "calories": null, "price": "$18" },
+    { "name": "Albacore Tuna Salad", "category": "Sandwiches & Burgers", "calories": null, "price": "$16" },
+    { "name": "Make it a Tuna Melt (add-on)", "category": "Sandwiches & Burgers", "calories": null, "price": "$2" },
+    { "name": "Add Topping - Sliced Tomato / Onion", "category": "Sandwiches & Burgers", "calories": null, "price": "$1" },
+    { "name": "Add Topping - Vermont Cheddar / Swiss / American", "category": "Sandwiches & Burgers", "calories": null, "price": "$2" },
+    { "name": "Add Topping - Bacon / Avocado", "category": "Sandwiches & Burgers", "calories": null, "price": "$4" },
+
+    { "name": "Two Eggs Any Style", "category": "Eggs & Omelettes", "calories": null, "price": "$11" },
+    { "name": "Add an Additional Egg", "category": "Eggs & Omelettes", "calories": null, "price": "$3" },
+    { "name": "Plain Omelette", "category": "Eggs & Omelettes", "calories": null, "price": "$12" },
+    { "name": "Add Kielbasa, Bacon, Sausage, or Krakovska Ham (to omelette)", "category": "Eggs & Omelettes", "calories": null, "price": "$3" },
+    { "name": "Add Vermont Cheddar, Swiss, American (to omelette)", "category": "Eggs & Omelettes", "calories": null, "price": "$2" },
+    { "name": "Add Bell Peppers, Mushrooms, Tomatoes, Onions, Spinach or Broccoli (to omelette)", "category": "Eggs & Omelettes", "calories": null, "price": "$1" },
+    { "name": "Western Omelette (bell peppers, onions and ham)", "category": "Eggs & Omelettes", "calories": null, "price": "$16" },
+    { "name": "Ukrainian Omelette (herb roasted tomatoes, Brinza feta and dill)", "category": "Eggs & Omelettes", "calories": null, "price": "$15" },
+    { "name": "Ukrainian Breakfast Burrito (potato pancake, kielbasa, melted cheddar, scrambled eggs, Ukrainian dressing)", "category": "Eggs & Omelettes", "calories": null, "price": "$18" },
+    { "name": "Weekday Breakfast Bowl (four boiled potato pierogi, two eggs any style, choice of bacon/sausage/kielbasa/avocado, with burachky)", "category": "Eggs & Omelettes", "calories": null, "price": "$18" },
+    { "name": "BEC Pierogi Bowl (six bacon, egg & cheese pierogi, boiled or fried, spicy ketchup)", "category": "Eggs & Omelettes", "calories": null, "price": "$16" },
+
+    { "name": "Pancakes (3) - buttermilk or buckwheat", "category": "Pancakes, Waffles & More", "calories": null, "price": "$15" },
+    { "name": "Add Bananas, Blueberries or Chocolate Chips (to pancakes)", "category": "Pancakes, Waffles & More", "calories": null, "price": "$2" },
+    { "name": "Raspberry Pancakes", "category": "Pancakes, Waffles & More", "calories": null, "price": "$18" },
+    { "name": "Buttermilk Waffle", "category": "Pancakes, Waffles & More", "calories": null, "price": "$14" },
+    { "name": "Challah French Toast", "category": "Pancakes, Waffles & More", "calories": null, "price": "$15" },
+    { "name": "Upgrade to 100% Pure Vermont Maple Syrup", "category": "Pancakes, Waffles & More", "calories": null, "price": "$4" },
+
+    { "name": "East Village Classic (fried egg, American cheese, crispy bacon on challah roll)", "category": "Fried Egg Sandwiches", "calories": null, "price": "$12" },
+    { "name": "Veselka GCT (fried egg, breakfast sausage, sharp cheddar, baby arugula on challah roll)", "category": "Fried Egg Sandwiches", "calories": null, "price": "$13" },
+    { "name": "Veselka Williamsburg (fried egg, smoked ham, red bell peppers, onions, baby spinach, Swiss on challah roll)", "category": "Fried Egg Sandwiches", "calories": null, "price": "$14" },
+
+    { "name": "Bagel with a Schmear", "category": "Breakfast Sides", "calories": null, "price": "$4" },
+    { "name": "Fresh Fruit Salad", "category": "Breakfast Sides", "calories": null, "price": "$8" },
+    { "name": "Bacon, Breakfast Sausage, or Kielbasa", "category": "Breakfast Sides", "calories": null, "price": "$8" }
+  ]
+}
+
