@@ -1,0 +1,70 @@
+{
+  "title": "Gene & Georgetti Menu With Price List",
+  "items": [
+    { "name": "Calamari (classic fried or grilled with lemon & e.v.o.o.)", "category": "To Start", "calories": null, "price": "$23.00" },
+    { "name": "Antipasto Misto (a selection of italian salumi & cheeses)", "category": "To Start", "calories": null, "price": "$25.00" },
+    { "name": "Beef Tartare (USDA prime)", "category": "To Start", "calories": null, "price": "$33.00" },
+    { "name": "Baked Clams (manilla clams, garlic-breadcrumb stuffing)", "category": "To Start", "calories": null, "price": "$20.00" },
+    { "name": "Crab Cakes (with famous remoulade sauce)", "category": "To Start", "calories": null, "price": "$28.00" },
+    { "name": "Prosciutto E Burrata (both imported directly from Italy)", "category": "To Start", "calories": null, "price": "$25.00" },
+    { "name": "Shrimp De Jonghe (Italian breadcrumb & garlic sauce)", "category": "To Start", "calories": null, "price": "$28.00" },
+    { "name": "Italian Sausage & Peppers (mild or hot, with sweet peppers)", "category": "To Start", "calories": null, "price": "$18.00" },
+
+    { "name": "The Seafood Tower (Chef's selection of seasonal seafood)", "category": "Seafood (Lunch)", "calories": null, "price": "$190.00" },
+    { "name": "Oysters (East & West coast)", "category": "Seafood (Lunch)", "calories": null, "price": "$24.00" },
+    { "name": "Grilled Oysters (West coast, garlic & herbs)", "category": "Seafood (Lunch)", "calories": null, "price": "$28.00" },
+    { "name": "Shrimp Cocktail (famous cocktail sauce)", "category": "Seafood (Lunch)", "calories": null, "price": "$28.00" },
+    { "name": "Caviar Service (sterling sustainable caviar, with blinis & all the fixings)", "category": "Seafood (Lunch)", "calories": null, "price": "$140.00" },
+
+    { "name": "Tortellini In Brodo (house-made brodo, cheese tortellini)", "category": "Soups & Salads", "calories": null, "price": "$8.00" },
+    { "name": "Minestrone (traditional Italian vegetable soup)", "category": "Soups & Salads", "calories": null, "price": "$8.00" },
+    { "name": "Caprese Con Bufala (heirloom tomatoes, mozzarella di bufala, basil)", "category": "Soups & Salads", "calories": null, "price": "$24.00" },
+    { "name": "The Original Garbage Salad (salami, jumbo shrimp, provolone, the works)", "category": "Soups & Salads", "calories": null, "price": "$24.00" },
+    { "name": "Caesar (house-made anchovy dressing, parmigiano)", "category": "Soups & Salads", "calories": null, "price": "$15.00" },
+    { "name": "Classic Wedge (house-cut bacon & blue cheese dressing)", "category": "Soups & Salads", "calories": null, "price": "$17.00" },
+    { "name": "Baby Gem Lettuce (radish, sweet crispy shallots, green goddess dressing)", "category": "Soups & Salads", "calories": null, "price": "$18.00" },
+    { "name": "Ribollita (Tuscan soup with lots of vegetables and Tuscan bread)", "category": "Soups & Salads", "calories": null, "price": "$8.00" },
+
+    { "name": "Gnocchi | Campania (pomodoro, bolognese, or quattro formaggi)", "category": "Pastas", "calories": null, "price": "$22.00" },
+    { "name": "Pappardelle Bolognese | Emilia-Romagna (house-made wide noodle pasta & sauce)", "category": "Pastas", "calories": null, "price": "$21.00" },
+    { "name": "Ravioli | Toscana (meat or ricotta-spinach, bolognese or pomodoro)", "category": "Pastas", "calories": null, "price": "$23.00" },
+    { "name": "Tortello | Toscana (cod filled pasta, brown butter-sage sauce)", "category": "Pastas", "calories": null, "price": "$29.00" },
+    { "name": "Spaghetti Cacio E Pepe | Lazio (cacio romano & parmigiano, fresh ground pepper)", "category": "Pastas", "calories": null, "price": "$22.00" },
+    { "name": "Spaghetti All'Aglione | Toscana (house-made pasta, roasted garlic tomato sauce)", "category": "Pastas", "calories": null, "price": "$24.00" },
+    { "name": "Linguine Alle Vongole | Liguria (fresh manilla clams, garlic & white-wine sauce)", "category": "Pastas", "calories": null, "price": "$32.00" },
+    { "name": "Tordelli Lucchesi (beef, pork, and herbs, with bolognese sauce)", "category": "Pastas", "calories": null, "price": "$36.00" },
+    { "name": "Agnolotti | Piemonte (roasted mushrooms & brown butter sage sauce)", "category": "Pastas", "calories": null, "price": "$30.00" },
+
+    { "name": "The Signature Burger (1/2 lb. prime steakburger, lettuce, tomato, & raw onion)", "category": "Sandwiches & Pinsa", "calories": null, "price": "$19.00" },
+    { "name": "Chicken Parm Sandwich (old-school chicken cutlet, pomodoro, melted mozzarella & parm)", "category": "Sandwiches & Pinsa", "calories": null, "price": "$18.00" },
+    { "name": "The Italiano (salami, mortadella, prosciutto, provolone, giardiniera)", "category": "Sandwiches & Pinsa", "calories": null, "price": "$16.00" },
+    { "name": "No Horsin' Around (G&G roast beef, swiss, horseradish cream, house-made jous)", "category": "Sandwiches & Pinsa", "calories": null, "price": "$16.00" },
+    { "name": "Da' Meatball Pinsa (house-made meatballs, pulled burratta, mild or hot giardiniera)", "category": "Sandwiches & Pinsa", "calories": null, "price": "$18.00" },
+    { "name": "Mortadella Pinsa (imported mortadella, crushed pistachio, pulled burrata)", "category": "Sandwiches & Pinsa", "calories": null, "price": "$20.00" },
+    { "name": "The Veg Pinsa (eggplant, peppers, onions, mushrooms, tomatoes, fresh mozzarella)", "category": "Sandwiches & Pinsa", "calories": null, "price": "$18.00" },
+
+    { "name": "NY Strip", "category": "Prime Steaks & Chops (Lunch)", "calories": null, "price": "$72.00" },
+    { "name": "Filet Mignon", "category": "Prime Steaks & Chops (Lunch)", "calories": null, "price": "$62.00" },
+    { "name": "Skirt Steak", "category": "Prime Steaks & Chops (Lunch)", "calories": null, "price": "$58.00" },
+    { "name": "Bone-In Ribeye", "category": "Prime Steaks & Chops (Lunch)", "calories": null, "price": "$98.00" },
+    { "name": "Bone-In NY Strip", "category": "Prime Steaks & Chops (Lunch)", "calories": null, "price": "$79.00" },
+    { "name": "Porterhouse", "category": "Prime Steaks & Chops (Lunch)", "calories": null, "price": "$103.00" },
+    { "name": "Weekend Prime Rib (old-school & two fingers thick, served with au jus)", "category": "Prime Steaks & Chops (Lunch)", "calories": null, "price": "$72.00" },
+    { "name": "La Bistecca Fiorentina (Prime Dry Aged T-Bone, 48oz., served with grilled asparagus)", "category": "Prime Steaks & Chops (Lunch)", "calories": null, "price": "$155.00" },
+
+    { "name": "Double Pork Chops (two chops, simply broiled)", "category": "Prime Steaks & Chops (Dinner)", "calories": null, "price": "$33.00" },
+    { "name": "Weekend Prime Rib | 35-Day Wet Aged (old-school, two fingers thick, with au-jous)", "category": "Prime Steaks & Chops (Dinner)", "calories": null, "price": "$72.00" },
+    { "name": "Colorado Lamb Chops (double cut & one of our signature dishes)", "category": "Prime Steaks & Chops (Dinner)", "calories": null, "price": "$88.00" },
+    { "name": "La Bistecca Fiorentina - Prime Dry Aged T-Bone (48oz., no more than medium-rare, with grilled asparagus)", "category": "Prime Steaks & Chops (Dinner)", "calories": null, "price": "$155.00" },
+    { "name": "The Prime Tomahawk - Prime Dry Aged Ribeye (38oz. on the bone, with Tuscan-style roasted potatoes)", "category": "Prime Steaks & Chops (Dinner)", "calories": null, "price": "$145.00" },
+
+    { "name": "Branzino (served broiled, with fresh oregano, lemon, & Giachi e.v.o.o.)", "category": "Seafood (Dinner)", "calories": null, "price": "$39.00" },
+    { "name": "Atlantic Salmon (8oz filet, simply broiled, limone, or vesuvio style)", "category": "Seafood (Dinner)", "calories": null, "price": "$36.00" },
+    { "name": "Mussels (steamed in white wine broth, bread for dipping & french fries)", "category": "Seafood (Dinner)", "calories": null, "price": "$42.00" },
+
+    { "name": "Chicken Joe (our signature dish! roasted chicken with sweet & hot peppers)", "category": "G&G Classics (Dinner)", "calories": null, "price": "$39.00" },
+    { "name": "Eggplant Parmigiana (made the old school way)", "category": "G&G Classics (Dinner)", "calories": null, "price": "$28.00" },
+    { "name": "Greek Style Chicken (with lemon, Greek seasoning blend, & white wine)", "category": "G&G Classics (Dinner)", "calories": null, "price": "$36.00" }
+  ]
+}
+
