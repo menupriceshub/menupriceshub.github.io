@@ -1,0 +1,62 @@
+{
+  "title": "Sally's Apizza Menu With Price List",
+  "items": [
+    { "name": "House Salad", "category": "Salads", "calories": null, "price": "$13.00" },
+    { "name": "Caprese Salad", "category": "Salads", "calories": null, "price": "$14.50" },
+    { "name": "Caesar Salad", "category": "Salads", "calories": null, "price": "$14.75" },
+
+    { "name": "LG Sauce Pie", "category": "Large 16\" Apizza", "calories": null, "price": "$24.50" },
+    { "name": "LG Seasonal Leek, Potato, Bacon", "category": "Large 16\" Apizza", "calories": null, "price": "$29.75" },
+    { "name": "LG Meats Apizza", "category": "Large 16\" Apizza", "calories": null, "price": "$38.50" },
+    { "name": "LG White Pie", "category": "Large 16\" Apizza", "calories": null, "price": "$24.75" },
+    { "name": "LG NH Original Clam", "category": "Large 16\" Apizza", "calories": null, "price": "$29.75" },
+    { "name": "LG Calabrian Stinger", "category": "Large 16\" Apizza", "calories": null, "price": "$31.75" },
+    { "name": "LG Mozz & Sauce Pie", "category": "Large 16\" Apizza", "calories": null, "price": "$25.50" },
+    { "name": "LG Spicy Little Meatball", "category": "Large 16\" Apizza", "calories": null, "price": "$28.50" },
+    { "name": "LG Basil Burrata", "category": "Large 16\" Apizza", "calories": null, "price": "$29.50" },
+    { "name": "LG Garden Pie", "category": "Large 16\" Apizza", "calories": null, "price": "$26.25" },
+    { "name": "LG Firebird", "category": "Large 16\" Apizza", "calories": null, "price": "$29.75" },
+    { "name": "LG Potato & Rosemary", "category": "Large 16\" Apizza", "calories": null, "price": "$25.50" },
+    { "name": "LG Fresh White Tomato", "category": "Large 16\" Apizza", "calories": null, "price": "$26.25" },
+
+    { "name": "Side Sauce", "category": "Sides", "calories": null, "price": "$0.25" },
+    { "name": "Grilled Pizza Bread", "category": "Sides", "calories": null, "price": "$1.00" },
+
+    { "name": "LG Brunch Apizza", "category": "Weekend Pies", "calories": null, "price": "$29.75" },
+    { "name": "SM Brunch Apizza", "category": "Weekend Pies", "calories": null, "price": "$21.50" },
+
+    { "name": "Foxon Park White Birch", "category": "Bottled Sodas", "calories": null, "price": "$4.50" },
+    { "name": "Foxon Park White Birch 12oz", "category": "Bottled Sodas", "calories": null, "price": "$4.00" },
+    { "name": "Diet Coke 20oz", "category": "Bottled Sodas", "calories": null, "price": "$4.00" },
+    { "name": "Foxon Park Cream 12oz", "category": "Bottled Sodas", "calories": null, "price": "$4.00" },
+    { "name": "Foxon Park Kola", "category": "Bottled Sodas", "calories": null, "price": "$4.50" },
+    { "name": "Foxon Park Gassosa", "category": "Bottled Sodas", "calories": null, "price": "$4.50" },
+    { "name": "Foxon Park Cream", "category": "Bottled Sodas", "calories": null, "price": "$4.00" },
+    { "name": "Foxon Park Grape", "category": "Bottled Sodas", "calories": null, "price": "$4.50" },
+    { "name": "Foxon Park Root Beer 12oz", "category": "Bottled Sodas", "calories": null, "price": "$4.00" },
+    { "name": "Foxon Park Diet White Birch", "category": "Bottled Sodas", "calories": null, "price": "$4.50" },
+    { "name": "Sprite 20oz", "category": "Bottled Sodas", "calories": null, "price": "$4.00" },
+    { "name": "Mexican Coke", "category": "Bottled Sodas", "calories": null, "price": "$4.00" },
+    { "name": "Foxon Park Root Beer", "category": "Bottled Sodas", "calories": null, "price": "$4.50" },
+    { "name": "Foxon Park Ginger Ale", "category": "Bottled Sodas", "calories": null, "price": "$4.50" },
+    { "name": "Foxon Park Orange", "category": "Bottled Sodas", "calories": null, "price": "$4.50" },
+    { "name": "Foxon Park Diet Kola", "category": "Bottled Sodas", "calories": null, "price": "$4.50" },
+    { "name": "Coke 20oz", "category": "Bottled Sodas", "calories": null, "price": "$4.00" },
+
+    { "name": "Cannoli Pie", "category": "Dessert", "calories": null, "price": "$9.00" },
+    { "name": "Tiramisu", "category": "Dessert", "calories": null, "price": "$9.00" },
+
+    { "name": "Bottled Still Water 500ml", "category": "Water/Sparkling", "calories": null, "price": "$4.00" },
+    { "name": "Bottled Sparkling Water", "category": "Water/Sparkling", "calories": null, "price": "$8.00" },
+    { "name": "Bottled Still Water", "category": "Water/Sparkling", "calories": null, "price": "$8.00" },
+
+    { "name": "SM White", "category": "Small 12\" Apizza", "calories": null, "price": "$19.25" },
+    { "name": "SM Clam", "category": "Small 12\" Apizza", "calories": null, "price": "$21.50" },
+    { "name": "SM Spicy Meatball", "category": "Small 12\" Apizza", "calories": null, "price": "$22.50" },
+    { "name": "SM Mootz Sauce", "category": "Small 12\" Apizza", "calories": null, "price": "$18.50" },
+    { "name": "SM Garden Pie", "category": "Small 12\" Apizza", "calories": null, "price": "$19.75" },
+    { "name": "SM Fresh White Tomato", "category": "Small 12\" Apizza", "calories": null, "price": "$19.75" },
+    { "name": "SM Stinger", "category": "Small 12\" Apizza", "calories": null, "price": "$22.50" },
+    { "name": "SM Seasonal Leek, Potato, Bacon", "category": "Small 12\" Apizza", "calories": null, "price": "$21.50" }
+  ]
+}
