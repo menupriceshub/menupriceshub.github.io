@@ -1,0 +1,623 @@
+{
+  "title": "Russ & Daughters Menu With Price List",
+  "items": [
+    {
+      "name": "Gaspe Nova Smoked Salmon - 1/2 lb",
+      "category": "Smoked & Cured Fish",
+      "calories": null,
+      "price": "$30.00"
+    },
+    {
+      "name": "Scottish Smoked Salmon - 1/2 lb",
+      "category": "Smoked & Cured Fish",
+      "calories": null,
+      "price": "$31.00"
+    },
+    {
+      "name": "Pastrami-Cured Salmon - 1/2 lb",
+      "category": "Smoked & Cured Fish",
+      "calories": null,
+      "price": "$31.00"
+    },
+    {
+      "name": "Irish Organic Smoked Salmon - 1/2 lb",
+      "category": "Smoked & Cured Fish",
+      "calories": null,
+      "price": "$31.00"
+    },
+    {
+      "name": "Norwegian Smoked Salmon - 1/2 lb",
+      "category": "Smoked & Cured Fish",
+      "calories": null,
+      "price": "$30.00"
+    },
+    {
+      "name": "Gravlax - 1/2 lb",
+      "category": "Smoked & Cured Fish",
+      "calories": null,
+      "price": "$31.00"
+    },
+    {
+      "name": "Wild Sockeye Smoked Salmon - 1/2 lb",
+      "category": "Smoked & Cured Fish",
+      "calories": null,
+      "price": "$45.00"
+    },
+    {
+      "name": "Wild Western Nova Smoked Salmon - 1/2 lb",
+      "category": "Smoked & Cured Fish",
+      "calories": null,
+      "price": "$45.00"
+    },
+    {
+      "name": "Kippered Salmon - 1/2 lb",
+      "category": "Smoked & Cured Fish",
+      "calories": null,
+      "price": "$29.00"
+    },
+    {
+      "name": "Sable - 1/2 lb",
+      "category": "Smoked & Cured Fish",
+      "calories": null,
+      "price": "$38.00"
+    },
+    {
+      "name": "Sturgeon - 1/2 lb",
+      "category": "Smoked & Cured Fish",
+      "calories": null,
+      "price": "$38.00"
+    },
+    {
+      "name": "Yellowfin Tuna - 1/2 lb",
+      "category": "Smoked & Cured Fish",
+      "calories": null,
+      "price": "$23.00"
+    },
+    {
+      "name": "Brook Trout",
+      "category": "Smoked & Cured Fish",
+      "calories": null,
+      "price": "$13.00"
+    },
+    {
+      "name": "Smoked Whitefish",
+      "category": "Smoked & Cured Fish",
+      "calories": null,
+      "price": "$40.00+"
+    },
+    {
+      "name": "Pickled Lox - 1/2 lb",
+      "category": "Smoked & Cured Fish",
+      "calories": null,
+      "price": "$28.00"
+    },
+    {
+      "name": "Salt-Cured Belly Lox - 1/2 lb (SALTY!)",
+      "category": "Smoked & Cured Fish",
+      "calories": null,
+      "price": "$28.00"
+    },
+    {
+      "name": "Cream Cheese - 1/2 lb",
+      "category": "Spreads, Schmears & Salads",
+      "calories": null,
+      "price": "$7.50"
+    },
+    {
+      "name": "Whitefish & Baked Salmon Salad - 1/2 lb",
+      "category": "Spreads, Schmears & Salads",
+      "calories": null,
+      "price": "$17.00"
+    },
+    {
+      "name": "Hot Smoke / Cold Smoke 1/2 lb",
+      "category": "Spreads, Schmears & Salads",
+      "calories": null,
+      "price": "$17.00"
+    },
+    {
+      "name": "Chopped Liver - 1/2 lb",
+      "category": "Spreads, Schmears & Salads",
+      "calories": null,
+      "price": "$13.00"
+    },
+    {
+      "name": "Egg Salad - 1/2 lb",
+      "category": "Spreads, Schmears & Salads",
+      "calories": null,
+      "price": "$8.00"
+    },
+    {
+      "name": "Tuna Salad - 1/2 lb",
+      "category": "Spreads, Schmears & Salads",
+      "calories": null,
+      "price": "$8.00"
+    },
+    {
+      "name": "Cabbage Salad - Pint",
+      "category": "Spreads, Schmears & Salads",
+      "calories": null,
+      "price": "$10.50"
+    },
+    {
+      "name": "New Potato Salad - 1/2 lb",
+      "category": "Spreads, Schmears & Salads",
+      "calories": null,
+      "price": "$7.00"
+    },
+    {
+      "name": "Bagel",
+      "category": "Bagels & Bread",
+      "calories": null,
+      "price": "$2.00"
+    },
+    {
+      "name": "Half Dozen Bagels",
+      "category": "Bagels & Bread",
+      "calories": null,
+      "price": "$12.00"
+    },
+    {
+      "name": "Half Dozen Bialys",
+      "category": "Bagels & Bread",
+      "calories": null,
+      "price": "$12.00"
+    },
+    {
+      "name": "Shissel Rye",
+      "category": "Bagels & Bread",
+      "calories": null,
+      "price": "$5.50+"
+    },
+    {
+      "name": "Pumpernickel Bread",
+      "category": "Bagels & Bread",
+      "calories": null,
+      "price": "$5.50+"
+    },
+    {
+      "name": "Challah",
+      "category": "Bagels & Bread",
+      "calories": null,
+      "price": "$10.00"
+    },
+    {
+      "name": "Gluten-Free Bagels (6-pack)",
+      "category": "Bagels & Bread",
+      "calories": null,
+      "price": "$24.00"
+    },
+    {
+      "name": "Classic Bagel & Lox Sandwich",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$17.00"
+    },
+    {
+      "name": "Salad Sandwich",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$12.00"
+    },
+    {
+      "name": "Bagel & Schmear",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$5.50"
+    },
+    {
+      "name": "Super Heebster",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$19.00"
+    },
+    {
+      "name": "Daughters' Delight",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$22.00"
+    },
+    {
+      "name": "Pastrami Russ",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$18.00"
+    },
+    {
+      "name": "Mensch",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$22.00"
+    },
+    {
+      "name": "Shtetl",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$20.00"
+    },
+    {
+      "name": "Fancy Delancey",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$18.00"
+    },
+    {
+      "name": "Babka - loaf",
+      "category": "Sweets",
+      "calories": null,
+      "price": "$18.00"
+    },
+    {
+      "name": "Babka - slice",
+      "category": "Sweets",
+      "calories": null,
+      "price": "$4.00"
+    },
+    {
+      "name": "Black & White Cookie",
+      "category": "Sweets",
+      "calories": null,
+      "price": "$3.50"
+    },
+    {
+      "name": "Rugelach",
+      "category": "Sweets",
+      "calories": null,
+      "price": "$22.00"
+    },
+    {
+      "name": "Macaroons",
+      "category": "Sweets",
+      "calories": null,
+      "price": "$15.00"
+    },
+    {
+      "name": "Mandel Bread - 2 pieces",
+      "category": "Sweets",
+      "calories": null,
+      "price": "$3.00"
+    },
+    {
+      "name": "Sour Cream Coffee Cake",
+      "category": "Sweets",
+      "calories": null,
+      "price": "$5.50"
+    },
+    {
+      "name": "Marble Halvah - 1/2 lb",
+      "category": "Sweets",
+      "calories": null,
+      "price": "$6.00"
+    },
+    {
+      "name": "Seven Layer Halvah",
+      "category": "Sweets",
+      "calories": null,
+      "price": "$7.00"
+    },
+    {
+      "name": "Chocolate Caviar",
+      "category": "Sweets",
+      "calories": null,
+      "price": "$12.00"
+    },
+    {
+      "name": "Matzo Ball Soup",
+      "category": "Soup & Noshes",
+      "calories": null,
+      "price": "$14.00"
+    },
+    {
+      "name": "Mushroom Barley Soup",
+      "category": "Soup & Noshes",
+      "calories": null,
+      "price": "$12.00"
+    },
+    {
+      "name": "Summer Borscht",
+      "category": "Soup & Noshes",
+      "calories": null,
+      "price": "$12.00"
+    },
+    {
+      "name": "Potato Latkes",
+      "category": "Soup & Noshes",
+      "calories": null,
+      "price": "$18.00+"
+    },
+    {
+      "name": "Blintzes - pack of 8",
+      "category": "Soup & Noshes",
+      "calories": null,
+      "price": "$28.00"
+    },
+    {
+      "name": "Noodle Kugel (small)",
+      "category": "Soup & Noshes",
+      "calories": null,
+      "price": "$10.00"
+    },
+    {
+      "name": "Pickles from the Barrel",
+      "category": "Soup & Noshes",
+      "calories": null,
+      "price": "$9.00"
+    },
+    {
+      "name": "Osetra gueldenstaedtii",
+      "category": "Caviar & Roe",
+      "calories": null,
+      "price": "$260.00+"
+    },
+    {
+      "name": "American transmontanus",
+      "category": "Caviar & Roe",
+      "calories": null,
+      "price": "$220.00+"
+    },
+    {
+      "name": "Siberian baerii",
+      "category": "Caviar & Roe",
+      "calories": null,
+      "price": "$175.00+"
+    },
+    {
+      "name": "Hackleback",
+      "category": "Caviar & Roe",
+      "calories": null,
+      "price": "$110.00+"
+    },
+    {
+      "name": "Paddlefish",
+      "category": "Caviar & Roe",
+      "calories": null,
+      "price": "$90.00+"
+    },
+    {
+      "name": "Trout Roe",
+      "category": "Caviar & Roe",
+      "calories": null,
+      "price": "$30.00+"
+    },
+    {
+      "name": "Wild Alaskan Salmon Roe",
+      "category": "Caviar & Roe",
+      "calories": null,
+      "price": "$25.00+"
+    },
+    {
+      "name": "Wasabi Infused Flying Fish Roe",
+      "category": "Caviar & Roe",
+      "calories": null,
+      "price": "$16.00+"
+    },
+    {
+      "name": "Mini Blini",
+      "category": "Caviar & Roe",
+      "calories": null,
+      "price": "$18.00"
+    },
+    {
+      "name": "Creme Fraiche",
+      "category": "Caviar & Roe",
+      "calories": null,
+      "price": "$7.00"
+    },
+    {
+      "name": "Mother of Pearl Spoon",
+      "category": "Caviar & Roe",
+      "calories": null,
+      "price": "$12.00"
+    },
+    {
+      "name": "Dr. Brown's Soda",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$2.75"
+    },
+    {
+      "name": "Water",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$2.50"
+    },
+    {
+      "name": "Fresh Squeezed Orange Juice",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$6.00"
+    },
+    {
+      "name": "Beet & Lemon Shrub",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$4.00"
+    },
+    {
+      "name": "Lemonade",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$4.00"
+    },
+    {
+      "name": "Just Ice Tea",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$3.25"
+    },
+    {
+      "name": "Get Well Soon",
+      "category": "Gifts & Easy Ordering",
+      "calories": null,
+      "price": "$75.00"
+    },
+    {
+      "name": "New York Brunch",
+      "category": "Gifts & Easy Ordering",
+      "calories": null,
+      "price": "$150.00"
+    },
+    {
+      "name": "New Baby Gift",
+      "category": "Gifts & Easy Ordering",
+      "calories": null,
+      "price": "$130.00"
+    },
+    {
+      "name": "New York Nostalgia",
+      "category": "Gifts & Easy Ordering",
+      "calories": null,
+      "price": "$180.00"
+    },
+    {
+      "name": "Smoked Salmon Medley",
+      "category": "Gifts & Easy Ordering",
+      "calories": null,
+      "price": "$155.00"
+    },
+    {
+      "name": "The Weekender",
+      "category": "Gifts & Easy Ordering",
+      "calories": null,
+      "price": "$199.00"
+    },
+    {
+      "name": "Tinned Fish Gift Set",
+      "category": "Gifts & Easy Ordering",
+      "calories": null,
+      "price": "$50.00"
+    },
+    {
+      "name": "Caviar Lover's Black & White",
+      "category": "Gifts & Easy Ordering",
+      "calories": null,
+      "price": "$115.00"
+    },
+    {
+      "name": "Russ Caviar Trio",
+      "category": "Gifts & Easy Ordering",
+      "calories": null,
+      "price": "$440.00"
+    },
+    {
+      "name": "Osetra gueldenstaedtii Caviar Gift Set",
+      "category": "Gifts & Easy Ordering",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "American transmontanus Caviar Gift Set",
+      "category": "Gifts & Easy Ordering",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Siberian baerii Caviar Gift Set",
+      "category": "Gifts & Easy Ordering",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Hackleback Caviar Gift Set",
+      "category": "Gifts & Easy Ordering",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Paddlefish Caviar Gift Set",
+      "category": "Gifts & Easy Ordering",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Whole Tomato",
+      "category": "Sides & Grocery",
+      "calories": null,
+      "price": "$2.50"
+    },
+    {
+      "name": "Whole Red Onion",
+      "category": "Sides & Grocery",
+      "calories": null,
+      "price": "$1.50"
+    },
+    {
+      "name": "Capers",
+      "category": "Sides & Grocery",
+      "calories": null,
+      "price": "$4.50+"
+    },
+    {
+      "name": "Russ & Daughters Sardines in Olive Oil",
+      "category": "Sides & Grocery",
+      "calories": null,
+      "price": "$7.50"
+    },
+    {
+      "name": "Riga Gold Smoked Sprats in Oil",
+      "category": "Sides & Grocery",
+      "calories": null,
+      "price": "$6.00"
+    },
+    {
+      "name": "Conservas Ortiz Bonito del Norte \"Ventresca\" Tuna Belly",
+      "category": "Sides & Grocery",
+      "calories": null,
+      "price": "$18.00"
+    },
+    {
+      "name": "Bagel Chips",
+      "category": "Sides & Grocery",
+      "calories": null,
+      "price": "$5.00"
+    },
+    {
+      "name": "Hal's Chips",
+      "category": "Sides & Grocery",
+      "calories": null,
+      "price": "$2.00"
+    },
+    {
+      "name": "Gluten Free Crackers (Le Pain Des Fleurs Crispbread)",
+      "category": "Sides & Grocery",
+      "calories": null,
+      "price": "$7.00"
+    },
+    {
+      "name": "Finn Crisp",
+      "category": "Sides & Grocery",
+      "calories": null,
+      "price": "$6.00"
+    },
+    {
+      "name": "Private Blend Coffee Beans",
+      "category": "Sides & Grocery",
+      "calories": null,
+      "price": "$16.00"
+    },
+    {
+      "name": "Housemade Granola",
+      "category": "Sides & Grocery",
+      "calories": null,
+      "price": "$13.00"
+    },
+    {
+      "name": "Blueberry Vanilla Jam",
+      "category": "Sides & Grocery",
+      "calories": null,
+      "price": "$8.00"
+    },
+    {
+      "name": "Champlain Valley Honey",
+      "category": "Sides & Grocery",
+      "calories": null,
+      "price": "$7.50"
+    },
+    {
+      "name": "Streit's Matzo",
+      "category": "Sides & Grocery",
+      "calories": null,
+      "price": "$6.00"
+    }
+  ]
+}
