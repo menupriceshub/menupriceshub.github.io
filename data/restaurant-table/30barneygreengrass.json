@@ -1,0 +1,491 @@
+{
+  "title": "Barney Greengrass Menu With Price List",
+  "items": [
+    {
+      "name": "Rugelach",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$8.00"
+    },
+    {
+      "name": "Chocolate Babka Muffin",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$6.00"
+    },
+    {
+      "name": "New York Cheesecake",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$8.50"
+    },
+    {
+      "name": "Danish",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$5.50"
+    },
+    {
+      "name": "Large Black And White Cookie",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$6.00"
+    },
+    {
+      "name": "Mini Black And White Cookies (4 pieces)",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$9.00"
+    },
+    {
+      "name": "Rice Pudding",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$7.00"
+    },
+    {
+      "name": "Chocolate Covered Halvah Bar With Nuts",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$4.00"
+    },
+    {
+      "name": "Chocolate Layered Halvah",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$9.00"
+    },
+    {
+      "name": "Marble",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$9.00"
+    },
+    {
+      "name": "Marble Nut Halvah",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$9.00"
+    },
+    {
+      "name": "Large Loaf Of Chocolate Babka",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$17.50"
+    },
+    {
+      "name": "Seasonal Fruit",
+      "category": "Desserts",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Cream Cheese",
+      "category": "Sides",
+      "calories": null,
+      "price": "$3.50"
+    },
+    {
+      "name": "Vegetable Cream Cheese",
+      "category": "Sides",
+      "calories": null,
+      "price": "$4.50"
+    },
+    {
+      "name": "Scallion Cream Cheese",
+      "category": "Sides",
+      "calories": null,
+      "price": "$4.50"
+    },
+    {
+      "name": "Lox Cream Cheese Spread",
+      "category": "Sides",
+      "calories": null,
+      "price": "$7.00"
+    },
+    {
+      "name": "Lite (Low Fat) Cream Cheese",
+      "category": "Sides",
+      "calories": null,
+      "price": "$4.00"
+    },
+    {
+      "name": "Tofu (Non-Dairy) Cream Cheese",
+      "category": "Sides",
+      "calories": null,
+      "price": "$4.00"
+    },
+    {
+      "name": "Farmer Cheese",
+      "category": "Sides",
+      "calories": null,
+      "price": "$7.00"
+    },
+    {
+      "name": "Horseradish Cheddar Cheese With Flat Bread Crackers",
+      "category": "Sides",
+      "calories": null,
+      "price": "$12.50"
+    },
+    {
+      "name": "Creamy French Brie",
+      "category": "Sides",
+      "calories": null,
+      "price": "$11.50"
+    },
+    {
+      "name": "Imported Swiss Cheese",
+      "category": "Sides",
+      "calories": null,
+      "price": "$9.50"
+    },
+    {
+      "name": "Muenster Cheese",
+      "category": "Sides",
+      "calories": null,
+      "price": "$8.00"
+    },
+    {
+      "name": "Sweet Munchee Cheese",
+      "category": "Sides",
+      "calories": null,
+      "price": "$9.00"
+    },
+    {
+      "name": "Manchego Cheese",
+      "category": "Sides",
+      "calories": null,
+      "price": "$15.00"
+    },
+    {
+      "name": "Midnight Moon Cheese",
+      "category": "Sides",
+      "calories": null,
+      "price": "$18.00"
+    },
+    {
+      "name": "Sour Cream",
+      "category": "Sides",
+      "calories": null,
+      "price": "$4.50"
+    },
+    {
+      "name": "Pickled Onions And Cream Sauce",
+      "category": "Sides",
+      "calories": null,
+      "price": "$7.50"
+    },
+    {
+      "name": "Lettuce And Tomato",
+      "category": "Sides",
+      "calories": null,
+      "price": "$9.75"
+    },
+    {
+      "name": "Side Of Sliced Tomato",
+      "category": "Sides",
+      "calories": null,
+      "price": "$6.00"
+    },
+    {
+      "name": "Imported Preserve",
+      "category": "Sides",
+      "calories": null,
+      "price": "$1.50"
+    },
+    {
+      "name": "Imported Honey",
+      "category": "Sides",
+      "calories": null,
+      "price": "$1.50"
+    },
+    {
+      "name": "Cole Slaw",
+      "category": "Sides",
+      "calories": null,
+      "price": "$4.50"
+    },
+    {
+      "name": "Potato Salad",
+      "category": "Sides",
+      "calories": null,
+      "price": "$4.50"
+    },
+    {
+      "name": "Cucumber Salad",
+      "category": "Sides",
+      "calories": null,
+      "price": "$6.00"
+    },
+    {
+      "name": "Green Stuffed Olives",
+      "category": "Sides",
+      "calories": null,
+      "price": "$6.00"
+    },
+    {
+      "name": "Greek Olives (Moslinas)",
+      "category": "Sides",
+      "calories": null,
+      "price": "$6.00"
+    },
+    {
+      "name": "Capers",
+      "category": "Sides",
+      "calories": null,
+      "price": "$2.50"
+    },
+    {
+      "name": "Pickle",
+      "category": "Sides",
+      "calories": null,
+      "price": "$4.00"
+    },
+    {
+      "name": "Pickled Tomato",
+      "category": "Sides",
+      "calories": null,
+      "price": "$4.00"
+    },
+    {
+      "name": "Red Peppers",
+      "category": "Sides",
+      "calories": null,
+      "price": "$5.00"
+    },
+    {
+      "name": "Stewed Prunes",
+      "category": "Sides",
+      "calories": null,
+      "price": "$6.00"
+    },
+    {
+      "name": "Potato, Kasha",
+      "category": "Sides",
+      "calories": null,
+      "price": "$7.50"
+    },
+    {
+      "name": "Spinach Knish",
+      "category": "Sides",
+      "calories": null,
+      "price": "$7.50"
+    },
+    {
+      "name": "Noodle Pudding",
+      "category": "Sides",
+      "calories": null,
+      "price": "$8.50"
+    },
+    {
+      "name": "Flat Bread Crackers",
+      "category": "Sides",
+      "calories": null,
+      "price": "$9.00"
+    },
+    {
+      "name": "Pletzel (Large Bialy Wheel)",
+      "category": "Sides",
+      "calories": null,
+      "price": "$7.00"
+    },
+    {
+      "name": "Assorted Pickle Plate",
+      "category": "Sides",
+      "calories": null,
+      "price": "$10.00"
+    },
+    {
+      "name": "Pickled Herring In Cream Sauce",
+      "category": "Herrings",
+      "calories": null,
+      "price": "$16.50"
+    },
+    {
+      "name": "Home Made Chopped Herring",
+      "category": "Herrings",
+      "calories": null,
+      "price": "$15.50"
+    },
+    {
+      "name": "Fillet Of Matjes Herring",
+      "category": "Herrings",
+      "calories": null,
+      "price": "$15.50"
+    },
+    {
+      "name": "Fillet Of Schmaltz Herring (Very Salty)",
+      "category": "Herrings",
+      "calories": null,
+      "price": "$15.50"
+    },
+    {
+      "name": "Broiled Imported Kippers And Onions",
+      "category": "Herrings",
+      "calories": null,
+      "price": "$17.50"
+    },
+    {
+      "name": "Fresh Malosol Osetra Caviar With Chopped Eggs And Onions",
+      "category": "Caviar",
+      "calories": null,
+      "price": "$249.00"
+    },
+    {
+      "name": "American Caviar With Chopped Egg And Onion",
+      "category": "Caviar",
+      "calories": null,
+      "price": "$90.00"
+    },
+    {
+      "name": "Caviar Sampler",
+      "category": "Caviar",
+      "calories": null,
+      "price": "$180.00"
+    },
+    {
+      "name": "Red Salmon Caviar With Sour Cream",
+      "category": "Caviar",
+      "calories": null,
+      "price": "$23.00"
+    },
+    {
+      "name": "Nova Scotia Salmon Scrambled With Eggs And Onions",
+      "category": "Specialties",
+      "calories": null,
+      "price": "$21.00"
+    },
+    {
+      "name": "Sturgeon Scrambled With Eggs And Onions",
+      "category": "Specialties",
+      "calories": null,
+      "price": "$24.00"
+    },
+    {
+      "name": "Combination Of Sturgeon And Nova Scotia Salmon Scrambled With Eggs And Onions",
+      "category": "Specialties",
+      "calories": null,
+      "price": "$26.00"
+    },
+    {
+      "name": "Lox (Salty) Scrambled With Eggs And Onions",
+      "category": "Specialties",
+      "calories": null,
+      "price": "$21.00"
+    },
+    {
+      "name": "Pastrami Salmon Scrambled With Eggs And Onions",
+      "category": "Specialties",
+      "calories": null,
+      "price": "$21.00"
+    },
+    {
+      "name": "Nova Scotia Heads And Wings Broiled With Onions",
+      "category": "Specialties",
+      "calories": null,
+      "price": "$20.00"
+    },
+    {
+      "name": "Sturgeon",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$25.00"
+    },
+    {
+      "name": "Nova Scotia Salmon",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$21.00"
+    },
+    {
+      "name": "Sturgeon And Nova Scotia Salmon",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$27.50"
+    },
+    {
+      "name": "Nova Scotia Salmon With Swiss Cheese",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$23.00"
+    },
+    {
+      "name": "Lox (Salty)",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$21.00"
+    },
+    {
+      "name": "Kippered (Baked) Salmon",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$21.00"
+    },
+    {
+      "name": "Kippered (Baked) Salmon And Nova Scotia Salmon",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$24.00"
+    },
+    {
+      "name": "Pastrami Salmon",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$21.00"
+    },
+    {
+      "name": "House Cured Gravlox",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$21.00"
+    },
+    {
+      "name": "Whitefish",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$21.00"
+    },
+    {
+      "name": "Whitefish And Nova Scotia Salmon",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$23.00"
+    },
+    {
+      "name": "Home Made Whitefish Salad",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$17.00"
+    },
+    {
+      "name": "Home Made Kippered Salmon Salad",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$18.50"
+    },
+    {
+      "name": "Sable",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$25.00"
+    },
+    {
+      "name": "Sable And Nova Scotia Salmon",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$27.50"
+    },
+    {
+      "name": "Sturgeon And Sable",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$30.00"
+    },
+    {
+      "name": "Solid White Tuna Fish",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$15.00"
+    }
+  ]
+} 
