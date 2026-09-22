@@ -1,0 +1,48 @@
+{
+  "title": "Commander's Palace Lunch Menu With Price List",
+  "items": [
+    { "name": "Chef Meg's Classic Creole Luncheon (Commander's Turtle Soup, Crispy Pork Jowl, Creole Bread Pudding Souffle)", "category": "Fixed Menus", "calories": null, "price": "$49.00" },
+    { "name": "Cochon de Lait Tostada (2 Course Lunch Special, incl. soup or salad)", "category": "Today's 2 Course Lunch Specials", "calories": null, "price": "$23.00" },
+    { "name": "Des Allemands Catfish (2 Course Lunch Special, incl. soup or salad)", "category": "Today's 2 Course Lunch Specials", "calories": null, "price": "$25.00" },
+    { "name": "Eat Fit NOLA (Crushed Crawfish Coconut Frappe, Curry Spiced Wild White Shrimp, Sorbet du Jour)", "category": "Fixed Menus", "calories": null, "price": "$46.00" },
+
+    { "name": "Classic Daiquiri", "category": "Lunch Libations", "calories": null, "price": "$5" },
+    { "name": "The Crescent City Cooler", "category": "Lunch Libations", "calories": null, "price": "$5" },
+    { "name": "2024 True Coast \"Coastal Reserve\" Chardonnay", "category": "Featured Wines", "calories": null, "price": "$5.99" },
+    { "name": "2024 Maison Marigny \"Mediterranee\" Rose", "category": "Featured Wines", "calories": null, "price": "$5.99" },
+    { "name": "2023 True Coast \"Coastal Reserve\" Pinot Noir", "category": "Featured Wines", "calories": null, "price": "$5.99" },
+
+    { "name": "Wild White Shrimp Remoulade", "category": "Appetizers", "calories": null, "price": "$15.00" },
+    { "name": "Shrimp & Tasso Henican", "category": "Appetizers", "calories": null, "price": "$15.50" },
+    { "name": "Corn Fried Oysters", "category": "Appetizers", "calories": null, "price": "$17.00" },
+    { "name": "Hickory Smoked Cauliflower", "category": "Appetizers", "calories": null, "price": "$14.00" },
+    { "name": "Confit Eggplant & Louisiana Crawfish", "category": "Appetizers", "calories": null, "price": "$17.50" },
+
+    { "name": "Garlic Wilted Spinach", "category": "Sides", "calories": null, "price": "$7.00" },
+    { "name": "Creole Smashed New Potatoes", "category": "Sides", "calories": null, "price": "$8.00" },
+    { "name": "Tangy Bacon & Apple Cider Braised Cabbage", "category": "Sides", "calories": null, "price": "$8.00" },
+    { "name": "Cognac Flambeed Louisiana Crawfish Tails", "category": "Sides", "calories": null, "price": "$16.00" },
+
+    { "name": "Turtle Soup au Sherry", "category": "Soups & Salads", "calories": null, "price": "$12.00" },
+    { "name": "Commander's Creole Gumbo", "category": "Soups & Salads", "calories": null, "price": "$12.00" },
+    { "name": "Soup Du Jour", "category": "Soups & Salads", "calories": null, "price": "$11.00" },
+    { "name": "Soups 1-1-1 (demitasse tasting of all three soups)", "category": "Soups & Salads", "calories": null, "price": "$13.00" },
+    { "name": "Commander's Crisp Romaine Salad", "category": "Soups & Salads", "calories": null, "price": "$12.00" },
+    { "name": "Lamb Pastrami \"Chopped\" Salad", "category": "Soups & Salads", "calories": null, "price": "$17.50" },
+
+    { "name": "Bronzed Gulf Fish", "category": "Entrees", "calories": null, "price": "$34.00" },
+    { "name": "Curry Spiced Wild White Shrimp", "category": "Entrees", "calories": null, "price": "$34.00" },
+    { "name": "Tournedos of Black Angus Beef", "category": "Entrees", "calories": null, "price": "$44.00" },
+    { "name": "BBQ'd Short Rib Bourguignon", "category": "Entrees", "calories": null, "price": "$28.00" },
+    { "name": "Acorn Squash Gratinee", "category": "Entrees", "calories": null, "price": "$32.00" },
+    { "name": "Add Breaux Bridge Crawfish Tails (to entree)", "category": "Entrees", "calories": null, "price": "$16.00" },
+
+    { "name": "Creole Bread Pudding Souffle (must be ordered 20 minutes in advance)", "category": "Desserts", "calories": null, "price": "$11.00" },
+    { "name": "Ponchatoula Strawberry Shortcake (must be ordered 20 minutes in advance)", "category": "Desserts", "calories": null, "price": "$12.00" },
+    { "name": "Pecan Pie a la Mode", "category": "Desserts", "calories": null, "price": "$10.00" },
+    { "name": "Creole Cream Cheese Cheesecake", "category": "Desserts", "calories": null, "price": "$12.00" },
+    { "name": "Piety & Desire Bushwacker Chocolate Tart", "category": "Desserts", "calories": null, "price": "$12.00" },
+
+    { "name": "25 Cent Martini (Classic, Commander's, Cosmopolitan, or Ray's Melon - with purchase of any entree, limit 3 per person)", "category": "Martinis", "calories": null, "price": "$0.25" }
+  ]
+}
