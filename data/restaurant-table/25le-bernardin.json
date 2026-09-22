@@ -1,0 +1,75 @@
+{
+  "title": "Le Bernardin Menu With Price List",
+  "items": [
+    {
+      "name": "Hibiscus & Ginger",
+      "category": "Non-Alcoholic Cocktails",
+      
+    },
+    {
+      "name": "Thyme Lemonade Spritz",
+      "category": "Non-Alcoholic Cocktails",
+      
+    },
+    {
+      "name": "The Garden Cooler",
+      "category": "Non-Alcoholic Cocktails",
+      
+    },
+    {
+      "name": "Ahimsa",
+      "category": "Non-Alcoholic Cocktails",
+      
+    },
+    {
+      "name": "MLC",
+      "category": "Cocktails",
+      
+    },
+    {
+      "name": "51st Street Manhattan",
+      "category": "Cocktails",
+      
+    },
+    {
+      "name": "Velvet Grove",
+      "category": "Cocktails",
+      
+    },
+    {
+      "name": "Trois-Rivières",
+      "category": "Cocktails",
+      
+    },
+    {
+      "name": "Cap Chevalier",
+      "category": "Cocktails",
+      
+    },
+    {
+      "name": "Mahina Coco Rhum",
+      "category": "Cocktails",
+      
+    },
+    {
+      "name": "Petal And Shell",
+      "category": "Cocktails",
+      
+    },
+    {
+      "name": "Fleur De Pêche",
+      "category": "Cocktails",
+      
+    },
+    {
+      "name": "Midtown Express",
+      "category": "Dessert Cocktails",
+      
+    },
+    {
+      "name": "Montserrat",
+      "category": "Dessert Cocktails",
+      
+    }
+  ]
+}
