@@ -1,0 +1,257 @@
+{
+  "title": "FIG Menu With Price List",
+  "items": [
+    {
+      "name": "Broiled Steamboat Creek Oysters",
+      "category": "Menu",
+      "calories": null,
+      "price": "$19"
+    },
+    {
+      "name": "Burnt Eggplant + Housemade Cottage Cheese",
+      "category": "Menu",
+      "calories": null,
+      "price": "$19"
+    },
+    {
+      "name": "Chicken Liver Pâté",
+      "category": "Menu",
+      "calories": null,
+      "price": "$23"
+    },
+    {
+      "name": "Lady Edison Country Ham + Melon",
+      "category": "Menu",
+      "calories": null,
+      "price": "$24"
+    },
+    {
+      "name": "Asian Pear + Fig + Chicory Salad",
+      "category": "Menu",
+      "calories": null,
+      "price": "$22"
+    },
+    {
+      "name": "Carne Cruda",
+      "category": "Menu",
+      "calories": null,
+      "price": "$25"
+    },
+    {
+      "name": "Poached Lamb Tonnato",
+      "category": "Menu",
+      "calories": null,
+      "price": "$24"
+    },
+    {
+      "name": "Vine Ripe Tomato Tarte Tatin",
+      "category": "Menu",
+      "calories": null,
+      "price": "$30"
+    },
+    {
+      "name": "Blue Crab Ravioli",
+      "category": "Menu",
+      "calories": null,
+      "price": "$33"
+    },
+    {
+      "name": "Ricotta Gnocchi + Lamb Bolognese",
+      "category": "Menu",
+      "calories": null,
+      "price": "$32"
+    },
+    {
+      "name": "Jumbo Flounder En Croûte",
+      "category": "Menu",
+      "calories": null,
+      "price": "$48"
+    },
+    {
+      "name": "Grilled Snowy Grouper",
+      "category": "Menu",
+      "calories": null,
+      "price": "$49"
+    },
+    {
+      "name": "Sautéed Snapper",
+      "category": "Menu",
+      "calories": null,
+      "price": "$50"
+    },
+    {
+      "name": "Bouillabaisse",
+      "category": "Menu",
+      "calories": null,
+      "price": "$48"
+    },
+    {
+      "name": "Cast Iron Ribeye",
+      "category": "Menu",
+      "calories": null,
+      "price": "$95"
+    },
+    {
+      "name": "Yukon Gold Potato Purée",
+      "category": "Menu",
+      "calories": null,
+      "price": "$16"
+    },
+    {
+      "name": "Sticky Sorghum Pudding",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$15"
+    },
+    {
+      "name": "Dark Chocolate Budino",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$14"
+    },
+    {
+      "name": "Cantaloupe Sorbet",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$10"
+    },
+    {
+      "name": "Golden Chamomile Blossoms",
+      "category": "Rishi Tea",
+      "calories": null,
+      "price": "$6"
+    },
+    {
+      "name": "Mystic Mint",
+      "category": "Rishi Tea",
+      "calories": null,
+      "price": "$6"
+    },
+    {
+      "name": "White Peony",
+      "category": "Rishi Tea",
+      "calories": null,
+      "price": "$6"
+    },
+    {
+      "name": "Kukicha Green",
+      "category": "Rishi Tea",
+      "calories": null,
+      "price": "$6"
+    },
+    {
+      "name": "Chinese Breakfast",
+      "category": "Rishi Tea",
+      "calories": null,
+      "price": "$6"
+    },
+    {
+      "name": "Drip Coffee",
+      "category": "Counter Culture Coffee",
+      "calories": null,
+      "price": "$5"
+    },
+    {
+      "name": "Double Espresso",
+      "category": "Counter Culture Coffee",
+      "calories": null,
+      "price": "$5"
+    },
+    {
+      "name": "Cappuccino",
+      "category": "Counter Culture Coffee",
+      "calories": null,
+      "price": "$6"
+    },
+    {
+      "name": "Latte",
+      "category": "Counter Culture Coffee",
+      "calories": null,
+      "price": "$6"
+    },
+    {
+      "name": "Golden Ale, Athletic, 'Upside Dawn'",
+      "category": "Non-Alcoholic Beer",
+      "calories": null,
+      "price": "$7"
+    },
+    {
+      "name": "India Pale Ale, Samuel Adams 'Just the Haze'",
+      "category": "Non-Alcoholic Beer",
+      "calories": null,
+      "price": "$9"
+    },
+    {
+      "name": "Stout, Guinness 0",
+      "category": "Non-Alcoholic Beer",
+      "calories": null,
+      "price": "$9"
+    },
+    {
+      "name": "Pink Lemonade",
+      "category": "Non-Alcoholic",
+      "calories": null,
+      "price": "$9"
+    },
+    {
+      "name": "Orchard Aperitivo",
+      "category": "Non-Alcoholic",
+      "calories": null,
+      "price": "$13"
+    },
+    {
+      "name": "Coca-Cola Classic",
+      "category": "Soda",
+      "calories": null,
+      "price": "$6"
+    },
+    {
+      "name": "Diet Coke",
+      "category": "Soda",
+      "calories": null,
+      "price": "$6"
+    },
+    {
+      "name": "Premium Tonic",
+      "category": "Soda",
+      "calories": null,
+      "price": "$6"
+    },
+    {
+      "name": "Amaro Falso",
+      "category": "Soda",
+      "calories": null,
+      "price": "$14"
+    },
+    {
+      "name": "Phony Negroni",
+      "category": "Soda",
+      "calories": null,
+      "price": "$14"
+    },
+    {
+      "name": "Seagram's Ginger Ale",
+      "category": "Soda",
+      "calories": null,
+      "price": "$6"
+    },
+    {
+      "name": "Sprite",
+      "category": "Soda",
+      "calories": null,
+      "price": "$6"
+    },
+    {
+      "name": "Sparkling Rosé of Pinot Noir, Leitz, 'Eins Zwei Zero'",
+      "category": "Non-Alcoholic Wines",
+      "calories": null,
+      "price": "$14"
+    },
+    {
+      "name": "Riesling, Fio, 'Fabelhaft'",
+      "category": "Non-Alcoholic Wines",
+      "calories": null,
+      "price": "$14"
+    }
+  ]
+}
