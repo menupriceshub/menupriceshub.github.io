@@ -1,0 +1,521 @@
+{
+  "title": "Ninfa's Menu With Price List",
+  "items": [
+    {
+      "name": "Guacamole (Small)",
+      "category": "Appetizers",
+      "calories": null,
+      "price": "$12"
+    },
+    {
+      "name": "Guacamole (Large)",
+      "category": "Appetizers",
+      "calories": null,
+      "price": "$19"
+    },
+    {
+      "name": "Chile Con Queso",
+      "category": "Appetizers",
+      "calories": null,
+      "price": "$13"
+    },
+    {
+      "name": "Add Picadillo",
+      "category": "Appetizers",
+      "calories": null,
+      "price": "$3"
+    },
+    {
+      "name": "Add Chorizo",
+      "category": "Appetizers",
+      "calories": null,
+      "price": "$3"
+    },
+    {
+      "name": "Add Beef Fajitas",
+      "category": "Appetizers",
+      "calories": null,
+      "price": "$6"
+    },
+    {
+      "name": "Queso Asado",
+      "category": "Appetizers",
+      "calories": null,
+      "price": "$13"
+    },
+    {
+      "name": "Queso Flameado",
+      "category": "Appetizers",
+      "calories": null,
+      "price": "$15"
+    },
+    {
+      "name": "Coctel Costeño (Small)",
+      "category": "Appetizers",
+      "calories": null,
+      "price": "$12"
+    },
+    {
+      "name": "Coctel Costeño (Large)",
+      "category": "Appetizers",
+      "calories": null,
+      "price": "$18"
+    },
+    {
+      "name": "Roasted Gulf Oysters",
+      "category": "Appetizers",
+      "calories": null,
+      "price": "$16"
+    },
+    {
+      "name": "Mushroom Quesadillas",
+      "category": "Appetizers",
+      "calories": null,
+      "price": "$13"
+    },
+    {
+      "name": "Add Grilled Chicken",
+      "category": "Appetizers",
+      "calories": null,
+      "price": "$6"
+    },
+    {
+      "name": "Add Beef Fajitas",
+      "category": "Appetizers",
+      "calories": null,
+      "price": "$9"
+    },
+    {
+      "name": "Add Shrimp",
+      "category": "Appetizers",
+      "calories": null,
+      "price": "$6"
+    },
+    {
+      "name": "Nachos",
+      "category": "Appetizers",
+      "calories": null,
+      "price": "$14"
+    },
+    {
+      "name": "Add Grilled Chicken",
+      "category": "Appetizers",
+      "calories": null,
+      "price": "$6"
+    },
+    {
+      "name": "Add Beef Fajitas",
+      "category": "Appetizers",
+      "calories": null,
+      "price": "$9"
+    },
+    {
+      "name": "Add Shrimp",
+      "category": "Appetizers",
+      "calories": null,
+      "price": "$7"
+    },
+    {
+      "name": "Sopa Azteca",
+      "category": "Soup",
+      "calories": null,
+      "price": "$14"
+    },
+    {
+      "name": "Caesar Salad",
+      "category": "Salad",
+      "calories": null,
+      "price": "$12"
+    },
+    {
+      "name": "Add Grilled Chicken Breast",
+      "category": "Salad",
+      "calories": null,
+      "price": "$6"
+    },
+    {
+      "name": "Add Beef Fajitas",
+      "category": "Salad",
+      "calories": null,
+      "price": "$9"
+    },
+    {
+      "name": "Add Shrimp",
+      "category": "Salad",
+      "calories": null,
+      "price": "$12"
+    },
+    {
+      "name": "Verde Salad",
+      "category": "Salad",
+      "calories": null,
+      "price": "$12"
+    },
+    {
+      "name": "Add Grilled Chicken",
+      "category": "Salad",
+      "calories": null,
+      "price": "$6"
+    },
+    {
+      "name": "Add Beef Fajitas",
+      "category": "Salad",
+      "calories": null,
+      "price": "$9"
+    },
+    {
+      "name": "Add Grilled Shrimp",
+      "category": "Salad",
+      "calories": null,
+      "price": "$12"
+    },
+    {
+      "name": "India",
+      "category": "Tostada",
+      "calories": null,
+      "price": "$14"
+    },
+    {
+      "name": "Add Grilled Chicken",
+      "category": "Tostada",
+      "calories": null,
+      "price": "$6"
+    },
+    {
+      "name": "Add Beef Fajita",
+      "category": "Tostada",
+      "calories": null,
+      "price": "$9"
+    },
+    {
+      "name": "Add Shrimp",
+      "category": "Tostada",
+      "calories": null,
+      "price": "$12"
+    },
+    {
+      "name": "Antiguas",
+      "category": "Enchiladas",
+      "calories": null,
+      "price": "$17"
+    },
+    {
+      "name": "Tejanas",
+      "category": "Enchiladas",
+      "calories": null,
+      "price": "$24"
+    },
+    {
+      "name": "Suizas",
+      "category": "Enchiladas",
+      "calories": null,
+      "price": "$19"
+    },
+    {
+      "name": "Del Mar",
+      "category": "Enchiladas",
+      "calories": null,
+      "price": "$25"
+    },
+    {
+      "name": "Carnitas",
+      "category": "Enchiladas",
+      "calories": null,
+      "price": "$20"
+    },
+    {
+      "name": "Mole",
+      "category": "Enchiladas",
+      "calories": null,
+      "price": "$20"
+    },
+    {
+      "name": "Ninfa's Award Winning Fajita Burger",
+      "category": "Burger",
+      "calories": null,
+      "price": "$24"
+    },
+    {
+      "name": "Beef Fajitas",
+      "category": "Mama Ninfa's Original Tacos Al Carbon",
+      "calories": null,
+      "price": "$25"
+    },
+    {
+      "name": "Grilled Chicken Breast",
+      "category": "Mama Ninfa's Original Tacos Al Carbon",
+      "calories": null,
+      "price": "$22"
+    },
+    {
+      "name": "El Eddie",
+      "category": "Tacos",
+      "calories": null,
+      "price": "$19"
+    },
+    {
+      "name": "Musicos",
+      "category": "Tacos",
+      "calories": null,
+      "price": "$22"
+    },
+    {
+      "name": "Mariscos",
+      "category": "Tacos",
+      "calories": null,
+      "price": "$22"
+    },
+    {
+      "name": "Marinated and Grilled Beef Skirt Steak (Medium)",
+      "category": "Fajita Plates",
+      "calories": null,
+      "price": "$42"
+    },
+    {
+      "name": "Marinated and Grilled Beef Skirt Steak (Large)",
+      "category": "Fajita Plates",
+      "calories": null,
+      "price": "$64"
+    },
+    {
+      "name": "Grilled Chicken (Medium)",
+      "category": "Fajita Plates",
+      "calories": null,
+      "price": "$29"
+    },
+    {
+      "name": "Grilled Chicken (Large)",
+      "category": "Fajita Plates",
+      "calories": null,
+      "price": "$47"
+    },
+    {
+      "name": "Chicken and Beef Combination (Medium)",
+      "category": "Fajita Plates",
+      "calories": null,
+      "price": "$38"
+    },
+    {
+      "name": "Chicken and Beef Combination (Large)",
+      "category": "Fajita Plates",
+      "calories": null,
+      "price": "$55"
+    },
+    {
+      "name": "Grilled Veggie Fajitas (Medium)",
+      "category": "Fajita Plates",
+      "calories": null,
+      "price": "$20"
+    },
+    {
+      "name": "Grilled Veggie Fajitas (Large)",
+      "category": "Fajita Plates",
+      "calories": null,
+      "price": "$30"
+    },
+    {
+      "name": "Berry (Medium)",
+      "category": "Famous Off The Menu Toppings",
+      "calories": null,
+      "price": "$6"
+    },
+    {
+      "name": "Berry (Large)",
+      "category": "Famous Off The Menu Toppings",
+      "calories": null,
+      "price": "$8"
+    },
+    {
+      "name": "Chihuahua (Medium)",
+      "category": "Famous Off The Menu Toppings",
+      "calories": null,
+      "price": "$6"
+    },
+    {
+      "name": "Chihuahua (Large)",
+      "category": "Famous Off The Menu Toppings",
+      "calories": null,
+      "price": "$8"
+    },
+    {
+      "name": "Woodfire Grilled Quail",
+      "category": "Extras",
+      "calories": null,
+      "price": "$12 each"
+    },
+    {
+      "name": "Shrimp A La Playa",
+      "category": "Extras",
+      "calories": null,
+      "price": "$4 each"
+    },
+    {
+      "name": "Bacon-Wrapped Diablo Shrimp",
+      "category": "Extras",
+      "calories": null,
+      "price": "$5 each"
+    },
+    {
+      "name": "Beef Tamale",
+      "category": "Extras",
+      "calories": null,
+      "price": "$5"
+    },
+    {
+      "name": "Costilla De Res",
+      "category": "Extras",
+      "calories": null,
+      "price": "$10"
+    },
+    {
+      "name": "Smoked Sausage",
+      "category": "Extras",
+      "calories": null,
+      "price": "$5"
+    },
+    {
+      "name": "Pickled Carrots",
+      "category": "Extras",
+      "calories": null,
+      "price": "$2"
+    },
+    {
+      "name": "Redfish Zarandeado",
+      "category": "Platos Del Mar",
+      "calories": null,
+      "price": "$33"
+    },
+    {
+      "name": "Snapper Veracruzano",
+      "category": "Platos Del Mar",
+      "calories": null,
+      "price": "$34"
+    },
+    {
+      "name": "Shrimp a la Playa",
+      "category": "Platos Del Mar",
+      "calories": null,
+      "price": "$31"
+    },
+    {
+      "name": "Plato Costeño",
+      "category": "Platos Del Mar",
+      "calories": null,
+      "price": "$30"
+    },
+    {
+      "name": "Tejas Combo",
+      "category": "Platos Tejanos",
+      "calories": null,
+      "price": "$25"
+    },
+    {
+      "name": "El Henry",
+      "category": "Platos Tejanos",
+      "calories": null,
+      "price": "$22"
+    },
+    {
+      "name": "Flautas",
+      "category": "Platos Tejanos",
+      "calories": null,
+      "price": "$22"
+    },
+    {
+      "name": "Delicioso",
+      "category": "Platos Tejanos",
+      "calories": null,
+      "price": "$25"
+    },
+    {
+      "name": "Costillas de Res",
+      "category": "Platos Fuertes",
+      "calories": null,
+      "price": "$28"
+    },
+    {
+      "name": "Pollo Asado Estilo NL",
+      "category": "Platos Fuertes",
+      "calories": null,
+      "price": "$22"
+    },
+    {
+      "name": "Grilled Quail",
+      "category": "Platos Fuertes",
+      "calories": null,
+      "price": "$32"
+    },
+    {
+      "name": "Carnitas",
+      "category": "Platos Fuertes",
+      "calories": null,
+      "price": "$24"
+    },
+    {
+      "name": "El Nopalito",
+      "category": "Ninfa's Mixtas",
+      "calories": null,
+      "price": "$85"
+    },
+    {
+      "name": "Parilla Mixta",
+      "category": "Ninfa's Mixtas",
+      "calories": null,
+      "price": "$115"
+    },
+    {
+      "name": "Aguas Frescas",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$5"
+    },
+    {
+      "name": "Natura™ Filter Water",
+      "category": "Beverages",
+      "calories": null,
+      "price": "Gratis"
+    },
+    {
+      "name": "Topo Chico",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$5"
+    },
+    {
+      "name": "Mexican Coca Cola",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$5"
+    },
+    {
+      "name": "Soft Drinks",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$4"
+    },
+    {
+      "name": "Iced Tea",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$4"
+    },
+    {
+      "name": "Coffee / Iced Coffee",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$4"
+    },
+    {
+      "name": "Espresso / Cappuccino",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$6"
+    },
+    {
+      "name": "Cafe De Olla Cold Brew",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$6"
+    }
+  ]
+}
