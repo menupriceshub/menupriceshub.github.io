@@ -1,0 +1,527 @@
+{
+  "title": "Roscoe's House of Chicken & Waffles Menu With Price List",
+  "items": [
+    {
+      "name": "Syrup",
+      "category": "Extra Condiments",
+      "calories": null,
+      "price": "$0.60"
+    },
+    {
+      "name": "Ketchup",
+      "category": "Extra Condiments",
+      "calories": null,
+      "price": "$0.60"
+    },
+    {
+      "name": "Roscoe's Original Hot Sauce",
+      "category": "Extra Condiments",
+      "calories": null,
+      "price": "$0.50"
+    },
+    {
+      "name": "Extra Salad Dressing",
+      "category": "Extra Condiments",
+      "calories": null,
+      "price": "$2.50"
+    },
+    {
+      "name": "Roscoe's \"Good Herb Blend\"",
+      "category": "Extra Condiments",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Louisiana Hot Sauce (Bottle)",
+      "category": "Extra Condiments",
+      "calories": null,
+      "price": "$8.00"
+    },
+    {
+      "name": "Yellow Chili Peppers",
+      "category": "Extra Condiments",
+      "calories": null,
+      "price": "$0.60"
+    },
+    {
+      "name": "Roscoe's Seasoning Salt-Bottle",
+      "category": "Extra Condiments",
+      "calories": null,
+      "price": "$8.00"
+    },
+    {
+      "name": "Roscoe's Original Pepper Sauce (Bottle)",
+      "category": "Extra Condiments",
+      "calories": null,
+      "price": "$8.00"
+    },
+    {
+      "name": "Butter",
+      "category": "Extra Condiments",
+      "calories": null,
+      "price": "$0.60"
+    },
+    {
+      "name": "Louisiana Hot Sauce",
+      "category": "Extra Condiments",
+      "calories": null,
+      "price": "$0.50"
+    },
+    {
+      "name": "Roscoe's Red Reaper Hot Sauce (Bottle)",
+      "category": "Extra Condiments",
+      "calories": null,
+      "price": "$8.00"
+    },
+    {
+      "name": "Add Cheese",
+      "category": "Extra Condiments",
+      "calories": null,
+      "price": "$1.25"
+    },
+    {
+      "name": "Breakfast Sandwich",
+      "category": "Home Style",
+      "calories": null,
+      "price": "$14.99"
+    },
+    {
+      "name": "The Oscar Two Eggs",
+      "category": "Home Style",
+      "calories": null,
+      "price": "$12.50"
+    },
+    {
+      "name": "Homestyle #2 2 Sausage, Waffles, And 2 Eggs",
+      "category": "Home Style",
+      "calories": null,
+      "price": "$17.50"
+    },
+    {
+      "name": "Homestyle #1 2 Sausage Patties, 2 Eggs, Grits & Biscuit",
+      "category": "Home Style",
+      "calories": null,
+      "price": "$15.75"
+    },
+    {
+      "name": "Scoe's 1/4 Chicken Smothered W Gravy & Onions",
+      "category": "Home Style",
+      "calories": null,
+      "price": "$24.75"
+    },
+    {
+      "name": "Roscoe's Original Tenders",
+      "category": "Home Style",
+      "calories": null,
+      "price": "$24.00"
+    },
+    {
+      "name": "Thigh, Leg, Rice, With Gravy & Biscuit",
+      "category": "Home Style",
+      "calories": null,
+      "price": "$18.25"
+    },
+    {
+      "name": "Leg Or Thigh & Waffle",
+      "category": "Home Style",
+      "calories": null,
+      "price": "$14.75"
+    },
+    {
+      "name": "Country Boy Special",
+      "category": "Home Style",
+      "calories": null,
+      "price": "$24.00"
+    },
+    {
+      "name": "Sir Michael",
+      "category": "Home Style",
+      "calories": null,
+      "price": "$21.50"
+    },
+    {
+      "name": "Herb's Special 1/2 Chicken Smothered W Gravy & Onions",
+      "category": "Home Style",
+      "calories": null,
+      "price": "$31.25"
+    },
+    {
+      "name": "Carol C Special",
+      "category": "Home Style",
+      "calories": null,
+      "price": "$19.50"
+    },
+    {
+      "name": "The Stubby",
+      "category": "Home Style",
+      "calories": null,
+      "price": "$24.50"
+    },
+    {
+      "name": "Fresh Chicken Livers",
+      "category": "Home Style",
+      "calories": null,
+      "price": "$20.99"
+    },
+    {
+      "name": "Lord Harvey",
+      "category": "Home Style",
+      "calories": null,
+      "price": "$25.99"
+    },
+    {
+      "name": "Stymies Choice",
+      "category": "Home Style",
+      "calories": null,
+      "price": "$22.50"
+    },
+    {
+      "name": "Jean's Delight (Tuesday, Wednesday Special)",
+      "category": "Home Style",
+      "calories": null,
+      "price": "$16.25"
+    },
+    {
+      "name": "Buckwheat Waffle",
+      "category": "Home Style",
+      "calories": null,
+      "price": "$11.25"
+    },
+    {
+      "name": "The Oscar",
+      "category": "Home Style",
+      "calories": null,
+      "price": "$22.99"
+    },
+    {
+      "name": "Sandwich",
+      "category": "Home Style",
+      "calories": null,
+      "price": "$15.00"
+    },
+    {
+      "name": "Chef's Salad",
+      "category": "Home Style",
+      "calories": null,
+      "price": "$17.00"
+    },
+    {
+      "name": "Big Mamma Special",
+      "category": "Home Style",
+      "calories": null,
+      "price": "$18.25"
+    },
+    {
+      "name": "Herb's Special 1/2 Chicken Southern Style",
+      "category": "Home Style",
+      "calories": null,
+      "price": "$31.50"
+    },
+    {
+      "name": "Giblets, Rice With Gravy & Onions",
+      "category": "Home Style",
+      "calories": null,
+      "price": "$22.00"
+    },
+    {
+      "name": "Country Girl",
+      "category": "Home Style",
+      "calories": null,
+      "price": "$21.25"
+    },
+    {
+      "name": "Natalie's Special",
+      "category": "Home Style",
+      "calories": null,
+      "price": "$16.50"
+    },
+    {
+      "name": "Chicken Burger",
+      "category": "Home Style",
+      "calories": null,
+      "price": "$19.25"
+    },
+    {
+      "name": "Jeanne Jones Omelette",
+      "category": "Home Style",
+      "calories": null,
+      "price": "$20.50"
+    },
+    {
+      "name": "Scoe's 1/4 Chicken Prepared in Southern Style",
+      "category": "Home Style",
+      "calories": null,
+      "price": "$24.75"
+    },
+    {
+      "name": "Red Beans & Rice & Corn Bread",
+      "category": "House Combos",
+      "calories": null,
+      "price": "$15.90"
+    },
+    {
+      "name": "3 Wings, Greens Or Potatoes Smothered In Gravy With Onions",
+      "category": "House Combos",
+      "calories": null,
+      "price": "$20.34"
+    },
+    {
+      "name": "Candy Yams, Greens & Cornbread",
+      "category": "House Combos",
+      "calories": null,
+      "price": "$22.65"
+    },
+    {
+      "name": "Mac & Cheese, Greens & Corn Bread Combo",
+      "category": "House Combos",
+      "calories": null,
+      "price": "$22.70"
+    },
+    {
+      "name": "Red Beans",
+      "category": "Sides",
+      "calories": null,
+      "price": "$7.50"
+    },
+    {
+      "name": "Sweet Potato Pie",
+      "category": "Sides",
+      "calories": null,
+      "price": "$9.50"
+    },
+    {
+      "name": "Waffle",
+      "category": "Sides",
+      "calories": null,
+      "price": "$8.99"
+    },
+    {
+      "name": "Chicken Sausage",
+      "category": "Sides",
+      "calories": null,
+      "price": "$6.00"
+    },
+    {
+      "name": "Mac & Cheese",
+      "category": "Sides",
+      "calories": null,
+      "price": "$9.50"
+    },
+    {
+      "name": "One Breast",
+      "category": "Sides",
+      "calories": null,
+      "price": "$10.75"
+    },
+    {
+      "name": "Greens",
+      "category": "Sides",
+      "calories": null,
+      "price": "$8.99"
+    },
+    {
+      "name": "Grits",
+      "category": "Sides",
+      "calories": null,
+      "price": "$6.99"
+    },
+    {
+      "name": "Rice",
+      "category": "Sides",
+      "calories": null,
+      "price": "$6.99"
+    },
+    {
+      "name": "Chef's Potato Salad",
+      "category": "Sides",
+      "calories": null,
+      "price": "$8.50"
+    },
+    {
+      "name": "French Fries",
+      "category": "Sides",
+      "calories": null,
+      "price": "$10.50"
+    },
+    {
+      "name": "Livers",
+      "category": "Sides",
+      "calories": null,
+      "price": "$17.75"
+    },
+    {
+      "name": "Biscuit",
+      "category": "Sides",
+      "calories": null,
+      "price": "$2.25"
+    },
+    {
+      "name": "Candy Yams",
+      "category": "Sides",
+      "calories": null,
+      "price": "$8.99"
+    },
+    {
+      "name": "One Wing",
+      "category": "Sides",
+      "calories": null,
+      "price": "$5.25"
+    },
+    {
+      "name": "One Thigh",
+      "category": "Sides",
+      "calories": null,
+      "price": "$5.50"
+    },
+    {
+      "name": "Dinner Salad",
+      "category": "Sides",
+      "calories": null,
+      "price": "$11.25"
+    },
+    {
+      "name": "Two Eggs, Cheese & Onions",
+      "category": "Sides",
+      "calories": null,
+      "price": "$8.99"
+    },
+    {
+      "name": "Gravy",
+      "category": "Sides",
+      "calories": null,
+      "price": "$2.50"
+    },
+    {
+      "name": "Egg",
+      "category": "Sides",
+      "calories": null,
+      "price": "$3.75"
+    },
+    {
+      "name": "Smothered Potatoes With Gravy",
+      "category": "Sides",
+      "calories": null,
+      "price": "$6.50"
+    },
+    {
+      "name": "Banana Pudding",
+      "category": "Sides",
+      "calories": null,
+      "price": "$10.50"
+    },
+    {
+      "name": "Red Velvet Cookies",
+      "category": "Sides",
+      "calories": null,
+      "price": "$9.50"
+    },
+    {
+      "name": "Giblets",
+      "category": "Sides",
+      "calories": null,
+      "price": "$17.75"
+    },
+    {
+      "name": "One Leg",
+      "category": "Sides",
+      "calories": null,
+      "price": "$5.50"
+    },
+    {
+      "name": "Corn Bread",
+      "category": "Sides",
+      "calories": null,
+      "price": "$5.50"
+    },
+    {
+      "name": "Chicken Chili",
+      "category": "Chicken Chili",
+      "calories": null,
+      "price": "$9.99"
+    },
+    {
+      "name": "Chicken Chili Cheese Fries",
+      "category": "Chicken Chili",
+      "calories": null,
+      "price": "$16.50"
+    },
+    {
+      "name": "Sunrise",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$7.50"
+    },
+    {
+      "name": "Hot Chocolate",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$6.50"
+    },
+    {
+      "name": "Ice Tea",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$6.50"
+    },
+    {
+      "name": "Hot Tea",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$5.50"
+    },
+    {
+      "name": "Milk",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$4.99"
+    },
+    {
+      "name": "Lemonade",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$6.25"
+    },
+    {
+      "name": "Eclipse",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$7.50"
+    },
+    {
+      "name": "Freshly Squeezed Orange Juice",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$6.50"
+    },
+    {
+      "name": "Apple Juice",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$5.50"
+    },
+    {
+      "name": "Coffee",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$5.50"
+    },
+    {
+      "name": "Lisa's Delight",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$7.50"
+    },
+    {
+      "name": "Soda",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$4.50"
+    },
+    {
+      "name": "Sunset",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$7.50"
+    }
+  ]
+}
