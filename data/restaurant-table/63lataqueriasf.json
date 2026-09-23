@@ -1,0 +1,377 @@
+{
+  "title": "La Taqueria Menu With Price List",
+  "items": [
+    {
+      "name": "Taco with Meat - Regular",
+      "category": "Tacos",
+      "calories": null,
+      "price": "$5.20"
+    },
+    {
+      "name": "Taco with Meat - Super",
+      "category": "Tacos",
+      "calories": null,
+      "price": "$8.85"
+    },
+    {
+      "name": "Vegetarian Taco - Regular",
+      "category": "Tacos",
+      "calories": null,
+      "price": "$4.10"
+    },
+    {
+      "name": "Vegetarian Taco - Super",
+      "category": "Tacos",
+      "calories": null,
+      "price": "$6.80"
+    },
+    {
+      "name": "Burrito with Meat - Regular",
+      "category": "Burritos",
+      "calories": null,
+      "price": "$12.30"
+    },
+    {
+      "name": "Burrito with Meat - Super",
+      "category": "Burritos",
+      "calories": null,
+      "price": "$15.95"
+    },
+    {
+      "name": "Vegetarian Burrito - Regular",
+      "category": "Burritos",
+      "calories": null,
+      "price": "$6.95"
+    },
+    {
+      "name": "Vegetarian Burrito - Super",
+      "category": "Burritos",
+      "calories": null,
+      "price": "$9.65"
+    },
+    {
+      "name": "Corn Quesadilla - Regular",
+      "category": "Quesadillas",
+      "calories": null,
+      "price": "$2.10"
+    },
+    {
+      "name": "Corn Quesadilla - Super",
+      "category": "Quesadillas",
+      "calories": null,
+      "price": "$4.80"
+    },
+    {
+      "name": "Flour Quesadilla - Regular",
+      "category": "Quesadillas",
+      "calories": null,
+      "price": "$4.45"
+    },
+    {
+      "name": "Flour Quesadilla - Super",
+      "category": "Quesadillas",
+      "calories": null,
+      "price": "$7.15"
+    },
+    {
+      "name": "Corn Quesadilla with Meat - Regular",
+      "category": "Quesadillas",
+      "calories": null,
+      "price": "$6.15"
+    },
+    {
+      "name": "Corn Quesadilla with Meat - Super",
+      "category": "Quesadillas",
+      "calories": null,
+      "price": "$8.85"
+    },
+    {
+      "name": "Flour Quesadilla with Meat - Regular",
+      "category": "Quesadillas",
+      "calories": null,
+      "price": "$13.25"
+    },
+    {
+      "name": "Flour Quesadilla with Meat - Super",
+      "category": "Quesadillas",
+      "calories": null,
+      "price": "$15.95"
+    },
+    {
+      "name": "Cheese (Queso)",
+      "category": "Extras",
+      "calories": null,
+      "price": "$0.95"
+    },
+    {
+      "name": "Sour Cream (Crema)",
+      "category": "Extras",
+      "calories": null,
+      "price": "$0.95"
+    },
+    {
+      "name": "Avocado (Aguacate)",
+      "category": "Extras",
+      "calories": null,
+      "price": "$1.75"
+    },
+    {
+      "name": "Extra Meat",
+      "category": "Extras",
+      "calories": null,
+      "price": "$3.00"
+    },
+    {
+      "name": "Chips Salsa & Avocado",
+      "category": "Extras",
+      "calories": null,
+      "price": "$5.50"
+    },
+    {
+      "name": "Cup of Beans (Whole, Refried or Pinto)",
+      "category": "Extras",
+      "calories": null,
+      "price": "$3.00"
+    },
+    {
+      "name": "Chips & Salsa",
+      "category": "Extras",
+      "calories": null,
+      "price": "$2.00"
+    },
+    {
+      "name": "Coke - Small",
+      "category": "Drinks",
+      "calories": null,
+      "price": "$3.50"
+    },
+    {
+      "name": "Coke - Large",
+      "category": "Drinks",
+      "calories": null,
+      "price": "$4.00"
+    },
+    {
+      "name": "Diet Coke - Small",
+      "category": "Drinks",
+      "calories": null,
+      "price": "$3.50"
+    },
+    {
+      "name": "Diet Coke - Large",
+      "category": "Drinks",
+      "calories": null,
+      "price": "$4.00"
+    },
+    {
+      "name": "Bottled Water - Small",
+      "category": "Drinks",
+      "calories": null,
+      "price": "$3.50"
+    },
+    {
+      "name": "Bottled Water - Large",
+      "category": "Drinks",
+      "calories": null,
+      "price": "$4.00"
+    },
+    {
+      "name": "Sprite - Small",
+      "category": "Drinks",
+      "calories": null,
+      "price": "$3.50"
+    },
+    {
+      "name": "Sprite - Large",
+      "category": "Drinks",
+      "calories": null,
+      "price": "$4.00"
+    },
+    {
+      "name": "Orange - Small",
+      "category": "Drinks",
+      "calories": null,
+      "price": "$3.50"
+    },
+    {
+      "name": "Orange - Large",
+      "category": "Drinks",
+      "calories": null,
+      "price": "$4.00"
+    },
+    {
+      "name": "Milk - Small",
+      "category": "Drinks",
+      "calories": null,
+      "price": "$3.50"
+    },
+    {
+      "name": "Milk - Large",
+      "category": "Drinks",
+      "calories": null,
+      "price": "$4.00"
+    },
+    {
+      "name": "Mineral Water - Small",
+      "category": "Drinks",
+      "calories": null,
+      "price": "$3.50"
+    },
+    {
+      "name": "Mineral Water - Large",
+      "category": "Drinks",
+      "calories": null,
+      "price": "$4.00"
+    },
+    {
+      "name": "Strawberry (Fresa) - Small",
+      "category": "Aguas Frescas",
+      "calories": null,
+      "price": "$7.00"
+    },
+    {
+      "name": "Strawberry (Fresa) - Large",
+      "category": "Aguas Frescas",
+      "calories": null,
+      "price": "$8.00"
+    },
+    {
+      "name": "Mango - Small",
+      "category": "Aguas Frescas",
+      "calories": null,
+      "price": "$7.00"
+    },
+    {
+      "name": "Mango - Large",
+      "category": "Aguas Frescas",
+      "calories": null,
+      "price": "$8.00"
+    },
+    {
+      "name": "Pineapple (Piña) - Small",
+      "category": "Aguas Frescas",
+      "calories": null,
+      "price": "$7.00"
+    },
+    {
+      "name": "Pineapple (Piña) - Large",
+      "category": "Aguas Frescas",
+      "calories": null,
+      "price": "$8.00"
+    },
+    {
+      "name": "Horchata - Small",
+      "category": "Aguas Frescas",
+      "calories": null,
+      "price": "$7.00"
+    },
+    {
+      "name": "Horchata - Large",
+      "category": "Aguas Frescas",
+      "calories": null,
+      "price": "$8.00"
+    },
+    {
+      "name": "Tangerine (Mandarina) - Small",
+      "category": "Aguas Frescas",
+      "calories": null,
+      "price": "$7.00"
+    },
+    {
+      "name": "Tangerine (Mandarina) - Large",
+      "category": "Aguas Frescas",
+      "calories": null,
+      "price": "$8.00"
+    },
+    {
+      "name": "Jamaica - Small",
+      "category": "Aguas Frescas",
+      "calories": null,
+      "price": "$7.00"
+    },
+    {
+      "name": "Jamaica - Large",
+      "category": "Aguas Frescas",
+      "calories": null,
+      "price": "$8.00"
+    },
+    {
+      "name": "Cantalope (Melon) - Small",
+      "category": "Aguas Frescas",
+      "calories": null,
+      "price": "$7.00"
+    },
+    {
+      "name": "Cantalope (Melon) - Large",
+      "category": "Aguas Frescas",
+      "calories": null,
+      "price": "$8.00"
+    },
+    {
+      "name": "Pacifico - Imported",
+      "category": "Beer",
+      "calories": null,
+      "price": "$8.00"
+    },
+    {
+      "name": "XX (Amber) - Imported",
+      "category": "Beer",
+      "calories": null,
+      "price": "$8.00"
+    },
+    {
+      "name": "Bud - Domestic",
+      "category": "Beer",
+      "calories": null,
+      "price": "$7.00"
+    },
+    {
+      "name": "Tecate - Imported",
+      "category": "Beer",
+      "calories": null,
+      "price": "$8.00"
+    },
+    {
+      "name": "Negra Modelo - Imported",
+      "category": "Beer",
+      "calories": null,
+      "price": "$8.00"
+    },
+    {
+      "name": "Bud Light - Domestic",
+      "category": "Beer",
+      "calories": null,
+      "price": "$7.00"
+    },
+    {
+      "name": "Corona - Imported",
+      "category": "Beer",
+      "calories": null,
+      "price": "$8.00"
+    },
+    {
+      "name": "Modelo Especial - Imported",
+      "category": "Beer",
+      "calories": null,
+      "price": "$8.00"
+    },
+    {
+      "name": "Miller - Domestic",
+      "category": "Beer",
+      "calories": null,
+      "price": "$7.00"
+    },
+    {
+      "name": "Bohemia - Imported",
+      "category": "Beer",
+      "calories": null,
+      "price": "$8.00"
+    },
+    {
+      "name": "Miller Light - Domestic",
+      "category": "Beer",
+      "calories": null,
+      "price": "$7.00"
+    }
+  ]
+}
