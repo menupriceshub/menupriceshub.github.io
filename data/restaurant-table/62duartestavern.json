@@ -1,0 +1,527 @@
+{
+  "title": "Duarte's Tavern Menu With Price List",
+  "items": [
+    {
+      "name": "Oysters On The Half Shell - Each",
+      "category": "Specials",
+      "calories": null,
+      "price": "$4.25"
+    },
+    {
+      "name": "Oysters On The Half Shell - Half Dozen",
+      "category": "Specials",
+      "calories": null,
+      "price": "$24.00"
+    },
+    {
+      "name": "Chilled Artichoke Hearts",
+      "category": "Specials",
+      "calories": null,
+      "price": "$20.00"
+    },
+    {
+      "name": "Mexican Coleslaw",
+      "category": "Specials",
+      "calories": null,
+      "price": "$10.00"
+    },
+    {
+      "name": "Sailor-Style Mussels",
+      "category": "Specials",
+      "calories": null,
+      "price": "$25.00"
+    },
+    {
+      "name": "Signature Burger",
+      "category": "Specials",
+      "calories": null,
+      "price": "$24.00"
+    },
+    {
+      "name": "Fresh Local Cracked Crab",
+      "category": "Specials",
+      "calories": null,
+      "price": "$39.00"
+    },
+    {
+      "name": "Fresh Local Crab Cioppino",
+      "category": "Specials",
+      "calories": null,
+      "price": "$55.00"
+    },
+    {
+      "name": "Snapper",
+      "category": "Fresh Fish",
+      "calories": null,
+      "price": "$29.00"
+    },
+    {
+      "name": "Petrale Sole",
+      "category": "Fresh Fish",
+      "calories": null,
+      "price": "$32.00"
+    },
+    {
+      "name": "Halibut",
+      "category": "Fresh Fish",
+      "calories": null,
+      "price": "$35.00"
+    },
+    {
+      "name": "Deep Fried Calamari Appetizer",
+      "category": "Start & Share",
+      "calories": null,
+      "price": "$18.00"
+    },
+    {
+      "name": "Deep Fried Pacific Oysters",
+      "category": "Start & Share",
+      "calories": null,
+      "price": "$18.00"
+    },
+    {
+      "name": "Bay Shrimp Cocktail",
+      "category": "Start & Share",
+      "calories": null,
+      "price": "$15.00"
+    },
+    {
+      "name": "Mushroom Toast",
+      "category": "Start & Share",
+      "calories": null,
+      "price": "$15.00"
+    },
+    {
+      "name": "Deep Fried Jumbo Prawns",
+      "category": "Start & Share",
+      "calories": null,
+      "price": "$25.00"
+    },
+    {
+      "name": "Sautéed Prawn Appetizer",
+      "category": "Start & Share",
+      "calories": null,
+      "price": "$21.00"
+    },
+    {
+      "name": "Linguini And Clams",
+      "category": "Entrées",
+      "calories": null,
+      "price": "$38.00"
+    },
+    {
+      "name": "Steamed Mussels",
+      "category": "Entrées",
+      "calories": null,
+      "price": "$25.00"
+    },
+    {
+      "name": "Snapper + Chips",
+      "category": "Entrées",
+      "calories": null,
+      "price": "$28.00"
+    },
+    {
+      "name": "Artichoke Soup",
+      "category": "Soups & Salads",
+      "calories": null,
+      "price": "$18.25"
+    },
+    {
+      "name": "Beet Salad",
+      "category": "Soups & Salads",
+      "calories": null,
+      "price": "$13.00"
+    },
+    {
+      "name": "Green Chile Soup",
+      "category": "Soups & Salads",
+      "calories": null,
+      "price": "$16.00"
+    },
+    {
+      "name": "Mixed Green Salad",
+      "category": "Soups & Salads",
+      "calories": null,
+      "price": "$16.00"
+    },
+    {
+      "name": "Soup Of The Day",
+      "category": "Soups & Salads",
+      "calories": null,
+      "price": "$16.00"
+    },
+    {
+      "name": "Crab Sandwich",
+      "category": "Handhelds",
+      "calories": null,
+      "price": "$40.00"
+    },
+    {
+      "name": "Crab Melt",
+      "category": "Handhelds",
+      "calories": null,
+      "price": "$43.00"
+    },
+    {
+      "name": "Cajun Calamari Steak Sandwich",
+      "category": "Handhelds",
+      "calories": null,
+      "price": "$24.00"
+    },
+    {
+      "name": "Deluxe French Dip",
+      "category": "Handhelds",
+      "calories": null,
+      "price": "$27.00"
+    },
+    {
+      "name": "Blue Cheese And Bacon Burger",
+      "category": "Handhelds",
+      "calories": null,
+      "price": "$26.00"
+    },
+    {
+      "name": "Hamburger",
+      "category": "Handhelds",
+      "calories": null,
+      "price": "$21.00"
+    },
+    {
+      "name": "Onion Rings",
+      "category": "Sides",
+      "calories": null,
+      "price": "$9.00"
+    },
+    {
+      "name": "Seasonal Vegetable",
+      "category": "Sides",
+      "calories": null,
+      "price": "$9.00"
+    },
+    {
+      "name": "Fries",
+      "category": "Sides",
+      "calories": null,
+      "price": "$9.00"
+    },
+    {
+      "name": "Grilled Cheese",
+      "category": "Sides",
+      "calories": null,
+      "price": "$10.00"
+    },
+    {
+      "name": "Homemade Pie - Olallieberry",
+      "category": "Dessert",
+      "calories": null,
+      "price": "$11.00"
+    },
+    {
+      "name": "Homemade Pie - Strawberry Rhubarb",
+      "category": "Dessert",
+      "calories": null,
+      "price": "$11.00"
+    },
+    {
+      "name": "Homemade Pie - Apricot",
+      "category": "Dessert",
+      "calories": null,
+      "price": "$11.00"
+    },
+    {
+      "name": "Homemade Pie - Apple",
+      "category": "Dessert",
+      "calories": null,
+      "price": "$11.00"
+    },
+    {
+      "name": "Soft Serve Ice Cream - Olallieberry",
+      "category": "Dessert",
+      "calories": null,
+      "price": "$9.00"
+    },
+    {
+      "name": "Soft Serve Ice Cream - Vanilla",
+      "category": "Dessert",
+      "calories": null,
+      "price": "$9.00"
+    },
+    {
+      "name": "Soft Serve Ice Cream - 50/50 Swirl",
+      "category": "Dessert",
+      "calories": null,
+      "price": "$9.00"
+    },
+    {
+      "name": "Bloody Mary",
+      "category": "Cocktails",
+      "calories": null,
+      "price": "$14.00"
+    },
+    {
+      "name": "Irish Mule",
+      "category": "Cocktails",
+      "calories": null,
+      "price": "$14.00"
+    },
+    {
+      "name": "1934",
+      "category": "Cocktails",
+      "calories": null,
+      "price": "$14.00"
+    },
+    {
+      "name": "Olallieberry Margarita",
+      "category": "Cocktails",
+      "calories": null,
+      "price": "$17.00"
+    },
+    {
+      "name": "Apple Smash",
+      "category": "Cocktails",
+      "calories": null,
+      "price": "$14.00"
+    },
+    {
+      "name": "Mamacita",
+      "category": "Cocktails",
+      "calories": null,
+      "price": "$14.00"
+    },
+    {
+      "name": "Old Fashioned",
+      "category": "Cocktails",
+      "calories": null,
+      "price": "$18.00"
+    },
+    {
+      "name": "Manhattan",
+      "category": "Cocktails",
+      "calories": null,
+      "price": "$18.00"
+    },
+    {
+      "name": "Heart Of Gold",
+      "category": "Cocktails",
+      "calories": null,
+      "price": "$18.00"
+    },
+    {
+      "name": "Olallieberry Bramble",
+      "category": "Cocktails",
+      "calories": null,
+      "price": "$18.00"
+    },
+    {
+      "name": "Duarte's Manhattan",
+      "category": "Cocktails",
+      "calories": null,
+      "price": "$16.00"
+    },
+    {
+      "name": "Espresso Martini",
+      "category": "Cocktails",
+      "calories": null,
+      "price": "$14.00"
+    },
+    {
+      "name": "Sierra Nevada: Celebration",
+      "category": "Draft Beer",
+      "calories": null,
+      "price": "$10.00"
+    },
+    {
+      "name": "Hop Dogma: Silly Gimmick",
+      "category": "Draft Beer",
+      "calories": null,
+      "price": "$10.00"
+    },
+    {
+      "name": "Henhouse: MK Ultra",
+      "category": "Draft Beer",
+      "calories": null,
+      "price": "$10.00"
+    },
+    {
+      "name": "Half Acre: Sunrise Vallejo",
+      "category": "Draft Beer",
+      "calories": null,
+      "price": "$10.00"
+    },
+    {
+      "name": "Guinness",
+      "category": "Draft Beer",
+      "calories": null,
+      "price": "$10.00"
+    },
+    {
+      "name": "Drakes: Denogginizer",
+      "category": "Draft Beer",
+      "calories": null,
+      "price": "$10.00"
+    },
+    {
+      "name": "Russian River: STS",
+      "category": "Draft Beer",
+      "calories": null,
+      "price": "$10.00"
+    },
+    {
+      "name": "Deschutes: Mirror Pond",
+      "category": "Bottles & Cans",
+      "calories": null,
+      "price": "$8.00"
+    },
+    {
+      "name": "Deschutes: Black Butte Porter",
+      "category": "Bottles & Cans",
+      "calories": null,
+      "price": "$8.00"
+    },
+    {
+      "name": "Fort Point: Super Dry",
+      "category": "Bottles & Cans",
+      "calories": null,
+      "price": "$10.00"
+    },
+    {
+      "name": "Stella Artois",
+      "category": "Bottles & Cans",
+      "calories": null,
+      "price": "$7.00"
+    },
+    {
+      "name": "Trumer: Pils",
+      "category": "Bottles & Cans",
+      "calories": null,
+      "price": "$8.00"
+    },
+    {
+      "name": "Discretion: Martian Sky",
+      "category": "Bottles & Cans",
+      "calories": null,
+      "price": "$10.00"
+    },
+    {
+      "name": "Henhouse: Rotating IPA",
+      "category": "Bottles & Cans",
+      "calories": null,
+      "price": "$10.00"
+    },
+    {
+      "name": "Cellarmaker: Mt. Cook",
+      "category": "Bottles & Cans",
+      "calories": null,
+      "price": "$10.00"
+    },
+    {
+      "name": "Discretion: Opal Cliffs",
+      "category": "Bottles & Cans",
+      "calories": null,
+      "price": "$10.00"
+    },
+    {
+      "name": "Anderson Valley: Boont",
+      "category": "Bottles & Cans",
+      "calories": null,
+      "price": "$8.00"
+    },
+    {
+      "name": "Ferrari Carano 2023 Chardonnay",
+      "category": "Wine",
+      "calories": null,
+      "price": "$14.00"
+    },
+    {
+      "name": "Coppola 2023 Pinot Grigio",
+      "category": "Wine",
+      "calories": null,
+      "price": "$14.00"
+    },
+    {
+      "name": "Husch 2023 Sauvignon Blanc",
+      "category": "Wine",
+      "calories": null,
+      "price": "$14.00"
+    },
+    {
+      "name": "Korbel Brut",
+      "category": "Wine",
+      "calories": null,
+      "price": "$10.00"
+    },
+    {
+      "name": "Black Stallion 2023 Pinot Noir",
+      "category": "Wine",
+      "calories": null,
+      "price": "$14.00"
+    },
+    {
+      "name": "Prinz 2020 Reisling",
+      "category": "Wine",
+      "calories": null,
+      "price": "$16.00"
+    },
+    {
+      "name": "Pedroncelli 2023 Rosé",
+      "category": "Wine",
+      "calories": null,
+      "price": "$14.00"
+    },
+    {
+      "name": "Zonin Prosecco",
+      "category": "Wine",
+      "calories": null,
+      "price": "$11.00"
+    },
+    {
+      "name": "Pumpkin Pie",
+      "category": "Special Dessert",
+      "calories": null,
+      "price": "$11.00"
+    },
+    {
+      "name": "Bread Pudding",
+      "category": "Special Dessert",
+      "calories": null,
+      "price": "$11.00"
+    },
+    {
+      "name": "Homemade Olallieberry Lemonade",
+      "category": "Others",
+      "calories": null,
+      "price": "$7.00"
+    },
+    {
+      "name": "Fresh Apple Juice",
+      "category": "Others",
+      "calories": null,
+      "price": "$7.00"
+    },
+    {
+      "name": "Pumpkin Pie",
+      "category": "Others",
+      "calories": null,
+      "price": "$11.00"
+    },
+    {
+      "name": "Homemade Apple Juice",
+      "category": "Others",
+      "calories": null,
+      "price": "$7.00"
+    },
+    {
+      "name": "Olallieberry Lemonade",
+      "category": "Others",
+      "calories": null,
+      "price": "$7.00"
+    },
+    {
+      "name": "Apricot Cobbler",
+      "category": "Others",
+      "calories": null,
+      "price": null
+    }
+  ]
+}
