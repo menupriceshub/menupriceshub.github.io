@@ -1,0 +1,245 @@
+{
+  "title": "Philippe The Original Menu With Price List",
+  "items": [
+    {
+      "name": "Tapioca",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$3.95"
+    },
+    {
+      "name": "1 Layer Carrot",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$4.25"
+    },
+    {
+      "name": "Custard",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$3.95"
+    },
+    {
+      "name": "Slice Of Pie",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$7.95"
+    },
+    {
+      "name": "Baked Apple",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$4.75"
+    },
+    {
+      "name": "Cheesecake",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$4.25"
+    },
+    {
+      "name": "Cookie",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$2.25"
+    },
+    {
+      "name": "1 Layer Chocolate",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$4.25"
+    },
+    {
+      "name": "Brownie",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$2.75"
+    },
+    {
+      "name": "Sparkling Water",
+      "category": "Drinks",
+      "calories": null,
+      "price": "$3.50"
+    },
+    {
+      "name": "Root Beer",
+      "category": "Drinks",
+      "calories": null,
+      "price": "$3.50"
+    },
+    {
+      "name": "Iced Tea",
+      "category": "Drinks",
+      "calories": null,
+      "price": "$1.95"
+    },
+    {
+      "name": "Bottled Water",
+      "category": "Drinks",
+      "calories": null,
+      "price": "$2.50"
+    },
+    {
+      "name": "Soda",
+      "category": "Drinks",
+      "calories": null,
+      "price": "$2.75"
+    },
+    {
+      "name": "Lemonade",
+      "category": "Drinks",
+      "calories": null,
+      "price": "$1.95"
+    },
+    {
+      "name": "Potato",
+      "category": "Salads & Sides",
+      "calories": null,
+      "price": "$3.65"
+    },
+    {
+      "name": "Jar Of Hot Mustard",
+      "category": "Salads & Sides",
+      "calories": null,
+      "price": "$7.25"
+    },
+    {
+      "name": "Chips",
+      "category": "Salads & Sides",
+      "calories": null,
+      "price": "$2.75"
+    },
+    {
+      "name": "Pickled Egg",
+      "category": "Salads & Sides",
+      "calories": null,
+      "price": "$2.25"
+    },
+    {
+      "name": "Chicken Caesar",
+      "category": "Salads & Sides",
+      "calories": null,
+      "price": "$15.95"
+    },
+    {
+      "name": "Kosher Dill Pickle",
+      "category": "Salads & Sides",
+      "calories": null,
+      "price": "$2.25"
+    },
+    {
+      "name": "Macaroni",
+      "category": "Salads & Sides",
+      "calories": null,
+      "price": "$3.65"
+    },
+    {
+      "name": "Pickled Beets",
+      "category": "Salads & Sides",
+      "calories": null,
+      "price": "$4.50"
+    },
+    {
+      "name": "Caesar Salad",
+      "category": "Salads & Sides",
+      "calories": null,
+      "price": "$11.95"
+    },
+    {
+      "name": "Coleslaw",
+      "category": "Salads & Sides",
+      "calories": null,
+      "price": "$3.65"
+    },
+    {
+      "name": "Garden Salad",
+      "category": "Salads & Sides",
+      "calories": null,
+      "price": "$11.95"
+    },
+    {
+      "name": "PBJ",
+      "category": "Other Sandwiches",
+      "calories": null,
+      "price": "$4.95"
+    },
+    {
+      "name": "Tuna",
+      "category": "Other Sandwiches",
+      "calories": null,
+      "price": "$14.50"
+    },
+    {
+      "name": "Side Au Jus",
+      "category": "French Dips",
+      "calories": null,
+      "price": "$3.50"
+    },
+    {
+      "name": "Pork Dip",
+      "category": "French Dips",
+      "calories": null,
+      "price": "$14.95"
+    },
+    {
+      "name": "Beef Dip",
+      "category": "French Dips",
+      "calories": null,
+      "price": "$14.95"
+    },
+    {
+      "name": "Lamb Dip",
+      "category": "French Dips",
+      "calories": null,
+      "price": "$16.50"
+    },
+    {
+      "name": "Ham Dip",
+      "category": "French Dips",
+      "calories": null,
+      "price": "$14.95"
+    },
+    {
+      "name": "Pastrami Dip",
+      "category": "French Dips",
+      "calories": null,
+      "price": "$16.50"
+    },
+    {
+      "name": "Turkey Dip",
+      "category": "French Dips",
+      "calories": null,
+      "price": "$14.95"
+    },
+    {
+      "name": "Staff Tip",
+      "category": "Extras",
+      "calories": null,
+      "price": "$2.50"
+    },
+    {
+      "name": "Daily Soup 1",
+      "category": "Chili, Soup & Stew",
+      "calories": null,
+      "price": "$6.95"
+    },
+    {
+      "name": "Beans",
+      "category": "Chili, Soup & Stew",
+      "calories": null,
+      "price": "$3.95"
+    },
+    {
+      "name": "Daily Soup 2",
+      "category": "Chili, Soup & Stew",
+      "calories": null,
+      "price": "$6.95"
+    },
+    {
+      "name": "Stew",
+      "category": "Chili, Soup & Stew",
+      "calories": null,
+      "price": "$7.50"
+    }
+  ]
+}
