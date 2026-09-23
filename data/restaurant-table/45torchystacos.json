@@ -1,0 +1,56 @@
+{
+  "title": "Torchy's Tacos Menu With Price List",
+  "items": [
+    { "name": "Green Chile Queso (VE) - Regular", "category": "Queso and More", "calories": 643, "price": "$7.95" },
+    { "name": "Green Chile Queso (VE) - Small", "category": "Queso and More", "calories": 435, "price": "$4.75" },
+    { "name": "Hillbilly Queso - Regular", "category": "Queso and More", "calories": 876, "price": "$8.45" },
+    { "name": "Hillbilly Queso - Small", "category": "Queso and More", "calories": 520, "price": "$4.95" },
+    { "name": "Guacamole (VE) - Regular", "category": "Queso and More", "calories": 423, "price": "$8.25" },
+    { "name": "Guacamole (VE) - Small", "category": "Queso and More", "calories": 286, "price": "$4.75" },
+    { "name": "Salsa - Regular", "category": "Queso and More", "calories": 214, "price": "$4.75" },
+    { "name": "Salsa - Small", "category": "Queso and More", "calories": 181, "price": "$2.75" },
+    { "name": "The Threesome (VE)", "category": "Queso and More", "calories": 643, "price": "$11.75" },
+    { "name": "Damn Good Tots - Regular", "category": "Queso and More", "calories": 680, "price": "$5.95" },
+    { "name": "Damn Good Tots - Small", "category": "Queso and More", "calories": 332, "price": "$3.45" },
+    { "name": "Street Corn (VE) - Regular", "category": "Queso and More", "calories": 383, "price": "$5.75" },
+    { "name": "Street Corn (VE) - Small", "category": "Queso and More", "calories": 194, "price": "$3.25" },
+    { "name": "Refried Pinto Beans (VE)", "category": "Queso and More", "calories": 198, "price": "$3.25" },
+    { "name": "Torchy's Mexican Rice (VG)", "category": "Queso and More", "calories": 241, "price": "$3.25" },
+    { "name": "Rice & Beans Combo (VE)", "category": "Queso and More", "calories": 231, "price": "$3.25" },
+    { "name": "Cilantro Lime Rice (VG)", "category": "Queso and More", "calories": 326, "price": "$3.85" },
+    { "name": "Black Beans (VG)", "category": "Queso and More", "calories": 162, "price": "$3.85" },
+
+    { "name": "Trailer Park Taco (fried chicken, green chiles, pico, poblano sauce)", "category": "Tacos - Chicken", "calories": 298, "price": "$5.15" },
+    { "name": "Trailer Park \"Trashy\" (add green chile queso)", "category": "Tacos - Chicken", "calories": 355, "price": "$5.65" },
+    { "name": "Chicken Fajita Taco (grilled chicken, peppers, onions, tomatillo salsa)", "category": "Tacos - Chicken", "calories": 353, "price": "$5.15" },
+    { "name": "Brushfire Taco (jerk chicken, mango, jalapenos, diablo sauce)", "category": "Tacos - Chicken", "calories": 300, "price": "$5.15" },
+    { "name": "Tipsy Chick Taco (grilled chicken, corn relish, bacon bourbon jam)", "category": "Tacos - Chicken", "calories": 453, "price": "$6.45" },
+
+    { "name": "Democrat Taco (barbacoa, avocado, onions, cotija, tomatillo salsa)", "category": "Tacos - Beef", "calories": 168, "price": "$6.15" },
+    { "name": "Crossroads Taco (brisket, avocado, jalapenos, tomatillo salsa)", "category": "Tacos - Beef", "calories": 346, "price": "$5.95" },
+    { "name": "Steak Fajita Taco (grilled steak, peppers, onions, roja salsa)", "category": "Tacos - Beef", "calories": 449, "price": "$6.15" },
+    { "name": "Republican Taco (brisket, BBQ and chipotle sauce, crispy onions)", "category": "Tacos - Beef", "calories": 474, "price": "$6.25" },
+
+    { "name": "Baja Shrimp Taco (fried shrimp, slaw, pickled onions, chipotle sauce)", "category": "Seafood", "calories": null, "price": "$5.95" },
+    { "name": "Mr. Orange Taco (blackened salmon, corn relish, avocado sauce)", "category": "Seafood", "calories": 207, "price": "$6.75" },
+
+    { "name": "Green Chile Pork Taco (carnitas, onions, cotija, tomatillo salsa)", "category": "Pork", "calories": 217, "price": "$5.25" },
+    { "name": "Hogfather Taco (carnitas, bacon, corn relish, teriyaki, diablo sauce)", "category": "Pork", "calories": 428, "price": "$5.95" },
+
+    { "name": "Fried Avocado Taco (VE) (fried avocado, beans, pico, poblano sauce)", "category": "Veggie", "calories": 249, "price": "$5.25" },
+    { "name": "Fo Sho Taco (VG) (avocado, rice, peppers, corn relish, diablo sauce)", "category": "Veggie", "calories": 354, "price": "$5.45" },
+
+    { "name": "Breakfast Burrito (chorizo, eggs, crispy potatoes, queso)", "category": "Breakfast (Served All Day)", "calories": 1139, "price": "$8.15" },
+    { "name": "Migas (VE) (avocado, eggs, corn tortilla strips, tomatillo salsa)", "category": "Breakfast (Served All Day)", "calories": 379, "price": "$4.75" },
+    { "name": "The Wrangler (brisket, eggs, crispy potatoes, tomatillo salsa)", "category": "Breakfast (Served All Day)", "calories": 456, "price": "$4.85" },
+    { "name": "Ranch Hand (steak, eggs, cheese, diablo sauce)", "category": "Breakfast (Served All Day)", "calories": 451, "price": "$4.85" },
+    { "name": "#1 Bacon Egg & Cheese", "category": "Breakfast (Served All Day)", "calories": 383, "price": "$4.15" },
+    { "name": "#2 Crispy Potatoes Egg & Cheese (VE)", "category": "Breakfast (Served All Day)", "calories": 364, "price": "$4.15" },
+    { "name": "#3 Chorizo Egg & Cheese", "category": "Breakfast (Served All Day)", "calories": 388, "price": "$4.15" },
+
+    { "name": "The Big Tipsy (fried or grilled chicken, bacon bourbon jam, cilantro lime rice)", "category": "Torched Bowls", "calories": 990, "price": "$10.99" },
+    { "name": "The Bonfire (jerk chicken, mango, jalapenos, avocado sauce, pistachios, cilantro lime rice)", "category": "Torched Bowls", "calories": 762, "price": "$10.99" },
+    { "name": "The Bonfire - Upgrade to Blackened Salmon (add-on)", "category": "Torched Bowls", "calories": 438, "price": "$3.25" },
+    { "name": "The Outlaw (fried or grilled chicken, BBQ sauce, chipotle sauce, cilantro lime rice)", "category": "Torched Bowls", "calories": 786, "price": "$10.99" }
+  ]
+}
