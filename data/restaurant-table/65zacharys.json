@@ -1,0 +1,635 @@
+{
+  "title": "Zachary’s Pizza Menu With Price List",
+  "items": [
+    {
+      "name": "Spinach and Mushroom - Stuffed S",
+      "category": "Zachary’s Pizza Favorites",
+      "calories": null,
+      "price": "$29.90"
+    },
+    {
+      "name": "Spinach and Mushroom - Stuffed M",
+      "category": "Zachary’s Pizza Favorites",
+      "calories": null,
+      "price": "$36.20"
+    },
+    {
+      "name": "Spinach and Mushroom - Stuffed L",
+      "category": "Zachary’s Pizza Favorites",
+      "calories": null,
+      "price": "$41.80"
+    },
+    {
+      "name": "Zachary’s Special - Stuffed S",
+      "category": "Zachary’s Pizza Favorites",
+      "calories": null,
+      "price": "$30.55"
+    },
+    {
+      "name": "Zachary’s Special - Stuffed M",
+      "category": "Zachary’s Pizza Favorites",
+      "calories": null,
+      "price": "$36.90"
+    },
+    {
+      "name": "Zachary’s Special - Stuffed L",
+      "category": "Zachary’s Pizza Favorites",
+      "calories": null,
+      "price": "$42.30"
+    },
+    {
+      "name": "Zachary’s Special - Thin S",
+      "category": "Zachary’s Pizza Favorites",
+      "calories": null,
+      "price": "$22.75"
+    },
+    {
+      "name": "Zachary’s Special - Thin M",
+      "category": "Zachary’s Pizza Favorites",
+      "calories": null,
+      "price": "$28.55"
+    },
+    {
+      "name": "Zachary’s Special - Thin L",
+      "category": "Zachary’s Pizza Favorites",
+      "calories": null,
+      "price": "$34.90"
+    },
+    {
+      "name": "Zachary’s Special - Thin XL",
+      "category": "Zachary’s Pizza Favorites",
+      "calories": null,
+      "price": "$39.40"
+    },
+    {
+      "name": "Zachary’s Special - GF",
+      "category": "Zachary’s Pizza Favorites",
+      "calories": null,
+      "price": "$26.35"
+    },
+    {
+      "name": "Chicken Special - Stuffed S",
+      "category": "Zachary’s Pizza Favorites",
+      "calories": null,
+      "price": "$31.60"
+    },
+    {
+      "name": "Chicken Special - Stuffed M",
+      "category": "Zachary’s Pizza Favorites",
+      "calories": null,
+      "price": "$38.25"
+    },
+    {
+      "name": "Chicken Special - Stuffed L",
+      "category": "Zachary’s Pizza Favorites",
+      "calories": null,
+      "price": "$43.70"
+    },
+    {
+      "name": "Chicken Special - Thin S",
+      "category": "Zachary’s Pizza Favorites",
+      "calories": null,
+      "price": "$23.35"
+    },
+    {
+      "name": "Chicken Special - Thin M",
+      "category": "Zachary’s Pizza Favorites",
+      "calories": null,
+      "price": "$29.60"
+    },
+    {
+      "name": "Chicken Special - Thin L",
+      "category": "Zachary’s Pizza Favorites",
+      "calories": null,
+      "price": "$36.00"
+    },
+    {
+      "name": "Chicken Special - Thin XL",
+      "category": "Zachary’s Pizza Favorites",
+      "calories": null,
+      "price": "$40.65"
+    },
+    {
+      "name": "Chicken Special - GF",
+      "category": "Zachary’s Pizza Favorites",
+      "calories": null,
+      "price": "$28.00"
+    },
+    {
+      "name": "Mediterranean - Stuffed S",
+      "category": "Zachary’s Pizza Favorites",
+      "calories": null,
+      "price": "$31.15"
+    },
+    {
+      "name": "Mediterranean - Stuffed M",
+      "category": "Zachary’s Pizza Favorites",
+      "calories": null,
+      "price": "$37.40"
+    },
+    {
+      "name": "Mediterranean - Stuffed L",
+      "category": "Zachary’s Pizza Favorites",
+      "calories": null,
+      "price": "$42.30"
+    },
+    {
+      "name": "Mediterranean - Thin S",
+      "category": "Zachary’s Pizza Favorites",
+      "calories": null,
+      "price": "$22.85"
+    },
+    {
+      "name": "Mediterranean - Thin M",
+      "category": "Zachary’s Pizza Favorites",
+      "calories": null,
+      "price": "$31.20"
+    },
+    {
+      "name": "Mediterranean - Thin L",
+      "category": "Zachary’s Pizza Favorites",
+      "calories": null,
+      "price": "$35.55"
+    },
+    {
+      "name": "Mediterranean - Thin XL",
+      "category": "Zachary’s Pizza Favorites",
+      "calories": null,
+      "price": "$39.65"
+    },
+    {
+      "name": "Mediterranean - GF",
+      "category": "Zachary’s Pizza Favorites",
+      "calories": null,
+      "price": "$26.55"
+    },
+    {
+      "name": "Veggie Harvest - Stuffed S",
+      "category": "Zachary’s Pizza Favorites",
+      "calories": null,
+      "price": "$30.60"
+    },
+    {
+      "name": "Veggie Harvest - Stuffed M",
+      "category": "Zachary’s Pizza Favorites",
+      "calories": null,
+      "price": "$36.80"
+    },
+    {
+      "name": "Veggie Harvest - Stuffed L",
+      "category": "Zachary’s Pizza Favorites",
+      "calories": null,
+      "price": "$41.85"
+    },
+    {
+      "name": "Veggie Harvest - Thin S",
+      "category": "Zachary’s Pizza Favorites",
+      "calories": null,
+      "price": "$22.70"
+    },
+    {
+      "name": "Veggie Harvest - Thin M",
+      "category": "Zachary’s Pizza Favorites",
+      "calories": null,
+      "price": "$28.45"
+    },
+    {
+      "name": "Veggie Harvest - Thin L",
+      "category": "Zachary’s Pizza Favorites",
+      "calories": null,
+      "price": "$33.80"
+    },
+    {
+      "name": "Veggie Harvest - Thin XL",
+      "category": "Zachary’s Pizza Favorites",
+      "calories": null,
+      "price": "$38.35"
+    },
+    {
+      "name": "Veggie Harvest - GF",
+      "category": "Zachary’s Pizza Favorites",
+      "calories": null,
+      "price": "$26.35"
+    },
+    {
+      "name": "Good Health - Stuffed S",
+      "category": "Zachary’s Pizza Favorites",
+      "calories": null,
+      "price": "$31.60"
+    },
+    {
+      "name": "Good Health - Stuffed M",
+      "category": "Zachary’s Pizza Favorites",
+      "calories": null,
+      "price": "$38.25"
+    },
+    {
+      "name": "Good Health - Stuffed L",
+      "category": "Zachary’s Pizza Favorites",
+      "calories": null,
+      "price": "$43.70"
+    },
+    {
+      "name": "Good Health - Thin S",
+      "category": "Zachary’s Pizza Favorites",
+      "calories": null,
+      "price": "$23.35"
+    },
+    {
+      "name": "Good Health - Thin M",
+      "category": "Zachary’s Pizza Favorites",
+      "calories": null,
+      "price": "$29.60"
+    },
+    {
+      "name": "Good Health - Thin L",
+      "category": "Zachary’s Pizza Favorites",
+      "calories": null,
+      "price": "$36.00"
+    },
+    {
+      "name": "Good Health - Thin XL",
+      "category": "Zachary’s Pizza Favorites",
+      "calories": null,
+      "price": "$40.65"
+    },
+    {
+      "name": "Good Health - GF",
+      "category": "Zachary’s Pizza Favorites",
+      "calories": null,
+      "price": "$28.00"
+    },
+    {
+      "name": "Barbecue Chicken - Stuffed S",
+      "category": "Zachary’s Pizza Favorites",
+      "calories": null,
+      "price": "$31.60"
+    },
+    {
+      "name": "Barbecue Chicken - Stuffed M",
+      "category": "Zachary’s Pizza Favorites",
+      "calories": null,
+      "price": "$38.25"
+    },
+    {
+      "name": "Barbecue Chicken - Stuffed L",
+      "category": "Zachary’s Pizza Favorites",
+      "calories": null,
+      "price": "$43.70"
+    },
+    {
+      "name": "Barbecue Chicken - Thin S",
+      "category": "Zachary’s Pizza Favorites",
+      "calories": null,
+      "price": "$23.35"
+    },
+    {
+      "name": "Barbecue Chicken - Thin M",
+      "category": "Zachary’s Pizza Favorites",
+      "calories": null,
+      "price": "$29.60"
+    },
+    {
+      "name": "Barbecue Chicken - Thin L",
+      "category": "Zachary’s Pizza Favorites",
+      "calories": null,
+      "price": "$36.00"
+    },
+    {
+      "name": "Barbecue Chicken - Thin XL",
+      "category": "Zachary’s Pizza Favorites",
+      "calories": null,
+      "price": "$40.65"
+    },
+    {
+      "name": "Barbecue Chicken - GF",
+      "category": "Zachary’s Pizza Favorites",
+      "calories": null,
+      "price": "$28.00"
+    },
+    {
+      "name": "Carne - Stuffed S",
+      "category": "Zachary’s Pizza Favorites",
+      "calories": null,
+      "price": "$31.70"
+    },
+    {
+      "name": "Carne - Stuffed M",
+      "category": "Zachary’s Pizza Favorites",
+      "calories": null,
+      "price": "$38.70"
+    },
+    {
+      "name": "Carne - Stuffed L",
+      "category": "Zachary’s Pizza Favorites",
+      "calories": null,
+      "price": "$43.75"
+    },
+    {
+      "name": "Carne - Thin S",
+      "category": "Zachary’s Pizza Favorites",
+      "calories": null,
+      "price": "$23.60"
+    },
+    {
+      "name": "Carne - Thin M",
+      "category": "Zachary’s Pizza Favorites",
+      "calories": null,
+      "price": "$29.70"
+    },
+    {
+      "name": "Carne - Thin L",
+      "category": "Zachary’s Pizza Favorites",
+      "calories": null,
+      "price": "$36.05"
+    },
+    {
+      "name": "Carne - Thin XL",
+      "category": "Zachary’s Pizza Favorites",
+      "calories": null,
+      "price": "$41.00"
+    },
+    {
+      "name": "Carne - GF",
+      "category": "Zachary’s Pizza Favorites",
+      "calories": null,
+      "price": "$28.10"
+    },
+    {
+      "name": "Rustic Italian - Stuffed S",
+      "category": "Zachary’s Pizza Favorites",
+      "calories": null,
+      "price": "$31.70"
+    },
+    {
+      "name": "Rustic Italian - Stuffed M",
+      "category": "Zachary’s Pizza Favorites",
+      "calories": null,
+      "price": "$38.70"
+    },
+    {
+      "name": "Rustic Italian - Stuffed L",
+      "category": "Zachary’s Pizza Favorites",
+      "calories": null,
+      "price": "$43.75"
+    },
+    {
+      "name": "Rustic Italian - Thin S",
+      "category": "Zachary’s Pizza Favorites",
+      "calories": null,
+      "price": "$23.60"
+    },
+    {
+      "name": "Rustic Italian - Thin M",
+      "category": "Zachary’s Pizza Favorites",
+      "calories": null,
+      "price": "$29.70"
+    },
+    {
+      "name": "Rustic Italian - Thin L",
+      "category": "Zachary’s Pizza Favorites",
+      "calories": null,
+      "price": "$36.05"
+    },
+    {
+      "name": "Rustic Italian - Thin XL",
+      "category": "Zachary’s Pizza Favorites",
+      "calories": null,
+      "price": "$41.00"
+    },
+    {
+      "name": "Rustic Italian - GF",
+      "category": "Zachary’s Pizza Favorites",
+      "calories": null,
+      "price": "$28.10"
+    },
+    {
+      "name": "Pizza Blanca - Thin S",
+      "category": "Zachary’s Pizza Favorites",
+      "calories": null,
+      "price": "$18.95"
+    },
+    {
+      "name": "Pizza Blanca - Thin M",
+      "category": "Zachary’s Pizza Favorites",
+      "calories": null,
+      "price": "$23.90"
+    },
+    {
+      "name": "Pizza Blanca - Thin L",
+      "category": "Zachary’s Pizza Favorites",
+      "calories": null,
+      "price": "$28.25"
+    },
+    {
+      "name": "Pizza Blanca - Thin XL",
+      "category": "Zachary’s Pizza Favorites",
+      "calories": null,
+      "price": "$31.20"
+    },
+    {
+      "name": "Pizza Blanca - GF",
+      "category": "Zachary’s Pizza Favorites",
+      "calories": null,
+      "price": "$22.30"
+    },
+    {
+      "name": "Sweet Heat - Stuffed S",
+      "category": "Pizza Special",
+      "calories": null,
+      "price": "$30.55"
+    },
+    {
+      "name": "Sweet Heat - Stuffed M",
+      "category": "Pizza Special",
+      "calories": null,
+      "price": "$36.90"
+    },
+    {
+      "name": "Sweet Heat - Stuffed L",
+      "category": "Pizza Special",
+      "calories": null,
+      "price": "$42.30"
+    },
+    {
+      "name": "Sweet Heat - Thin S",
+      "category": "Pizza Special",
+      "calories": null,
+      "price": "$22.75"
+    },
+    {
+      "name": "Sweet Heat - Thin M",
+      "category": "Pizza Special",
+      "calories": null,
+      "price": "$28.55"
+    },
+    {
+      "name": "Sweet Heat - Thin L",
+      "category": "Pizza Special",
+      "calories": null,
+      "price": "$34.90"
+    },
+    {
+      "name": "Sweet Heat - Thin XL",
+      "category": "Pizza Special",
+      "calories": null,
+      "price": "$39.40"
+    },
+    {
+      "name": "Sweet Heat - GF",
+      "category": "Pizza Special",
+      "calories": null,
+      "price": "$26.35"
+    },
+    {
+      "name": "Zachary’s Meatballs",
+      "category": "Zachary’s Salads & Starters",
+      "calories": null,
+      "price": "$13.50"
+    },
+    {
+      "name": "Chicken Wings",
+      "category": "Zachary’s Salads & Starters",
+      "calories": null,
+      "price": "$17.50"
+    },
+    {
+      "name": "Caesar - Single",
+      "category": "Zachary’s Salads & Starters",
+      "calories": null,
+      "price": "$8.75"
+    },
+    {
+      "name": "Caesar - Shared/Entrée",
+      "category": "Zachary’s Salads & Starters",
+      "calories": null,
+      "price": "$17.25"
+    },
+    {
+      "name": "Spring - Single",
+      "category": "Zachary’s Salads & Starters",
+      "calories": null,
+      "price": "$8.75"
+    },
+    {
+      "name": "Spring - Shared/Entrée",
+      "category": "Zachary’s Salads & Starters",
+      "calories": null,
+      "price": "$17.25"
+    },
+    {
+      "name": "Garden - Single",
+      "category": "Zachary’s Salads & Starters",
+      "calories": null,
+      "price": "$8.75"
+    },
+    {
+      "name": "Garden - Shared/Entrée",
+      "category": "Zachary’s Salads & Starters",
+      "calories": null,
+      "price": "$17.25"
+    },
+    {
+      "name": "Spinach - Single",
+      "category": "Zachary’s Salads & Starters",
+      "calories": null,
+      "price": "$8.75"
+    },
+    {
+      "name": "Spinach - Shared/Entrée",
+      "category": "Zachary’s Salads & Starters",
+      "calories": null,
+      "price": "$17.25"
+    },
+    {
+      "name": "Arugula - Single",
+      "category": "Zachary’s Salads & Starters",
+      "calories": null,
+      "price": "$8.75"
+    },
+    {
+      "name": "Arugula - Shared/Entrée",
+      "category": "Zachary’s Salads & Starters",
+      "calories": null,
+      "price": "$17.25"
+    },
+    {
+      "name": "Add Free-Range Chicken Breast to Any Salad - Single",
+      "category": "Zachary’s Salads & Starters",
+      "calories": null,
+      "price": "$4.00"
+    },
+    {
+      "name": "Add Free-Range Chicken Breast to Any Salad - Shared/Entrée",
+      "category": "Zachary’s Salads & Starters",
+      "calories": null,
+      "price": "$7.75"
+    },
+    {
+      "name": "Add Salad Topping - Single",
+      "category": "Zachary’s Salads & Starters",
+      "calories": null,
+      "price": "$0.60"
+    },
+    {
+      "name": "Add Salad Topping - Shared/Entrée",
+      "category": "Zachary’s Salads & Starters",
+      "calories": null,
+      "price": "$1.15"
+    },
+    {
+      "name": "Side of Zachary’s House-Made Vinaigrette, Ranch or Mustard French Dressing",
+      "category": "Zachary’s Salads & Starters",
+      "calories": null,
+      "price": "$1.55"
+    },
+    {
+      "name": "Side of Zachary’s House-Made Caesar Dressing",
+      "category": "Zachary’s Salads & Starters",
+      "calories": null,
+      "price": "$2.55"
+    },
+    {
+      "name": "Party Size Salad",
+      "category": "Zachary’s Salads & Starters",
+      "calories": null,
+      "price": "$31.25"
+    },
+    {
+      "name": "Add Free-Range Chicken Breast to Party Size Salad",
+      "category": "Zachary’s Salads & Starters",
+      "calories": null,
+      "price": "$16.25"
+    },
+    {
+      "name": "Cheese Slice",
+      "category": "Lunch Options",
+      "calories": null,
+      "price": "$6.50"
+    },
+    {
+      "name": "Pepperoni Slice",
+      "category": "Lunch Options",
+      "calories": null,
+      "price": "$7.00"
+    },
+    {
+      "name": "Veggie Slice",
+      "category": "Lunch Options",
+      "calories": null,
+      "price": "$7.00"
+    },
+    {
+      "name": "Sausage Slice",
+      "category": "Lunch Options",
+      "calories": null,
+      "price": "$7.00"
+    },
+    {
+      "name": "Lunch Special",
+      "category": "Lunch Options",
+      "calories": null,
+      "price": "$13.25"
+    }
+  ]
+}
