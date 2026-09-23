@@ -1,0 +1,293 @@
+{
+  "title": "Fainting Goat Cafe Menu With Price List",
+  "items": [
+    {
+      "name": "Bacon Avocado Omelette - Three Egg Omelette with Bacon and Shredded Cheese, Topped with Freshly Sliced Avocado, Served with Potatoes",
+      "category": "Monday Breakfast",
+      "calories": null,
+      "price": "$7.75"
+    },
+    {
+      "name": "Philly Skillet - Scrambled Eggs, Thinly Sliced Steak, Sauteed Peppers and Onions, Shredded Cheese, Served over Potatoes",
+      "category": "Tuesday Breakfast",
+      "calories": null,
+      "price": "$7.75"
+    },
+    {
+      "name": "Bacon Hash Brown Quiche - Quiche with Hash Browns, Bacon, Cheddar Cheese, Roasted Red Peppers, Garnished with Sour Cream",
+      "category": "Wednesday Breakfast",
+      "calories": null,
+      "price": "$7.75"
+    },
+    {
+      "name": "Cinnamon Roll Pancakes - Cinnamon Glazed Pancakes with a Cream Cheese Icing Drizzle, Choice of Bacon, Sausage, or Scrambled Eggs",
+      "category": "Thursday Breakfast",
+      "calories": null,
+      "price": "$8.25"
+    },
+    {
+      "name": "Breakfast Burrito - Scrambled Eggs, Onions, Bacon, Cheese, Tomato, Flour Tortilla, Served with Potatoes",
+      "category": "Friday Breakfast",
+      "calories": null,
+      "price": "$7.25"
+    },
+    {
+      "name": "Scrambled BLT - Scrambled Egg, Bacon, Lettuce, Tomato, Citrus Aioli, White Toast, Served with Breakfast Potatoes",
+      "category": "Daily Breakfast - Specialty Items",
+      "calories": null,
+      "price": "$7.75"
+    },
+    {
+      "name": "The Grazer - Two Scrambled Eggs with Cheese, One Piece of White Toast, Breakfast Potatoes, Choice of Two Bacon or One Sausage",
+      "category": "Daily Breakfast - Specialty Items",
+      "calories": null,
+      "price": "$8.00"
+    },
+    {
+      "name": "Scrambled Avocado Toast - Toasted Multigrain Bread, Sliced Avocado, Scrambled Eggs, Shredded Cheese, Chipotle Crema, Served with Breakfast Potatoes",
+      "category": "Daily Breakfast - Specialty Items",
+      "calories": null,
+      "price": "$7.75"
+    },
+    {
+      "name": "Chicken Burrito - Scrambled Eggs, Cheese, Seared Chicken, Breakfast Potatoes, Chipotle Crema, Served in a Flour Tortilla",
+      "category": "Daily Breakfast - Specialty Items",
+      "calories": null,
+      "price": "$7.75"
+    },
+    {
+      "name": "Keto Breakfast Sammy - Scrambled Eggs, Cheese, and Avocado Served between Two Sausage Patties",
+      "category": "Daily Breakfast - Specialty Items",
+      "calories": null,
+      "price": "$7.50"
+    },
+    {
+      "name": "Breakfast Sandwich - Choice of Croissant, English Muffin, Bagel, Biscuit, Multigrain, or White Toast; Choice of Bacon, Sausage, or Avocado; Includes Scrambled Eggs and Cheese (Sandwich Only)",
+      "category": "Daily Breakfast - Specialty Items",
+      "calories": null,
+      "price": "$8.00"
+    },
+    {
+      "name": "Scrambled Eggs (2)",
+      "category": "Pick and Choose",
+      "calories": null,
+      "price": "$2.25"
+    },
+    {
+      "name": "Side Of Sliced Avocado",
+      "category": "Pick and Choose",
+      "calories": null,
+      "price": "$2.25"
+    },
+    {
+      "name": "Breakfast Potatoes",
+      "category": "Pick and Choose",
+      "calories": null,
+      "price": "$3.50"
+    },
+    {
+      "name": "Bacon (4) - Four Slices of Smoked Applewood Bacon",
+      "category": "Pick and Choose",
+      "calories": null,
+      "price": "$3.75"
+    },
+    {
+      "name": "Sausage (2)",
+      "category": "Pick and Choose",
+      "calories": null,
+      "price": "$3.75"
+    },
+    {
+      "name": "English Muffin",
+      "category": "Pick and Choose",
+      "calories": null,
+      "price": "$2.00"
+    },
+    {
+      "name": "Toast (2)",
+      "category": "Pick and Choose",
+      "calories": null,
+      "price": "$2.00"
+    },
+    {
+      "name": "Bagel & Cream Cheese",
+      "category": "Pick and Choose",
+      "calories": null,
+      "price": "$3.00"
+    },
+    {
+      "name": "Croissant",
+      "category": "Pick and Choose",
+      "calories": null,
+      "price": "$2.00"
+    },
+    {
+      "name": "Yogurt Parfait - Vanilla Greek Yogurt, Apples, Homemade Granola, Fresh Berries",
+      "category": "Pick and Choose",
+      "calories": null,
+      "price": "$4.25"
+    },
+    {
+      "name": "Homemade Granola",
+      "category": "Pick and Choose",
+      "calories": null,
+      "price": "$3.75"
+    },
+    {
+      "name": "Banana Nut Muffin",
+      "category": "Pick and Choose",
+      "calories": null,
+      "price": "$2.50"
+    },
+    {
+      "name": "Chocolate Muffin",
+      "category": "Pick and Choose",
+      "calories": null,
+      "price": "$2.50"
+    },
+    {
+      "name": "Blueberry Muffin",
+      "category": "Pick and Choose",
+      "calories": null,
+      "price": "$2.50"
+    },
+    {
+      "name": "Cookie (1) - Ask at counter for available flavors",
+      "category": "Pick and Choose",
+      "calories": null,
+      "price": "$1.00"
+    },
+    {
+      "name": "Side Of Chipotle Crema",
+      "category": "Pick and Choose",
+      "calories": null,
+      "price": "$0.75"
+    },
+    {
+      "name": "Side Of Cream Cheese",
+      "category": "Pick and Choose",
+      "calories": null,
+      "price": "$0.75"
+    },
+    {
+      "name": "Lays Original",
+      "category": "Sides & Extras",
+      "calories": null,
+      "price": "$1.25"
+    },
+    {
+      "name": "Nacho Doritos",
+      "category": "Sides & Extras",
+      "calories": null,
+      "price": "$1.25"
+    },
+    {
+      "name": "Chips And Salsa",
+      "category": "Sides & Extras",
+      "calories": null,
+      "price": "$3.50"
+    },
+    {
+      "name": "French Fries",
+      "category": "Sides & Extras",
+      "calories": null,
+      "price": "$3.50"
+    },
+    {
+      "name": "Onion Rings",
+      "category": "Sides & Extras",
+      "calories": null,
+      "price": "$4.25"
+    },
+    {
+      "name": "Croissant",
+      "category": "Sides & Extras",
+      "calories": null,
+      "price": "$2.00"
+    },
+    {
+      "name": "Yogurt Parfait - Vanilla Greek Yogurt, Apples, Homemade Granola, Fresh Berries",
+      "category": "Sides & Extras",
+      "calories": null,
+      "price": "$4.25"
+    },
+    {
+      "name": "Homemade Granola",
+      "category": "Sides & Extras",
+      "calories": null,
+      "price": "$3.75"
+    },
+    {
+      "name": "Side Of Ranch",
+      "category": "Sides & Extras",
+      "calories": null,
+      "price": "$0.75"
+    },
+    {
+      "name": "Side Of Cilantro Lime Ranch",
+      "category": "Sides & Extras",
+      "calories": null,
+      "price": "$0.75"
+    },
+    {
+      "name": "Side Of Honey Mustard",
+      "category": "Sides & Extras",
+      "calories": null,
+      "price": "$0.75"
+    },
+    {
+      "name": "Side Of Italian Dressing",
+      "category": "Sides & Extras",
+      "calories": null,
+      "price": "$0.75"
+    },
+    {
+      "name": "Side Of Sour Cream",
+      "category": "Sides & Extras",
+      "calories": null,
+      "price": "$0.75"
+    },
+    {
+      "name": "Side Of Homemade Salsa",
+      "category": "Sides & Extras",
+      "calories": null,
+      "price": "$0.75"
+    },
+    {
+      "name": "Side Of Avocado",
+      "category": "Sides & Extras",
+      "calories": null,
+      "price": "$2.25"
+    },
+    {
+      "name": "Add Hard Boiled Egg",
+      "category": "Sides & Extras",
+      "calories": null,
+      "price": "$1.75"
+    },
+    {
+      "name": "Cheeseburger - American Cheese, Lettuce, Tomato, Onion, Kaiser Roll",
+      "category": "Take Lunch With You Too",
+      "calories": null,
+      "price": "$8.75"
+    },
+    {
+      "name": "House Salad - Mixed Greens, Tomato, Onion, Shredded Cheese, Homemade Croutons, Choice of Dressing; Half or Full",
+      "category": "Take Lunch With You Too",
+      "calories": null,
+      "price": "$4.75"
+    },
+    {
+      "name": "Princess Potatoes",
+      "category": "Secret Menu",
+      "calories": null,
+      "price": "$8.00"
+    },
+    {
+      "name": "The Annie",
+      "category": "Secret Menu",
+      "calories": null,
+      "price": "$9.50"
+    }
+  ]
+}
