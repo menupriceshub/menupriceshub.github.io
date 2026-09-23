@@ -1,0 +1,42 @@
+{
+  "title": "Rudy's Menu With Price List",
+  "items": [
+    { "name": "Night Cup (cup of red beans & rice OR gumbo, vegan beans available)", "category": "Late Night Food Menu (Fri-Sat 10:45pm-12:30am)", "calories": null, "price": "$8" },
+    { "name": "BBW - Best of Both Worlds (cup of each house favorite)", "category": "Late Night Food Menu (Fri-Sat 10:45pm-12:30am)", "calories": null, "price": "$15" },
+    { "name": "B&B - Beans & Beignets (cup of red beans & rice + 2 beignets, vegan beans available)", "category": "Late Night Food Menu (Fri-Sat 10:45pm-12:30am)", "calories": null, "price": "$16" },
+    { "name": "Popcorn Shrimp", "category": "Late Night Food Menu (Fri-Sat 10:45pm-12:30am)", "calories": null, "price": "$12" },
+    { "name": "French Fries OR Fried Pickles", "category": "Late Night Food Menu (Fri-Sat 10:45pm-12:30am)", "calories": null, "price": "$7" },
+    { "name": "High Fries (fries smothered in cheddar, green onions, spicy ranch)", "category": "Late Night Food Menu (Fri-Sat 10:45pm-12:30am)", "calories": null, "price": "$10" },
+    { "name": "French Quarter Fries (fries topped with red beans and cheddar cheese, vegan beans available)", "category": "Late Night Food Menu (Fri-Sat 10:45pm-12:30am)", "calories": null, "price": "$15" },
+    { "name": "Beignets (Order of 3)", "category": "Late Night Food Menu (Fri-Sat 10:45pm-12:30am)", "calories": null, "price": "$9" },
+
+    { "name": "Yazoo Drafts ($1 off)", "category": "Late Night Drink Specials", "calories": null, "price": "$1 off" },
+    { "name": "House Red / House White", "category": "Late Night Drink Specials", "calories": null, "price": "$10" },
+    { "name": "Pink Panthers", "category": "Late Night Drink Specials", "calories": null, "price": "$13" },
+    { "name": "Jack Daniels", "category": "Late Night Drink Specials", "calories": null, "price": "$10" },
+    { "name": "The NashMaker (shot of Belle Meade Bourbon & a Yazoo draft)", "category": "Late Night Drink Specials", "calories": null, "price": "$16" },
+
+    { "name": "Rudy's Popcorn Shrimp (with cocktail sauce)", "category": "Dinner Menu", "calories": null, "price": "$13.99" },
+    { "name": "Fried Pickles (with spicy ranch)", "category": "Dinner Menu", "calories": null, "price": "$9.49" },
+    { "name": "House Salad (Small)", "category": "Dinner Menu", "calories": null, "price": "$7.99" },
+    { "name": "House Salad (Large)", "category": "Dinner Menu", "calories": null, "price": "$9.99" },
+    { "name": "Chicken, Andouille Sausage & Shrimp Gumbo (Cup)", "category": "Dinner Menu", "calories": null, "price": "$9.99" },
+    { "name": "Chicken, Andouille Sausage & Shrimp Gumbo (Bowl)", "category": "Dinner Menu", "calories": null, "price": "$14.99" },
+    { "name": "Creole Red Beans & Rice (Cup)", "category": "Dinner Menu", "calories": null, "price": "$9.99" },
+    { "name": "Creole Red Beans & Rice (Bowl)", "category": "Dinner Menu", "calories": null, "price": "$15.99" },
+    { "name": "Vegan Creole Red Beans & Rice (Cup)", "category": "Dinner Menu", "calories": null, "price": "$8.99" },
+    { "name": "Vegan Creole Red Beans & Rice (Bowl)", "category": "Dinner Menu", "calories": null, "price": "$12.49" },
+    { "name": "Shrimp Po' Boy (served with french fries)", "category": "Dinner Menu", "calories": null, "price": "$19.49" },
+    { "name": "Sub Salad for Fries (add-on)", "category": "Dinner Menu", "calories": null, "price": "$2.99" },
+    { "name": "Doc. Braden's Creole Seafood Pies (1 pie)", "category": "Dinner Menu", "calories": null, "price": "$10" },
+    { "name": "Doc. Braden's Creole Seafood Pies (2 pies)", "category": "Dinner Menu", "calories": null, "price": "$18" },
+    { "name": "Creole Grilled Cheese on Sourdough (served with french fries)", "category": "Dinner Menu", "calories": null, "price": "$16.99" },
+    { "name": "Creole Crawfish Grilled Cheese on Sourdough (served with french fries)", "category": "Dinner Menu", "calories": null, "price": "$18.99" },
+
+    { "name": "Beignets", "category": "Dessert & Sides", "calories": null, "price": "$8.99" },
+    { "name": "Tiramisu", "category": "Dessert & Sides", "calories": null, "price": "$9.99" },
+    { "name": "Fries", "category": "Dessert & Sides", "calories": null, "price": "$6.99" },
+    { "name": "New Orleans Gambino's French Bread", "category": "Dessert & Sides", "calories": null, "price": "$7.49" }
+  ]
+}
+
