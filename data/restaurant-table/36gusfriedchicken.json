@@ -1,0 +1,251 @@
+{
+  "title": "Gus's World Famous Fried Chicken Menu With Price List",
+  "items": [
+    {
+      "name": "Iced Sweet Tea",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$3.20"
+    },
+    {
+      "name": "Iced Arnold Palmer - Lemonade and fresh brewed iced tea",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$3.20"
+    },
+    {
+      "name": "Iced Unsweet Tea",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$3.20"
+    },
+    {
+      "name": "Coke",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$3.20"
+    },
+    {
+      "name": "Lemonade",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$3.20"
+    },
+    {
+      "name": "Dr. Pepper",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$3.20"
+    },
+    {
+      "name": "Bottled Water",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$3.20"
+    },
+    {
+      "name": "Sprite",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$3.20"
+    },
+    {
+      "name": "Diet Coke",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$3.20"
+    },
+    {
+      "name": "Coke",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$3.20"
+    },
+    {
+      "name": "Orange Fanta",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$3.20"
+    },
+    {
+      "name": "IBC Root Beer",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$3.50"
+    },
+    {
+      "name": "3 Piece Dark Plate - Hand-battered thighs (2) and a leg, served with baked beans, coleslaw, and white bread",
+      "category": "Plates",
+      "calories": null,
+      "price": "$15.85"
+    },
+    {
+      "name": "2 Piece White Plate - Hand-battered breast and wing, served with baked beans, coleslaw, and white bread",
+      "category": "Plates",
+      "calories": null,
+      "price": "$13.80"
+    },
+    {
+      "name": "2 Piece Dark Plate - Hand-battered thigh and leg, served with baked beans, coleslaw, and white bread",
+      "category": "Plates",
+      "calories": null,
+      "price": "$12.65"
+    },
+    {
+      "name": "3 Piece Tender Plate - Three chicken tenders, served with baked beans, coleslaw, and white bread",
+      "category": "Plates",
+      "calories": null,
+      "price": "$16.50"
+    },
+    {
+      "name": "3 Piece White Plate - Hand-battered breasts (2) and a wing, served with baked beans, creamy coleslaw, and bread",
+      "category": "Plates",
+      "calories": null,
+      "price": "$18.15"
+    },
+    {
+      "name": "3 Piece Wing Plate - Three hand-battered chicken wings, served with baked beans, coleslaw, and white bread",
+      "category": "Plates",
+      "calories": null,
+      "price": "$16.50"
+    },
+    {
+      "name": "4 Piece Tender Plate - Four chicken tenders, served with baked beans, coleslaw, and white bread",
+      "category": "Plates",
+      "calories": null,
+      "price": "$19.20"
+    },
+    {
+      "name": "Half Chicken Plate - Breast, wing, thigh, and leg, served with baked beans, coleslaw, and white bread",
+      "category": "Plates",
+      "calories": null,
+      "price": "$20.15"
+    },
+    {
+      "name": "Fried Green Tomatoes - Thick slices of green tomato, fried until golden brown and crispy, served with creamy ranch dressing",
+      "category": "Starters",
+      "calories": null,
+      "price": "$9.50"
+    },
+    {
+      "name": "Fried Okra - Bite-sized pieces of okra coated in cornmeal breading and fried until golden brown, served with creamy ranch dressing",
+      "category": "Starters",
+      "calories": null,
+      "price": "$8.35"
+    },
+    {
+      "name": "Fried Pickles - Fried pickle spears coated in crispy batter, served with creamy ranch dressing",
+      "category": "Starters",
+      "calories": null,
+      "price": "$9.50"
+    },
+    {
+      "name": "Corn Nuggets - Whole kernel corn blended into a creamy filling, coated in crunchy batter, served with ranch",
+      "category": "Specials",
+      "calories": null,
+      "price": "$8.35"
+    },
+    {
+      "name": "Chicken Sandwich Combo - Juicy chicken thigh with pickles and creamy mayo",
+      "category": "Specials",
+      "calories": null,
+      "price": "$12.10"
+    },
+    {
+      "name": "Chicken Sandwich - Juicy chicken thigh with pickles and creamy mayo (Sandwich Only)",
+      "category": "Specials",
+      "calories": null,
+      "price": "$9.80"
+    },
+    {
+      "name": "16 Piece Snack - Fried chicken with a mix of tender white and dark meat",
+      "category": "Snacks",
+      "calories": null,
+      "price": "$50.40"
+    },
+    {
+      "name": "8 Piece Snack - Fried chicken with a mix of tender white and dark meat",
+      "category": "Snacks",
+      "calories": null,
+      "price": "$26.95"
+    },
+    {
+      "name": "2 Piece Dark Snack - Thigh and leg, served with 2 pieces of white bread",
+      "category": "Snacks",
+      "calories": null,
+      "price": "$8.05"
+    },
+    {
+      "name": "12 Piece Snack - Fried chicken with a mix of tender white and dark meat",
+      "category": "Snacks",
+      "calories": null,
+      "price": "$38.95"
+    },
+    {
+      "name": "20 Piece Snack - Fried chicken with a mix of tender white and dark meat",
+      "category": "Snacks",
+      "calories": null,
+      "price": "$60.70"
+    },
+    {
+      "name": "2 Piece White Snack - Breast and wing, served with 2 pieces of white bread",
+      "category": "Snacks",
+      "calories": null,
+      "price": "$9.20"
+    },
+    {
+      "name": "Wing",
+      "category": "A La Carte",
+      "calories": null,
+      "price": "$3.75"
+    },
+    {
+      "name": "Honey",
+      "category": "A La Carte",
+      "calories": null,
+      "price": "$1.00"
+    },
+    {
+      "name": "Tender - Fried chicken tender for those who prefer less spice",
+      "category": "A La Carte",
+      "calories": null,
+      "price": "$3.75"
+    },
+    {
+      "name": "Pickle Slices - 2 oz cup of pickle slices",
+      "category": "A La Carte",
+      "calories": null,
+      "price": "$0.25"
+    },
+    {
+      "name": "Ranch",
+      "category": "A La Carte",
+      "calories": null,
+      "price": "$0.65"
+    },
+    {
+      "name": "Leg - Hand-trimmed and battered chicken leg",
+      "category": "A La Carte",
+      "calories": null,
+      "price": "$3.75"
+    },
+    {
+      "name": "Jalapeno",
+      "category": "A La Carte",
+      "calories": null,
+      "price": "$0.50"
+    },
+    {
+      "name": "Breast - Hand-trimmed and battered chicken breast",
+      "category": "A La Carte",
+      "calories": null,
+      "price": "$5.50"
+    },
+    {
+      "name": "Honey Mustard",
+      "category": "A La Carte",
+      "calories": null,
+      "price": "$0.65"
+    }
+  ]
+}
