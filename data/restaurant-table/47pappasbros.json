@@ -1,0 +1,263 @@
+{
+  "title": "Pappas Bros. Steakhouse Menu With Price List",
+  "items": [
+    {
+      "name": "Spanish Octopus Carpaccio",
+      "category": "Appetizers",
+      "calories": null,
+      "price": "$27.95"
+    },
+    {
+      "name": "Fried Oysters",
+      "category": "Appetizers",
+      "calories": null,
+      "price": "$24.95"
+    },
+    {
+      "name": "Chilled Shrimp",
+      "category": "Appetizers",
+      "calories": null,
+      "price": "$28.95"
+    },
+    {
+      "name": "Jumbo Lump Crabcakes",
+      "category": "Appetizers",
+      "calories": null,
+      "price": "$36.95"
+    },
+    {
+      "name": "Bacon-Wrapped Scallops",
+      "category": "Appetizers",
+      "calories": null,
+      "price": "$38.95"
+    },
+    {
+      "name": "Burrata",
+      "category": "Appetizers",
+      "calories": null,
+      "price": "$24.95"
+    },
+    {
+      "name": "Lobster Deviled Eggs",
+      "category": "Appetizers",
+      "calories": null,
+      "price": "$29.95"
+    },
+    {
+      "name": "Seared Foie Gras",
+      "category": "Appetizers",
+      "calories": null,
+      "price": "$47.95"
+    },
+    {
+      "name": "Caesar Salad",
+      "category": "Salads",
+      "calories": null,
+      "price": "$15.95"
+    },
+    {
+      "name": "Iceberg Slab",
+      "category": "Salads",
+      "calories": null,
+      "price": "$16.95"
+    },
+    {
+      "name": "Beefsteak Tomato",
+      "category": "Salads",
+      "calories": null,
+      "price": "$18.95"
+    },
+    {
+      "name": "Steakhouse Salad",
+      "category": "Salads",
+      "calories": null,
+      "price": "$16.95"
+    },
+    {
+      "name": "House Salad",
+      "category": "Salads",
+      "calories": null,
+      "price": "$14.95"
+    },
+    {
+      "name": "Soup of the Day",
+      "category": "Soups",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Turtle Gumbo",
+      "category": "Soups",
+      "calories": null,
+      "price": "$16.95"
+    },
+    {
+      "name": "Filet Mignon 8 oz.",
+      "category": "Steaks",
+      "calories": null,
+      "price": "$60.95"
+    },
+    {
+      "name": "Filet Mignon 10 oz.",
+      "category": "Steaks",
+      "calories": null,
+      "price": "$65.95"
+    },
+    {
+      "name": "Filet Mignon 12 oz.",
+      "category": "Steaks",
+      "calories": null,
+      "price": "$70.95"
+    },
+    {
+      "name": "Prime Ribeye 16 oz.",
+      "category": "Steaks",
+      "calories": null,
+      "price": "$67.95"
+    },
+    {
+      "name": "Prime Ribeye 18 oz.",
+      "category": "Steaks",
+      "calories": null,
+      "price": "$76.95"
+    },
+    {
+      "name": "Prime New York Strip 14 oz.",
+      "category": "Steaks",
+      "calories": null,
+      "price": "$64.95"
+    },
+    {
+      "name": "Prime New York Strip 16 oz.",
+      "category": "Steaks",
+      "calories": null,
+      "price": "$72.95"
+    },
+    {
+      "name": "Bone-In Prime Ribeye 22 oz.",
+      "category": "Bone-In Beef",
+      "calories": null,
+      "price": "$82.95"
+    },
+    {
+      "name": "Bone-In Prime New York Strip 18 oz.",
+      "category": "Bone-In Beef",
+      "calories": null,
+      "price": "$74.95"
+    },
+    {
+      "name": "Porterhouse 26 oz.",
+      "category": "Bone-In Beef",
+      "calories": null,
+      "price": "$89.95"
+    },
+    {
+      "name": "Grilled Double Lamb Chops",
+      "category": "Steakhouse Specialties",
+      "calories": null,
+      "price": "$79.95"
+    },
+    {
+      "name": "Filet Duo",
+      "category": "Steakhouse Specialties",
+      "calories": null,
+      "price": "$71.95"
+    },
+    {
+      "name": "Broiled Salmon Fillet",
+      "category": "Seafood",
+      "calories": null,
+      "price": "$56.95"
+    },
+    {
+      "name": "Live Maine Lobster",
+      "category": "Seafood",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Chilean Sea Bass & Lobster",
+      "category": "Seafood",
+      "calories": null,
+      "price": "$68.95"
+    },
+    {
+      "name": "Au Gratin Potatoes",
+      "category": "Vegetables",
+      "calories": null,
+      "price": "$17.95"
+    },
+    {
+      "name": "Baked Potato",
+      "category": "Vegetables",
+      "calories": null,
+      "price": "$13.95"
+    },
+    {
+      "name": "Fresh Jumbo Asparagus",
+      "category": "Vegetables",
+      "calories": null,
+      "price": "$16.95"
+    },
+    {
+      "name": "Haricot Verts (French Green Beans)",
+      "category": "Vegetables",
+      "calories": null,
+      "price": "$14.95"
+    },
+    {
+      "name": "Skillet Potatoes",
+      "category": "Vegetables",
+      "calories": null,
+      "price": "$14.95"
+    },
+    {
+      "name": "Mashed Potatoes",
+      "category": "Vegetables",
+      "calories": null,
+      "price": "$13.95"
+    },
+    {
+      "name": "Roasted Mushrooms",
+      "category": "Vegetables",
+      "calories": null,
+      "price": "$21.95"
+    },
+    {
+      "name": "Onion Rings",
+      "category": "Vegetables",
+      "calories": null,
+      "price": "$15.95"
+    },
+    {
+      "name": "Steak Fries",
+      "category": "Vegetables",
+      "calories": null,
+      "price": "$13.95"
+    },
+    {
+      "name": "Creamed Spinach",
+      "category": "Vegetables",
+      "calories": null,
+      "price": "$17.95"
+    },
+    {
+      "name": "Jumbo Lump Crab Mac & Cheese",
+      "category": "Vegetables",
+      "calories": null,
+      "price": "$26.95"
+    },
+    {
+      "name": "Prime New York Strip 10 oz.",
+      "category": "Bar Entrees",
+      "calories": null,
+      "price": "$54.95"
+    },
+    {
+      "name": "Filet Mignon 6 oz.",
+      "category": "Bar Entrees",
+      "calories": null,
+      "price": "$55.95"
+    }
+  ]
+}
