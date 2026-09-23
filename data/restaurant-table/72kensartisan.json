@@ -1,0 +1,347 @@
+{
+  "title": "Ken's Artisan Pizza Menu With Price List",
+  "items": [
+    {
+      "name": "Caesar Salad",
+      "category": "Salads & Starters",
+      "calories": null,
+      "price": "$14.00"
+    },
+    {
+      "name": "Market Salad",
+      "category": "Salads & Starters",
+      "calories": null,
+      "price": "$13.00"
+    },
+    {
+      "name": "Calamari",
+      "category": "Salads & Starters",
+      "calories": null,
+      "price": "$13.00"
+    },
+    {
+      "name": "Meatballs",
+      "category": "Salads & Starters",
+      "calories": null,
+      "price": "$13.00"
+    },
+    {
+      "name": "Wood Oven Roasted Vegetable Plate",
+      "category": "Salads & Starters",
+      "calories": null,
+      "price": "$13.00"
+    },
+    {
+      "name": "Wood Oven Roasted Jimmy Nardello Peppers",
+      "category": "Salads & Starters",
+      "calories": null,
+      "price": "$12.00"
+    },
+    {
+      "name": "Burrata",
+      "category": "Pizzas",
+      "calories": null,
+      "price": "$20.00"
+    },
+    {
+      "name": "Margherita",
+      "category": "Pizzas",
+      "calories": null,
+      "price": "$16.00"
+    },
+    {
+      "name": "Arrabbiata",
+      "category": "Pizzas",
+      "calories": null,
+      "price": "$17.00"
+    },
+    {
+      "name": "Mushroom",
+      "category": "Pizzas",
+      "calories": null,
+      "price": "$20.00"
+    },
+    {
+      "name": "Handmade",
+      "category": "Pizzas",
+      "calories": null,
+      "price": "$16.00"
+    },
+    {
+      "name": "Pomodoro Royale",
+      "category": "Pizzas",
+      "calories": null,
+      "price": "$15.00"
+    },
+    {
+      "name": "Anchovy",
+      "category": "Pizzas",
+      "calories": null,
+      "price": "$18.00"
+    },
+    {
+      "name": "New Yorker",
+      "category": "Pizzas",
+      "calories": null,
+      "price": "$15.00"
+    },
+    {
+      "name": "Brooklyn",
+      "category": "Pizzas",
+      "calories": null,
+      "price": "$19.00"
+    },
+    {
+      "name": "Fennel Sausage & Onions",
+      "category": "Pizzas",
+      "calories": null,
+      "price": "$19.00"
+    },
+    {
+      "name": "Soppressata",
+      "category": "Pizzas",
+      "calories": null,
+      "price": "$19.00"
+    },
+    {
+      "name": "Prosciutto",
+      "category": "Pizzas",
+      "calories": null,
+      "price": "$19.00"
+    },
+    {
+      "name": "Bacon",
+      "category": "Pizzas",
+      "calories": null,
+      "price": "$19.00"
+    },
+    {
+      "name": "Potato & Leek",
+      "category": "Pizzas",
+      "calories": null,
+      "price": "$19.00"
+    },
+    {
+      "name": "White Chocolate Panna Cotta",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$7.50"
+    },
+    {
+      "name": "Affogato",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$6.50"
+    },
+    {
+      "name": "Housemade Ice Cream",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$5.00"
+    },
+    {
+      "name": "Blondie Brownie",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$7.50"
+    },
+    {
+      "name": "Classic Martini Cocktail",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$12.00"
+    },
+    {
+      "name": "THE Gin & Tonic",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$13.00"
+    },
+    {
+      "name": "Aperol Spritz",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$11.00"
+    },
+    {
+      "name": "Negroni",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$9.00"
+    },
+    {
+      "name": "Boulevardier",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$10.00"
+    },
+    {
+      "name": "Ken's Old Fashioned",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$11.00"
+    },
+    {
+      "name": "Ken's Manhattan",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$10.00"
+    },
+    {
+      "name": "Roman Holiday",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$10.00"
+    },
+    {
+      "name": "Dark & Stormy",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$11.00"
+    },
+    {
+      "name": "Cantina Puianello, Lambrusco Of Graparossa, Coli Scandiano E Di Canossa, IT",
+      "category": "Wine",
+      "calories": null,
+      "price": "$9.00"
+    },
+    {
+      "name": "MV Famille Robert De Fourn, \"Carte Noir\" Brut, Blanquette De Limoux, FR",
+      "category": "Wine",
+      "calories": null,
+      "price": "$11.00"
+    },
+    {
+      "name": "2021 Sokol Blosser, Rose Of Pinot Noir, Willamette Valley, Dundee, OR",
+      "category": "Wine",
+      "calories": null,
+      "price": "$10.00"
+    },
+    {
+      "name": "2020 Haden Fig By Evasham Wood, Chardonnay, Willamette Valley, OR",
+      "category": "Wine",
+      "calories": null,
+      "price": "$12.00"
+    },
+    {
+      "name": "2020 Domaine Eugene Carrelet Fils, \"Jongieux\" Jacquere, Savoie FR",
+      "category": "Wine",
+      "calories": null,
+      "price": "$10.00"
+    },
+    {
+      "name": "2018 Adega Northwest, \"Dutchman Vineyard\" Alvarinho, Yakima Valley, WA",
+      "category": "Wine",
+      "calories": null,
+      "price": "$12.00"
+    },
+    {
+      "name": "2021 Tamellini, Garganega, Soave DOC, Costeggiola, IT",
+      "category": "Wine",
+      "calories": null,
+      "price": "$11.00"
+    },
+    {
+      "name": "2016 Brave Cellars, \"Less Traveled\" Pinot Noir, Momtazi Vineyard, McMinnville, OR",
+      "category": "Wine",
+      "calories": null,
+      "price": "$12.00"
+    },
+    {
+      "name": "2019 Coe Cellars, \"Mission Hills\" Sangiovese, Walla Walla AVA, WA",
+      "category": "Wine",
+      "calories": null,
+      "price": "$13.00"
+    },
+    {
+      "name": "2018 Marotti Campi, \"Rubico\" Lacrima Di Morro D'Alba DOC, Ancona, IT",
+      "category": "Wine",
+      "calories": null,
+      "price": "$10.00"
+    },
+    {
+      "name": "2018 Le Vigne Di Faraone, Montepulciano D'Abruzzo DOC, Abruzzo, IT",
+      "category": "Wine",
+      "calories": null,
+      "price": "$11.00"
+    },
+    {
+      "name": "2021 Domaine De L'idylle, Gamay, Vin De Savoie AOC, FR",
+      "category": "Wine",
+      "calories": null,
+      "price": "$11.00"
+    },
+    {
+      "name": "Caldera Root Beer",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$3.50"
+    },
+    {
+      "name": "Ginger Ale",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$3.50"
+    },
+    {
+      "name": "Coke",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$3.50"
+    },
+    {
+      "name": "Diet Coke",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$3.50"
+    },
+    {
+      "name": "Sprite",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$3.50"
+    },
+    {
+      "name": "Fever Tree Club Soda",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$3.50"
+    },
+    {
+      "name": "Tonic Water",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$3.50"
+    },
+    {
+      "name": "House-Made Lemonade",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$4.00"
+    },
+    {
+      "name": "Iced Tea",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$3.00"
+    },
+    {
+      "name": "Fizzy Water, San Pellegrino",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$5.00"
+    },
+    {
+      "name": "Still Mineral Water, Panna",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$5.00"
+    },
+    {
+      "name": "Beer & Cider",
+      "category": "Beer & Cider",
+      "calories": null,
+      "price": null
+    }
+  ]
+}
