@@ -1,0 +1,317 @@
+{
+  "title": "Original Tommy's Menu With Price List",
+  "items": [
+    {
+      "name": "Breakfast Burrito",
+      "category": "Breakfast",
+      "calories": null,
+      "price": "$12.80"
+    },
+    {
+      "name": "Sausage Egg Muffin",
+      "category": "Breakfast",
+      "calories": null,
+      "price": "$9.20"
+    },
+    {
+      "name": "Sausage Cheese Egg Muffin",
+      "category": "Breakfast",
+      "calories": null,
+      "price": "$10.20"
+    },
+    {
+      "name": "Sausage And Egg Sandwich",
+      "category": "Breakfast",
+      "calories": null,
+      "price": "$9.20"
+    },
+    {
+      "name": "Sausage And Egg Sandwich With Cheese",
+      "category": "Breakfast",
+      "calories": null,
+      "price": "$10.20"
+    },
+    {
+      "name": "French Fries",
+      "category": "Fries",
+      "calories": null,
+      "price": "$6.30"
+    },
+    {
+      "name": "Chili Fries",
+      "category": "Fries",
+      "calories": null,
+      "price": "$8.55"
+    },
+    {
+      "name": "Cheese Fries",
+      "category": "Fries",
+      "calories": null,
+      "price": "$8.05"
+    },
+    {
+      "name": "Chili Cheese Fries",
+      "category": "Fries",
+      "calories": null,
+      "price": "$9.65"
+    },
+    {
+      "name": "Caliente Chili Cheese Fries",
+      "category": "Fries",
+      "calories": null,
+      "price": "$9.65"
+    },
+    {
+      "name": "MD Iced Tea",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$4.80"
+    },
+    {
+      "name": "MD Orange Crush",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$4.80"
+    },
+    {
+      "name": "MD Mountain Dew",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$4.80"
+    },
+    {
+      "name": "MD Pink Lemonade",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$4.80"
+    },
+    {
+      "name": "MD Raspberry Tea",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$4.80"
+    },
+    {
+      "name": "MD Pepsi",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$4.80"
+    },
+    {
+      "name": "MD Diet Pepsi",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$4.80"
+    },
+    {
+      "name": "MD Wild Cherry",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$4.80"
+    },
+    {
+      "name": "MD Mug Rootbeer",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$4.80"
+    },
+    {
+      "name": "MD Starry",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$4.80"
+    },
+    {
+      "name": "MD Pepsi Zero",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$4.80"
+    },
+    {
+      "name": "Pepsi Bottle",
+      "category": "Bottle Drinks",
+      "calories": null,
+      "price": "$3.75"
+    },
+    {
+      "name": "Diet Pepsi Bottle",
+      "category": "Bottle Drinks",
+      "calories": null,
+      "price": "$3.75"
+    },
+    {
+      "name": "Starry Bottle",
+      "category": "Bottle Drinks",
+      "calories": null,
+      "price": "$3.75"
+    },
+    {
+      "name": "Mountain Dew Bottle",
+      "category": "Bottle Drinks",
+      "calories": null,
+      "price": "$3.75"
+    },
+    {
+      "name": "Bottle Water",
+      "category": "Bottle Drinks",
+      "calories": null,
+      "price": "$3.50"
+    },
+    {
+      "name": "Hamburger",
+      "category": "Chili Burgers",
+      "calories": null,
+      "price": "$7.20"
+    },
+    {
+      "name": "Double Hamburger",
+      "category": "Chili Burgers",
+      "calories": null,
+      "price": "$8.75"
+    },
+    {
+      "name": "Cheeseburger",
+      "category": "Chili Burgers",
+      "calories": null,
+      "price": "$8.40"
+    },
+    {
+      "name": "Double Cheeseburger",
+      "category": "Chili Burgers",
+      "calories": null,
+      "price": "$9.95"
+    },
+    {
+      "name": "California Classic Hamburger",
+      "category": "California Burgers",
+      "calories": null,
+      "price": "$7.20"
+    },
+    {
+      "name": "Double California Classic Hamburger",
+      "category": "California Burgers",
+      "calories": null,
+      "price": "$8.75"
+    },
+    {
+      "name": "California Classic Cheeseburger",
+      "category": "California Burgers",
+      "calories": null,
+      "price": "$8.40"
+    },
+    {
+      "name": "Double California Classic Cheeseburger",
+      "category": "California Burgers",
+      "calories": null,
+      "price": "$9.95"
+    },
+    {
+      "name": "California Classic Hamburger (1/4 Lb.)",
+      "category": "1/4lb California Burgers",
+      "calories": null,
+      "price": "$8.85"
+    },
+    {
+      "name": "Double California Classic Hamburger (1/4 Lb.)",
+      "category": "1/4lb California Burgers",
+      "calories": null,
+      "price": "$12.25"
+    },
+    {
+      "name": "California Classic Cheeseburger (1/4 Lb.)",
+      "category": "1/4lb California Burgers",
+      "calories": null,
+      "price": "$9.65"
+    },
+    {
+      "name": "Double California Classic Cheeseburger (1/4 Lb.)",
+      "category": "1/4lb California Burgers",
+      "calories": null,
+      "price": "$13.90"
+    },
+    {
+      "name": "Hamburger (1/4 Lb.)",
+      "category": "1/4 Chili Burgers",
+      "calories": null,
+      "price": "$8.85"
+    },
+    {
+      "name": "Double Hamburger (1/4 Lb.)",
+      "category": "1/4 Chili Burgers",
+      "calories": null,
+      "price": "$12.25"
+    },
+    {
+      "name": "Cheeseburger (1/4 Lb.)",
+      "category": "1/4 Chili Burgers",
+      "calories": null,
+      "price": "$9.65"
+    },
+    {
+      "name": "Double Cheeseburger (1/4 Lb.)",
+      "category": "1/4 Chili Burgers",
+      "calories": null,
+      "price": "$13.90"
+    },
+    {
+      "name": "Chili Hot Dog",
+      "category": "Other Chili Items",
+      "calories": null,
+      "price": "$9.25"
+    },
+    {
+      "name": "Chili Hot Dog With Cheese",
+      "category": "Other Chili Items",
+      "calories": null,
+      "price": "$10.45"
+    },
+    {
+      "name": "Chili Tamale",
+      "category": "Other Chili Items",
+      "calories": null,
+      "price": "$10.45"
+    },
+    {
+      "name": "Chili-To-Go Small (8 Oz.)",
+      "category": "Other Chili Items",
+      "calories": null,
+      "price": "$13.95"
+    },
+    {
+      "name": "Chili-To-Go Medium (12 Oz.)",
+      "category": "Other Chili Items",
+      "calories": null,
+      "price": "$15.80"
+    },
+    {
+      "name": "Chili-To-Go Large (32 Oz.)",
+      "category": "Other Chili Items",
+      "calories": null,
+      "price": "$29.05"
+    },
+    {
+      "name": "Caliente Burger",
+      "category": "Caliente",
+      "calories": null,
+      "price": "$11.30"
+    },
+    {
+      "name": "Double Caliente Burger",
+      "category": "Caliente",
+      "calories": null,
+      "price": "$14.60"
+    },
+    {
+      "name": "Caliente Tamale",
+      "category": "Caliente",
+      "calories": null,
+      "price": "$10.45"
+    },
+    {
+      "name": "Caliente Hot Dog",
+      "category": "Caliente",
+      "calories": null,
+      "price": "$10.45"
+    }
+  ]
+}
