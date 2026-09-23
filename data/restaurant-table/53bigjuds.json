@@ -1,0 +1,239 @@
+{
+  "title": "Big Jud's Menu With Price List",
+  "items": [
+    {
+      "name": "Fried Pickles",
+      "category": "Side Order",
+      "calories": null,
+      "price": "$6.49"
+    },
+    {
+      "name": "Onion Rings",
+      "category": "Side Order",
+      "calories": null,
+      "price": "$5.75"
+    },
+    {
+      "name": "Fresh Cut Fries",
+      "category": "Side Order",
+      "calories": null,
+      "price": "$4.19"
+    },
+    {
+      "name": "Tater Gems",
+      "category": "Side Order",
+      "calories": null,
+      "price": "$4.79"
+    },
+    {
+      "name": "Ice Cream",
+      "category": "Ice Cream",
+      "calories": null,
+      "price": "$1.99"
+    },
+    {
+      "name": "Shakes",
+      "category": "Ice Cream",
+      "calories": null,
+      "price": "$5.99"
+    },
+    {
+      "name": "Pint",
+      "category": "Ice Cream",
+      "calories": null,
+      "price": "$3.79"
+    },
+    {
+      "name": "Double Big Jud Party Combo",
+      "category": "It's Party Time",
+      "calories": null,
+      "price": "$30.99"
+    },
+    {
+      "name": "Big Jud Big Deal",
+      "category": "It's Party Time",
+      "calories": null,
+      "price": "$23.99"
+    },
+    {
+      "name": "Double Big Jud Big Deal",
+      "category": "It's Party Time",
+      "calories": null,
+      "price": "$28.99"
+    },
+    {
+      "name": "Big Jud Party Combo",
+      "category": "It's Party Time",
+      "calories": null,
+      "price": "$25.99"
+    },
+    {
+      "name": "Double Big Jud Special - World Famous 2 Lb. Cheeseburger",
+      "category": "One and Two Pound Burgers",
+      "calories": null,
+      "price": "$29.99"
+    },
+    {
+      "name": "Big Jud Special - World Famous 1 Lb. Cheeseburger",
+      "category": "One and Two Pound Burgers",
+      "calories": null,
+      "price": "$25.99"
+    },
+    {
+      "name": "Chicken Malibu",
+      "category": "Chicken Sandwiches",
+      "calories": null,
+      "price": "$9.99"
+    },
+    {
+      "name": "Hawaiian Chicken",
+      "category": "Chicken Sandwiches",
+      "calories": null,
+      "price": "$10.99"
+    },
+    {
+      "name": "Ortega Chicken",
+      "category": "Chicken Sandwiches",
+      "calories": null,
+      "price": "$9.99"
+    },
+    {
+      "name": "Bleu Bird",
+      "category": "Chicken Sandwiches",
+      "calories": null,
+      "price": "$10.99"
+    },
+    {
+      "name": "Chicken Club",
+      "category": "Chicken Sandwiches",
+      "calories": null,
+      "price": "$9.99"
+    },
+    {
+      "name": "Hot Buff Chick",
+      "category": "Chicken Sandwiches",
+      "calories": null,
+      "price": "$9.99"
+    },
+    {
+      "name": "Chicken Sandwich",
+      "category": "Chicken Sandwiches",
+      "calories": null,
+      "price": "$7.99"
+    },
+    {
+      "name": "Hickory Chick",
+      "category": "Chicken Sandwiches",
+      "calories": null,
+      "price": "$10.99"
+    },
+    {
+      "name": "Avocado Bacon Chicken",
+      "category": "Chicken Sandwiches",
+      "calories": null,
+      "price": "$10.99"
+    },
+    {
+      "name": "Finger Steaks",
+      "category": "Dinner Baskets",
+      "calories": null,
+      "price": "$14.99"
+    },
+    {
+      "name": "Fish N Chips (Cod)",
+      "category": "Dinner Baskets",
+      "calories": null,
+      "price": "$15.99"
+    },
+    {
+      "name": "Chicken Strips",
+      "category": "Dinner Baskets",
+      "calories": null,
+      "price": "$13.99"
+    },
+    {
+      "name": "Drinks (22 Oz.)",
+      "category": "Drinks",
+      "calories": null,
+      "price": "$2.99"
+    },
+    {
+      "name": "Hawaiian Burger",
+      "category": "Burgers",
+      "calories": null,
+      "price": "$10.59"
+    },
+    {
+      "name": "Mushroom Burger",
+      "category": "Burgers",
+      "calories": null,
+      "price": "$9.99"
+    },
+    {
+      "name": "Super Burger",
+      "category": "Burgers",
+      "calories": null,
+      "price": "$9.99"
+    },
+    {
+      "name": "Bleu Bacon Burger",
+      "category": "Burgers",
+      "calories": null,
+      "price": "$10.99"
+    },
+    {
+      "name": "Super Bacon Burger",
+      "category": "Burgers",
+      "calories": null,
+      "price": "$10.59"
+    },
+    {
+      "name": "Jalapeño Burger",
+      "category": "Burgers",
+      "calories": null,
+      "price": "$9.99"
+    },
+    {
+      "name": "Bacon Cheeseburger",
+      "category": "Burgers",
+      "calories": null,
+      "price": "$9.99"
+    },
+    {
+      "name": "Mushroom Bacon Burger",
+      "category": "Burgers",
+      "calories": null,
+      "price": "$10.99"
+    },
+    {
+      "name": "Cheeseburger",
+      "category": "Burgers",
+      "calories": null,
+      "price": "$8.99"
+    },
+    {
+      "name": "Burger",
+      "category": "Burgers",
+      "calories": null,
+      "price": "$7.99"
+    },
+    {
+      "name": "Hickory Burger",
+      "category": "Burgers",
+      "calories": null,
+      "price": "$10.99"
+    },
+    {
+      "name": "Ortega Burger",
+      "category": "Burgers",
+      "calories": null,
+      "price": "$9.99"
+    },
+    {
+      "name": "Avocado Bacon Burger",
+      "category": "Burgers",
+      "calories": null,
+      "price": "$10.99"
+    }
+  ]
+}
