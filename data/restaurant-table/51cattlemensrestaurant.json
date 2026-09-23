@@ -1,0 +1,575 @@
+{
+  "title": "Cattlemen's Restaurant Menu With Price List",
+  "items": [
+    {
+      "name": "T-Bone Steak Presidential Choice",
+      "category": "Steaks",
+      "calories": null,
+      "price": "$46.00"
+    },
+    {
+      "name": "24 oz. Porterhouse Steak",
+      "category": "Steaks",
+      "calories": null,
+      "price": "$55.00"
+    },
+    {
+      "name": "Cattlemen's Strip Sirloin",
+      "category": "Steaks",
+      "calories": null,
+      "price": "$37.00"
+    },
+    {
+      "name": "Top Sirloin Steak",
+      "category": "Steaks",
+      "calories": null,
+      "price": "$35.00"
+    },
+    {
+      "name": "Filet Mignon",
+      "category": "Steaks",
+      "calories": null,
+      "price": "$45.00"
+    },
+    {
+      "name": "Rib Eye Steak",
+      "category": "Steaks",
+      "calories": null,
+      "price": "$39.00"
+    },
+    {
+      "name": "Small Filet",
+      "category": "Steaks",
+      "calories": null,
+      "price": "$37.00"
+    },
+    {
+      "name": "Dinner Steak",
+      "category": "Steaks",
+      "calories": null,
+      "price": "$29.00"
+    },
+    {
+      "name": "Ranchers' Ground Steak",
+      "category": "Steaks",
+      "calories": null,
+      "price": "$19.00"
+    },
+    {
+      "name": "Pepper Steak",
+      "category": "Steaks",
+      "calories": null,
+      "price": "$31.00"
+    },
+    {
+      "name": "Ham Steak, Full Slice, Bone-In",
+      "category": "Steaks",
+      "calories": null,
+      "price": "$18.50"
+    },
+    {
+      "name": "Cattlemen's Chicken Fried Steak",
+      "category": "Steaks",
+      "calories": null,
+      "price": "$19.00"
+    },
+    {
+      "name": "Cowboy Cut",
+      "category": "Roasted Prime Rib",
+      "calories": null,
+      "price": "$39.00"
+    },
+    {
+      "name": "Cowgirl Cut",
+      "category": "Roasted Prime Rib",
+      "calories": null,
+      "price": "$37.00"
+    },
+    {
+      "name": "Grilled Shrimp with Entree",
+      "category": "Enhance Your Steak",
+      "calories": null,
+      "price": "$8.95"
+    },
+    {
+      "name": "Fresh Sauteed Mushrooms",
+      "category": "Enhance Your Steak",
+      "calories": null,
+      "price": "$7.25"
+    },
+    {
+      "name": "Fresh Steamed Broccoli w/ Cheese Sauce",
+      "category": "Enhance Your Steak",
+      "calories": null,
+      "price": "$7.25"
+    },
+    {
+      "name": "Mac & Cheese",
+      "category": "Enhance Your Steak",
+      "calories": null,
+      "price": "$7.25"
+    },
+    {
+      "name": "Boneless Rib Eye Steak",
+      "category": "USDA Prime Blue Ribbon Special",
+      "calories": null,
+      "price": "$55.00"
+    },
+    {
+      "name": "New York Strip Steak",
+      "category": "USDA Prime Blue Ribbon Special",
+      "calories": null,
+      "price": "$55.00"
+    },
+    {
+      "name": "Lamb Fries",
+      "category": "Appetizers and Soups",
+      "calories": null,
+      "price": "$12.25"
+    },
+    {
+      "name": "Charcoal Broiled Shrimp",
+      "category": "Appetizers and Soups",
+      "calories": null,
+      "price": "$12.25"
+    },
+    {
+      "name": "Steak Soup (Cup)",
+      "category": "Appetizers and Soups",
+      "calories": null,
+      "price": "$6.50"
+    },
+    {
+      "name": "Onion Rings",
+      "category": "Appetizers and Soups",
+      "calories": null,
+      "price": "$8.50"
+    },
+    {
+      "name": "Shrimp Cocktail",
+      "category": "Appetizers and Soups",
+      "calories": null,
+      "price": "$12.95"
+    },
+    {
+      "name": "Potato Skins",
+      "category": "Appetizers and Soups",
+      "calories": null,
+      "price": "$11.75"
+    },
+    {
+      "name": "Okra, Breaded",
+      "category": "Appetizers and Soups",
+      "calories": null,
+      "price": "$5.00"
+    },
+    {
+      "name": "Cattlemen's Salad",
+      "category": "Salads",
+      "calories": null,
+      "price": "$6.50"
+    },
+    {
+      "name": "Fresh Fruit Plate",
+      "category": "Salads",
+      "calories": null,
+      "price": "$10.00"
+    },
+    {
+      "name": "Chef Salad",
+      "category": "Salads",
+      "calories": null,
+      "price": "$11.95"
+    },
+    {
+      "name": "Cottage Cheese with Fruit",
+      "category": "Salads",
+      "calories": null,
+      "price": "$7.50"
+    },
+    {
+      "name": "Lamb Fries",
+      "category": "Entrees",
+      "calories": null,
+      "price": "$20.00"
+    },
+    {
+      "name": "Hawaiian Chicken Breast",
+      "category": "Entrees",
+      "calories": null,
+      "price": "$17.75"
+    },
+    {
+      "name": "Fried Catfish",
+      "category": "Entrees",
+      "calories": null,
+      "price": "$17.75"
+    },
+    {
+      "name": "Fried Shrimp",
+      "category": "Entrees",
+      "calories": null,
+      "price": "$20.75"
+    },
+    {
+      "name": "Broiled Salmon",
+      "category": "Entrees",
+      "calories": null,
+      "price": "$23.95"
+    },
+    {
+      "name": "Chicken Fried Steak Sandwich",
+      "category": "Delicious Sandwiches",
+      "calories": null,
+      "price": "$14.50"
+    },
+    {
+      "name": "Bacon, Lettuce and Tomato",
+      "category": "Delicious Sandwiches",
+      "calories": null,
+      "price": "$7.50"
+    },
+    {
+      "name": "Grilled Cheese",
+      "category": "Delicious Sandwiches",
+      "calories": null,
+      "price": "$6.75"
+    },
+    {
+      "name": "Grilled Ham and Cheese",
+      "category": "Delicious Sandwiches",
+      "calories": null,
+      "price": "$9.25"
+    },
+    {
+      "name": "Club House",
+      "category": "Delicious Sandwiches",
+      "calories": null,
+      "price": "$11.95"
+    },
+    {
+      "name": "Hot Beef Sandwich",
+      "category": "Delicious Sandwiches",
+      "calories": null,
+      "price": "$11.25"
+    },
+    {
+      "name": "Chicken Breast Sandwich",
+      "category": "Delicious Sandwiches",
+      "calories": null,
+      "price": "$11.20"
+    },
+    {
+      "name": "Cattlemen's Steak Burger - 1/4 Pound",
+      "category": "Delicious Sandwiches",
+      "calories": null,
+      "price": "$7.95"
+    },
+    {
+      "name": "Cattlemen's Steak Burger - 1/2 Pound",
+      "category": "Delicious Sandwiches",
+      "calories": null,
+      "price": "$11.75"
+    },
+    {
+      "name": "Chicken Strips with French Fries",
+      "category": "Kid's Corral",
+      "calories": null,
+      "price": "$9.75"
+    },
+    {
+      "name": "Kiddie Burger with French Fries",
+      "category": "Kid's Corral",
+      "calories": null,
+      "price": "$9.75"
+    },
+    {
+      "name": "One Corn Dog with French Fries",
+      "category": "Kid's Corral",
+      "calories": null,
+      "price": "$7.00"
+    },
+    {
+      "name": "Fruit Pie",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$6.50"
+    },
+    {
+      "name": "Cream Pie",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$6.75"
+    },
+    {
+      "name": "Ice Cream (1 Scoop)",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$3.15"
+    },
+    {
+      "name": "Pie A La Mode",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$8.75"
+    },
+    {
+      "name": "Strawberry Shortcake",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$8.75"
+    },
+    {
+      "name": "Cheese Omelette (3 Eggs)",
+      "category": "Eggs & Omelettes",
+      "calories": null,
+      "price": "$10.50"
+    },
+    {
+      "name": "Ham & Cheese Omelette (3 Eggs)",
+      "category": "Eggs & Omelettes",
+      "calories": null,
+      "price": "$11.50"
+    },
+    {
+      "name": "Western Omelette (3 Eggs)",
+      "category": "Eggs & Omelettes",
+      "calories": null,
+      "price": "$11.50"
+    },
+    {
+      "name": "Sausage & Mushroom Omelette (3 Eggs)",
+      "category": "Eggs & Omelettes",
+      "calories": null,
+      "price": "$11.50"
+    },
+    {
+      "name": "Egg Burrito",
+      "category": "Eggs & Omelettes",
+      "calories": null,
+      "price": "$10.95"
+    },
+    {
+      "name": "Two Eggs Any Style",
+      "category": "Eggs & Omelettes",
+      "calories": null,
+      "price": "$9.95"
+    },
+    {
+      "name": "Two Eggs with Bacon (3)",
+      "category": "Eggs & Omelettes",
+      "calories": null,
+      "price": "$10.95"
+    },
+    {
+      "name": "Two Eggs with Ham",
+      "category": "Eggs & Omelettes",
+      "calories": null,
+      "price": "$11.95"
+    },
+    {
+      "name": "Two Eggs with Country Sausage (2)",
+      "category": "Eggs & Omelettes",
+      "calories": null,
+      "price": "$10.95"
+    },
+    {
+      "name": "Two Eggs with Link Sausage (2)",
+      "category": "Eggs & Omelettes",
+      "calories": null,
+      "price": "$10.95"
+    },
+    {
+      "name": "Two Eggs with Corned Beef",
+      "category": "Eggs & Omelettes",
+      "calories": null,
+      "price": "$12.50"
+    },
+    {
+      "name": "Oatmeal",
+      "category": "Side Orders",
+      "calories": null,
+      "price": "$6.00"
+    },
+    {
+      "name": "Grits",
+      "category": "Side Orders",
+      "calories": null,
+      "price": "$6.00"
+    },
+    {
+      "name": "Bacon (Each)",
+      "category": "Side Orders",
+      "calories": null,
+      "price": "$1.15"
+    },
+    {
+      "name": "Ham",
+      "category": "Side Orders",
+      "calories": null,
+      "price": "$9.50"
+    },
+    {
+      "name": "Country Sausage (2)",
+      "category": "Side Orders",
+      "calories": null,
+      "price": "$7.50"
+    },
+    {
+      "name": "Link Sausage (2)",
+      "category": "Side Orders",
+      "calories": null,
+      "price": "$7.50"
+    },
+    {
+      "name": "Cup of Country Gravy",
+      "category": "Side Orders",
+      "calories": null,
+      "price": "$2.25"
+    },
+    {
+      "name": "Hash Browns",
+      "category": "Side Orders",
+      "calories": null,
+      "price": "$3.50"
+    },
+    {
+      "name": "Biscuits (2)",
+      "category": "Side Orders",
+      "calories": null,
+      "price": "$4.50"
+    },
+    {
+      "name": "Order of Toast",
+      "category": "Side Orders",
+      "calories": null,
+      "price": "$2.25"
+    },
+    {
+      "name": "Cinnamon Roll",
+      "category": "Side Orders",
+      "calories": null,
+      "price": "$5.50"
+    },
+    {
+      "name": "One Egg",
+      "category": "Side Orders",
+      "calories": null,
+      "price": "$3.50"
+    },
+    {
+      "name": "One Hotcake",
+      "category": "Side Orders",
+      "calories": null,
+      "price": "$5.00"
+    },
+    {
+      "name": "Two Hot Cakes",
+      "category": "Hot Cakes",
+      "calories": null,
+      "price": "$9.00"
+    },
+    {
+      "name": "Two Hot Cakes with Bacon (3)",
+      "category": "Hot Cakes",
+      "calories": null,
+      "price": "$10.50"
+    },
+    {
+      "name": "Two Hot Cakes with Ham",
+      "category": "Hot Cakes",
+      "calories": null,
+      "price": "$11.95"
+    },
+    {
+      "name": "Two Hot Cakes with Country Sausage (2)",
+      "category": "Hot Cakes",
+      "calories": null,
+      "price": "$10.50"
+    },
+    {
+      "name": "Two Hot Cakes with Link Sausage (2)",
+      "category": "Hot Cakes",
+      "calories": null,
+      "price": "$10.50"
+    },
+    {
+      "name": "French Toast (3 Pieces)",
+      "category": "French Toast",
+      "calories": null,
+      "price": "$9.75"
+    },
+    {
+      "name": "French Toast with Bacon (3)",
+      "category": "French Toast",
+      "calories": null,
+      "price": "$11.95"
+    },
+    {
+      "name": "French Toast with Ham",
+      "category": "French Toast",
+      "calories": null,
+      "price": "$13.75"
+    },
+    {
+      "name": "French Toast with Country Sausage (2)",
+      "category": "French Toast",
+      "calories": null,
+      "price": "$11.75"
+    },
+    {
+      "name": "French Toast with Link Sausage (2)",
+      "category": "French Toast",
+      "calories": null,
+      "price": "$11.75"
+    },
+    {
+      "name": "Eggs (2), Sausage & Cheese",
+      "category": "Texas Toast Sandwiches",
+      "calories": null,
+      "price": "$7.95"
+    },
+    {
+      "name": "Eggs (2), Bacon & Cheese",
+      "category": "Texas Toast Sandwiches",
+      "calories": null,
+      "price": "$7.95"
+    },
+    {
+      "name": "Eggs (2), Ham & Cheese",
+      "category": "Texas Toast Sandwiches",
+      "calories": null,
+      "price": "$9.00"
+    },
+    {
+      "name": "Cowpoke Cake",
+      "category": "Kid's Corral",
+      "calories": null,
+      "price": "$8.50"
+    },
+    {
+      "name": "Lil' Wrangler",
+      "category": "Kid's Corral",
+      "calories": null,
+      "price": "$8.50"
+    },
+    {
+      "name": "Wild West Cinnamon French Toast",
+      "category": "Kid's Corral",
+      "calories": null,
+      "price": "$8.50"
+    },
+    {
+      "name": "Oatmeal",
+      "category": "Fresh Cereals",
+      "calories": null,
+      "price": "$6.00"
+    },
+    {
+      "name": "Grits",
+      "category": "Fresh Cereals",
+      "calories": null,
+      "price": "$6.00"
+    }
+  ]
+}
