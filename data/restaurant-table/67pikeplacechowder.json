@@ -1,0 +1,269 @@
+{
+  "title": "Award Winning Chowders Menu With Price List",
+  "items": [
+    {
+      "name": "New England Clam Chowder - Small (8 oz)",
+      "category": "Award Winning Chowders",
+      "calories": null,
+      "price": "$10.95"
+    },
+    {
+      "name": "New England Clam Chowder - Medium (12 oz)",
+      "category": "Award Winning Chowders",
+      "calories": null,
+      "price": "$12.75"
+    },
+    {
+      "name": "New England Clam Chowder - Large (16 oz)",
+      "category": "Award Winning Chowders",
+      "calories": null,
+      "price": "$13.95"
+    },
+    {
+      "name": "New England Clam Chowder - Quart (32 oz)",
+      "category": "Award Winning Chowders",
+      "calories": null,
+      "price": "$27.95"
+    },
+    {
+      "name": "Seafood Bisque - Small (8 oz)",
+      "category": "Award Winning Chowders",
+      "calories": null,
+      "price": "$10.95"
+    },
+    {
+      "name": "Seafood Bisque - Medium (12 oz)",
+      "category": "Award Winning Chowders",
+      "calories": null,
+      "price": "$12.75"
+    },
+    {
+      "name": "Seafood Bisque - Large (16 oz)",
+      "category": "Award Winning Chowders",
+      "calories": null,
+      "price": "$13.95"
+    },
+    {
+      "name": "Seafood Bisque - Quart (32 oz)",
+      "category": "Award Winning Chowders",
+      "calories": null,
+      "price": "$27.95"
+    },
+    {
+      "name": "Seared Scallop Chowder - Small (8 oz)",
+      "category": "Award Winning Chowders",
+      "calories": null,
+      "price": "$10.95"
+    },
+    {
+      "name": "Seared Scallop Chowder - Medium (12 oz)",
+      "category": "Award Winning Chowders",
+      "calories": null,
+      "price": "$12.75"
+    },
+    {
+      "name": "Seared Scallop Chowder - Large (16 oz)",
+      "category": "Award Winning Chowders",
+      "calories": null,
+      "price": "$13.95"
+    },
+    {
+      "name": "Seared Scallop Chowder - Quart (32 oz)",
+      "category": "Award Winning Chowders",
+      "calories": null,
+      "price": "$27.95"
+    },
+    {
+      "name": "Crab, Oyster & Chorizo Chowder - Small (8 oz)",
+      "category": "Award Winning Chowders",
+      "calories": null,
+      "price": "$10.95"
+    },
+    {
+      "name": "Crab, Oyster & Chorizo Chowder - Medium (12 oz)",
+      "category": "Award Winning Chowders",
+      "calories": null,
+      "price": "$12.75"
+    },
+    {
+      "name": "Crab, Oyster & Chorizo Chowder - Large (16 oz)",
+      "category": "Award Winning Chowders",
+      "calories": null,
+      "price": "$13.95"
+    },
+    {
+      "name": "Crab, Oyster & Chorizo Chowder - Quart (32 oz)",
+      "category": "Award Winning Chowders",
+      "calories": null,
+      "price": "$27.95"
+    },
+    {
+      "name": "Smoked Salmon Chowder - Small (8 oz)",
+      "category": "Award Winning Chowders",
+      "calories": null,
+      "price": "$10.95"
+    },
+    {
+      "name": "Smoked Salmon Chowder - Medium (12 oz)",
+      "category": "Award Winning Chowders",
+      "calories": null,
+      "price": "$12.75"
+    },
+    {
+      "name": "Smoked Salmon Chowder - Large (16 oz)",
+      "category": "Award Winning Chowders",
+      "calories": null,
+      "price": "$13.95"
+    },
+    {
+      "name": "Smoked Salmon Chowder - Quart (32 oz)",
+      "category": "Award Winning Chowders",
+      "calories": null,
+      "price": "$27.95"
+    },
+    {
+      "name": "Lime & Coconut Chowder - Small (8 oz)",
+      "category": "Award Winning Chowders",
+      "calories": null,
+      "price": "$10.95"
+    },
+    {
+      "name": "Lime & Coconut Chowder - Medium (12 oz)",
+      "category": "Award Winning Chowders",
+      "calories": null,
+      "price": "$12.75"
+    },
+    {
+      "name": "Lime & Coconut Chowder - Large (16 oz)",
+      "category": "Award Winning Chowders",
+      "calories": null,
+      "price": "$13.95"
+    },
+    {
+      "name": "Lime & Coconut Chowder - Quart (32 oz)",
+      "category": "Award Winning Chowders",
+      "calories": null,
+      "price": "$27.95"
+    },
+    {
+      "name": "Manhattan Style Chowder - Small (8 oz)",
+      "category": "Award Winning Chowders",
+      "calories": null,
+      "price": "$10.95"
+    },
+    {
+      "name": "Manhattan Style Chowder - Medium (12 oz)",
+      "category": "Award Winning Chowders",
+      "calories": null,
+      "price": "$12.75"
+    },
+    {
+      "name": "Manhattan Style Chowder - Large (16 oz)",
+      "category": "Award Winning Chowders",
+      "calories": null,
+      "price": "$13.95"
+    },
+    {
+      "name": "Manhattan Style Chowder - Quart (32 oz)",
+      "category": "Award Winning Chowders",
+      "calories": null,
+      "price": "$27.95"
+    },
+    {
+      "name": "Sourdough Bread Bowl",
+      "category": "Award Winning Chowders",
+      "calories": null,
+      "price": "$18.95"
+    },
+    {
+      "name": "Market Chowder - Small (8 oz)",
+      "category": "Award Winning Chowders",
+      "calories": null,
+      "price": "$12.75"
+    },
+    {
+      "name": "Market Chowder - Medium (12 oz)",
+      "category": "Award Winning Chowders",
+      "calories": null,
+      "price": "$14.75"
+    },
+    {
+      "name": "Market Chowder - Large (16 oz)",
+      "category": "Award Winning Chowders",
+      "calories": null,
+      "price": "$15.95"
+    },
+    {
+      "name": "Market Chowder - Quart (32 oz)",
+      "category": "Award Winning Chowders",
+      "calories": null,
+      "price": "$28.95"
+    },
+    {
+      "name": "Market Chowder - Bread Bowl",
+      "category": "Award Winning Chowders",
+      "calories": null,
+      "price": "$19.95"
+    },
+    {
+      "name": "Connecticut-Style Lobster Roll - 1/2 lb",
+      "category": "Seafood Rolls",
+      "calories": null,
+      "price": "$36.95"
+    },
+    {
+      "name": "Connecticut-Style Lobster Roll - 1/2 lb + 1/2 lb",
+      "category": "Seafood Rolls",
+      "calories": null,
+      "price": "$61.95"
+    },
+    {
+      "name": "Connecticut-Style Dungeness Crab Roll - 1/2 lb",
+      "category": "Seafood Rolls",
+      "calories": null,
+      "price": "$36.95"
+    },
+    {
+      "name": "Connecticut-Style Dungeness Crab Roll - 1/2 lb + 1/2 lb",
+      "category": "Seafood Rolls",
+      "calories": null,
+      "price": "$61.95"
+    },
+    {
+      "name": "Maine Lobster Roll",
+      "category": "Seafood Rolls",
+      "calories": null,
+      "price": "$36.95"
+    },
+    {
+      "name": "Original Dungeness Crab Roll",
+      "category": "Seafood Rolls",
+      "calories": null,
+      "price": "$36.95"
+    },
+    {
+      "name": "Oregon Bay Shrimp Roll",
+      "category": "Seafood Rolls",
+      "calories": null,
+      "price": "$18.95"
+    },
+    {
+      "name": "Captain's Roll",
+      "category": "Seafood Rolls",
+      "calories": null,
+      "price": "$26.95"
+    },
+    {
+      "name": "4 Chowders Sampler",
+      "category": "Sampler",
+      "calories": null,
+      "price": "$23.75"
+    },
+    {
+      "name": "8 Chowders Sampler",
+      "category": "Sampler",
+      "calories": null,
+      "price": "$37.75"
+    }
+  ]
+}
