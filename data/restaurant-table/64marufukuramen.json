@@ -1,0 +1,425 @@
+{
+  "title": "Marufuku Ramen Menu With Price List",
+  "items": [
+    {
+      "name": "Hakata Tonkotsu",
+      "category": "Ramen",
+      "calories": null,
+      "price": "$18.00"
+    },
+    {
+      "name": "Hakata Tonkotsu DX",
+      "category": "Ramen",
+      "calories": null,
+      "price": "$22.00"
+    },
+    {
+      "name": "Chicken Paitan",
+      "category": "Ramen",
+      "calories": null,
+      "price": "$18.00"
+    },
+    {
+      "name": "Vegetable Ramen",
+      "category": "Ramen",
+      "calories": null,
+      "price": "$18.50"
+    },
+    {
+      "name": "Spicy TanTan Men",
+      "category": "Ramen",
+      "calories": null,
+      "price": "$19.50"
+    },
+    {
+      "name": "Shoyu Ramen",
+      "category": "Ramen",
+      "calories": null,
+      "price": "$17.00"
+    },
+    {
+      "name": "KAE-DAMA-Extra Noodle",
+      "category": "Ramen",
+      "calories": null,
+      "price": "$2.00"
+    },
+    {
+      "name": "Extra Thick Noodle",
+      "category": "Ramen",
+      "calories": null,
+      "price": "$2.00"
+    },
+    {
+      "name": "Extra Veggie Noodle (Spinach)",
+      "category": "Ramen",
+      "calories": null,
+      "price": "$2.00"
+    },
+    {
+      "name": "Extra Gluten Free Noodle",
+      "category": "Ramen",
+      "calories": null,
+      "price": "$3.00"
+    },
+    {
+      "name": "Extra Noodle (Shoyu)",
+      "category": "Ramen",
+      "calories": null,
+      "price": "$3.00"
+    },
+    {
+      "name": "Kids Ramen (Plate / Ramen)",
+      "category": "Ramen",
+      "calories": null,
+      "price": "$10.00"
+    },
+    {
+      "name": "Extra Tonkotsu Broth",
+      "category": "Ramen",
+      "calories": null,
+      "price": "$9.00"
+    },
+    {
+      "name": "Extra Chicken Broth",
+      "category": "Ramen",
+      "calories": null,
+      "price": "$9.00"
+    },
+    {
+      "name": "Extra Veggie Broth",
+      "category": "Ramen",
+      "calories": null,
+      "price": "$9.00"
+    },
+    {
+      "name": "Extra Tan Tan Broth",
+      "category": "Ramen",
+      "calories": null,
+      "price": "$9.00"
+    },
+    {
+      "name": "Extra Shoyu Broth",
+      "category": "Ramen",
+      "calories": null,
+      "price": "$9.00"
+    },
+    {
+      "name": "Kakuni Bowl",
+      "category": "Rice Bowl",
+      "calories": null,
+      "price": "$9.00"
+    },
+    {
+      "name": "Mentaiko Bowl",
+      "category": "Rice Bowl",
+      "calories": null,
+      "price": "$8.00"
+    },
+    {
+      "name": "Chashu Bowl",
+      "category": "Rice Bowl",
+      "calories": null,
+      "price": "$9.00"
+    },
+    {
+      "name": "Karaage Bowl",
+      "category": "Rice Bowl",
+      "calories": null,
+      "price": "$9.00"
+    },
+    {
+      "name": "Steamed Rice",
+      "category": "Rice Bowl",
+      "calories": null,
+      "price": "$4.00"
+    },
+    {
+      "name": "Gyoza 7pc",
+      "category": "Small Bites",
+      "calories": null,
+      "price": "$9.00"
+    },
+    {
+      "name": "Edamame",
+      "category": "Small Bites",
+      "calories": null,
+      "price": "$6.50"
+    },
+    {
+      "name": "Chicken Karaage",
+      "category": "Small Bites",
+      "calories": null,
+      "price": "$10.50"
+    },
+    {
+      "name": "Takoyaki 5pc",
+      "category": "Small Bites",
+      "calories": null,
+      "price": "$9.00"
+    },
+    {
+      "name": "Ika Karaage",
+      "category": "Small Bites",
+      "calories": null,
+      "price": "$13.00"
+    },
+    {
+      "name": "Fried Shishito",
+      "category": "Small Bites",
+      "calories": null,
+      "price": "$9.00"
+    },
+    {
+      "name": "Marufuku Bites 2pc",
+      "category": "Small Bites",
+      "calories": null,
+      "price": "$11.00"
+    },
+    {
+      "name": "Pirikara Chicken Bites (2pc)",
+      "category": "Small Bites",
+      "calories": null,
+      "price": "$11.00"
+    },
+    {
+      "name": "(2pc) Shrimp Tempura Bites",
+      "category": "Small Bites",
+      "calories": null,
+      "price": "$11.00"
+    },
+    {
+      "name": "Marufuku Salad",
+      "category": "Small Bites",
+      "calories": null,
+      "price": "$13.00"
+    },
+    {
+      "name": "Coke",
+      "category": "Soft Drink",
+      "calories": null,
+      "price": "$3.00"
+    },
+    {
+      "name": "Diet Coke",
+      "category": "Soft Drink",
+      "calories": null,
+      "price": "$3.00"
+    },
+    {
+      "name": "Sprite",
+      "category": "Soft Drink",
+      "calories": null,
+      "price": "$3.00"
+    },
+    {
+      "name": "Ramune",
+      "category": "Soft Drink",
+      "calories": null,
+      "price": "$4.00"
+    },
+    {
+      "name": "Calpico",
+      "category": "Soft Drink",
+      "calories": null,
+      "price": "$4.00"
+    },
+    {
+      "name": "S.Pellegrino 16.9FL oz",
+      "category": "Soft Drink",
+      "calories": null,
+      "price": "$3.00"
+    },
+    {
+      "name": "Arrowhead Water",
+      "category": "Soft Drink",
+      "calories": null,
+      "price": "$3.00"
+    },
+    {
+      "name": "Iced Matcha",
+      "category": "Soft Drink",
+      "calories": null,
+      "price": "$3.00"
+    },
+    {
+      "name": "Kimino Yuzu",
+      "category": "Soft Drink",
+      "calories": null,
+      "price": "$6.00"
+    },
+    {
+      "name": "Kimino Ume",
+      "category": "Soft Drink",
+      "calories": null,
+      "price": "$6.00"
+    },
+    {
+      "name": "Kimino Mikan",
+      "category": "Soft Drink",
+      "calories": null,
+      "price": "$6.00"
+    },
+    {
+      "name": "Kimino Ringo",
+      "category": "Soft Drink",
+      "calories": null,
+      "price": "$6.00"
+    },
+    {
+      "name": "Kids Box Juice",
+      "category": "Soft Drink",
+      "calories": null,
+      "price": "$2.00"
+    },
+    {
+      "name": "Sakura Lemonade",
+      "category": "Soft Drink",
+      "calories": null,
+      "price": "$7.00"
+    },
+    {
+      "name": "Asahi Super Dry (Small Bottle)",
+      "category": "Beers",
+      "calories": null,
+      "price": "$7.50"
+    },
+    {
+      "name": "Ruri Plisner",
+      "category": "Beers",
+      "calories": null,
+      "price": "$10.00"
+    },
+    {
+      "name": "Sequoia Ginjyo (375ML)",
+      "category": "Sake",
+      "calories": null,
+      "price": "$40.00"
+    },
+    {
+      "name": "Sequoia Nigori (375ML) (Unrefined Sake)",
+      "category": "Sake",
+      "calories": null,
+      "price": "$40.00"
+    },
+    {
+      "name": "Sequoia Genshu (375ML)",
+      "category": "Sake",
+      "calories": null,
+      "price": "$45.00"
+    },
+    {
+      "name": "Bourbon Barrel-aged Sake (375ML)",
+      "category": "Sake",
+      "calories": null,
+      "price": "$50.00"
+    },
+    {
+      "name": "Iichiko (Bottle)",
+      "category": "Sake",
+      "calories": null,
+      "price": "$50.00"
+    },
+    {
+      "name": "Kurokirishima (Bottle)",
+      "category": "Sake",
+      "calories": null,
+      "price": "$50.00"
+    },
+    {
+      "name": "Tomino Houzan (Bottle)",
+      "category": "Sake",
+      "calories": null,
+      "price": "$70.00"
+    },
+    {
+      "name": "Marufuku Daiginjo",
+      "category": "Sake",
+      "calories": null,
+      "price": "$72.00"
+    },
+    {
+      "name": "Buta Kakuni (1PC)",
+      "category": "Extra Topping",
+      "calories": null,
+      "price": "$4.50"
+    },
+    {
+      "name": "Pork Chashu (3PC)",
+      "category": "Extra Topping",
+      "calories": null,
+      "price": "$4.00"
+    },
+    {
+      "name": "Chicken Chashu (3PC)",
+      "category": "Extra Topping",
+      "calories": null,
+      "price": "$4.00"
+    },
+    {
+      "name": "Tofu Chasu (3PC)",
+      "category": "Extra Topping",
+      "calories": null,
+      "price": "$3.00"
+    },
+    {
+      "name": "Seasoned Soft Boiled Egg",
+      "category": "Extra Topping",
+      "calories": null,
+      "price": "$3.50"
+    },
+    {
+      "name": "Bamboo Shoots",
+      "category": "Extra Topping",
+      "calories": null,
+      "price": "$2.00"
+    },
+    {
+      "name": "Kikurage Mushrooms",
+      "category": "Extra Topping",
+      "calories": null,
+      "price": "$1.50"
+    },
+    {
+      "name": "Bean Sprouts",
+      "category": "Extra Topping",
+      "calories": null,
+      "price": "$1.50"
+    },
+    {
+      "name": "Green Onion",
+      "category": "Extra Topping",
+      "calories": null,
+      "price": "$1.50"
+    },
+    {
+      "name": "Nori Seaweed (3PC)",
+      "category": "Extra Topping",
+      "calories": null,
+      "price": "$1.50"
+    },
+    {
+      "name": "Sweet Corn",
+      "category": "Extra Topping",
+      "calories": null,
+      "price": "$2.50"
+    },
+    {
+      "name": "Spring Mix",
+      "category": "Extra Topping",
+      "calories": null,
+      "price": "$1.50"
+    },
+    {
+      "name": "Grounded Chicken (Med Spicy)",
+      "category": "Extra Topping",
+      "calories": null,
+      "price": "$3.00"
+    },
+    {
+      "name": "Broccoli",
+      "category": "Extra Topping",
+      "calories": null,
+      "price": "$2.50"
+    }
+  ]
+}
