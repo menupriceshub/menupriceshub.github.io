@@ -1,0 +1,68 @@
+{
+  "title": "Salt Lick BBQ Menu With Price List",
+  "items": [
+    { "name": "All You Can Eat Family Style (Beef Brisket, Sausage, Pork Ribs, Beans, Potato Salad, Coleslaw, refills on request) - Per Person", "category": "Family Style", "calories": null, "price": "$33.95" },
+    { "name": "Family Style - Kids 10 & Under (with purchase of adult family style meal)", "category": "Family Style", "calories": null, "price": "$12.95" },
+    { "name": "Family Style - Kids 3 & Under", "category": "Family Style", "calories": null, "price": "Free" },
+
+    { "name": "Brisket Plate (1/2 lb, served w/beans, potato salad & coleslaw)", "category": "Salt Lick Plates", "calories": null, "price": "$23.95" },
+    { "name": "Pork Ribs Plate", "category": "Salt Lick Plates", "calories": null, "price": "$18.95" },
+    { "name": "Bison Ribs Plate (2 Ribs)", "category": "Salt Lick Plates", "calories": null, "price": "$28.95" },
+    { "name": "Beef Ribs Plate (2 Ribs)", "category": "Salt Lick Plates", "calories": null, "price": "$28.95" },
+    { "name": "Turkey Plate", "category": "Salt Lick Plates", "calories": null, "price": "$19.95" },
+    { "name": "Sausage Plate", "category": "Salt Lick Plates", "calories": null, "price": "$14.95" },
+    { "name": "Chicken Plate (1/2 whole chicken)", "category": "Salt Lick Plates", "calories": null, "price": "$17.95" },
+    { "name": "Pulled Pork Plate", "category": "Salt Lick Plates", "calories": null, "price": "$17.95" },
+    { "name": "Vegetable Plate (Potato Salad, Coleslaw & Beans)", "category": "Salt Lick Plates", "calories": null, "price": "$11.95" },
+    { "name": "Thurman's Choice (Brisket, Pork Rib and Sausage, No Substitutions)", "category": "Salt Lick Plates", "calories": null, "price": "$22.95" },
+    { "name": "Brisket & Pork Ribs", "category": "Salt Lick Plates", "calories": null, "price": "$19.95" },
+    { "name": "Brisket & Sausage", "category": "Salt Lick Plates", "calories": null, "price": "$19.95" },
+    { "name": "Brisket & Turkey", "category": "Salt Lick Plates", "calories": null, "price": "$19.95" },
+    { "name": "Pulled Pork & Brisket", "category": "Salt Lick Plates", "calories": null, "price": "$19.95" },
+    { "name": "Pulled Pork Combo (choice of Sausage, Pork Ribs, or Turkey)", "category": "Salt Lick Plates", "calories": null, "price": "$18.95" },
+    { "name": "Pork Ribs Combo (choice of Sausage or Turkey)", "category": "Salt Lick Plates", "calories": null, "price": "$18.95" },
+    { "name": "Sausage & Turkey", "category": "Salt Lick Plates", "calories": null, "price": "$18.95" },
+    { "name": "Brisket & Bison Rib", "category": "Salt Lick Plates", "calories": null, "price": "$29.95" },
+    { "name": "Bison & Beef Ribs", "category": "Salt Lick Plates", "calories": null, "price": "$29.95" },
+    { "name": "Brisket & Beef Rib", "category": "Salt Lick Plates", "calories": null, "price": "$29.95" },
+
+    { "name": "Brisket Small Plate (served w/beans, potato salad & coleslaw)", "category": "Small Plates", "calories": null, "price": "$15.95" },
+    { "name": "Pork Rib Small Plate", "category": "Small Plates", "calories": null, "price": "$12.95" },
+    { "name": "Sausage Small Plate", "category": "Small Plates", "calories": null, "price": "$10.95" },
+    { "name": "Pulled Pork Small Plate", "category": "Small Plates", "calories": null, "price": "$11.95" },
+    { "name": "Turkey Small Plate", "category": "Small Plates", "calories": null, "price": "$12.95" },
+    { "name": "Combo Small Plate (pick any two: Brisket, Pork Rib, Sausage, Pulled Pork, or Turkey, No Substitutions)", "category": "Small Plates", "calories": null, "price": "$14.95" },
+
+    { "name": "Sliced or Chopped Beef Sandwich", "category": "Really Big Sandwiches", "calories": null, "price": "$18.95" },
+    { "name": "Pulled Pork Sandwich (topped with coleslaw & spicy BBQ sauce)", "category": "Really Big Sandwiches", "calories": null, "price": "$14.95" },
+    { "name": "Sausage Sandwich", "category": "Really Big Sandwiches", "calories": null, "price": "$12.95" },
+    { "name": "Turkey Sandwich (romaine, tomato, red onion, special sauce)", "category": "Really Big Sandwiches", "calories": null, "price": "$16.95" },
+    { "name": "Marino's Triple Chop (chopped brisket, sausage & ribs with pickles & onions)", "category": "Really Big Sandwiches", "calories": null, "price": "$17.95" },
+    { "name": "Leon's Spicy Chopped Chicken Sandwich", "category": "Really Big Sandwiches", "calories": null, "price": "$16.95" },
+    { "name": "Make It a Plate (add-on, w/beans, potato salad, coleslaw, pickles & onions)", "category": "Really Big Sandwiches", "calories": null, "price": "$2.00" },
+
+    { "name": "1/2 lb Brisket", "category": "Meat By The 1/2", "calories": null, "price": "$17.95" },
+    { "name": "1/2 lb Pork Ribs", "category": "Meat By The 1/2", "calories": null, "price": "$14.95" },
+    { "name": "1/2 lb Sausage", "category": "Meat By The 1/2", "calories": null, "price": "$10.95" },
+    { "name": "1/2 lb Turkey", "category": "Meat By The 1/2", "calories": null, "price": "$14.95" },
+    { "name": "1/2 lb Pulled Pork", "category": "Meat By The 1/2", "calories": null, "price": "$13.95" },
+    { "name": "Bison Ribs (2 Ribs)", "category": "Meat By The 1/2", "calories": null, "price": "$24.95" },
+    { "name": "Beef Ribs (2 Ribs)", "category": "Meat By The 1/2", "calories": null, "price": "$24.95" },
+    { "name": "1/2 Chicken", "category": "Meat By The 1/2", "calories": null, "price": "$12.95" },
+
+    { "name": "Sides (Beans, Potato Salad or Coleslaw) - 1/2 Pint", "category": "Sides", "calories": null, "price": "$4.95" },
+    { "name": "Sides (Beans, Potato Salad or Coleslaw) - 1 Pint", "category": "Sides", "calories": null, "price": "$6.95" },
+    { "name": "Sides (Beans, Potato Salad or Coleslaw) - 1 Quart", "category": "Sides", "calories": null, "price": "$12.95" },
+    { "name": "Sides (Beans, Potato Salad or Coleslaw) - 1 Gallon", "category": "Sides", "calories": null, "price": "$38.95" },
+    { "name": "1 Jalapeno", "category": "Sides", "calories": null, "price": "$0.50" },
+
+    { "name": "Kid's Plate (choice of one meat + two sides)", "category": "Kids", "calories": null, "price": "$9.95" },
+    { "name": "Kid's Sandwich (choice of one meat + two sides)", "category": "Kids", "calories": null, "price": "$9.95" },
+
+    { "name": "Mini Mac (Mac-n-Cheese)", "category": "Mac-n-Cheese", "calories": null, "price": "$4.50" },
+    { "name": "1 Pint Mac-n-Cheese", "category": "Mac-n-Cheese", "calories": null, "price": "$7.95" },
+    { "name": "1 Quart Mac-n-Cheese", "category": "Mac-n-Cheese", "calories": null, "price": "$14.95" },
+    { "name": "Gallon Mac-n-Cheese", "category": "Mac-n-Cheese", "calories": null, "price": "$59.80" }
+  ]
+}
+
