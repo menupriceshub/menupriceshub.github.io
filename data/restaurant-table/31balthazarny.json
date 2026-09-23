@@ -1,0 +1,461 @@
+{
+  "title": "Balthazar Menu With Price List",
+  "items": [
+    {
+      "name": "Soft-Boiled Egg* - with \"soldiers\"",
+      "category": "Le Petit Dejeuner",
+      "calories": null,
+      "price": "$6.00"
+    },
+    {
+      "name": "Steel Cut Irish Oatmeal - with raisins or bananas",
+      "category": "Le Petit Dejeuner",
+      "calories": null,
+      "price": "$11.00"
+    },
+    {
+      "name": "Scrambled Eggs in Puff Pastry - with wild mushrooms and asparagus",
+      "category": "Le Petit Dejeuner",
+      "calories": null,
+      "price": "$23.00"
+    },
+    {
+      "name": "Eggs Benedict* - poached eggs, Canadian bacon and hollandaise with homefries",
+      "category": "Le Petit Dejeuner",
+      "calories": null,
+      "price": "$15.00 / $23.00"
+    },
+    {
+      "name": "Eggs Norwegian* - poached eggs with smoked salmon and hollandaise on an English muffin",
+      "category": "Le Petit Dejeuner",
+      "calories": null,
+      "price": "$16.00 / $24.00"
+    },
+    {
+      "name": "Eggs Florentine* - poached eggs with spinach, artichoke hearts, béchamel sauce and Parmesan",
+      "category": "Le Petit Dejeuner",
+      "calories": null,
+      "price": "$20.00"
+    },
+    {
+      "name": "Avocado and Poached Eggs on Toast* - with tomato-jalapeño salsa",
+      "category": "Le Petit Dejeuner",
+      "calories": null,
+      "price": "$19.00"
+    },
+    {
+      "name": "Roasted Pepper and Caramelized Onion Quiche - with gruyère cheese and mixed greens",
+      "category": "Le Petit Dejeuner",
+      "calories": null,
+      "price": "$14.00"
+    },
+    {
+      "name": "Eggs en Cocotte* - eggs, cream and thyme baked in a ramekin, with \"soldiers\"",
+      "category": "Le Petit Dejeuner",
+      "calories": null,
+      "price": "$19.00"
+    },
+    {
+      "name": "Omelette with Herbs* - with gruyère or cheddar cheese, with homefries",
+      "category": "Le Petit Dejeuner",
+      "calories": null,
+      "price": "$19.00"
+    },
+    {
+      "name": "Egg-White Omelette* - with homefries",
+      "category": "Le Petit Dejeuner",
+      "calories": null,
+      "price": "$21.00"
+    },
+    {
+      "name": "Smoked Salmon Tartine - with cucumber, pickled red onion, herb and caper cream cheese on gluten-free bread",
+      "category": "Le Petit Dejeuner",
+      "calories": null,
+      "price": "$14.00"
+    },
+    {
+      "name": "Sour Cream-Hazelnut Waffles - with warm berries",
+      "category": "Le Petit Dejeuner",
+      "calories": null,
+      "price": "$21.00"
+    },
+    {
+      "name": "Brioche French Toast - with applewood smoked bacon",
+      "category": "Le Petit Dejeuner",
+      "calories": null,
+      "price": "$21.00"
+    },
+    {
+      "name": "Buckwheat Crêpe - filled with scrambled eggs, ham and gruyère",
+      "category": "Le Petit Dejeuner",
+      "calories": null,
+      "price": "$20.00"
+    },
+    {
+      "name": "Toasted Bagel - with smoked salmon and cream cheese",
+      "category": "Le Petit Dejeuner",
+      "calories": null,
+      "price": "$18.00"
+    },
+    {
+      "name": "Homemade Granola - with fresh fruit and yogurt",
+      "category": "Le Petit Dejeuner",
+      "calories": null,
+      "price": "$15.00"
+    },
+    {
+      "name": "Eggs Any Style with Homefries & Toast*",
+      "category": "Le Petit Dejeuner",
+      "calories": null,
+      "price": "$17.00"
+    },
+    {
+      "name": "Fresh Florida Grapefruit",
+      "category": "Le Petit Dejeuner",
+      "calories": null,
+      "price": "$11.00"
+    },
+    {
+      "name": "Ham and Cheese Croissant - with mixed greens",
+      "category": "Le Petit Dejeuner",
+      "calories": null,
+      "price": "$12.00"
+    },
+    {
+      "name": "Blue Point* - Half Dozen",
+      "category": "Le Bar a Huîtres",
+      "calories": null,
+      "price": "$24.00"
+    },
+    {
+      "name": "West Coast*",
+      "category": "Le Bar a Huîtres",
+      "calories": null,
+      "price": "P/A"
+    },
+    {
+      "name": "Oysters du Jour*",
+      "category": "Le Bar a Huîtres",
+      "calories": null,
+      "price": "P/A"
+    },
+    {
+      "name": "Bloody Mary",
+      "category": "Morning Pick Me Up",
+      "calories": null,
+      "price": "$15.00"
+    },
+    {
+      "name": "Oyster Mary*",
+      "category": "Morning Pick Me Up",
+      "calories": null,
+      "price": "$16.00"
+    },
+    {
+      "name": "Mimosa",
+      "category": "Morning Pick Me Up",
+      "calories": null,
+      "price": "$15.00"
+    },
+    {
+      "name": "Bellini",
+      "category": "Morning Pick Me Up",
+      "calories": null,
+      "price": "$15.00"
+    },
+    {
+      "name": "Kir Rosé",
+      "category": "Morning Pick Me Up",
+      "calories": null,
+      "price": "$14.00"
+    },
+    {
+      "name": "Balthazar Green Juice - Fresh Pressed Kale, Collard Greens, Apple, Lemon, Papaya, Cucumber, Parsley, Basil, Celery, Orange",
+      "category": "Balthazar Green Juice",
+      "calories": null,
+      "price": "$12.00"
+    },
+    {
+      "name": "Full English Breakfast* - Two Eggs, Bacon, Beans, Sausage, Mushrooms, Tomatoes and Fried Bread",
+      "category": "Full English Breakfast",
+      "calories": null,
+      "price": "$23.00"
+    },
+    {
+      "name": "Fried Tomatoes",
+      "category": "Sides",
+      "calories": null,
+      "price": "$6.00"
+    },
+    {
+      "name": "Fruit",
+      "category": "Sides",
+      "calories": null,
+      "price": "$6.00"
+    },
+    {
+      "name": "Fresh Berries",
+      "category": "Sides",
+      "calories": null,
+      "price": "$7.00"
+    },
+    {
+      "name": "Cumberland Breakfast Sausage",
+      "category": "Sides",
+      "calories": null,
+      "price": "$7.25"
+    },
+    {
+      "name": "Canadian Bacon",
+      "category": "Sides",
+      "calories": null,
+      "price": "$7.25"
+    },
+    {
+      "name": "Applewood Smoked Bacon",
+      "category": "Sides",
+      "calories": null,
+      "price": "$7.25"
+    },
+    {
+      "name": "Smoked Salmon",
+      "category": "Sides",
+      "calories": null,
+      "price": "$10.00"
+    },
+    {
+      "name": "Toast",
+      "category": "Sides",
+      "calories": null,
+      "price": "$4.00"
+    },
+    {
+      "name": "English Muffin",
+      "category": "Sides",
+      "calories": null,
+      "price": "$4.00"
+    },
+    {
+      "name": "Plain Bagel",
+      "category": "Sides",
+      "calories": null,
+      "price": "$5.00"
+    },
+    {
+      "name": "Pain au Chocolat",
+      "category": "Pâtisserie",
+      "calories": null,
+      "price": "$4.75"
+    },
+    {
+      "name": "Croissant",
+      "category": "Pâtisserie",
+      "calories": null,
+      "price": "$4.50"
+    },
+    {
+      "name": "Apple Galette",
+      "category": "Pâtisserie",
+      "calories": null,
+      "price": "$6.50"
+    },
+    {
+      "name": "Croissant aux Amandes",
+      "category": "Pâtisserie",
+      "calories": null,
+      "price": "$4.75"
+    },
+    {
+      "name": "Brioche",
+      "category": "Pâtisserie",
+      "calories": null,
+      "price": "$4.75"
+    },
+    {
+      "name": "Butter Scone",
+      "category": "Pâtisserie",
+      "calories": null,
+      "price": "$5.25"
+    },
+    {
+      "name": "Monkey Bread",
+      "category": "Pâtisserie",
+      "calories": null,
+      "price": "$4.75"
+    },
+    {
+      "name": "Raisin Scone",
+      "category": "Pâtisserie",
+      "calories": null,
+      "price": "$5.25"
+    },
+    {
+      "name": "Cinnamon Bun",
+      "category": "Pâtisserie",
+      "calories": null,
+      "price": "$4.50"
+    },
+    {
+      "name": "Sticky Bun",
+      "category": "Pâtisserie",
+      "calories": null,
+      "price": "$5.00"
+    },
+    {
+      "name": "Homemade Donuts",
+      "category": "Pâtisserie",
+      "calories": null,
+      "price": "$3.00"
+    },
+    {
+      "name": "Le Panier - Chocolate Croissant, Cranberry-Pecan Bread, Monkey Bread, Sticky Bun, Orange Brioche, Butter Croissant",
+      "category": "Le Panier",
+      "calories": null,
+      "price": "$22.00"
+    },
+    {
+      "name": "Tartine - choice of Blueberry, Strawberry, Apricot Preserves, Orange Marmalade, Nutella",
+      "category": "Tartine",
+      "calories": null,
+      "price": "$4.50"
+    },
+    {
+      "name": "Café Américain",
+      "category": "Boissons - Anèri Coffee and Espresso",
+      "calories": null,
+      "price": "$5.50"
+    },
+    {
+      "name": "Cappuccino - Bowl",
+      "category": "Boissons - Anèri Coffee and Espresso",
+      "calories": null,
+      "price": "$6.50"
+    },
+    {
+      "name": "Cappuccino - Cup",
+      "category": "Boissons - Anèri Coffee and Espresso",
+      "calories": null,
+      "price": "$5.75"
+    },
+    {
+      "name": "Caffè Latte - Bowl",
+      "category": "Boissons - Anèri Coffee and Espresso",
+      "calories": null,
+      "price": "$6.50"
+    },
+    {
+      "name": "Caffè Latte - Cup",
+      "category": "Boissons - Anèri Coffee and Espresso",
+      "calories": null,
+      "price": "$5.75"
+    },
+    {
+      "name": "Café au Lait - Bowl",
+      "category": "Boissons - Anèri Coffee and Espresso",
+      "calories": null,
+      "price": "$6.50"
+    },
+    {
+      "name": "Café au Lait - Cup",
+      "category": "Boissons - Anèri Coffee and Espresso",
+      "calories": null,
+      "price": "$5.75"
+    },
+    {
+      "name": "Espresso",
+      "category": "Boissons - Anèri Coffee and Espresso",
+      "calories": null,
+      "price": "$5.75"
+    },
+    {
+      "name": "Chocolat Chaud - Bowl",
+      "category": "Boissons - Anèri Coffee and Espresso",
+      "calories": null,
+      "price": "$5.75"
+    },
+    {
+      "name": "Chocolat Chaud - Cup",
+      "category": "Boissons - Anèri Coffee and Espresso",
+      "calories": null,
+      "price": "$5.00"
+    },
+    {
+      "name": "Iced Cappuccino",
+      "category": "Boissons - Anèri Coffee and Espresso",
+      "calories": null,
+      "price": "$6.75"
+    },
+    {
+      "name": "Iced Tea or Coffee",
+      "category": "Boissons - Anèri Coffee and Espresso",
+      "calories": null,
+      "price": "$5.50"
+    },
+    {
+      "name": "Fresh Orange Juice",
+      "category": "Boissons",
+      "calories": null,
+      "price": "$6.00"
+    },
+    {
+      "name": "Fresh Grapefruit Juice",
+      "category": "Boissons",
+      "calories": null,
+      "price": "$6.00"
+    },
+    {
+      "name": "Lemonade",
+      "category": "Boissons",
+      "calories": null,
+      "price": "$5.00"
+    },
+    {
+      "name": "Ginger Lemon Iced Tea",
+      "category": "Boissons",
+      "calories": null,
+      "price": "$5.25"
+    },
+    {
+      "name": "English Breakfast",
+      "category": "Hot Teas",
+      "calories": null,
+      "price": "$5.50"
+    },
+    {
+      "name": "Earl Grey",
+      "category": "Hot Teas",
+      "calories": null,
+      "price": "$5.50"
+    },
+    {
+      "name": "Jasmine Pearls Green",
+      "category": "Hot Teas",
+      "calories": null,
+      "price": "$5.50"
+    },
+    {
+      "name": "Chai",
+      "category": "Hot Teas",
+      "calories": null,
+      "price": "$5.50"
+    },
+    {
+      "name": "Lemon-Verbena",
+      "category": "Hot Teas",
+      "calories": null,
+      "price": "$5.50"
+    },
+    {
+      "name": "Chamomile",
+      "category": "Hot Teas",
+      "calories": null,
+      "price": "$5.50"
+    },
+    {
+      "name": "Mint",
+      "category": "Hot Teas",
+      "calories": null,
+      "price": "$5.50"
+    }
+  ]
+}
