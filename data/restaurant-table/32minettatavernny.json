@@ -1,0 +1,179 @@
+{
+  "title": "Minetta Tavern Menu With Price List",
+  "items": [
+    {
+      "name": "Strawberry Gazpacho - pickled strawberry, olive oil, croutons",
+      "category": "Hors D'oeuvres",
+      "calories": null,
+      "price": "$14.00"
+    },
+    {
+      "name": "Grilled Island Creek Oysters - pancetta-fresno chili butter",
+      "category": "Hors D'oeuvres",
+      "calories": null,
+      "price": "$23.00"
+    },
+    {
+      "name": "Hand Cut Prime Steak Tartare - quail egg, dijon, Parmesan, capers, sourdough crostini",
+      "category": "Hors D'oeuvres",
+      "calories": null,
+      "price": "$22.00"
+    },
+    {
+      "name": "Burrata - tomato confit, basil pesto, pinenuts",
+      "category": "Hors D'oeuvres",
+      "calories": null,
+      "price": "$21.00"
+    },
+    {
+      "name": "Avocado Toast - with radish and tomato salsa, watercress",
+      "category": "Hors D'oeuvres",
+      "calories": null,
+      "price": "$17.00"
+    },
+    {
+      "name": "Pâté de Foie - huckleberries in port, grilled Balthazar levain",
+      "category": "Hors D'oeuvres",
+      "calories": null,
+      "price": "$21.00"
+    },
+    {
+      "name": "Little Gem Caesar - with shaved radish, croutons, anchovies, Parmigiano Reggiano",
+      "category": "Hors D'oeuvres",
+      "calories": null,
+      "price": "$19.00"
+    },
+    {
+      "name": "Butter Lettuce Salad - peaches, apricot kernels, honey-lemon vinaigrette",
+      "category": "Hors D'oeuvres",
+      "calories": null,
+      "price": "$15.00"
+    },
+    {
+      "name": "Roasted Bone Marrow - with baguette soldiers and shallot confit",
+      "category": "Hors D'oeuvres",
+      "calories": null,
+      "price": "$24.00"
+    },
+    {
+      "name": "Escargots à la Bourguignonne - garlic-parsley butter",
+      "category": "Hors D'oeuvres",
+      "calories": null,
+      "price": "$24.00"
+    },
+    {
+      "name": "Moules Frites - Bouchot mussel, sauce Poulette, herbs, pommes frites",
+      "category": "Entrées",
+      "calories": null,
+      "price": "$26.00"
+    },
+    {
+      "name": "Arctic Char - sautéed corn, chanterelle mushrooms, scallions, corn foam",
+      "category": "Entrées",
+      "calories": null,
+      "price": "$34.00"
+    },
+    {
+      "name": "Duck Leg Confit \"À Cheval\" - frisée, sunny-side egg, lardon, duck jus",
+      "category": "Entrées",
+      "calories": null,
+      "price": "$26.00"
+    },
+    {
+      "name": "Agnolotti - Ricotta, cherry tomato, bread crumbs, mint",
+      "category": "Entrées",
+      "calories": null,
+      "price": "$22.00"
+    },
+    {
+      "name": "Minetta Burger - with cheddar and caramelized onions",
+      "category": "Entrées",
+      "calories": null,
+      "price": "$22.00"
+    },
+    {
+      "name": "Black Label Burger - selection of prime dry-aged beef cuts with caramelized onions and pommes frites",
+      "category": "Entrées",
+      "calories": null,
+      "price": "$30.00"
+    },
+    {
+      "name": "Steak Frites - with maître d' butter or sauce béarnaise",
+      "category": "Entrées",
+      "calories": null,
+      "price": "$35.00"
+    },
+    {
+      "name": "Filet Mignon au Roquefort - wrapped in applewood-smoked bacon",
+      "category": "Entrées",
+      "calories": null,
+      "price": "$53.00"
+    },
+    {
+      "name": "Minetta French Dip",
+      "category": "Spécialités",
+      "calories": null,
+      "price": "$26.00"
+    },
+    {
+      "name": "Bone-In New York Strip",
+      "category": "Spécialités",
+      "calories": null,
+      "price": "$63.00"
+    },
+    {
+      "name": "Market Fish - sauce vierge",
+      "category": "Spécialités",
+      "calories": null,
+      "price": "M/P"
+    },
+    {
+      "name": "Dry-Aged Côte de Boeuf - for two, with roasted marrow bones and gem lettuce salad",
+      "category": "Spécialités",
+      "calories": null,
+      "price": "$148.00"
+    },
+    {
+      "name": "Frites",
+      "category": "Pommes",
+      "calories": null,
+      "price": "$10.00"
+    },
+    {
+      "name": "Anna",
+      "category": "Pommes",
+      "calories": null,
+      "price": "$10.00"
+    },
+    {
+      "name": "Aligot",
+      "category": "Pommes",
+      "calories": null,
+      "price": "$10.00"
+    },
+    {
+      "name": "Grilled Asparagus",
+      "category": "Légumes",
+      "calories": null,
+      "price": "$11.00"
+    },
+    {
+      "name": "Petite Salade",
+      "category": "Légumes",
+      "calories": null,
+      "price": "$11.00"
+    },
+    {
+      "name": "Spinach",
+      "category": "Légumes",
+      "calories": null,
+      "price": "$10.00"
+    },
+    {
+      "name": "Champignons Poêlés",
+      "category": "Légumes",
+      "calories": null,
+      "price": "$15.00"
+    }
+  ]
+}
