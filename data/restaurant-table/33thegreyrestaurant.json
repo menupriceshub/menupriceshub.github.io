@@ -1,0 +1,131 @@
+{
+  "title": "The Grey Menu With Price List",
+  "items": [
+    {
+      "name": "Buckwheat Pancake - apples, chantilly",
+      "category": "Sweet Treats",
+      "calories": null,
+      "price": "$16.00"
+    },
+    {
+      "name": "Fruit & Yogurt Parfait - peach compote, raspberries, pecan granola",
+      "category": "Sweet Treats",
+      "calories": null,
+      "price": "$12.00"
+    },
+    {
+      "name": "Diner Bar Salad - pickled peppers, feta, DB vinaigrette",
+      "category": "Brunch",
+      "calories": null,
+      "price": "$14.00"
+    },
+    {
+      "name": "Side Salad - mixed greens, basil vinaigrette",
+      "category": "Brunch",
+      "calories": null,
+      "price": "$6.00"
+    },
+    {
+      "name": "Crab Fritters - lemon remoulade, chives",
+      "category": "Brunch",
+      "calories": null,
+      "price": "$16.00"
+    },
+    {
+      "name": "Quiche - sundried tomatoes, peppers, feta",
+      "category": "Brunch",
+      "calories": null,
+      "price": "$16.00"
+    },
+    {
+      "name": "Omelette - cheddar, potato rosti, grilled sourdough, lettuces",
+      "category": "Brunch",
+      "calories": null,
+      "price": "$18.00"
+    },
+    {
+      "name": "Fried Chicken - hoe cakes, butter, cane syrup",
+      "category": "Brunch",
+      "calories": null,
+      "price": "$26.00"
+    },
+    {
+      "name": "The GH - beef patty, english muffin, american cheese, caramelized onions, comeback sauce, wedges",
+      "category": "Brunch",
+      "calories": null,
+      "price": "$25.00"
+    },
+    {
+      "name": "Buttermilk Biscuits - chicken sausage, curry gravy, poached eggs, potato rosti, herb salad",
+      "category": "Brunch",
+      "calories": null,
+      "price": "$22.00"
+    },
+    {
+      "name": "Fish & Grits - creole gravy, marsh hen mill grits",
+      "category": "Brunch",
+      "calories": null,
+      "price": "$28.00"
+    },
+    {
+      "name": "Side Of Bacon",
+      "category": "Sides",
+      "calories": null,
+      "price": "$6.00"
+    },
+    {
+      "name": "Side Of Grits",
+      "category": "Sides",
+      "calories": null,
+      "price": "$6.00"
+    },
+    {
+      "name": "Side Pastry",
+      "category": "Sides",
+      "calories": null,
+      "price": "$5.00"
+    },
+    {
+      "name": "Pecans; Blackening Spice",
+      "category": "Diner Bar Food",
+      "calories": null,
+      "price": "$8.00"
+    },
+    {
+      "name": "Crudo; Tomato Water, Roasted Pepper Oil, Caper Dressing",
+      "category": "Diner Bar Food",
+      "calories": null,
+      "price": "$22.00"
+    },
+    {
+      "name": "Crudite; Raw & Pickled Veggies, Green Caesar",
+      "category": "Diner Bar Food",
+      "calories": null,
+      "price": "$16.00"
+    },
+    {
+      "name": "Savannah Red Rice Balls; Sofrito, San Marzano Tomato",
+      "category": "Diner Bar Food",
+      "calories": null,
+      "price": "$14.00"
+    },
+    {
+      "name": "Diner Bar Lettuces; Pickled Peppers, Cucumber, Feta",
+      "category": "Diner Bar Food",
+      "calories": null,
+      "price": "$16.00"
+    },
+    {
+      "name": "Baba Ghanoush; Pea Fritters, Pickled Okra, Tomatoes, White Onion",
+      "category": "Diner Bar Food",
+      "calories": null,
+      "price": "$28.00"
+    },
+    {
+      "name": "Chicken Schnitzel; Spring Greens, White Bbq, Lemon Wedge",
+      "category": "Diner Bar Food",
+      "calories": null,
+      "price": "$24.00"
+    }
+  ]
+}
