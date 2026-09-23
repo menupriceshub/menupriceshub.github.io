@@ -1,0 +1,167 @@
+{
+  "title": "Dick's Drive-In Menu With Price List",
+  "items": [
+    {
+      "name": "Deluxe",
+      "category": "Burgers",
+      "calories": null,
+      "price": "$5.75"
+    },
+    {
+      "name": "Special",
+      "category": "Burgers",
+      "calories": null,
+      "price": "$3.50"
+    },
+    {
+      "name": "Cheeseburger",
+      "category": "Burgers",
+      "calories": null,
+      "price": "$3.25"
+    },
+    {
+      "name": "Plain Cheeseburger",
+      "category": "Burgers",
+      "calories": null,
+      "price": "$3.05"
+    },
+    {
+      "name": "Hamburger",
+      "category": "Burgers",
+      "calories": null,
+      "price": "$2.70"
+    },
+    {
+      "name": "Plain Hamburger",
+      "category": "Burgers",
+      "calories": null,
+      "price": "$2.50"
+    },
+    {
+      "name": "Fries",
+      "category": "Fries & Condiments",
+      "calories": null,
+      "price": "$2.95"
+    },
+    {
+      "name": "Ketchup Cup",
+      "category": "Fries & Condiments",
+      "calories": null,
+      "price": "$0.20"
+    },
+    {
+      "name": "Tartar Cup",
+      "category": "Fries & Condiments",
+      "calories": null,
+      "price": "$0.20"
+    },
+    {
+      "name": "Raw Onion Cup",
+      "category": "Fries & Condiments",
+      "calories": null,
+      "price": "$0.20"
+    },
+    {
+      "name": "Mustard Packet",
+      "category": "Fries & Condiments",
+      "calories": null,
+      "price": "No Charge"
+    },
+    {
+      "name": "Milkshake - Vanilla",
+      "category": "Milkshakes & Ice Cream",
+      "calories": null,
+      "price": "$4.05"
+    },
+    {
+      "name": "Milkshake - Chocolate",
+      "category": "Milkshakes & Ice Cream",
+      "calories": null,
+      "price": "$4.05"
+    },
+    {
+      "name": "Milkshake - Strawberry",
+      "category": "Milkshakes & Ice Cream",
+      "calories": null,
+      "price": "$4.05"
+    },
+    {
+      "name": "Kid's Scoop",
+      "category": "Milkshakes & Ice Cream",
+      "calories": null,
+      "price": "$2.30"
+    },
+    {
+      "name": "Single Scoop",
+      "category": "Milkshakes & Ice Cream",
+      "calories": null,
+      "price": "$3.25"
+    },
+    {
+      "name": "Double Scoop",
+      "category": "Milkshakes & Ice Cream",
+      "calories": null,
+      "price": "$4.45"
+    },
+    {
+      "name": "Sundae",
+      "category": "Milkshakes & Ice Cream",
+      "calories": null,
+      "price": "$3.70"
+    },
+    {
+      "name": "Extra Topping",
+      "category": "Milkshakes & Ice Cream",
+      "calories": null,
+      "price": "$1.60"
+    },
+    {
+      "name": "Extra Scoop",
+      "category": "Milkshakes & Ice Cream",
+      "calories": null,
+      "price": "$1.95"
+    },
+    {
+      "name": "Float",
+      "category": "Milkshakes & Ice Cream",
+      "calories": null,
+      "price": "$4.05"
+    },
+    {
+      "name": "Soda - Small",
+      "category": "Soda & Other Drinks",
+      "calories": null,
+      "price": "$2.10"
+    },
+    {
+      "name": "Soda - Medium",
+      "category": "Soda & Other Drinks",
+      "calories": null,
+      "price": "$2.45"
+    },
+    {
+      "name": "Soda - Large",
+      "category": "Soda & Other Drinks",
+      "calories": null,
+      "price": "$2.65"
+    },
+    {
+      "name": "Coffee",
+      "category": "Soda & Other Drinks",
+      "calories": null,
+      "price": "$2.00"
+    },
+    {
+      "name": "Hot Cocoa",
+      "category": "Soda & Other Drinks",
+      "calories": null,
+      "price": "$2.00"
+    },
+    {
+      "name": "2% Milk",
+      "category": "Soda & Other Drinks",
+      "calories": null,
+      "price": "$1.85"
+    }
+  ]
+}
