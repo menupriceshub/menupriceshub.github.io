@@ -1,0 +1,179 @@
+{
+  "title": "The Apple Pan Menu With Price List",
+  "items": [
+    {
+      "name": "Steakburger",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$10.25"
+    },
+    {
+      "name": "Grilled Cheese",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$7.75"
+    },
+    {
+      "name": "Hickoryburger",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$10.25"
+    },
+    {
+      "name": "Tuna Salad",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$13.75"
+    },
+    {
+      "name": "Southern Baked Ham",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$12.75"
+    },
+    {
+      "name": "Ham and Cheese",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$13.75"
+    },
+    {
+      "name": "Egg Salad",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$9.50"
+    },
+    {
+      "name": "French Fries",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$5.00"
+    },
+    {
+      "name": "Fresh Apple Pie",
+      "category": "Apple Pan Pies",
+      "calories": null,
+      "price": "$7.75 / $39.00"
+    },
+    {
+      "name": "Pecan Pie",
+      "category": "Apple Pan Pies",
+      "calories": null,
+      "price": "$7.75 / $39.00"
+    },
+    {
+      "name": "Banana Cream Pie",
+      "category": "Apple Pan Pies",
+      "calories": null,
+      "price": "$7.75 / $39.00"
+    },
+    {
+      "name": "Cherry Cream Pie",
+      "category": "Apple Pan Pies",
+      "calories": null,
+      "price": "$7.75 / $39.00"
+    },
+    {
+      "name": "Chocolate Cream Pie",
+      "category": "Apple Pan Pies",
+      "calories": null,
+      "price": "$7.75 / $39.00"
+    },
+    {
+      "name": "Coconut Cream Pie",
+      "category": "Apple Pan Pies",
+      "calories": null,
+      "price": "$7.75 / $39.00"
+    },
+    {
+      "name": "Boysenberry Cream Pie",
+      "category": "Apple Pan Pies",
+      "calories": null,
+      "price": "$7.75 / $39.00"
+    },
+    {
+      "name": "Strawberry Cream Pie",
+      "category": "Apple Pan Pies",
+      "calories": null,
+      "price": "$7.75 / $39.00"
+    },
+    {
+      "name": "Peach Cream Pie",
+      "category": "Apple Pan Pies",
+      "calories": null,
+      "price": "$7.75 / $39.00"
+    },
+    {
+      "name": "Pumpkin Cream Pie",
+      "category": "Apple Pan Pies",
+      "calories": null,
+      "price": "$7.75 / $39.00"
+    },
+    {
+      "name": "Choco-Banana Cream Pie",
+      "category": "Apple Pan Pies",
+      "calories": null,
+      "price": "$7.75 / $39.00"
+    },
+    {
+      "name": "Choco-Coconut Cream Pie",
+      "category": "Apple Pan Pies",
+      "calories": null,
+      "price": "$7.75 / $39.00"
+    },
+    {
+      "name": "Coffee",
+      "category": "Drinks",
+      "calories": null,
+      "price": "$4.75"
+    },
+    {
+      "name": "Iced Coffee",
+      "category": "Drinks",
+      "calories": null,
+      "price": "$4.75"
+    },
+    {
+      "name": "Iced Or Hot Tea",
+      "category": "Drinks",
+      "calories": null,
+      "price": "$4.75"
+    },
+    {
+      "name": "Bottled Water",
+      "category": "Drinks",
+      "calories": null,
+      "price": "$4.75"
+    },
+    {
+      "name": "Sparkling Water",
+      "category": "Drinks",
+      "calories": null,
+      "price": "$4.75"
+    },
+    {
+      "name": "Soft Drinks - Bottles",
+      "category": "Drinks",
+      "calories": null,
+      "price": "$4.75"
+    },
+    {
+      "name": "Soft Drinks - Cans",
+      "category": "Drinks",
+      "calories": null,
+      "price": "$4.75"
+    },
+    {
+      "name": "Root Beer Float",
+      "category": "Drinks",
+      "calories": null,
+      "price": "$6.75"
+    },
+    {
+      "name": "Danish Vanilla",
+      "category": "Ice Cream",
+      "calories": null,
+      "price": "$3.75"
+    }
+  ]
+}
