@@ -1,0 +1,233 @@
+{
+  "title": "Homeroom Mac & Cheese Menu With Price List",
+  "items": [
+    {
+      "name": "Mac Flight Trio",
+      "category": "Seasonal Specials",
+      "calories": null,
+      "price": "$21.99"
+    },
+    {
+      "name": "Kogi Short Rib Mac",
+      "category": "Mac + Cheese",
+      "calories": null,
+      "price": "$17.99"
+    },
+    {
+      "name": "BBQ Pulled Pork Mac",
+      "category": "Mac + Cheese",
+      "calories": null,
+      "price": "$17.99"
+    },
+    {
+      "name": "Buffalo Chicken Mac",
+      "category": "Mac + Cheese",
+      "calories": null,
+      "price": "$16.99"
+    },
+    {
+      "name": "Garlicky Bacon Mac",
+      "category": "Mac + Cheese",
+      "calories": null,
+      "price": "$14.99"
+    },
+    {
+      "name": "Classic Mac",
+      "category": "Mac + Cheese",
+      "calories": null,
+      "price": "$11.99"
+    },
+    {
+      "name": "Gilroy Garlic Mac",
+      "category": "Mac + Cheese",
+      "calories": null,
+      "price": "$12.99"
+    },
+    {
+      "name": "Elote Mac",
+      "category": "Mac + Cheese",
+      "calories": null,
+      "price": "$15.99"
+    },
+    {
+      "name": "Chicken Pot Pie Mac",
+      "category": "Mac + Cheese",
+      "calories": null,
+      "price": "$16.99"
+    },
+    {
+      "name": "Jalapeño Popper Mac",
+      "category": "Mac + Cheese",
+      "calories": null,
+      "price": "$13.99"
+    },
+    {
+      "name": "Truffle Mac",
+      "category": "Mac + Cheese",
+      "calories": null,
+      "price": "$16.49"
+    },
+    {
+      "name": "Aged White Cheddar Mac",
+      "category": "Mac + Cheese",
+      "calories": null,
+      "price": "$12.99"
+    },
+    {
+      "name": "Garden Pesto Mac",
+      "category": "Mac + Cheese",
+      "calories": null,
+      "price": "$15.99"
+    },
+    {
+      "name": "Vegan Mac",
+      "category": "Plant Based",
+      "calories": null,
+      "price": "$12.99"
+    },
+    {
+      "name": "Buffalo Vegan Mac",
+      "category": "Plant Based",
+      "calories": null,
+      "price": "$13.99"
+    },
+    {
+      "name": "Mexican Vegan Mac",
+      "category": "Plant Based",
+      "calories": null,
+      "price": "$13.99"
+    },
+    {
+      "name": "Gluten-Free Noodles",
+      "category": "Add-Ins",
+      "calories": null,
+      "price": "$2.99"
+    },
+    {
+      "name": "Kogi Beef Short Rib",
+      "category": "Add-Ins",
+      "calories": null,
+      "price": "$5.99"
+    },
+    {
+      "name": "Grilled Chicken",
+      "category": "Add-Ins",
+      "calories": null,
+      "price": "$3.99"
+    },
+    {
+      "name": "Vegan Sausage",
+      "category": "Add-Ins",
+      "calories": null,
+      "price": "$2.99"
+    },
+    {
+      "name": "BBQ Pulled Pork",
+      "category": "Add-Ins",
+      "calories": null,
+      "price": "$3.99"
+    },
+    {
+      "name": "Bacon",
+      "category": "Add-Ins",
+      "calories": null,
+      "price": "$2.99"
+    },
+    {
+      "name": "Chorizo",
+      "category": "Add-Ins",
+      "calories": null,
+      "price": "$2.99"
+    },
+    {
+      "name": "Hot Dogs",
+      "category": "Add-Ins",
+      "calories": null,
+      "price": "$2.99"
+    },
+    {
+      "name": "Broccoli",
+      "category": "Add-Ins",
+      "calories": null,
+      "price": "$1.99"
+    },
+    {
+      "name": "Cherry Tomatoes",
+      "category": "Add-Ins",
+      "calories": null,
+      "price": "$1.99"
+    },
+    {
+      "name": "Corn Chile Blend",
+      "category": "Add-Ins",
+      "calories": null,
+      "price": "$1.99"
+    },
+    {
+      "name": "Sautéed Mushrooms",
+      "category": "Add-Ins",
+      "calories": null,
+      "price": "$1.99"
+    },
+    {
+      "name": "Caramelized Shallots",
+      "category": "Add-Ins",
+      "calories": null,
+      "price": "$0.99"
+    },
+    {
+      "name": "Jalapeños",
+      "category": "Add-Ins",
+      "calories": null,
+      "price": "$1.99"
+    },
+    {
+      "name": "Peas",
+      "category": "Add-Ins",
+      "calories": null,
+      "price": "$0.99"
+    },
+    {
+      "name": "Carrots",
+      "category": "Add-Ins",
+      "calories": null,
+      "price": "$0.99"
+    },
+    {
+      "name": "Scallions",
+      "category": "Add-Ins",
+      "calories": null,
+      "price": "$0.99"
+    },
+    {
+      "name": "Garlic Butter",
+      "category": "Add-Ins",
+      "calories": null,
+      "price": "$0.99"
+    },
+    {
+      "name": "Breadcrumbs",
+      "category": "Add-Ins",
+      "calories": null,
+      "price": "$0.99"
+    },
+    {
+      "name": "Hot Cheetos",
+      "category": "Add-Ins",
+      "calories": null,
+      "price": "$0.99"
+    },
+    {
+      "name": "Potato Chips",
+      "category": "Add-Ins",
+      "calories": null,
+      "price": "$0.99"
+    },
+    {
+      "name": "Crispy Onions",
+      "category": "Add-Ins",
+      "calories": null,
+      "price": "$0.99"
+    }
+  ]
+}
