@@ -1,0 +1,269 @@
+{
+  "title": "The Original Soup Kitchen Menu With Price List",
+  "items": [
+    {
+      "name": "Lobster Bisque",
+      "category": "Soups of the Day",
+      "calories": null,
+      "price": "$10.00+"
+    },
+    {
+      "name": "Jambalaya",
+      "category": "Soups of the Day",
+      "calories": null,
+      "price": "$7.00+"
+    },
+    {
+      "name": "Shrimp Corn Chowder",
+      "category": "Soups of the Day",
+      "calories": null,
+      "price": "$7.00+"
+    },
+    {
+      "name": "Chicken Tortilla",
+      "category": "Soups of the Day",
+      "calories": null,
+      "price": "$6.00+"
+    },
+    {
+      "name": "Italian Wedding",
+      "category": "Soups of the Day",
+      "calories": null,
+      "price": "$6.00+"
+    },
+    {
+      "name": "Split Pea with Ham",
+      "category": "Soups of the Day",
+      "calories": null,
+      "price": "$6.00+"
+    },
+    {
+      "name": "Broccoli & Cheese",
+      "category": "Soups of the Day",
+      "calories": null,
+      "price": "$5.00+"
+    },
+    {
+      "name": "Cuban Black Bean",
+      "category": "Soups of the Day",
+      "calories": null,
+      "price": "$5.00+"
+    },
+    {
+      "name": "Garden Vegetable",
+      "category": "Soups of the Day",
+      "calories": null,
+      "price": "$5.00+"
+    },
+    {
+      "name": "Chicken Bone Broth",
+      "category": "Bone Broths",
+      "calories": null,
+      "price": "$5.95+"
+    },
+    {
+      "name": "Beef Bone Broth",
+      "category": "Bone Broths",
+      "calories": null,
+      "price": "$5.95+"
+    },
+    {
+      "name": "Coke",
+      "category": "Soda",
+      "calories": null,
+      "price": "$3.00"
+    },
+    {
+      "name": "Diet Coke",
+      "category": "Soda",
+      "calories": null,
+      "price": "$3.00"
+    },
+    {
+      "name": "Coke Zero",
+      "category": "Soda",
+      "calories": null,
+      "price": "$3.00"
+    },
+    {
+      "name": "Sprite",
+      "category": "Soda",
+      "calories": null,
+      "price": "$3.00"
+    },
+    {
+      "name": "Dr. Pepper",
+      "category": "Soda",
+      "calories": null,
+      "price": "$3.00"
+    },
+    {
+      "name": "Diet Dr. Pepper",
+      "category": "Soda",
+      "calories": null,
+      "price": "$3.00"
+    },
+    {
+      "name": "Sprite Zero",
+      "category": "Soda",
+      "calories": null,
+      "price": "$3.00"
+    },
+    {
+      "name": "Sunkist Orange",
+      "category": "Soda",
+      "calories": null,
+      "price": "$3.00"
+    },
+    {
+      "name": "Canada Dry Ginger Ale",
+      "category": "Soda",
+      "calories": null,
+      "price": "$3.00"
+    },
+    {
+      "name": "Canada Dry Seltzer",
+      "category": "Soda",
+      "calories": null,
+      "price": "$3.00"
+    },
+    {
+      "name": "Pepsi",
+      "category": "Soda",
+      "calories": null,
+      "price": "$3.00"
+    },
+    {
+      "name": "Diet Pepsi",
+      "category": "Soda",
+      "calories": null,
+      "price": "$3.00"
+    },
+    {
+      "name": "Dr. Pepper Zero",
+      "category": "Soda",
+      "calories": null,
+      "price": "$3.00"
+    },
+    {
+      "name": "Canada Dry Zero",
+      "category": "Soda",
+      "calories": null,
+      "price": "$3.00"
+    },
+    {
+      "name": "Canada Dry Fruit Splash",
+      "category": "Soda",
+      "calories": null,
+      "price": "$3.00"
+    },
+    {
+      "name": "Canada Dry Fruit Splash Zero",
+      "category": "Soda",
+      "calories": null,
+      "price": "$3.00"
+    },
+    {
+      "name": "Lemon Tea",
+      "category": "Snapple",
+      "calories": null,
+      "price": "$4.00"
+    },
+    {
+      "name": "Diet Lemon Tea",
+      "category": "Snapple",
+      "calories": null,
+      "price": "$4.00"
+    },
+    {
+      "name": "Peach Tea",
+      "category": "Snapple",
+      "calories": null,
+      "price": "$4.00"
+    },
+    {
+      "name": "Diet Peach Tea",
+      "category": "Snapple",
+      "calories": null,
+      "price": "$4.00"
+    },
+    {
+      "name": "Orange Aide",
+      "category": "Snapple",
+      "calories": null,
+      "price": "$4.00"
+    },
+    {
+      "name": "Apple Snapple",
+      "category": "Snapple",
+      "calories": null,
+      "price": "$4.00"
+    },
+    {
+      "name": "Grape Snapple",
+      "category": "Snapple",
+      "calories": null,
+      "price": "$4.00"
+    },
+    {
+      "name": "Kiwi Strawberry",
+      "category": "Snapple",
+      "calories": null,
+      "price": "$4.00"
+    },
+    {
+      "name": "Diet Raspberry Tea",
+      "category": "Snapple",
+      "calories": null,
+      "price": "$4.00"
+    },
+    {
+      "name": "Fruit Punch",
+      "category": "Snapple",
+      "calories": null,
+      "price": "$4.00"
+    },
+    {
+      "name": "Mango Madness",
+      "category": "Snapple",
+      "calories": null,
+      "price": "$4.00"
+    },
+    {
+      "name": "Mug",
+      "category": "T-Shirt & Mugs",
+      "calories": null,
+      "price": "$25.00"
+    },
+    {
+      "name": "T-Shirt",
+      "category": "T-Shirt & Mugs",
+      "calories": null,
+      "price": "$25.00"
+    },
+    {
+      "name": "Lay's Classic Potato Chips",
+      "category": "Potato Chips",
+      "calories": null,
+      "price": "$2.50"
+    },
+    {
+      "name": "Garden Salsa Sun Chips",
+      "category": "Potato Chips",
+      "calories": null,
+      "price": "$2.50"
+    },
+    {
+      "name": "Kettle Cooked Sea Salt Chips",
+      "category": "Potato Chips",
+      "calories": null,
+      "price": "$2.50"
+    },
+    {
+      "name": "Kettle Cooked Jalapeno Cheddar Chips",
+      "category": "Potato Chips",
+      "calories": null,
+      "price": "$2.50"
+    }
+  ]
+}
