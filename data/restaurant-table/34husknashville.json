@@ -1,0 +1,125 @@
+{
+  "title": "Husk Nashville Menu With Price List",
+  "items": [
+    {
+      "name": "Pimento Cheese, Chow-Chow, Benne Seed Wafers",
+      "category": "First",
+      "calories": null,
+      "price": "$14.00"
+    },
+    {
+      "name": "Bear Creek Beef Tartare, Crawfish Xo, Banana Pepper, Mint",
+      "category": "First",
+      "calories": null,
+      "price": "$19.00"
+    },
+    {
+      "name": "Butterhead Lettuce, Kenny's Bleu Gouda, Apple, Tarragon",
+      "category": "First",
+      "calories": null,
+      "price": "$14.00"
+    },
+    {
+      "name": "Kohlrabi, Apple, Matcha Yogurt, Pecan, Mint",
+      "category": "First",
+      "calories": null,
+      "price": "$15.00"
+    },
+    {
+      "name": "Kentuckyaki Glazed Pig Ears, Lettuce Wraps, Peanuts, Blue Plate Mayo",
+      "category": "First",
+      "calories": null,
+      "price": "$18.00"
+    },
+    {
+      "name": "Baby Back Ribs, Squash Bbq, Pumpkin Seed, Pecan",
+      "category": "First",
+      "calories": null,
+      "price": "$20.00"
+    },
+    {
+      "name": "12 Month Bentons Country Ham, Sorghum",
+      "category": "First",
+      "calories": null,
+      "price": "$20.00"
+    },
+    {
+      "name": "A Plate Of Southern Cheeses, Red Bud, Peanut",
+      "category": "First",
+      "calories": null,
+      "price": "$19.00"
+    },
+    {
+      "name": "New Orleans Bbq Shrimp, Marsh Hen Mill Grits, Bok Choy, Benne",
+      "category": "Supper",
+      "calories": null,
+      "price": "$33.00"
+    },
+    {
+      "name": "Joyce Farms Heritage Chicken, Dirty Rice, Sorghum, Cara Cara Orange",
+      "category": "Supper",
+      "calories": null,
+      "price": "$35.00"
+    },
+    {
+      "name": "Bear Creek Pork, Butternut Squash, 'Nduja, Winter Greens",
+      "category": "Supper",
+      "calories": null,
+      "price": "$36.00"
+    },
+    {
+      "name": "Bear Creek Beef, Sunchoke, Brown Butter, Horseradish",
+      "category": "Supper",
+      "calories": null,
+      "price": "$45.00"
+    },
+    {
+      "name": "Ms Catfish, Conch Peas, Cutting Celery, Fennel",
+      "category": "Supper",
+      "calories": null,
+      "price": "$32.00"
+    },
+    {
+      "name": "Buttermilk Cheddar Biscuits",
+      "category": "Share",
+      "calories": null,
+      "price": "$8.00"
+    },
+    {
+      "name": "A Plate Of Southern Vegetables",
+      "category": "Share",
+      "calories": null,
+      "price": "$28.00"
+    },
+    {
+      "name": "Vinegar Pie - Hibiscus Honey, Rose Whipped Cream",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$10.00"
+    },
+    {
+      "name": "Honey Bell Orange Sorbet - Vanilla Bean Meringue",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$8.00"
+    },
+    {
+      "name": "Buttered Popcorn Ice Cream - Caramelized White Chocolate, Einkorn",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$9.00"
+    },
+    {
+      "name": "Chocolate Sorbet - Pecan Miso, Shortbread, Pork Fat Caramel",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$11.00"
+    },
+    {
+      "name": "Plate Of Southern Cheeses - Red Bud, Peanut",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$19.00"
+    }
+  ]
+}
