@@ -1,0 +1,54 @@
+{
+  "title": "The Rendezvous Menu With Price List",
+  "items": [
+    { "name": "Cheese & Sausage", "category": "Appetizer Plates", "calories": null, "price": "$14.50" },
+    { "name": "Sausage", "category": "Appetizer Plates", "calories": null, "price": "$14.50" },
+    { "name": "Ham & Cheese", "category": "Appetizer Plates", "calories": null, "price": "$14.50" },
+    { "name": "Rendezvous Special (Ham, Cheese, Salami, Sausage, Pickles & Peppers)", "category": "Appetizer Plates", "calories": null, "price": "$19.00" },
+    { "name": "Add Extra Sausage to Any Plate", "category": "Appetizer Plates", "calories": null, "price": "$6.00" },
+    { "name": "Pork or Chicken BBQ Nachos", "category": "Appetizer Plates", "calories": null, "price": "$14.50" },
+    { "name": "Vegetarian Barbecue Nachos", "category": "Appetizer Plates", "calories": null, "price": "$14.50" },
+
+    { "name": "Mama's Real Greek Salad", "category": "Salad", "calories": null, "price": "$13.50" },
+    { "name": "Add Chicken or Shoulder (to salad)", "category": "Salad", "calories": null, "price": "$5.00" },
+
+    { "name": "Pork Shoulder Sandwich (served with beans & slaw)", "category": "Sandwiches", "calories": null, "price": "$13.00" },
+    { "name": "Chopped Chicken Sandwich (served with beans & slaw)", "category": "Sandwiches", "calories": null, "price": "$13.00" },
+    { "name": "Grilled Chicken Sandwich (served with beans & slaw)", "category": "Sandwiches", "calories": null, "price": "$13.00" },
+    { "name": "Grilled Cheese", "category": "Sandwiches", "calories": null, "price": "$7.50" },
+    { "name": "Ham (Add Cheese for 50c)", "category": "Sandwiches", "calories": null, "price": "$8.00" },
+    { "name": "Ham, Cheese & Salami", "category": "Sandwiches", "calories": null, "price": "$10.00" },
+    { "name": "Salami & Cheese", "category": "Sandwiches", "calories": null, "price": "$9.00" },
+
+    { "name": "Beans", "category": "Extras", "calories": null, "price": "$2.75" },
+    { "name": "Mustard Vinegar-Based Slaw", "category": "Extras", "calories": null, "price": "$2.75" },
+    { "name": "Pickles", "category": "Extras", "calories": null, "price": "$2.50" },
+    { "name": "Peppers", "category": "Extras", "calories": null, "price": "$2.50" },
+    { "name": "Potato Salad", "category": "Extras", "calories": null, "price": "$3.50" },
+    { "name": "Potato Salad Serving for 4", "category": "Extras", "calories": null, "price": "$12.00" },
+
+    { "name": "Ribs - Large Order", "category": "Ribs", "calories": null, "price": "$26.50" },
+    { "name": "Ribs - Small Order", "category": "Ribs", "calories": null, "price": "$21.50" },
+    { "name": "Ribs - Full Slab for Two (comes with two beans & two slaw)", "category": "Ribs", "calories": null, "price": "$38.00" },
+    { "name": "Combo - Pork Ribs & Shoulder", "category": "Ribs", "calories": null, "price": "$27.00" },
+    { "name": "Combo - Pork Ribs & Chicken Breast", "category": "Ribs", "calories": null, "price": "$27.00" },
+    { "name": "Combo - Pork Ribs & Brisket", "category": "Ribs", "calories": null, "price": "$27.00" },
+
+    { "name": "Grilled Half Chicken (served with beans & slaw)", "category": "Entrees", "calories": null, "price": "$19.50" },
+    { "name": "Grilled Chicken Breast (served with beans & slaw)", "category": "Entrees", "calories": null, "price": "$16.00" },
+    { "name": "Beef Brisket (served with beans & slaw)", "category": "Entrees", "calories": null, "price": "$21.00" },
+    { "name": "Pork Shoulder Plate (served with beans & slaw)", "category": "Entrees", "calories": null, "price": "$14.50" },
+    { "name": "Meatless Red Beans & Rice (served with slaw, pickles, peppers, cheese & crackers)", "category": "Entrees", "calories": null, "price": "$13.50" },
+
+    { "name": "Soft Drinks (unlimited refills)", "category": "Beverages", "calories": null, "price": "$2.95" },
+    { "name": "Pitcher - Michelob Ultra (48oz)", "category": "Beverages", "calories": null, "price": "$15.00" },
+    { "name": "Pitcher - Local Beer (48oz)", "category": "Beverages", "calories": null, "price": "$16.00" },
+    { "name": "Glass - Michelob Ultra (12oz)", "category": "Beverages", "calories": null, "price": "$4.25" },
+    { "name": "Glass - Local Beer (12oz)", "category": "Beverages", "calories": null, "price": "$4.75" },
+    { "name": "Premium Bottle Beer", "category": "Beverages", "calories": null, "price": "$5.00" },
+    { "name": "Other Bottle Beer", "category": "Beverages", "calories": null, "price": "$4.50" },
+
+    { "name": "Frozen Rib Box - Two Slab (Feeds up to 4, comes with sauce & seasoning)", "category": "Additional Info", "calories": null, "price": "$70" },
+    { "name": "Frozen Rib Box - Four Slab (Feeds up to 8, comes with sauce & seasoning)", "category": "Additional Info", "calories": null, "price": "$130" }
+  ]
+}
