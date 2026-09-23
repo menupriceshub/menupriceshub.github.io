@@ -1,0 +1,299 @@
+{
+  "title": "Loveless Cafe Menu With Price List",
+  "items": [
+    {
+      "name": "Famous Loveless Cafe Country Ham",
+      "category": "Breakfast Platters",
+      "calories": null,
+      "price": "$16.68"
+    },
+    {
+      "name": "Half Order Of Loveless Cafe Country Ham",
+      "category": "Breakfast Platters",
+      "calories": null,
+      "price": "$13.00"
+    },
+    {
+      "name": "Loveless Cafe Fried Chicken And Two Eggs",
+      "category": "Breakfast Platters",
+      "calories": null,
+      "price": "$14.50"
+    },
+    {
+      "name": "Fried Pork Chops And Two Eggs",
+      "category": "Breakfast Platters",
+      "calories": null,
+      "price": "$15.99"
+    },
+    {
+      "name": "Two Eggs With Choice Of Bacon Or Sausage",
+      "category": "Breakfast Platters",
+      "calories": null,
+      "price": "$11.50"
+    },
+    {
+      "name": "Pit-Cooked Pork Barbeque And Two Eggs",
+      "category": "Breakfast Platters",
+      "calories": null,
+      "price": "$15.25"
+    },
+    {
+      "name": "Breakfast Sandwich",
+      "category": "Breakfast Platters",
+      "calories": null,
+      "price": "$11.25"
+    },
+    {
+      "name": "Country Fried Steak And Two Eggs",
+      "category": "Breakfast Platters",
+      "calories": null,
+      "price": "$16.25"
+    },
+    {
+      "name": "\"City\" Ham And Two Eggs",
+      "category": "Breakfast Platters",
+      "calories": null,
+      "price": "$15.25"
+    },
+    {
+      "name": "Music City Platter",
+      "category": "Breakfast Platters",
+      "calories": null,
+      "price": "$17.00"
+    },
+    {
+      "name": "Southern Sampler Breakfast",
+      "category": "Breakfast Platters",
+      "calories": null,
+      "price": "$15.25"
+    },
+    {
+      "name": "Southern Omelet",
+      "category": "Breakfast Omelets",
+      "calories": null,
+      "price": "$11.00"
+    },
+    {
+      "name": "Garden Omelet",
+      "category": "Breakfast Omelets",
+      "calories": null,
+      "price": "$10.99"
+    },
+    {
+      "name": "Hog Heaven Omelet",
+      "category": "Breakfast Omelets",
+      "calories": null,
+      "price": "$14.99"
+    },
+    {
+      "name": "Cheese Omelet",
+      "category": "Breakfast Omelets",
+      "calories": null,
+      "price": "$9.25"
+    },
+    {
+      "name": "Pulled Pork Barbeque Omelet",
+      "category": "Breakfast Omelets",
+      "calories": null,
+      "price": "$12.00"
+    },
+    {
+      "name": "Pancakes With Bacon Or Sausage",
+      "category": "Breakfast Plates",
+      "calories": null,
+      "price": "$11.00"
+    },
+    {
+      "name": "Waffles With Bacon Or Sausage",
+      "category": "Breakfast Plates",
+      "calories": null,
+      "price": "$11.00"
+    },
+    {
+      "name": "French Toast With Bacon Or Sausage",
+      "category": "Breakfast Plates",
+      "calories": null,
+      "price": "$11.00"
+    },
+    {
+      "name": "Cinnamon Raisin French Toast With Bacon Or Sausage",
+      "category": "Breakfast Plates",
+      "calories": null,
+      "price": "$11.00"
+    },
+    {
+      "name": "Chicken And Waffle",
+      "category": "Breakfast Plates",
+      "calories": null,
+      "price": "$12.99"
+    },
+    {
+      "name": "Country Breakfast Bowl",
+      "category": "Breakfast Plates",
+      "calories": null,
+      "price": "$11.00"
+    },
+    {
+      "name": "Build Your Own Biscuit Sliders",
+      "category": "Breakfast Build Your Own Biscuit Sliders",
+      "calories": null,
+      "price": "$13.99"
+    },
+    {
+      "name": "Breakfast Meat Biscuit",
+      "category": "Breakfast A La Carte",
+      "calories": null,
+      "price": "$3.00"
+    },
+    {
+      "name": "Fried Or Grilled Chicken Biscuit",
+      "category": "Breakfast A La Carte",
+      "calories": null,
+      "price": "$3.50"
+    },
+    {
+      "name": "Pulled Pork Barbeque Biscuit",
+      "category": "Breakfast A La Carte",
+      "calories": null,
+      "price": "$3.59"
+    },
+    {
+      "name": "Pimento Cheese N' Fried Green Tomato Biscuit",
+      "category": "Breakfast A La Carte",
+      "calories": null,
+      "price": "$3.50"
+    },
+    {
+      "name": "Country Ham",
+      "category": "Breakfast A La Carte",
+      "calories": null,
+      "price": "$7.75"
+    },
+    {
+      "name": "\"City\" Ham (Sugar-Cured)",
+      "category": "Breakfast A La Carte",
+      "calories": null,
+      "price": "$8.50"
+    },
+    {
+      "name": "Bacon (3) Or Breakfast Sausage Patties (2)",
+      "category": "Breakfast A La Carte",
+      "calories": null,
+      "price": "$4.25"
+    },
+    {
+      "name": "Half Fried Chicken",
+      "category": "Breakfast A La Carte",
+      "calories": null,
+      "price": "$12.00"
+    },
+    {
+      "name": "Pancakes (3) Or Waffle",
+      "category": "Breakfast A La Carte",
+      "calories": null,
+      "price": "$8.50"
+    },
+    {
+      "name": "Toast, White Or Wheat",
+      "category": "Breakfast A La Carte",
+      "calories": null,
+      "price": "$2.00"
+    },
+    {
+      "name": "Toast, Cinnamon Raisin Bread",
+      "category": "Breakfast A La Carte",
+      "calories": null,
+      "price": "$3.19"
+    },
+    {
+      "name": "Biscuits (4) And Gravy",
+      "category": "Breakfast A La Carte",
+      "calories": null,
+      "price": "$7.00"
+    },
+    {
+      "name": "Stone Ground Grits",
+      "category": "Breakfast A La Carte",
+      "calories": null,
+      "price": "$3.80"
+    },
+    {
+      "name": "Hash Brown Casserole Or Home Fried Potatoes",
+      "category": "Breakfast A La Carte",
+      "calories": null,
+      "price": "$3.80"
+    },
+    {
+      "name": "Famous Biscuits",
+      "category": "Breakfast A La Carte",
+      "calories": null,
+      "price": "$5.00"
+    },
+    {
+      "name": "Fresh Cut Fruit",
+      "category": "Breakfast A La Carte",
+      "calories": null,
+      "price": "$4.50"
+    },
+    {
+      "name": "French Toast (3)",
+      "category": "Breakfast A La Carte",
+      "calories": null,
+      "price": "$8.50"
+    },
+    {
+      "name": "Cinnamon Raisin French Toast (3)",
+      "category": "Breakfast A La Carte",
+      "calories": null,
+      "price": "$8.99"
+    },
+    {
+      "name": "Smoked Turkey Chef Salad",
+      "category": "Supper Salads",
+      "calories": null,
+      "price": "$15.99"
+    },
+    {
+      "name": "Loveless Cafe \"Blue Ribbon\" Salad",
+      "category": "Supper Salads",
+      "calories": null,
+      "price": "$13.99"
+    },
+    {
+      "name": "Chicken Salad Plate",
+      "category": "Supper Salads",
+      "calories": null,
+      "price": "$11.00"
+    },
+    {
+      "name": "Fried Or Grilled Chicken Salad",
+      "category": "Supper Salads",
+      "calories": null,
+      "price": "$13.75"
+    },
+    {
+      "name": "Garden Side Salad",
+      "category": "Supper Salads",
+      "calories": null,
+      "price": "$4.75"
+    },
+    {
+      "name": "Pit-Cooked Pork Barbeque Sandwich",
+      "category": "Supper Sandwiches",
+      "calories": null,
+      "price": "$11.99"
+    },
+    {
+      "name": "Loveless Cafe BLT",
+      "category": "Supper Sandwiches",
+      "calories": null,
+      "price": "$11.99"
+    },
+    {
+      "name": "Pimento Cheese And Bacon Burger",
+      "category": "Supper Sandwiches",
+      "calories": null,
+      "price": null
+    }
+  ]
+}
