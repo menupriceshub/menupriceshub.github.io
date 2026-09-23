@@ -1,0 +1,419 @@
+{
+  "title": "Ruby's Menu With Price List",
+  "items": [
+    {
+      "name": "Chocolate Shake",
+      "category": "Shakes and Malts",
+      "calories": null,
+      "price": "$7.99"
+    },
+    {
+      "name": "Vanilla Shake",
+      "category": "Shakes and Malts",
+      "calories": null,
+      "price": "$7.99"
+    },
+    {
+      "name": "Strawberry Shake",
+      "category": "Shakes and Malts",
+      "calories": null,
+      "price": "$7.99"
+    },
+    {
+      "name": "Peanut Butter Cup Shake",
+      "category": "Shakes and Malts",
+      "calories": null,
+      "price": "$7.99"
+    },
+    {
+      "name": "Reese's Shake",
+      "category": "Shakes and Malts",
+      "calories": null,
+      "price": "$7.99"
+    },
+    {
+      "name": "Butterfinger Shake",
+      "category": "Shakes and Malts",
+      "calories": null,
+      "price": "$7.99"
+    },
+    {
+      "name": "Salted Caramel Shake",
+      "category": "Shakes and Malts",
+      "calories": null,
+      "price": "$7.99"
+    },
+    {
+      "name": "Double Chocolate Chip Shake",
+      "category": "Shakes and Malts",
+      "calories": null,
+      "price": "$7.99"
+    },
+    {
+      "name": "Mint Chocolate Chip Shake",
+      "category": "Shakes and Malts",
+      "calories": null,
+      "price": "$7.99"
+    },
+    {
+      "name": "Orange 50/50 Shake",
+      "category": "Shakes and Malts",
+      "calories": null,
+      "price": "$7.99"
+    },
+    {
+      "name": "Oreo Shake",
+      "category": "Shakes and Malts",
+      "calories": null,
+      "price": "$7.99"
+    },
+    {
+      "name": "Cookies & Cream Shake",
+      "category": "Shakes and Malts",
+      "calories": null,
+      "price": "$7.99"
+    },
+    {
+      "name": "Chocolate Chip Cookie Dough Shake",
+      "category": "Shakes and Malts",
+      "calories": null,
+      "price": "$7.99"
+    },
+    {
+      "name": "Coffee Shake",
+      "category": "Shakes and Malts",
+      "calories": null,
+      "price": "$7.99"
+    },
+    {
+      "name": "Ruby Sundae",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$7.49"
+    },
+    {
+      "name": "Itsy Bitsy Sundae",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$5.99"
+    },
+    {
+      "name": "Double Hot Fudge Brownie Sundae",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$8.99"
+    },
+    {
+      "name": "Old-Fashioned Vanilla Soft Serve",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$3.99"
+    },
+    {
+      "name": "Barq's Root Beer or Coke Float",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$6.99"
+    },
+    {
+      "name": "Banana Split",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$8.99"
+    },
+    {
+      "name": "Fresh Baked Apple Pie",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$6.99"
+    },
+    {
+      "name": "A la Mode",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$1.00"
+    },
+    {
+      "name": "Hot Coffee",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$3.99"
+    },
+    {
+      "name": "Hot Cocoa",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$4.99"
+    },
+    {
+      "name": "Hot Tea",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$3.99"
+    },
+    {
+      "name": "Iced Coffee",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$3.99"
+    },
+    {
+      "name": "Milk",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$4.29"
+    },
+    {
+      "name": "Orange Juice",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$4.29"
+    },
+    {
+      "name": "Cranberry Juice",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$4.29"
+    },
+    {
+      "name": "Apple Juice",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$4.29"
+    },
+    {
+      "name": "Homemade Lemonade",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$4.29"
+    },
+    {
+      "name": "Strawberry Lemonade",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$4.99"
+    },
+    {
+      "name": "Brewed Iced Tea",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$3.99"
+    },
+    {
+      "name": "Fountain Drink",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$3.99"
+    },
+    {
+      "name": "Cheeseburger",
+      "category": "Kids Meal",
+      "calories": null,
+      "price": "$9.99"
+    },
+    {
+      "name": "Turkey Burger",
+      "category": "Kids Meal",
+      "calories": null,
+      "price": "$9.99"
+    },
+    {
+      "name": "Grilled Cheese",
+      "category": "Kids Meal",
+      "calories": null,
+      "price": "$9.99"
+    },
+    {
+      "name": "Mac & Cheese",
+      "category": "Kids Meal",
+      "calories": null,
+      "price": "$9.99"
+    },
+    {
+      "name": "Chicken Tenders",
+      "category": "Kids Meal",
+      "calories": null,
+      "price": "$9.99"
+    },
+    {
+      "name": "Hot Dog",
+      "category": "Kids Meal",
+      "calories": null,
+      "price": "$9.99"
+    },
+    {
+      "name": "Kids Hot Cocoa",
+      "category": "Kids Beverages",
+      "calories": null,
+      "price": "$2.49"
+    },
+    {
+      "name": "Kids Milk",
+      "category": "Kids Beverages",
+      "calories": null,
+      "price": "$2.49"
+    },
+    {
+      "name": "Kids Chocolate Milk",
+      "category": "Kids Beverages",
+      "calories": null,
+      "price": "$2.49"
+    },
+    {
+      "name": "Kids Orange Juice",
+      "category": "Kids Beverages",
+      "calories": null,
+      "price": "$2.49"
+    },
+    {
+      "name": "Kids Apple Juice",
+      "category": "Kids Beverages",
+      "calories": null,
+      "price": "$2.49"
+    },
+    {
+      "name": "Kids Homemade Lemonade",
+      "category": "Kids Beverages",
+      "calories": null,
+      "price": "$2.49"
+    },
+    {
+      "name": "Kids Fountain Drink",
+      "category": "Kids Beverages",
+      "calories": null,
+      "price": "$2.49"
+    },
+    {
+      "name": "Kids Vanilla Shake",
+      "category": "Kids Shakes",
+      "calories": null,
+      "price": "$5.99"
+    },
+    {
+      "name": "Kids Chocolate Shake",
+      "category": "Kids Shakes",
+      "calories": null,
+      "price": "$5.99"
+    },
+    {
+      "name": "Kids Strawberry Shake",
+      "category": "Kids Shakes",
+      "calories": null,
+      "price": "$5.99"
+    },
+    {
+      "name": "French Fries Basket",
+      "category": "Shareables",
+      "calories": null,
+      "price": "$6.99"
+    },
+    {
+      "name": "Onion Rings",
+      "category": "Shareables",
+      "calories": null,
+      "price": "$10.99"
+    },
+    {
+      "name": "Frings",
+      "category": "Shareables",
+      "calories": null,
+      "price": "$9.49"
+    },
+    {
+      "name": "Chili Cheese Fries",
+      "category": "Shareables",
+      "calories": null,
+      "price": "$12.99"
+    },
+    {
+      "name": "Chicken Tenders",
+      "category": "Shareables",
+      "calories": null,
+      "price": "$14.99"
+    },
+    {
+      "name": "Fried Calamari",
+      "category": "Shareables",
+      "calories": null,
+      "price": "$15.99"
+    },
+    {
+      "name": "Chicken Caesar Salad",
+      "category": "Fresh Salads",
+      "calories": null,
+      "price": "$15.99"
+    },
+    {
+      "name": "Ruby's Apple, Pecan & Bleu Cheese Salad",
+      "category": "Fresh Salads",
+      "calories": null,
+      "price": "$13.99"
+    },
+    {
+      "name": "Add Grilled Chicken Breast",
+      "category": "Fresh Salads",
+      "calories": null,
+      "price": "$4.99"
+    },
+    {
+      "name": "Chinese Chicken Salad",
+      "category": "Fresh Salads",
+      "calories": null,
+      "price": "$16.99"
+    },
+    {
+      "name": "Cobb Salad",
+      "category": "Fresh Salads",
+      "calories": null,
+      "price": "$17.99"
+    },
+    {
+      "name": "Simple Salad - With Any Entrée",
+      "category": "Fresh Salads",
+      "calories": null,
+      "price": "$3.99"
+    },
+    {
+      "name": "Simple Salad - A la Carte",
+      "category": "Fresh Salads",
+      "calories": null,
+      "price": "$6.99"
+    },
+    {
+      "name": "Add Grilled Chicken Breast",
+      "category": "Fresh Salads",
+      "calories": null,
+      "price": "$4.99"
+    },
+    {
+      "name": "Clam Chowder - Cup",
+      "category": "Homestyle Chili and Soup",
+      "calories": null,
+      "price": "$4.99"
+    },
+    {
+      "name": "Clam Chowder - Bowl",
+      "category": "Homestyle Chili and Soup",
+      "calories": null,
+      "price": "$6.99"
+    },
+    {
+      "name": "Ruby's Chili - Cup",
+      "category": "Homestyle Chili and Soup",
+      "calories": null,
+      "price": "$5.99"
+    },
+    {
+      "name": "Ruby's Chili - Bowl",
+      "category": "Homestyle Chili and Soup",
+      "calories": null,
+      "price": "$7.99"
+    },
+    {
+      "name": "Beer and Wine",
+      "category": "Alcohol",
+      "calories": null,
+      "price": null
+    }
+  ]
+}
