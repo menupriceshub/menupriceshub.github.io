@@ -1,0 +1,137 @@
+{
+  "title": "Terry Black's Barbecue Menu With Price List",
+  "items": [
+    {
+      "name": "Sprite®",
+      "category": "Bottled Beverages",
+      "calories": null,
+      "price": "$5.45"
+    },
+    {
+      "name": "Coca-Cola®",
+      "category": "Bottled Beverages",
+      "calories": null,
+      "price": "$5.45"
+    },
+    {
+      "name": "Diet Dr Pepper®",
+      "category": "Bottled Beverages",
+      "calories": null,
+      "price": "$5.45"
+    },
+    {
+      "name": "Minute Maid Lemonade",
+      "category": "Bottled Beverages",
+      "calories": null,
+      "price": "$5.45"
+    },
+    {
+      "name": "Dr Pepper®",
+      "category": "Bottled Beverages",
+      "calories": null,
+      "price": "$5.45"
+    },
+    {
+      "name": "Fresh-Brewed Texas Sweet Tea",
+      "category": "Bottled Beverages",
+      "calories": null,
+      "price": "$10.90"
+    },
+    {
+      "name": "Diet Coke®",
+      "category": "Bottled Beverages",
+      "calories": null,
+      "price": "$5.45"
+    },
+    {
+      "name": "Fresh-Brewed Unsweet Tea",
+      "category": "Bottled Beverages",
+      "calories": null,
+      "price": "$10.90"
+    },
+    {
+      "name": "Kendall-Jackson Vintner's Reserve Cabernet Sauvignon 375ml",
+      "category": "Alcohol TOGO",
+      "calories": null,
+      "price": "$26.14"
+    },
+    {
+      "name": "Shiner Bock 6-Pack",
+      "category": "Alcohol TOGO",
+      "calories": null,
+      "price": "$28.51"
+    },
+    {
+      "name": "La Crema Chardonnay 375ml",
+      "category": "Alcohol TOGO",
+      "calories": null,
+      "price": "$26.14"
+    },
+    {
+      "name": "Lonestar 6-Pack",
+      "category": "Alcohol TOGO",
+      "calories": null,
+      "price": "$28.51"
+    },
+    {
+      "name": "Modelo 6-Pack",
+      "category": "Alcohol TOGO",
+      "calories": null,
+      "price": "$28.51"
+    },
+    {
+      "name": "Friday MTN Mourvedre Tempranillo 750ml",
+      "category": "Alcohol TOGO",
+      "calories": null,
+      "price": "$41.58"
+    },
+    {
+      "name": "Friday MTN Roussanne 750ml",
+      "category": "Alcohol TOGO",
+      "calories": null,
+      "price": "$41.58"
+    },
+    {
+      "name": "Beef Ribs",
+      "category": "Smoked Meats",
+      "calories": null,
+      "price": "$72.14"
+    },
+    {
+      "name": "Small Family Pack",
+      "category": "Family Packs",
+      "calories": null,
+      "price": "$183.57"
+    },
+    {
+      "name": "Large Family Pack",
+      "category": "Family Packs",
+      "calories": null,
+      "price": "$365.93"
+    },
+    {
+      "name": "Cheese",
+      "category": "Extras",
+      "calories": null,
+      "price": "$1.36"
+    },
+    {
+      "name": "Cornbread",
+      "category": "Extras",
+      "calories": null,
+      "price": "$2.18"
+    },
+    {
+      "name": "Jalapenos",
+      "category": "Extras",
+      "calories": null,
+      "price": "$0.38"
+    },
+    {
+      "name": "Pecan Pie",
+      "category": "Homemade Desserts",
+      "calories": null,
+      "price": "$5.65"
+    }
+  ]
+}
