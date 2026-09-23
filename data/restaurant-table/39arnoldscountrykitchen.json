@@ -1,0 +1,179 @@
+{
+  "title": "Arnold's Country Kitchen Menu With Price List",
+  "items": [
+    {
+      "name": "Banana Pudding",
+      "category": "Dessert",
+      "calories": null,
+      "price": "$4.45"
+    },
+    {
+      "name": "Bread Pudding",
+      "category": "Dessert",
+      "calories": null,
+      "price": "$4.45"
+    },
+    {
+      "name": "Chess Pie",
+      "category": "Dessert",
+      "calories": null,
+      "price": "$4.45"
+    },
+    {
+      "name": "Chocolate Pie With Meringue Pie",
+      "category": "Dessert",
+      "calories": null,
+      "price": "$4.45"
+    },
+    {
+      "name": "Hot Pepper Chocolate Pie",
+      "category": "Dessert",
+      "calories": null,
+      "price": "$4.45"
+    },
+    {
+      "name": "Chess With Meringue",
+      "category": "Dessert",
+      "calories": null,
+      "price": "$4.45"
+    },
+    {
+      "name": "Chocolate Chess With Meringue",
+      "category": "Dessert",
+      "calories": null,
+      "price": "$4.45"
+    },
+    {
+      "name": "Pecan Pie",
+      "category": "Dessert",
+      "calories": null,
+      "price": "$4.45"
+    },
+    {
+      "name": "Chocolate Chess",
+      "category": "Dessert",
+      "calories": null,
+      "price": "$4.45"
+    },
+    {
+      "name": "Meat And One Side",
+      "category": "Mains",
+      "calories": null,
+      "price": "$14.50"
+    },
+    {
+      "name": "Meat And Three Sides",
+      "category": "Mains",
+      "calories": null,
+      "price": "$22.25"
+    },
+    {
+      "name": "Meat And Two Sides",
+      "category": "Mains",
+      "calories": null,
+      "price": "$18.50"
+    },
+    {
+      "name": "Diet Dr Pepper",
+      "category": "Drinks",
+      "calories": null,
+      "price": "$3.20"
+    },
+    {
+      "name": "Sweet Tea",
+      "category": "Drinks",
+      "calories": null,
+      "price": "$3.20"
+    },
+    {
+      "name": "Sprite",
+      "category": "Drinks",
+      "calories": null,
+      "price": "$3.20"
+    },
+    {
+      "name": "Dr Pepper",
+      "category": "Drinks",
+      "calories": null,
+      "price": "$3.20"
+    },
+    {
+      "name": "Coke",
+      "category": "Drinks",
+      "calories": null,
+      "price": "$3.20"
+    },
+    {
+      "name": "Unsweet Tea",
+      "category": "Drinks",
+      "calories": null,
+      "price": "$3.20"
+    },
+    {
+      "name": "Lemonade (By The Glass)",
+      "category": "Drinks",
+      "calories": null,
+      "price": "$3.20"
+    },
+    {
+      "name": "Diet Coke",
+      "category": "Drinks",
+      "calories": null,
+      "price": "$3.20"
+    },
+    {
+      "name": "Sunkist",
+      "category": "Drinks",
+      "calories": null,
+      "price": "$3.20"
+    },
+    {
+      "name": "Three Sides",
+      "category": "Mains",
+      "calories": null,
+      "price": "$12.25"
+    },
+    {
+      "name": "Meat & One Side",
+      "category": "Mains",
+      "calories": null,
+      "price": "$14.50"
+    },
+    {
+      "name": "Two Sides",
+      "category": "Mains",
+      "calories": null,
+      "price": "$8.25"
+    },
+    {
+      "name": "Four Sides",
+      "category": "Mains",
+      "calories": null,
+      "price": "$16.50"
+    },
+    {
+      "name": "Meat & Three Sides",
+      "category": "Mains",
+      "calories": null,
+      "price": "$22.25"
+    },
+    {
+      "name": "Meat",
+      "category": "Mains",
+      "calories": null,
+      "price": "$11.00"
+    },
+    {
+      "name": "One Side",
+      "category": "Mains",
+      "calories": null,
+      "price": "$4.25"
+    },
+    {
+      "name": "Meat & Two Sides",
+      "category": "Mains",
+      "calories": null,
+      "price": "$18.50"
+    }
+  ]
+}
