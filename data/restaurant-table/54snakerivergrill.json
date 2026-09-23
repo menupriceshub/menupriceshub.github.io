@@ -1,0 +1,341 @@
+{
+  "title": "Snake River Grill Menu With Price List",
+  "items": [
+    {
+      "name": "Dutch Crunch Bread",
+      "category": "Dinner - Starters",
+      "calories": null,
+      "price": "$12"
+    },
+    {
+      "name": "Crumpets Bánh Mì",
+      "category": "Dinner - Starters",
+      "calories": null,
+      "price": "$18"
+    },
+    {
+      "name": "Rabbit Rillettes",
+      "category": "Dinner - Starters",
+      "calories": null,
+      "price": "$21"
+    },
+    {
+      "name": "The SRG Steak Tartare Pizza",
+      "category": "Dinner - Starters",
+      "calories": null,
+      "price": "$25"
+    },
+    {
+      "name": "The SRG Potato Rösti",
+      "category": "Dinner - Starters",
+      "calories": null,
+      "price": "$23"
+    },
+    {
+      "name": "Caviar Service [25g] - Royal Kaluga",
+      "category": "Dinner - Starters",
+      "calories": null,
+      "price": "$95"
+    },
+    {
+      "name": "Carrot Gazpacho",
+      "category": "Dinner - Starters",
+      "calories": null,
+      "price": "$16"
+    },
+    {
+      "name": "Little Gem Lettuce",
+      "category": "Dinner - Starters",
+      "calories": null,
+      "price": "$14"
+    },
+    {
+      "name": "Caesar Salad",
+      "category": "Dinner - Starters",
+      "calories": null,
+      "price": "$16"
+    },
+    {
+      "name": "Ora King Salmon Carpaccio",
+      "category": "Dinner - Starters",
+      "calories": null,
+      "price": "$25"
+    },
+    {
+      "name": "Potato Gnocchi",
+      "category": "Dinner - Starters",
+      "calories": null,
+      "price": "$19"
+    },
+    {
+      "name": "Strawberry Glazed Quail",
+      "category": "Dinner - Starters",
+      "calories": null,
+      "price": "$24"
+    },
+    {
+      "name": "Roasted Cabbage",
+      "category": "Dinner - Mains",
+      "calories": null,
+      "price": "$34"
+    },
+    {
+      "name": "Wild Alaskan Halibut",
+      "category": "Dinner - Mains",
+      "calories": null,
+      "price": "$58"
+    },
+    {
+      "name": "Rabbit Ragù",
+      "category": "Dinner - Mains",
+      "calories": null,
+      "price": "$38"
+    },
+    {
+      "name": "Duck Breast",
+      "category": "Dinner - Mains",
+      "calories": null,
+      "price": "$48"
+    },
+    {
+      "name": "Bison Striploin",
+      "category": "Dinner - Mains",
+      "calories": null,
+      "price": "$62"
+    },
+    {
+      "name": "Prime Bavette Steak",
+      "category": "Dinner - Mains",
+      "calories": null,
+      "price": "$56"
+    },
+    {
+      "name": "Prime New York Steak",
+      "category": "Dinner - Mains",
+      "calories": null,
+      "price": "$76"
+    },
+    {
+      "name": "Grilled Whole Branzino [16 oz]",
+      "category": "Dinner - Large Format",
+      "calories": null,
+      "price": "$86"
+    },
+    {
+      "name": "Whole Roasted Chicken",
+      "category": "Dinner - Large Format",
+      "calories": null,
+      "price": "$87"
+    },
+    {
+      "name": "Wagyu Tomahawk Ribeye [32 oz]",
+      "category": "Dinner - Large Format",
+      "calories": null,
+      "price": "$225"
+    },
+    {
+      "name": "Braised Greens",
+      "category": "Dinner - Side Plates",
+      "calories": null,
+      "price": "$15"
+    },
+    {
+      "name": "Costata Zucchini",
+      "category": "Dinner - Side Plates",
+      "calories": null,
+      "price": "$14"
+    },
+    {
+      "name": "Barbecued Eggplant",
+      "category": "Dinner - Side Plates",
+      "calories": null,
+      "price": "$17"
+    },
+    {
+      "name": "Coal Roasted Beets",
+      "category": "Dinner - Side Plates",
+      "calories": null,
+      "price": "$20"
+    },
+    {
+      "name": "Yukon Gold Potatoes",
+      "category": "Dinner - Side Plates",
+      "calories": null,
+      "price": "$14"
+    },
+    {
+      "name": "Summer Fruit Crisp",
+      "category": "Dinner - Desserts",
+      "calories": null,
+      "price": "$16"
+    },
+    {
+      "name": "Lemon Cake",
+      "category": "Dinner - Desserts",
+      "calories": null,
+      "price": "$13"
+    },
+    {
+      "name": "Apple Spice Cheesecake",
+      "category": "Dinner - Desserts",
+      "calories": null,
+      "price": "$15"
+    },
+    {
+      "name": "Chocolate Caramel Tart",
+      "category": "Dinner - Desserts",
+      "calories": null,
+      "price": "$15"
+    },
+    {
+      "name": "Ice Cream Sundae",
+      "category": "Dinner - Desserts",
+      "calories": null,
+      "price": "$15"
+    },
+    {
+      "name": "Amaro Affogato",
+      "category": "Dinner - Desserts",
+      "calories": null,
+      "price": "$16"
+    },
+    {
+      "name": "Shishito Peppers",
+      "category": "Dinner - Tonight's Specials",
+      "calories": null,
+      "price": "$16"
+    },
+    {
+      "name": "Pork Belly",
+      "category": "Dinner - Tonight's Specials",
+      "calories": null,
+      "price": "$23"
+    },
+    {
+      "name": "SRG Caviartini",
+      "category": "Beverage - House Cocktails",
+      "calories": null,
+      "price": "$52"
+    },
+    {
+      "name": "Raspberry Lemon Drop",
+      "category": "Beverage - House Cocktails",
+      "calories": null,
+      "price": "$19"
+    },
+    {
+      "name": "Out to Lunch",
+      "category": "Beverage - House Cocktails",
+      "calories": null,
+      "price": "$16"
+    },
+    {
+      "name": "Apple Bees",
+      "category": "Beverage - House Cocktails",
+      "calories": null,
+      "price": "$18"
+    },
+    {
+      "name": "Convicted Melon",
+      "category": "Beverage - House Cocktails",
+      "calories": null,
+      "price": "$17"
+    },
+    {
+      "name": "Señor Rob's Piña de Fuego",
+      "category": "Beverage - House Cocktails",
+      "calories": null,
+      "price": "$19"
+    },
+    {
+      "name": "Boulevardier Blanc",
+      "category": "Beverage - House Cocktails",
+      "calories": null,
+      "price": "$23"
+    },
+    {
+      "name": "Nitrotini",
+      "category": "Beverage - House Cocktails",
+      "calories": null,
+      "price": "$18"
+    },
+    {
+      "name": "Summer Spritz",
+      "category": "Beverage - Zero Proof",
+      "calories": null,
+      "price": "$13"
+    },
+    {
+      "name": "Gimme a Break",
+      "category": "Beverage - Zero Proof",
+      "calories": null,
+      "price": "$15"
+    },
+    {
+      "name": "Pathfinder Spritz",
+      "category": "Beverage - Zero Proof",
+      "calories": null,
+      "price": "$13"
+    },
+    {
+      "name": "Oddbird Blanc de Blancs",
+      "category": "Beverage - Zero Proof",
+      "calories": null,
+      "price": "$18"
+    },
+    {
+      "name": "Melvin Brewing Hazy IPA",
+      "category": "Beverage - Draft Beer",
+      "calories": null,
+      "price": "$10"
+    },
+    {
+      "name": "StillWest Brewing Pilsner",
+      "category": "Beverage - Draft Beer",
+      "calories": null,
+      "price": "$8"
+    },
+    {
+      "name": "Asahi \"Super Dry\"",
+      "category": "Beverage - Bottle Beer & Cider",
+      "calories": null,
+      "price": "$8"
+    },
+    {
+      "name": "Pacifico Pilsner",
+      "category": "Beverage - Bottle Beer & Cider",
+      "calories": null,
+      "price": "$7"
+    },
+    {
+      "name": "Walrus Hazy I.P.A.",
+      "category": "Beverage - Bottle Beer & Cider",
+      "calories": null,
+      "price": "$9"
+    },
+    {
+      "name": "Guinness \"Draught\" Stout",
+      "category": "Beverage - Bottle Beer & Cider",
+      "calories": null,
+      "price": "$7"
+    },
+    {
+      "name": "Best Day N.A. Kolsch",
+      "category": "Beverage - Bottle Beer & Cider",
+      "calories": null,
+      "price": "$6"
+    },
+    {
+      "name": "Highpoint Cider “Transplant” Semi-Dry New England Style",
+      "category": "Beverage - Bottle Beer & Cider",
+      "calories": null,
+      "price": "$9"
+    },
+    {
+      "name": "Highpoint Cider \"Clusterhuck\" Off-Dry Huckleberry Cider",
+      "category": "Beverage - Bottle Beer & Cider",
+      "calories": null,
+      "price": "$9"
+    }
+  ]
+}
