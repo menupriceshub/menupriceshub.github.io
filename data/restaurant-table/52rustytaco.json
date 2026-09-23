@@ -1,0 +1,461 @@
+{
+  "title": "Rusty Taco Menu With Price List",
+  "items": [
+    {
+      "name": "Taco Combo Box",
+      "category": "$12 Specials",
+      "calories": null,
+      "price": "$10.00"
+    },
+    {
+      "name": "Taco Bowl Combo",
+      "category": "$12 Specials",
+      "calories": null,
+      "price": "$10.00"
+    },
+    {
+      "name": "Burrito Combo",
+      "category": "$12 Specials",
+      "calories": null,
+      "price": "$10.00"
+    },
+    {
+      "name": "Breakfast Taco Combo",
+      "category": "$12 Specials",
+      "calories": null,
+      "price": "$10.00"
+    },
+    {
+      "name": "The Uptown Taco",
+      "category": "Taco of the Month",
+      "calories": null,
+      "price": "$4.95"
+    },
+    {
+      "name": "The Uptown Bowl",
+      "category": "Taco of the Month",
+      "calories": null,
+      "price": "$9.95"
+    },
+    {
+      "name": "California Burrito",
+      "category": "Hot New Items",
+      "calories": null,
+      "price": "$11.95"
+    },
+    {
+      "name": "Chipotle Chicken Queso-Dilla",
+      "category": "Hot New Items",
+      "calories": null,
+      "price": "$9.25"
+    },
+    {
+      "name": "Philly Steak Queso-Dilla",
+      "category": "Hot New Items",
+      "calories": null,
+      "price": "$9.50"
+    },
+    {
+      "name": "Baja Fish Taco (Grilled)",
+      "category": "Taco Tuesday",
+      "calories": null,
+      "price": "$2.99"
+    },
+    {
+      "name": "Baja Fish Taco (Crispy)",
+      "category": "Taco Tuesday",
+      "calories": null,
+      "price": "$2.99"
+    },
+    {
+      "name": "Texican Taco",
+      "category": "Taco Tuesday",
+      "calories": null,
+      "price": "$2.99"
+    },
+    {
+      "name": "Chicken Fajita Taco",
+      "category": "Taco Tuesday",
+      "calories": null,
+      "price": "$2.99"
+    },
+    {
+      "name": "Black Bean Taco",
+      "category": "Taco Tuesday",
+      "calories": null,
+      "price": "$2.99"
+    },
+    {
+      "name": "Bacon, Egg & Cheese Taco",
+      "category": "Taco Tuesday",
+      "calories": null,
+      "price": "$2.99"
+    },
+    {
+      "name": "Breakfast Combo",
+      "category": "Taco Packs",
+      "calories": null,
+      "price": "$8.95"
+    },
+    {
+      "name": "TwoGether Combo",
+      "category": "Taco Packs",
+      "calories": null,
+      "price": "$25.00"
+    },
+    {
+      "name": "The Rusty Combo",
+      "category": "Taco Packs",
+      "calories": null,
+      "price": "$12.99"
+    },
+    {
+      "name": "6 Taco Bold Box",
+      "category": "Taco Packs",
+      "calories": null,
+      "price": "$26.00"
+    },
+    {
+      "name": "8 Taco Bold Box",
+      "category": "Taco Packs",
+      "calories": null,
+      "price": "$32.00"
+    },
+    {
+      "name": "12 Taco Bold Box",
+      "category": "Taco Packs",
+      "calories": null,
+      "price": "$48.00"
+    },
+    {
+      "name": "Tres Grande",
+      "category": "Shareables",
+      "calories": null,
+      "price": "$10.00"
+    },
+    {
+      "name": "Nachos for Three",
+      "category": "Shareables",
+      "calories": null,
+      "price": "$9.50"
+    },
+    {
+      "name": "Nachos for Me",
+      "category": "Shareables",
+      "calories": null,
+      "price": "$6.95"
+    },
+    {
+      "name": "Chips & Queso",
+      "category": "Shareables",
+      "calories": null,
+      "price": "$4.95"
+    },
+    {
+      "name": "Chips & Salsa",
+      "category": "Shareables",
+      "calories": null,
+      "price": "$3.50"
+    },
+    {
+      "name": "Chips & Guacamole",
+      "category": "Shareables",
+      "calories": null,
+      "price": "$5.00"
+    },
+    {
+      "name": "Street Corn",
+      "category": "Shareables",
+      "calories": null,
+      "price": "$5.00"
+    },
+    {
+      "name": "Chips & Queso - Large",
+      "category": "Shareables",
+      "calories": null,
+      "price": "$8.95"
+    },
+    {
+      "name": "Chips & Guacamole - Large",
+      "category": "Shareables",
+      "calories": null,
+      "price": "$9.00"
+    },
+    {
+      "name": "Chips & Salsa - Large",
+      "category": "Shareables",
+      "calories": null,
+      "price": "$5.50"
+    },
+    {
+      "name": "Street Corn Large",
+      "category": "Shareables",
+      "calories": null,
+      "price": "$9.00"
+    },
+    {
+      "name": "Steak Street Tacos",
+      "category": "Street Tacos",
+      "calories": null,
+      "price": "$5.99"
+    },
+    {
+      "name": "Chicken Street Tacos",
+      "category": "Street Tacos",
+      "calories": null,
+      "price": "$4.99"
+    },
+    {
+      "name": "Crispy Dynamite Shrimp Taco",
+      "category": "Seafood",
+      "calories": null,
+      "price": "$5.25"
+    },
+    {
+      "name": "Baja Shrimp Taco (Crispy)",
+      "category": "Seafood",
+      "calories": null,
+      "price": "$5.00"
+    },
+    {
+      "name": "Baja Shrimp Taco (Grilled)",
+      "category": "Seafood",
+      "calories": null,
+      "price": "$5.00"
+    },
+    {
+      "name": "Baja Fish Taco (Crispy)",
+      "category": "Seafood",
+      "calories": null,
+      "price": "$5.00"
+    },
+    {
+      "name": "Baja Fish Taco (Grilled)",
+      "category": "Seafood",
+      "calories": null,
+      "price": "$5.00"
+    },
+    {
+      "name": "Baja Fish Taco (Crispy)",
+      "category": "Seafood",
+      "calories": null,
+      "price": "$2.99"
+    },
+    {
+      "name": "Baja Fish Taco (Grilled)",
+      "category": "Seafood",
+      "calories": null,
+      "price": "$2.99"
+    },
+    {
+      "name": "BBQ Brisket Taco",
+      "category": "Beef",
+      "calories": null,
+      "price": "$5.60"
+    },
+    {
+      "name": "Birria Trio Pack",
+      "category": "Beef",
+      "calories": null,
+      "price": "$15.00"
+    },
+    {
+      "name": "Birria Taco (Single)",
+      "category": "Beef",
+      "calories": null,
+      "price": "$5.00"
+    },
+    {
+      "name": "Cola Braised Brisket Taco",
+      "category": "Beef",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Potato, Egg & Cheese Taco",
+      "category": "Breakfast Tacos",
+      "calories": null,
+      "price": "$3.25"
+    },
+    {
+      "name": "Egg & Cheese Taco",
+      "category": "Breakfast Tacos",
+      "calories": null,
+      "price": "$2.95"
+    },
+    {
+      "name": "Bacon, Egg & Cheese Bowl",
+      "category": "Breakfast Bowls",
+      "calories": null,
+      "price": "$9.75"
+    },
+    {
+      "name": "Chorizo, Egg & Cheese Bowl",
+      "category": "Breakfast Bowls",
+      "calories": null,
+      "price": "$9.75"
+    },
+    {
+      "name": "Jalapeno Sausage, Egg & Cheese Bowl",
+      "category": "Breakfast Bowls",
+      "calories": null,
+      "price": "$9.75"
+    },
+    {
+      "name": "Brisket, Egg & Cheese Bowl",
+      "category": "Breakfast Bowls",
+      "calories": null,
+      "price": "$10.20"
+    },
+    {
+      "name": "The Morning Meat-Up Bowl",
+      "category": "Breakfast Bowls",
+      "calories": null,
+      "price": "$11.00"
+    },
+    {
+      "name": "Steak, Egg & Cheese Bowl",
+      "category": "Breakfast Bowls",
+      "calories": null,
+      "price": "$10.20"
+    },
+    {
+      "name": "Black Bean, Egg & Cheese Bowl",
+      "category": "Breakfast Bowls",
+      "calories": null,
+      "price": "$9.25"
+    },
+    {
+      "name": "Potato, Egg & Cheese Bowl",
+      "category": "Breakfast Bowls",
+      "calories": null,
+      "price": "$9.25"
+    },
+    {
+      "name": "Tater Tots, Egg & Cheese Bowl",
+      "category": "Breakfast Bowls",
+      "calories": null,
+      "price": "$9.25"
+    },
+    {
+      "name": "Egg & Cheese Bowl",
+      "category": "Breakfast Bowls",
+      "calories": null,
+      "price": "$8.95"
+    },
+    {
+      "name": "Sunrise Slammer Bowl",
+      "category": "Breakfast Bowls",
+      "calories": null,
+      "price": "$11.00"
+    },
+    {
+      "name": "Kid's Quesadilla Meal",
+      "category": "Kid's Meals",
+      "calories": null,
+      "price": "$5.25"
+    },
+    {
+      "name": "Kid's Texican Taco Meal",
+      "category": "Kid's Meals",
+      "calories": null,
+      "price": "$5.25"
+    },
+    {
+      "name": "Kid's Chicken Tenders Meal",
+      "category": "Kid's Meals",
+      "calories": null,
+      "price": "$5.25"
+    },
+    {
+      "name": "Kid's Fried Chicken Taco Meal",
+      "category": "Kid's Meals",
+      "calories": null,
+      "price": "$5.25"
+    },
+    {
+      "name": "Fountain Drink",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$2.75"
+    },
+    {
+      "name": "Fountain Drink (Large)",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$3.50"
+    },
+    {
+      "name": "Liquid Death - Water Can (Still)",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$4.00"
+    },
+    {
+      "name": "Topo Chico",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$3.50"
+    },
+    {
+      "name": "Orange Juice",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$3.25"
+    },
+    {
+      "name": "Unsweet Tea",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$2.75"
+    },
+    {
+      "name": "Sweet Tea",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$2.75"
+    },
+    {
+      "name": "Coffee",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$2.25"
+    },
+    {
+      "name": "Bottle Water",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$2.00"
+    },
+    {
+      "name": "Mexican Coke Bottle",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$3.50"
+    },
+    {
+      "name": "Mexican Sprite Bottle",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$3.50"
+    },
+    {
+      "name": "Jarritos Mandarin Bottle",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$3.50"
+    },
+    {
+      "name": "Jarritos Strawberry Bottle",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$3.50"
+    },
+    {
+      "name": "Churro",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$2.50"
+    }
+  ]
+}
