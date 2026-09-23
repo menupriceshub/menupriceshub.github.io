@@ -1,0 +1,701 @@
+{
+  "title": "Musso & Frank Grill Menu With Price List",
+  "items": [
+    {
+      "name": "Meatballs & Polenta",
+      "category": "Appetizers",
+      "calories": null,
+      "price": "$25.00"
+    },
+    {
+      "name": "Musso’s Traditional Steak Tartare",
+      "category": "Appetizers",
+      "calories": null,
+      "price": "$27.00"
+    },
+    {
+      "name": "Grilled Portobello Mushroom",
+      "category": "Appetizers",
+      "calories": null,
+      "price": "$23.00"
+    },
+    {
+      "name": "Marinated Herring",
+      "category": "Appetizers",
+      "calories": null,
+      "price": "$22.00"
+    },
+    {
+      "name": "Zucchini Florentine",
+      "category": "Appetizers",
+      "calories": null,
+      "price": "$19.00"
+    },
+    {
+      "name": "Burrata",
+      "category": "Appetizers",
+      "calories": null,
+      "price": "$23.00"
+    },
+    {
+      "name": "Baked Escargot",
+      "category": "Appetizers",
+      "calories": null,
+      "price": "$19.00"
+    },
+    {
+      "name": "Imported Sardines",
+      "category": "Appetizers",
+      "calories": null,
+      "price": "$15.00"
+    },
+    {
+      "name": "Avocado Cocktail",
+      "category": "Appetizers",
+      "calories": null,
+      "price": "$17.00"
+    },
+    {
+      "name": "Stuffed Celery",
+      "category": "Appetizers",
+      "calories": null,
+      "price": "$17.00"
+    },
+    {
+      "name": "Olives Antipasto",
+      "category": "Appetizers",
+      "calories": null,
+      "price": "$15.00"
+    },
+    {
+      "name": "Shrimp Cocktail",
+      "category": "Cold Seafood",
+      "calories": null,
+      "price": "$27.00"
+    },
+    {
+      "name": "Crab Cocktail",
+      "category": "Cold Seafood",
+      "calories": null,
+      "price": "$30.00"
+    },
+    {
+      "name": "Lobster Cocktail",
+      "category": "Cold Seafood",
+      "calories": null,
+      "price": "$40.00"
+    },
+    {
+      "name": "Seafood Chiffonade Salad",
+      "category": "Cold Seafood",
+      "calories": null,
+      "price": "$46.00"
+    },
+    {
+      "name": "Salmon Tartare",
+      "category": "Cold Seafood",
+      "calories": null,
+      "price": "$24.00"
+    },
+    {
+      "name": "Oyster on Half Shell",
+      "category": "Cold Seafood",
+      "calories": null,
+      "price": "$29.00"
+    },
+    {
+      "name": "Combination Louie",
+      "category": "Cold Seafood",
+      "calories": null,
+      "price": "$45.00"
+    },
+    {
+      "name": "Crab Louie",
+      "category": "Cold Seafood",
+      "calories": null,
+      "price": "$40.00"
+    },
+    {
+      "name": "Shrimp Louie",
+      "category": "Cold Seafood",
+      "calories": null,
+      "price": "$35.00"
+    },
+    {
+      "name": "Jellied Consommé",
+      "category": "Soups",
+      "calories": null,
+      "price": "$10.00"
+    },
+    {
+      "name": "Consommé - Cup",
+      "category": "Soups",
+      "calories": null,
+      "price": "$8.00"
+    },
+    {
+      "name": "Consommé",
+      "category": "Soups",
+      "calories": null,
+      "price": "$11.00"
+    },
+    {
+      "name": "Cream of Tomato - Cup",
+      "category": "Soups",
+      "calories": null,
+      "price": "$10.00"
+    },
+    {
+      "name": "Cream of Tomato",
+      "category": "Soups",
+      "calories": null,
+      "price": "$12.00"
+    },
+    {
+      "name": "Onion Soup Au Gratin - Cup",
+      "category": "Soups",
+      "calories": null,
+      "price": "$12.00"
+    },
+    {
+      "name": "Onion Soup Au Gratin",
+      "category": "Soups",
+      "calories": null,
+      "price": "$15.00"
+    },
+    {
+      "name": "Avocado Salad",
+      "category": "Salads",
+      "calories": null,
+      "price": "$19.00"
+    },
+    {
+      "name": "Caesar Salad",
+      "category": "Salads",
+      "calories": null,
+      "price": "$19.00"
+    },
+    {
+      "name": "Musso-Frank Special",
+      "category": "Salads",
+      "calories": null,
+      "price": "$23.00"
+    },
+    {
+      "name": "Chef’s Salad",
+      "category": "Salads",
+      "calories": null,
+      "price": "$21.00"
+    },
+    {
+      "name": "Tuna Salad",
+      "category": "Salads",
+      "calories": null,
+      "price": "$19.00"
+    },
+    {
+      "name": "Chiffonade Salad",
+      "category": "Salads",
+      "calories": null,
+      "price": "$20.00"
+    },
+    {
+      "name": "Mixed Green Salad",
+      "category": "Salads",
+      "calories": null,
+      "price": "$16.00"
+    },
+    {
+      "name": "Dinner Salad",
+      "category": "Salads",
+      "calories": null,
+      "price": "$16.00"
+    },
+    {
+      "name": "Tomato & Onion Salad",
+      "category": "Salads",
+      "calories": null,
+      "price": "$18.00"
+    },
+    {
+      "name": "Baby Iceberg Wedges",
+      "category": "Salads",
+      "calories": null,
+      "price": "$20.00"
+    },
+    {
+      "name": "Grilled Lamb Kidneys, Bacon",
+      "category": "Steaks and Chops",
+      "calories": null,
+      "price": "$31.00"
+    },
+    {
+      "name": "Ground Beef Steak",
+      "category": "Steaks and Chops",
+      "calories": null,
+      "price": "$39.00"
+    },
+    {
+      "name": "Calf’s Liver Steak",
+      "category": "Steaks and Chops",
+      "calories": null,
+      "price": "$35.00"
+    },
+    {
+      "name": "New York Steak (12oz)",
+      "category": "Steaks and Chops",
+      "calories": null,
+      "price": "$54.00"
+    },
+    {
+      "name": "Bone-In Pork Chop",
+      "category": "Steaks and Chops",
+      "calories": null,
+      "price": "$40.00"
+    },
+    {
+      "name": "Filet Mignon (8oz)",
+      "category": "Steaks and Chops",
+      "calories": null,
+      "price": "$59.00"
+    },
+    {
+      "name": "Lamb Chops (3)",
+      "category": "Steaks and Chops",
+      "calories": null,
+      "price": "$70.00"
+    },
+    {
+      "name": "Filet Mignon (12oz)",
+      "category": "Steaks and Chops",
+      "calories": null,
+      "price": "$67.00"
+    },
+    {
+      "name": "Ribeye Steak",
+      "category": "Steaks and Chops",
+      "calories": null,
+      "price": "$61.00"
+    },
+    {
+      "name": "Bone-In Ribeye Steak",
+      "category": "Steaks and Chops",
+      "calories": null,
+      "price": "$69.00"
+    },
+    {
+      "name": "Ribeye Cap Steak (based on availability)",
+      "category": "Steaks and Chops",
+      "calories": null,
+      "price": "$61.00"
+    },
+    {
+      "name": "Roast Prime Rib of Beef",
+      "category": "Steaks and Chops",
+      "calories": null,
+      "price": "$71.00"
+    },
+    {
+      "name": "Branzino",
+      "category": "Fish",
+      "calories": null,
+      "price": "$42.00"
+    },
+    {
+      "name": "Shrimp",
+      "category": "Fish",
+      "calories": null,
+      "price": "$34.00"
+    },
+    {
+      "name": "Fried Shrimp",
+      "category": "Fish",
+      "calories": null,
+      "price": "$29.00"
+    },
+    {
+      "name": "Fried Oysters",
+      "category": "Fish",
+      "calories": null,
+      "price": "$30.00"
+    },
+    {
+      "name": "Filet of Sandabs",
+      "category": "Fish",
+      "calories": null,
+      "price": "$33.00"
+    },
+    {
+      "name": "Swordfish",
+      "category": "Fish",
+      "calories": null,
+      "price": "$41.00"
+    },
+    {
+      "name": "Broiled Lobster Tail",
+      "category": "Fish",
+      "calories": null,
+      "price": "Market Price"
+    },
+    {
+      "name": "Lobster Thermidor",
+      "category": "Fish",
+      "calories": null,
+      "price": "Market Price"
+    },
+    {
+      "name": "Salmon Filet",
+      "category": "Fish",
+      "calories": null,
+      "price": "$39.00"
+    },
+    {
+      "name": "Scallops, Pan Seared",
+      "category": "Fish",
+      "calories": null,
+      "price": "$41.00"
+    },
+    {
+      "name": "Hollandaise",
+      "category": "Sauces",
+      "calories": null,
+      "price": "$9.00"
+    },
+    {
+      "name": "Musso & Frank Sauce",
+      "category": "Sauces",
+      "calories": null,
+      "price": "$9.00"
+    },
+    {
+      "name": "Bearnaise",
+      "category": "Sauces",
+      "calories": null,
+      "price": "$9.00"
+    },
+    {
+      "name": "Green Peppercorn Sauce",
+      "category": "Sauces",
+      "calories": null,
+      "price": "$9.00"
+    },
+    {
+      "name": "Spaghetti Pomodoro e Burrata",
+      "category": "Italian Entrees",
+      "calories": null,
+      "price": "$26.00"
+    },
+    {
+      "name": "Spaghetti and Meatballs",
+      "category": "Italian Entrees",
+      "calories": null,
+      "price": "$30.00"
+    },
+    {
+      "name": "Tagliatelle alla Bolognese",
+      "category": "Italian Entrees",
+      "calories": null,
+      "price": "$30.00"
+    },
+    {
+      "name": "Rigatoni with Lamb Ragout",
+      "category": "Italian Entrees",
+      "calories": null,
+      "price": "$30.00"
+    },
+    {
+      "name": "Gnocchi Gorgonzola e Noci",
+      "category": "Italian Entrees",
+      "calories": null,
+      "price": "$30.00"
+    },
+    {
+      "name": "Spicy Rigatoni Vodka",
+      "category": "Italian Entrees",
+      "calories": null,
+      "price": "$26.00"
+    },
+    {
+      "name": "Risotto Ai Frutti Di Mare",
+      "category": "Italian Entrees",
+      "calories": null,
+      "price": "$38.00"
+    },
+    {
+      "name": "The Original Fettuccine Alfredo",
+      "category": "Italian Entrees",
+      "calories": null,
+      "price": "$30.00"
+    },
+    {
+      "name": "Grenadine of Beef",
+      "category": "Classics Made to Order",
+      "calories": null,
+      "price": "$51.00"
+    },
+    {
+      "name": "Chicken or Turkey Á La King",
+      "category": "Classics Made to Order",
+      "calories": null,
+      "price": "$34.00"
+    },
+    {
+      "name": "Calf’s Liver",
+      "category": "Classics Made to Order",
+      "calories": null,
+      "price": "$34.00"
+    },
+    {
+      "name": "Broiled Chicken",
+      "category": "Classics Made to Order",
+      "calories": null,
+      "price": "$34.00"
+    },
+    {
+      "name": "Grilled Lamb Kidneys",
+      "category": "Classics Made to Order",
+      "calories": null,
+      "price": "$30.00"
+    },
+    {
+      "name": "Welsh Rarebit",
+      "category": "Classics Made to Order",
+      "calories": null,
+      "price": "$22.00"
+    },
+    {
+      "name": "Boneless Garlic Half Chicken",
+      "category": "Classics Made to Order",
+      "calories": null,
+      "price": "$49.00"
+    },
+    {
+      "name": "Calf’s Sweetbreads",
+      "category": "Classics Made to Order",
+      "calories": null,
+      "price": "$30.00"
+    },
+    {
+      "name": "Chicken Parmigiana",
+      "category": "Classics Made to Order",
+      "calories": null,
+      "price": "$38.00"
+    },
+    {
+      "name": "Oyster Stew",
+      "category": "Classics Made to Order",
+      "calories": null,
+      "price": "$29.00"
+    },
+    {
+      "name": "Veal Schnitzel",
+      "category": "Classics Made to Order",
+      "calories": null,
+      "price": "$39.00"
+    },
+    {
+      "name": "Mashed Potatoes",
+      "category": "Side Dishes",
+      "calories": null,
+      "price": "$16.00"
+    },
+    {
+      "name": "Truffled Mac and Cheese",
+      "category": "Side Dishes",
+      "calories": null,
+      "price": "$22.00"
+    },
+    {
+      "name": "Baked Potato",
+      "category": "Side Dishes",
+      "calories": null,
+      "price": "$16.00"
+    },
+    {
+      "name": "Creamed Spinach",
+      "category": "Side Dishes",
+      "calories": null,
+      "price": "$18.00"
+    },
+    {
+      "name": "French Fries, Steak Cut or Julienne",
+      "category": "Side Dishes",
+      "calories": null,
+      "price": "$15.00"
+    },
+    {
+      "name": "Lyonnaise Potatoes",
+      "category": "Side Dishes",
+      "calories": null,
+      "price": "$17.00"
+    },
+    {
+      "name": "Grilled Broccolini",
+      "category": "Side Dishes",
+      "calories": null,
+      "price": "$19.00"
+    },
+    {
+      "name": "Cottage Fried Potatoes",
+      "category": "Side Dishes",
+      "calories": null,
+      "price": "$17.00"
+    },
+    {
+      "name": "Fresh Asparagus",
+      "category": "Side Dishes",
+      "calories": null,
+      "price": "$19.00"
+    },
+    {
+      "name": "Potatoes Au Gratin",
+      "category": "Side Dishes",
+      "calories": null,
+      "price": "$18.00"
+    },
+    {
+      "name": "French Fried Onion Rings",
+      "category": "Side Dishes",
+      "calories": null,
+      "price": "$15.00"
+    },
+    {
+      "name": "Sautéed Mushrooms",
+      "category": "Side Dishes",
+      "calories": null,
+      "price": "$18.00"
+    },
+    {
+      "name": "Garlic Toast",
+      "category": "Side Dishes",
+      "calories": null,
+      "price": "$14.00"
+    },
+    {
+      "name": "Musso’s Sourdough Loaf",
+      "category": "Side Dishes",
+      "calories": null,
+      "price": "$14.00"
+    },
+    {
+      "name": "Flannel Cakes, with Whipped Cream and Strawberries",
+      "category": "Musso’s Flannel Cakes",
+      "calories": null,
+      "price": "$15.00"
+    },
+    {
+      "name": "Flannel Cakes, with Yogurt, Banana and Strawberries",
+      "category": "Musso’s Flannel Cakes",
+      "calories": null,
+      "price": "$15.00"
+    },
+    {
+      "name": "Flannel Cakes, with Syrup",
+      "category": "Musso’s Flannel Cakes",
+      "calories": null,
+      "price": "$13.00"
+    },
+    {
+      "name": "Apple Pie à la Mode",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$17.00"
+    },
+    {
+      "name": "Chocolate Mousse Cake",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$17.00"
+    },
+    {
+      "name": "New York Cheesecake",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$16.00"
+    },
+    {
+      "name": "Créme Bruleé",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$17.00"
+    },
+    {
+      "name": "Key Lime Pie",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$16.00"
+    },
+    {
+      "name": "Trio of Sorbet",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$17.00"
+    },
+    {
+      "name": "Ice Cream Vanilla or Chocolate",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$17.00"
+    },
+    {
+      "name": "Brioche-Bread Pudding",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$16.00"
+    },
+    {
+      "name": "Diplomat Pudding",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$17.00"
+    },
+    {
+      "name": "Musso & Frank Torten",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$16.00"
+    },
+    {
+      "name": "1919 Sundae",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$17.00"
+    },
+    {
+      "name": "Decaffeinated",
+      "category": "Coffee",
+      "calories": null,
+      "price": "$5.00"
+    },
+    {
+      "name": "Regular",
+      "category": "Coffee",
+      "calories": null,
+      "price": "$5.00"
+    },
+    {
+      "name": "Cappuccino",
+      "category": "Espresso",
+      "calories": null,
+      "price": "$6.50"
+    },
+    {
+      "name": "Latte",
+      "category": "Espresso",
+      "calories": null,
+      "price": "$6.50"
+    },
+    {
+      "name": "Double",
+      "category": "Espresso",
+      "calories": null,
+      "price": "$6.50"
+    },
+    {
+      "name": "Single",
+      "category": "Espresso",
+      "calories": null,
+      "price": "$5.00"
+    }
+  ]
+}
