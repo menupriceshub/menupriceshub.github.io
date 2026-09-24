@@ -1,0 +1,599 @@
+{
+  "title": "Slyman's Restaurant Menu With Price List",
+  "items": [
+    {
+      "name": "Two Fresh Eggs With Homefries And Corned Beef",
+      "category": "Breakfast Menu Corned Beef",
+      "calories": null,
+      "price": "$16.00"
+    },
+    {
+      "name": "Two Fresh Eggs With Corned Beef",
+      "category": "Breakfast Menu Corned Beef",
+      "calories": null,
+      "price": "$14.00"
+    },
+    {
+      "name": "Two Fresh Eggs With Corned Beef Hash",
+      "category": "Breakfast Menu Corned Beef",
+      "calories": null,
+      "price": "$14.00"
+    },
+    {
+      "name": "Corned Beef And Cheese Omelette",
+      "category": "Breakfast Menu Corned Beef",
+      "calories": null,
+      "price": "$13.00"
+    },
+    {
+      "name": "Egg, Cheese, And Corned Beef Breakfast Sandwich",
+      "category": "Breakfast Menu Corned Beef",
+      "calories": null,
+      "price": "$11.50"
+    },
+    {
+      "name": "Two Eggs Homefries With Choice Of Bacon",
+      "category": "Fresh Eggs",
+      "calories": null,
+      "price": "$9.00"
+    },
+    {
+      "name": "Two Eggs Homefries With Choice Of Ham",
+      "category": "Fresh Eggs",
+      "calories": null,
+      "price": "$9.00"
+    },
+    {
+      "name": "Two Eggs Homefries With Choice Of Sausage",
+      "category": "Fresh Eggs",
+      "calories": null,
+      "price": "$9.00"
+    },
+    {
+      "name": "Two Eggs With Choice Of Bacon",
+      "category": "Fresh Eggs",
+      "calories": null,
+      "price": "$6.00"
+    },
+    {
+      "name": "Two Eggs With Choice Of Ham",
+      "category": "Fresh Eggs",
+      "calories": null,
+      "price": "$6.00"
+    },
+    {
+      "name": "Two Eggs With Choice Of Sausage",
+      "category": "Fresh Eggs",
+      "calories": null,
+      "price": "$6.00"
+    },
+    {
+      "name": "Two Eggs With Homefries",
+      "category": "Fresh Eggs",
+      "calories": null,
+      "price": "$5.00"
+    },
+    {
+      "name": "Two Eggs",
+      "category": "Fresh Eggs",
+      "calories": null,
+      "price": "$3.00"
+    },
+    {
+      "name": "Turkey And Cheese Omelette",
+      "category": "Slyman's Omelettes",
+      "calories": null,
+      "price": "$7.00"
+    },
+    {
+      "name": "Bacon And Cheese Omelette",
+      "category": "Slyman's Omelettes",
+      "calories": null,
+      "price": "$7.00"
+    },
+    {
+      "name": "Sausage And Cheese Omelette",
+      "category": "Slyman's Omelettes",
+      "calories": null,
+      "price": "$7.00"
+    },
+    {
+      "name": "Ham And Cheese Omelette",
+      "category": "Slyman's Omelettes",
+      "calories": null,
+      "price": "$7.00"
+    },
+    {
+      "name": "Cheese Omelette",
+      "category": "Slyman's Omelettes",
+      "calories": null,
+      "price": "$6.00"
+    },
+    {
+      "name": "Veggie Omelette With Cheese",
+      "category": "Slyman's Omelettes",
+      "calories": null,
+      "price": "$7.00"
+    },
+    {
+      "name": "Two Hotcakes",
+      "category": "On The Sweet Side",
+      "calories": null,
+      "price": "$7.00"
+    },
+    {
+      "name": "Two Hotcakes With Bacon",
+      "category": "On The Sweet Side",
+      "calories": null,
+      "price": "$10.00"
+    },
+    {
+      "name": "Two Hotcakes With Ham",
+      "category": "On The Sweet Side",
+      "calories": null,
+      "price": "$10.00"
+    },
+    {
+      "name": "Two Hotcakes With Sausage",
+      "category": "On The Sweet Side",
+      "calories": null,
+      "price": "$10.00"
+    },
+    {
+      "name": "One Hotcake",
+      "category": "On The Sweet Side",
+      "calories": null,
+      "price": "$4.00"
+    },
+    {
+      "name": "Egg And Cheese With Bacon",
+      "category": "Breakfast Sandwiches",
+      "calories": null,
+      "price": "$5.25"
+    },
+    {
+      "name": "Egg And Cheese With Ham",
+      "category": "Breakfast Sandwiches",
+      "calories": null,
+      "price": "$5.25"
+    },
+    {
+      "name": "Egg And Cheese With Sausage",
+      "category": "Breakfast Sandwiches",
+      "calories": null,
+      "price": "$5.25"
+    },
+    {
+      "name": "Egg And Cheese",
+      "category": "Breakfast Sandwiches",
+      "calories": null,
+      "price": "$5.00"
+    },
+    {
+      "name": "Ham",
+      "category": "Add Ons",
+      "calories": null,
+      "price": "$4.00"
+    },
+    {
+      "name": "Bacon",
+      "category": "Add Ons",
+      "calories": null,
+      "price": "$4.00"
+    },
+    {
+      "name": "Sausage",
+      "category": "Add Ons",
+      "calories": null,
+      "price": "$4.00"
+    },
+    {
+      "name": "Home Fries",
+      "category": "Add Ons",
+      "calories": null,
+      "price": "$3.00"
+    },
+    {
+      "name": "Home Fries With Onion",
+      "category": "Add Ons",
+      "calories": null,
+      "price": "$3.50"
+    },
+    {
+      "name": "Shot Of Corned Beef",
+      "category": "Add Ons",
+      "calories": null,
+      "price": "$5.00"
+    },
+    {
+      "name": "White Toast",
+      "category": "Add Ons",
+      "calories": null,
+      "price": "$1.50"
+    },
+    {
+      "name": "Wheat Toast",
+      "category": "Add Ons",
+      "calories": null,
+      "price": "$1.50"
+    },
+    {
+      "name": "Rye Toast",
+      "category": "Add Ons",
+      "calories": null,
+      "price": "$1.50"
+    },
+    {
+      "name": "Corned Beef",
+      "category": "Corned Beef",
+      "calories": null,
+      "price": "$18.00"
+    },
+    {
+      "name": "Lite Corned Beef",
+      "category": "Corned Beef",
+      "calories": null,
+      "price": "$15.00"
+    },
+    {
+      "name": "Melt",
+      "category": "Corned Beef",
+      "calories": null,
+      "price": "$19.75"
+    },
+    {
+      "name": "Reuben",
+      "category": "Corned Beef",
+      "calories": null,
+      "price": "$20.00"
+    },
+    {
+      "name": "Lite Reuben",
+      "category": "Corned Beef",
+      "calories": null,
+      "price": "$17.00"
+    },
+    {
+      "name": "Roast Beef",
+      "category": "Roast Beef",
+      "calories": null,
+      "price": "$18.00"
+    },
+    {
+      "name": "Melt",
+      "category": "Roast Beef",
+      "calories": null,
+      "price": "$19.75"
+    },
+    {
+      "name": "Reuben",
+      "category": "Roast Beef",
+      "calories": null,
+      "price": "$20.00"
+    },
+    {
+      "name": "BBQ Beef Sandwich",
+      "category": "Roast Beef",
+      "calories": null,
+      "price": "$19.00"
+    },
+    {
+      "name": "Pastrami",
+      "category": "Pastrami",
+      "calories": null,
+      "price": "$18.00"
+    },
+    {
+      "name": "Lite Pastrami",
+      "category": "Pastrami",
+      "calories": null,
+      "price": "$15.00"
+    },
+    {
+      "name": "Pastrami Melt",
+      "category": "Pastrami",
+      "calories": null,
+      "price": "$19.75"
+    },
+    {
+      "name": "Pastrami Reuben",
+      "category": "Pastrami",
+      "calories": null,
+      "price": "$20.00"
+    },
+    {
+      "name": "Turkey",
+      "category": "Turkey",
+      "calories": null,
+      "price": "$13.00"
+    },
+    {
+      "name": "Turkey Melt",
+      "category": "Turkey",
+      "calories": null,
+      "price": "$14.00"
+    },
+    {
+      "name": "Turkey Reuben",
+      "category": "Turkey",
+      "calories": null,
+      "price": "$14.50"
+    },
+    {
+      "name": "Turkey Club",
+      "category": "Turkey",
+      "calories": null,
+      "price": "$14.00"
+    },
+    {
+      "name": "Tuna Sandwich",
+      "category": "Tuna",
+      "calories": null,
+      "price": "$12.00"
+    },
+    {
+      "name": "Tuna Melt",
+      "category": "Tuna",
+      "calories": null,
+      "price": "$14.00"
+    },
+    {
+      "name": "Tuna Salad Plate",
+      "category": "Tuna",
+      "calories": null,
+      "price": "$14.00"
+    },
+    {
+      "name": "Hot Dog Vienna Style",
+      "category": "Hot Dogs",
+      "calories": null,
+      "price": "$5.00"
+    },
+    {
+      "name": "Polish Boy Dog",
+      "category": "Hot Dogs",
+      "calories": null,
+      "price": "$8.00"
+    },
+    {
+      "name": "Reuben Dog",
+      "category": "Hot Dogs",
+      "calories": null,
+      "price": "$8.00"
+    },
+    {
+      "name": "Bacon Cheese Dog",
+      "category": "Hot Dogs",
+      "calories": null,
+      "price": "$8.00"
+    },
+    {
+      "name": "Cheese Dog",
+      "category": "Hot Dogs",
+      "calories": null,
+      "price": "$7.00"
+    },
+    {
+      "name": "Cheeseburger",
+      "category": "Burgers",
+      "calories": null,
+      "price": "$10.00"
+    },
+    {
+      "name": "Veggie Burger",
+      "category": "Burgers",
+      "calories": null,
+      "price": "$8.00"
+    },
+    {
+      "name": "Bacon Cheese Burger",
+      "category": "Burgers",
+      "calories": null,
+      "price": "$12.00"
+    },
+    {
+      "name": "Slyman's Burger",
+      "category": "Burgers",
+      "calories": null,
+      "price": "$13.00"
+    },
+    {
+      "name": "Patty Melt",
+      "category": "Burgers",
+      "calories": null,
+      "price": "$10.00"
+    },
+    {
+      "name": "Ham Sandwich",
+      "category": "The Standards",
+      "calories": null,
+      "price": "$10.00"
+    },
+    {
+      "name": "Ham Melt",
+      "category": "The Standards",
+      "calories": null,
+      "price": "$12.00"
+    },
+    {
+      "name": "Grilled Cheese Sandwich",
+      "category": "The Standards",
+      "calories": null,
+      "price": "$4.50"
+    },
+    {
+      "name": "BLT",
+      "category": "The Standards",
+      "calories": null,
+      "price": "$8.00"
+    },
+    {
+      "name": "Chicken Fingers With Fries",
+      "category": "The Standards",
+      "calories": null,
+      "price": "$7.00"
+    },
+    {
+      "name": "Beer Battered Cod Sandwich",
+      "category": "The Standards",
+      "calories": null,
+      "price": "$9.00"
+    },
+    {
+      "name": "Dinner",
+      "category": "The Standards",
+      "calories": null,
+      "price": "$13.00"
+    },
+    {
+      "name": "Homemade Soup Of The Day",
+      "category": "The Standards",
+      "calories": null,
+      "price": "$5.00"
+    },
+    {
+      "name": "Crinkle French Fries",
+      "category": "Sides",
+      "calories": null,
+      "price": "$4.00"
+    },
+    {
+      "name": "Potato Pancakes",
+      "category": "Sides",
+      "calories": null,
+      "price": "$6.00"
+    },
+    {
+      "name": "Creamy Cole Slaw",
+      "category": "Sides",
+      "calories": null,
+      "price": "$4.00"
+    },
+    {
+      "name": "Potato Salad",
+      "category": "Sides",
+      "calories": null,
+      "price": "$4.00"
+    },
+    {
+      "name": "Onion Rings",
+      "category": "Sides",
+      "calories": null,
+      "price": "$5.50"
+    },
+    {
+      "name": "Breaded Mushrooms",
+      "category": "Sides",
+      "calories": null,
+      "price": "$5.50"
+    },
+    {
+      "name": "Mozzarella Sticks",
+      "category": "Sides",
+      "calories": null,
+      "price": "$5.50"
+    },
+    {
+      "name": "Cheese Fry",
+      "category": "Sides",
+      "calories": null,
+      "price": "$5.00"
+    },
+    {
+      "name": "Bacon Cheese Fry",
+      "category": "Sides",
+      "calories": null,
+      "price": "$6.50"
+    },
+    {
+      "name": "Home Fries",
+      "category": "Sides",
+      "calories": null,
+      "price": "$3.00"
+    },
+    {
+      "name": "Shot Of Corned Beef",
+      "category": "Sides",
+      "calories": null,
+      "price": "$5.00"
+    },
+    {
+      "name": "Assorted Chips",
+      "category": "Sides",
+      "calories": null,
+      "price": "$1.50"
+    },
+    {
+      "name": "Cheesecake",
+      "category": "Dessert",
+      "calories": null,
+      "price": "$5.00"
+    },
+    {
+      "name": "Corned Beef",
+      "category": "Sold By The Pound",
+      "calories": null,
+      "price": "$25.00"
+    },
+    {
+      "name": "Roast Beef",
+      "category": "Sold By The Pound",
+      "calories": null,
+      "price": "$25.00"
+    },
+    {
+      "name": "Pastrami",
+      "category": "Sold By The Pound",
+      "calories": null,
+      "price": "$25.00"
+    },
+    {
+      "name": "Tuna",
+      "category": "Sold By The Pound",
+      "calories": null,
+      "price": "$15.00"
+    },
+    {
+      "name": "Ham",
+      "category": "Sold By The Pound",
+      "calories": null,
+      "price": "$12.00"
+    },
+    {
+      "name": "Turkey",
+      "category": "Sold By The Pound",
+      "calories": null,
+      "price": "$16.00"
+    },
+    {
+      "name": "Cole Slaw",
+      "category": "Sold By The Pound",
+      "calories": null,
+      "price": "$9.00"
+    },
+    {
+      "name": "Potato Salad",
+      "category": "Sold By The Pound",
+      "calories": null,
+      "price": "$9.00"
+    },
+    {
+      "name": "Loaf Of Rye",
+      "category": "Sold By The Pound",
+      "calories": null,
+      "price": "$6.00"
+    },
+    {
+      "name": "American Cheese",
+      "category": "Sold By The Pound",
+      "calories": null,
+      "price": "$10.00"
+    },
+    {
+      "name": "Swiss Cheese",
+      "category": "Sold By The Pound",
+      "calories": null,
+      "price": "$10.00"
+    }
+  ]
+}
