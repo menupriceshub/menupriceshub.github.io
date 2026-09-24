@@ -1,0 +1,443 @@
+{
+  "title": "Al's Breakfast Menu With Price List",
+  "items": [
+    {
+      "name": "The José",
+      "category": "Eggs",
+      "calories": null,
+      "price": "$11.50"
+    },
+    {
+      "name": "The José - 2 Eggs",
+      "category": "Eggs",
+      "calories": null,
+      "price": "$14.75"
+    },
+    {
+      "name": "Huevos ala Minnesota - 1 Egg",
+      "category": "Eggs",
+      "calories": null,
+      "price": "$6.00"
+    },
+    {
+      "name": "Huevos ala Minnesota - 2 Eggs",
+      "category": "Eggs",
+      "calories": null,
+      "price": "$10.00"
+    },
+    {
+      "name": "Huevos ala Minnesota - 3 Eggs",
+      "category": "Eggs",
+      "calories": null,
+      "price": "$12.50"
+    },
+    {
+      "name": "Add Salsa",
+      "category": "Eggs",
+      "calories": null,
+      "price": "$1.00"
+    },
+    {
+      "name": "Summer Special - 1 Egg",
+      "category": "Eggs",
+      "calories": null,
+      "price": "$6.25"
+    },
+    {
+      "name": "Summer Special - 2 Eggs",
+      "category": "Eggs",
+      "calories": null,
+      "price": "$10.25"
+    },
+    {
+      "name": "Summer Special - 3 Eggs",
+      "category": "Eggs",
+      "calories": null,
+      "price": "$13.00"
+    },
+    {
+      "name": "Winter Special - 1 Egg",
+      "category": "Eggs",
+      "calories": null,
+      "price": "$7.00"
+    },
+    {
+      "name": "Winter Special - 2 Eggs",
+      "category": "Eggs",
+      "calories": null,
+      "price": "$10.75"
+    },
+    {
+      "name": "Winter Special - 3 Eggs",
+      "category": "Eggs",
+      "calories": null,
+      "price": "$13.50"
+    },
+    {
+      "name": "Spring Special - 1 Egg",
+      "category": "Eggs",
+      "calories": null,
+      "price": "$7.25"
+    },
+    {
+      "name": "Spring Special - 2 Eggs",
+      "category": "Eggs",
+      "calories": null,
+      "price": "$10.75"
+    },
+    {
+      "name": "Spring Special - 3 Eggs",
+      "category": "Eggs",
+      "calories": null,
+      "price": "$13.00"
+    },
+    {
+      "name": "The Leonard - 1 Egg",
+      "category": "Eggs",
+      "calories": null,
+      "price": "$7.25"
+    },
+    {
+      "name": "The Leonard - 2 Eggs",
+      "category": "Eggs",
+      "calories": null,
+      "price": "$12.00"
+    },
+    {
+      "name": "The Leonard - 3 Eggs",
+      "category": "Eggs",
+      "calories": null,
+      "price": "$14.75"
+    },
+    {
+      "name": "Grina - 1 Egg",
+      "category": "Eggs",
+      "calories": null,
+      "price": "$7.00"
+    },
+    {
+      "name": "Grina - 2 Eggs",
+      "category": "Eggs",
+      "calories": null,
+      "price": "$10.75"
+    },
+    {
+      "name": "Grina - 3 Eggs",
+      "category": "Eggs",
+      "calories": null,
+      "price": "$12.50"
+    },
+    {
+      "name": "The Spike - 1 Egg",
+      "category": "Eggs",
+      "calories": null,
+      "price": "$6.00"
+    },
+    {
+      "name": "The Spike - 2 Eggs",
+      "category": "Eggs",
+      "calories": null,
+      "price": "$10.00"
+    },
+    {
+      "name": "The Spike - 3 Eggs",
+      "category": "Eggs",
+      "calories": null,
+      "price": "$0.50"
+    },
+    {
+      "name": "Tomatoes",
+      "category": "Savory Additions",
+      "calories": null,
+      "price": "$1.00"
+    },
+    {
+      "name": "Onions",
+      "category": "Savory Additions",
+      "calories": null,
+      "price": "$1.00"
+    },
+    {
+      "name": "Scallions",
+      "category": "Savory Additions",
+      "calories": null,
+      "price": "$1.00"
+    },
+    {
+      "name": "Hot Pepper Rings",
+      "category": "Savory Additions",
+      "calories": null,
+      "price": "$1.00"
+    },
+    {
+      "name": "Green Peppers",
+      "category": "Savory Additions",
+      "calories": null,
+      "price": "$1.00"
+    },
+    {
+      "name": "Capers",
+      "category": "Savory Additions",
+      "calories": null,
+      "price": "$1.00"
+    },
+    {
+      "name": "Black Olives",
+      "category": "Savory Additions",
+      "calories": null,
+      "price": "$1.00"
+    },
+    {
+      "name": "Spinach",
+      "category": "Savory Additions",
+      "calories": null,
+      "price": "$1.50"
+    },
+    {
+      "name": "Asparagus",
+      "category": "Savory Additions",
+      "calories": null,
+      "price": "$2.50"
+    },
+    {
+      "name": "Broccoli",
+      "category": "Savory Additions",
+      "calories": null,
+      "price": "$1.50"
+    },
+    {
+      "name": "Homemade Salsa",
+      "category": "Savory Additions",
+      "calories": null,
+      "price": "$1.00"
+    },
+    {
+      "name": "Mushrooms",
+      "category": "Savory Additions",
+      "calories": null,
+      "price": "$1.50"
+    },
+    {
+      "name": "Cheese",
+      "category": "Savory Additions",
+      "calories": null,
+      "price": "$1.50"
+    },
+    {
+      "name": "Meat",
+      "category": "Savory Additions",
+      "calories": null,
+      "price": "$2.75"
+    },
+    {
+      "name": "Hollandaise",
+      "category": "Savory Additions",
+      "calories": null,
+      "price": "$2.50"
+    },
+    {
+      "name": "Wally Waffle",
+      "category": "Waffles, Etc.",
+      "calories": null,
+      "price": "$11.00"
+    },
+    {
+      "name": "Plain Waffle",
+      "category": "Waffles, Etc.",
+      "calories": null,
+      "price": "$9.50"
+    },
+    {
+      "name": "Bacon Waffle",
+      "category": "Waffles, Etc.",
+      "calories": null,
+      "price": "$12.00"
+    },
+    {
+      "name": "Pure Minnesota Maple Syrup - Half",
+      "category": "Waffles, Etc.",
+      "calories": null,
+      "price": "$1.25"
+    },
+    {
+      "name": "Pure Minnesota Maple Syrup - Full",
+      "category": "Waffles, Etc.",
+      "calories": null,
+      "price": "$2.00"
+    },
+    {
+      "name": "French Toast",
+      "category": "Waffles, Etc.",
+      "calories": null,
+      "price": "$3.75"
+    },
+    {
+      "name": "Waffle Suzette",
+      "category": "Waffles, Etc.",
+      "calories": null,
+      "price": "$12.00"
+    },
+    {
+      "name": "Plain And Simple Pancakes",
+      "category": "Pancakes",
+      "calories": null,
+      "price": "$4.25"
+    },
+    {
+      "name": "Blueberry Pancakes",
+      "category": "Pancakes",
+      "calories": null,
+      "price": "$4.50"
+    },
+    {
+      "name": "Walnut Pancakes",
+      "category": "Pancakes",
+      "calories": null,
+      "price": "$4.50"
+    },
+    {
+      "name": "Pure Minnesota Maple Syrup - Half",
+      "category": "Pancakes",
+      "calories": null,
+      "price": "$1.25"
+    },
+    {
+      "name": "Pure Minnesota Maple Syrup - Full",
+      "category": "Pancakes",
+      "calories": null,
+      "price": "$2.00"
+    },
+    {
+      "name": "Chocolate Chip Pancakes",
+      "category": "Pancakes",
+      "calories": null,
+      "price": "$4.50"
+    },
+    {
+      "name": "Wally Blues",
+      "category": "Pancakes",
+      "calories": null,
+      "price": "$4.75"
+    },
+    {
+      "name": "Blackberry Pancakes",
+      "category": "Pancakes",
+      "calories": null,
+      "price": "$4.50"
+    },
+    {
+      "name": "Wally Blacks",
+      "category": "Pancakes",
+      "calories": null,
+      "price": "$4.75"
+    },
+    {
+      "name": "Corn Pancakes",
+      "category": "Pancakes",
+      "calories": null,
+      "price": "$4.50"
+    },
+    {
+      "name": "Suzette",
+      "category": "Pancakes",
+      "calories": null,
+      "price": "$6.75"
+    },
+    {
+      "name": "Bacon",
+      "category": "Sides",
+      "calories": null,
+      "price": "$5.00"
+    },
+    {
+      "name": "Sausage",
+      "category": "Sides",
+      "calories": null,
+      "price": "$3.50"
+    },
+    {
+      "name": "Ham",
+      "category": "Sides",
+      "calories": null,
+      "price": "$3.50"
+    },
+    {
+      "name": "Hash-Browns - Plain",
+      "category": "Sides",
+      "calories": null,
+      "price": "$5.00"
+    },
+    {
+      "name": "Hash-Browns - With Cheese",
+      "category": "Sides",
+      "calories": null,
+      "price": "$6.50"
+    },
+    {
+      "name": "Corned Beef Hash",
+      "category": "Sides",
+      "calories": null,
+      "price": "$7.00"
+    },
+    {
+      "name": "Toast",
+      "category": "Sides",
+      "calories": null,
+      "price": "$2.50"
+    },
+    {
+      "name": "English Muffin",
+      "category": "Sides",
+      "calories": null,
+      "price": "$3.00"
+    },
+    {
+      "name": "Applesauce",
+      "category": "Sides",
+      "calories": null,
+      "price": "$2.50"
+    },
+    {
+      "name": "Yogi Berry",
+      "category": "Sides",
+      "calories": null,
+      "price": "$4.50"
+    },
+    {
+      "name": "Yogurt",
+      "category": "Sides",
+      "calories": null,
+      "price": "$2.50"
+    },
+    {
+      "name": "Tea",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$3.50"
+    },
+    {
+      "name": "Juice",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$3.50"
+    },
+    {
+      "name": "Coffee",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$4.00"
+    },
+    {
+      "name": "2% Milk",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$3.00"
+    },
+    {
+      "name": "Hot Chocolate",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$4.00"
+    }
+  ]
+}
