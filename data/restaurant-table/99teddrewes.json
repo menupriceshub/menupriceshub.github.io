@@ -1,0 +1,521 @@
+{
+  "title": "Ted Drewes Menu With Price List",
+  "items": [
+    {
+      "name": "Micro - 1 Flavor",
+      "category": "Concretes",
+      "calories": null,
+      "price": "$3.75"
+    },
+    {
+      "name": "Micro - 2 Flavors",
+      "category": "Concretes",
+      "calories": null,
+      "price": "$4.70"
+    },
+    {
+      "name": "Micro - 3 Flavors",
+      "category": "Concretes",
+      "calories": null,
+      "price": "$5.65"
+    },
+    {
+      "name": "Small - 1 Flavor",
+      "category": "Concretes",
+      "calories": null,
+      "price": "$5.35"
+    },
+    {
+      "name": "Small - 2 Flavors",
+      "category": "Concretes",
+      "calories": null,
+      "price": "$6.30"
+    },
+    {
+      "name": "Small - 3 Flavors",
+      "category": "Concretes",
+      "calories": null,
+      "price": "$7.25"
+    },
+    {
+      "name": "Regular - 1 Flavor",
+      "category": "Concretes",
+      "calories": null,
+      "price": "$6.55"
+    },
+    {
+      "name": "Regular - 2 Flavors",
+      "category": "Concretes",
+      "calories": null,
+      "price": "$7.50"
+    },
+    {
+      "name": "Regular - 3 Flavors",
+      "category": "Concretes",
+      "calories": null,
+      "price": "$8.45"
+    },
+    {
+      "name": "Large - 1 Flavor",
+      "category": "Concretes",
+      "calories": null,
+      "price": "$8.65"
+    },
+    {
+      "name": "Large - 2 Flavors",
+      "category": "Concretes",
+      "calories": null,
+      "price": "$9.60"
+    },
+    {
+      "name": "Large - 3 Flavors",
+      "category": "Concretes",
+      "calories": null,
+      "price": "$10.55"
+    },
+    {
+      "name": "Kiddie - 1 Flavor",
+      "category": "Malts & Shakes",
+      "calories": null,
+      "price": "$3.25"
+    },
+    {
+      "name": "Kiddie - 2 Flavors",
+      "category": "Malts & Shakes",
+      "calories": null,
+      "price": "$4.20"
+    },
+    {
+      "name": "Kiddie - 3 Flavors",
+      "category": "Malts & Shakes",
+      "calories": null,
+      "price": "$5.15"
+    },
+    {
+      "name": "Small - 1 Flavor",
+      "category": "Malts & Shakes",
+      "calories": null,
+      "price": "$4.25"
+    },
+    {
+      "name": "Small - 2 Flavors",
+      "category": "Malts & Shakes",
+      "calories": null,
+      "price": "$5.20"
+    },
+    {
+      "name": "Small - 3 Flavors",
+      "category": "Malts & Shakes",
+      "calories": null,
+      "price": "$6.15"
+    },
+    {
+      "name": "Jumbo - 1 Flavor",
+      "category": "Malts & Shakes",
+      "calories": null,
+      "price": "$6.25"
+    },
+    {
+      "name": "Jumbo - 2 Flavors",
+      "category": "Malts & Shakes",
+      "calories": null,
+      "price": "$7.20"
+    },
+    {
+      "name": "Jumbo - 3 Flavors",
+      "category": "Malts & Shakes",
+      "calories": null,
+      "price": "$8.15"
+    },
+    {
+      "name": "Super - 1 Flavor",
+      "category": "Malts & Shakes",
+      "calories": null,
+      "price": "$7.25"
+    },
+    {
+      "name": "Super - 2 Flavors",
+      "category": "Malts & Shakes",
+      "calories": null,
+      "price": "$8.20"
+    },
+    {
+      "name": "Super - 3 Flavors",
+      "category": "Malts & Shakes",
+      "calories": null,
+      "price": "$9.15"
+    },
+    {
+      "name": "Regular - 1 Flavor",
+      "category": "Floats",
+      "calories": null,
+      "price": "$6.55"
+    },
+    {
+      "name": "Regular - 2 Flavors",
+      "category": "Floats",
+      "calories": null,
+      "price": "$7.50"
+    },
+    {
+      "name": "Regular - 3 Flavors",
+      "category": "Floats",
+      "calories": null,
+      "price": "$8.45"
+    },
+    {
+      "name": "Large - 1 Flavor",
+      "category": "Floats",
+      "calories": null,
+      "price": "$8.65"
+    },
+    {
+      "name": "Large - 2 Flavors",
+      "category": "Floats",
+      "calories": null,
+      "price": "$9.60"
+    },
+    {
+      "name": "Large - 3 Flavors",
+      "category": "Floats",
+      "calories": null,
+      "price": "$10.55"
+    },
+    {
+      "name": "Kiddie",
+      "category": "Sundaes",
+      "calories": null,
+      "price": "$4.20"
+    },
+    {
+      "name": "Small",
+      "category": "Sundaes",
+      "calories": null,
+      "price": "$5.20"
+    },
+    {
+      "name": "Jumbo",
+      "category": "Sundaes",
+      "calories": null,
+      "price": "$7.20"
+    },
+    {
+      "name": "Super",
+      "category": "Sundaes",
+      "calories": null,
+      "price": "$8.20"
+    },
+    {
+      "name": "Almonds",
+      "category": "Premium Extras",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Hazelnuts",
+      "category": "Premium Extras",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Macadamias",
+      "category": "Premium Extras",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Pecans",
+      "category": "Premium Extras",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Pistachios",
+      "category": "Premium Extras",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Pralines",
+      "category": "Premium Extras",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Medley - Mixture of Nuts",
+      "category": "Premium Extras",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Real Whipped Cream - Small",
+      "category": "Premium Extras",
+      "calories": null,
+      "price": "$1.25"
+    },
+    {
+      "name": "Real Whipped Cream - Large",
+      "category": "Premium Extras",
+      "calories": null,
+      "price": "$0.95"
+    },
+    {
+      "name": "Kiddie Cone",
+      "category": "Cones",
+      "calories": null,
+      "price": "$1.00"
+    },
+    {
+      "name": "1 Scoop Cone",
+      "category": "Cones",
+      "calories": null,
+      "price": "$2.00"
+    },
+    {
+      "name": "2 Scoop Cone",
+      "category": "Cones",
+      "calories": null,
+      "price": "$2.50"
+    },
+    {
+      "name": "3 Scoop Cone",
+      "category": "Cones",
+      "calories": null,
+      "price": "$3.00"
+    },
+    {
+      "name": "4 Scoop Cone",
+      "category": "Cones",
+      "calories": null,
+      "price": "$3.50"
+    },
+    {
+      "name": "Chocolate Dip",
+      "category": "Cones",
+      "calories": null,
+      "price": "$0.95"
+    },
+    {
+      "name": "Cardinal Sin",
+      "category": "2 Flavor Specialties",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Terramizzou",
+      "category": "2 Flavor Specialties",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Southern Delight",
+      "category": "2 Flavor Specialties",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "The Mildred",
+      "category": "2 Flavor Specialties",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "CinnaCrunch",
+      "category": "2 Flavor Specialties",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Lemon Crumb",
+      "category": "2 Flavor Specialties",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Twisted Caramel",
+      "category": "2 Flavor Specialties",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "All Shook Up",
+      "category": "2 Flavor Specialties",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Dutchman Delight",
+      "category": "3 Flavor Specialties",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Turtle",
+      "category": "3 Flavor Specialties",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Fox Treat",
+      "category": "3 Flavor Specialties",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Dottie",
+      "category": "3 Flavor Specialties",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Christy",
+      "category": "3 Flavor Specialties",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Crater Copernicus",
+      "category": "3 Flavor Specialties",
+      "calories": null,
+      "price": "$8.00"
+    },
+    {
+      "name": "Muddy Mississippi",
+      "category": "3 Flavor Specialties",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Blue Note",
+      "category": "3 Flavor Specialties",
+      "calories": null,
+      "price": "$8.00"
+    },
+    {
+      "name": "Hawaiian Delight",
+      "category": "3 Flavor Specialties",
+      "calories": null,
+      "price": "$8.00"
+    },
+    {
+      "name": "Apple Pie Concrete",
+      "category": "Pie Concretes",
+      "calories": null,
+      "price": "$7.00"
+    },
+    {
+      "name": "Pumpkin Pie Concrete",
+      "category": "Pie Concretes",
+      "calories": null,
+      "price": "$7.00"
+    },
+    {
+      "name": "Banana Split",
+      "category": "Specialties",
+      "calories": null,
+      "price": "$8.50"
+    },
+    {
+      "name": "Caramel Apple",
+      "category": "Specialties",
+      "calories": null,
+      "price": "$8.00"
+    },
+    {
+      "name": "Strawberry Shortcake",
+      "category": "Specialties",
+      "calories": null,
+      "price": "$8.00"
+    },
+    {
+      "name": "S'More",
+      "category": "Specialties",
+      "calories": null,
+      "price": "$8.00"
+    },
+    {
+      "name": "Cookie Sandwich",
+      "category": "Specialties",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Bulk Pack - Quart",
+      "category": "Bulk Pack",
+      "calories": null,
+      "price": "$8.00"
+    },
+    {
+      "name": "Bulk Pack - Pint",
+      "category": "Bulk Pack",
+      "calories": null,
+      "price": "$5.50"
+    },
+    {
+      "name": "Fox Treat - Pint",
+      "category": "No Sugar Added",
+      "calories": null,
+      "price": "$7.00"
+    },
+    {
+      "name": "Coke",
+      "category": "Drinks",
+      "calories": null,
+      "price": "$1.50"
+    },
+    {
+      "name": "Diet Coke",
+      "category": "Drinks",
+      "calories": null,
+      "price": "$1.50"
+    },
+    {
+      "name": "Root Beer",
+      "category": "Drinks",
+      "calories": null,
+      "price": "$1.50"
+    },
+    {
+      "name": "Sprite",
+      "category": "Drinks",
+      "calories": null,
+      "price": "$1.50"
+    },
+    {
+      "name": "Orange Drink",
+      "category": "Drinks",
+      "calories": null,
+      "price": "$1.50"
+    },
+    {
+      "name": "Lemonade",
+      "category": "Drinks",
+      "calories": null,
+      "price": "$1.50"
+    },
+    {
+      "name": "Iced Tea",
+      "category": "Drinks",
+      "calories": null,
+      "price": "$1.50"
+    },
+    {
+      "name": "Orange Slushy - 16 oz",
+      "category": "Orange Slushy",
+      "calories": null,
+      "price": "$1.75"
+    },
+    {
+      "name": "Orange Slushy - 24 oz",
+      "category": "Orange Slushy",
+      "calories": null,
+      "price": "$2.50"
+    },
+    {
+      "name": "Orange Slushy - 32 oz",
+      "category": "Orange Slushy",
+      "calories": null,
+      "price": "$3.00"
+    }
+  ]
+}
