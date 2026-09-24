@@ -1,0 +1,893 @@
+{
+  "title": "Mickey's Diner Menu With Price List",
+  "items": [
+    {
+      "name": "The Impossible",
+      "category": "Highlights",
+      "calories": null,
+      "price": "$22.99"
+    },
+    {
+      "name": "Mickey's Bell",
+      "category": "Highlights",
+      "calories": null,
+      "price": "$22.99"
+    },
+    {
+      "name": "Mickey's Duck",
+      "category": "Highlights",
+      "calories": null,
+      "price": "$22.99"
+    },
+    {
+      "name": "The Two's",
+      "category": "Breakfast Served Anytime",
+      "calories": null,
+      "price": "$13.99"
+    },
+    {
+      "name": "America's Favorite All-Day Meal",
+      "category": "Breakfast Served Anytime",
+      "calories": null,
+      "price": "$13.99"
+    },
+    {
+      "name": "Choose One Meat",
+      "category": "Breakfast Served Anytime",
+      "calories": null,
+      "price": "$14.99"
+    },
+    {
+      "name": "8 Oz. Choice New York Strip Steak",
+      "category": "Breakfast Served Anytime",
+      "calories": null,
+      "price": "$25.99"
+    },
+    {
+      "name": "Earth's Special",
+      "category": "Breakfast Served Anytime",
+      "calories": null,
+      "price": "$15.99"
+    },
+    {
+      "name": "Swing Omelette",
+      "category": "Omelettes",
+      "calories": null,
+      "price": "$9.99"
+    },
+    {
+      "name": "Veggie Omelette With Cheese",
+      "category": "Omelettes",
+      "calories": null,
+      "price": "$10.99"
+    },
+    {
+      "name": "Denver Omelette With Cheese",
+      "category": "Omelettes",
+      "calories": null,
+      "price": "$10.99"
+    },
+    {
+      "name": "Add Bacon, Ham, Sausage, Gyro",
+      "category": "Omelettes",
+      "calories": null,
+      "price": "$3.99"
+    },
+    {
+      "name": "Add O'Brian's Hashbrowns",
+      "category": "Omelettes",
+      "calories": null,
+      "price": "$2.50"
+    },
+    {
+      "name": "Homemade Buttermilk Pancakes",
+      "category": "Pancakes",
+      "calories": null,
+      "price": "$4.00"
+    },
+    {
+      "name": "Strawberry Pancakes",
+      "category": "Pancakes",
+      "calories": null,
+      "price": "$4.50"
+    },
+    {
+      "name": "Chocolate Chip Pancakes",
+      "category": "Pancakes",
+      "calories": null,
+      "price": "$4.50"
+    },
+    {
+      "name": "Wheat Pancakes",
+      "category": "Pancakes",
+      "calories": null,
+      "price": "$4.00"
+    },
+    {
+      "name": "French Toast",
+      "category": "French Toast",
+      "calories": null,
+      "price": "$4.50"
+    },
+    {
+      "name": "Grilled Ham & Cheese",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$8.99"
+    },
+    {
+      "name": "B.L.T.",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$10.99"
+    },
+    {
+      "name": "Grilled Cheese",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$7.99"
+    },
+    {
+      "name": "Fried Egg",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$5.99"
+    },
+    {
+      "name": "Add Bacon Or Sausage",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$2.50"
+    },
+    {
+      "name": "Fishwich",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$14.99"
+    },
+    {
+      "name": "California With Bacon & Cheese - 1/4 Pound",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$10.99"
+    },
+    {
+      "name": "California With Bacon & Cheese - 1/2 Pound",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$13.99"
+    },
+    {
+      "name": "Plain Burger - 1/4 Pound",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$8.99"
+    },
+    {
+      "name": "Plain Burger - 1/2 Pound",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$10.99"
+    },
+    {
+      "name": "Fried Chicken",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$10.99"
+    },
+    {
+      "name": "Big Sam",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$15.99"
+    },
+    {
+      "name": "Lil' Houd",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$13.99"
+    },
+    {
+      "name": "Chicken Wings - 7",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$10.99"
+    },
+    {
+      "name": "Cluck 'N Chuck",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$14.99"
+    },
+    {
+      "name": "Patty Melt Plate",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$13.99"
+    },
+    {
+      "name": "Mushroom Burger",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$13.99"
+    },
+    {
+      "name": "One Eyed Jack",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$14.99"
+    },
+    {
+      "name": "Mickey's Sputnick",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$15.99"
+    },
+    {
+      "name": "Lil' Susie",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$13.99"
+    },
+    {
+      "name": "Fried Chicken Melt",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$15.99"
+    },
+    {
+      "name": "Southern Fried Chicken",
+      "category": "Dinners",
+      "calories": null,
+      "price": "$18.99"
+    },
+    {
+      "name": "1/2 Lb. Hamburger Steak",
+      "category": "Dinners",
+      "calories": null,
+      "price": "$17.99"
+    },
+    {
+      "name": "Fish (Breaded Cod) - 2 Fillets",
+      "category": "Dinners",
+      "calories": null,
+      "price": "$19.99"
+    },
+    {
+      "name": "Mickey's 8 Oz. Choice New York Strip",
+      "category": "Dinners",
+      "calories": null,
+      "price": "$24.99"
+    },
+    {
+      "name": "Upgrade To O'Brian Hash Browns",
+      "category": "Dinners",
+      "calories": null,
+      "price": "$3.99"
+    },
+    {
+      "name": "Hot Tea",
+      "category": "Hot Beverages",
+      "calories": null,
+      "price": "$2.75"
+    },
+    {
+      "name": "Hot Chocolate",
+      "category": "Hot Beverages",
+      "calories": null,
+      "price": "$2.75"
+    },
+    {
+      "name": "Fresh Ground McGarvey Coffee",
+      "category": "Hot Beverages",
+      "calories": null,
+      "price": "$2.75"
+    },
+    {
+      "name": "Chai Latte",
+      "category": "Hot Beverages",
+      "calories": null,
+      "price": "$5.99"
+    },
+    {
+      "name": "Milk",
+      "category": "Cold Beverages",
+      "calories": null,
+      "price": "$2.75"
+    },
+    {
+      "name": "Chocolate Milk",
+      "category": "Cold Beverages",
+      "calories": null,
+      "price": "$2.75"
+    },
+    {
+      "name": "Orange Juice",
+      "category": "Cold Beverages",
+      "calories": null,
+      "price": "$2.75"
+    },
+    {
+      "name": "Cranberry Or Apple Juice",
+      "category": "Cold Beverages",
+      "calories": null,
+      "price": "$2.75"
+    },
+    {
+      "name": "Soft Drinks - 16 Oz",
+      "category": "Cold Beverages",
+      "calories": null,
+      "price": "$2.99"
+    },
+    {
+      "name": "Iced Coffee",
+      "category": "Cold Beverages",
+      "calories": null,
+      "price": "$3.99"
+    },
+    {
+      "name": "Malts And Shakes",
+      "category": "Sweet Treats",
+      "calories": null,
+      "price": "$6.99"
+    },
+    {
+      "name": "Ice Cream Floats",
+      "category": "Sweet Treats",
+      "calories": null,
+      "price": "$5.99"
+    },
+    {
+      "name": "Sundae",
+      "category": "Sweet Treats",
+      "calories": null,
+      "price": "$6.99"
+    },
+    {
+      "name": "Apple Pie",
+      "category": "Sweet Treats",
+      "calories": null,
+      "price": "$4.99"
+    },
+    {
+      "name": "Apple Pie Ala Mode",
+      "category": "Sweet Treats",
+      "calories": null,
+      "price": "$5.99"
+    },
+    {
+      "name": "America's Favorite All-Day Meal With T-Bacon",
+      "category": "Early Bird Specials",
+      "calories": null,
+      "price": "$12.99"
+    },
+    {
+      "name": "America's Favorite All-Day Meal With T-Sausage",
+      "category": "Early Bird Specials",
+      "calories": null,
+      "price": "$13.99"
+    },
+    {
+      "name": "America's Favorite All-Day Meal With T-Ham",
+      "category": "Early Bird Specials",
+      "calories": null,
+      "price": "$13.99"
+    },
+    {
+      "name": "The Two's",
+      "category": "Early Bird Specials",
+      "calories": null,
+      "price": "$13.99"
+    },
+    {
+      "name": "Swing Omelette",
+      "category": "Omelettes",
+      "calories": null,
+      "price": "$8.99"
+    },
+    {
+      "name": "Veggie Omelette With Cheese",
+      "category": "Omelettes",
+      "calories": null,
+      "price": "$10.99"
+    },
+    {
+      "name": "Homemade Buttermilk Pancakes",
+      "category": "Pancakes & Waffles",
+      "calories": null,
+      "price": "$4.00"
+    },
+    {
+      "name": "Blueberry Pancakes",
+      "category": "Pancakes & Waffles",
+      "calories": null,
+      "price": "$4.50"
+    },
+    {
+      "name": "Buckwheat Pancakes",
+      "category": "Pancakes & Waffles",
+      "calories": null,
+      "price": "$4.00"
+    },
+    {
+      "name": "Jumbo French Toast",
+      "category": "Pancakes & Waffles",
+      "calories": null,
+      "price": "$4.50"
+    },
+    {
+      "name": "Waffle",
+      "category": "Pancakes & Waffles",
+      "calories": null,
+      "price": "$9.99"
+    },
+    {
+      "name": "Fry 2 - Eggs, Toast & Jelly",
+      "category": "Breakfast Plates",
+      "calories": null,
+      "price": "$7.99"
+    },
+    {
+      "name": "Fry 2 - With Beef or T-Bacon, T-Ham or T-Sausage",
+      "category": "Breakfast Plates",
+      "calories": null,
+      "price": "$11.99"
+    },
+    {
+      "name": "Cakes & Eggs",
+      "category": "Breakfast Plates",
+      "calories": null,
+      "price": "$13.99"
+    },
+    {
+      "name": "O'Brian's Special",
+      "category": "Breakfast Plates",
+      "calories": null,
+      "price": "$12.99"
+    },
+    {
+      "name": "The Two's",
+      "category": "Breakfast Plates",
+      "calories": null,
+      "price": "$14.99"
+    },
+    {
+      "name": "2 French Toast, 2 Beef Or T-Bacon Or T-Sausage, 2 Eggs",
+      "category": "Breakfast Plates",
+      "calories": null,
+      "price": "$16.99"
+    },
+    {
+      "name": "One Eyed Jack",
+      "category": "Breakfast Plates",
+      "calories": null,
+      "price": "$14.99"
+    },
+    {
+      "name": "Buttered Toast & Jelly",
+      "category": "All-Day Meal",
+      "calories": null,
+      "price": "$12.99"
+    },
+    {
+      "name": "Burger California With Beef Bacon & Cheese",
+      "category": "All-Day Meal",
+      "calories": null,
+      "price": "$8.99"
+    },
+    {
+      "name": "Fried Chicken",
+      "category": "All-Day Meal",
+      "calories": null,
+      "price": "$10.99"
+    },
+    {
+      "name": "Big Sam Combo",
+      "category": "All-Day Meal",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Chicken Wings Combo",
+      "category": "All-Day Meal",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Cluck 'N Chuck Combo",
+      "category": "All-Day Meal",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Patty Melt Plate",
+      "category": "All-Day Meal",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "One Eyed Jack Plate",
+      "category": "All-Day Meal",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Mickey's Sputnick Combo",
+      "category": "All-Day Meal",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Lil' Susie Combo",
+      "category": "All-Day Meal",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Fried Chicken Melt Combo",
+      "category": "All-Day Meal",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Latte",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$6.99"
+    },
+    {
+      "name": "Hot Tea",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$2.75"
+    },
+    {
+      "name": "Hot Chocolate",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$2.75"
+    },
+    {
+      "name": "Fresh Ground McGarvey Coffee",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$2.75"
+    },
+    {
+      "name": "Milk",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$2.75"
+    },
+    {
+      "name": "Chocolate Milk",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$3.00"
+    },
+    {
+      "name": "Orange Juice",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$2.99"
+    },
+    {
+      "name": "Cranberry Or Apple Juice",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$2.99"
+    },
+    {
+      "name": "Soft Drinks - 16 Oz",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$2.75"
+    },
+    {
+      "name": "Chai Latte",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$5.99"
+    },
+    {
+      "name": "America's Favorite All-Day Meal",
+      "category": "Breakfast",
+      "calories": null,
+      "price": "$13.99"
+    },
+    {
+      "name": "8 Oz. Choice New York Strip Steak",
+      "category": "Breakfast",
+      "calories": null,
+      "price": "$25.99"
+    },
+    {
+      "name": "Earth's Special",
+      "category": "Breakfast",
+      "calories": null,
+      "price": "$15.99"
+    },
+    {
+      "name": "Fry 2 - Eggs, Toast & Jelly",
+      "category": "Egg Platters",
+      "calories": null,
+      "price": "$7.99"
+    },
+    {
+      "name": "Fry 2 - With Beef or T-Bacon, T-Ham or T-Sausage",
+      "category": "Egg Platters",
+      "calories": null,
+      "price": "$11.99"
+    },
+    {
+      "name": "Cakes & Eggs",
+      "category": "Egg Platters",
+      "calories": null,
+      "price": "$13.99"
+    },
+    {
+      "name": "O'Brian's Special",
+      "category": "Egg Platters",
+      "calories": null,
+      "price": "$12.99"
+    },
+    {
+      "name": "The Two's",
+      "category": "Egg Platters",
+      "calories": null,
+      "price": "$14.99"
+    },
+    {
+      "name": "2 French Toast, 2 Beef Or T-Bacon Or T-Sausage, 2 Eggs",
+      "category": "Egg Platters",
+      "calories": null,
+      "price": "$16.99"
+    },
+    {
+      "name": "Grilled Turkey Ham & Cheese",
+      "category": "Sandwiches & Burgers",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "B.L.T.",
+      "category": "Sandwiches & Burgers",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Grilled Cheese",
+      "category": "Sandwiches & Burgers",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Fried Egg",
+      "category": "Sandwiches & Burgers",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Fishwich",
+      "category": "Sandwiches & Burgers",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Big Sam",
+      "category": "Sandwiches & Burgers",
+      "calories": null,
+      "price": "$14.99"
+    },
+    {
+      "name": "Chicken Wings",
+      "category": "Sandwiches & Burgers",
+      "calories": null,
+      "price": "$10.99"
+    },
+    {
+      "name": "Patty Melt",
+      "category": "Sandwiches & Burgers",
+      "calories": null,
+      "price": "$13.99"
+    },
+    {
+      "name": "Mushroom",
+      "category": "Sandwiches & Burgers",
+      "calories": null,
+      "price": "$13.99"
+    },
+    {
+      "name": "One Eye",
+      "category": "Sandwiches & Burgers",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "O'Brian Hashbrowns",
+      "category": "Side Orders",
+      "calories": null,
+      "price": "$5.99"
+    },
+    {
+      "name": "Hashbrown Potatoes",
+      "category": "Side Orders",
+      "calories": null,
+      "price": "$4.99"
+    },
+    {
+      "name": "Beef Or Turkey Bacon, T-Ham, T-Sausage, Or Gyros",
+      "category": "Side Orders",
+      "calories": null,
+      "price": "$5.99"
+    },
+    {
+      "name": "2 Extra Large Grade AA Eggs, Fried in Butter",
+      "category": "Side Orders",
+      "calories": null,
+      "price": "$3.99"
+    },
+    {
+      "name": "1 Egg",
+      "category": "Side Orders",
+      "calories": null,
+      "price": "$2.99"
+    },
+    {
+      "name": "Toast, Texas Toast Or English Muffin",
+      "category": "Side Orders",
+      "calories": null,
+      "price": "$2.50"
+    },
+    {
+      "name": "French Fries",
+      "category": "Side Orders",
+      "calories": null,
+      "price": "$4.99"
+    },
+    {
+      "name": "Onion Rings",
+      "category": "Side Orders",
+      "calories": null,
+      "price": "$6.99"
+    },
+    {
+      "name": "Chili Con Carne With Crackers",
+      "category": "Side Orders",
+      "calories": null,
+      "price": "$6.99"
+    },
+    {
+      "name": "Cole Slaw Or Salad",
+      "category": "Side Orders",
+      "calories": null,
+      "price": "$4.99"
+    },
+    {
+      "name": "Add Cheese To The Above",
+      "category": "Side Orders",
+      "calories": null,
+      "price": "$1.25"
+    },
+    {
+      "name": "Add Onion",
+      "category": "Side Orders",
+      "calories": null,
+      "price": "$0.99"
+    },
+    {
+      "name": "Add Whipped Cream And Fresh Fruit",
+      "category": "Others",
+      "calories": null,
+      "price": "$1.99"
+    },
+    {
+      "name": "Potatoes",
+      "category": "Others",
+      "calories": null,
+      "price": "$3.99"
+    },
+    {
+      "name": "Add 2 Extra Large Grade AA Eggs",
+      "category": "Others",
+      "calories": null,
+      "price": "$2.99"
+    },
+    {
+      "name": "Add Cheese",
+      "category": "Others",
+      "calories": null,
+      "price": "$1.25"
+    },
+    {
+      "name": "Sausage Or Gyro",
+      "category": "Others",
+      "calories": null,
+      "price": "$4.99"
+    },
+    {
+      "name": "Add Onion",
+      "category": "Others",
+      "calories": null,
+      "price": "$0.99"
+    },
+    {
+      "name": "O'Brian's Special",
+      "category": "Others",
+      "calories": null,
+      "price": "$13.99"
+    },
+    {
+      "name": "Eggs, Any Style, Toast & Jelly",
+      "category": "Others",
+      "calories": null,
+      "price": "$5.99"
+    },
+    {
+      "name": "Eggs, Any Style, Toast & Jelly With Ham, Sausage, Gyro",
+      "category": "Others",
+      "calories": null,
+      "price": "$10.99"
+    },
+    {
+      "name": "2 French Toast, 2 Bacon Or Sausage, 2 Eggs",
+      "category": "Others",
+      "calories": null,
+      "price": "$16.99"
+    },
+    {
+      "name": "Mickey's Favorite All-Day Meal",
+      "category": "Others",
+      "calories": null,
+      "price": "$13.99"
+    },
+    {
+      "name": "Extra Large Grade AA Eggs",
+      "category": "Others",
+      "calories": null,
+      "price": "$3.99"
+    },
+    {
+      "name": "Fish (Breaded Cod)",
+      "category": "Others",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Gyros",
+      "category": "Others",
+      "calories": null,
+      "price": "$25.99"
+    },
+    {
+      "name": "Full Stack - 3",
+      "category": "Others",
+      "calories": null,
+      "price": "$9.99"
+    },
+    {
+      "name": "Cheese",
+      "category": "Others",
+      "calories": null,
+      "price": "$1.25"
+    },
+    {
+      "name": "Onion",
+      "category": "Others",
+      "calories": null,
+      "price": "$0.99"
+    },
+    {
+      "name": "Latte",
+      "category": "Others",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Egg",
+      "category": "Others",
+      "calories": null,
+      "price": "$2.99"
+    }
+  ]
+}
