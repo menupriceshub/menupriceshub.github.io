@@ -832,17 +832,6 @@ function getFiltered(keyword){
     );
 }
 
-function getRestaurantUrl(url){
-    if(!url) return "#";
-
-    if(url.startsWith("/restaurants/")){
-        return url;
-    }
-
-    url = url.replace(/^\/+/, "");
-
-    return "/restaurants/" + url;
-}
 
     
 function getRestaurantUrl(url){
