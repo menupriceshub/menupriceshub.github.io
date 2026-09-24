@@ -1,0 +1,461 @@
+{
+  "title": "The Original Rainbow Cone Menu With Price List",
+  "items": [
+    {
+      "name": "Original Rainbow Cone",
+      "category": "Ice Cream Cones",
+      "calories": null,
+      "price": "$6.99"
+    },
+    {
+      "name": "JR Rainbow Cone",
+      "category": "Ice Cream Cones",
+      "calories": null,
+      "price": "$4.99"
+    },
+    {
+      "name": "Single Scoop Feature Flavor Cone",
+      "category": "Ice Cream Cones",
+      "calories": null,
+      "price": "$3.99"
+    },
+    {
+      "name": "Double Scoop Feature Flavor Cone",
+      "category": "Ice Cream Cones",
+      "calories": null,
+      "price": "$5.99"
+    },
+    {
+      "name": "Triple Scoop Feature Flavor Cone",
+      "category": "Ice Cream Cones",
+      "calories": null,
+      "price": "$7.99"
+    },
+    {
+      "name": "Orange Dream",
+      "category": "Sliced Creations",
+      "calories": null,
+      "price": "$6.99"
+    },
+    {
+      "name": "Chocolate Obsession",
+      "category": "Sliced Creations",
+      "calories": null,
+      "price": "$6.99"
+    },
+    {
+      "name": "Minty City",
+      "category": "Sliced Creations",
+      "calories": null,
+      "price": "$6.99"
+    },
+    {
+      "name": "Cosmic Birthday",
+      "category": "Sliced Creations",
+      "calories": null,
+      "price": "$6.99"
+    },
+    {
+      "name": "JR Orange Dream",
+      "category": "Sliced Creations",
+      "calories": null,
+      "price": "$4.99"
+    },
+    {
+      "name": "JR Chocolate Obsession",
+      "category": "Sliced Creations",
+      "calories": null,
+      "price": "$4.99"
+    },
+    {
+      "name": "JR Minty City",
+      "category": "Sliced Creations",
+      "calories": null,
+      "price": "$4.99"
+    },
+    {
+      "name": "JR Cosmic Birthday",
+      "category": "Sliced Creations",
+      "calories": null,
+      "price": "$4.99"
+    },
+    {
+      "name": "Half Dozen Donuts",
+      "category": "Mini Donuts",
+      "calories": null,
+      "price": "$4.29"
+    },
+    {
+      "name": "Dozen Donuts",
+      "category": "Mini Donuts",
+      "calories": null,
+      "price": "$6.29"
+    },
+    {
+      "name": "30 Pack Donuts Creations",
+      "category": "Mini Donuts",
+      "calories": null,
+      "price": "$19.99"
+    },
+    {
+      "name": "Caramel Turtle Pie",
+      "category": "Super Sundaes",
+      "calories": null,
+      "price": "$8.99"
+    },
+    {
+      "name": "Chocolate Peanut Butter Fudge",
+      "category": "Super Sundaes",
+      "calories": null,
+      "price": "$8.99"
+    },
+    {
+      "name": "Strawberry Shortcake",
+      "category": "Super Sundaes",
+      "calories": null,
+      "price": "$8.99"
+    },
+    {
+      "name": "Cookies & Cream Crunch",
+      "category": "Super Sundaes",
+      "calories": null,
+      "price": "$8.99"
+    },
+    {
+      "name": "Reg Hot Fudge Sundae",
+      "category": "Classic Sundaes",
+      "calories": null,
+      "price": "$6.99"
+    },
+    {
+      "name": "Lrg Hot Fudge Sundae",
+      "category": "Classic Sundaes",
+      "calories": null,
+      "price": "$8.99"
+    },
+    {
+      "name": "Reg Strawberry Sundae",
+      "category": "Classic Sundaes",
+      "calories": null,
+      "price": "$6.99"
+    },
+    {
+      "name": "Lrg Strawberry Sundae",
+      "category": "Classic Sundaes",
+      "calories": null,
+      "price": "$8.99"
+    },
+    {
+      "name": "Reg Turtle Sundae",
+      "category": "Classic Sundaes",
+      "calories": null,
+      "price": "$6.99"
+    },
+    {
+      "name": "Lrg Turtle Sundae",
+      "category": "Classic Sundaes",
+      "calories": null,
+      "price": "$8.99"
+    },
+    {
+      "name": "Banana Split",
+      "category": "Classic Sundaes",
+      "calories": null,
+      "price": "$9.99"
+    },
+    {
+      "name": "Reg Shake",
+      "category": "Hand-Spun Shakes",
+      "calories": null,
+      "price": "$5.99"
+    },
+    {
+      "name": "Large Shake",
+      "category": "Hand-Spun Shakes",
+      "calories": null,
+      "price": "$7.99"
+    },
+    {
+      "name": "Reg Sweet Treat Shake",
+      "category": "Hand-Spun Shakes",
+      "calories": null,
+      "price": "$6.99"
+    },
+    {
+      "name": "Lrg Sweet Treat Shake",
+      "category": "Hand-Spun Shakes",
+      "calories": null,
+      "price": "$8.99"
+    },
+    {
+      "name": "Reg Espresso Shake",
+      "category": "Hand-Spun Shakes",
+      "calories": null,
+      "price": "$5.99"
+    },
+    {
+      "name": "Lrg Espresso Shake",
+      "category": "Hand-Spun Shakes",
+      "calories": null,
+      "price": "$7.99"
+    },
+    {
+      "name": "Reg Mocha Espresso Shake",
+      "category": "Hand-Spun Shakes",
+      "calories": null,
+      "price": "$6.99"
+    },
+    {
+      "name": "Lrg Mocha Espresso Shake",
+      "category": "Hand-Spun Shakes",
+      "calories": null,
+      "price": "$7.99"
+    },
+    {
+      "name": "Reg Caramel Espresso Shake",
+      "category": "Hand-Spun Shakes",
+      "calories": null,
+      "price": "$5.99"
+    },
+    {
+      "name": "Lrg Caramel Espresso Shake",
+      "category": "Hand-Spun Shakes",
+      "calories": null,
+      "price": "$7.99"
+    },
+    {
+      "name": "Rainbow Quart",
+      "category": "Quarts & Pints",
+      "calories": null,
+      "price": "$12.99"
+    },
+    {
+      "name": "Rainbow Pint",
+      "category": "Quarts & Pints",
+      "calories": null,
+      "price": "$7.99"
+    },
+    {
+      "name": "Feature Flavor Quart",
+      "category": "Quarts & Pints",
+      "calories": null,
+      "price": "$12.99"
+    },
+    {
+      "name": "Feature Flavor Pint",
+      "category": "Quarts & Pints",
+      "calories": null,
+      "price": "$7.99"
+    },
+    {
+      "name": "Custom Quart",
+      "category": "Quarts & Pints",
+      "calories": null,
+      "price": "$12.99"
+    },
+    {
+      "name": "Custom Pint",
+      "category": "Quarts & Pints",
+      "calories": null,
+      "price": "$7.99"
+    },
+    {
+      "name": "Rainbow Cone Ice Cream Cookie Sandwich (Each)",
+      "category": "Ice Cream Sandwiches",
+      "calories": null,
+      "price": "$5.99"
+    },
+    {
+      "name": "Choc Obsession Cookie Sandwich (Each)",
+      "category": "Ice Cream Sandwiches",
+      "calories": null,
+      "price": "$5.99"
+    },
+    {
+      "name": "Custom Ice Cream Cookie Sandwich (Each)",
+      "category": "Ice Cream Sandwiches",
+      "calories": null,
+      "price": "$5.99"
+    },
+    {
+      "name": "Rainbow Cone Ice Cream Cookie Sandwich (4-Pack)",
+      "category": "Ready-to-Go Ice Cream Sandwiches",
+      "calories": null,
+      "price": "$18.99"
+    },
+    {
+      "name": "Choc Obsession Cookie (4-Pack)",
+      "category": "Ready-to-Go Ice Cream Sandwiches",
+      "calories": null,
+      "price": "$18.99"
+    },
+    {
+      "name": "Custom Ice Cream Cookie Sandwich (4-Pack)",
+      "category": "Ready-to-Go Ice Cream Sandwiches",
+      "calories": null,
+      "price": "$18.99"
+    },
+    {
+      "name": "Classic Rainbow Cake Slice",
+      "category": "Ready-to-Go Cakes",
+      "calories": null,
+      "price": "$5.99"
+    },
+    {
+      "name": "Chocolate Obsession Cake Slice",
+      "category": "Ready-to-Go Cakes",
+      "calories": null,
+      "price": "$5.99"
+    },
+    {
+      "name": "Rainbow Choc Cake Roll Slice",
+      "category": "Ready-to-Go Cakes",
+      "calories": null,
+      "price": "$5.89"
+    },
+    {
+      "name": "Classic Rainbow Cake Half",
+      "category": "Ready-to-Go Cakes",
+      "calories": null,
+      "price": "$19.95"
+    },
+    {
+      "name": "Chocolate Obsession Cake Half",
+      "category": "Ready-to-Go Cakes",
+      "calories": null,
+      "price": "$19.95"
+    },
+    {
+      "name": "Signature Rainbow Cake Half",
+      "category": "Ready-to-Go Cakes",
+      "calories": null,
+      "price": "$19.95"
+    },
+    {
+      "name": "6\" Rainbow Cake Roll",
+      "category": "Ready-to-Go Cakes",
+      "calories": null,
+      "price": "$32.99"
+    },
+    {
+      "name": "Classic Rainbow Whole Cake",
+      "category": "Ready-to-Go Cakes",
+      "calories": null,
+      "price": "$39.95"
+    },
+    {
+      "name": "Classic Rainbow Whole (Custom Messaging)",
+      "category": "Ready-to-Go Cakes",
+      "calories": null,
+      "price": "$39.95"
+    },
+    {
+      "name": "Chocolate Obsession Whole (Custom Messaging)",
+      "category": "Ready-to-Go Cakes",
+      "calories": null,
+      "price": "$39.95"
+    },
+    {
+      "name": "Signature Rainbow Whole Cake",
+      "category": "Ready-to-Go Cakes",
+      "calories": null,
+      "price": "$39.95"
+    },
+    {
+      "name": "Signature Rainbow Cake (Custom Messaging)",
+      "category": "Ready-to-Go Cakes",
+      "calories": null,
+      "price": "$39.95"
+    },
+    {
+      "name": "12 Rainbow Cake Roll",
+      "category": "Ready-to-Go Cakes",
+      "calories": null,
+      "price": "$52.99"
+    },
+    {
+      "name": "Orange Dream Whole Cake",
+      "category": "Made-To-Order Cakes",
+      "calories": null,
+      "price": "$39.95"
+    },
+    {
+      "name": "Cosmic Birthday Whole Cake",
+      "category": "Made-To-Order Cakes",
+      "calories": null,
+      "price": "$39.95"
+    },
+    {
+      "name": "Minty City Whole Cake",
+      "category": "Made-To-Order Cakes",
+      "calories": null,
+      "price": "$39.95"
+    },
+    {
+      "name": "Cookies & Cream Whole Cake",
+      "category": "Made-To-Order Cakes",
+      "calories": null,
+      "price": "$39.95"
+    },
+    {
+      "name": "Hot Chocolate",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$3.75"
+    },
+    {
+      "name": "Root Beer",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$3.50"
+    },
+    {
+      "name": "Coffee",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$2.99"
+    },
+    {
+      "name": "Bottled Water",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$1.75"
+    },
+    {
+      "name": "15 Cone Party Pack",
+      "category": "Catering Party Packs",
+      "calories": null,
+      "price": "$84.99"
+    },
+    {
+      "name": "20 Cone Party Pack",
+      "category": "Catering Party Packs",
+      "calories": null,
+      "price": "$99.99"
+    },
+    {
+      "name": "15 Rainbow Tasters",
+      "category": "Catering Party Packs",
+      "calories": null,
+      "price": "$59.99"
+    },
+    {
+      "name": "20 Rainbow Tasters",
+      "category": "Catering Party Packs",
+      "calories": null,
+      "price": "$69.99"
+    },
+    {
+      "name": "15 Dream Tasters",
+      "category": "Catering Party Packs",
+      "calories": null,
+      "price": "$59.99"
+    },
+    {
+      "name": "20 Dream Tasters",
+      "category": "Catering Party Packs",
+      "calories": null,
+      "price": "$69.99"
+    }
+  ]
+}
