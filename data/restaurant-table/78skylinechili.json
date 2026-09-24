@@ -1,0 +1,44 @@
+{
+  "title": "Skyline Chili Menu With Price List",
+  "items": [
+    { "name": "Chili Cheese Fries", "category": "Fries & Shareables", "calories": null, "price": "$7.99" },
+    { "name": "Cheese Fries", "category": "Fries & Shareables", "calories": 650, "price": "$5.79" },
+    { "name": "Plain Fries", "category": "Fries & Shareables", "calories": 430, "price": "$3.69" },
+    { "name": "Funnel Fries", "category": "Fries & Shareables", "calories": 440, "price": "$4.79" },
+    { "name": "Skyline Dip", "category": "Fries & Shareables", "calories": 1120, "price": "$8.79" },
+    { "name": "Nachos", "category": "Fries & Shareables", "calories": 670, "price": "$7.79" },
+    { "name": "Nachos Deluxe", "category": "Fries & Shareables", "calories": 800, "price": "$9.79" },
+    { "name": "Buffalo Chicken Dip", "category": "Fries & Shareables", "calories": 920, "price": "$8.79" },
+
+    { "name": "Original Deluxe Burrito (with Bean Mix, incl. lettuce, tomatoes, sour cream)", "category": "Burritos", "calories": null, "price": "$9.69" },
+    { "name": "Black Beans & Rice Deluxe Burrito", "category": "Burritos", "calories": 760, "price": "$9.69" },
+    { "name": "Chili Deluxe Burrito", "category": "Burritos", "calories": null, "price": "$9.99" },
+
+    { "name": "Garden Salad (Side)", "category": "Salads", "calories": 80, "price": "$4.79" },
+    { "name": "Garden Salad (Regular)", "category": "Salads", "calories": 170, "price": "$6.69" },
+    { "name": "Buffalo Chicken Salad (Side)", "category": "Salads", "calories": 100, "price": "$6.39" },
+    { "name": "Buffalo Chicken Salad (Regular)", "category": "Salads", "calories": 200, "price": "$9.39" },
+    { "name": "Greek Salad (Side)", "category": "Salads", "calories": 70, "price": "$4.99" },
+    { "name": "Greek Salad (Regular)", "category": "Salads", "calories": 150, "price": "$7.69" },
+
+    { "name": "Classic Chicken Wrap", "category": "Wraps", "calories": 620, "price": "$9.99" },
+    { "name": "Buffalo Chicken Wrap", "category": "Wraps", "calories": 540, "price": "$9.99" },
+    { "name": "Chicken Bacon Ranch Wrap", "category": "Wraps", "calories": 800, "price": "$10.49" },
+
+    { "name": "Soft Drinks", "category": "Drinks", "calories": null, "price": "$2.99" },
+    { "name": "Minute Maid", "category": "Drinks", "calories": 190, "price": "$2.99" },
+    { "name": "Sweet or Unsweet Iced Tea", "category": "Drinks", "calories": null, "price": "$2.99" },
+
+    { "name": "Ways (3-Way, 4-Way, or 5-Way Chili over Spaghetti with Cheddar) - Small", "category": "Ways", "calories": null, "price": "$7.49" },
+    { "name": "Ways (3-Way, 4-Way, or 5-Way Chili over Spaghetti with Cheddar) - Regular", "category": "Ways", "calories": null, "price": "$9.49" },
+    { "name": "Ways (3-Way, 4-Way, or 5-Way Chili over Spaghetti with Cheddar) - Large", "category": "Ways", "calories": null, "price": "$12.49" },
+
+    { "name": "Cheese Coney", "category": "Coneys", "calories": null, "price": "$3.19" },
+    { "name": "Chili Cheese Sandwich", "category": "Coneys", "calories": null, "price": "$3.19" },
+
+    { "name": "Chilito", "category": "Chilitos", "calories": null, "price": "$3.89" },
+    { "name": "Chilito with Sour Cream", "category": "Chilitos", "calories": null, "price": "$4.19" },
+    { "name": "Chilito with Spaghetti", "category": "Chilitos", "calories": null, "price": "$4.09" }
+  ]
+}
+
