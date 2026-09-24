@@ -1,0 +1,113 @@
+{
+  "title": "In Restaurant Menu With Price List",
+  "items": [
+    {
+      "name": "Jucy Lucy",
+      "category": "From the Grill",
+      "calories": null,
+      "price": "$11.50"
+    },
+    {
+      "name": "Hamburger",
+      "category": "From the Grill",
+      "calories": null,
+      "price": "$4.75"
+    },
+    {
+      "name": "Cheeseburger",
+      "category": "From the Grill",
+      "calories": null,
+      "price": "$5.75"
+    },
+    {
+      "name": "Double Hamburger",
+      "category": "From the Grill",
+      "calories": null,
+      "price": "$7.95"
+    },
+    {
+      "name": "Double Cheeseburger",
+      "category": "From the Grill",
+      "calories": null,
+      "price": "$11.50"
+    },
+    {
+      "name": "Grilled Cheese",
+      "category": "From the Grill",
+      "calories": null,
+      "price": "$4.75"
+    },
+    {
+      "name": "Chicken Sandwich",
+      "category": "From the Grill",
+      "calories": null,
+      "price": "$8.75"
+    },
+    {
+      "name": "French Fries - Full Order",
+      "category": "From the Grill",
+      "calories": null,
+      "price": "$8.25"
+    },
+    {
+      "name": "French Fries - Half Order",
+      "category": "From the Grill",
+      "calories": null,
+      "price": "$5.95"
+    },
+    {
+      "name": "Chips",
+      "category": "From the Grill",
+      "calories": null,
+      "price": "$2.00"
+    },
+    {
+      "name": "Coffee",
+      "category": "Drink Menu",
+      "calories": null,
+      "price": "$2.50"
+    },
+    {
+      "name": "Bottled Water",
+      "category": "Drink Menu",
+      "calories": null,
+      "price": "$2.00"
+    },
+    {
+      "name": "Pure Leaf Iced Tea",
+      "category": "Drink Menu",
+      "calories": null,
+      "price": "$2.95"
+    },
+    {
+      "name": "Simply Lemonade",
+      "category": "Drink Menu",
+      "calories": null,
+      "price": "$2.95"
+    },
+    {
+      "name": "Dads Root Beer",
+      "category": "Drink Menu",
+      "calories": null,
+      "price": "$3.25"
+    },
+    {
+      "name": "Soda by the Can",
+      "category": "Drink Menu",
+      "calories": null,
+      "price": "$2.50"
+    },
+    {
+      "name": "Arnie Palmer",
+      "category": "Drink Menu",
+      "calories": null,
+      "price": "$2.50"
+    },
+    {
+      "name": "Red Bull",
+      "category": "Drink Menu",
+      "calories": null,
+      "price": "$5.00"
+    }
+  ]
+}
