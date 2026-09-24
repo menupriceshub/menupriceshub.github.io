@@ -1,0 +1,317 @@
+{
+  "title": "LC's Bar-B-Q Menu With Price List",
+  "items": [
+    {
+      "name": "Pork Sandwich With A Side",
+      "category": "Sandwiches With A Side",
+      "calories": null,
+      "price": "$13.50"
+    },
+    {
+      "name": "Ham Sandwich With A Side",
+      "category": "Sandwiches With A Side",
+      "calories": null,
+      "price": "$13.50"
+    },
+    {
+      "name": "Turkey Sandwich With A Side",
+      "category": "Sandwiches With A Side",
+      "calories": null,
+      "price": "$13.50"
+    },
+    {
+      "name": "Beef Sandwich With A Side",
+      "category": "Sandwiches With A Side",
+      "calories": null,
+      "price": "$18.00"
+    },
+    {
+      "name": "Combo With A Side",
+      "category": "Sandwiches With A Side",
+      "calories": null,
+      "price": "$14.50"
+    },
+    {
+      "name": "Combo With Beef With A Side",
+      "category": "Sandwiches With A Side",
+      "calories": null,
+      "price": "$15.00"
+    },
+    {
+      "name": "Half Chicken",
+      "category": "Sandwiches With A Side",
+      "calories": null,
+      "price": "$13.00"
+    },
+    {
+      "name": "5 Wings",
+      "category": "Sandwiches With A Side",
+      "calories": null,
+      "price": "$14.00"
+    },
+    {
+      "name": "Baked Beans - Regular",
+      "category": "Sides",
+      "calories": null,
+      "price": "$4.50"
+    },
+    {
+      "name": "Baked Beans - Pint",
+      "category": "Sides",
+      "calories": null,
+      "price": "$10.99"
+    },
+    {
+      "name": "Baked Beans - Quart",
+      "category": "Sides",
+      "calories": null,
+      "price": "$13.99"
+    },
+    {
+      "name": "Baked Beans - Half",
+      "category": "Sides",
+      "calories": null,
+      "price": "$20.99"
+    },
+    {
+      "name": "Baked Beans - Gallon",
+      "category": "Sides",
+      "calories": null,
+      "price": "$38.99"
+    },
+    {
+      "name": "Cole Slaw - Regular",
+      "category": "Sides",
+      "calories": null,
+      "price": "$4.50"
+    },
+    {
+      "name": "Cole Slaw - Pint",
+      "category": "Sides",
+      "calories": null,
+      "price": "$10.99"
+    },
+    {
+      "name": "Cole Slaw - Quart",
+      "category": "Sides",
+      "calories": null,
+      "price": "$13.99"
+    },
+    {
+      "name": "Cole Slaw - Half",
+      "category": "Sides",
+      "calories": null,
+      "price": "$20.99"
+    },
+    {
+      "name": "Cole Slaw - Gallon",
+      "category": "Sides",
+      "calories": null,
+      "price": "$38.99"
+    },
+    {
+      "name": "Potato Salad - Regular",
+      "category": "Sides",
+      "calories": null,
+      "price": "$4.50"
+    },
+    {
+      "name": "Potato Salad - Pint",
+      "category": "Sides",
+      "calories": null,
+      "price": "$10.99"
+    },
+    {
+      "name": "Potato Salad - Quart",
+      "category": "Sides",
+      "calories": null,
+      "price": "$13.99"
+    },
+    {
+      "name": "Potato Salad - Half",
+      "category": "Sides",
+      "calories": null,
+      "price": "$20.99"
+    },
+    {
+      "name": "Potato Salad - Gallon",
+      "category": "Sides",
+      "calories": null,
+      "price": "$38.99"
+    },
+    {
+      "name": "Any Side",
+      "category": "Sides",
+      "calories": null,
+      "price": "$4.50"
+    },
+    {
+      "name": "Fries",
+      "category": "Fried Sides",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Onion Rings",
+      "category": "Fried Sides",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Fried Mushroom",
+      "category": "Fried Sides",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Okra",
+      "category": "Fried Sides",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Spicy Green Bean",
+      "category": "Fried Sides",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Jalapeno Poppers",
+      "category": "Fried Sides",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "BBQ Sauce - Extra Cup",
+      "category": "BBQ Sauce",
+      "calories": null,
+      "price": "$0.50"
+    },
+    {
+      "name": "BBQ Sauce - Bottle",
+      "category": "BBQ Sauce",
+      "calories": null,
+      "price": "$4.00"
+    },
+    {
+      "name": "BBQ Sauce - Case",
+      "category": "BBQ Sauce",
+      "calories": null,
+      "price": "$42.00"
+    },
+    {
+      "name": "Drinks",
+      "category": "Drinks",
+      "calories": null,
+      "price": "$2.50"
+    },
+    {
+      "name": "Beer",
+      "category": "Drinks",
+      "calories": null,
+      "price": "$4.00"
+    },
+    {
+      "name": "Seasoning",
+      "category": "Seasoning",
+      "calories": null,
+      "price": "$4.00"
+    },
+    {
+      "name": "Slab",
+      "category": "Ribs",
+      "calories": null,
+      "price": "$26.99"
+    },
+    {
+      "name": "Short End",
+      "category": "Ribs",
+      "calories": null,
+      "price": "$16.00"
+    },
+    {
+      "name": "Long End",
+      "category": "Ribs",
+      "calories": null,
+      "price": "$15.00"
+    },
+    {
+      "name": "Rib Tips",
+      "category": "Ribs",
+      "calories": null,
+      "price": "$14.00"
+    },
+    {
+      "name": "Sliced Turkey",
+      "category": "Sliced Meat",
+      "calories": null,
+      "price": "$18.50"
+    },
+    {
+      "name": "Sliced Pork",
+      "category": "Sliced Meat",
+      "calories": null,
+      "price": "$18.50"
+    },
+    {
+      "name": "Sliced Ham",
+      "category": "Sliced Meat",
+      "calories": null,
+      "price": "$18.50"
+    },
+    {
+      "name": "Sliced Turkey - Half Pound",
+      "category": "Sliced Meat",
+      "calories": null,
+      "price": "$10.75"
+    },
+    {
+      "name": "Sliced Pork - Half Pound",
+      "category": "Sliced Meat",
+      "calories": null,
+      "price": "$10.75"
+    },
+    {
+      "name": "Sliced Ham - Half Pound",
+      "category": "Sliced Meat",
+      "calories": null,
+      "price": "$10.75"
+    },
+    {
+      "name": "Half & Half",
+      "category": "Sliced Meat",
+      "calories": null,
+      "price": "$14.50"
+    },
+    {
+      "name": "Mix Plate With Any Side",
+      "category": "Sliced Meat",
+      "calories": null,
+      "price": "$24.99"
+    },
+    {
+      "name": "Sausage",
+      "category": "Meats",
+      "calories": null,
+      "price": "$13.00"
+    },
+    {
+      "name": "Burnt End Pork",
+      "category": "Meats",
+      "calories": null,
+      "price": "$13.50"
+    },
+    {
+      "name": "Beef",
+      "category": "Meats",
+      "calories": null,
+      "price": "$17.00"
+    },
+    {
+      "name": "Half & Half",
+      "category": "Meats",
+      "calories": null,
+      "price": "$14.50"
+    }
+  ]
+}
