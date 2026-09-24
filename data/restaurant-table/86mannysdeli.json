@@ -1,0 +1,1577 @@
+{
+  "title": "Manny's Cafeteria Menu With Price List",
+  "items": [
+    {
+      "name": "Soft Salami (1 Lb)",
+      "category": "Manny's Deli Products (Bulk)",
+      "calories": null,
+      "price": "$14.00"
+    },
+    {
+      "name": "Muenster Cheese (1 Lb)",
+      "category": "Manny's Deli Products (Bulk)",
+      "calories": null,
+      "price": "$14.00"
+    },
+    {
+      "name": "Pastrami Nova Lox (1 Lb)",
+      "category": "Manny's Deli Products (Bulk)",
+      "calories": null,
+      "price": "$36.00"
+    },
+    {
+      "name": "Hard Salami (1 Lb)",
+      "category": "Manny's Deli Products (Bulk)",
+      "calories": null,
+      "price": "$26.00"
+    },
+    {
+      "name": "All White Albacore Tuna Salad (1 Lb)",
+      "category": "Manny's Deli Products (Bulk)",
+      "calories": null,
+      "price": "$25.00"
+    },
+    {
+      "name": "Cheddar (1 Lb)",
+      "category": "Manny's Deli Products (Bulk)",
+      "calories": null,
+      "price": "$15.00"
+    },
+    {
+      "name": "Manny's Horseradish Mustard",
+      "category": "Manny's Deli Products (Bulk)",
+      "calories": null,
+      "price": "$4.95"
+    },
+    {
+      "name": "Lean Pastrami (1 Lb)",
+      "category": "Manny's Deli Products (Bulk)",
+      "calories": null,
+      "price": "$32.00"
+    },
+    {
+      "name": "Smoked Chunk White Fish (1 Lb)",
+      "category": "Manny's Deli Products (Bulk)",
+      "calories": null,
+      "price": "$18.00"
+    },
+    {
+      "name": "Coleslaw (1 Lb)",
+      "category": "Manny's Deli Products (Bulk)",
+      "calories": null,
+      "price": "$12.00"
+    },
+    {
+      "name": "Kippered Salmon (1 Lb)",
+      "category": "Manny's Deli Products (Bulk)",
+      "calories": null,
+      "price": "$45.00"
+    },
+    {
+      "name": "Chopped Liver (1 Lb)",
+      "category": "Manny's Deli Products (Bulk)",
+      "calories": null,
+      "price": "$16.00"
+    },
+    {
+      "name": "Pepper Jack Cheese (1 Lb)",
+      "category": "Manny's Deli Products (Bulk)",
+      "calories": null,
+      "price": "$14.00"
+    },
+    {
+      "name": "Herring In Wine Sauce (1 Lb)",
+      "category": "Manny's Deli Products (Bulk)",
+      "calories": null,
+      "price": "$21.00"
+    },
+    {
+      "name": "Egg Salad (1 Lb)",
+      "category": "Manny's Deli Products (Bulk)",
+      "calories": null,
+      "price": "$14.00"
+    },
+    {
+      "name": "Potato Salad (1 Lb)",
+      "category": "Manny's Deli Products (Bulk)",
+      "calories": null,
+      "price": "$12.00"
+    },
+    {
+      "name": "Salty Lox (1 Lb)",
+      "category": "Manny's Deli Products (Bulk)",
+      "calories": null,
+      "price": "$45.00"
+    },
+    {
+      "name": "Artichoke Bowtie Pasta (1 Lb)",
+      "category": "Manny's Deli Products (Bulk)",
+      "calories": null,
+      "price": "$17.00"
+    },
+    {
+      "name": "Israeli Couscous Salad (1 Lb)",
+      "category": "Manny's Deli Products (Bulk)",
+      "calories": null,
+      "price": "$16.00"
+    },
+    {
+      "name": "Lentil Salad (1 Lb)",
+      "category": "Manny's Deli Products (Bulk)",
+      "calories": null,
+      "price": "$16.00"
+    },
+    {
+      "name": "Chicken Salad (1 Lb)",
+      "category": "Manny's Deli Products (Bulk)",
+      "calories": null,
+      "price": "$19.00"
+    },
+    {
+      "name": "Centre Cut Nova Lox (1 Lb)",
+      "category": "Manny's Deli Products (Bulk)",
+      "calories": null,
+      "price": "$43.00"
+    },
+    {
+      "name": "Cucumber And Onion Salad (1 Lb)",
+      "category": "Manny's Deli Products (Bulk)",
+      "calories": null,
+      "price": "$12.00"
+    },
+    {
+      "name": "Greek Salad (1 Lb)",
+      "category": "Manny's Deli Products (Bulk)",
+      "calories": null,
+      "price": "$16.00"
+    },
+    {
+      "name": "Mushroom Barley Salad (1 Lb)",
+      "category": "Manny's Deli Products (Bulk)",
+      "calories": null,
+      "price": "$16.00"
+    },
+    {
+      "name": "Corned Beef (1 Lb)",
+      "category": "Manny's Deli Products (Bulk)",
+      "calories": null,
+      "price": "$32.00"
+    },
+    {
+      "name": "Peppered Sable (1 Lb)",
+      "category": "Manny's Deli Products (Bulk)",
+      "calories": null,
+      "price": "$40.00"
+    },
+    {
+      "name": "Roasted Turkey (1 Lb)",
+      "category": "Manny's Deli Products (Bulk)",
+      "calories": null,
+      "price": "$22.00"
+    },
+    {
+      "name": "Hand Sliced Roast Beef (1 Lb)",
+      "category": "Manny's Deli Products (Bulk)",
+      "calories": null,
+      "price": "$32.00"
+    },
+    {
+      "name": "Herring In Cream Sauce (1 Lb)",
+      "category": "Manny's Deli Products (Bulk)",
+      "calories": null,
+      "price": "$21.00"
+    },
+    {
+      "name": "Deli Roast Beef (1 Lb)",
+      "category": "Manny's Deli Products (Bulk)",
+      "calories": null,
+      "price": "$26.00"
+    },
+    {
+      "name": "Provolone Cheese (1 Lb)",
+      "category": "Manny's Deli Products (Bulk)",
+      "calories": null,
+      "price": "$15.00"
+    },
+    {
+      "name": "Swiss Cheese (1 Lb)",
+      "category": "Manny's Deli Products (Bulk)",
+      "calories": null,
+      "price": "$16.00"
+    },
+    {
+      "name": "Kosher Dill Pickles (1 Lb)",
+      "category": "Manny's Deli Products (Bulk)",
+      "calories": null,
+      "price": "$7.95"
+    },
+    {
+      "name": "Smoked Sable (1 Lb)",
+      "category": "Manny's Deli Products (Bulk)",
+      "calories": null,
+      "price": "$40.00"
+    },
+    {
+      "name": "Egg White Salad (1 Lb)",
+      "category": "Manny's Deli Products (Bulk)",
+      "calories": null,
+      "price": "$22.00"
+    },
+    {
+      "name": "Navel Pastrami (1 Lb)",
+      "category": "Manny's Deli Products (Bulk)",
+      "calories": null,
+      "price": "$27.00"
+    },
+    {
+      "name": "Beef Pastrami Sandwich",
+      "category": "Classic Sandwiches",
+      "calories": null,
+      "price": "$22.95"
+    },
+    {
+      "name": "Lox & Cream Cheese Sandwich",
+      "category": "Classic Sandwiches",
+      "calories": null,
+      "price": "$19.95"
+    },
+    {
+      "name": "Beef Brisket Sandwich",
+      "category": "Classic Sandwiches",
+      "calories": null,
+      "price": "$22.95"
+    },
+    {
+      "name": "Classic Sandwich Meal Deal Special",
+      "category": "Classic Sandwiches",
+      "calories": null,
+      "price": "$20.95"
+    },
+    {
+      "name": "Chicken Salad Sandwich",
+      "category": "Classic Sandwiches",
+      "calories": null,
+      "price": "$12.95"
+    },
+    {
+      "name": "Ham & Cheese Sandwich",
+      "category": "Classic Sandwiches",
+      "calories": null,
+      "price": "$11.95"
+    },
+    {
+      "name": "Hard Salami Sandwich",
+      "category": "Classic Sandwiches",
+      "calories": null,
+      "price": "$15.95"
+    },
+    {
+      "name": "Chopped Liver Sandwich",
+      "category": "Classic Sandwiches",
+      "calories": null,
+      "price": "$11.95"
+    },
+    {
+      "name": "CB And Pastrami Combo Sandwich",
+      "category": "Classic Sandwiches",
+      "calories": null,
+      "price": "$22.95"
+    },
+    {
+      "name": "Grilled Chicken Breast Sandwich",
+      "category": "Classic Sandwiches",
+      "calories": null,
+      "price": "$11.95"
+    },
+    {
+      "name": "Egg Salad Sandwich",
+      "category": "Classic Sandwiches",
+      "calories": null,
+      "price": "$12.95"
+    },
+    {
+      "name": "Corned Beef Sandwich",
+      "category": "Classic Sandwiches",
+      "calories": null,
+      "price": "$22.95"
+    },
+    {
+      "name": "Hot Turkey Sandwich",
+      "category": "Classic Sandwiches",
+      "calories": null,
+      "price": "$18.95"
+    },
+    {
+      "name": "Veggie Wheat Sandwich",
+      "category": "Classic Sandwiches",
+      "calories": null,
+      "price": "$8.95"
+    },
+    {
+      "name": "Tuna Salad Sandwich",
+      "category": "Classic Sandwiches",
+      "calories": null,
+      "price": "$14.95"
+    },
+    {
+      "name": "Hand Sliced Turkey Sandwich",
+      "category": "Classic Sandwiches",
+      "calories": null,
+      "price": "$18.95"
+    },
+    {
+      "name": "Meatloaf Sandwich",
+      "category": "Classic Sandwiches",
+      "calories": null,
+      "price": "$15.95"
+    },
+    {
+      "name": "Grilled Cheese Sandwich",
+      "category": "Classic Sandwiches",
+      "calories": null,
+      "price": "$8.95"
+    },
+    {
+      "name": "Veggie Burger",
+      "category": "Classic Sandwiches",
+      "calories": null,
+      "price": "$13.95"
+    },
+    {
+      "name": "Turkey Pastrami Sandwich",
+      "category": "Classic Sandwiches",
+      "calories": null,
+      "price": "$20.95"
+    },
+    {
+      "name": "Liver & Onions Sandwich",
+      "category": "Classic Sandwiches",
+      "calories": null,
+      "price": "$11.95"
+    },
+    {
+      "name": "Salami Sandwich",
+      "category": "Classic Sandwiches",
+      "calories": null,
+      "price": "$13.95"
+    },
+    {
+      "name": "BLT Sandwich",
+      "category": "Classic Sandwiches",
+      "calories": null,
+      "price": "$7.95"
+    },
+    {
+      "name": "Wheat Bagel (Half Dozen)",
+      "category": "Manny's Bulk Bagels and Cream Cheese",
+      "calories": null,
+      "price": "$8.00"
+    },
+    {
+      "name": "Cream Cheese (1 Pound)",
+      "category": "Manny's Bulk Bagels and Cream Cheese",
+      "calories": null,
+      "price": "$13.00"
+    },
+    {
+      "name": "Poppy Bagel (Half Dozen)",
+      "category": "Manny's Bulk Bagels and Cream Cheese",
+      "calories": null,
+      "price": "$8.00"
+    },
+    {
+      "name": "Everything Bagel (Half Dozen)",
+      "category": "Manny's Bulk Bagels and Cream Cheese",
+      "calories": null,
+      "price": "$8.00"
+    },
+    {
+      "name": "Garlic Bagel (Half Dozen)",
+      "category": "Manny's Bulk Bagels and Cream Cheese",
+      "calories": null,
+      "price": "$8.00"
+    },
+    {
+      "name": "Cinnamon Raisin Bagel (Half Dozen)",
+      "category": "Manny's Bulk Bagels and Cream Cheese",
+      "calories": null,
+      "price": "$8.00"
+    },
+    {
+      "name": "Loaf Rye",
+      "category": "Manny's Bulk Bagels and Cream Cheese",
+      "calories": null,
+      "price": "$10.00"
+    },
+    {
+      "name": "Cream Cheese (Half Pound)",
+      "category": "Manny's Bulk Bagels and Cream Cheese",
+      "calories": null,
+      "price": "$4.50"
+    },
+    {
+      "name": "Sesame Bagel (Half Dozen)",
+      "category": "Manny's Bulk Bagels and Cream Cheese",
+      "calories": null,
+      "price": "$8.00"
+    },
+    {
+      "name": "Onion Bagel (Half Dozen)",
+      "category": "Manny's Bulk Bagels and Cream Cheese",
+      "calories": null,
+      "price": "$8.00"
+    },
+    {
+      "name": "Bagel (Regular) (Half Dozen)",
+      "category": "Manny's Bulk Bagels and Cream Cheese",
+      "calories": null,
+      "price": "$8.00"
+    },
+    {
+      "name": "Egg Bagel (Half Dozen)",
+      "category": "Manny's Bulk Bagels and Cream Cheese",
+      "calories": null,
+      "price": "$8.00"
+    },
+    {
+      "name": "Decaf Hot Tea",
+      "category": "Drinks",
+      "calories": null,
+      "price": "$4.00"
+    },
+    {
+      "name": "Grapefruit Juice",
+      "category": "Drinks",
+      "calories": null,
+      "price": "$3.95"
+    },
+    {
+      "name": "Life Water",
+      "category": "Drinks",
+      "calories": null,
+      "price": "$3.95"
+    },
+    {
+      "name": "Soda",
+      "category": "Drinks",
+      "calories": null,
+      "price": "$4.00"
+    },
+    {
+      "name": "Fresh Squeezed Orange Juice",
+      "category": "Drinks",
+      "calories": null,
+      "price": "$5.95"
+    },
+    {
+      "name": "Milk",
+      "category": "Drinks",
+      "calories": null,
+      "price": "$2.95"
+    },
+    {
+      "name": "Hot Chocolate",
+      "category": "Drinks",
+      "calories": null,
+      "price": "$4.95"
+    },
+    {
+      "name": "Decaf Coffee",
+      "category": "Drinks",
+      "calories": null,
+      "price": "$4.00"
+    },
+    {
+      "name": "Tropicana Juices",
+      "category": "Drinks",
+      "calories": null,
+      "price": "$3.95"
+    },
+    {
+      "name": "Aquafina Water",
+      "category": "Drinks",
+      "calories": null,
+      "price": "$3.50"
+    },
+    {
+      "name": "Dr. Brown's Soda",
+      "category": "Drinks",
+      "calories": null,
+      "price": "$4.00"
+    },
+    {
+      "name": "Pepsi 12oz Glass",
+      "category": "Drinks",
+      "calories": null,
+      "price": "$4.00"
+    },
+    {
+      "name": "Regular Coffee",
+      "category": "Drinks",
+      "calories": null,
+      "price": "$4.00"
+    },
+    {
+      "name": "Pellegrino Water",
+      "category": "Drinks",
+      "calories": null,
+      "price": "$3.95"
+    },
+    {
+      "name": "Orange Crush 12oz Glass",
+      "category": "Drinks",
+      "calories": null,
+      "price": "$4.00"
+    },
+    {
+      "name": "Cranberry Juice",
+      "category": "Drinks",
+      "calories": null,
+      "price": "$3.95"
+    },
+    {
+      "name": "Hot Tea",
+      "category": "Drinks",
+      "calories": null,
+      "price": "$4.00"
+    },
+    {
+      "name": "Kreplach Soup (Bowl) (Regular)",
+      "category": "Soups",
+      "calories": null,
+      "price": "$4.95"
+    },
+    {
+      "name": "Kreplach Soup (Quart) (Large)",
+      "category": "Soups",
+      "calories": null,
+      "price": "$10.95"
+    },
+    {
+      "name": "Rice Soup (Quart) (Large)",
+      "category": "Soups",
+      "calories": null,
+      "price": "$10.95"
+    },
+    {
+      "name": "Turkey Chili Soup (Bowl) (Regular)",
+      "category": "Soups",
+      "calories": null,
+      "price": "$6.95"
+    },
+    {
+      "name": "Rice Soup (Bowl) (Regular)",
+      "category": "Soups",
+      "calories": null,
+      "price": "$4.95"
+    },
+    {
+      "name": "Turkey Chili (Bowl) (Large)",
+      "category": "Soups",
+      "calories": null,
+      "price": "$13.95"
+    },
+    {
+      "name": "Noodle Soup (Bowl) (Regular)",
+      "category": "Soups",
+      "calories": null,
+      "price": "$4.95"
+    },
+    {
+      "name": "Turkey Chili Soup (Quart) (Large)",
+      "category": "Soups",
+      "calories": null,
+      "price": "$13.95"
+    },
+    {
+      "name": "Soup (Large) (Quart) (Pick 2)",
+      "category": "Soups",
+      "calories": null,
+      "price": "$13.95"
+    },
+    {
+      "name": "Combo Soup (Bowl) (Regular) (Pick 2)",
+      "category": "Soups",
+      "calories": null,
+      "price": "$6.95"
+    },
+    {
+      "name": "Noodle Soup (Quart) (Large)",
+      "category": "Soups",
+      "calories": null,
+      "price": "$10.95"
+    },
+    {
+      "name": "Matzo Ball Soup (Quart) (Large)",
+      "category": "Soups",
+      "calories": null,
+      "price": "$10.95"
+    },
+    {
+      "name": "Matzo Ball Soup (Bowl) (Regular)",
+      "category": "Soups",
+      "calories": null,
+      "price": "$4.95"
+    },
+    {
+      "name": "Carrot Cake Slice",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$5.95"
+    },
+    {
+      "name": "Chocolate Cake Slice",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$5.95"
+    },
+    {
+      "name": "Blueberry Pie Slice",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$5.95"
+    },
+    {
+      "name": "Sweet Potato Pie Slice",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$5.95"
+    },
+    {
+      "name": "Eli's Cheesecake Slice Plain",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$6.50"
+    },
+    {
+      "name": "Apple Pie Slice",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$5.95"
+    },
+    {
+      "name": "Cherry Pie Slice",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$5.95"
+    },
+    {
+      "name": "Red Velvet Cake Slice",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$5.95"
+    },
+    {
+      "name": "German Chocolate Cake Slice",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$5.95"
+    },
+    {
+      "name": "Eli's Cheesecake Slice Choco Chip",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$6.50"
+    },
+    {
+      "name": "Apple Pie",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$6.50"
+    },
+    {
+      "name": "Black & White Cookie",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$4.25"
+    },
+    {
+      "name": "Jello",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$3.50"
+    },
+    {
+      "name": "Cherry Pie",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$6.50"
+    },
+    {
+      "name": "Chocolate Chip Cookie",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$3.95"
+    },
+    {
+      "name": "Eli's Cheesecake - Plain",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$6.95"
+    },
+    {
+      "name": "Caramel Cake",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$6.95"
+    },
+    {
+      "name": "Vanilla Pudding",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$3.95"
+    },
+    {
+      "name": "Pecan Pie",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$6.50"
+    },
+    {
+      "name": "Rice Pudding",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$4.95"
+    },
+    {
+      "name": "Bread Pudding",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$4.95"
+    },
+    {
+      "name": "6 Sufganiyah Assorted",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$29.00"
+    },
+    {
+      "name": "Chocolate Cake",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$6.50"
+    },
+    {
+      "name": "Chocolate Pudding",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$3.95"
+    },
+    {
+      "name": "Red Velvet Cake",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$6.50"
+    },
+    {
+      "name": "Sweet Potato Pie",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$6.50"
+    },
+    {
+      "name": "Oatmeal Raisin Cookie",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$3.95"
+    },
+    {
+      "name": "Blueberry Pie",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$6.50"
+    },
+    {
+      "name": "German Chocolate Cake",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$6.50"
+    },
+    {
+      "name": "Smile Cookie",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$4.25"
+    },
+    {
+      "name": "Fresh Fruit",
+      "category": "Breakfast Sides",
+      "calories": null,
+      "price": "$4.95"
+    },
+    {
+      "name": "1 Egg",
+      "category": "Breakfast Sides",
+      "calories": null,
+      "price": "$3.95"
+    },
+    {
+      "name": "Bacon",
+      "category": "Breakfast Sides",
+      "calories": null,
+      "price": "$4.95"
+    },
+    {
+      "name": "Bagel And Cream Cheese",
+      "category": "Breakfast Sides",
+      "calories": null,
+      "price": "$4.95"
+    },
+    {
+      "name": "Veggies",
+      "category": "Breakfast Sides",
+      "calories": null,
+      "price": "$2.25"
+    },
+    {
+      "name": "Sausage Links",
+      "category": "Breakfast Sides",
+      "calories": null,
+      "price": "$5.95"
+    },
+    {
+      "name": "Toast",
+      "category": "Breakfast Sides",
+      "calories": null,
+      "price": "$2.95"
+    },
+    {
+      "name": "Cream Cheese",
+      "category": "Breakfast Sides",
+      "calories": null,
+      "price": "$2.25"
+    },
+    {
+      "name": "Ham",
+      "category": "Breakfast Sides",
+      "calories": null,
+      "price": "$4.95"
+    },
+    {
+      "name": "Bagel",
+      "category": "Breakfast Sides",
+      "calories": null,
+      "price": "$2.95"
+    },
+    {
+      "name": "2 Eggs",
+      "category": "Breakfast Sides",
+      "calories": null,
+      "price": "$4.95"
+    },
+    {
+      "name": "Turkey Bacon",
+      "category": "Breakfast Sides",
+      "calories": null,
+      "price": "$4.95"
+    },
+    {
+      "name": "Beef Pastrami",
+      "category": "Breakfast Sides",
+      "calories": null,
+      "price": "$4.95"
+    },
+    {
+      "name": "Hash Browns",
+      "category": "Breakfast Sides",
+      "calories": null,
+      "price": "$3.95"
+    },
+    {
+      "name": "Manny's Chopped Salad",
+      "category": "Salads",
+      "calories": null,
+      "price": "$15.95"
+    },
+    {
+      "name": "Beet & Goat Cheese Salad",
+      "category": "Salads",
+      "calories": null,
+      "price": "$15.95"
+    },
+    {
+      "name": "Dinner Salad",
+      "category": "Salads",
+      "calories": null,
+      "price": "$5.50"
+    },
+    {
+      "name": "Egg Salad Plate",
+      "category": "Salads",
+      "calories": null,
+      "price": "$14.95"
+    },
+    {
+      "name": "Michigan Avenue Salad",
+      "category": "Salads",
+      "calories": null,
+      "price": "$15.95"
+    },
+    {
+      "name": "Create Your Own Salad",
+      "category": "Salads",
+      "calories": null,
+      "price": "$17.95"
+    },
+    {
+      "name": "Chicken Salad Plate",
+      "category": "Salads",
+      "calories": null,
+      "price": "$14.95"
+    },
+    {
+      "name": "Reuben Salad",
+      "category": "Salads",
+      "calories": null,
+      "price": "$18.95"
+    },
+    {
+      "name": "The Julienne Salad",
+      "category": "Salads",
+      "calories": null,
+      "price": "$15.95"
+    },
+    {
+      "name": "Chicken Caesar Salad",
+      "category": "Salads",
+      "calories": null,
+      "price": "$15.95"
+    },
+    {
+      "name": "Fresh Fruit Bowl",
+      "category": "Salads",
+      "calories": null,
+      "price": "$5.50"
+    },
+    {
+      "name": "Greek Salad",
+      "category": "Salads",
+      "calories": null,
+      "price": "$13.95"
+    },
+    {
+      "name": "Tuna Salad Plate",
+      "category": "Salads",
+      "calories": null,
+      "price": "$16.95"
+    },
+    {
+      "name": "Pickles (2 Spears)",
+      "category": "Sides",
+      "calories": null,
+      "price": "$0.65"
+    },
+    {
+      "name": "Pasta Salad",
+      "category": "Sides",
+      "calories": null,
+      "price": "$2.95"
+    },
+    {
+      "name": "Cucumber Salad",
+      "category": "Sides",
+      "calories": null,
+      "price": "$2.95"
+    },
+    {
+      "name": "Chive Cream Cheese",
+      "category": "Sides",
+      "calories": null,
+      "price": "$1.50"
+    },
+    {
+      "name": "Beet Salad",
+      "category": "Sides",
+      "calories": null,
+      "price": "$2.95"
+    },
+    {
+      "name": "Potato Pancake",
+      "category": "Sides",
+      "calories": null,
+      "price": "$3.50"
+    },
+    {
+      "name": "Plain Cream Cheese",
+      "category": "Sides",
+      "calories": null,
+      "price": "$1.50"
+    },
+    {
+      "name": "1000 Island Dressing",
+      "category": "Sides",
+      "calories": null,
+      "price": "$0.95"
+    },
+    {
+      "name": "Apple Sauce",
+      "category": "Sides",
+      "calories": null,
+      "price": "$0.95"
+    },
+    {
+      "name": "Sport Peppers",
+      "category": "Sides",
+      "calories": null,
+      "price": "$0.89"
+    },
+    {
+      "name": "Potato Salad",
+      "category": "Sides",
+      "calories": null,
+      "price": "$2.95"
+    },
+    {
+      "name": "Manny's Potato Pancake Mix",
+      "category": "Sides",
+      "calories": null,
+      "price": "$4.95"
+    },
+    {
+      "name": "Giardiniera",
+      "category": "Sides",
+      "calories": null,
+      "price": "$0.89"
+    },
+    {
+      "name": "Sour Cream",
+      "category": "Sides",
+      "calories": null,
+      "price": "$0.95"
+    },
+    {
+      "name": "Noodle Kugel",
+      "category": "Sides",
+      "calories": null,
+      "price": "$5.50"
+    },
+    {
+      "name": "Coleslaw",
+      "category": "Sides",
+      "calories": null,
+      "price": "$2.95"
+    },
+    {
+      "name": "Knish",
+      "category": "Sides",
+      "calories": null,
+      "price": "$6.95"
+    },
+    {
+      "name": "Veggie Reuben Sandwich",
+      "category": "Signature Sandwiches",
+      "calories": null,
+      "price": "$14.95"
+    },
+    {
+      "name": "What Am I And Chopped Liver Sandwich",
+      "category": "Signature Sandwiches",
+      "calories": null,
+      "price": "$25.95"
+    },
+    {
+      "name": "Reuben Sandwich",
+      "category": "Signature Sandwiches",
+      "calories": null,
+      "price": "$25.95"
+    },
+    {
+      "name": "The Chazzer Sandwich",
+      "category": "Signature Sandwiches",
+      "calories": null,
+      "price": "$25.95"
+    },
+    {
+      "name": "The 4 Kinder Sandwich",
+      "category": "Signature Sandwiches",
+      "calories": null,
+      "price": "$29.95"
+    },
+    {
+      "name": "Manny's Original Sandwich",
+      "category": "Signature Sandwiches",
+      "calories": null,
+      "price": "$29.95"
+    },
+    {
+      "name": "Stuffed Green Pepper",
+      "category": "Daily Specials",
+      "calories": null,
+      "price": "$16.95"
+    },
+    {
+      "name": "Grilled Chicken & Linguine",
+      "category": "Daily Specials",
+      "calories": null,
+      "price": "$14.95"
+    },
+    {
+      "name": "Spaghetti & Meatballs",
+      "category": "Daily Specials",
+      "calories": null,
+      "price": "$14.95"
+    },
+    {
+      "name": "BBQ Beef Dinner",
+      "category": "Daily Specials",
+      "calories": null,
+      "price": "$25.95"
+    },
+    {
+      "name": "Stuffed Cabbage",
+      "category": "Daily Specials",
+      "calories": null,
+      "price": "$16.95"
+    },
+    {
+      "name": "Fried Alaskan Whitefish",
+      "category": "Daily Specials",
+      "calories": null,
+      "price": "$16.95"
+    },
+    {
+      "name": "Corned Beef Hash",
+      "category": "Daily Specials",
+      "calories": null,
+      "price": "$11.95"
+    },
+    {
+      "name": "Chicken Breast & Rice",
+      "category": "Daily Specials",
+      "calories": null,
+      "price": "$14.95"
+    },
+    {
+      "name": "Ox Tail Stew",
+      "category": "Daily Specials",
+      "calories": null,
+      "price": "$24.95"
+    },
+    {
+      "name": "Turkey Meatloaf",
+      "category": "Daily Specials",
+      "calories": null,
+      "price": "$15.95"
+    },
+    {
+      "name": "Salmon Patties",
+      "category": "Daily Specials",
+      "calories": null,
+      "price": "$16.95"
+    },
+    {
+      "name": "Turkey Drumstick",
+      "category": "Daily Specials",
+      "calories": null,
+      "price": "$15.95"
+    },
+    {
+      "name": "Lamb Shank",
+      "category": "Daily Specials",
+      "calories": null,
+      "price": "$19.95"
+    },
+    {
+      "name": "Pepper Steak",
+      "category": "Daily Specials",
+      "calories": null,
+      "price": "$18.95"
+    },
+    {
+      "name": "San Pellegrino",
+      "category": "Cold Drinks",
+      "calories": null,
+      "price": "$4.00"
+    },
+    {
+      "name": "Lifewater",
+      "category": "Cold Drinks",
+      "calories": null,
+      "price": "$4.00"
+    },
+    {
+      "name": "Green River",
+      "category": "Cold Drinks",
+      "calories": null,
+      "price": "$4.00"
+    },
+    {
+      "name": "Aquafina",
+      "category": "Cold Drinks",
+      "calories": null,
+      "price": "$4.00"
+    },
+    {
+      "name": "Chocolate Milk",
+      "category": "Cold Drinks",
+      "calories": null,
+      "price": "$2.95"
+    },
+    {
+      "name": "Filberts Root Beer",
+      "category": "Cold Drinks",
+      "calories": null,
+      "price": "$4.00"
+    },
+    {
+      "name": "Egg Breakfast",
+      "category": "Breakfast",
+      "calories": null,
+      "price": "$10.95"
+    },
+    {
+      "name": "Babka French Toast",
+      "category": "Breakfast",
+      "calories": null,
+      "price": "$15.95"
+    },
+    {
+      "name": "Steel Cut Oatmeal",
+      "category": "Breakfast",
+      "calories": null,
+      "price": "$7.95"
+    },
+    {
+      "name": "Classic Breakfast",
+      "category": "Breakfast",
+      "calories": null,
+      "price": "$15.95"
+    },
+    {
+      "name": "Breakfast Pancakes",
+      "category": "Breakfast",
+      "calories": null,
+      "price": "$10.95"
+    },
+    {
+      "name": "Fried Matzo Brei",
+      "category": "Breakfast",
+      "calories": null,
+      "price": "$14.95"
+    },
+    {
+      "name": "Corned Beef Hash & Eggs",
+      "category": "Breakfast",
+      "calories": null,
+      "price": "$15.95"
+    },
+    {
+      "name": "Lox Plate",
+      "category": "Breakfast",
+      "calories": null,
+      "price": "$17.95"
+    },
+    {
+      "name": "Create Your Own Omelette",
+      "category": "Breakfast",
+      "calories": null,
+      "price": "$18.95"
+    },
+    {
+      "name": "Breakfast Reuben",
+      "category": "Breakfast",
+      "calories": null,
+      "price": "$20.95"
+    },
+    {
+      "name": "Thick Challah French Toast",
+      "category": "Breakfast",
+      "calories": null,
+      "price": "$13.95"
+    },
+    {
+      "name": "Meatloaf",
+      "category": "Everyday Hot Entrées",
+      "calories": null,
+      "price": "$16.95"
+    },
+    {
+      "name": "Corned Beef Dinner",
+      "category": "Everyday Hot Entrées",
+      "calories": null,
+      "price": "$26.95"
+    },
+    {
+      "name": "Beef Stew",
+      "category": "Everyday Hot Entrées",
+      "calories": null,
+      "price": "$21.95"
+    },
+    {
+      "name": "Spaghetti (Large)",
+      "category": "Everyday Hot Entrées",
+      "calories": null,
+      "price": "$11.95"
+    },
+    {
+      "name": "Mac And Cheese (Small)",
+      "category": "Everyday Hot Entrées",
+      "calories": null,
+      "price": "$6.50"
+    },
+    {
+      "name": "Liver And Onions",
+      "category": "Everyday Hot Entrées",
+      "calories": null,
+      "price": "$14.95"
+    },
+    {
+      "name": "Baked Whitefish",
+      "category": "Everyday Hot Entrées",
+      "calories": null,
+      "price": "$19.95"
+    },
+    {
+      "name": "Short Ribs",
+      "category": "Everyday Hot Entrées",
+      "calories": null,
+      "price": "$24.95"
+    },
+    {
+      "name": "Spaghetti (Small)",
+      "category": "Everyday Hot Entrées",
+      "calories": null,
+      "price": "$6.50"
+    },
+    {
+      "name": "Beef Brisket",
+      "category": "Everyday Hot Entrées",
+      "calories": null,
+      "price": "$26.95"
+    },
+    {
+      "name": "Mac And Cheese (Large)",
+      "category": "Everyday Hot Entrées",
+      "calories": null,
+      "price": "$11.95"
+    },
+    {
+      "name": "Baked Half Chicken",
+      "category": "Everyday Hot Entrées",
+      "calories": null,
+      "price": "$15.95"
+    },
+    {
+      "name": "Turkey Chili (Small)",
+      "category": "Everyday Hot Entrées",
+      "calories": null,
+      "price": "$6.95"
+    },
+    {
+      "name": "Roasted (1/2) Chicken Dinner",
+      "category": "Everyday Hot Entrées",
+      "calories": null,
+      "price": "$12.95"
+    },
+    {
+      "name": "Spaghetti And Meat Sauce",
+      "category": "Everyday Hot Entrées",
+      "calories": null,
+      "price": "$5.50"
+    },
+    {
+      "name": "Mac And Cheese (Large) (Vegetarian)",
+      "category": "Everyday Hot Entrées",
+      "calories": null,
+      "price": "$9.95"
+    },
+    {
+      "name": "Mac And Cheese (Small) (Vegetarian)",
+      "category": "Everyday Hot Entrées",
+      "calories": null,
+      "price": "$5.50"
+    },
+    {
+      "name": "Matzo Ball Soup (Quart)",
+      "category": "Soups",
+      "calories": null,
+      "price": "$12.95"
+    },
+    {
+      "name": "Kreplach Soup (Bowl)",
+      "category": "Soups",
+      "calories": null,
+      "price": "$6.50"
+    },
+    {
+      "name": "Combo Bowl (Quart)",
+      "category": "Soups",
+      "calories": null,
+      "price": "$13.95"
+    },
+    {
+      "name": "Kreplach Soup (Quart)",
+      "category": "Soups",
+      "calories": null,
+      "price": "$12.95"
+    },
+    {
+      "name": "Soup Of The Day (Quart)",
+      "category": "Soups",
+      "calories": null,
+      "price": "$12.95"
+    },
+    {
+      "name": "Sweet & Sour Cabbage Soup (Quart)",
+      "category": "Soups",
+      "calories": null,
+      "price": "$12.95"
+    },
+    {
+      "name": "Mish Mosh Soup (Large Only)",
+      "category": "Soups",
+      "calories": null,
+      "price": "$14.95"
+    },
+    {
+      "name": "Sweet & Sour Cabbage Soup (Bowl)",
+      "category": "Soups",
+      "calories": null,
+      "price": "$6.50"
+    },
+    {
+      "name": "Rice Soup (Bowl)",
+      "category": "Soups",
+      "calories": null,
+      "price": "$6.50"
+    },
+    {
+      "name": "Noodle Soup (Bowl)",
+      "category": "Soups",
+      "calories": null,
+      "price": "$6.50"
+    },
+    {
+      "name": "Combo Bowl (Bowl)",
+      "category": "Soups",
+      "calories": null,
+      "price": "$6.95"
+    },
+    {
+      "name": "Noodle Soup (Quart)",
+      "category": "Soups",
+      "calories": null,
+      "price": "$12.95"
+    },
+    {
+      "name": "Soup Of The Day (Bowl)",
+      "category": "Soups",
+      "calories": null,
+      "price": "$6.50"
+    },
+    {
+      "name": "Matzo Ball Soup (Bowl)",
+      "category": "Soups",
+      "calories": null,
+      "price": "$6.50"
+    },
+    {
+      "name": "Rice Soup (Quart)",
+      "category": "Soups",
+      "calories": null,
+      "price": "$12.95"
+    },
+    {
+      "name": "My Four Kinder",
+      "category": "Signature Sandwiches",
+      "calories": null,
+      "price": "$24.95"
+    },
+    {
+      "name": "The Chazzer",
+      "category": "Signature Sandwiches",
+      "calories": null,
+      "price": "$22.95"
+    },
+    {
+      "name": "Veggie Reuben Sandwich",
+      "category": "Signature Sandwiches",
+      "calories": null,
+      "price": "$14.95"
+    },
+    {
+      "name": "What Am I, Chopped Liver?",
+      "category": "Signature Sandwiches",
+      "calories": null,
+      "price": "$23.95"
+    },
+    {
+      "name": "Vegetable Soup (Regular) (Bowl)",
+      "category": "Friday Features",
+      "calories": null,
+      "price": "$4.95"
+    },
+    {
+      "name": "Vegetable Soup (Large) (Quart)",
+      "category": "Friday Features",
+      "calories": null,
+      "price": "$9.95"
+    },
+    {
+      "name": "Chopped Salad",
+      "category": "Salads",
+      "calories": null,
+      "price": "$14.95"
+    },
+    {
+      "name": "Tuna Plate",
+      "category": "Salads",
+      "calories": null,
+      "price": "$15.95"
+    },
+    {
+      "name": "Dinner Salad (Vegetarian)",
+      "category": "Salads",
+      "calories": null,
+      "price": "$4.95"
+    },
+    {
+      "name": "Greek Salad (Vegetarian)",
+      "category": "Salads",
+      "calories": null,
+      "price": "$13.95"
+    },
+    {
+      "name": "Michigan Avenue Salad (Vegetarian)",
+      "category": "Salads",
+      "calories": null,
+      "price": "$13.95"
+    },
+    {
+      "name": "Julienne Salad",
+      "category": "Salads",
+      "calories": null,
+      "price": "$14.95"
+    },
+    {
+      "name": "Beet And Goat Cheese Salad (Vegetarian)",
+      "category": "Salads",
+      "calories": null,
+      "price": "$14.95"
+    },
+    {
+      "name": "Corned Beef",
+      "category": "Everyday Hot Entrees",
+      "calories": null,
+      "price": "$22.95"
+    },
+    {
+      "name": "Breakfast Sandwich",
+      "category": "Everyday Hot Entrees",
+      "calories": null,
+      "price": "$13.95"
+    },
+    {
+      "name": "Roasted (1/2) Chicken Dinner",
+      "category": "Everyday Hot Entrees",
+      "calories": null,
+      "price": "$12.95"
+    },
+    {
+      "name": "Coffee",
+      "category": "Hot Drinks",
+      "calories": null,
+      "price": "$4.00"
+    }
+  ]
+}
