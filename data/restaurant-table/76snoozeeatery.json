@@ -1,0 +1,737 @@
+{
+  "title": "Snooze, an A.M. Eatery Menu With Price List",
+  "items": [
+    {
+      "name": "The Snooze Classic",
+      "category": "Signature Breakfast & Brunch",
+      "calories": null,
+      "price": "$15.50"
+    },
+    {
+      "name": "Biscuits & Gravy",
+      "category": "Signature Breakfast & Brunch",
+      "calories": null,
+      "price": "$14.75"
+    },
+    {
+      "name": "Corned Beef Hash",
+      "category": "Signature Breakfast & Brunch",
+      "calories": null,
+      "price": "$16.75"
+    },
+    {
+      "name": "Habanero Pork Belly Breakfast Fried Rice",
+      "category": "Signature Breakfast & Brunch",
+      "calories": null,
+      "price": "$17.95"
+    },
+    {
+      "name": "Sandwich I Am",
+      "category": "Signature Breakfast & Brunch",
+      "calories": null,
+      "price": "$15.25"
+    },
+    {
+      "name": "Shrimp & Grits",
+      "category": "Signature Breakfast & Brunch",
+      "calories": null,
+      "price": "$19.50"
+    },
+    {
+      "name": "Spuds Deluxe",
+      "category": "Signature Breakfast & Brunch",
+      "calories": null,
+      "price": "$17.50"
+    },
+    {
+      "name": "Denver Omelet",
+      "category": "Signature Breakfast & Brunch",
+      "calories": null,
+      "price": "$17.25"
+    },
+    {
+      "name": "Egg White Denver Omelet",
+      "category": "Signature Breakfast & Brunch",
+      "calories": null,
+      "price": "$18.25"
+    },
+    {
+      "name": "Protein Trio Omelet",
+      "category": "Signature Breakfast & Brunch",
+      "calories": null,
+      "price": "$17.50"
+    },
+    {
+      "name": "Egg White Protein Trio Omelet",
+      "category": "Signature Breakfast & Brunch",
+      "calories": null,
+      "price": "$18.50"
+    },
+    {
+      "name": "3-Egg Omelet",
+      "category": "Signature Breakfast & Brunch",
+      "calories": null,
+      "price": "$16.95"
+    },
+    {
+      "name": "Egg White Omelet",
+      "category": "Signature Breakfast & Brunch",
+      "calories": null,
+      "price": "$17.95"
+    },
+    {
+      "name": "Benny Duo",
+      "category": "Eggs Benedict",
+      "calories": null,
+      "price": "$18.50"
+    },
+    {
+      "name": "Bella! Bella! Benny",
+      "category": "Eggs Benedict",
+      "calories": null,
+      "price": "$17.25"
+    },
+    {
+      "name": "Ham Benedict III",
+      "category": "Eggs Benedict",
+      "calories": null,
+      "price": "$16.50"
+    },
+    {
+      "name": "Smashed Avocado Benny",
+      "category": "Eggs Benedict",
+      "calories": null,
+      "price": "$17.95"
+    },
+    {
+      "name": "Smoked Salmon Benny",
+      "category": "Eggs Benedict",
+      "calories": null,
+      "price": "$21.95"
+    },
+    {
+      "name": "Crispy Breakfast Burrito",
+      "category": "Breakfast Burritos & Tacos",
+      "calories": null,
+      "price": "$15.50"
+    },
+    {
+      "name": "Smothered Breakfast Burrito",
+      "category": "Breakfast Burritos & Tacos",
+      "calories": null,
+      "price": "$16.50"
+    },
+    {
+      "name": "Breakfast Tacos",
+      "category": "Breakfast Burritos & Tacos",
+      "calories": null,
+      "price": "$16.00"
+    },
+    {
+      "name": "Bravocado Toast",
+      "category": "Lighter Fare",
+      "calories": null,
+      "price": "$16.95"
+    },
+    {
+      "name": "Garden Harvest Omelet",
+      "category": "Lighter Fare",
+      "calories": null,
+      "price": "$16.95"
+    },
+    {
+      "name": "Egg White Garden Harvest Omelet",
+      "category": "Lighter Fare",
+      "calories": null,
+      "price": "$17.95"
+    },
+    {
+      "name": "Protein BLT Bowl",
+      "category": "Lighter Fare",
+      "calories": null,
+      "price": "$17.50"
+    },
+    {
+      "name": "Protein & Veggie Egg White Scramble",
+      "category": "Lighter Fare",
+      "calories": null,
+      "price": "$16.50"
+    },
+    {
+      "name": "Purely Berries & Oats",
+      "category": "Lighter Fare",
+      "calories": null,
+      "price": "$12.00"
+    },
+    {
+      "name": "Sweet Potato Veggie Smash Up",
+      "category": "Lighter Fare",
+      "calories": null,
+      "price": "$14.25"
+    },
+    {
+      "name": "Tofu Scramble",
+      "category": "Lighter Fare",
+      "calories": null,
+      "price": "$15.75"
+    },
+    {
+      "name": "Grilled 3-Cheese & Roasted Tomato Soup",
+      "category": "Lunch Menu",
+      "calories": null,
+      "price": "$12.75"
+    },
+    {
+      "name": "The Cobb Salad",
+      "category": "Lunch Menu",
+      "calories": null,
+      "price": "$14.50"
+    },
+    {
+      "name": "The Rachel",
+      "category": "Lunch Menu",
+      "calories": null,
+      "price": "$14.95"
+    },
+    {
+      "name": "The Smash Hit",
+      "category": "Lunch Menu",
+      "calories": null,
+      "price": "$14.95"
+    },
+    {
+      "name": "Tiramisu French Toast",
+      "category": "French Toast",
+      "calories": null,
+      "price": "$14.75"
+    },
+    {
+      "name": "Tiramisu French Toast GFF",
+      "category": "French Toast",
+      "calories": null,
+      "price": "$14.75"
+    },
+    {
+      "name": "OMG! French Toast",
+      "category": "French Toast",
+      "calories": null,
+      "price": "$14.75"
+    },
+    {
+      "name": "OMG! French Toast GFF",
+      "category": "French Toast",
+      "calories": null,
+      "price": "$14.75"
+    },
+    {
+      "name": "French Toast Neat",
+      "category": "French Toast",
+      "calories": null,
+      "price": "$14.25"
+    },
+    {
+      "name": "French Toast Neat GFF",
+      "category": "French Toast",
+      "calories": null,
+      "price": "$14.25"
+    },
+    {
+      "name": "Pancake Flight Customized",
+      "category": "Pancakes",
+      "calories": null,
+      "price": "$15.25"
+    },
+    {
+      "name": "Signature Pancake Flight",
+      "category": "Pancakes",
+      "calories": null,
+      "price": "$15.25"
+    },
+    {
+      "name": "Gluten Free Friendly Signature Pancake Flight",
+      "category": "Pancakes",
+      "calories": null,
+      "price": "$15.25"
+    },
+    {
+      "name": "Pineapple Upside Down Pancakes",
+      "category": "Pancakes",
+      "calories": null,
+      "price": "$12.75"
+    },
+    {
+      "name": "Pineapple Upside Down GFF Pancakes",
+      "category": "Pancakes",
+      "calories": null,
+      "price": "$12.75"
+    },
+    {
+      "name": "Pumpkin Pecan Pie Pancakes",
+      "category": "Pancakes",
+      "calories": null,
+      "price": "$12.95"
+    },
+    {
+      "name": "Pumpkin Pecan Pie GFF Pancakes",
+      "category": "Pancakes",
+      "calories": null,
+      "price": "$12.95"
+    },
+    {
+      "name": "Strawberry Shortcake Pancakes",
+      "category": "Pancakes",
+      "calories": null,
+      "price": "$12.75"
+    },
+    {
+      "name": "Strawberry Shortcake GFF Pancakes",
+      "category": "Pancakes",
+      "calories": null,
+      "price": "$12.75"
+    },
+    {
+      "name": "Buttermilk Pancakes",
+      "category": "Pancakes",
+      "calories": null,
+      "price": "$11.95"
+    },
+    {
+      "name": "Buttermilk GFF Pancakes",
+      "category": "Pancakes",
+      "calories": null,
+      "price": "$11.95"
+    },
+    {
+      "name": "Chocolate Chip Pancakes",
+      "category": "Pancakes",
+      "calories": null,
+      "price": "$12.50"
+    },
+    {
+      "name": "Chocolate Chip GFF Pancakes",
+      "category": "Pancakes",
+      "calories": null,
+      "price": "$12.50"
+    },
+    {
+      "name": "Blueberry Pancakes",
+      "category": "Pancakes",
+      "calories": null,
+      "price": "$12.25"
+    },
+    {
+      "name": "Blueberry GFF Pancakes",
+      "category": "Pancakes",
+      "calories": null,
+      "price": "$12.25"
+    },
+    {
+      "name": "Vegan Banana Bliss Pancakes",
+      "category": "Pancakes",
+      "calories": null,
+      "price": "$13.95"
+    },
+    {
+      "name": "Lil Pardner's Pancakes",
+      "category": "Kids Menu",
+      "calories": null,
+      "price": "$8.50"
+    },
+    {
+      "name": "Kids French Toast",
+      "category": "Kids Menu",
+      "calories": null,
+      "price": "$8.50"
+    },
+    {
+      "name": "Kids Gluten Free Friendly French Toast",
+      "category": "Kids Menu",
+      "calories": null,
+      "price": "$8.50"
+    },
+    {
+      "name": "Kids Scrambled Eggs And Toast",
+      "category": "Kids Menu",
+      "calories": null,
+      "price": "$8.50"
+    },
+    {
+      "name": "Kids Quesadilla",
+      "category": "Kids Menu",
+      "calories": null,
+      "price": "$8.50"
+    },
+    {
+      "name": "Single Pancake",
+      "category": "Sides & Enhancements",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Snooze Signature Bacon",
+      "category": "Sides & Enhancements",
+      "calories": null,
+      "price": "$6.50"
+    },
+    {
+      "name": "OMG! Bacon",
+      "category": "Sides & Enhancements",
+      "calories": null,
+      "price": "$6.95"
+    },
+    {
+      "name": "Habanero Pork Belly",
+      "category": "Sides & Enhancements",
+      "calories": null,
+      "price": "$6.75"
+    },
+    {
+      "name": "Hash Browns",
+      "category": "Sides & Enhancements",
+      "calories": null,
+      "price": "$4.75"
+    },
+    {
+      "name": "Two Cage-Free Eggs",
+      "category": "Sides & Enhancements",
+      "calories": null,
+      "price": "$5.00"
+    },
+    {
+      "name": "One Cage-Free Egg",
+      "category": "Sides & Enhancements",
+      "calories": null,
+      "price": "$2.50"
+    },
+    {
+      "name": "Polidori Sausage Links",
+      "category": "Sides & Enhancements",
+      "calories": null,
+      "price": "$5.95"
+    },
+    {
+      "name": "Polidori Chorizo",
+      "category": "Sides & Enhancements",
+      "calories": null,
+      "price": "$4.95"
+    },
+    {
+      "name": "Chicken Sausage Patty",
+      "category": "Sides & Enhancements",
+      "calories": null,
+      "price": "$5.50"
+    },
+    {
+      "name": "Side Fresh Fruit",
+      "category": "Sides & Enhancements",
+      "calories": null,
+      "price": "$5.50"
+    },
+    {
+      "name": "Maple Leaf Ham",
+      "category": "Sides & Enhancements",
+      "calories": null,
+      "price": "$4.25"
+    },
+    {
+      "name": "Side Toast",
+      "category": "Sides & Enhancements",
+      "calories": null,
+      "price": "$2.50"
+    },
+    {
+      "name": "Rosemary Sausage Gravy",
+      "category": "Sides & Enhancements",
+      "calories": null,
+      "price": "$5.75"
+    },
+    {
+      "name": "Abbot's Plant-Based Chorizo",
+      "category": "Sides & Enhancements",
+      "calories": null,
+      "price": "$3.75"
+    },
+    {
+      "name": "Side Grits",
+      "category": "Sides & Enhancements",
+      "calories": null,
+      "price": "$2.95"
+    },
+    {
+      "name": "Tofu",
+      "category": "Sides & Enhancements",
+      "calories": null,
+      "price": "$3.75"
+    },
+    {
+      "name": "French Toast Latte",
+      "category": "Barista Counter: Coffee & Tea",
+      "calories": null,
+      "price": "$6.50"
+    },
+    {
+      "name": "Snooze House Blend Coffee",
+      "category": "Barista Counter: Coffee & Tea",
+      "calories": null,
+      "price": "$4.00"
+    },
+    {
+      "name": "Decaf House Coffee",
+      "category": "Barista Counter: Coffee & Tea",
+      "calories": null,
+      "price": "$4.00"
+    },
+    {
+      "name": "Lavender Latte",
+      "category": "Barista Counter: Coffee & Tea",
+      "calories": null,
+      "price": "$6.50"
+    },
+    {
+      "name": "Iced Lavender Latte",
+      "category": "Barista Counter: Coffee & Tea",
+      "calories": null,
+      "price": "$6.50"
+    },
+    {
+      "name": "Honey Oat Milk Latte",
+      "category": "Barista Counter: Coffee & Tea",
+      "calories": null,
+      "price": "$6.50"
+    },
+    {
+      "name": "Iced Honey Oat Milk Latte",
+      "category": "Barista Counter: Coffee & Tea",
+      "calories": null,
+      "price": "$6.50"
+    },
+    {
+      "name": "Latte",
+      "category": "Barista Counter: Coffee & Tea",
+      "calories": null,
+      "price": "$5.75"
+    },
+    {
+      "name": "Iced Latte",
+      "category": "Barista Counter: Coffee & Tea",
+      "calories": null,
+      "price": "$5.75"
+    },
+    {
+      "name": "Cappuccino",
+      "category": "Barista Counter: Coffee & Tea",
+      "calories": null,
+      "price": "$5.75"
+    },
+    {
+      "name": "Snooze Hot Chocolate",
+      "category": "Barista Counter: Coffee & Tea",
+      "calories": null,
+      "price": "$5.75"
+    },
+    {
+      "name": "Organic Hot Tea",
+      "category": "Barista Counter: Coffee & Tea",
+      "calories": null,
+      "price": "$3.50"
+    },
+    {
+      "name": "Chai Tea",
+      "category": "Barista Counter: Coffee & Tea",
+      "calories": null,
+      "price": "$5.25"
+    },
+    {
+      "name": "Iced Chai",
+      "category": "Barista Counter: Coffee & Tea",
+      "calories": null,
+      "price": "$5.25"
+    },
+    {
+      "name": "Mocha",
+      "category": "Barista Counter: Coffee & Tea",
+      "calories": null,
+      "price": "$5.75"
+    },
+    {
+      "name": "Iced Mocha",
+      "category": "Barista Counter: Coffee & Tea",
+      "calories": null,
+      "price": "$5.75"
+    },
+    {
+      "name": "Espresso",
+      "category": "Barista Counter: Coffee & Tea",
+      "calories": null,
+      "price": "$4.25"
+    },
+    {
+      "name": "Americano",
+      "category": "Barista Counter: Coffee & Tea",
+      "calories": null,
+      "price": "$4.75"
+    },
+    {
+      "name": "Iced Americano",
+      "category": "Barista Counter: Coffee & Tea",
+      "calories": null,
+      "price": "$4.75"
+    },
+    {
+      "name": "Vanilla Almond Matcha Tea Latte",
+      "category": "Barista Counter: Coffee & Tea",
+      "calories": null,
+      "price": "$6.50"
+    },
+    {
+      "name": "Cortado",
+      "category": "Barista Counter: Coffee & Tea",
+      "calories": null,
+      "price": "$5.25"
+    },
+    {
+      "name": "Juice",
+      "category": "Juices & Cold Beverages",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Super Greens",
+      "category": "Juices & Cold Beverages",
+      "calories": null,
+      "price": "$6.50"
+    },
+    {
+      "name": "Rejuvenate",
+      "category": "Juices & Cold Beverages",
+      "calories": null,
+      "price": "$6.50"
+    },
+    {
+      "name": "Soda",
+      "category": "Juices & Cold Beverages",
+      "calories": null,
+      "price": "$3.25"
+    },
+    {
+      "name": "Lemonade",
+      "category": "Juices & Cold Beverages",
+      "calories": null,
+      "price": "$3.95"
+    },
+    {
+      "name": "Iced Tea",
+      "category": "Juices & Cold Beverages",
+      "calories": null,
+      "price": "$3.50"
+    },
+    {
+      "name": "Orange Dreamsicle Dirty Soda",
+      "category": "Juices & Cold Beverages",
+      "calories": null,
+      "price": "$3.95"
+    },
+    {
+      "name": "Pineapple Upside Down Dirty Soda",
+      "category": "Juices & Cold Beverages",
+      "calories": null,
+      "price": "$3.95"
+    },
+    {
+      "name": "Strawberry Shortcake Dirty Soda",
+      "category": "Juices & Cold Beverages",
+      "calories": null,
+      "price": "$3.95"
+    },
+    {
+      "name": "Build Your Own Mimosa",
+      "category": "Breakfast Mimosas",
+      "calories": null,
+      "price": "$10.75"
+    },
+    {
+      "name": "Sparklin' With A Splash",
+      "category": "Breakfast Mimosas",
+      "calories": null,
+      "price": "$12.50"
+    },
+    {
+      "name": "Strawberry Martini Mimosa",
+      "category": "Breakfast Mimosas",
+      "calories": null,
+      "price": "$12.25"
+    },
+    {
+      "name": "Mmm Mmm Mimosa",
+      "category": "Breakfast Mimosas",
+      "calories": null,
+      "price": "$11.75"
+    },
+    {
+      "name": "Palomimosa",
+      "category": "Breakfast Mimosas",
+      "calories": null,
+      "price": "$11.50"
+    },
+    {
+      "name": "Bloody Mary",
+      "category": "Bloody Marys",
+      "calories": null,
+      "price": "$10.95"
+    },
+    {
+      "name": "Spicy Bloody",
+      "category": "Bloody Marys",
+      "calories": null,
+      "price": "$10.95"
+    },
+    {
+      "name": "Espresso Martini",
+      "category": "Booze",
+      "calories": null,
+      "price": "$12.25"
+    },
+    {
+      "name": "Strawberry Morning Marg",
+      "category": "Booze",
+      "calories": null,
+      "price": "$10.50"
+    },
+    {
+      "name": "Spicy Strawberry Morning Marg",
+      "category": "Booze",
+      "calories": null,
+      "price": "$10.50"
+    },
+    {
+      "name": "Boozy Blackberry Mint Limeade",
+      "category": "Booze",
+      "calories": null,
+      "price": "$11.75"
+    },
+    {
+      "name": "Boozy Strawberry Lavender Lemonade",
+      "category": "Booze",
+      "calories": null,
+      "price": "$11.75"
+    },
+    {
+      "name": "Can Beer Single",
+      "category": "Booze",
+      "calories": null,
+      "price": "$5.00"
+    },
+    {
+      "name": "Blackberry Mint Limeade",
+      "category": "Mocktails",
+      "calories": null,
+      "price": "$7.50"
+    },
+    {
+      "name": "Strawberry Lavender Lemonade",
+      "category": "Mocktails",
+      "calories": null,
+      "price": "$7.50"
+    }
+  ]
+}
