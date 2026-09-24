@@ -1,0 +1,467 @@
+{
+  "title": "Great Lakes Brewing Company Menu With Price List",
+  "items": [
+    {
+      "name": "Bavarian Pretzel",
+      "category": "Starters",
+      "calories": null,
+      "price": "$8.00"
+    },
+    {
+      "name": "Sausage Sampler",
+      "category": "Starters",
+      "calories": null,
+      "price": "$18.00"
+    },
+    {
+      "name": "Add A Side of Two Pierogi",
+      "category": "Starters",
+      "calories": null,
+      "price": "$2.00"
+    },
+    {
+      "name": "Pub Wings",
+      "category": "Starters",
+      "calories": null,
+      "price": "$14.00"
+    },
+    {
+      "name": "West Side Market Board",
+      "category": "Starters",
+      "calories": null,
+      "price": "$20.00"
+    },
+    {
+      "name": "Fry Wheel",
+      "category": "Starters",
+      "calories": null,
+      "price": "$14.00"
+    },
+    {
+      "name": "Pork Bahn Mi Pierogi",
+      "category": "Starters",
+      "calories": null,
+      "price": "$16.00"
+    },
+    {
+      "name": "Pickle Platter",
+      "category": "Starters",
+      "calories": null,
+      "price": "$10.00"
+    },
+    {
+      "name": "Soup of the Day - Cup",
+      "category": "Soups",
+      "calories": null,
+      "price": "$6.00"
+    },
+    {
+      "name": "Soup of the Day - Bowl",
+      "category": "Soups",
+      "calories": null,
+      "price": "$8.00"
+    },
+    {
+      "name": "Stilton Cheddar - Cup",
+      "category": "Soups",
+      "calories": null,
+      "price": "$6.00"
+    },
+    {
+      "name": "Stilton Cheddar - Bowl",
+      "category": "Soups",
+      "calories": null,
+      "price": "$8.00"
+    },
+    {
+      "name": "Garden Salad - Half",
+      "category": "Salads",
+      "calories": null,
+      "price": "$8.00"
+    },
+    {
+      "name": "Garden Salad - Full",
+      "category": "Salads",
+      "calories": null,
+      "price": "$12.00"
+    },
+    {
+      "name": "Garden Salad - Add Chicken",
+      "category": "Salads",
+      "calories": null,
+      "price": "$6.00"
+    },
+    {
+      "name": "Garden Salad - Add Salmon",
+      "category": "Salads",
+      "calories": null,
+      "price": "$8.00"
+    },
+    {
+      "name": "Caesar Salad - Half",
+      "category": "Salads",
+      "calories": null,
+      "price": "$9.00"
+    },
+    {
+      "name": "Caesar Salad - Full",
+      "category": "Salads",
+      "calories": null,
+      "price": "$13.00"
+    },
+    {
+      "name": "Caesar Salad - Add Chicken",
+      "category": "Salads",
+      "calories": null,
+      "price": "$6.00"
+    },
+    {
+      "name": "Caesar Salad - Add Salmon",
+      "category": "Salads",
+      "calories": null,
+      "price": "$8.00"
+    },
+    {
+      "name": "Lettuce Tacos",
+      "category": "Salads",
+      "calories": null,
+      "price": "$15.00"
+    },
+    {
+      "name": "Lettuce Tacos - Add Chicken",
+      "category": "Salads",
+      "calories": null,
+      "price": "$6.00"
+    },
+    {
+      "name": "Lettuce Tacos - Add Salmon",
+      "category": "Salads",
+      "calories": null,
+      "price": "$8.00"
+    },
+    {
+      "name": "Hot Buttered Chicken Sandwich",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$18.00"
+    },
+    {
+      "name": "Salmon BLT",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$18.00"
+    },
+    {
+      "name": "The Fitz Burger",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$18.00"
+    },
+    {
+      "name": "Veggie Burger",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$16.00"
+    },
+    {
+      "name": "Build Your Own Burger",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$16.00"
+    },
+    {
+      "name": "Caprese Burger",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$18.00"
+    },
+    {
+      "name": "Killbuck Valley Mushroom",
+      "category": "Flatbreads",
+      "calories": null,
+      "price": "$16.00"
+    },
+    {
+      "name": "Italian Market",
+      "category": "Flatbreads",
+      "calories": null,
+      "price": "$18.00"
+    },
+    {
+      "name": "Build Your Own",
+      "category": "Flatbreads",
+      "calories": null,
+      "price": "$14.00"
+    },
+    {
+      "name": "Margherita",
+      "category": "Flatbreads",
+      "calories": null,
+      "price": "$18.00"
+    },
+    {
+      "name": "Veggie Flatbread",
+      "category": "Flatbreads",
+      "calories": null,
+      "price": "$18.00"
+    },
+    {
+      "name": "West Side Mac",
+      "category": "Mains",
+      "calories": null,
+      "price": "$18.00"
+    },
+    {
+      "name": "Fish & Chips",
+      "category": "Mains",
+      "calories": null,
+      "price": "$18.00"
+    },
+    {
+      "name": "Fresh Catch",
+      "category": "Mains",
+      "calories": null,
+      "price": "MKT"
+    },
+    {
+      "name": "Pretzel Chicken Dinner",
+      "category": "Mains",
+      "calories": null,
+      "price": "$24.00"
+    },
+    {
+      "name": "Brat & Pierogi",
+      "category": "Mains",
+      "calories": null,
+      "price": "$16.00"
+    },
+    {
+      "name": "Butcher's Cut",
+      "category": "Mains",
+      "calories": null,
+      "price": "MKT"
+    },
+    {
+      "name": "Sidewinder Fries, Stilton Sauce, Pickles",
+      "category": "Sides",
+      "calories": null,
+      "price": "$8.00"
+    },
+    {
+      "name": "Farm Vegetable",
+      "category": "Sides",
+      "calories": null,
+      "price": "$8.00"
+    },
+    {
+      "name": "Mac & Cheese",
+      "category": "Sides",
+      "calories": null,
+      "price": "$8.00"
+    },
+    {
+      "name": "Brussels & Bacon",
+      "category": "Sides",
+      "calories": null,
+      "price": "$10.00"
+    },
+    {
+      "name": "Pierogi (3)",
+      "category": "Sides",
+      "calories": null,
+      "price": "$8.00"
+    },
+    {
+      "name": "Mashed Potatoes",
+      "category": "Sides",
+      "calories": null,
+      "price": "$8.00"
+    },
+    {
+      "name": "Slow Cooked Ribs - Half Slab",
+      "category": "Daily Specials",
+      "calories": null,
+      "price": "$22.00"
+    },
+    {
+      "name": "Slow Cooked Ribs - Full Slab",
+      "category": "Daily Specials",
+      "calories": null,
+      "price": "$26.00"
+    },
+    {
+      "name": "Taco Tuesday",
+      "category": "Daily Specials",
+      "calories": null,
+      "price": "$16.00"
+    },
+    {
+      "name": "Boneless Wings",
+      "category": "Daily Specials",
+      "calories": null,
+      "price": "$16.00"
+    },
+    {
+      "name": "Bone-In Wings",
+      "category": "Daily Specials",
+      "calories": null,
+      "price": "$2.00"
+    },
+    {
+      "name": "Brat & Pierogi",
+      "category": "Daily Specials",
+      "calories": null,
+      "price": "$19.00"
+    },
+    {
+      "name": "Beer-Battered Fish Sandwich",
+      "category": "Daily Specials",
+      "calories": null,
+      "price": "$16.00"
+    },
+    {
+      "name": "Brunch Sampler Board",
+      "category": "Sunday Brunch",
+      "calories": null,
+      "price": "$24.00"
+    },
+    {
+      "name": "Steak & Eggs",
+      "category": "Sunday Brunch",
+      "calories": null,
+      "price": "MKT"
+    },
+    {
+      "name": "Build Your Own Breakfast",
+      "category": "Sunday Brunch",
+      "calories": null,
+      "price": "$15.00"
+    },
+    {
+      "name": "Maple Sausage Honey Biscuit Sandwich",
+      "category": "Sunday Brunch",
+      "calories": null,
+      "price": "$16.00"
+    },
+    {
+      "name": "Avocado Toast",
+      "category": "Sunday Brunch",
+      "calories": null,
+      "price": "$12.00"
+    },
+    {
+      "name": "Bacon",
+      "category": "Sunday Brunch",
+      "calories": null,
+      "price": "$2.00"
+    },
+    {
+      "name": "Sausage Gravy and Biscuits",
+      "category": "Sunday Brunch",
+      "calories": null,
+      "price": "$16.00"
+    },
+    {
+      "name": "Beer Battered Ham & Cheese Sandwich",
+      "category": "Sunday Brunch",
+      "calories": null,
+      "price": "$18.00"
+    },
+    {
+      "name": "Cinnamon Toast Crunch Pancakes",
+      "category": "Sunday Brunch",
+      "calories": null,
+      "price": "$14.00"
+    },
+    {
+      "name": "Pancakes Battered Chicken Wings",
+      "category": "Sunday Brunch",
+      "calories": null,
+      "price": "$16.00"
+    },
+    {
+      "name": "GLBC House Bloody Mary",
+      "category": "Sunday Brunch Drinks",
+      "calories": null,
+      "price": "$15.00"
+    },
+    {
+      "name": "GLBC House Bloody Mary - Vegetarian",
+      "category": "Sunday Brunch Drinks",
+      "calories": null,
+      "price": "$13.00"
+    },
+    {
+      "name": "Lillo Iced",
+      "category": "Sunday Brunch Drinks",
+      "calories": null,
+      "price": "$9.00"
+    },
+    {
+      "name": "Breakfast Shot",
+      "category": "Sunday Brunch Drinks",
+      "calories": null,
+      "price": "$9.00"
+    },
+    {
+      "name": "Patio Party - Serves 4",
+      "category": "Sunday Brunch Drinks",
+      "calories": null,
+      "price": "$28.00"
+    },
+    {
+      "name": "Pub Wings",
+      "category": "Happy Hour Food",
+      "calories": null,
+      "price": "$7.00"
+    },
+    {
+      "name": "Hot Buttered Chicken Sandwich",
+      "category": "Happy Hour Food",
+      "calories": null,
+      "price": "$15.00"
+    },
+    {
+      "name": "Fried Pickle Spears",
+      "category": "Happy Hour Food",
+      "calories": null,
+      "price": "$5.00"
+    },
+    {
+      "name": "Sidewinder Fries w/Stilton Beer Cheese Sauce",
+      "category": "Happy Hour Food",
+      "calories": null,
+      "price": "$5.00"
+    },
+    {
+      "name": "Chorizo Queso Dip",
+      "category": "Happy Hour Food",
+      "calories": null,
+      "price": "$7.00"
+    },
+    {
+      "name": "Conway Mule",
+      "category": "Happy Hour Drinks",
+      "calories": null,
+      "price": "$7.00"
+    },
+    {
+      "name": "Grapefruit Blood Orange",
+      "category": "Happy Hour Drinks",
+      "calories": null,
+      "price": "$7.00"
+    },
+    {
+      "name": "Year-Rounds",
+      "category": "Happy Hour Drinks",
+      "calories": null,
+      "price": "$5.00"
+    },
+    {
+      "name": "Cabernet & Chardonnay",
+      "category": "Happy Hour Drinks",
+      "calories": null,
+      "price": "$6.00"
+    }
+  ]
+}
