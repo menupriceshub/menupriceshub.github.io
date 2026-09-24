@@ -1,0 +1,233 @@
+{
+  "title": "Zip's Cafe Menu With Price List",
+  "items": [
+    {
+      "name": "Honey Mustard",
+      "category": "Sauces",
+      "calories": null,
+      "price": "$1.15"
+    },
+    {
+      "name": "Spicy Brown Mustard",
+      "category": "Sauces",
+      "calories": null,
+      "price": "$1.15"
+    },
+    {
+      "name": "Tartar",
+      "category": "Sauces",
+      "calories": null,
+      "price": "$1.15"
+    },
+    {
+      "name": "Zip's Burger Sauce",
+      "category": "Sauces",
+      "calories": null,
+      "price": "$1.15"
+    },
+    {
+      "name": "Zip's Balsamic",
+      "category": "Sauces",
+      "calories": null,
+      "price": "$1.15"
+    },
+    {
+      "name": "Zip's Ranch",
+      "category": "Sauces",
+      "calories": null,
+      "price": "$1.15"
+    },
+    {
+      "name": "BBQ",
+      "category": "Sauces",
+      "calories": null,
+      "price": "$1.15"
+    },
+    {
+      "name": "Caesar",
+      "category": "Sauces",
+      "calories": null,
+      "price": "$1.15"
+    },
+    {
+      "name": "French Fries",
+      "category": "Sides",
+      "calories": null,
+      "price": "$4.05"
+    },
+    {
+      "name": "Mac & Cheese",
+      "category": "Sides",
+      "calories": null,
+      "price": "$3.45"
+    },
+    {
+      "name": "Saratoga Chips",
+      "category": "Sides",
+      "calories": null,
+      "price": "$2.90"
+    },
+    {
+      "name": "Chili Fries",
+      "category": "Sides",
+      "calories": null,
+      "price": "$5.75"
+    },
+    {
+      "name": "Cole Slaw",
+      "category": "Sides",
+      "calories": null,
+      "price": "$2.90"
+    },
+    {
+      "name": "Cheese And Chili Fries",
+      "category": "Sides",
+      "calories": null,
+      "price": "$6.90"
+    },
+    {
+      "name": "Chicken Tenders",
+      "category": "Sides",
+      "calories": null,
+      "price": "$12.40"
+    },
+    {
+      "name": "Apple Sauce",
+      "category": "Sides",
+      "calories": null,
+      "price": "$1.75"
+    },
+    {
+      "name": "Cottage Cheese",
+      "category": "Sides",
+      "calories": null,
+      "price": "$2.90"
+    },
+    {
+      "name": "Onion Rings",
+      "category": "Sides",
+      "calories": null,
+      "price": "$5.20"
+    },
+    {
+      "name": "Cheese Fries",
+      "category": "Sides",
+      "calories": null,
+      "price": "$5.75"
+    },
+    {
+      "name": "Side Caesar Salad",
+      "category": "Salads",
+      "calories": null,
+      "price": "$7.50"
+    },
+    {
+      "name": "Chicken Caesar Salad",
+      "category": "Salads",
+      "calories": null,
+      "price": "$16.10"
+    },
+    {
+      "name": "Dinner Salad",
+      "category": "Salads",
+      "calories": null,
+      "price": "$5.20"
+    },
+    {
+      "name": "Coney",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$8.35"
+    },
+    {
+      "name": "Hot Dog",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$5.50"
+    },
+    {
+      "name": "Grilled Chicken Breast Sandwich",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$10.65"
+    },
+    {
+      "name": "Hot Ham & Cheese",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$12.10"
+    },
+    {
+      "name": "Grilled Mettwurst",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$6.05"
+    },
+    {
+      "name": "Beer Battered Fish Sandwich",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$15.25"
+    },
+    {
+      "name": "Grilled Cheese",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$5.20"
+    },
+    {
+      "name": "Dessert",
+      "category": "Dessert",
+      "calories": null,
+      "price": "$6.65"
+    },
+    {
+      "name": "Double Zip Burger",
+      "category": "Burgers",
+      "calories": null,
+      "price": "$17.00"
+    },
+    {
+      "name": "Black Bean Burger",
+      "category": "Burgers",
+      "calories": null,
+      "price": "$11.25"
+    },
+    {
+      "name": "Zip Burger",
+      "category": "Burgers",
+      "calories": null,
+      "price": "$11.25"
+    },
+    {
+      "name": "Turkey Burger",
+      "category": "Burgers",
+      "calories": null,
+      "price": "$11.25"
+    },
+    {
+      "name": "Flying Pig",
+      "category": "Burgers",
+      "calories": null,
+      "price": "$20.15"
+    },
+    {
+      "name": "Train Wreck",
+      "category": "Burgers",
+      "calories": null,
+      "price": "$21.00"
+    },
+    {
+      "name": "Girth Burger",
+      "category": "Burgers",
+      "calories": null,
+      "price": "$15.85"
+    },
+    {
+      "name": "Zip's Famous Chili-Bowl",
+      "category": "Chili",
+      "calories": null,
+      "price": "$6.35"
+    }
+  ]
+}
