@@ -1,0 +1,101 @@
+{
+  "title": "American Coney Island Menu With Price List",
+  "items": [
+    {
+      "name": "Coney Island Hot Dog",
+      "category": "Coneys",
+      "calories": null,
+      "price": "$4.35"
+    },
+    {
+      "name": "Coney Loose Burger",
+      "category": "Coneys",
+      "calories": null,
+      "price": "$5.65"
+    },
+    {
+      "name": "American Special",
+      "category": "Coneys",
+      "calories": null,
+      "price": "$6.35"
+    },
+    {
+      "name": "Chili Bowl Special",
+      "category": "Specialities",
+      "calories": null,
+      "price": "$7.00"
+    },
+    {
+      "name": "Chili Nacho",
+      "category": "Specialities",
+      "calories": null,
+      "price": "$12.50"
+    },
+    {
+      "name": "Chili Bowl (Plain)",
+      "category": "Specialities",
+      "calories": null,
+      "price": "$6.10"
+    },
+    {
+      "name": "Additional Toppings",
+      "category": "Specialities",
+      "calories": null,
+      "price": "$0.85"
+    },
+    {
+      "name": "Gyro Sandwich",
+      "category": "Sandwiches & Pitas",
+      "calories": null,
+      "price": "$10.75"
+    },
+    {
+      "name": "Chicken Tender Pita",
+      "category": "Sandwiches & Pitas",
+      "calories": null,
+      "price": "$10.75"
+    },
+    {
+      "name": "Grilled Chicken Pita",
+      "category": "Sandwiches & Pitas",
+      "calories": null,
+      "price": "$10.75"
+    },
+    {
+      "name": "Chicken Greek Salad (with pita)",
+      "category": "Salads",
+      "calories": null,
+      "price": "$12.25"
+    },
+    {
+      "name": "Greek Salad (with pita)",
+      "category": "Salads",
+      "calories": null,
+      "price": "$9.10"
+    },
+    {
+      "name": "Gyro Greek Salad",
+      "category": "Salads",
+      "calories": null,
+      "price": "$12.25"
+    },
+    {
+      "name": "Chicken Tender Dinner",
+      "category": "Tenders & Wings",
+      "calories": null,
+      "price": "$14.50"
+    },
+    {
+      "name": "American Wings Dinner (6pc) with Fries",
+      "category": "Tenders & Wings",
+      "calories": null,
+      "price": "$14.50"
+    },
+    {
+      "name": "American Wings (5pc)",
+      "category": "Tenders & Wings",
+      "calories": null,
+      "price": "$10.85"
+    }
+  ]
+}
