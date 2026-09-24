@@ -1,0 +1,767 @@
+{
+  "title": "Solly's Grille Menu With Price List",
+  "items": [
+    {
+      "name": "Dinner Salad",
+      "category": "Salads",
+      "calories": null,
+      "price": "$7.29"
+    },
+    {
+      "name": "Hot Chocolate",
+      "category": "Drinks",
+      "calories": null,
+      "price": "$2.39"
+    },
+    {
+      "name": "Coffee",
+      "category": "Drinks",
+      "calories": null,
+      "price": "$2.49"
+    },
+    {
+      "name": "Tea",
+      "category": "Drinks",
+      "calories": null,
+      "price": "$2.49"
+    },
+    {
+      "name": "Lemonade",
+      "category": "Drinks",
+      "calories": null,
+      "price": "$2.59"
+    },
+    {
+      "name": "Raspberry Lemonade",
+      "category": "Drinks",
+      "calories": null,
+      "price": "$2.69"
+    },
+    {
+      "name": "Milk",
+      "category": "Drinks",
+      "calories": null,
+      "price": "$1.99"
+    },
+    {
+      "name": "Chocolate Milk",
+      "category": "Drinks",
+      "calories": null,
+      "price": "$2.69"
+    },
+    {
+      "name": "Juice",
+      "category": "Drinks",
+      "calories": null,
+      "price": "$2.19"
+    },
+    {
+      "name": "Sprecher Root Beer",
+      "category": "Drinks",
+      "calories": null,
+      "price": "$2.99"
+    },
+    {
+      "name": "Sprecher Root Beer Float",
+      "category": "Drinks",
+      "calories": null,
+      "price": "$5.19"
+    },
+    {
+      "name": "Solly's Red Cream Float",
+      "category": "Drinks",
+      "calories": null,
+      "price": "$5.19"
+    },
+    {
+      "name": "Sodas",
+      "category": "Drinks",
+      "calories": null,
+      "price": "$1.99"
+    },
+    {
+      "name": "Raspberry Nestea",
+      "category": "Drinks",
+      "calories": null,
+      "price": "$2.79"
+    },
+    {
+      "name": "Home Baked Cookies",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$1.99"
+    },
+    {
+      "name": "Homemade Slice Of Pie",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$4.89"
+    },
+    {
+      "name": "Key Lime Pie",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$4.49"
+    },
+    {
+      "name": "Solly's Thick Malts & Shakes",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$5.19"
+    },
+    {
+      "name": "Fresh Banana Malts",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$5.19"
+    },
+    {
+      "name": "Strawberry/Banana Malt",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$5.49"
+    },
+    {
+      "name": "Real Fruit Smoothies",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$4.49"
+    },
+    {
+      "name": "Ice Cream Soda",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$5.29"
+    },
+    {
+      "name": "Sundaes",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$3.99"
+    },
+    {
+      "name": "Creamy Lobster Bisque",
+      "category": "Soups",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Cream Of Tomato",
+      "category": "Soups",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Grandma's Chicken",
+      "category": "Soups",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "New England Clam Chowder",
+      "category": "Soups",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Tenderloin",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Wisconsin Bratwurst",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Wisconsin Hot Dog",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Veggie Burger",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$12.00"
+    },
+    {
+      "name": "Solly's Famous Grilled Cheese",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Kids Grilled Cheese",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "B.L.T.",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Grilled Chicken Breast",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Fish",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Denver",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Chicago Denver",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Solly's Homemade Egg Salad",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Solly's Homemade Tuna Salad",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Solly's Homemade Chicken Salad",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Grilled Chicken Breast",
+      "category": "Extras & Add Ons",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Applewood Smoked Bacon",
+      "category": "Extras & Add Ons",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Avocado",
+      "category": "Extras & Add Ons",
+      "calories": null,
+      "price": "$3.00"
+    },
+    {
+      "name": "Cheese",
+      "category": "Extras & Add Ons",
+      "calories": null,
+      "price": "$1.50"
+    },
+    {
+      "name": "Potato Pancake",
+      "category": "Extras & Add Ons",
+      "calories": null,
+      "price": "$2.49"
+    },
+    {
+      "name": "Juice",
+      "category": "Extras & Add Ons",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Bottomless Premium Coffee",
+      "category": "Extras & Add Ons",
+      "calories": null,
+      "price": "$2.49"
+    },
+    {
+      "name": "Tea",
+      "category": "Extras & Add Ons",
+      "calories": null,
+      "price": "$2.49"
+    },
+    {
+      "name": "Milk",
+      "category": "Extras & Add Ons",
+      "calories": null,
+      "price": "$1.99"
+    },
+    {
+      "name": "Chocolate Milk",
+      "category": "Extras & Add Ons",
+      "calories": null,
+      "price": "$2.75 - Small; $3.50 - Large"
+    },
+    {
+      "name": "Hot Chocolate",
+      "category": "Extras & Add Ons",
+      "calories": null,
+      "price": "$2.39"
+    },
+    {
+      "name": "Lemonade",
+      "category": "Extras & Add Ons",
+      "calories": null,
+      "price": "$2.59"
+    },
+    {
+      "name": "Sodas",
+      "category": "Extras & Add Ons",
+      "calories": null,
+      "price": "$2.75 - Regular; $3.50 - Large"
+    },
+    {
+      "name": "Sprecher Sodas",
+      "category": "Extras & Add Ons",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Root Beer Floats",
+      "category": "Extras & Add Ons",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Red Cream Floats",
+      "category": "Extras & Add Ons",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Old Fashioned Hand Mixed Malts/Shakes",
+      "category": "Extras & Add Ons",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Specialty Malts",
+      "category": "Extras & Add Ons",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Original Solly's Butterburger (No Cheese)",
+      "category": "Original Butterburgers",
+      "calories": null,
+      "price": "$12.00"
+    },
+    {
+      "name": "Cheeseburger",
+      "category": "Original Butterburgers",
+      "calories": null,
+      "price": "$13.00"
+    },
+    {
+      "name": "Super Cheeseburger",
+      "category": "Quarter Pounders",
+      "calories": null,
+      "price": "$14.50"
+    },
+    {
+      "name": "Patty Melt",
+      "category": "Quarter Pounders",
+      "calories": null,
+      "price": "$16.00"
+    },
+    {
+      "name": "Mushroom Swiss Burger",
+      "category": "Quarter Pounders",
+      "calories": null,
+      "price": "$16.50"
+    },
+    {
+      "name": "Peño Burger",
+      "category": "Quarter Pounders",
+      "calories": null,
+      "price": "$16.50"
+    },
+    {
+      "name": "Sassy Burger",
+      "category": "Quarter Pounders",
+      "calories": null,
+      "price": "$18.00"
+    },
+    {
+      "name": "Veggie Burger",
+      "category": "Quarter Pounders",
+      "calories": null,
+      "price": "$12.00"
+    },
+    {
+      "name": "Super Super Cheeseburger",
+      "category": "Half Pounders",
+      "calories": null,
+      "price": "$17.00"
+    },
+    {
+      "name": "Super Super Bacon Cheeseburger",
+      "category": "Half Pounders",
+      "calories": null,
+      "price": "$18.75"
+    },
+    {
+      "name": "Cheesehead Burger",
+      "category": "Half Pounders",
+      "calories": null,
+      "price": "$18.75"
+    },
+    {
+      "name": "Solly's Big Boy",
+      "category": "Half Pounders",
+      "calories": null,
+      "price": "$18.75"
+    },
+    {
+      "name": "Butter",
+      "category": "Extras",
+      "calories": null,
+      "price": "$0.50"
+    },
+    {
+      "name": "Sassy Sauce",
+      "category": "Extras",
+      "calories": null,
+      "price": "$0.50"
+    },
+    {
+      "name": "Ranch",
+      "category": "Extras",
+      "calories": null,
+      "price": "$0.50"
+    },
+    {
+      "name": "Big Boy Sauce",
+      "category": "Extras",
+      "calories": null,
+      "price": "$0.50"
+    },
+    {
+      "name": "Mayo",
+      "category": "Extras",
+      "calories": null,
+      "price": "$0.50"
+    },
+    {
+      "name": "Cheese",
+      "category": "Extras",
+      "calories": null,
+      "price": "$1.50"
+    },
+    {
+      "name": "Bacon",
+      "category": "Extras",
+      "calories": null,
+      "price": "$3.00"
+    },
+    {
+      "name": "Avocado",
+      "category": "Extras",
+      "calories": null,
+      "price": "$3.00"
+    },
+    {
+      "name": "Gluten Free Bun",
+      "category": "Extras",
+      "calories": null,
+      "price": "$1.00"
+    },
+    {
+      "name": "Make It A Special",
+      "category": "Extras",
+      "calories": null,
+      "price": "$2.00"
+    },
+    {
+      "name": "Super Cheeseburger",
+      "category": "Specialty Burgers",
+      "calories": null,
+      "price": "$13.00"
+    },
+    {
+      "name": "Super Super Cheeseburger",
+      "category": "Specialty Burgers",
+      "calories": null,
+      "price": "$16.00"
+    },
+    {
+      "name": "Super Super Bacon Cheeseburger",
+      "category": "Specialty Burgers",
+      "calories": null,
+      "price": "$18.75"
+    },
+    {
+      "name": "Cheesehead Burger",
+      "category": "Specialty Burgers",
+      "calories": null,
+      "price": "$18.75"
+    },
+    {
+      "name": "Sally's Big Boy",
+      "category": "Specialty Burgers",
+      "calories": null,
+      "price": "$18.75"
+    },
+    {
+      "name": "Sassy Burger",
+      "category": "Specialty Burgers",
+      "calories": null,
+      "price": "$18.00"
+    },
+    {
+      "name": "Patty Melt",
+      "category": "Specialty Burgers",
+      "calories": null,
+      "price": "$16.00"
+    },
+    {
+      "name": "Mushroom Swiss Burger",
+      "category": "Specialty Burgers",
+      "calories": null,
+      "price": "$17.00"
+    },
+    {
+      "name": "Peno Burger",
+      "category": "Specialty Burgers",
+      "calories": null,
+      "price": "$17.00"
+    },
+    {
+      "name": "Veggie Burger",
+      "category": "Specialty Burgers",
+      "calories": null,
+      "price": "$12.00"
+    },
+    {
+      "name": "French Fries",
+      "category": "Sides & Soups",
+      "calories": null,
+      "price": "$4.75"
+    },
+    {
+      "name": "Sweet Potato Fries",
+      "category": "Sides & Soups",
+      "calories": null,
+      "price": "$5.50"
+    },
+    {
+      "name": "Onion Rings",
+      "category": "Sides & Soups",
+      "calories": null,
+      "price": "$5.75"
+    },
+    {
+      "name": "Cheese Curds",
+      "category": "Sides & Soups",
+      "calories": null,
+      "price": "$8.00"
+    },
+    {
+      "name": "Chicken Tenders",
+      "category": "Sides & Soups",
+      "calories": null,
+      "price": "$5.50"
+    },
+    {
+      "name": "Potato Pancake",
+      "category": "Sides & Soups",
+      "calories": null,
+      "price": "$2.49"
+    },
+    {
+      "name": "Soup Of The Day",
+      "category": "Sides & Soups",
+      "calories": null,
+      "price": "$4.25"
+    },
+    {
+      "name": "Creamy Clam Chowder",
+      "category": "Sides & Soups",
+      "calories": null,
+      "price": "$4.25"
+    },
+    {
+      "name": "Solly's Chili",
+      "category": "Sides & Soups",
+      "calories": null,
+      "price": "$5.00"
+    },
+    {
+      "name": "Homemade Cole Slaw",
+      "category": "Sides & Soups",
+      "calories": null,
+      "price": "$3.00"
+    },
+    {
+      "name": "Shakes",
+      "category": "Shakes & Malts",
+      "calories": null,
+      "price": "$7.75"
+    },
+    {
+      "name": "Fresh Cold Homemade Lettuce Salad",
+      "category": "Plates",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Egg Salad",
+      "category": "Plates",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "White Albacore Tuna Salad",
+      "category": "Plates",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Chicken Salad",
+      "category": "Plates",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Fresh Greens Salad",
+      "category": "Plates",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "French Fries",
+      "category": "Others",
+      "calories": null,
+      "price": "$3.59"
+    },
+    {
+      "name": "Golden Onion Rings",
+      "category": "Others",
+      "calories": null,
+      "price": "$3.89"
+    },
+    {
+      "name": "Solly's Sassy Sauce",
+      "category": "Others",
+      "calories": null,
+      "price": "$0.89"
+    },
+    {
+      "name": "Soup",
+      "category": "Others",
+      "calories": null,
+      "price": "$3.19"
+    },
+    {
+      "name": "Cream Soup",
+      "category": "Others",
+      "calories": null,
+      "price": "$3.49"
+    },
+    {
+      "name": "Chili - Homemade",
+      "category": "Others",
+      "calories": null,
+      "price": "$3.89"
+    },
+    {
+      "name": "Solly's Homemade Potato Pancake",
+      "category": "Others",
+      "calories": null,
+      "price": "$2.49"
+    },
+    {
+      "name": "Homemade Creamy Coleslaw",
+      "category": "Others",
+      "calories": null,
+      "price": "$2.39"
+    },
+    {
+      "name": "Potato Chip Crusted Tenders",
+      "category": "Others",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "America's Original Butterburger",
+      "category": "America's Original Butterburger",
+      "calories": null,
+      "price": "$7.75"
+    },
+    {
+      "name": "Super Burger",
+      "category": "America's Original Butterburger",
+      "calories": null,
+      "price": "$14.50"
+    },
+    {
+      "name": "Supersuper Burger",
+      "category": "America's Original Butterburger",
+      "calories": null,
+      "price": "$18.75"
+    },
+    {
+      "name": "Solly's Big Boy",
+      "category": "America's Original Butterburger",
+      "calories": null,
+      "price": "$19.75"
+    },
+    {
+      "name": "America's Original Cheesehead Burger",
+      "category": "America's Original Butterburger",
+      "calories": null,
+      "price": "$19.75"
+    },
+    {
+      "name": "Wis. Curdburger",
+      "category": "America's Original Butterburger",
+      "calories": null,
+      "price": "$19.00"
+    },
+    {
+      "name": "Barstool Burger",
+      "category": "America's Original Butterburger",
+      "calories": null,
+      "price": "$19.75"
+    },
+    {
+      "name": "Mushroom Swiss",
+      "category": "America's Original Butterburger",
+      "calories": null,
+      "price": "$18.00"
+    },
+    {
+      "name": "Bleu Cheeseburger",
+      "category": "America's Original Butterburger",
+      "calories": null,
+      "price": "$18.50"
+    },
+    {
+      "name": "Glendale",
+      "category": "America's Original Butterburger",
+      "calories": null,
+      "price": "$18.00"
+    },
+    {
+      "name": "Veggie Cheeseburger",
+      "category": "America's Original Butterburger",
+      "calories": null,
+      "price": "$15.00"
+    }
+  ]
+}
