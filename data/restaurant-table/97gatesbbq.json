@@ -1,0 +1,239 @@
+{
+  "title": "Gates Bar-B-Q Menu With Price List",
+  "items": [
+    {
+      "name": "Gates Fries",
+      "category": "Sides",
+      "calories": null,
+      "price": "$6.95"
+    },
+    {
+      "name": "Onion Rings",
+      "category": "Sides",
+      "calories": null,
+      "price": "$7.95"
+    },
+    {
+      "name": "BBQ Beans - 4 oz",
+      "category": "Sides",
+      "calories": null,
+      "price": "$3.50"
+    },
+    {
+      "name": "BBQ Beans - 16 oz",
+      "category": "Sides",
+      "calories": null,
+      "price": "$6.50"
+    },
+    {
+      "name": "Cole Slaw - 4 oz",
+      "category": "Sides",
+      "calories": null,
+      "price": "$3.50"
+    },
+    {
+      "name": "Cole Slaw - 16 oz",
+      "category": "Sides",
+      "calories": null,
+      "price": "$6.50"
+    },
+    {
+      "name": "Potato Salad - 4 oz",
+      "category": "Sides",
+      "calories": null,
+      "price": "$3.50"
+    },
+    {
+      "name": "Potato Salad - 16 oz",
+      "category": "Sides",
+      "calories": null,
+      "price": "$10.50"
+    },
+    {
+      "name": "Starttin Socket",
+      "category": "Sides",
+      "calories": null,
+      "price": "$34.95"
+    },
+    {
+      "name": "Burnt-E-Mac - 6 oz",
+      "category": "Sides",
+      "calories": null,
+      "price": "$8.50"
+    },
+    {
+      "name": "Burnt-E-Mac - 12 oz",
+      "category": "Sides",
+      "calories": null,
+      "price": "$12.50"
+    },
+    {
+      "name": "Burnt-E-Mac - 40 oz",
+      "category": "Sides",
+      "calories": null,
+      "price": "$68.50"
+    },
+    {
+      "name": "Burnt-E-Mac - 140 oz",
+      "category": "Sides",
+      "calories": null,
+      "price": "$140.95"
+    },
+    {
+      "name": "Burnt-E-Fries",
+      "category": "Sides",
+      "calories": null,
+      "price": "$8.50"
+    },
+    {
+      "name": "Hot Pickle/Jalapenos - 6 oz",
+      "category": "Sides",
+      "calories": null,
+      "price": "$1.50"
+    },
+    {
+      "name": "Split (3 Onion Rings & Fries)",
+      "category": "Sides",
+      "calories": null,
+      "price": "$9.50"
+    },
+    {
+      "name": "Gates BBQ Sauce - Small Cup",
+      "category": "Gates BBQ Sauces",
+      "calories": null,
+      "price": "$0.67"
+    },
+    {
+      "name": "Gates BBQ Sauce - Large Cup",
+      "category": "Gates BBQ Sauces",
+      "calories": null,
+      "price": "$0.90"
+    },
+    {
+      "name": "Gates BBQ Sauce - 18 oz Bottle",
+      "category": "Gates BBQ Sauces",
+      "calories": null,
+      "price": "$4.25"
+    },
+    {
+      "name": "Gates Gift Pack",
+      "category": "Gates BBQ Sauces",
+      "calories": null,
+      "price": "$16.50"
+    },
+    {
+      "name": "Gates Seasonings",
+      "category": "Gates Seasonings",
+      "calories": null,
+      "price": "$4.25"
+    },
+    {
+      "name": "Large Soft Drink",
+      "category": "Drinks",
+      "calories": null,
+      "price": "$3.75"
+    },
+    {
+      "name": "Frosty Mug Soft Drink",
+      "category": "Drinks",
+      "calories": null,
+      "price": "$3.00"
+    },
+    {
+      "name": "Frosty Mug Of Beer",
+      "category": "Drinks",
+      "calories": null,
+      "price": "$7.00"
+    },
+    {
+      "name": "Pitcher Of Soft Drink",
+      "category": "Drinks",
+      "calories": null,
+      "price": "$11.00"
+    },
+    {
+      "name": "Pitcher Of Beer",
+      "category": "Drinks",
+      "calories": null,
+      "price": "$13.50"
+    },
+    {
+      "name": "Gates Yammer Pie",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$5.95"
+    },
+    {
+      "name": "Seasonal Pie",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$5.95"
+    },
+    {
+      "name": "Small Party (4-5)",
+      "category": "Trays",
+      "calories": null,
+      "price": "$94.95"
+    },
+    {
+      "name": "Large Party",
+      "category": "Trays",
+      "calories": null,
+      "price": "$172.42"
+    },
+    {
+      "name": "Presidents Choice",
+      "category": "Trays",
+      "calories": null,
+      "price": "$176.10"
+    },
+    {
+      "name": "Large Party Plus",
+      "category": "Trays",
+      "calories": null,
+      "price": "$183.15"
+    },
+    {
+      "name": "Presidents Choice Plus",
+      "category": "Trays",
+      "calories": null,
+      "price": "$186.85"
+    },
+    {
+      "name": "Trend Setter",
+      "category": "Trays",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "The Nooner",
+      "category": "Lunch Special",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Gates BBQ Chicken Link With Fries",
+      "category": "Lunch Special",
+      "calories": null,
+      "price": "$8.95"
+    },
+    {
+      "name": "Mutton On Saturday",
+      "category": "Daily Specials",
+      "calories": null,
+      "price": "$23.95"
+    },
+    {
+      "name": "Chicken On Sunday - 1/2 Chicken",
+      "category": "Daily Specials",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Fish On Friday",
+      "category": "Daily Specials",
+      "calories": null,
+      "price": null
+    }
+  ]
+}
