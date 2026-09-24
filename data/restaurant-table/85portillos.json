@@ -1,0 +1,569 @@
+{
+  "title": "Al's #1 Italian Beef River North Menu With Price List",
+  "items": [
+    {
+      "name": "Regular Beef",
+      "category": "Italian Beef",
+      "calories": null,
+      "price": "$9.75"
+    },
+    {
+      "name": "Big Beef",
+      "category": "Italian Beef",
+      "calories": null,
+      "price": "$13.65"
+    },
+    {
+      "name": "Jumbo Beef",
+      "category": "Italian Beef",
+      "calories": null,
+      "price": "$17.55"
+    },
+    {
+      "name": "\"Soaker\" - Gravy Bread",
+      "category": "Italian Beef",
+      "calories": null,
+      "price": "$3.59"
+    },
+    {
+      "name": "Diet Beef",
+      "category": "Italian Beef",
+      "calories": null,
+      "price": "$8.50"
+    },
+    {
+      "name": "Italian Sausage",
+      "category": "Italian Sausage",
+      "calories": null,
+      "price": "$7.50"
+    },
+    {
+      "name": "Double Italian Sausage",
+      "category": "Italian Sausage",
+      "calories": null,
+      "price": "$9.99"
+    },
+    {
+      "name": "Regular Combo",
+      "category": "Beef & Sausage Combo",
+      "calories": null,
+      "price": "$12.05"
+    },
+    {
+      "name": "Big Combo",
+      "category": "Beef & Sausage Combo",
+      "calories": null,
+      "price": "$16.00"
+    },
+    {
+      "name": "The Original Depression Dog",
+      "category": "Hot Dog & Fries",
+      "calories": null,
+      "price": "$6.79"
+    },
+    {
+      "name": "Chicago Dog",
+      "category": "Hot Dog & Fries",
+      "calories": null,
+      "price": "$6.99"
+    },
+    {
+      "name": "Chili Cheese Dog",
+      "category": "Hot Dog & Fries",
+      "calories": null,
+      "price": "$6.99"
+    },
+    {
+      "name": "Cheese Dog",
+      "category": "Hot Dog & Fries",
+      "calories": null,
+      "price": "$6.99"
+    },
+    {
+      "name": "The Original Depression Polish",
+      "category": "Polish & Fries",
+      "calories": null,
+      "price": "$8.99"
+    },
+    {
+      "name": "Chicago Polish",
+      "category": "Polish & Fries",
+      "calories": null,
+      "price": "$8.99"
+    },
+    {
+      "name": "Maxwell Street Polish",
+      "category": "Polish & Fries",
+      "calories": null,
+      "price": "$8.99"
+    },
+    {
+      "name": "Hamburger",
+      "category": "Burgers",
+      "calories": null,
+      "price": "$8.89"
+    },
+    {
+      "name": "Double Hamburger",
+      "category": "Burgers",
+      "calories": null,
+      "price": "$12.99"
+    },
+    {
+      "name": "Cheeseburger",
+      "category": "Burgers",
+      "calories": null,
+      "price": "$9.69"
+    },
+    {
+      "name": "Double Cheeseburger",
+      "category": "Burgers",
+      "calories": null,
+      "price": "$13.85"
+    },
+    {
+      "name": "BBQ Bacon Cheddar Burger",
+      "category": "Burgers",
+      "calories": null,
+      "price": "$11.39"
+    },
+    {
+      "name": "Spicy Buffalo Burger",
+      "category": "Burgers",
+      "calories": null,
+      "price": "$10.45"
+    },
+    {
+      "name": "Original Chicken",
+      "category": "Chicken",
+      "calories": null,
+      "price": "$9.45"
+    },
+    {
+      "name": "Chipotle Chicken",
+      "category": "Chicken",
+      "calories": null,
+      "price": "$11.99"
+    },
+    {
+      "name": "BBQ Bacon Cheddar Chicken",
+      "category": "Chicken",
+      "calories": null,
+      "price": "$11.99"
+    },
+    {
+      "name": "Buffalo Chicken",
+      "category": "Chicken",
+      "calories": null,
+      "price": "$11.09"
+    },
+    {
+      "name": "Small Hand Cut Fries",
+      "category": "Fries",
+      "calories": null,
+      "price": "$3.39"
+    },
+    {
+      "name": "Large Hand Cut Fries",
+      "category": "Fries",
+      "calories": null,
+      "price": "$4.45"
+    },
+    {
+      "name": "Cheddar Cheese Fries",
+      "category": "Fries",
+      "calories": null,
+      "price": "$5.99"
+    },
+    {
+      "name": "Chili Cheese Fries",
+      "category": "Fries",
+      "calories": null,
+      "price": "$7.25"
+    },
+    {
+      "name": "Buffalo Bleu Fries",
+      "category": "Fries",
+      "calories": null,
+      "price": "$6.50"
+    },
+    {
+      "name": "Loaded Fries",
+      "category": "Fries",
+      "calories": null,
+      "price": "$7.50"
+    },
+    {
+      "name": "Beefy Fries",
+      "category": "Fries",
+      "calories": null,
+      "price": "$16.99"
+    },
+    {
+      "name": "Tamale",
+      "category": "Tamales & Chili",
+      "calories": null,
+      "price": "$3.45"
+    },
+    {
+      "name": "Tamale Boat",
+      "category": "Tamales & Chili",
+      "calories": null,
+      "price": "$9.25"
+    },
+    {
+      "name": "Bowl of Chili",
+      "category": "Tamales & Chili",
+      "calories": null,
+      "price": "$6.09"
+    },
+    {
+      "name": "Side of Hot Giardiniera",
+      "category": "Extras",
+      "calories": null,
+      "price": "$0.90"
+    },
+    {
+      "name": "Side of Sweet Peppers",
+      "category": "Extras",
+      "calories": null,
+      "price": "$0.90"
+    },
+    {
+      "name": "Side of Hot Oil",
+      "category": "Extras",
+      "calories": null,
+      "price": "$0.35"
+    },
+    {
+      "name": "Side of Italian Sausage",
+      "category": "Extras",
+      "calories": null,
+      "price": "$4.50"
+    },
+    {
+      "name": "Provolone Cheese",
+      "category": "Extras",
+      "calories": null,
+      "price": "$0.90"
+    },
+    {
+      "name": "American Cheese",
+      "category": "Extras",
+      "calories": null,
+      "price": "$0.90"
+    },
+    {
+      "name": "Slices of Cheddar Cheese",
+      "category": "Extras",
+      "calories": null,
+      "price": "$0.90"
+    },
+    {
+      "name": "Cup of Cheddar Cheese Sauce",
+      "category": "Extras",
+      "calories": null,
+      "price": "$1.50"
+    },
+    {
+      "name": "Cup of Chili",
+      "category": "Extras",
+      "calories": null,
+      "price": "$1.20"
+    },
+    {
+      "name": "Side of Bacon",
+      "category": "Extras",
+      "calories": null,
+      "price": "$1.20"
+    },
+    {
+      "name": "Side of Pickles",
+      "category": "Extras",
+      "calories": null,
+      "price": "$0.60"
+    },
+    {
+      "name": "Side of BBQ Sauce",
+      "category": "Extras",
+      "calories": null,
+      "price": "$0.75"
+    },
+    {
+      "name": "Side of Ranch",
+      "category": "Extras",
+      "calories": null,
+      "price": "$0.75"
+    },
+    {
+      "name": "Side of Bleu Cheese",
+      "category": "Extras",
+      "calories": null,
+      "price": "$0.75"
+    },
+    {
+      "name": "Side of Hot Sauce",
+      "category": "Extras",
+      "calories": null,
+      "price": "$0.75"
+    },
+    {
+      "name": "Side of Chipotle Sauce",
+      "category": "Extras",
+      "calories": null,
+      "price": "$0.75"
+    },
+    {
+      "name": "Side of Sour Cream",
+      "category": "Extras",
+      "calories": null,
+      "price": "$1.20"
+    },
+    {
+      "name": "Side of Grilled Onions",
+      "category": "Extras",
+      "calories": null,
+      "price": "$0.90"
+    },
+    {
+      "name": "Side of Sport Peppers",
+      "category": "Extras",
+      "calories": null,
+      "price": "$0.60"
+    },
+    {
+      "name": "Side of Green Relish",
+      "category": "Extras",
+      "calories": null,
+      "price": "$0.60"
+    },
+    {
+      "name": "Side of French Bread",
+      "category": "Extras",
+      "calories": null,
+      "price": "$1.80"
+    },
+    {
+      "name": "Ketchup Packets",
+      "category": "Extras",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Mustard Packets",
+      "category": "Extras",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Mayo Packets",
+      "category": "Extras",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Salt Packets",
+      "category": "Extras",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Pepper Packets",
+      "category": "Extras",
+      "calories": null,
+      "price": null
+    },
+    {
+      "name": "Side of Gravy",
+      "category": "Extras",
+      "calories": null,
+      "price": "$0.50"
+    },
+    {
+      "name": "Bottled Water",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$2.50"
+    },
+    {
+      "name": "Gatorade Orange",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$4.00"
+    },
+    {
+      "name": "Gatorade Fruit Punch",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$4.00"
+    },
+    {
+      "name": "Gatorade Lemon Lime",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$4.00"
+    },
+    {
+      "name": "Orange Crush Bottle",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$3.75"
+    },
+    {
+      "name": "Mountain Dew Bottle",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$3.75"
+    },
+    {
+      "name": "Starry Bottle",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$3.75"
+    },
+    {
+      "name": "Mug Root Beer Bottle",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$3.75"
+    },
+    {
+      "name": "Diet Pepsi Bottle",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$3.75"
+    },
+    {
+      "name": "Strawberry Crush Bottle",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$3.75"
+    },
+    {
+      "name": "Grape Crush Bottle",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$3.75"
+    },
+    {
+      "name": "Dole Lemonade Bottle",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$3.75"
+    },
+    {
+      "name": "Dole Strawberry Lemonade Bottle",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$3.75"
+    },
+    {
+      "name": "Pure Leaf Unsweetened Tea",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$4.25"
+    },
+    {
+      "name": "Pepsi Bottled Pop",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$3.75"
+    },
+    {
+      "name": "Pepsi Zero Bottle",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$3.75"
+    },
+    {
+      "name": "WunderBar",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$5.89"
+    },
+    {
+      "name": "Chocolate Chunk Cookie",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$1.79"
+    },
+    {
+      "name": "M&M Cookie",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$1.79"
+    },
+    {
+      "name": "Brownie",
+      "category": "Desserts",
+      "calories": null,
+      "price": "$2.25"
+    },
+    {
+      "name": "LB of Italian Beef",
+      "category": "Take Home",
+      "calories": null,
+      "price": "$25.00"
+    },
+    {
+      "name": "LB of Italian Sausage",
+      "category": "Take Home",
+      "calories": null,
+      "price": "$9.20"
+    },
+    {
+      "name": "French Bread Loaf",
+      "category": "Take Home",
+      "calories": null,
+      "price": "$5.75"
+    },
+    {
+      "name": "1/2 Pint of Hot Giardiniera",
+      "category": "Take Home",
+      "calories": null,
+      "price": "$3.50"
+    },
+    {
+      "name": "Quart of Hot Giardiniera",
+      "category": "Take Home",
+      "calories": null,
+      "price": "$14.00"
+    },
+    {
+      "name": "Pint of Hot Giardiniera",
+      "category": "Take Home",
+      "calories": null,
+      "price": "$7.00"
+    },
+    {
+      "name": "1/2 Pint of Sweet Peppers",
+      "category": "Take Home",
+      "calories": null,
+      "price": "$3.50"
+    },
+    {
+      "name": "Pint of Sweet Peppers",
+      "category": "Take Home",
+      "calories": null,
+      "price": "$7.00"
+    },
+    {
+      "name": "Quart of Sweet Peppers",
+      "category": "Take Home",
+      "calories": null,
+      "price": "$14.00"
+    },
+    {
+      "name": "Quart of Gravy",
+      "category": "Take Home",
+      "calories": null,
+      "price": "$7.00"
+    },
+    {
+      "name": "Beef Package",
+      "category": "Take Home",
+      "calories": null,
+      "price": "$80.00+"
+    }
+  ]
+}
