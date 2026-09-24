@@ -1,0 +1,15 @@
+{
+  "title": "Casa Bonita Menu With Price List",
+  "items": [
+    { "name": "Add Side of Guacamole (6oz, GF/VG)", "category": "Add-Ons", "calories": null, "price": "$3.99" },
+    { "name": "Add Side of Queso Blanco (6oz, GF/V)", "category": "Add-Ons", "calories": null, "price": "$5.49" },
+
+    { "name": "Entree - Weekday Lunch (11am-3:30pm) - choice of Tacos (Chicken Tinga, Pork Carnitas, Green Chile Brisket, or Vegan Corn Rajas), Chicken Enchiladas, Cheese Enchiladas, Betty's Burrito, Taco Salad, or Carnitas Nachos", "category": "Entrees", "calories": null, "price": "$29.99" },
+    { "name": "Entree - All Other Times - choice of Tacos (Chicken Tinga, Pork Carnitas, Green Chile Brisket, or Vegan Corn Rajas), Chicken Enchiladas, Cheese Enchiladas, Betty's Burrito, Taco Salad, or Carnitas Nachos", "category": "Entrees", "calories": null, "price": "$39.99" },
+
+    { "name": "Kids' Meal - Weekday Lunch (11am-3:30pm), Ages 3-12 - choice of Betty's Mini Burrito, Chicken Tenders, or Mini Hamburgers/Cheeseburgers (served with fries)", "category": "Kids' Meals", "calories": null, "price": "$19.99" },
+    { "name": "Kids' Meal - All Other Times, Ages 3-12 - choice of Betty's Mini Burrito, Chicken Tenders, or Mini Hamburgers/Cheeseburgers (served with fries)", "category": "Kids' Meals", "calories": null, "price": "$24.99" },
+
+    { "name": "Dessert - choice of Carlota (Mexican Lime Custard), Traditional Vanilla Flan, Spiced Chocolate Budino, or Cleo's Ice Cream Sandwich", "category": "Desserts", "calories": null, "price": "$8" }
+  ]
+}
