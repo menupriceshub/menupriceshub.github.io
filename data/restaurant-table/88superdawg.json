@@ -1,0 +1,227 @@
+{
+  "title": "Superdawg Menu With Price List",
+  "items": [
+    {
+      "name": "Superdawg",
+      "category": "Superdawg",
+      "calories": null,
+      "price": "$9.30"
+    },
+    {
+      "name": "Superburger",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$10.40"
+    },
+    {
+      "name": "Supercheesie",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$11.15"
+    },
+    {
+      "name": "Whooperburger",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$13.05"
+    },
+    {
+      "name": "Whoopercheesie",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$14.55"
+    },
+    {
+      "name": "Whoopskidawg",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$12.05"
+    },
+    {
+      "name": "Superchic",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$12.35"
+    },
+    {
+      "name": "Superchickenmidgees",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$8.95"
+    },
+    {
+      "name": "Grilled Cheese",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$8.65"
+    },
+    {
+      "name": "Superfish",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$12.65"
+    },
+    {
+      "name": "Supershrimp",
+      "category": "Sandwiches",
+      "calories": null,
+      "price": "$17.55"
+    },
+    {
+      "name": "Superfries",
+      "category": "Other Stuff",
+      "calories": null,
+      "price": "$4.35"
+    },
+    {
+      "name": "Superfries with Cheese",
+      "category": "Other Stuff",
+      "calories": null,
+      "price": "$6.95"
+    },
+    {
+      "name": "Superonionchips",
+      "category": "Other Stuff",
+      "calories": null,
+      "price": "$4.95"
+    },
+    {
+      "name": "Superveggies",
+      "category": "Other Stuff",
+      "calories": null,
+      "price": "$5.40"
+    },
+    {
+      "name": "Supertamales",
+      "category": "Other Stuff",
+      "calories": null,
+      "price": "$3.75"
+    },
+    {
+      "name": "Superchili",
+      "category": "Other Stuff",
+      "calories": null,
+      "price": "$7.05"
+    },
+    {
+      "name": "Strawberry Malt",
+      "category": "Fountain Things",
+      "calories": null,
+      "price": "$5.80"
+    },
+    {
+      "name": "Strawberry Malt",
+      "category": "Fountain Things",
+      "calories": null,
+      "price": "$7.10"
+    },
+    {
+      "name": "Supersodas",
+      "category": "Fountain Things",
+      "calories": null,
+      "price": "$6.85"
+    },
+    {
+      "name": "Black Kows",
+      "category": "Fountain Things",
+      "calories": null,
+      "price": "$6.20"
+    },
+    {
+      "name": "Supersundae",
+      "category": "Fountain Things",
+      "calories": null,
+      "price": "$6.95"
+    },
+    {
+      "name": "SuperChocolateChunk Cookie",
+      "category": "Fountain Things",
+      "calories": null,
+      "price": "$2.25"
+    },
+    {
+      "name": "SuperChocolateChunk Cookie à la mode",
+      "category": "Fountain Things",
+      "calories": null,
+      "price": "$5.45"
+    },
+    {
+      "name": "SuperBrownie",
+      "category": "Fountain Things",
+      "calories": null,
+      "price": "$3.35"
+    },
+    {
+      "name": "SuperBrownie à la mode",
+      "category": "Fountain Things",
+      "calories": null,
+      "price": "$6.55"
+    },
+    {
+      "name": "Diced Cream Cone - Single Scoop",
+      "category": "Fountain Things",
+      "calories": null,
+      "price": "$2.70"
+    },
+    {
+      "name": "Diced Cream Cone - Double Scoop",
+      "category": "Fountain Things",
+      "calories": null,
+      "price": "$3.20"
+    },
+    {
+      "name": "Diced Cream Dishes - Single Scoop",
+      "category": "Fountain Things",
+      "calories": null,
+      "price": "$2.70"
+    },
+    {
+      "name": "Diced Cream Dishes - Double Scoop",
+      "category": "Fountain Things",
+      "calories": null,
+      "price": "$3.20"
+    },
+    {
+      "name": "Supersodas - Small",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$2.25"
+    },
+    {
+      "name": "Supersodas - Medium",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$2.75"
+    },
+    {
+      "name": "Supersodas - Large",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$3.05"
+    },
+    {
+      "name": "Coffee",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$1.90"
+    },
+    {
+      "name": "Hot Chocolate",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$2.95"
+    },
+    {
+      "name": "Hot Tea",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$1.90"
+    },
+    {
+      "name": "Aquafina Bottled Water",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$3.05"
+    }
+  ]
+}
