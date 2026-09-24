@@ -1,0 +1,623 @@
+{
+  "title": "Milwaukee Burger Menu With Price List",
+  "items": [
+    {
+      "name": "Burger, Fry, Shake",
+      "category": "Build Your Own",
+      "calories": null,
+      "price": "$17.99"
+    },
+    {
+      "name": "Build Your Own Burger",
+      "category": "Build Your Own",
+      "calories": null,
+      "price": "$7.99"
+    },
+    {
+      "name": "Classic Curds",
+      "category": "Curds",
+      "calories": null,
+      "price": "$11.99"
+    },
+    {
+      "name": "Fair Curds",
+      "category": "Curds",
+      "calories": null,
+      "price": "$11.99"
+    },
+    {
+      "name": "Mozzarella Curds",
+      "category": "Curds",
+      "calories": null,
+      "price": "$11.49"
+    },
+    {
+      "name": "Fire Curds",
+      "category": "Curds",
+      "calories": null,
+      "price": "$11.99"
+    },
+    {
+      "name": "Curd Sampler",
+      "category": "Curds",
+      "calories": null,
+      "price": "$14.99"
+    },
+    {
+      "name": "5 Bone-In Wings",
+      "category": "Wings",
+      "calories": null,
+      "price": "$9.99"
+    },
+    {
+      "name": "10 Bone-In Wings",
+      "category": "Wings",
+      "calories": null,
+      "price": "$15.99"
+    },
+    {
+      "name": "5 Boneless Wings",
+      "category": "Wings",
+      "calories": null,
+      "price": "$8.99"
+    },
+    {
+      "name": "10 Boneless Wings",
+      "category": "Wings",
+      "calories": null,
+      "price": "$13.99"
+    },
+    {
+      "name": "5 Crispy Breaded Wings",
+      "category": "Wings",
+      "calories": null,
+      "price": "$10.50"
+    },
+    {
+      "name": "10 Crispy Breaded Wings",
+      "category": "Wings",
+      "calories": null,
+      "price": "$15.50"
+    },
+    {
+      "name": "1/2 Order Spicy Breaded Cauliflower",
+      "category": "Wings",
+      "calories": null,
+      "price": "$8.99"
+    },
+    {
+      "name": "Full Spicy Breaded Cauliflower",
+      "category": "Wings",
+      "calories": null,
+      "price": "$14.99"
+    },
+    {
+      "name": "3 Crispy Chicken Tenders",
+      "category": "Wings",
+      "calories": null,
+      "price": "$9.99"
+    },
+    {
+      "name": "6 Crispy Chicken Tenders",
+      "category": "Wings",
+      "calories": null,
+      "price": "$14.99"
+    },
+    {
+      "name": "Buffalo Bleu Cheese Brussels",
+      "category": "Bar Bites",
+      "calories": null,
+      "price": "$15.99"
+    },
+    {
+      "name": "Buttermilk Onion Rings",
+      "category": "Bar Bites",
+      "calories": null,
+      "price": "$9.49"
+    },
+    {
+      "name": "Chips & Dip Platter",
+      "category": "Bar Bites",
+      "calories": null,
+      "price": "$14.99"
+    },
+    {
+      "name": "Crispy Fried Pickles",
+      "category": "Bar Bites",
+      "calories": null,
+      "price": "$11.99"
+    },
+    {
+      "name": "Mango Chicken Quesadilla",
+      "category": "Bar Bites",
+      "calories": null,
+      "price": "$14.99"
+    },
+    {
+      "name": "MBC Burger Trio",
+      "category": "Bar Bites",
+      "calories": null,
+      "price": "$16.99"
+    },
+    {
+      "name": "Nachos",
+      "category": "Bar Bites",
+      "calories": null,
+      "price": "$16.99"
+    },
+    {
+      "name": "Pretzel Bites App",
+      "category": "Bar Bites",
+      "calories": null,
+      "price": "$12.49"
+    },
+    {
+      "name": "Truffle Fry App",
+      "category": "Bar Bites",
+      "calories": null,
+      "price": "$10.99"
+    },
+    {
+      "name": "Brown Sugar Smoked Cheddar",
+      "category": "Thick Burgers",
+      "calories": null,
+      "price": "$15.99"
+    },
+    {
+      "name": "Cheese Curd Cheeseburger",
+      "category": "Thick Burgers",
+      "calories": null,
+      "price": "$14.99"
+    },
+    {
+      "name": "Hickory Cheddar",
+      "category": "Thick Burgers",
+      "calories": null,
+      "price": "$15.99"
+    },
+    {
+      "name": "Jalapeno Cheddar Infused Burger",
+      "category": "Thick Burgers",
+      "calories": null,
+      "price": "$15.99"
+    },
+    {
+      "name": "Milwaukee Melt",
+      "category": "Thick Burgers",
+      "calories": null,
+      "price": "$14.49"
+    },
+    {
+      "name": "The Hog Father",
+      "category": "Thick Burgers",
+      "calories": null,
+      "price": "$17.99"
+    },
+    {
+      "name": "Milwaukee Style Smashed",
+      "category": "Smash Burgers",
+      "calories": null,
+      "price": "$15.99"
+    },
+    {
+      "name": "The Badger",
+      "category": "Smash Burgers",
+      "calories": null,
+      "price": "$16.99"
+    },
+    {
+      "name": "The Bomba Burger",
+      "category": "Smash Burgers",
+      "calories": null,
+      "price": "$15.99"
+    },
+    {
+      "name": "The Hangover Vol. 2",
+      "category": "Smash Burgers",
+      "calories": null,
+      "price": "$16.99"
+    },
+    {
+      "name": "The Truffle Wagyu Royal",
+      "category": "Smash Burgers",
+      "calories": null,
+      "price": "$19.99"
+    },
+    {
+      "name": "Wisconsin Smashed",
+      "category": "Smash Burgers",
+      "calories": null,
+      "price": "$14.99"
+    },
+    {
+      "name": "Chicken Avocado Tacos",
+      "category": "Handhelds",
+      "calories": null,
+      "price": "$15.99"
+    },
+    {
+      "name": "Grilled Cheese & Tomato Soup",
+      "category": "Handhelds",
+      "calories": null,
+      "price": "$13.49"
+    },
+    {
+      "name": "Hot Honey Jalapeno Chicken Sandwich",
+      "category": "Handhelds",
+      "calories": null,
+      "price": "$16.99"
+    },
+    {
+      "name": "MBC Chicken",
+      "category": "Handhelds",
+      "calories": null,
+      "price": "$14.49"
+    },
+    {
+      "name": "Peach BBQ Pulled Pork",
+      "category": "Handhelds",
+      "calories": null,
+      "price": "$15.99"
+    },
+    {
+      "name": "Pepper Jack Bacon Turkey",
+      "category": "Handhelds",
+      "calories": null,
+      "price": "$16.99"
+    },
+    {
+      "name": "Pulled Pork Mac & Cheese",
+      "category": "Bowls",
+      "calories": null,
+      "price": "$16.99"
+    },
+    {
+      "name": "Spicy Honey Salmon Bowl",
+      "category": "Bowls",
+      "calories": null,
+      "price": "$18.99"
+    },
+    {
+      "name": "Teriyaki Chicken Bowl",
+      "category": "Bowls",
+      "calories": null,
+      "price": "$14.99"
+    },
+    {
+      "name": "Applewood Smoked Bacon & Fajita Chicken Salad",
+      "category": "Salads",
+      "calories": null,
+      "price": "$15.99"
+    },
+    {
+      "name": "Blackened Salmon Salad",
+      "category": "Salads",
+      "calories": null,
+      "price": "$18.99"
+    },
+    {
+      "name": "BLT Turkey Ranch Salad",
+      "category": "Salads",
+      "calories": null,
+      "price": "$15.99"
+    },
+    {
+      "name": "Buffalo Chicken Salad",
+      "category": "Salads",
+      "calories": null,
+      "price": "$15.99"
+    },
+    {
+      "name": "Cajun Chicken Caesar Salad",
+      "category": "Salads",
+      "calories": null,
+      "price": "$15.99"
+    },
+    {
+      "name": "Buffalo Chicken Wrap",
+      "category": "Wraps",
+      "calories": null,
+      "price": "$15.99"
+    },
+    {
+      "name": "Cajun Chicken Caesar Wrap",
+      "category": "Wraps",
+      "calories": null,
+      "price": "$15.99"
+    },
+    {
+      "name": "Kid Cheeseburger",
+      "category": "Kids Meals",
+      "calories": null,
+      "price": "$8.99"
+    },
+    {
+      "name": "Kids Cheese Quesadilla",
+      "category": "Kids Meals",
+      "calories": null,
+      "price": "$7.99"
+    },
+    {
+      "name": "Kids Chicken Nuggets",
+      "category": "Kids Meals",
+      "calories": null,
+      "price": "$8.99"
+    },
+    {
+      "name": "Kids Chicken Tenders",
+      "category": "Kids Meals",
+      "calories": null,
+      "price": "$8.99"
+    },
+    {
+      "name": "Kids Hamburger",
+      "category": "Kids Meals",
+      "calories": null,
+      "price": "$8.99"
+    },
+    {
+      "name": "Kids Kraft Mac & Cheese",
+      "category": "Kids Meals",
+      "calories": null,
+      "price": "$7.99"
+    },
+    {
+      "name": "Strawberry Lemonade",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$3.49"
+    },
+    {
+      "name": "Lemonade",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$3.49"
+    },
+    {
+      "name": "Rootbeer 16",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$4.00"
+    },
+    {
+      "name": "Pepsi",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$2.99"
+    },
+    {
+      "name": "Diet Pepsi",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$2.99"
+    },
+    {
+      "name": "Starry",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$2.99"
+    },
+    {
+      "name": "Mountain Dew",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$2.99"
+    },
+    {
+      "name": "Shake",
+      "category": "Beverages",
+      "calories": null,
+      "price": "$6.99"
+    },
+    {
+      "name": "Side Beer Battered Fries",
+      "category": "Add A Side",
+      "calories": null,
+      "price": "$2.99"
+    },
+    {
+      "name": "Side House Cut Chips",
+      "category": "Add A Side",
+      "calories": null,
+      "price": "$2.99"
+    },
+    {
+      "name": "Side Sweet Potato Tots",
+      "category": "Add A Side",
+      "calories": null,
+      "price": "$3.99"
+    },
+    {
+      "name": "Side Cajun Fries",
+      "category": "Add A Side",
+      "calories": null,
+      "price": "$3.99"
+    },
+    {
+      "name": "Side Salad",
+      "category": "Add A Side",
+      "calories": null,
+      "price": "$3.99"
+    },
+    {
+      "name": "Side Classic Curds",
+      "category": "Add A Side",
+      "calories": null,
+      "price": "$5.99"
+    },
+    {
+      "name": "Cup Of Chili",
+      "category": "Add A Side",
+      "calories": null,
+      "price": "$3.99"
+    },
+    {
+      "name": "Bowl Of Chili",
+      "category": "Add A Side",
+      "calories": null,
+      "price": "$5.99"
+    },
+    {
+      "name": "Cup Of Beer Cheese",
+      "category": "Add A Side",
+      "calories": null,
+      "price": "$3.99"
+    },
+    {
+      "name": "Bowl Of Beer Cheese",
+      "category": "Add A Side",
+      "calories": null,
+      "price": "$5.99"
+    },
+    {
+      "name": "Bowl Of Tomato Soup",
+      "category": "Add A Side",
+      "calories": null,
+      "price": "$5.99"
+    },
+    {
+      "name": "Small Ranch",
+      "category": "Small Sauce",
+      "calories": null,
+      "price": "$0.99"
+    },
+    {
+      "name": "Small Chipotle Ranch",
+      "category": "Small Sauce",
+      "calories": null,
+      "price": "$0.99"
+    },
+    {
+      "name": "Small Burger Co. Sauce",
+      "category": "Small Sauce",
+      "calories": null,
+      "price": "$0.99"
+    },
+    {
+      "name": "Small BBQ",
+      "category": "Small Sauce",
+      "calories": null,
+      "price": "$0.99"
+    },
+    {
+      "name": "Small Buffalo",
+      "category": "Small Sauce",
+      "calories": null,
+      "price": "$0.99"
+    },
+    {
+      "name": "Small Honey Mustard",
+      "category": "Small Sauce",
+      "calories": null,
+      "price": "$0.99"
+    },
+    {
+      "name": "Small Pepperjack Cheese Sauce",
+      "category": "Small Sauce",
+      "calories": null,
+      "price": "$0.99"
+    },
+    {
+      "name": "Small Seasoned Sour Cream",
+      "category": "Small Sauce",
+      "calories": null,
+      "price": "$0.99"
+    },
+    {
+      "name": "Medium Ranch",
+      "category": "Medium Sauce",
+      "calories": null,
+      "price": "$1.99"
+    },
+    {
+      "name": "Medium Chipotle Ranch",
+      "category": "Medium Sauce",
+      "calories": null,
+      "price": "$1.99"
+    },
+    {
+      "name": "Medium Burger Co. Sauce",
+      "category": "Medium Sauce",
+      "calories": null,
+      "price": "$1.99"
+    },
+    {
+      "name": "Medium BBQ",
+      "category": "Medium Sauce",
+      "calories": null,
+      "price": "$1.99"
+    },
+    {
+      "name": "Medium Buffalo",
+      "category": "Medium Sauce",
+      "calories": null,
+      "price": "$1.99"
+    },
+    {
+      "name": "Medium Honey Mustard",
+      "category": "Medium Sauce",
+      "calories": null,
+      "price": "$1.99"
+    },
+    {
+      "name": "Medium Pepperjack Cheese Sauce",
+      "category": "Medium Sauce",
+      "calories": null,
+      "price": "$1.99"
+    },
+    {
+      "name": "Medium Seasoned Sour Cream",
+      "category": "Medium Sauce",
+      "calories": null,
+      "price": "$1.99"
+    },
+    {
+      "name": "Bloody Mary NA",
+      "category": "ClassPass",
+      "calories": null,
+      "price": "$7.20"
+    },
+    {
+      "name": "Classic Cheese Curds",
+      "category": "ClassPass",
+      "calories": null,
+      "price": "$9.90"
+    },
+    {
+      "name": "Cheese Curd Sampler",
+      "category": "ClassPass",
+      "calories": null,
+      "price": "$12.60"
+    },
+    {
+      "name": "Fried Pickles",
+      "category": "ClassPass",
+      "calories": null,
+      "price": "$9.90"
+    },
+    {
+      "name": "10 Traditional Buffalo Wings",
+      "category": "ClassPass",
+      "calories": null,
+      "price": "$13.50"
+    },
+    {
+      "name": "MBC Chicken Sandwich & Fries",
+      "category": "ClassPass",
+      "calories": null,
+      "price": "$12.60"
+    },
+    {
+      "name": "Wisconsin Smashed Burger & Fries",
+      "category": "ClassPass",
+      "calories": null,
+      "price": "$12.60"
+    },
+    {
+      "name": "Hickory Cheddar Burger & Fries",
+      "category": "ClassPass",
+      "calories": null,
+      "price": "$13.50"
+    }
+  ]
+}
