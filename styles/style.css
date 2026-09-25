@@ -1647,6 +1647,19 @@ gap:20px;
   overflow:hidden;
 }
 
+#menu-price-table-section1{
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+}
+#menu-price-table-section1 .ptg-tabs,
+#menu-price-table-section1 .ptg-sec-title,
+#menu-price-table-section1 .ptg-scroll-note,
+#menu-price-table-section1 .ptg-price-note{
+  padding-left: 0;
+  padding-right: 0;
+}
+
 /* ===== Section ===== */
 #ptg-prices{
     margin:40px 0;
