@@ -16,6 +16,27 @@ document.addEventListener("DOMContentLoaded", () => {
     .then(data => {
 
       // ==============================
+      // SAFE VALUE HELPER
+      // ==============================
+      // undefined / null (value or string
+      // form) ko blank kar deta hai
+      // ==============================
+
+      const safe = (val) => {
+        if (val === undefined || val === null) return "";
+        const str = String(val).trim();
+        if (
+          str === "" ||
+          str.toLowerCase() === "undefined" ||
+          str.toLowerCase() === "null"
+        ) {
+          return "";
+        }
+        return str;
+      };
+
+
+      // ==============================
       // PRICE NUMBER HELPER
       // ==============================
 
@@ -31,11 +52,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
       data.items.forEach(item => {
 
-        if (!byCategory[item.category]) {
-          byCategory[item.category] = [];
+        const cat = safe(item.category);
+
+        if (!byCategory[cat]) {
+          byCategory[cat] = [];
         }
 
-        byCategory[item.category].push(
+        byCategory[cat].push(
           toNum(item.price)
         );
 
@@ -144,14 +167,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
           <span class="ptg-tooltip-wrap">
 
-            ₹${perPersonMin} – ₹${perPersonMax}
+            ₹${safe(perPersonMin)} – ₹${safe(perPersonMax)}
 
             <span class="ptg-tooltip-text">
-              ₹${perPersonMin} – ₹${perPersonMax}
+              ₹${safe(perPersonMin)} – ₹${safe(perPersonMax)}
               per person, based on
               1 main course + 1 side + 1 drink.
               For two:
-              ₹${forTwoMin} – ₹${forTwoMax}
+              ₹${safe(forTwoMin)} – ₹${safe(forTwoMax)}
             </span>
 
           </span>
@@ -170,17 +193,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
       data.items.forEach(item => {
 
-        if (!itemsByCategory[item.category]) {
+        const cat = safe(item.category);
 
-          itemsByCategory[item.category] = [];
+        if (!itemsByCategory[cat]) {
+
+          itemsByCategory[cat] = [];
 
           categoryOrder.push(
-            item.category
+            cat
           );
 
         }
 
-        itemsByCategory[item.category].push(
+        itemsByCategory[cat].push(
           item
         );
 
@@ -213,7 +238,7 @@ document.addEventListener("DOMContentLoaded", () => {
               class="ptg-tab-btn${idx === 0 ? " active" : ""}"
               data-tab="ptg-tab-${slug(cat)}"
             >
-              ${cat}
+              ${safe(cat)}
             </button>
           `;
 
@@ -237,7 +262,7 @@ document.addEventListener("DOMContentLoaded", () => {
             >
 
               <h3 class="ptg-panel-title">
-                ${cat}
+                ${safe(cat)}
               </h3>
 
               <div class="ptg-table-wrap">
@@ -261,14 +286,14 @@ document.addEventListener("DOMContentLoaded", () => {
                           <td
                             data-label="Menu Item"
                           >
-                            ${item.name}
+                            ${safe(item.name)}
                           </td>
 
                           <td
                             class="ptg-td-price"
                             data-label="Price"
                           >
-                            ${item.price}
+                            ${safe(item.price)}
                           </td>
 
                         </tr>
@@ -297,7 +322,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <section id="menu-price-table-section1">
 
           <div class="ptg-sec-title">
-            <h2>${data.title}</h2>
+            <h2>${safe(data.title)}</h2>
           </div>
 
 
