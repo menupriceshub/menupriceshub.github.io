@@ -1555,6 +1555,23 @@
         "day": "Sunday",
         "time": "(sunday closed)"
       }
+    ],
+    "menu": [
+      {
+        "name": "Boston Clam Chowder",
+        "price": "$2.75",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U9wMKIMbmZqpnCK4J-YjImxtmy0GjbzDdCtOb7uJebFjPxEUeGeKVskOvF-5tetgv-ECy_Mv0wFlJIp3kYpnpSr3tzBA8WFV7Ds7Pxmifqz49CHgu2-E3HaYtBynaht9tb2AY0b=s2048-k-no-v1"
+      },
+      {
+        "name": "Smoked Salmon",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U_E0ExHfGQJgMVl89Z9__qDyoqmDSzD9MKnUpA5PrGaOQ6RoM4vG9zyofBoHJOUbblo-UYrW0fEThLidzMQy_YJWE__rhI3reaXhMJWYa1Mi2BSQGfhDnlIj6ffLW0UHE1_FYmL=s2048-k-no-v1"
+      },
+      {
+        "name": "Mixed Sashimi with capers",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U85KZXc5Wp9ntzS5pVfYgaPxOg5FxTmshvELRiIMGCoalwUXcmRuVnP0pcv56c5r1OQ9jUnEurW8evWn0wInr7iShJKWNetp0lKECxnRWLjeZ2MGu2QFg2W5wFYQTngIVHkAo0_ZtptAyXz=s2048-k-no-v1"
+      }
     ]
   },
   {
