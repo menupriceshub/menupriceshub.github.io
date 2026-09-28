@@ -85,6 +85,23 @@
         "day": "Sunday",
         "time": "12:00 am-11:00 pm"
       }
+    ],
+    "menu": [
+      {
+        "name": "Pastrami or Corned Beef",
+        "price": "$17.95",
+        "photo": "https://lh3.googleusercontent.com/grass-cs/ACvplmMq81gsD-SC5VeAc5RhPLA35kbRv-NYWI2yTYKpChUZVg51Z0DolsKYjMCVJf21mH-oHfdelBcqXWh4YHg-n9I9TV3xMfG21MUUwhH6rVj9-W_Cwi38kahRG3gEceMo-vA-ATj5W0djTouG=s1470-w784-h1470-rw"
+      },
+      {
+        "name": "Steak Fries",
+        "price": "$10.95",
+        "photo": "https://lh3.googleusercontent.com/grass-cs/ACvplmNsozpGPCGhiroIvKJg72nr3pmM8kx0Ystlkm1Hu3DnvrqH3-OrHM-MkcsZpQry3cxwrBRsxMZSuI22wD2ZY3UKfvRc44j9gTzFsi9HnTaU_avgJh5r7VebfkTSZo_P1KtDyVoZ_MthOOc=s1470-w784-h1470-rw"
+      },
+      {
+        "name": "Cole Slaw",
+        "price": "$6.95+",
+        "photo": "https://lh3.googleusercontent.com/grass-cs/ACvplmPOPDRBikknItw2k1FTgNc7hrGv_XjncguMNa7BWYzzLb_9m8KfvlJBeOP9yMM_MeVP0bO9PfxlEwo4r08JN8xOYEyv4dWMPVFCTqlnEaQEsh_3-JbZZ6GFZWSa9_Ng6OiK3cK6pK-4T6g=s1470-w784-h1470-rw"
+      }
     ]
   },
   {
@@ -172,6 +189,23 @@
       {
         "day": "Sunday",
         "time": "11:45 AM - 9:45 pm"
+      }
+    ],
+    "menu": [
+      {
+        "name": "Lamb Chops",
+        "price": "$72.95",
+        "photo": "https://lh3.googleusercontent.com/grass-cs/AABkmLfygDBz3L6NV6aKuWryYXpLYqCihQA9lJsUIclJSRffQLFq7Hh3gMhY_0t7GWyVNXZLz2oco_a1WgOAuZ2kDNvZP6RoJrTmRUDQXUUZ-Jh0Q_lCs-4eYJr2gs45EA32xEqXhIWTgw=s1470-w784-h1470-rw"
+      },
+      {
+        "name": "Steak for 2",
+        "price": "$155.90",
+        "photo": "https://lh3.googleusercontent.com/grass-cs/ACvplmM4QIGkFbft6OkP5w_Snj9ljKFbZ9aYCigKSe02AWGlZKrP9DxcP33p2Fh2D9NUuSh5ymImDuW_9oom2FjVDBYqeGwQsxDgUmoaUiOuQIp1zduKgJJMQVdFy8z_ZTmdYwqor7E4=s1470-w784-h1470-rw"
+      },
+      {
+        "name": "Pecan Pie",
+        "price": "$12.95+",
+        "photo": "https://lh3.googleusercontent.com/grass-cs/ACvplmOoKj6GJ1pTPUnUsX7SrPc-jpoghUHTEeZjn8TyyTzzG-LmU_SIKDiyD5jSTFUSqBhdDtbTBjdYlfb602aWQ5hJpO_kWjhD7UUKidEo_jt2LCv5WvK7-sypSRbuGiVw1ic66RSva-yfpGE=s1470-w784-h1470-rw"
       }
     ]
   },
@@ -261,6 +295,23 @@
         "day": "Sunday",
         "time": "11:00 am-3:00 pm"
       }
+    ],
+    "menu": [
+      {
+        "name": "Pulled Pork",
+        "price": "$11.00+",
+        "photo": "https://lh3.googleusercontent.com/grass-cs/AABkmLfE-MewPXWdtMB694hQjjNmrXxY2rGVwusN_HVY1PCSNABDEqL0IpI6iNKZfNVMyupm2wV2HCUn_iDr3heL7Y4YKRnJWi8HL6a5jfbJHPLRKdpTNt1GCjpdlDCa_JKcW2S_HF1Rmg=s1470-w784-h1470-rw"
+      },
+      {
+        "name": "Tipsy Texan",
+        "price": "$8.00+",
+        "photo": "https://lh3.googleusercontent.com/grass-cs/ACvplmPqsXRc7K3G8_B1VndUz2Uf2UC2BdYE57PNAcx9Q_PLWLSASYKVzIpltdv75bg_sXW6VixQb56OFXe0lZF0Kj-EeXSVDpnSXqdIajhL_rxGiOEWqdFtfgBpgCqXcDe_FxsvKOvBmA=s1470-w784-h1470-rw"
+      },
+      {
+        "name": "Pecan Ple",
+        "price": "$8.00",
+        "photo": "https://lh3.googleusercontent.com/grass-cs/ACvplmOMRudQTOd_lAsT5Gdo0bzWqwusPXWBzNxw3KmJIvs-EtOjJvt_idBy15GorolDWp1NCNwIBGjpXFUzc4hwjda2ufGT8S_O-Ig0mqa76LM2htOS_R1IJMcgbwgJkwPgpLaCX-um=s1470-w784-h1470-rw"
+      }
     ]
   },
   {
@@ -348,6 +399,23 @@
       {
         "day": "Sunday",
         "time": "11:00 am - 7:00 pm"
+      }
+    ],
+    "menu": [
+      {
+        "name": "Zingerman's Potato Salad",
+        "price": "$5.50",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AFP8RcO5yIG-PmiK7P97P-8vFKHul_ClY9CcrTYqdMRtkCZlcH1j876JXzhevglMG1UsQrWafzDzvyxqInRgxrX0riopdVRWL9SwwtPJHf5FX2em5X3e2Wx6WGoi76dWuREG8flNnsTn=s2048-k-no-v1"
+      },
+      {
+        "name": "Coleslaw",
+        "price": "$3.99",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U_qoTB_vcE_LkMthexYiOb5KnJm8hhIS1-kybj_Z4iWXh81lYXMQbLgfkmGIdSTOlnzCG94-6aoKkMBgBXO0XNHxerOyuRqhTml1yAPy7YwbXhn0Zkm_PZC7Vywhh_Ttuj5hls=s2048-k-no-v1"
+      },
+      {
+        "name": "Zingerman's Reuben",
+        "price": "$0.75",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U8VmelreXQLJBLqx3zarC6mBGOY6JKDZyiAZBxxPdr9NjOyroQDCIRX794Gft_Meeok9WhPy37w5Kpz_mL2BL_L_jZzDehW63aoZiD8dJkWr0uJx8x2sNLo0o6TNI-xDPlUZD19=s2048-k-no-v1"
       }
     ]
   },
@@ -437,6 +505,23 @@
         "day": "Sunday",
         "time": "open 24 hours"
       }
+    ],
+    "menu": [
+      {
+        "name": "French Fries",
+        "price": "$7.41",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U9jD0cIMESQjbkiiyMjADC3yn3F7yjO2xmYwzmxSEzUgRJi2ufzfrwg_u-gHnSYvBAGMC6543ZOYk0zWJFaabWSe0wvPA6fR6l3y8LKBLpKHoBxEs4-Elb994a-oI8dfNaFelEZ=s2048-k-no-v1"
+      },
+      {
+        "name": "Pizza Steak",
+        "price": "$18.52",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U9IENn7Ad4gqaf-WZmMF4XRebrWoU5kgMN4cDM_kHalUVdopV6HsWzkz6vpWder5toMxBgUfUrvX7HRj7_kfY51D9vVLFuF6hcePEaqFE9zMtmGHROEWbx0Qq_iC1a_HP3E82Yp=s2048-k-no-v1"
+      },
+      {
+        "name": "Mozzarella Sticks Jalapeno Poppers",
+        "price": "$9.26",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U-5uSnirgLQk4IJzFntxIZU6iWVLBoRbNTlouI4e6k66E-zhUSR9seJSNeB8QqWzxOfLQJQK9mu0ado88lPMLK79vErDgpPDfG1DBSTQkWE9p0odbEoXXgFwv6falh1KHqB2xwJJIXxYxU=s2048-k-no-v1"
+      }
     ]
   },
   {
@@ -524,6 +609,23 @@
       {
         "day": "Sunday",
         "time": "open 24 hours"
+      }
+    ],
+    "menu": [
+      {
+        "name": "Italian Hoagie",
+        "price": "$9.25",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U8Ue1qdfWLLzB7KjWgte4frAci2sDkA8bocT1WtFAg-_6MD2opl-fyemjVzPQ8ZmEpC0hzYrwRAHSVdPnmuyJJS1KIaDOyjVCH3JPFAv6gdlCs0pTuTdUiSDlYvoBDogZnhXwyG0g=s2048-k-no-v1"
+      },
+      {
+        "name": "Pizza Steak",
+        "price": "$19.00",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U9pRy76sx8QrPEwIK6L5jWY6mqz_738Ir3hb5acMMigDjMcqc0nLwBR-boxYknH98Nnz6ercPjIwk_zzyAmfYKVYcNqW_cknJP3I154mFepEvdkuDZHNLDbD0ucV4CcS8a13Eer=s2048-k-no-v1"
+      },
+      {
+        "name": "Meatball Sandwich",
+        "price": "$17.00",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U_Uki8w_MZxl6BFjdpdj4E-RgQeKZFQk6yfExD-tfA7I5YJYiwt6qzrQz3K6EsX2HDaR5-ePw69aghjU76X_4QZ0Rw04qZnA3aK3j3uJiqWAVhhYabmSliDmqVdrfe9yixB3DG6FQ=s2048-k-no-v1"
       }
     ]
   },
@@ -613,6 +715,23 @@
         "day": "Sunday",
         "time": "(sunday closed )"
       }
+    ],
+    "menu": [
+      {
+        "name": "Chess Pie Whole Pie",
+        "price": "$18.00",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U9fLUmYvZAO548u3c3WUV6QX1HK0hEMFFH6O9ZXHhhrjjxjeLEC7SjnM2xBj6Aj4KlyzRVPzuI7QmYBctCqicDBVjFEd_uQ6IB5ymsYOfmQulfox8M9JsMBbo1mdijXB5pUvrUy=s2048-k-no-v1"
+      },
+      {
+        "name": "Cole Slaw",
+        "price": "$2.10",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U_wLUFQMBSoxJkM9INKM6ep3zYqp3Sx4uMGZVJcV1-tw4Fm9nB0j2pcSoZtMP8xrsz7ypvAHe6CfbFCPUcWZwkdPCTdoOdoS8LP93jRNAWmQdW3CsqaO3vTeog3jDQ0bX7-oVxpbxM_Cks=s2048-k-no-v1"
+      },
+      {
+        "name": "Pint Baked Beans",
+        "price": "$8.00",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U_QLmCxxk-izQvitDDxwV3FWDeTAt9ZA6x20-4tNy7lP-3hWYqN1OJyVgfYtduHE9iG5NTPAWwbbhHpPE8QFhPx4DGHvkLdAnPrQVb2M64PjJLWEX2Ouf6_UUC4cPsl-8jGsZz2dg=s2048-k-no-v1"
+      }
     ]
   },
   {
@@ -700,6 +819,23 @@
       {
         "day": "Sunday",
         "time": "(sunday closed )"
+      }
+    ],
+    "menu": [
+      {
+        "name": "Margherita Pizza with Sausage",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U84pBDoE-ZzkvajpsUkluF3D-uWfWkXJPmNFEHHY2NPV8DqOb2AvOcdXoMbNLvWkUZ-gfqoX_TSSjnogowcNz1Qc4ooJz7A9bk3xrpqMks00IH7EzYtbJ8dUk-8c217h0-TUynX7w=s2048-k-no-v1"
+      },
+      {
+        "name": "Fresh Mozzarella Tomato and Basil Salad",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U9aRHdMnQwRNErXif-uMDmvbKtlnn68veVUYPyWQXzhjoQ94gzE8Bjr8oph55NRmq_jo761NzktTCrfzBkjCAkL77r9DI7oq1Cd87OAEZnyQflhXfm3hcQiCrYh3xQ6GLM96se6oQ=s2048-k-no-v1"
+      },
+      {
+        "name": "Flourless Chocolate Cake",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U89b4yGEfewnBqzT2m1ViOD5lBmixOOHJvkMGQ6p6006DxFFxvqrgMBfyzpmKOjTvBHUm-MWlLud7YPEkubs2kstsRmeTkhqGb9S_I0nxJSYSESpFE1AJwLGHVVk3lIt4OOMOpGog=s2048-k-no-v1"
       }
     ]
   },
@@ -789,6 +925,23 @@
         "day": "Sunday",
         "time": "10:30 am-9:00 pm"
       }
+    ],
+    "menu": [
+      {
+        "name": "Caesar Salad",
+        "price": "14.75",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U9xHrSJ-WlhpF1vnmU2fwHHUuG40aVfMiQy35Ocq3YhF0GAxNgxrWqFCYFC51vnYPvKUPm3OMaPJdTlO9ACktRZJ_SgJ-Y6Pc84ro30HJygHfyUcdg9CUO_If4QWcNBaDyrKFR7=s2048-k-no-v1"
+      },
+      {
+        "name": "Mozzarella & Tomato Sauce Pie",
+        "price": "$13.25",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U8l5WstgIVXtNOjaVDSdY1IaV5bup6-HK67qYTBmyUxqXPpSyvsQZOjlK5ms-Xi81TfzVYORFZG6nXRgSNnyvw5V8TKiulUlqHin5nLzVQ3vdLq2_NveYFHW1Wc45x_9fNk68jw=s2048-k-no-v1"
+      },
+      {
+        "name": "Cannoli Pie",
+        "price": "$9.00",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U9GZsH1GqgGJmRP-KbI5ZJRe0BHpDvGPSYkaMfRXWEW_lnHOuBFSf_qkHZoXMqqzkWDlbEjLupj7KgHf72TRlUYbzjfcy3Q7NcgMUcW8bTM92BSb3zGGs0OAvT_LmhTD99CdCWa=s2048-k-no-v1"
+      }
     ]
   },
   {
@@ -876,6 +1029,23 @@
       {
         "day": "Sunday",
         "time": "11:00 am-10:00 pm"
+      }
+    ],
+    "menu": [
+      {
+        "name": "Tiramisu",
+        "price": "$70.00",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U8WBQW3xVN9fYhsHmv3s4DHwr6rBz61_-d0oaQksocTA6kHpiVEG0UyLQeNJI5SHMep24ofvLvLOIQK2bCn1vD6o5nGJY1c3WJ-i389hewzGgyktAglDvw3AG_-mU7fOCgpPAro=s2048-k-no-v1"
+      },
+      {
+        "name": "Bone-In NY Strip 20oz",
+        "price": "$5",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U-LAnHlr2dK8lsi34I4wPnJ8UnLg2lIUtpkL0wmhfnsAR0PgMmWfPtBVD2jm8xr5flkZY-RhbijIfRBp4nEryX7UTiNZgZto-rt3ZXMH9_8iBtcfdnhrsPeuKviWl3cG4JPEVBY=s2048-k-no-v1"
+      },
+      {
+        "name": "Espresso Martini",
+        "price": "$17.00",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U_CKBtICKv1rMltD3HypEsuQs8ZBP9oZSUWSORXPmxWjwpYGxYBx4v_xXHd6dXi9dtMv4jA1_qxxTcxKV_iTH8VJ1DAPFWFOojizkJJXUjgFGAEuD4C290H9G982didF14MYFf0oA=s2048-k-no-v1"
       }
     ]
   },
@@ -965,6 +1135,23 @@
         "day": "Sunday",
         "time": "12:00 am-11:00 pm"
       }
+    ],
+    "menu": [
+      {
+        "name": "Beef Stroganoff",
+        "price": "$19.00",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U9urUp_j4wlCp4Kyuxai5O9Q51JiwBvNF9MwWiaZ_Me1PD7V8kB8yCd0yHZ97tFaUInPd1OHAGkXnlcc8H0PF31PB_D1rmmrbshQOcdDPs4Giatx5HW5gTVQZSao8nhxBWpJ3lCFnZrG9F2=s2048-k-no-v1"
+      },
+      {
+        "name": "Medovyk",
+        "price": "$13.00",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U8tKE4KvYxdo9XMmDziMJMi1-S0Q0P6sRiB9WsK8Fuu-jWfC7OM-rwmXJBFJaPDJSORnYcYzvUrC78QxFeJ_Mrji3dfMet_rUPmaN6guph6PyxfwwJhVu85qb9Mnik4G69ExuQ7=s2048-k-no-v1"
+      },
+      {
+        "name": "Pierogi Smorgasbord",
+        "price": "$17.00",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U8MY4rhAhHu1ulB37pcm1aATZKw6gszpzEAJ8n7VedZfk6EgxMo6an1A5iGk-1LeETPcbSSeV2ZTQVKvOT2NG81s7uFwo3YFpO4Z-8BMfq5XKE0kfIRj2VbFXwYi0UK1u9gwLdE=s2048-k-no-v1"
+      }
     ]
   },
   {
@@ -1052,6 +1239,23 @@
       {
         "day": "Sunday",
         "time": "12:00 am-11:30 pm"
+      }
+    ],
+    "menu": [
+      {
+        "name": "Cole Slaw",
+        "price": "$5.50",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U83zOPuLidDmNdWMXw-P0GwywoIbrYhDehX6RfdeDu2Z_LmzyJTGvP1-sfTVGPKnFHtu77dyzLoAtUPlxtv_UM7iOYRJrKWBVI_2vpZxe3k0iB9GdsOyo2vjMrbrPTCKFy-sK3fJ4M-79ap=s2048-k-no-v1"
+      },
+      {
+        "name": "Hot Potato Knish",
+        "price": "$7.95",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U-kXEbMDrTaCY039X-f7oPBTree7dHRGu_k4qo9_ytUnm7r12WlHf4RS0SipM8peEJVsE6_qSCKl2z_4lTkQJkiY99ROvrudUZEnZ-fjobknvirlSj9AjyDxE8dstyQfY645L8R=s2048-k-no-v1"
+      },
+      {
+        "name": "Hot Pastrami Sandwich",
+        "price": "$22.50",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U8q66fFUPkbGOBApFjOMJhjWlRS7r2XqjhMk9TzGP717bsjMEGrEnauC66IPSWiK6RKLTOcm5KsaUFISQ9OJvl-Emi9ZIITkmdLie8USJn-e9pplUuzNY1ZMUl2DSTGr6j8RxXW=s2048-k-no-v1"
       }
     ]
   },
@@ -1141,6 +1345,23 @@
         "day": "Sunday",
         "time": "Closed"
       }
+    ],
+    "menu": [
+      {
+        "name": "Hot Pastrami Sandwich",
+        "price": "$26.50",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U9ug6a6CfHFCFFsIgIpDey35xKdsuCxYdFMt1G6SnjD_IPytBxwZ-NB76aqgyh7-fqzNPoir3TrS0FDAMm9badnbb2Num4763daC5yqsPjFW0fu5UOEIhAK7KnOSNBZBZNZJ4768w=s2048-k-no-v1"
+      },
+      {
+        "name": "Potato Pancakes Latkes",
+        "price": "$27.00",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U8exRwshTNqTtxlQa8xRBFQVt1v1ir0LpNAzLlidDhCDQeXxWJGRTnMouuDMX2b8mHxXYyWTND-d6dV0xcKSlPpWdm1Gbs3E7QrRInuL6Nry57THNXWvFlgBcXeJj4pTk_F_tsDkirXafC_=s2048-k-no-v1"
+      },
+      {
+        "name": "Langer'S Coffee Cake or Marble Cake",
+        "price": "$3.75",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U_pMZFamvNB3dwdtfBc3DPAbxw13EjUNwb8JRBYdtsKoFXAmhDsxsQjtuU-6_oXu53b2uVKCQxf6eqVsyEwTyLho1gGDZpbYKTjDylaHKR7tiqkjuJbllK9aR7IZO3bfeJULkUB=s2048-k-no-v1"
+      }
     ]
   },
   {
@@ -1228,6 +1449,23 @@
       {
         "day": "Sunday",
         "time": "9:30 am-12:00 am"
+      }
+    ],
+    "menu": [
+      {
+        "name": "French fries",
+        "price": "$2.85",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U-4BYT_wf-iKAPuPdMvz3cD7QNtx1nM9nFbdC1MdVIphhD5ltL7Peb8DEu56lbHWh4AG2Jv06kd5AMof9d6XYdo8V7SNRQwMeQUKRYJTh0rRj5x_D36gfgKKrlLFk4Rfv9y14k=s2048-k-no-v1"
+      },
+      {
+        "name": "Guadalajara Dog",
+        "price": "$4.70",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U8hJObwVVEnTVXpsZq8MD6EvvVAL2eCnAxv9-6YrMOCioOtufujkxcxHH08NRTFWDdP-jzHwQq4c-ykWHJ0u_8iSiDvvTy0Mrkz_a-srCVqQp9vBAGhDy3Bc08zJmmUQhLHHIKb=s2048-k-no-v1"
+      },
+      {
+        "name": "Martha Stewart Dog",
+        "price": "$15.50",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U8Y3tkC5HBFfxJLHeX27GTt9Uzd5DCLovPKIjjiwUCpNkM3cBgd4k-YLqUiuGw-UidRuJN7n51xTtEH2FMTiQXsuVuyfKeFAN1xFw5iit_5IEFPhycGFeQPnXkPFsTMMKoLmbIK=s2048-k-no-v1"
       }
     ]
   },
@@ -1405,6 +1643,23 @@
         "day": "Sunday",
         "time": "4:00 pm-10:00 pm"
       }
+    ],
+    "menu": [
+      {
+        "name": "Creme Brulee",
+        "price": "$9.50",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U-HvUROGJ_G4pdGr-Bw0PhTbN13auxLoCm3TZ3oyae5OPsG-X2IFLiEFCNj11GIRUpjYWhxo4Uf_QcjZzAjqNl-0TK_EBRowsnwuY4PaRCd0KQFDl7NvgpSwkmgjUoUXBlyuUaWog=s2048-k-no-v1"
+      },
+      {
+        "name": "the Salad Bowl",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U_JQlPkX8xsvST4xy0YUhWy4dBO_ASkfIeQpAjiIhT9ob4qNj9quYslmuWDtt1DdqMRC3g7YA2LPYheFsv2Gtp74WkZaLmNVq_6DoCLIxQTOQl8yg_WZ_b0Abm37JxpT7eOOpU=s2048-k-no-v1"
+      },
+      {
+        "name": "Strawberry Shortcake",
+        "price": "$9.50",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U_0OZZWU5PBaY_gXoxX66zpf3EEWWSrMhWWTosbGagQLGAjNXxSjB6Alwa4p4GUeNAqTTed8MeOGI5tgiVj9WT5MEbmE9geywME9SVRSg6kIoo7oysiUpJ5AngqnAkxgYdwc-o=s2048-k-no-v1"
+      }
     ]
   },
   {
@@ -1492,6 +1747,23 @@
       {
         "day": "Sunday",
         "time": "11:00 am-3:00 pm; 5:00 pm-9:30 pm"
+      }
+    ],
+    "menu": [
+      {
+        "name": "Shoestring Potatoes",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U8lPiIxKw6kqyKyFuJg6znArWNGqn1lxDbLfih3YMXevchtrPAUiDOm6Rg2uqM1vnavtQGufGsNk3QFCNgn01CODMmIKXses9GNNTtP_Gv9lzj0a-MkGw9e0b2C1v6ERnrU5DM=s2048-k-no-v1"
+      },
+      {
+        "name": "Zuni Roast Chicken and Bread Salad",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U-1D4Ee_lTLNkNnebDFkamPyqyDrT1I519tFDs0HbY9nbUfK6hLQ15w4kMSPJ_PceXFJAFZN3mTl6u8w57HYzCFOZJY7CZ49RKC7V5e36_aTHA1VG6QxQLWhHwODLaSICbs_GkJbw=s2048-k-no-v1"
+      },
+      {
+        "name": "The Classic Zuni's Caesar Salad",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U_svKXG7m_KBzyqb1py1wroIf-IgcrpUtPQhNqAsmHz18YjjzhSwut6Db5zf7Ab3gCSeNIX8WPOhYguXOu-6kwVa-bq7QiwMjW4c3FQXzbzfYe96rDRDFrWxr5sUt-kYQRERPEmsQ=s2048-k-no-v1"
       }
     ]
   },
@@ -1581,6 +1853,23 @@
         "day": "Sunday",
         "time": "Closed"
       }
+    ],
+    "menu": [
+      {
+        "name": "Duck Breast",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U_svKXG7m_KBzyqb1py1wroIf-IgcrpUtPQhNqAsmHz18YjjzhSwut6Db5zf7Ab3gCSeNIX8WPOhYguXOu-6kwVa-bq7QiwMjW4c3FQXzbzfYe96rDRDFrWxr5sUt-kYQRERPEmsQ=s2048-k-no-v1"
+      },
+      {
+        "name": "Pizza with Tomato Sauce Spanish Anchovies",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U-6RcsHiXqJWYWhjL5w9zeyBqT163_TGM6R3u0hElkaoYnHjZmQSXAg9oV7L343fl4ebj-MBlc33Da3DxBTkR3rgM865XKFglWx3GG7qzpygZEYRYbkHjIH1P9kt7jIAhOc8VwJQA=s2048-k-no-v1"
+      },
+      {
+        "name": "Gnocchi",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U9paW6rDRhjFi45DRgQsSgeuzxJMr8mm_WRJcci-Nj6v23l1-j2JwBb70R-czPvAqBHJ7j6Yc2AiRbOTVdvKs_-ZtwmQcIIFq3tYtRcnAm6-UZuyh46SeaG-6Chxh876ndoBzo=s2048-k-no-v1"
+      }
     ]
   },
   {
@@ -1668,6 +1957,23 @@
       {
         "day": "Sunday",
         "time": "4:00 pm - 8:00 pm"
+      }
+    ],
+    "menu": [
+      {
+        "name": "Various Chocolate Truffle Options",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U88qIeXMEhxnaPyZ-qcxP6XMmh_nuJNgvw4-IyUuL0Bo4ZuGXxg9n-wOw1u8oTPLas8gdKIqUhz1WeGbsIu-wUtLqLcc8TiAj5r89xd5sZbRj2gciL3xvHXgHc2tm4xGUjvYDc=s2048-k-no-v1"
+      },
+      {
+        "name": "Birthday Cake",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U9C8FP4fPXuyPZFm9RYzILf_x5fcAtucSD6NkJWnBM2wrWINEt_RpCIQZlBVOS9N3jGHxMPoE8-gQoPqjc36xDTrpsIDbCkaCwuia9eMpt3S-g5Q4cli5MdFVSJmM7c-DImTrU=s2048-k-no-v1"
+      },
+      {
+        "name": "Panna Cotta",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U-pW7e6rdY4HdfLsFjm8Suu0keTpXu9EAPbZNV9hJlvXMgxAWUafyLcjDwQZZFMdkhkOJtLfqDM_eNrdRrQNrg5UMVWxY0dKHIkgnZLSyOS8-4GwpNPbKnYbpYdvuJnmz5iMjIJ=s2048-k-no-v1"
       }
     ]
   },
@@ -1757,6 +2063,23 @@
         "day": "Sunday",
         "time": "10:00 am-2:00 pm; 6:00 pm-9:30 pm"
       }
+    ],
+    "menu": [
+      {
+        "name": "Commander's Creole Cream Cheese Cheesecake",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U97ggJr8yCWn2z9CXJcX4j6V8r8FgOLkLOLCOEZNkIatHBkBs0PPNy4viSLr6kD8lgII1C2M6xvSWjAX6W2lqxSSOYquyKx2w5ixhU86QG9kQWke2ePXDNnhPTO9vgP9_Iw_NQ=s2048-k-no-v1"
+      },
+      {
+        "name": "Commander's Turtle Soup",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U9jfOB8C67i_Fnal0Wer6AO0NQ8oRqh5H5HFjRx41v42fAsxNheBK9TDoaHHCnf5MQ7Ol_ele2WXEnoTpDH_Sa4jPiM_WhDpz-glv5_SNVdEJrpH_VdJ2vEP9UtvlBRJSQB3HGaNg=s2048-k-no-v1"
+      },
+      {
+        "name": "Southern Style Pecan Pie à La Mode",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U-jHo6BNDfD_c9Fp5O2XJTkcI2PC0cmwNZ7dDU5ly5non6pVWTwiiZ6BjI9l4NywBLarX7hlo2KBp_chp76K_L1phtzU62m-8g-_b1ftWMLqK6AcsVvwv2a9arpS_cITHXscUsv=s2048-k-no-v1"
+      }
     ]
   },
   {
@@ -1844,6 +2167,23 @@
       {
         "day": "Sunday",
         "time": "12:00 pm-9:00 pm"
+      }
+    ],
+    "menu": [
+      {
+        "name": "Foie Grass",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U_DKnug-EFzKbgtBrY1mLFORD6wPAniZV4qcMMdGh2FKYTBltCTnViUuhEI3B2ieL0_0mKjUJuSvHx_rQcyWp_lkLlY2Bl-_irQ3EcH4qaMu7ER27K8yory1M96kPBFR2wITGweVg=s2048-k-no-v1"
+      },
+      {
+        "name": "Soufflé Potatoes",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U8_4a0nlG5-U-nNbQ510IBkuFAOT_2cs3kYE9LbAo_Tm8wPLYoB8b7u3gUZ8yivrtdSyFxLoupG0t8CNiYEr6nfSRYZwHjBnZqJ7txNvmsMqh3G0OKZ4KmHDVz1Ooy6TR-IbcCRlQ=s2048-k-no-v1"
+      },
+      {
+        "name": "Bouillabaisse",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U-YfXdI6BetznVCV8jV9hvvda8PY4Nx_Fp0wNp_lg8EYAr9Btnwc_8DpKFS8-uc7eS-yFb3sENVLXVRb7A1aBi78hdFJ2ysoEIuOLZBivBIk3POKjds_F3AS684diUkvdriMkAK=s2048-k-no-v1"
       }
     ]
   },
@@ -1933,6 +2273,23 @@
         "day": "Sunday",
         "time": "11:00 am-4:00 pm"
       }
+    ],
+    "menu": [
+      {
+        "name": "Pick 2 Meats",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U8n6Bh8J7cq9RApiH017akMp-IlQYoZN_na3PgRNsMdT06Prq3voCJwSHqyXSuwUzcq1vkMp-8k7U4DewUWxl18KoilLuKCXWPCIInq_9KX4yar0FWbmUlYteZTc0Vmlhi65ifxaQ=s2048-k-no-v1"
+      },
+      {
+        "name": "Pappy's Souce",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U9DPowKul2CRfaRKRzQRCRWqZCg2a5OcSx3n6tI4nRsVzmv9nr_CaCmRzpbVRWfY7tSckBKUkcWM9ZXYndSgq70Twv1-QKF5XSmXTwkdA9iGAPnj7HM3ZUGmwr-tqJXCtRc64s=s2048-k-no-v1"
+      },
+      {
+        "name": "BBQ Spud With Chicken",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U8QRc0ElaqftjRivWYjir06e7MGRWC7l1fzPnZPXOP3E1ukdWO14QyRiz2AEnl46PH0K1LwjrkNudppAfhfIbUPvzg3YD8Ho28aCwl6Ckr7HKjygMbCtXyFYIXVZN3VQx32LKC9=s2048-k-no-v1"
+      }
     ]
   },
   {
@@ -2020,6 +2377,23 @@
       {
         "day": "Sunday",
         "time": "11:30 am-9:00 pm"
+      }
+    ],
+    "menu": [
+      {
+        "name": "Cornbread Dressing & Gravy",
+        "price": "$4.75",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U9bIrsA56_SpagA3VCd28S0ltYvM9R8X5nnY5gJzDkjOJcWedmZNjNMByEqxADmzFllsV6NbIh9u26s2HnThLFW5E6A-tuabFY7qlTtFE3x1lbl_dxAcTrPkznVY5NSi8INZH2U=s2048-k-no-v1"
+      },
+      {
+        "name": "Banana Pudding",
+        "price": "$5.99",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U_iauQQj-IoayAQaTvPX3e0wcLlbQY2symqqbk8NkbGn_PxI646fWiGhHBgnFMd3FaG09vgui-bkpQ1GJfFvUgTjTAgFX48bFA5czZ_dYRTxVrWD2ujDu8AxlfdvokYw6PXZjI=s2048-k-no-v1"
+      },
+      {
+        "name": "Georgia Peach Cobbler",
+        "price": "$5.99",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U-MYMBc-qkQse_xNapsQ8xGVKJeywF_VdSEfG_Z3EDDgl17W1lESaYHVdpAuhFlzy3pirycNpyyzxtJLngIsuOuJwKrJfrFRdjmPucumkTefcsJczyY3yO4abM6cOFoJz30dUj_6A=s2048-k-no-v1"
       }
     ]
   },
@@ -2109,6 +2483,23 @@
         "day": "Sunday",
         "time": "Closed"
       }
+    ],
+    "menu": [
+      {
+        "name": "Ricotta Gnocchi Alla Bolognese",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U8Qyj1gUlA9UJdBmRmg0iu09nwxvW0ekVB8UdVJFT5WXj01oKqFzexF_qHrwxQr7g_RRIQa9LCbZ543q7f_ddk7s3LRIu6MKDy8cN3E7-fWOvBJSHSRJeB9XP82WE5edC4s3nN6=s2048-k-no-v1"
+      },
+      {
+        "name": "Tomato Tarte Tatin",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U-C45JdbTkDKZ0_NJKwRQqpRWf0HnebHPhfBdQsJXeE2csnV2hVQkYL6BNNbrI6xrUY_IFk-ISNv8Lu4njvF-BBAi7DqDxdAWF56w6TLBW0Ncdu2sWwSbCk3Gjli9jxgT2YWjQFqzS4wTY=s2048-k-no-v1"
+      },
+      {
+        "name": "Skillet Okra",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U9MVPfFNCcEWPKWzipzkN_2pHA1TL8FU3uxSKB2jBiKYulK30np3A5I5AGUJEf5Q9N5wSdHy3SfxUpEhTjd51mHVIQ9TVDzQA4ArcUshd2n9y7iCziI1UrtWPU9Qz_SU8FHmTte=s2048-k-no-v1"
+      }
     ]
   },
   {
@@ -2196,6 +2587,23 @@
       {
         "day": "Sunday",
         "time": "Closed"
+      }
+    ],
+    "menu": [
+      {
+        "name": "Ib Lobster Roll",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U-1KDzXLVKncnibJhKF7UNYztPRFtd7pBQPZKZ2zLHM5ASEjX0Qey-AYO4lk0HnvrVW_IcQb_uEbbbWNUUQjXGF01n8wunIQcCvKs713dwa63VqSkL54zvvC87l2s61WOFd3To=s2048-k-no-v1"
+      },
+      {
+        "name": "Poached and Smoked Salmon Rillettes",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U-pdou5MYF-xFHh9FKQJeZG9AXSZmYsafvGeJ1kZACzrwEJens1-I6ii_cY7VOP1LXRowIW3dav1UySfBWP84eSgdnMmMD7gYRnpqzzo8OV8EVM0XRRc4zR3lwtBNbvG-vSzug2=s2048-k-no-v1"
+      },
+      {
+        "name": "Foie Gras",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U9-oJtEz-OkrE60imPPcM6AxtJlL82aTe_OEz7r1hVR72_R03GxuCXYn8LNcCWFSrzyphMUG29rfhueixHtO8eU3CxgGXBYp0W6QbJMN4_jHWDAwq0zw6fxp3o1Ax2iByYTIR4=s2048-k-no-v1"
       }
     ]
   },
@@ -2285,6 +2693,23 @@
         "day": "Sunday",
         "time": "5:30 am-6:00 pm"
       }
+    ],
+    "menu": [
+      {
+        "name": "Honey Dip French Cruller",
+        "price": "$3.25",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U982flSKSLUlqi2UL2WCRwX5YuxkMrBNjWJ6ofHKL1ULUDBZLQnzdteLBI6xO_L0VyVIn2XWT3VXADTy6fJvCoZSBhQNYAuc4EqfEoH718rP-Ti_o3_uDKDiA3MEzdYKczRN3pBp9XXobWw=s2048-k-no-v1"
+      },
+      {
+        "name": "Box of 6 Mixed Paczki",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U8XDWjWLP6hb50KSnOMnyJfQ066xYEJOzQVRzg8D0NK50KlxQS9hLFl3X5GXW9XlP7J-jmcEqiGoeG0zFN3vZy4DWlHgVcS4wGxWAbTLdijPE56Z4Zbm5P3e94G5FEVCyQWc9vG=s2048-k-no-v1"
+      },
+      {
+        "name": "Chocolate Coconut",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U_mOJldXvNhtAX1jBoYIf4vb1dnAHl6LPUwQN_bmiCP9Wy5Qb2_uJxUQ_YYlQRqLHC-8xSegEm5iEN2KZwX42W8sdyz_vzAhWlyrywzZhhTWFieHOz2SobNfDA7RW8tBLtiaNtT=s2048-k-no-v1"
+      }
     ]
   },
   {
@@ -2372,6 +2797,23 @@
       {
         "day": "Sunday",
         "time": "11:00 am-11:00 pm"
+      }
+    ],
+    "menu": [
+      {
+        "name": "White Pizza With Garlic",
+        "price": "i$28.00",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U_OMdqn-DyvzYbu2-Bs1ri0NaJ7odCnfBkwXkMII_qeMI0XvprriZv30FZEuyxQa_pVJA3AfTNVEWzMU3qu7dIs2R_wZZS_OsnfV9RSetbyerSzhVz4W9jBgXDsJwAJqUigwoAd=s2048-k-no-v1"
+      },
+      {
+        "name": "Grimaldi's Famous Cannoli",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U8FR9IZuRrYoJR0N2XwBSpyQfjFWhxxzsNbUg_Wkn92KildBXcdcntkyb2tcBW7FO-oLjSvh3xKlFPabN5FeBOMr0uDV0GGS_NUsxkV5Ne3YXhlGvYmw6a_r1Xsgdq5TmYSdhS5xQ=s2048-k-no-v1"
+      },
+      {
+        "name": "Brooklyn Bridge Pizza",
+        "price": "$36.00",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U9ogM76uz9haNDlbeKMDHz-k9Z_NEMpyXpA25GDMpvRaUBEWsDkpoYseKH6ZiZ_T4b3Of8WTqOMidedmdQf-Pb8-KhVbtmZktN2gjHl6RqJSsQV0fBm-S1hZvSq-a0ru8bY7bmj=s2048-k-no-v1"
       }
     ]
   },
@@ -2461,6 +2903,23 @@
         "day": "Sunday",
         "time": "10:00 am-3:00 am"
       }
+    ],
+    "menu": [
+      {
+        "name": "Meatlover Pizza",
+        "price": "$38.00",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U8pR3wrfph8-mte7RsaIbQeAwDC7OWNI2xojB3mIloT4udBXq33suPVe7zvCEq6OaEppG5ibRUODqHnrub6_lmLNjbSsiMszTlyC6LTkYD97bOmjyCzZ5PXwO-LZoN41fAdZLqHXw=s2048-k-no-v1"
+      },
+      {
+        "name": "Plain Cheese Pizza",
+        "price": "$26",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U8RouMdbP9mFj9qY-PTkGiscpKQoGlGojz-8BlBnScLhsZMpFhnjDnINaGEZW-Dp-9Q5mQrFN4ZRuC5VL8RybSUwzh3H_XCAfbLgVj_ss92VHCxXf8q7Zi1ZA3EUUiEv8rm9d8=s2048-k-no-v1"
+      },
+      {
+        "name": "Joe's Pizza",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U9qT77y8a2_PNRl8D4IOyXTtETAqHzrhAFpvPFGvlmHsdtH_r3ELjpq1iv5T9eflmGNLfi4vORPZMgYTCHJah4ZdcQqRlPMY2c6rxflRfL8F3V4spQ8AVJoULqel-XJ9EWhKR9HsQ8-gzI=s2048-k-no-v1"
+      }
     ]
   },
   {
@@ -2548,6 +3007,23 @@
       {
         "day": "Sunday",
         "time": "8:00 am - 4:00 pm"
+      }
+    ],
+    "menu": [
+      {
+        "name": "Classic Bagel & Lox Sandwich",
+        "price": "$13.00",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U_pLB-IEaHs2VUh_GEn6Og1CxNkOxsY3DsfxrYlRVGOP22dGLwkOUl7bdfXRPxQ96X4CU0ErSwKPGYGR0gPUQOkkKCVzNmkr_vZ4XAaGoTD37x1YGP19bHuecJR3ykYPfnkGuptLA=s2048-k-no-v1"
+      },
+      {
+        "name": "Black & White Cookie",
+        "price": "$3.50",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U8Q8NEHuGWJ_3qTK9TN-WA76S1OlspBqslSIVd3IfG64N9zM_t5xAlNatf6__OZyJBWcTE7iGzvWCzX7bC3F_hNlHpIuUzJQTGudXPNNqwKLhG-cK5ci-dn4GInLEoPDpLktn4=s2048-k-no-v1"
+      },
+      {
+        "name": "Matzo Ball Soup",
+        "price": "$14.00",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U86SODFAIFXvf-48c2gipknimPEOCq75-HCKFnIiXSFMmWZinhYJ4r7thJLa0ntGeXjceA16aSqRBva0dL5TFn0EKw3Y3G7wTb3DM7iCtT1__W1IXO-O9BJJFV-s_BXaIFsnP_e=s2048-k-no-v1"
       }
     ]
   },
@@ -2637,6 +3113,23 @@
         "day": "Sunday",
         "time": "8:30 am-5:00 pm"
       }
+    ],
+    "menu": [
+      {
+        "name": "Lox Salty",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U8F4fVhbSWopcq2-7K-sqeBi2w8dBZv3Ttg1EF-BX5kyHxhgBEjxiQzTkdd-4INOx4HBweccFtCv8c5hBiQm8EUHzrcIGrSKv8E70PcgEA9r07USQfOU6TisnSBFUNicrHhPn-l=s2048-k-no-v1"
+      },
+      {
+        "name": "New York Cheesecake",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U_CsGvFggMmxudmGrFFzf0YhfEXUrASdth71FecnOV55VIFGpcQ9ZNzxR9gdr8xzauyxPt6e6lYl9lgObd3ty6zZGg2ZOCxGLOaZm6iRrM424m15UGoObU_9ItWr4Ir-hVGArcO=s2048-k-no-v1"
+      },
+      {
+        "name": "Chocolate Babka Muffin",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U-r48_bMSVN8xR3J9CouLQyTNv2gpspMpPehagHWcyANf6fgQoqOu4wsU8vWd9cRo5ha2CCtgKqAdG42fPGs9nmJ4X_bod48-EwhP1HGB2fEVB7wcoR0PX0Mos9jpvugUmQqExs=s2048-k-no-v1"
+      }
     ]
   },
   {
@@ -2724,6 +3217,23 @@
       {
         "day": "Sunday",
         "time": "9:00 am-12:00 am"
+      }
+    ],
+    "menu": [
+      {
+        "name": "Balthazar Bakery Tarte Du Jour",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U_SlTuadZObpf4b7zCM5OvWkn4tTsWfBOlD_ehIXp_yHUblhF5WHxjtK61t223P-71PRGk63K98VMJnswUrXNQcBtCZmtYhsKBLf8gxAdX8GkP8XG3LjLFC2f_9hfDgQG-Ula9y=s2048-k-no-v1"
+      },
+      {
+        "name": "Oysters Du Jour",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U9RFoB-flCPrTDgQVfjpLj9BOOKa4SQVOMntdAcvbu0Wg2eHPlDPtzpDXVle8hBGgNqM5msibIeBwnBcXXpiyGcdj-q7TWR4KLpXL5A50A7bjnO7xeRTg70GmDxURwb6XkJdkfx_ibZA_ca=s2048-k-no-v1"
+      },
+      {
+        "name": "Balthazar Egg Sandwich",
+        "price": "$24.00",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U9CjGsGKdxtgUOEK_eqJGAztUbVqFc-PhhAiXfxXqk-V4qz7bhHvZV09RKUrdpThB72f38PsjIS0EmhQ4RAH0fYAvBmPtVZkNhG04uodaAcn2uMOgBYFAYHidOrLx1mJj0WtVMhQQ=s2048-k-no-v1"
       }
     ]
   },
@@ -2813,6 +3323,23 @@
         "day": "Sunday",
         "time": "11:00 am-3:30 pm, 5:00 pm-12:00 am"
       }
+    ],
+    "menu": [
+      {
+        "name": "Black Label Burger L",
+        "price": "$38.00",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U-kfe6jMz1ASHLyqBly9ZMO4OtY47yohnjGtg0_Kle5fF1nYUqIbph7w5cNzss7pIKWTzkyYksOhjkGwMJ8IxMMskQ9A4qUWkjp1-UWIoOBMHUeIzt6xAMfyLN1Abi2siyWF-Q6=s2048-k-no-v1"
+      },
+      {
+        "name": "Coconut Cake",
+        "price": "$16.00",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U-qXpLMVbVhax4969ciglH12PAPgHBh0It0sQy42WS9puLxuxJIxJzfY0Bvtc96iH1YZzE493OIrls_4JCXpsUSpzTKfZ7Jx11fymZmvFefXbiuBDnEwn27_ZFswy9ZEEdAIbRibSKWjtma=s2048-k-no-v1"
+      },
+      {
+        "name": "Lobster Roll L",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U8R2teZoI2zgKpEsnF_H-qacavIXE95XNN0uB_TJJ-mBxdYhv-z4tkqsQ34oy-X5Fud5nl3CbRxjKjnCMAEzEehqNdPS3eVbQti3fuCHHHnMj4AFQpY_6DGevoy2CzDDC7bMGmXwrCUPVtc=s2048-k-no-v1"
+      }
     ]
   },
   {
@@ -2900,6 +3427,23 @@
       {
         "day": "Sunday",
         "time": "11:00 am-3:00 pm, 5:00 pm-9:00 pm"
+      }
+    ],
+    "menu": [
+      {
+        "name": "Biscuits and Gravy",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U9C9umqjNtQIbH72SLoBScE0Ikmpkk9OT79Q8Rop_IIQEBAzNwwleZEdy15gcb60Hicy2rI8hERNty1mTz2ZEqvh1uDwPaDRiNmQZBKPTOLWklSgagKM4E6QvbXYlgFftWOOgDGwQ=s2048-k-no-v1"
+      },
+      {
+        "name": "Buckwheat Pancake",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U8LGLbNb1SIie67sti4YTEv3CYP6RZM1db9aFdVTrrk0QzSsp6OFUjKTZGCMrEKxLUXoWB0ZjniwVaO_awSZUkng9Ai3ArFMw9VTPimaB6JIZUizVsZvdvp0qRtKO_J4szygnfW=s2048-k-no-v1"
+      },
+      {
+        "name": "Lettuces",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U82U1U-tOJOn0tZU045-vItKQy5AQs9oPNd6y1e2iFcBxbssfiQQ6TXUiWE281VL36IcLDc1b8xwxUeEhyf52uuwOHN5MK47Ul_Akoj0mdJ2MXSx0UN-Irk3Jns8OLfGURAjjuL=s2048-k-no-v1"
       }
     ]
   },
@@ -2989,6 +3533,23 @@
         "day": "Sunday",
         "time": "10:00 am-2:00 pm, 5:00 pm-10:00 pm"
       }
+    ],
+    "menu": [
+      {
+        "name": "Sweet dumpling Squash",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U-RM1SwKndxdZyVjUhbw99438nUJTbm7VBRr59e36525iDLQ8hBYPvN7LvHUR0m00qqzHsTjpsrUT7kD_9594yl02C4a6kDGpvpsEwing0Z81f7xhh0mBHYwil-iuMvm3UEHv0=s2048-k-no-v1"
+      },
+      {
+        "name": "Beef & Pork",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U87g2KiUBS5hQxG3OB4679YQ6ByDUtdvdV0l0lYMTGzPzxAE1-_Lva94DgPOF6uUdDNduCvuPdVixgQYWsdlBR8E6SFDX9TDHjdMSn9e95ppFC0J_vpgUvpqb80A_zDFXGIZ-NVOQ=s2048-k-no-v1"
+      },
+      {
+        "name": "Smoked Trout Deviled Eggs",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U-ZCG64MNXFa89LOQLpiH3sNMXcr5sVEAhbIq7XcvvqiLRsaZU_14MmJxMyUrmROv1NVSzo5FJQJE6NLRND6VJeDsUoP_Z8Q3G6hvivYMb6kaYqj7DwI5bu-6P_gX4EpLdMMkck=s2048-k-no-v1"
+      }
     ]
   },
   {
@@ -3076,6 +3637,23 @@
       {
         "day": "Sunday",
         "time": "Closed"
+      }
+    ],
+    "menu": [
+      {
+        "name": "Chicken Quesadilla",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U90yS2swYVe8otS0eURYMJzmP5BTTsZZ3l3Ot_ZPgFR2AyXIVrCeIKfMVvsi8Iq29h2himL8TTG4SLBTWqWJdcTJXg6kaBzc0kEjrPPS5EtsA-HWkBLAaIaNmJV20dSPDmaHk9KZA=s2048-k-no-v1"
+      },
+      {
+        "name": "Croissant Blta",
+        "price": "$10.50",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U9QleL06CfwTVizRUdI-JZxdkcP0lnUKslRcPwByfHbZwDISjWGkHgsdVbxj03PwgfGwL6nWCSCkdVeI9dcrUey1oJd1EDg1uocO9mPBqWnWHcNc0rnkQeXYeDVixhbAzfTUhrRrw=s2048-k-no-v1"
+      },
+      {
+        "name": "Bagel & Cream Cheese",
+        "price": "$3.00",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U9fBqoxW4ArUybtArTDL00f0dawW8-PdSG_ZjknmAriQQ4-IiqETDq4-T1mvTORLIc0J1yVh3u59PiHuGP2niFyi69z8kRhU1JuJDiIwQ_jzmGr18nrgHSSMX0jTrEqeSMhh8W5UA=s2048-k-no-v1"
       }
     ]
   },
@@ -3165,6 +3743,23 @@
         "day": "Sunday",
         "time": "11:00 am-9:00 pm"
       }
+    ],
+    "menu": [
+      {
+        "name": "Fried Green Tomatoes",
+        "price": "$9.50",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U_VodpQy6qeFdD5XidGM9bF63ln3iaVK2AoeEDjgJHK4EckPRfjkEcLQjwG44jccPzP-aiRMJ_QkFpSgIDWaLnRDECgXvSYbzRK8o8sjzbtiS0TawScwonW9NSOZfdM3VOARNTp=s2048-k-no-v1"
+      },
+      {
+        "name": "Fried Okra",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U9uwD47AbOmEIGPd9NeJjD4wO-hGEb9I-y8V4IlPYus3xR94QTCKU1SRZiUcYONH1SvsuWhGnuVV4nLrvzlkgS0_3Chyvbg-gZ3MpmT7u5_X5ruUh7AcWnjxvx2NG5fae9pVRTx=s2048-k-no-v1"
+      },
+      {
+        "name": "Sweet Potato",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U_cHt7pNUtGFp1prTbP1OZS-VnkW-DhtgfmnTG1I2_B-G1WVkrty2xD115GVKEtgjfbj4mJcnzWuLU1St16TmQfUOkRSZ0mLK8M3pZwwVcfZcnHK14OkXBaUNyHBqJGyAOHefk=s2048-k-no-v1"
+      }
     ]
   },
   {
@@ -3252,6 +3847,23 @@
       {
         "day": "Sunday",
         "time": "11:00 am - 9:00 pm"
+      }
+    ],
+    "menu": [
+      {
+        "name": "Banana Pudding",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U_JJjAF5p-LCkH4t0e9zcIOmgnp0xtm-PeU9spiHrFxeNuA3hDwzMk6clkw_ocnrMh1TZGD6RDW3JRZJiV4bJoMVu8f3KlhO7TaBDXT3LC-1qZRuXp7L1RSOqxE1NL2SJLOPo8=s2048-k-no-v1"
+      },
+      {
+        "name": "Quart BBQ Beans",
+        "price": "$15.50",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U_vsr1TkF-_Rr7oQq1OYl4oAVTGydWl4HW9IQ5HnVRKslWtsNdr03AKiikqKXW1Ay2yF4EuBhiG1GNBZVvQGFVYbk5FlQG76M0n130rwntIp-CthXUffEF2b7MeCU-6Xe1la9oG=s2048-k-no-v1"
+      },
+      {
+        "name": "Half Slab Ribs Only",
+        "price": "$24.95",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U_6Ubtx1Vrh3xwc0L997HmyDmRqpdzWcVEgoX2vVZwJ1V47ujNCwgOyXUFX9Re5l_aYPYGb5N--K_KF0NXcQEpTlosi8vMMdhCC-iLBNs0v3gyu0gJMAWR3rlKQwRX8fAVd-Fdp=s2048-k-no-v1"
       }
     ]
   },
@@ -3341,6 +3953,23 @@
         "day": "Sunday",
         "time": "Closed"
       }
+    ],
+    "menu": [
+      {
+        "name": "Rendezvous Charcoal Pork Ribs",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U83syQZdBmrOYHmtfd4VHUB74hQbMT6ON-smnreYSlEPpWdovDtHdthsUtg9FYfc3Pe1eejyrKpODOt8c-5k5OVt65HNzIi-aeN6FpHQ0E-75DYG2DW__C-zQ8uLmawEqrcrbX9=s2048-k-no-v1"
+      },
+      {
+        "name": "Pork Shoulder Sandwich",
+        "price": "$13.00",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U9Q4MO7HSjHaaBs5Qz5MKa9tWhzg4E9ZD52irIDHQ8b8KlLrH6ldUK46Owhn99MBZvu5UQIP1MXkaCthYatpzHie013pg6XauqhJTx0vjVdxeWIKD8wegZkVqzVfaaxQE5UTgkF=s2048-k-no-v1"
+      },
+      {
+        "name": "Key Lime Pie",
+        "price": "$5.50",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U_0q_b_MCGfHMMEGNCasjLmPsuUNAFc2-CIH64XW92LBjwBb9JQGzFGyVXTNgauRejXu0etnbKg-He9-Lr6uu5vxCnNUyB6oaGTW1zwZH4EAMBbwceCvnLoYDL9DOtq_zZLNSID6g=s2048-k-no-v1"
+      }
     ]
   },
   {
@@ -3428,6 +4057,23 @@
       {
         "day": "Sunday",
         "time": "Closed"
+      }
+    ],
+    "menu": [
+      {
+        "name": "Chocolate Cheese pie",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U-wbE0x15t8pFIgEPY1UKq5jSc-b0HrFbdI4TiiiAme9Ebhol99bphsH-MC4lNvhYlJF4HKK4G-JpBReHyLi8tP4tBnQuIy3wB0-ROh4K_B1IgybaU0mbdFqgIVzZCl4B5CLdeU=s2048-k-no-v1"
+      },
+      {
+        "name": "Chicken & Dumplings",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U-CKa8VaRgO51T-cHVd6RiL_d5L9JyGf7ych_d3e62LmxAcprfLPWAZev3spnFfmLNuqMSBiqL_OxUylkCvGg04NCWHTb5tKy0CWWIpuZOhrgCImiV3aFg9f8czv2ZTYWmYA_St=s2048-k-no-v1"
+      },
+      {
+        "name": "Fried Steak",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U-r5YGme84VFN_tpQ06cka-0Z8z7S-evDp_oDHt4aTrdHVKAPSLJJHBT5UkXNl2PDtcP2US5nIkJlQLt7w1J95laGdLY0fNy4rx2Z4YmKtm9-tkuj5TWt2MabzkQ8HFHQ7DixIu=s2048-k-no-v1"
       }
     ]
   },
@@ -3517,6 +4163,23 @@
         "day": "Sunday",
         "time": "7:00 am-9:00 pm"
       }
+    ],
+    "menu": [
+      {
+        "name": "Fried Green Tomatoes",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U_0m_QV9wt4FYXXrGYYbNCzM0NJ7oh09Wh49HQs8OYVH4zUH9rkUMJ7hDP_8VCvNGCaipuZEO_KUKzQWJoHor5uhB9fOkWwJw4LtIBdavDXd3_c7zEXuyMhZCA3oOvGFkFetcXWSA=s2048-k-no-v1"
+      },
+      {
+        "name": "Coconut Cream Pie",
+        "price": "$5.60",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U9ZAsY3mhoYNH3yJRrBg5cj6bev_euEkWRX4-O8tNUR0nmAuuSX1_eosym7_SIhM99cvFmfz2qyBxF2qrSoWjscjJTSxYsAfIjCKbQCaUtX4ADEe6ChTqtZ_-YNjXyeapN9qORl=s2048-k-no-v1"
+      },
+      {
+        "name": "Country Ham Dinner Plate",
+        "price": "$17.00",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U_vvWIbRR9FpXSNzyuPy0w4WrldMcQ16uZLRwZTBR8h1svYMWtqjUIFkqcku2dLh0OzR3efbQhLj6g9dXGolvXaznl2jaEINJyxw6Et4I3j9fiq5fgoBQtFz2i0F6KCxA_I6m_GWw=s2048-k-no-v1"
+      }
     ]
   },
   {
@@ -3604,6 +4267,13 @@
       {
         "day": "Sunday",
         "time": "5:00 am - 11:30 pm"
+      }
+    ],
+    "menu": [
+      {
+        "name": "Not Available",
+        "price": "",
+        "photo": ""
       }
     ]
   },
@@ -3693,6 +4363,23 @@
         "day": "Sunday",
         "time": "11:00 am-9:00 pm"
       }
+    ],
+    "menu": [
+      {
+        "name": "Blackened Fish Tacos",
+        "price": "$19.99",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U_VN7miElWmvDe_YljInxj4Mw6znsgFCU-aT8qTuebR4PffVt32qvmInvAfTAP452eYoA-56kZH6zer1y11Dqn6tyeXgNusuVI4QNEBXVVkaAixY_3pnTn7ur0a5qVltygEx9w=s2048-k-no-v1"
+      },
+      {
+        "name": "Parrillada Platter",
+        "price": "$99.99",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U9nzfG79Wzeh_ogLgSNZGgZL7HpNyBdQdhnjoJEgl5mv6yeFhZz0SQmdRC-tZRomcDOJLL3rNbhT4NdCDODyABvD893MXcBdDqxReoXCwt5uU1KZKvTHrRXJrmpEpAiq6fbattzNAxBe38=s2048-k-no-v1"
+      },
+      {
+        "name": "Carne Asada Taco",
+        "price": "$7.49",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U-F-ycdlEax1F2C620BJ6eSP_rEwawtxj4-gmQbypIpw5p4iLnb853v44wzqCZ0IssGBs1ZHfGB2-xxqSWXSSsJ39WHLU5EOdE0__ef9vh_ycAB2Wpmw8eFX0_sK4aBqqkf7HzoxHnqoyP1=s2048-k-no-v1"
+      }
     ]
   },
   {
@@ -3780,6 +4467,23 @@
       {
         "day": "Sunday",
         "time": "10:30 am-9:30 pm"
+      }
+    ],
+    "menu": [
+      {
+        "name": "Banana pudding",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U9O2D68xy23OI6iJb2Z9nr1uvDjFu6sqPSUM5QXC9HKOa1MFvhI_vj6PlhUSmaOaC0rB9vBQHWZuGtEV8lWv5at9vaNfpoxC91785PymIKFz4w0Hb9nSQIB_0e_ePnUjzKwKtOApg=s2048-k-no-v1"
+      },
+      {
+        "name": "Mexican Coke",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U92-tIKoSArJCykvgGmFyYBGxjnpU5h_6lLnR99lj84PmM-7zx5sMa9BI2kR5voFAAscwsW2FOLKMXN4m-3xTGgHqU5TsZnMnglHHZo9ZaLzDAZdjpSG_mR7_jOqcs7pJqP5h8oZF7WD9o=s2048-k-no-v1"
+      },
+      {
+        "name": "Coca-Cola",
+        "price": "$5.45",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U-z5ME9WJu6mymd0tVfZHZtD9NR48w1RidU-0byvCsBckJTyWC9AitdHskX_BuqjejLzWBEfF4-YUVtxxcuMsxV9_7dVy8syVU5TQgpzBp9S0VQmDwdxjxqHawJc6I67TntVHMCKg=s2048-k-no-v1"
       }
     ]
   },
@@ -3869,6 +4573,23 @@
         "day": "Sunday",
         "time": "11:00 am-9:00 pm"
       }
+    ],
+    "menu": [
+      {
+        "name": "Baby Back Ribs",
+        "price": "$28.95",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U9N2x_2Jnf4-qdEciaGyCmY2gGI_eBm2vDp0BtDK9wsErRo1HIwp0KSpqtZn8cptgnVsWDw1zJNqMwYvjtq_qSszw9bmqAhiIUKz_4bYK5QMZK7WTTt-0Q2X6WeUgJVMKz5DvZ8ng=s2048-k-no-v1"
+      },
+      {
+        "name": "Potatoes Au Gratin",
+        "price": "$5.95",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U-eMQo_XWXeCyXhzdOmbumLi-Ejr3g7SxqbBFBY_VF9qxfJsFTUvyQQjkq8WUgXo5VsniR9z2HL0-7w_9TXqfgxaDIvCVElWpzWan_I-wG3bW10cmlB5hrU-oWrjaDCwEEfDvQ=s2048-k-no-v1"
+      },
+      {
+        "name": "Habanero Chicken",
+        "price": "$19.95",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U8hy8nKoYXwK4RB4rQ8g3vkSOqWZ0S8tlL1qfqigivMXeKdmMomoDZydwqkZOjt7v0PehO5B6v_OoFLLE-dndunYkByXNH1FtFruzigIbZTDa3-YFAXNtA-4R3ht67dZlVWbuqAwQ=s2048-k-no-v1"
+      }
     ]
   },
   {
@@ -3952,6 +4673,23 @@
       {
         "day": "Sunday",
         "time": "9:00 am - 10:00 pm"
+      }
+    ],
+    "menu": [
+      {
+        "name": "BYO Breakfast Taco",
+        "price": "$4.25",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U9sHUsrFA1Nh0YgyMAYe6n-P_I-N0-eGZ7z2saT66yXU1CZWnBW-DBtPCAPrFgScrGBbj_PN5Ot5xy3FHiPvK3MnuHoIMwlv80-ws8kGuZBqguc8VUN6ThIW1MKn0Onhq6n_-DFhQ=s2048-k-no-v1"
+      },
+      {
+        "name": "Green Chile Queso & Chips",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U98JrgfL3TI_8AFSSFTtvgMcEbB7PPVMd9DH74eKygNQjCK51XS98RYtNsqVL8mX8MAfjKLEjWfiLKraz6cpqo6GsSCHU7ORgijSXAUpGwLea7Y8hEq7pGmArMW3L6XG8pbeSO6RInNbwtl=s2048-k-no-v1"
+      },
+      {
+        "name": "Tipsy Chick",
+        "price": "$6.45",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U-ISjQ6MWwCwux_JjcOjM4C_jEbRqnzrRktX0vheQNLP5-3Jv8ix5c2_bSNjrKfd6ryupv5_LzAiVaQ0Ljxte8C5S2PYzByBDj0r5XC91AIApmZ13pNBUoBaMb-AdF4cuNUStRrtA=s2048-k-no-v1"
       }
     ]
   },
@@ -4041,6 +4779,23 @@
         "day": "Sunday",
         "time": "10:00 am-10:00 pm"
       }
+    ],
+    "menu": [
+      {
+        "name": "Carnitas",
+        "price": "$24.00",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U82tzfqvnVSLXrwovMz7aLDe1TFl3Ci1Jz8Izi2APok5ElaZRFEwoLDaOgh960ZO0w__vFEypH550I-ebHKDNiiyAV-SucxPqHaXBznUeN8HCZwUgvZP7WY0VwFHO2rq7R3qz0F=s2048-k-no-v1"
+      },
+      {
+        "name": "Side of Chile Queso",
+        "price": "$4.00",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U9QpySHnOTk-dW6nhxEvfw8khghrmwVOP3GABaZKOd93RJJIzl63WPSJZfBmknFFrCP6J2jqt2U7jSQI6Fjgo9IUAzKllb-36DS1-YIzQDzt7GzWDf4-aNH1wKRK0smPlAln-CQhA=s2048-k-no-v1"
+      },
+      {
+        "name": "Queso Flameado",
+        "price": "$15.00",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U8Kmh8ADn47VE_RQTZnJWVp_5ZA9jNba3ylCvlRo8OEY_2fSNIXAD7msb2bDjHMAO7q8UHxLCf32QE9DkBHX9gAIP1cnwRt1tHjHOEgo7mVgR3F5NADE69JqeTACZEREJ-emFa2=s2048-k-no-v1"
+      }
     ]
   },
   {
@@ -4128,6 +4883,23 @@
       {
         "day": "Sunday",
         "time": "Closed"
+      }
+    ],
+    "menu": [
+      {
+        "name": "Key Lime Pie",
+        "price": "$18.00",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U_4X8EvYCYQdaeBPoxRXvTQt4w99_03GJGDAkjdAfWE6NQ0udddbCVU9leT5gnJWBkjBbASn5e5f_KmHJFSLKkeNEMlh_z6qa5NnTSkD90IaRavqXYngFZbI6ZW_3peXbvW6HuStA=s2048-k-no-v1"
+      },
+      {
+        "name": "Onion Rings",
+        "price": "$15.95",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U-SPIU3paXTNp7_8fz0sfc4tnEMED5TUmC-pXIWfo8YasDr8bp9YHafm8YQe51I9vq3lzAypuW8NW2hS9YZvCSAi6FU86UC-nWmn_PSCOeUfkt5q51kXjs1pweosagbnlBLHt_GRvpr1JIs=s2048-k-no-v1"
+      },
+      {
+        "name": "Fresh Jumbo Asparagus",
+        "price": "$16.95",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U-c2aX2JKfuHaPQJQmrKliw4CoqhAv9zvdXejmAe2dsgPFiV9JRAD7qvrJQsNaEi3MYKBYV8xw5wAuqsZMfnGh7-l4VP0cJM60bQbdyK0jLmRihwZ14AmkY8CWk4XPNu9XWVPuku79FEBg=s2048-k-no-v1"
       }
     ]
   },
@@ -4217,6 +4989,23 @@
         "day": "Sunday",
         "time": "9:00 am-9:00 pm"
       }
+    ],
+    "menu": [
+      {
+        "name": "Burrito Tejano",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U9MhcQLDHOrFrQ0d81SkuoSMVoXCY_h6iMTLrGUSk2pnjCsK5RGU65d3tVs7gOYqCwnI6OKjfSMp8eqOIY91HWkTRqF2r4zPrOAbZyiZiVlPTA5q2oeb8x-Q7ADeOOwMgc-SD3NdLSPMrk=s2048-k-no-v1"
+      },
+      {
+        "name": "Sangria Margaritas",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U-j9fFNi7ONmNYOqWCOnuoNohCQhiN4fnZWjhHg44928WsDCGEWPATltGJZ-MnjFB2SEbBIAQPGXGeaMs1S1bsnUdj3lTajwC5m32UmO20STXCR_VJub5cttmhUOEVQ2RPdWTIrSw=s2048-k-no-v1"
+      },
+      {
+        "name": "Combo Enchiladas",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U-nxXhnX4760gOCWUjOEXmWqFLnhKEJuadIwjpTbtjPCWsX6C9FXmsLR_uUsEew7wu3xz-46Ie69nNnQWY08yeUAa0mD0Oa4y6O1dydR-bN2fOBarZJS7oUXA4x-iAgtOnh2OU=s2048-k-no-v1"
+      }
     ]
   },
   {
@@ -4304,6 +5093,23 @@
       {
         "day": "Sunday",
         "time": "11:00 am-9:00 pm"
+      }
+    ],
+    "menu": [
+      {
+        "name": "Chopped Brisket",
+        "price": "$19.50",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U9xv4ehNgsGkoZCBMHPlCNmIVamK9ZLJ3BgOrznxPqtkJjZOjIIHY1z1v2OGiHg7Gf-DxXsuMPNVhFBHagKCczs4OhFSfaSGVUIjQLwB2KWUYn0bkgC6YWPGWkGZH87QemIhLXxDw=s2048-k-no-v1"
+      },
+      {
+        "name": "Cole Slaw",
+        "price": "$7.00",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U_yPLusFi1yemkhn7yOPS7NJTVLz7mNyB_KdIbUa1XDldd30-toPVw85YMkt5T2VJbQ_0tyRlg8Eau56hDuOcJiNOTh5_FM33zCpwGU4pt0dLQfG__4LAUxn5FqzM5VOR1vzwgs=s2048-k-no-v1"
+      },
+      {
+        "name": "The Hot Mess",
+        "price": "$17.00",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U9ih1dFiB2QJiqfEBzVnLlDobbu_VztnVLYA50du1EjRYUEsPnqNI2ZsqG9c_XsHE7P6T1OGH5_HO-RbRcvl8tNVVaDVy_z7pOR26Bc2tzQ4thWZTyH4ER4fWj_OHzPzvt-OxKS0A=s2048-k-no-v1"
       }
     ]
   },
@@ -4393,6 +5199,23 @@
         "day": "Sunday",
         "time": "11:00 am-8:30 pm"
       }
+    ],
+    "menu": [
+      {
+        "name": "Mexican Flag Enchilada sampler",
+        "price": "$20.30",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U_Z-xL85wpdyCCS93cxPO2EpO9zXbIoMd1kOep4lmdKhEG9ctFJ_qu4EpjhZnyjnjcoeA9rIG8NM7uFfLM00BnkDrHxHyhGbciqvl66r6xvNI2fQRssyXTfgy5gebOFDIjY0Nb0=s2048-k-no-v1"
+      },
+      {
+        "name": "Classic Nachos",
+        "price": "$15.88",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U_2wZqJ_3GLADGkVrwlNDqMNVnjm4bAFkzFhcDNGVKuqBcejV7Z3LZiZwDZzT9uREYRmHEqrc_RbMpbsnlJ0ugOOIwnTJ1duUJzlo2zDJvTGD0wvwKjgbbpUuxadfqdB772CyHR=s2048-k-no-v1"
+      },
+      {
+        "name": "Double Order Of Fajitas",
+        "price": "$43.61",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U_o5itm_gbShu3t7-fBAnsPbFOOzIdRUUX7weZbkd9shLSkuO6HSbgexzHdccP_G5UesCKRh_n0XIfj3RxN8iXhtuQl7O1J44EQY0hrPjHZHzfbJJKRFMIoYmv4m5_mqa18caBF=s2048-k-no-v1"
+      }
     ]
   },
   {
@@ -4480,6 +5303,23 @@
       {
         "day": "Sunday",
         "time": "6:00 am-10:00 pm"
+      }
+    ],
+    "menu": [
+      {
+        "name": "Steak Soup",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U869Eullt75zTiSX9UyaPHgExvirWcidLLh-jQS7Uw6uCpMLixsGJ_ccjQgSmMI4AwVTTfOD21DpepTOlAFfyRkCV00VL4ZPUmLXBKt4fpsr1gMWQl8LKH7HN5aF2-oB6Nv7iar=s2048-k-no-v1"
+      },
+      {
+        "name": "Lamb Fries",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U_onHHy5JhUEx3g9lIKCO-IdMGBUXS06HuUv5Ebx4mQO--vTQ_H2CEar-GkqE4o1CWZjHk4Ep8KlV01efElwN790LEtorcFJCvyUqjDvNMHNVY2ZwKZnQxW-o8kMYD4L9bEderg=s2048-k-no-v1"
+      },
+      {
+        "name": "Cattlemen's Strip Sirloin",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U95TGj3x5lbNmPxM5LWLUN0TY1UrjjXBFqfXhJYJmFOlIked3aeXdxZRuJD5-mKBk3eSuybunZxqQUwRx9kJLfe9plyhBnfhShD1EKz8ip-jA7NqOcPnT2z69IYTWj1Vy6bsU0iKw=s2048-k-no-v1"
       }
     ]
   },
@@ -4569,6 +5409,23 @@
         "day": "Sunday",
         "time": "7:00 am-9:00 pm"
       }
+    ],
+    "menu": [
+      {
+        "name": "Cauliflower Taco",
+        "price": "$4.25",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U_xkO4Vm1IqgFRX7wrMiEJzj6Hdq7feamwmy_lyzODejst1EYG77yEY8fjyuJ0SXqmPAbeJE1yngKM1QnvQ0dbdzttMeHr_D2MhK8l2WKh2FLpdx97VkjkzHd6-TfltGEk-PGRT=s2048-k-no-v1"
+      },
+      {
+        "name": "Chips & Queso",
+        "price": "$4.95",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U-b7d3oNS3biTcyN6Kfct6LuAMr2x98LP5ApAqv9KD-V99zb9DTuZo_mzGa377diADG0uMCdXzQE4PRB_wPVYI7gGjv0sLZww6EprFJIx624tQnNQmPplJZkWlRfgQjPhfMNns_=s2048-k-no-v1"
+      },
+      {
+        "name": "Fountain Drink",
+        "price": "$2.75",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U9a1wCO2ya-uY-gjEdumHd_NhIfEzhFHp4Yqk2niPOtoDR5z7DtWlQaBD3IjKqxXoE4VYLapj49B44rWsmUfMIci3JdmY2AlfHY7J_RRi2quJp8U0jdkRnkuwrFZf5FA224HszNOA=s2048-k-no-v1"
+      }
     ]
   },
   {
@@ -4656,6 +5513,23 @@
       {
         "day": "Sunday",
         "time": "Closed"
+      }
+    ],
+    "menu": [
+      {
+        "name": "Super Bacon Burger",
+        "price": "$10.59",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U9VZBQSJ5Dir2rkv6hlgu75mhaZx9rbbG8t0GVjX7x_zKK30t_yThG7YDh6NyXOs60DR6lWC39KD1THohvZJLulmAnwMHZI9AfPz6N7jj1kdagXhvmVYn3pN4zGqwUOevL4fE7t=s2048-k-no-v1"
+      },
+      {
+        "name": "Fresh Cut Fries",
+        "price": "$4.19",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U_xgFjVwHaEQdAxz1UVEkTAK-C53GVZnzKZuqwiJGRdpUA8PXVEq-weQU-pCvSoP8rDCzpyZGrlQmplO2JqOpnjfNlCcsU4t3wPKSOjrORQYwTj8E7AC_sYFBmJTeoC_N7-KYmvqQ=s2048-k-no-v1"
+      },
+      {
+        "name": "Tater Tots",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U-VYzCNxlVmNWYkICmb0U1Cp4KYWF5phqVCYkvmJwnHeS-BvynOJ_cVWqzQA4GKLiNdhlzFxL2AXHjMefodXbz77d7XptZoP4J2Hg1Qcoqdjn5XVj4zMJBTAw6I2fzif77y8yP5=s2048-k-no-v1"
       }
     ]
   },
@@ -4745,6 +5619,23 @@
         "day": "Sunday",
         "time": "5:00 am -9:30 pm"
       }
+    ],
+    "menu": [
+      {
+        "name": "The SRG Steak Tartare Pizza",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U82bc4W4vCYJLKUEXfyuUuqt96vlgnRSWOyysyM0-xlwJl6dYmMC4eBoHth9zUzh8nlj8I_aXjsZNfOGk36CDFoTyAwmUxlLIVaRudx4_a06hOI0DmwAE9sFY9tlxMYe_s1BjRH=s2048-k-no-v1"
+      },
+      {
+        "name": "Roasted Strawberry Sorbet",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U-yIxtJAHryyPGWoYZIz93EfiOTgEna3be0z-b5FYpzTJoVUG2J2j60jZrNK92_B-vVLQtPYFLlHzLG5Frd8k7yuTRrMoe_Z2mp3TTKcxbMgZO4SCV-dUZuulezGIr4AWcId2Mp=s2048-k-no-v1"
+      },
+      {
+        "name": "The SRG Eskimo Bars",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U9wpm2nMfdwPJQ1to1nM2E4c0kMYFH1_mzepWdq5NST6xiVkoq0NSLBnzUTmPJuxmXATAxaHjmdA56NRe3njTSblWPpF16QFrF9qaUfNGXhNfIfhapjRIpOMV_dSphipSYElVbC=s2048-k-no-v1"
+      }
     ]
   },
   {
@@ -4832,6 +5723,23 @@
       {
         "day": "Sunday",
         "time": "11:30 am-3:00 pm; 4:30 pm-8:30 pm"
+      }
+    ],
+    "menu": [
+      {
+        "name": "Roasted Garlic",
+        "price": "$17.00",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U_Du5i2DnjedX0gpNLIjeRWcKaAPfj4QzCq5CpaPLF-eOpGzCD0D5TAsFKNksTGn_vMC74fwvoa4UT3I7WYJ_NkS2aiPlfUCqEB4QWUlpHkYNLTBQlTJMOO4FrDtuhiDsnpWQ=s2048-k-no-v1"
+      },
+      {
+        "name": "Relish Tray",
+        "price": "$9.00",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U-N0FNNgG6rFe6Xxtx5LssDvHniExluoVMQx_Xz5K81S2LIhGvy4yejYpFHRg8Dw1_9cKXL3YKpmz_rZdwn5GMOXWfry3Ql4cz-i_djlV_NqSDwAvYWGL89JzaJP_cdz4lNlGVM=s2048-k-no-v1"
+      },
+      {
+        "name": "Grilled Artichoke",
+        "price": "$20.00",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U-7_TQsHIOY_0tqi_SfE6lLFz0FkHQA57DMg26Rmwbjr6Ls26Fl1ZwARfw9iIZHivpNQ3SpZ6j1jiK90lxS2ubC0tCbb8FvApD2EwL_DEspM2IdPhxAvTsOjW8a7tM9tBehQ1zw=s2048-k-no-v1"
       }
     ]
   },
@@ -4921,6 +5829,23 @@
         "day": "Sunday",
         "time": "open 24 hours"
       }
+    ],
+    "menu": [
+      {
+        "name": "Chili Hot Dog",
+        "price": "$9.25",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U_N0iROIscBputP4UvL8UZMOGmFuyMa6heWO5keVTDHWIHgxVK1_TAM4mPk4qBhAE5MYGZtN2LaUbEcLA8hJzjSKgwyiyhx4supds0VX0UXKmtEyChZrLLFbCAZm30-GSRUDCp-=s2048-k-no-v1"
+      },
+      {
+        "name": "French Fries",
+        "price": "$6.30",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U8uANrTGZsHJD-JYA38OimDR61KcqOVN1VvnUfxtlJtuJUG9epq2XK-VF56RljwUPs51OOmMNZStFBiuPxNAy0Xf7ldLYr7Rcx6p7oc6AbsOVmMODa88Lf-OeoXxFxg0txeShoU=s2048-k-no-v1"
+      },
+      {
+        "name": "Double CheeseBurger",
+        "price": "$9.95",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U8Uz-fNnjFu_ZoyWgvUqBIy03kcZXDgiUiZKx3-N9hGgsKmDVpC59yqMPYRoLEW2p6sfeWMYUqjLkhhs4Yz3tstm9yBeVetb3B9-5nY6OwKl-5z1286kwgwjyTNoE9ePNE9ezAVmg=s2048-k-no-v1"
+      }
     ]
   },
   {
@@ -5008,6 +5933,23 @@
       {
         "day": "Sunday",
         "time": "6:00 am-10:00 pm"
+      }
+    ],
+    "menu": [
+      {
+        "name": "Lemonade",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U_8A2cVWT42CeZk8YmVrFLKviFOLIU1afKAqKBNPoOmL1bz5P5eyMu03DOreemgstj69suNvRnULW-2WZjYuNfwmHK2Zg-Wzw-aRa8BdQDYGjjJhvla6FMpI7JF1KMxycCdk_Rl=s2048-k-no-v1"
+      },
+      {
+        "name": "Tapioca Pudding",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U_G0h4i_UMAMG5QCOp7YuVp3tHRCevWZ6QLG9zzz-qGCGEBgwV0MjCzE9YptWiQXO-fUFKeV2Hxq54qHnEPVVbU8Q2Jfvmr3Om_neFozq3FOxJB7_GHty8tuj8i5Okk3vEyuBgz=s2048-k-no-v1"
+      },
+      {
+        "name": "Chicken Caesar Salad Serves 10",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U9dS8mBWWoY6wj27L7JJ6a9otBuXf0ZLB7lz3fTEHOHzjxhkrKXjnUjPK3cgEVPKShpibCqgqnbn5EhOrg-zypxrfadgnCggB7PO7KEJJZDwoYUvHkm4-johWtyomOSjhlA1hLm8g=s2048-k-no-v1"
       }
     ]
   },
@@ -5097,6 +6039,23 @@
         "day": "Sunday",
         "time": "4:00 pm-10:00 pm"
       }
+    ],
+    "menu": [
+      {
+        "name": "New York Cheesecake",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U8T55PDdSsaB_jMjonzDeIBa9Vql1Qjf-CcK_nJeIzlYt9splTZZxUfdEqnn5or79vs_EAdBMlY--LJObQfOyGWA0g28AM8BkrBf3-aQbzuKbyrjqIgp1hWL2n55ZF-ddoAvBw=s2048-k-no-v1"
+      },
+      {
+        "name": "Spaghetti and Meatballs",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U_xbrVvCt5aoIhRnCB8bn6M3mE2ilSZTaREFrRYKdYpYKWkyfttcfI703d2p4OFSKtJGJXiZnejfmjwjO3D5dmG9X0oCBy3KsMWtMQbo--jniVXhsqC1iiRtd54jpnwIH42bmx0=s2048-k-no-v1"
+      },
+      {
+        "name": "Original Fettuccine Alfredo with Parmesan",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U8yfWQ7H8iCAX9tM6yccwCqvDe1-8CgSGiqdwHnkS1_AbL-3fk8Pjx8O9zo124EMk5Ax3yYB0c10O3O_zRw7yJ1Dt3Ir1nhWJoNRCicmy6ZF_uhrP2q2SdLxUcjHay4CwsaxepQ=s2048-k-no-v1"
+      }
     ]
   },
   {
@@ -5184,6 +6143,23 @@
       {
         "day": "Sunday",
         "time": "8:00 am-10:00 pm"
+      }
+    ],
+    "menu": [
+      {
+        "name": "Red Beans & Rice & Corn Bread",
+        "price": "$15.10",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U82e50EwLWpuv_c4wbLjBtDx8-Dzd5KQboWqqKuAH__U0U96nwqfFy9LMN-7PxEAFwfMhfTbHqUhXfLH3u3ow7sJJRae2KzJz34uB4c-fxwhAfgqHrp7_goh7JaqHhXDE5HflJU=s2048-k-no-v1"
+      },
+      {
+        "name": "Buckwheat Waffle",
+        "price": "$11.25",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U-pePnwTzqv926vXAgq9xpX-SWELDr13ArvDvwLendwB25mNYvfiLD9xygQEa03YCzXv3TgWRo_gVTl5K0y-0ELEZlO6Bqd-COK2eT8r09vMqQZkjhpzXf2a0S2NWHzSLrB1YTS=s2048-k-no-v1"
+      },
+      {
+        "name": "Coffee",
+        "price": "$5.50",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U9mHmXit1h7N-vlnGwH7LTmT0JJY1cjdyLiyy1-rsFgxROwwIrBurFwNOemZ4YZofmuYH5I32XdthoTv0H_7qWKfuVcVict8we9cSlNll75Whm9GrNMnDJI-yaNnOc_kPov1uc=s2048-k-no-v1"
       }
     ]
   },
@@ -5273,6 +6249,23 @@
         "day": "Sunday",
         "time": "11:00 am-11:00 pm"
       }
+    ],
+    "menu": [
+      {
+        "name": "Steakburger",
+        "price": "$9.25",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U_1L7Iwi05fvRVImYjGbNmqEF8pgsSahC65iLYilf2MIzxoW2dXYixpKZ1xVSieFLfGmYgKXHMO1uQG9WZVB_EGwdcLGsszk1LrDd8gHvJbG6o5HgOxW11R-C17TczdXI306CRaF_63pBY=s2048-k-no-v1"
+      },
+      {
+        "name": "Cherry Cream Pie Slice",
+        "price": "$7.75",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U-MANFatGKqvPf37Tr5z1nmZl7Uf4pC9tsSSdGPLGCR6Q16FvVrmsPxFOT79wo2NLCAHzJRpk_4uymPOrR_KJslqY2xTSpnQzuuo6F-4PWdAk8wjnn6_4-G9LzgHbycVC_KaRp9=s2048-k-no-v1"
+      },
+      {
+        "name": "French Fries",
+        "price": "$4.50",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U8Qkw3AwKgVpa_6CCSF1FnQX7vgyPbukchNIP2OF43RVS-kO9R300JYEBgWa_O3JT_NbjQej1b9KLhABd5pMgcU8NYPXyXhFhUXu-edVepsv9atDs9MlQcm_yzDjIvXTj-doOVW=s2048-k-no-v1"
+      }
     ]
   },
   {
@@ -5360,6 +6353,23 @@
       {
         "day": "Sunday",
         "time": "7:00 am-8:00 pm"
+      }
+    ],
+    "menu": [
+      {
+        "name": "Chili Cheese Fries",
+        "price": "$11.99",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U_3IQuWjvVIUfhDy4l0W_1LipyVFmqCgXIZ47S39v60gbmjQLwGjd3d0ttXM8YkAtg-LiB2ahgI_TPEATlO8mJ7e_sqX9f3AP3_gy2CGjzYpt_33AUd9bSSuDjmNWKyCIrQr3sOKw=s2048-k-no-v1"
+      },
+      {
+        "name": "Super Burger",
+        "price": "$18.48",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U---TQIK69mOJuVr2fliS6viMso4ZKziFJ3Ngj9pVJrvSqAOZXeO0t-M7yi7v-BArDyTx_0QLjp-Qes0dFYbBN8IF1obzB1AW8IGlG1N1U9_N9MdXVl6yfU_dctWxTdTloOQS30qw=s2048-k-no-v1"
+      },
+      {
+        "name": "French Toast Combo",
+        "price": "$15.99",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U8vglPPad1tfHMIUlrsHPzpcr2sJQePsh31Yl8MH26pxTAGQgM9TXKxQYMHNsbib2_ImjZbXK-kJJUlY0aT67sYuSe52zQ4gWQAqjMeXdUYU4S-DZ_Ce8QXYBuPprNkQCDSkVt_OQ=s2048-k-no-v1"
       }
     ]
   },
@@ -5449,6 +6459,23 @@
         "day": "Sunday",
         "time": "8:30 am-10:30 am; 11:00 am-6:00 pm"
       }
+    ],
+    "menu": [
+      {
+        "name": "Fries or Onion Rings",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U8m96EHcel-KOqfIMYH23MkEpxP5YemOBc97FA50CH3JHDb54PtoE2nIjG7Jg9xKAwtdeL4s6GO13dBGHrDihUZ7hspoJAZP2BhSExzKS69fKUiulaeB2IiA9C8qfISvcCoorbw=s2048-k-no-v1"
+      },
+      {
+        "name": "Calamari Steak Sandwich with Fries",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U-0QpbxMaDhaZWvYqmh6cqS16GzoVlfzMFOvd6fxR7bMQ0aokWuNbb8z7DgGCGNM9pA8m4uRnQwYfv1I41r66eH03-0Cp8qgqhBDLad6YBC54i5zmeQASAjRJhhJegxvRaKjBRT_Q=s2048-k-no-v1"
+      },
+      {
+        "name": "Baked Oyster",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U_MmOXpNV4XobSPDyCTAVeR5egj0LE-v1Pu2S6-q0FuxT-Wd0z83WNBkrZcXKLDSr_wLsN6gylbQZbFXwJ2jcaQLcHr9z43KRIDuhf2cs3_mA-ENGZGn-eIvWiMzryvPizjLRi08VBtFDUe=s2048-k-no-v1"
+      }
     ]
   },
   {
@@ -5536,6 +6563,23 @@
       {
         "day": "Sunday",
         "time": "11:00 am-7:15 pm"
+      }
+    ],
+    "menu": [
+      {
+        "name": "Burritos with Meat",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U8yAkdGbIlZDgqw_yfnP-SNfI2VbLh2yblcpmSZ7knQwR9noYSDAsFER-g1-vyuY-QMiox3is4skrlZm0a7EhOZtAf6-0VYHGx3kGvpUaJ3vRsNrnmw1tTKSnnH2Ja18D_7tIE=s2048-k-no-v1"
+      },
+      {
+        "name": "Al Pastor",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U_hzE7EeUUJ8FtJlgy7IQLLlrwQWexgbwEgw46b6FFrCO0k7UmRu4wfrI9DOJ4H4xXmAUKdRDmovAZf0AwCGGhGnBY31TokKn5nixYnnlUVbjum3J6BfYU5Kn_1IqsS92FqztjrTQ=s2048-k-no-v1"
+      },
+      {
+        "name": "Nachos",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U852y6nWTvgTvxHOF31qHdEmo2CfJzO96c1I_-zZzh58pDwsC_EAKn-EALdNBZDKoZb3V5Dit8jF-9Bizda5sq0yeRBDc0i3c0i-iFcrX7exse_MPgnYPsc-eOvbah75OG_KSss=s2048-k-no-v1"
       }
     ]
   },
@@ -5625,6 +6669,23 @@
         "day": "Sunday",
         "time": "11:00 am-10:00 pm"
       }
+    ],
+    "menu": [
+      {
+        "name": "Marufuku Salad",
+        "price": "$13.00",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U9Na-wkfA9LbLgxnEDvxry5Vx_LZoeH2UD8J6DrSrpIo8rN0EmcPkNmtX9pFCGHqqO2PMkYUHV52K7BOkFzyHRUypd6qQrICp4zxDLRrWYEeG1h25iKWN6E50FVfik5NTMHVRmCpA=s2048-k-no-v1"
+      },
+      {
+        "name": "Spicy Tantan Men",
+        "price": "$19.50",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U_-hpXxJXcMdbTQWcJgYO0TvJV6KdzoUkbO2G1KTI6ehCx-re32VCOdbA0WG5l8fZRctsMIkSwTj63OEDEEx_WKDmbA6HX46JLPccD47RVQ7WKguIIQmjQUcX4Mj5Y0nGbR5BO515gN1XLv=s2048-k-no-v1"
+      },
+      {
+        "name": "Kakuni Bowl",
+        "price": "$9.00",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U-O5i49KKPdz2qqYduC7PsOlP0-od43sAylSV5Mqy3z00dUviylCrEeAJv8mbk2oFdTbxwk7RChEG74Hhq7t06COQYuPEAoTrf7zosTuzfHvW5cliHiFOyh2F4R6LbezMNeZ0yk=s2048-k-no-v1"
+      }
     ]
   },
   {
@@ -5712,6 +6773,23 @@
       {
         "day": "Sunday",
         "time": "11:00 am-9:00 pm"
+      }
+    ],
+    "menu": [
+      {
+        "name": "Gluten - Free Thin Crust Pizza",
+        "price": "$24.30",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U8zNNzDsI2y83dtB0Y6d1yNMvg_d1loVmJKCQcoea7kQdHuDxhPnipK0TFrZCr-zW36p8IMQ7JxpNN_DjMg9ff0ycXl-W7Ocq_2DE4EKnK_F7c6Mv70TchyBfixi9hHote92Rdz1jOOXBM=s2048-k-no-v1"
+      },
+      {
+        "name": "Pepperoni Pizza Slice",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U-gwcxdoOzzvgOyN0U9bXP0T8O6upTSA-QpIcAE8KjT1nAjEzxTCvnSEf4FOMPFw0_NZyNT4GKDHZCM4O_6Gm3H8vja6BdiyJAyWkAc3Qrite_tdsfjOvmM7BBxSUUdDFg8Kakz=s2048-k-no-v1"
+      },
+      {
+        "name": "Entree Garden Salad",
+        "price": "$17.25",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U9k8zc6ULJHye3plDVccjNGT63tZjUnqJn4W4gcuXJ5O-DsVEA_-Pc6rF2mnG03wT5ynJCnZfsQ69N4ldvEipakqvWFBpGPy8ark9kEtLQMw_EPisPEnr34OuFc82-sBipIESp3o2dCgx8=s2048-k-no-v1"
       }
     ]
   },
@@ -5801,6 +6879,23 @@
         "day": "Sunday",
         "time": "11:00 am-9:00 pm"
       }
+    ],
+    "menu": [
+      {
+        "name": "Mexican Mac",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U_2-y92chYDxKDDpZEEQEMOFzHa_NckhQ8tN6j4clrvskM_RkeRoldA8eto14OqhoLYbUrVAnzRnd0QG6JkcNRonjojCoLdE1IKmM5ncikBrY1rpD4Um8NiZhswcRSuePxu9LXL=s2048-k-no-v1"
+      },
+      {
+        "name": "Mexican Chorizo",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U86V-qxg6wpJpR2AckVytFHNdXSO3AyvXKGGwspKa-qyvuzXdB0SZZih4if0N-aUee-E0ScaIRQeJVYp5VrFt3fw1LAsnwF_Tv1NRPDoepYitRas5L5kf-MATNZBaZjvVIJn8gq=s2048-k-no-v1"
+      },
+      {
+        "name": "Smoke Bacon Mac",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U_a6vlUglX03J7caJBtbmaHLsrB4HfGNeh3Dzr51RUXalWIr1XfJ31ql4CVs7g1kHfm5GBNNWy83rruA37xOs2KLE4UgnOYjjqA8f5awehd9MkfWP0OHaOlcZYjUZutV2n51PYR=s2048-k-no-v1"
+      }
     ]
   },
   {
@@ -5888,6 +6983,23 @@
       {
         "day": "Sunday",
         "time": "11:00 am - 5:00 pm"
+      }
+    ],
+    "menu": [
+      {
+        "name": "Lime & Coconut Chowder",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U9Ib3AL10mdgwfTa0x4_lakXc8cgFtFWWUfQj6OEtUxVsrEPCHNMq0dK7XNaUWZZhJ7ZyHd6k4l_3MZb0g_n_hws7n5O4mlWI4FSe-O7AnO789ngpKwBClbLYWsqucf2d_qI6QjTQ=s2048-k-no-v1"
+      },
+      {
+        "name": "Smoked Salmon Chowder",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U9BMQ93f1GSFxROqJNarbbDavqDSwVA-_y0j9__cZepf1AmNwiu-gL-p0v1dyw5J401Ie4xwr3-zbq3BJt6jU9HSzTMMr3uBQhER7jF-jsYEMBEwqNrHQymmvxLeAbgcCLvF9hg=s2048-k-no-v1"
+      },
+      {
+        "name": "Manhattan Style Chowder",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U8wPxDe19OG65IwdUKlnhqVEpI7_gBYAkXvfU2CC9Y6y6TjuDyOh8ltQtrY4nHZweayhKPtcsYMpz2Rht3sajiKVOlHV5BrYFxH5WajTSVM47hsO5_9KPeNazxAp6Lub7V8Oqj23314al-0=s2048-k-no-v1"
       }
     ]
   },
@@ -5977,6 +7089,23 @@
         "day": "Sunday",
         "time": "10:30 am - 2:00 am"
       }
+    ],
+    "menu": [
+      {
+        "name": "Regular Hamburger",
+        "price": "$2.70",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U81lv1q65WL8xDCyVg5CmBy3K_RwO6W0jmfUa1ZweTTQnJ9egszIpbUEio94zh1HUIjh-s56Hrw3FjOCwnAvM06HRIcwr76oADuKe_5VCJNzHbeZKvBuWGzw2IldAvQa6Ya5_Xf=s2048-k-no-v1"
+      },
+      {
+        "name": "Fries One Size Fits All",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U-3wr0CIAQEn3Ya1V4VKYZjkXo-vShbUSk1cVMYeBij8LtlbVuwZ6Bee6pT1iiE0R9INyilkh6u3aYEOKNP_V687RyqAerlAx0ulE3_Ro8PWrwR0e4eo7QlOunDp-SBY5HSnZVd=s2048-k-no-v1"
+      },
+      {
+        "name": "Milk Shakes",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U8fgeI2hIXiZVNc6CE-JmQCUqmRgmzQZTH6aT42u-5OjKhlPDUR545EN4afLY1wj_5ycovX3728J2B-GgdoOwc7qzalJQhNsagyerwmOEt1MKuSRz3_P7weHTaDqmI3jUr3ynNmGw=s2048-k-no-v1"
+      }
     ]
   },
   {
@@ -6064,6 +7193,23 @@
       {
         "day": "Sunday",
         "time": "11:00 am - 7:00 pm"
+      }
+    ],
+    "menu": [
+      {
+        "name": "Lobster Soup",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U-zvvFfg3NDAepnDmedJwGZ8Of16IPd4Dq44OjWC7fM152O71RWSFnnnBIwbY7mWyOEbPPvOO3bFpXljfFKfvVUKDlowUzy4aivvkyc2tutQnkRJgbdHVMQuFJFZlPUi_kbmWzi4g=s2048-k-no-v1"
+      },
+      {
+        "name": "Lobster Roll Sandwich",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U88oBV-xyRbnIHRTXhUybFUbgw-AeC6PIgi_19tzyZoxKcm5Zez17bI-NizINlHDBn3Vzgl6BzyhWwx8fNfb7VWV1Hs1YE1JsN54jdY1OVBhzy-OpvXQNahw7i7ddOeiLXvTMcdFyw5Np1h=s2048-k-no-v1"
+      },
+      {
+        "name": "Lentil Soup",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U_YN3bOEyYs4lhB789sRtmZ6r1alox6wzxqpXNoecMDYrxzumSczqU3jHhX0zNLMeZdpYkIMOmaPiwGp_hDL1fICVbt-Z5fm6RLTlwpArbvbYU1oAU8k9IG8UIegihilIAz_eEcNg=s2048-k-no-v1"
       }
     ]
   },
@@ -6153,6 +7299,23 @@
         "day": "Sunday",
         "time": "11:00 am-6:00 pm"
       }
+    ],
+    "menu": [
+      {
+        "name": "Tostones",
+        "price": "$6.50",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U-RL0woH8gNCvcBgvU_i4fMBKwc-p0nvJNX-6PLDtnTNqCkF_iIyc0MasZZ6TzZkYR7GjUwXS_g_cqMCUQnlVIeq1SVxnglkeCzvbHn9RmrlwENoHaO1Lc_4GPM6TdvCCrcwKvlEA=s2048-k-no-v1"
+      },
+      {
+        "name": "Variboeams fresl",
+        "price": "$16.95",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U95heDyBrkBGSGHeWAftaOS3Xrs0qtAe3apE6Il55TGMon6zqksKGZjhTZQEDiyR_jINDB-FIA38V955n27FjyhiFBGZ7BxsNsQseLJNxNHntWGYC9IeJnOxS1a2lL-wsLq_v_OyQ=s2048-k-no-v1"
+      },
+      {
+        "name": "Pork Belly Sandwich",
+        "price": "$17.75",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U9bFXJ-upyxBUBnoOVR5vKno64dcP9CrCZQBUVN3efa67oOyXDRCV6rYXKulTDATljtALq9-vGITTshMovh4YaynHngVqg7mKtkSxhD-jy0LfG6Tml555NnOvPgvE_Bt-5LDBBogw=s2048-k-no-v1"
+      }
     ]
   },
   {
@@ -6240,6 +7403,23 @@
       {
         "day": "Sunday",
         "time": "8:30 am-2:00 pm; 4:30 pm-9:00 pm"
+      }
+    ],
+    "menu": [
+      {
+        "name": "Local BlackBerry Pancakes",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U_FspoQGe80giqZt78vRQK7tYkjTcMxiKgi1p3lJEOTjeKirJde-fVjDmytDivJdejRJr2iAW8-mr9mjc6JG7R0hyd9JVFSgfdnQdG2dVfu-QGulz9tfCEHxmgme4Znarw316slCnaqO5M=s2048-k-no-v1"
+      },
+      {
+        "name": "Praline Bacon",
+        "price": "$10.00",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U9EYaG0Xf4sYU1Ov6f9-Umo0BMJbZKmbvozeyoK6F1Wny7SzfAGlfgGnQYTpPOZbUqJ6kbqw2xU24GrB4pB201e_vrfT0XAFFG0Q-JkRY_dYOJONvpoA2UVhUspagrc1ddy53ze9w=s2048-k-no-v1"
+      },
+      {
+        "name": "Sweet Potato Waffle",
+        "price": "$9.00",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U_EC-wgHWrpen_tHYu2_3OMrqD_8pTnc-16NltZL9ANTwAz17T3S0259S8H3OZWJ3_ngFwJMzZnwUxyfk4koUFje3HE3NzRVu5fUvEwTaHYGgl2htkDwxQCZhldZ5TbpKs6mzhP_w=s2048-k-no-v1"
       }
     ]
   },
@@ -6329,6 +7509,23 @@
         "day": "Sunday",
         "time": "4:30 pm-9:00 pm"
       }
+    ],
+    "menu": [
+      {
+        "name": "Affogato",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U8WdZprvyNq8KxtjKdiXZxz3iYsO57Orgb56YkgCo2SDLggIOqzXspkCvlt8JmriMrqzqJX5oqafUzphRlbjN7Rutv6Jj-zVzV--LZ9uVHvXY5Q-03w-odFt8gHzP8mky1b_zWnwQ=s2048-k-no-v1"
+      },
+      {
+        "name": "Caesar Salad",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U-FV9RtQQ2ZE_J8j2YCfdSAF99t1-M_UitHF4l17l857VStOGHltVUFzQqqvbigXQgkauJ67J2c4TIFZ10iGyhVBZOxJiTQzlzVo1Z6OplYD8x-2NPmjouY4k7un0A6vbht4zWp2w=s2048-k-no-v1"
+      },
+      {
+        "name": "Roasted Brussel Sprouts",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U9GGonA706Ww0qtuywW201X3wyJfazJPT_Pza_lMBfrsYiGbwPSP_wqLDapHamBpy43FXqL_SQXER0qkTKfCTdC4F5QyMMvrNn7lEJ2h1T2dv_XOVrZ26CjFjP01D47gvBk-spLFqnbd0YO=s2048-k-no-v1"
+      }
     ]
   },
   {
@@ -6417,6 +7614,23 @@
         "day": "Sunday",
         "time": "12:00 pm-1:00 am"
       }
+    ],
+    "menu": [
+      {
+        "name": "Bomb Bomb's Famous Mussels",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U8ITdZ-PmiuFFGJ2PQ5a4FcxqJN9simEfsQTRkdR1u_VmyHJGGxmVEDViKSighlZjjsmrATkSl3whziK5yQkwZnrY1PHpWW3lXpnxz_RqKIu8i92Yig99I_6Wqiixt4jLG5eWdg9woxCvc=s2048-k-no-v1"
+      },
+      {
+        "name": "Carbonara",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U8ywjWZvNa9qBiEbvZuIziIBGb-28XLtOpWU2l_N7BINjqbpx3Urz3EYGlzAasEY2-x1ZTO9C2nPYgS5OEH1M337LTJ6K17UB6Vd_YgYKUHxF2c5yfgcRp7dv871NvzBQjaAZARQ5GPWI1f=s2048-k-no-v1"
+      },
+      {
+        "name": "Baked Stuffed Clams Appetizer",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U_hcTmJpuGuoHDdkuYmv-6tITAeUKHiBfLf5SD_aWnYny5WxteiWU0PlOT5YdbtxQcLeF8JOazlnwmHHQ7370O-m_WUPp0XDW6CctlZDWZxddhUXms_UtepzMXHYroMKl6RnBGMOz8w6Ozj=s2048-k-no-v1"
+      }
     ]
   },
   {
@@ -6500,6 +7714,23 @@
       {
         "day": "Sunday",
         "time": "10:00 am - 8:00 pm"
+      }
+    ],
+    "menu": [
+      {
+        "name": "MoreTuffles",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U9NuXUjUj03ajgzZVFwrXb54rmZ8HHLln9jC9FlYSzPFP2dbo7Vfg4S9XzNPLFDkT2neXhXGA7ocd_96suQovjjG8BwV1KuLQrpRHo5djgpOhUUnPquyLIFjXcRX4URat4ktkftrg=s2048-k-no-v1"
+      },
+      {
+        "name": "Dipped Twinkies",
+        "price": "$6.90",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U-Ry3cQlfa2mI3nq-sikcFmL-0kI4ZKSE5IGctn2vqx8MilQUeGoO9-LOjXbD02ljLZNvOJztv1DQNPuOeamkjiuJZJqEMk2r6Hoj6803nrbgUSe_bMMVQ9HFrw_A6FrVxCIX3u2w=s2048-k-no-v1"
+      },
+      {
+        "name": "Pecan Bear apple",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U87dScYMBDQop98qUgPbFdGokPAQeMMxpWorfIID8uzHwT1hM0wA9Jeff1qtxZQarHz9aLEfoMCpPjr3KWFFQnMxznF066VWM5ONwFr3LVZR8WAjbcLahlOzmqTsW91req4OEmJ=s2048-k-no-v1"
       }
     ]
   },
@@ -6589,6 +7820,23 @@
         "day": "Sunday",
         "time": "11:00 am-4:30 pm"
       }
+    ],
+    "menu": [
+      {
+        "name": "Side of Qeuso Blanco",
+        "price": "$5.49",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U8PEAwePaMwlxKStovoinoHWo0x6Pqneuab2hUCLFIDMaMhw9FtmjfY-_WRKpbUETejGjBE483dwGMxbUmdpTpZ4LgSzStkUJijqgxxc_9Bm81BRF-GmE5OhHaqC67VEe6iLDwy=s2048-k-no-v1"
+      },
+      {
+        "name": "Taco Salad",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U_lWqEgnAPzlUlIBefsG3CTzBORx-SYxLvgtqlziwr5ia3x3AswIc5BlaD0XVcjqS670dEGl5aPvW9PFscmyO2oKLgOiwjcInlDZtbe7XoKaYalxqWTJeTA1ec05TpnGR7YZn8_=s2048-k-no-v1"
+      },
+      {
+        "name": "Green Chile Brisket GF",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U_u_zne9Ec7HBmFFeOoP453z0Uz7BHQoTvjcwZJBIxd8T5rAAIS9CYMOyDLMK03rwiMdqYgjSflQj5RztKYzzNUKQ1tFo5dIXbBdWCc6MHt870hZW2bB9QyDQe3zlAMNmeUhmAG6kg9S2c=s2048-k-no-v1"
+      }
     ]
   },
   {
@@ -6676,6 +7924,23 @@
       {
         "day": "Sunday",
         "time": "6:30 am-3:30 pm"
+      }
+    ],
+    "menu": [
+      {
+        "name": "The Snooze Classic",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U_mUoPfbTlUUB5hHmsHGCTRORAel-PqYLBBOfrzYrr2sqYDO3TlCRbki85Pd9IH02IDFM8T3aoyjW1iBNuPUJlMID9XBfwklAcbGHWx40n6L-iwXV8riyZfb8jdzdL99MTZNu73=s2048-k-no-v1"
+      },
+      {
+        "name": "Snooze Hot Chocolate",
+        "price": "$5.75",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U-3Brk22KkpS8yWXTYLGPpeJIcfoKdqKrqJrRMr3Fl7-HmEgtB4uQmxWw4-CCjWdD_38gUBhTJDwmT2nzbntVQ3J6olcSWGMqDdFFf9ZbMiJ6Y0Yv6coidX7b6Qw9aSwFi4wPzvPA=s2048-k-no-v1"
+      },
+      {
+        "name": "Juice",
+        "price": "$5.70",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U9Vk1f-33yNmWVifq6ocqbqU9ENO0FkJu8qhTQZ-88sBuijTptKUWdRe029EU9j2JCYITuaKDSHIAbHv0GZPxOmBg19mnTVfxXcn7d00jgspsRKxu0jYRQhECRoI0x_vbpg6e_Z_OVEhoiX=s2048-k-no-v1"
       }
     ]
   },
@@ -6765,6 +8030,23 @@
         "day": "Sunday",
         "time": "11:00 am-12:00 am"
       }
+    ],
+    "menu": [
+      {
+        "name": "Personal Pan Pizza",
+        "price": "$11.75",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U9X48h_jdPbyiVBThAyg1R45YphHEv-jtqXIVL3IKePAwAC8SytcO5ar7S8veL8EfJxdQFFJndmdDaSPp_Z1saPU94sN17fgNj6ErGs-Na5OQJFb2Mooi_M-nLdRYVZQ90NUisEsw=s2048-k-no-v1"
+      },
+      {
+        "name": "Cheesy Garlic Bread",
+        "price": "$8.95",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U82fkcvICXB4JcnjidtPekUnUiq2rMSbcnf1cE7nEVnjqiSV6jEhLzlKVdzG-F49AKazBsT16IyPekH1c9JdkuAs7QSBlCpyK6CfDSWfCgxrlkWfmHcMW-cXImBmDX4dxhNNFDNMA=s2048-k-no-v1"
+      },
+      {
+        "name": "Mozzarella Sticks",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U8y-hexzeCUUjFdRWn78IT3zFjEpy9nwgiunyRvOLf1ozkcImzNYS5YkzyCTDjQtdjlUR_7k4TDWOD2Vtwg5GilKKdfzrXe-R6vfgyX1krXmghgJW3WfeZuAzdDa2Rx8XSzUnTwOw=s2048-k-no-v1"
+      }
     ]
   },
   {
@@ -6852,6 +8134,23 @@
       {
         "day": "Sunday",
         "time": "11:00 am-12:00 am"
+      }
+    ],
+    "menu": [
+      {
+        "name": "Iced Tea",
+        "price": "$1.65",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U-5Gf7AiE03pwVuyg9KCtJb3QsQl5igMLYk1MiNK-Efh9EYbjCfIpEqs3MJQclot0hOOAm5_swlUXGKNg8CDWv8fYMPB9rklPKytgJCzPxEsyogUFgA5iCoMiu4NSBSySrddOp7fA=s2048-k-no-v1"
+      },
+      {
+        "name": "Coney Bowl",
+        "price": "$11.69",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U_sy5FqPyL3R-w9L8NATjia2WHlER_DEo0XwiKlT6boY75LolgRqWr7ILF_YEE2R9CW00UHrtCggQRnv0jo-i95kS-lTnS-Gl-mwhG0K7Y0Sb2PGYjRWoXCSogbvfxnL6i96LAEYQ=s2048-k-no-v1"
+      },
+      {
+        "name": "Side of Cheese",
+        "price": "$2.59",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U_u4OvDegd8GKVvcixqJ3P2MNfwOYO4s2BODwQm5DuqCgD3H_CP5BTbQjvm-Wsv3JntmItgPaZvpgccu8oB0yZ5xeTxg3jgVAFoBzWorr-ZlwVwug1ZzrxLxy42VDk1SlY8aMcyhg=s2048-k-no-v1"
       }
     ]
   },
@@ -6941,6 +8240,23 @@
         "day": "Sunday",
         "time": "11:00 am-9:00 pm"
       }
+    ],
+    "menu": [
+      {
+        "name": "Grilled Chicken Caesar Salad",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U8gWH7WduyORruQriHDfI5kaacVPXO-GTXsGDhe5CWLxZI1DFJzm7xtlEfdbcWcBFL9vTvvsNF5-pdvNvYaQoqJadXrvMe8UeFkb6nbZsx35NMjGvaFyksXNLT-nEcRq8K4CZh_=s2048-k-no-v1"
+      },
+      {
+        "name": "Zip's Famous Chili",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U91hS2Nm4XV6k8b-Im7yrJlbzgzxkTI7PbUfwW1jhhbNAE7IkEHZnjgyryowCLS_OP1BfO4rtZxk1duDwTxO7aJ660fDzAL2AOr004xiRFJmqWJHuS858bvsOHGqo7ii8aFWdYBfo96ABB5=s2048-k-no-v1"
+      },
+      {
+        "name": "Zip Burger With Onion Rings",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U9kdxgrpuE2YyZOBc4nYHSPJGBu5NRxSFMhBYf0h9CNeqlONsXe-nf4k6vhioVGPBrPD_YmoRwRhmaXxbcrNOdooC-Aj68oKUl9D8crXU4iJRaYCeleiLjqmkl3DOAdr2_c59tO=s2048-k-no-v1"
+      }
     ]
   },
   {
@@ -7029,6 +8345,23 @@
         "day": "Sunday",
         "time": "Closed"
       }
+    ],
+    "menu": [
+      {
+        "name": "Turkey Reuben",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U_C53n-XZ82RV6twEQay-udTNSdZZBIBDqvxRPmYoEJ9Q4F8tF_UMcBxF_NRcmgoOjC4yWALGKZPb4EIV-FgfPfKiT0EmdIII4Is6MPAmCwWZcwKnOy3_7MOE86E9yDbvSjF22H=s2048-k-no-v1"
+      },
+      {
+        "name": "Onion Rings",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U9j5OAKDOmvgcEHizuDpcLLQk7k0fgNhLBEi9IN2ydcPLNdjRA2Oe2QX0SGR-OQlUcPGP4aW1StYcoP24hu63UaqZIGUVhUBQf-dENlT4XDevvsBjGGlKstJVEydP-GgwJonL1V=s2048-k-no-v1"
+      },
+      {
+        "name": "Home Fries",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U_gzAJVoCLziERL6RUINrC1xYKqE3_oqPxxAFGvHhjnw3NSDX_CXzpW9HT2fsstt_pHnAsbWXA95TMgcvgRXqDYdIM6-KVDrDbTLoMZ2eo-X2lzUl73nxFhcETQs37I1SUkB63KPw=s2048-k-no-v1"
+      }
     ]
   },
   {
@@ -7112,6 +8445,23 @@
       {
         "day": "Sunday",
         "time": "11:00 am-4:00 pm"
+      }
+    ],
+    "menu": [
+      {
+        "name": "Salmon BLT",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U_jl12sAkBNjd-3LrSgkWKs9ZoSig21AqPfIiuvYxcESk-eeA0pGrwWgJeARaVXRiGQFYXYQuQ8MJDwbGxjIL-KKnYyy8FZGU2H9rAdkWWV_xMBWQiublM9F7ttf2ykSpD0sLAF=s2048-k-no-v1"
+      },
+      {
+        "name": "Hot Butter Chicken Sandwich",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U8c3CLqnO9_SL6dW_AptX8NZUCmp8F0ytLhaY7NjhJfbkclGVYPX1gMhYf3VvfEe11OqWQS35M2dNYQtPBQeZKqgzjj5Oj6n3LqYApF1EgQAJ7oAstjbOy6NLEDllUmJKjH5Zo=s2048-k-no-v1"
+      },
+      {
+        "name": "Pack Great Lake Variety Pack",
+        "price": "$18.99",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U8KsKdCFLSZwk2tIXUE0JuhdgpFltXkias0qKwK7aEeNvMpBy4rGxxHp_MEf9Vcqv5oTLTOQp8KHGCeji-mTnhfJkoVAVvGywTHjC9gKlGlkFR1SBrxe925djC5zWaexSxDXlMR=s2048-k-no-v1"
       }
     ]
   },
@@ -7201,6 +8551,23 @@
         "day": "Sunday",
         "time": "9:00 am-9:00 pm"
       }
+    ],
+    "menu": [
+      {
+        "name": "Poutine",
+        "price": "$15.00",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U_viFG7Lv0yJkTd85QXLl1iqi2756fpO9xDU4j61u2Ax1aVUuDjVlr3jg9TOSNrj4hfzN3iq57jtPvXzWMXV0s2QDr3ExYYd7oB8CZWyR5d1Q_bhW0VtrXG9HNvGsFedCUvEsCwuw=s2048-k-no-v1"
+      },
+      {
+        "name": "Bacon-Braised Collard Greens GF",
+        "price": "$7.00",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U-pLMXnZDRv2jKM_Ac3Hgx6kujoIpjxBMkIElAt1nJjuw8Rs-h_nInKAjz_Ow4257K10BuyddWJRThA7vWNPV2lbojj8Petzvs-D65et0KBZEeVv7RVPivcobldIjJ26JkY6NNS=s2048-k-no-v1"
+      },
+      {
+        "name": "Roadhouse BBQ Plate",
+        "price": "$35.00",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U_zeHJlAhaee6l-a3S9grLYrYnfg93KekIf-UiQw50i71aS9lQ3y5eq52Wuzd5KC5cwP4FVYI2SzR2MXl8LWWfbld6ZmLnoEfGzbO7dNLgcPlLVOhFJgm2Ye8qzI6PH3mjTi2Fe=s2048-k-no-v1"
+      }
     ]
   },
   {
@@ -7288,6 +8655,23 @@
       {
         "day": "Sunday",
         "time": "11:00 am-7:00 pm"
+      }
+    ],
+    "menu": [
+      {
+        "name": "American Special - Gyro Sandwich",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U_aYeEMeXbTdY9yL9W2sAN1EdlhiKXGg033q4MXp-_NDqLd1BS2zYmJKXLPHo7mQO0Mka0_nak3b6sznqF9wyjEInY6x0n9uyoySwEEfaa-6aQ54QwWKukItXLozw1nab1nnCot=s2048-k-no-v1"
+      },
+      {
+        "name": "Chili Bowl Special",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U8ycumFHUKebh_ISmP5TB1inp-Irbg_Sp_sktwDMOmyGtM1zZ2pZHQCO-zA0VTeMP5ruck-qm3OxPuAG6WOvYaTuLT5VccfrP7P9Pezf9i3vRzYD_9gayZmBQ4EkBZp2qCodK4=s2048-k-no-v1"
+      },
+      {
+        "name": "Gyro Platter",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U95dh_4TAsO2OGaCsYxUars4T1N_zCmp-nFMbuHfrzhnA40QnJbadpj5p8nh0O3JCtQTz6tcXCm5FycPjwxSxIq7QSFV21MZsGnB_2AbnSIQwzCoifWo5xoUV8KBRt4jmXP00nk=s2048-k-no-v1"
       }
     ]
   },
@@ -7377,6 +8761,23 @@
         "day": "Sunday",
         "time": "10:30 am-8:00 pm"
       }
+    ],
+    "menu": [
+      {
+        "name": "Beefy Fries",
+        "price": "$15.99",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U83FGziFXr1COubhHe3uSoD7oyN0HZ-QAIqYYcOaY8-a0y4iMXuMY7bTVVUKyzyPvnucqmo1hAcPDke5ZlLxckvpWgboLNYgN3YvwnanbP5_6YgDaSTT4G3G_2E0M0Wz_nge_M=s2048-k-no-v1"
+      },
+      {
+        "name": "lb italian beef",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U8LgD9k1l0yqcLE8gwrhzi8miSn4FZxkGMiPBVkdgCXvJRYRAhNqACesQLVgQYDmx0ACOr2723s5uEoBzHve7km-NObPxp073vrdKa4ScB-eHfPZxVRmfb9Tm9t16TSONoh5R2ZnoZ55Jdj=s2048-k-no-v1"
+      },
+      {
+        "name": "Maxwell Street Burger",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U-uo_kOnMzmvQr5YzbzwyrYlSkMpu58MRl6dxvqWH-lX2NRjYKaLfh4gON0zbLi_Go1Tq1FfPck4KFpre2DTjnTkKL-5SxJn7pVCFuZKRUWVObOJWVC4cYoagCZ0ZcPg_NNIVGiYqmU9uew=s2048-k-no-v1"
+      }
     ]
   },
   {
@@ -7464,6 +8865,23 @@
       {
         "day": "Sunday",
         "time": "10:00 am - 1:00 am"
+      }
+    ],
+    "menu": [
+      {
+        "name": "Cheese Fries",
+        "price": "$4.99",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U9bZi08z3Lsry8oFt0W28Ns12Nj_1ik4LJImzZ1PA9TJyY99UfYffqdQZJFEr2wtnKAdbCMfMASL-81uOBpP82julYIjWy2Rdw73p72Psvf00xLB9XWWtsyqLlcEb9UktNYOc5p=s2048-k-no-v1"
+      },
+      {
+        "name": "Chocolate Cake Shake",
+        "price": "$6.29",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U-GFWSyzUN57--EkPZNk1cJM0EQeYOnpPLPOCh-ZwRw2Z2z2ScCKum8kMyj_dOrmtlgXwcVrtMpclxTviaqPK0zj6TF-X4yqG7uYoOP8iNoswbt0D5xR_UHJ6bugfN8cDo1KmIB=s2048-k-no-v1"
+      },
+      {
+        "name": "Portillo's Chocolate Cake",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U9eSQi_p0cdzLPD0ToXbyxWyynOeQZgkspoOcoMn0COfL_6E2g7D0unPxWb3ldlZu2vjWbG1lqo0Zy5C8ksDxX72b_Nl2WWwfcspXmntdW8Sa8x5ZSswNg99CIfOO6JwC8adZ_tig=s2048-k-no-v1"
       }
     ]
   },
@@ -7553,6 +8971,23 @@
         "day": "Sunday",
         "time": "8:00 am-3:30 pm"
       }
+    ],
+    "menu": [
+      {
+        "name": "Liver and Onion",
+        "price": "$17.43",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U8Z6wL4KCh8HlXsLeGmG6VueHB3SAcKR54fUfFL6BsKm-DLy106SgCXrevssFEecu-n2pDOAQ1R5W7TlLsrB42TTXQwA4AOl26eIQiJbmzGSGWIVKucjHBFN5GapmC51Dx3pQoV=s2048-k-no-v1"
+      },
+      {
+        "name": "Turkey Sandwich",
+        "price": "$14.67",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U-sLe0vaiBt38lS5qmZ8IpUaFYYDV7kUjcuKbqlD_u_pikpiUvyQuKZ8fQqoR2lm90eTcQGFfeZswijZNO4R7la1yOfqtkTI6WfBgm56AHWNC0YXUKydJauYrKHqj4tIwYqoMcZCw=s2048-k-no-v1"
+      },
+      {
+        "name": "Potato Pancake",
+        "price": "$3.95",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U9VfYNQ2MNUNpA7KdpOnVs78sQ1BBpUtqiC886fl5Zv-8RyMUjVJdNO-UCSeSPON2O8bSRJBDkCN8lT-OBhT4JhZVyHxAeIFTg_lBB1l0o1kA3DZTaybqTlrfuWKqYx6AWmu24_=s2048-k-no-v1"
+      }
     ]
   },
   {
@@ -7640,6 +9075,23 @@
       {
         "day": "Sunday",
         "time": "11:00 am-10:00 pm"
+      }
+    ],
+    "menu": [
+      {
+        "name": "Reg Strawberry Sundae",
+        "price": "$6.99",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U9RDmai_61Rq-b5PE6XzBE82Qa8XOVKHkHYjJimlSwaNf0IKiyPH6pqwWpV8katDc-9dPh5Sckv1nvDe57FRKfYgIPNEg0bzYndEG3AP8_DNWJWMrJ4qSzPGv7SlR4vC_Wf5Rxm=s2048-k-no-v1"
+      },
+      {
+        "name": "Double Scoops",
+        "price": "$6.24",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U-FzpTmUHwXqolGZtietBu4dxHYY1bAOlQXwdJ9RQD-J4Vt47bB7rx-PVOnVDR8p8T-bZUeK3Ngabrk_jN_8f4dH5749H2WEbwXJV4WLZISHS6tKIuhG684SiIEgJfAzGlunkkMIQ=s2048-k-no-v1"
+      },
+      {
+        "name": "Rainbow Ice Cream cone",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U_wEIPLWBLfxJLibm0D5tr97YQ8GPcm2IadvzJIvEP5RDKQdAz3X-AQjDOo6qkdS4qMoJorls9hkUDpuptluCJApQ47yECfpGwJFIdEYsh6OUx8-Yf9IQskMqvYMA3ON4hCWQPc=s2048-k-no-v1"
       }
     ]
   },
@@ -7729,6 +9181,23 @@
         "day": "Sunday",
         "time": "11:00 am-1:00 am"
       }
+    ],
+    "menu": [
+      {
+        "name": "Superfish",
+        "price": "$13.55",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U-hVXOfh49t8ATQ188N3JTYCfig3ULCib3D3BlFYYwx4k5_pqEaWYhIxAVZVQVY8lq3m9C_ssWG_3ybaKnzB47gVpR_PgQLZZlqMDuWHPEslsCJCOPUqxBnIET2EZqFW3CAWpn7=s2048-k-no-v1"
+      },
+      {
+        "name": "Superburger",
+        "price": "$11.40",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U_PttN5aGZoIjDIOJgRBUzaOcrLdwcUeUuiFIneSFPJ9WVnzDYLu5aSRs-wpt8tKKAo42uq7CwZoY3Gn8IX6k6zNFWzI0aE9gdoF5l5GHqQ-Q4Zx1BfxRHdX4TAeE6JOZ4odxcKoQ=s2048-k-no-v1"
+      },
+      {
+        "name": "Malts Or Shakes",
+        "price": "$6.20",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U_35WnLvUIVpGv8dWeTag12vrCrAxMMra7zzD9kir8QfmkxsV622R7lLc7ByN_SPvD-pDGuEwFmIghu2yu0rl0g6hteQHx-TIyykpT1hBM7_GF7CYhRPngMg-QggVA9pg-RRpisog=s2048-k-no-v1"
+      }
     ]
   },
   {
@@ -7816,6 +9285,23 @@
       {
         "day": "Sunday",
         "time": "11:00 am-9:00 pm"
+      }
+    ],
+    "menu": [
+      {
+        "name": "Cheese Curd Sampler",
+        "price": "$12.60",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U_Y9q1hFBeiW75bDmaEFksKxywBehi1BcENHYdi-nWTW9jHmpRMMvLy8_ob38vYdDbRmnXNinKQgktotRzpT8dnSJB-Dv3K6EiVvSluWqTB014NdJE5XqQvL0HC5bvVTpSXureo=s2048-k-no-v1"
+      },
+      {
+        "name": "Wisconsin Smashed Burger & Fries",
+        "price": "$12.60",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U9uuzzJjYz9_uyBbOIGEpoO2VuXfvqlYpWwwEmtjhNKqYJ5U8Snu86eTRKJ6dpC3zpKAh-wKt-ij-pCv05zU2xmnllE5LQT__KsVGveOEu_I3DQl6kpAf1CCw0_Mmb_JzrF99IEuSK16Oc=s2048-k-no-v1"
+      },
+      {
+        "name": "Hickory Cheddar Burger & Fries",
+        "price": "$13.50",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U-Jijz1hwFSprRGEQECxI2Skmk6e4DmjIOa4AOGlGC4gjMbfi6cnypAKK4GzjbhpeEkL3VuK_g9tTuf0v21p9pJnr1FDbTm5RoUSkcaOO2UW8g7Pidw2TbS9h3RyX5SMoVYXOu7=s2048-k-no-v1"
       }
     ]
   },
@@ -7905,6 +9391,23 @@
         "day": "Sunday",
         "time": "Closed"
       }
+    ],
+    "menu": [
+      {
+        "name": "The Original Solly Butter Burger",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U-eTZaD2HCcLvMMQcHBrWxVUHSnRnb-Z12hTDgpzIq0JG2wjxP7wliZ_gPKzx4-JUseuWB9Ltkswk1xNbHrNNih4BYVKD4BpOjuT_Uv6ZelGMlHWdnS-JhROQ06PyvCQnTF6qpF-g=s2048-k-no-v1"
+      },
+      {
+        "name": "Key Lime Pie",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U_eABKy9hT494MruYMmXm99fXvD4PAz7wqFfHEFmJLYiEWTgKFCty_S3SoJNYO26JidZOrjSPjDRRRVv56XBqQv4xvecqRfy3BfwDeeraL_ijb2UPM1Znit2c5x1U0W9gAsoLN1=s2048-k-no-v1"
+      },
+      {
+        "name": "Solly's Rich French Toast",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U_ZFTe9fa_muyVlZqv9CXn9q0GgpceiWWwXuLkmam59Ai0pjOjuUZV0ZPdR_RTKV2t6Pp7UGN98dNTmULu9fNOl_aKqpeMORryKzyjOhWmdco35JhZPDu0XEMgGe2nopCtuPhg=s2048-k-no-v1"
+      }
     ]
   },
   {
@@ -7992,6 +9495,23 @@
       {
         "day": "Sunday",
         "time": "11:00 am-11:30 pm"
+      }
+    ],
+    "menu": [
+      {
+        "name": "Sicilian Square Pizza Pie",
+        "price": "$35.00",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U_S-f5TgRKlXL2npqW1gssYFA0BMTPzsgCMGqr1SAl_QN_eIpOSXhiwQove5xWCSZmC14DRUJ84G6fVbVE6lZYu_dlvbPs6XBBa4xWbVr6771nUH6AIYSRuLP6z-bP7qyLbU0fM=s2048-k-no-v1"
+      },
+      {
+        "name": "Mozzarella Sticks",
+        "price": "$13.15",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U-NxIla-QHvxAwA7nmruzvyp2h26XllZhdGbml9c-YeE8wQJa4ho6JMfuwaeggiV33ulO7-G06DPwo4rNvLeYYjNXf-Vf7lA9k-CtxmGatWi9DVyVeVhczLUizCJ9m1tQJHamVUoA=s2048-k-no-v1"
+      },
+      {
+        "name": "Chicken Marsala",
+        "price": "$16.45",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U8gj8Br5PfQ3F_rIOs-o8p6apmDSrGafjPyuTf9ZuQcRz25_gghm9IP6bTkVoLWofCB9YnCJDnSFY4O59-TUVujObfb1zaThmd7VFTRVcn96OluxjlyBajNwvR1iL-a4lqJB2RN8A=s2048-k-no-v1"
       }
     ]
   },
@@ -8081,6 +9601,23 @@
         "day": "Sunday",
         "time": "11:00 am-11:00 pm"
       }
+    ],
+    "menu": [
+      {
+        "name": "The Most Famous Lucy Jucy and Fries",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U98L0ztXPLjKCfnHfVMl43vinOGKCkgE7piBeFEiPae40_UJB5VCZzcV50eIzVyKOjKBCHRUEkpW4iYwY7FvQG7tw2oO9xFai5xExifbxr-H56l4rbClw4k2dhjNLjy00eLfCUh=s2048-k-no-v1"
+      },
+      {
+        "name": "Fulton Lonely Blonde",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U_QEU3iIHc5l6KBqtOMzYeoiX5JDl2pgPC0rbnBrxiPf1eHIazkKKrnpOhRbVHBDbKN4ZiOmopWIFUcmQ4K5s40znYiveP27cisnwQO4oT9Bc6pmPGGBbm2mz67NSe3gYduGeT5tw=s2048-k-no-v1"
+      },
+      {
+        "name": "Chicken Sandwich",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U80qXlNq56323gjLCDTz42g8rYeRcpMjty-YYhYvC0EHsj2ogOxh79LwJNmf51Cr1c02lUZyNRvMPLhMvO8L5adb9bTYbX5HqUgx2oPcHTgJ2Tlt07ABRH38xGwsz46eWijNkQm=s2048-k-no-v1"
+      }
     ]
   },
   {
@@ -8168,6 +9705,23 @@
       {
         "day": "Sunday",
         "time": "9:00 am-1:00 pm"
+      }
+    ],
+    "menu": [
+      {
+        "name": "French Toast",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U8wn_2OAHyG93KZWeuTa4Kx8MQJnUnGt9RszCgvpblRLaEnlWxXit8sQGq6axAnCIodTf1iPv4SxkK-43VPI0_ECIAyjcawPVJ6PNvP80zbXag1h5CEd0rrt16TMni6h4YT624x8g=s2048-k-no-v1"
+      },
+      {
+        "name": "Bacon Waffle",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U8JIte2Fn0hATvRR2SmENIuauB6kJlMkJx3njVlFrK92hDGjqoEnwhp4ktCpL3hdV_hzZ28hS9inCVm8Op-SfgdPsXWZi9CoLIJNZ_njpBIZwzpdF30eUk-RWhMiZkrqH4Mmf_s=s2048-k-no-v1"
+      },
+      {
+        "name": "Walnut Blueberry Pancakes",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U9QpvhrJEsSR4Aj7q9HD9HTzNamNrjWCjPo50pliEPVypycbkODGJintA3OFpYoI3-HmringEANclX47V3nyf5_MpgS1-8MZeXJzmthnPsF94mLGFmg0egqf5HHO80u9HVif6w=s2048-k-no-v1"
       }
     ]
   },
@@ -8257,6 +9811,23 @@
         "day": "Sunday",
         "time": "6:00 am-11:00 pm"
       }
+    ],
+    "menu": [
+      {
+        "name": "Apple Pie",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U9FfHU8yRzEAJcgWv_fhaRmuJs0KBpLntXMH1QtfnyRUbJFUGhyfjI6c-TLISajznkYXmrn0RC9H-59UPdnVRpKFtaaIBk4TTjEPFU9EB3OgPTA5hjZQHpTSniYWXozVqFUOeQ8ZA=s2048-k-no-v1"
+      },
+      {
+        "name": "Fish & Chips",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U-nTWDTvsjR0P3_5AxsROVsCPGwAe3WZ2QlTe4DGhvogO87UEJGUMrFucTAvTqeEb90e89DrqjH0BCI6HtJvGcLSJ2JSgwss_yTRGx2XWvj_PEla_dx45nWW5gfoxRI5m0ekVOE0w=s2048-k-no-v1"
+      },
+      {
+        "name": "Denver Omelette",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U-Hnl-YGsqgLJ-FPgT0UiirDfy1rdW4T6aDu3A010vKQ0gPQNlnLJyqvpm-_3fDWI3ewCIBIhkpj6yu-FIIL7lqSyW5lQtR7sa2HrsIKycPLOHNJZlQzLoMCH3HUAeP3MuhNx_FM-QV8Lnd=s2048-k-no-v1"
+      }
     ]
   },
   {
@@ -8344,6 +9915,23 @@
       {
         "day": "Sunday",
         "time": "11:00 am-7:00 pm"
+      }
+    ],
+    "menu": [
+      {
+        "name": "Pulled Pork",
+        "price": "$13.50",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U-ZskS76TUXkW9nh89PuX-NMT9kpElBI6y92WeHMgpObgjeVClwNDPtQiGOzGwTgpgQqGGlFDXYQ6hUWtidmskVCUWKlagCTOxwrE2YmtWE4ZpURIXtQbcRheqviIBK8LVj0-nhuG4cyoey=s2048-k-no-v1"
+      },
+      {
+        "name": "Rib Tips and Fries",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U9rQ6CK0W89-kXm2eZYKiKrC5US7Wq9NrIS6Vlf7RjTjnxkQp1RdpsJYwo2TTECPsPQjs_rcISpWfaPwaKNS3q62q5XjaIiSjEEArHwzEI-cXS3L5W4WaVuiA_P__ii19cWTBTx=s2048-k-no-v1"
+      },
+      {
+        "name": "Burnt End Sandwich",
+        "price": "$20.50",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U8rkg_Ic6x9d_SXS2bZcT_cG6CRczXkP6wk3JzNPWDjZtFMXFnn7jdq0AtXtyFP-5Wcv_4Vg32pDwWY94AfTUM5zvWFHC7wFKql344T7G6-p81EKzjqE5FNdZpX6t82CmmJ1WI=s2048-k-no-v1"
       }
     ]
   },
@@ -8433,6 +10021,23 @@
         "day": "Sunday",
         "time": "Closed"
       }
+    ],
+    "menu": [
+      {
+        "name": "French Fries",
+        "price": "$5.59",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U8mQ2pedFfD_5FCtw_j4twIIMdtmQY0EpfiWn4wKlOTmT5aMi4ouNIhzN6ZShH85i8TXDsCguDcdm2lDH6rJwAe1n9RfgsGPr6wTg9bSJ4joxCM2Y1brTPTudzk8MkJTtKdVtUB=s2048-k-no-v1"
+      },
+      {
+        "name": "Smoked Chicken Gumbo",
+        "price": "$6.69",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U-HTmaUv-dUdewYUYuMlkzl6QKVuolSsrzxICYBvV8WcLMiE8e3NTvgpgvPwhaNvm6aYwMKQCqgYvEsSBXMEEaHQGS8p7xjGUPI8d1Nhqbhfvh5NTrjey1hUX_TDbAP-3Xlu_cB=s2048-k-no-v1"
+      },
+      {
+        "name": "Street Corn",
+        "price": "$5.19",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U-EKjImpvHLWb46xBHkMV8mpDPutEydtnPIbGL2O1F_eHU0fnBx7g8drIm7cT8Xn-1W_WMzhVAGy2LU6_2n0a8LaHVazAxa7FavYz9KAVuiVLnpn32empG27SmtJcnF4uaK94Ik5JrvbfQ=s2048-k-no-v1"
+      }
     ]
   },
   {
@@ -8520,6 +10125,23 @@
       {
         "day": "Sunday",
         "time": "11:00 am-11:00 pm"
+      }
+    ],
+    "menu": [
+      {
+        "name": "Burnt Ends Sandwich",
+        "price": "$16.99",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U-BLFGQSmTjrUSBlIFZIbktIDkHe-8yEB72fcLFtk7hrexFseo0wqIs-g5ep70MEUEyVwbWvf8t_Nkf39UHmJC33LU8ZT4ebWjts9MFqFTxFR-8ZxyLW4Z0K03QDswv2LEhy2aZ0qQ5Ob8z=s2048-k-no-v1"
+      },
+      {
+        "name": "BBQ Beans Pit Potatoes",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U8uxAPpMpmgrF7ttW4IqdGiyyHBja1eJSgnzdfW3f0_laq8va1spnEFB_NQKehUkoWg1oz28g_aZ54gzi335w_jtkZuxRy4mVD6leATIk-5aQgkc7K__yWOjq7n3bwRM6TY0qVm=s2048-k-no-v1"
+      },
+      {
+        "name": "Bun n Fries",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U8ycp3frAlkSvLk9lm63GMkJKTeh4OdMpEAYorNu7y73JMoUSLEvtd_WEigE9mOgVtn0R-WSYzeeep7hNnF9lTRE7MfxnkRgdGZNK0ehQdpFQjj_ZOe-4ZrSaHLDI8--jZnkRY6Mw=s2048-k-no-v1"
       }
     ]
   },
@@ -8609,6 +10231,23 @@
         "day": "Sunday",
         "time": "Closed"
       }
+    ],
+    "menu": [
+      {
+        "name": "Baked Beans Cole Slaw Potatoe Sal",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U8rl5A0yyKwCKqHEZYrqkqcQZQyoRfDIKpx12tEqCl1rWkLc00VfAmntfvakqC9q-3iG3wDZcwihKT9DYZ_EWGM3EbI0St2mxiB62gFS5fOHQVB3v-eBuktZ2EqYTB1XE4C4-sPKw=s2048-k-no-v1"
+      },
+      {
+        "name": "Mixed Burnt Ends",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U-DmSJxC6HGASYj3udW09BVaZuMmw2-tGWfg1oEIWu440UB7z6WCc3ZGS2z_F-jyiE_q25Td4Nqeb--3rA4GXrN7xLvEyLvZyYzaF0rKCWIx-AtEYFcmoAdnMwn_IKPebTQZiW4=s2048-k-no-v1"
+      },
+      {
+        "name": "Sliced Pork Sandwich with Onion Rings",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U9qDdT53TvF61uGcGRym21YNKqiQQM5XijzM21TQfR2Ht5lu3DlPXgObO3DR9wcTfPgjmoDiYAIYqanZ35IoFNmr_VKhn3Q_CVioRVdd2D1IZ5I61PSME_duKIen8yhsmCLGZak=s2048-k-no-v1"
+      }
     ]
   },
   {
@@ -8697,6 +10336,23 @@
         "day": "Sunday",
         "time": "11:00 am-10:30 pm"
       }
+    ],
+    "menu": [
+      {
+        "name": "Strawberry shortcake Concrete",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U9GrIA_W8N7erVhyQEQq8pfnrwSw3FYHR-nE1dNKkvXtAhBTrBasS8YfyJn_szA91_LrjaJwIIWVRKRIbpcyEONReX-FYCI2WoYTnuchyXKFU1dFIRL-A7Dc0fsfD_1bIqvHkKU3w=s2048-k-no-v1"
+      },
+      {
+        "name": "Frozen Custard Cup",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U-6PbrEGtViKyAnHEqsXm9dOPW6LcDMgfqlAwSZTpXCzRAjEwu18VhFKuMvjDPaib1wSVWldSh9W7LoFUWWvtzAQ89tubOystVRSRpr-L_NNZqSSRXC_neky6aDDXHppPI6b6qL7kUC6Pov=s2048-k-no-v1"
+      },
+      {
+        "name": "Macadamia Nuts",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U-PVFp_hwAcihFXvDD47WRgrs8QuSkEsOzM0uNkyraYn1u2EIZB5f-QOheP0Oi9BflcMqoICf0-vdoHdAmFELaTjpSFMn71cVd_QHuZYP_ZxjWwGe3y2LZHmxjqhL3v2_-JcWjONg=s2048-k-no-v1"
+      }
     ]
   },
   {
@@ -8784,6 +10440,23 @@
       {
         "day": "Sunday",
         "time": "10:00 am-11:00 pm"
+      }
+    ],
+    "menu": [
+      {
+        "name": "Cheese Pizza",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U9gfIl-ufw0PfkHIxMeNuiFlUVqVldV8JDYWBZ_tIZ-1ld8wy2-eI8eVDKH5JCQ_iHdV50i9vAFXf9vNe_Q-0EtLvFn9rWvZktUKkcSRL75DJy__euEdlNIOOzQleAVwZ4nAM_ccA=s2048-k-no-v1"
+      },
+      {
+        "name": "Toasted Ravioli",
+        "price": "$10.83",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U9Edl5KVYHKFvxCY4cqVMznLy2Rxs6lLfTZrzepUB-HtOhsXiXoDrXMCpY4qQYR_kTzQ1EGXuF_qconiVSL16qz1bicAsUMRsBdliWFJYz4JOZaCRHCDHMuNRoU-d1BWe-nzFJg=s2048-k-no-v1"
+      },
+      {
+        "name": "IMO'S Extra Special Sand",
+        "price": "",
+        "photo": "https://lh3.googleusercontent.com/gpms-cs-s/AM4Q-U96Xq7V_pHQG97JBgpUBlKudnz2fZpRQekmIJYIsyAgpgkqEBlAJ9Jkp0LSF5qKFGP_myu5TqlQyqnQDeZKrdfjDKK7jcb7UoAjlutJGD8cHfnGYMgcs6osWtypgC9PtXrGdQZp=s2048-k-no-v1"
       }
     ]
   }
