@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bulk HTML Page Generator</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+textarea {
+    width: 100%;
+    min-height: 180px;
+    padding: 12px;
+    margin: 10px 0 20px;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+button {
+    padding: 12px 20px;
+    cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+
+<h2>Bulk HTML Page Generator</h2>
+
+<label>HTML Code to Add:</label>
+
+<textarea id="htmlCode" placeholder="Yahan HTML code paste karo..."></textarea>
+
+<br>
+
+<button onclick="generatePages()">Generate</button>
+
+<div id="result"></div>
+
+<script>
+
+function generatePages() {
+
+    // Textarea me diya hua HTML code
+    const htmlCode = document.getElementById("htmlCode").value;
+
+    // Example pages
+    const pages = [
+        "page-1",
+        "page-2",
+        "page-3"
+    ];
+
+    let output = "";
+
+    pages.forEach(page => {
+
+        output += `
+            <div style="margin-top:20px;padding:15px;border:1px solid #ddd;">
+                <h3>${page}</h3>
+
+                ${htmlCode}
+
+            </div>
+        `;
+
+    });
+
+    document.getElementById("result").innerHTML = output;
+}
+
+</script>
+
+</body>
+</html>
