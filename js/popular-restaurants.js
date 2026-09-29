@@ -8,7 +8,7 @@ fetch("/data/restaurants.json")
 renderPopular(
   restaurants,
   "popular-restaurants-section1",
-  "pizza"
+  "Pizza"
 );
 
 
