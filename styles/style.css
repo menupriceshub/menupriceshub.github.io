@@ -237,6 +237,15 @@ box-shadow:0 2px 10px rgba(0,0,0,.05);
   line-height: 1.7;
 }
 
+.overview-text a {
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+.overview-text a:hover {
+  color: #0b57d0;
+}
+
 .overview-text.collapsed::after{
     content:"";
     position:absolute;
