@@ -9,7 +9,7 @@ window.addEventListener("scroll", () => {
   const scrollPercent = (scrollTop / pageHeight) * 100;
 
   // 20% scroll ke baad show
-  if(scrollPercent > 10){
+  if(scrollPercent > 5){
 
     mobileBar.style.display = "flex";
 
