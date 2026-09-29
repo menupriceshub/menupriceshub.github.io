@@ -1,5 +1,117 @@
 [
   {
+    "slug": "home",
+    "faq": [
+      {
+        "question": "What is MenuPricesHub?",
+        "answer": "MenuPricesHub is a restaurant discovery platform that helps users find restaurant menu prices, nutrition information, opening hours, reviews, and dining options across different cities."
+      },
+      {
+        "question": "How accurate are the menu prices on MenuPricesHub?",
+        "answer": "We regularly update restaurant menu prices and related information. However, prices may vary depending on the restaurant location, promotions, and local taxes."
+      },
+      {
+        "question": "Does MenuPricesHub provide calorie and nutrition information?",
+        "answer": "Yes, many restaurant pages include calorie counts, nutrition facts, and food details to help users make informed dining choices."
+      },
+      {
+        "question": "Why use MenuPricesHub to compare restaurant menus?",
+        "answer": "MenuPricesHub makes it easy to compare restaurant menu prices, discover new restaurants, check food categories, and stay updated with the latest menu changes in one place."
+      },
+      {
+        "question": "Can I find restaurant menu prices near me?",
+        "answer": "Yes, MenuPricesHub allows users to explore restaurant menu prices, popular restaurants, cafes, and dining options by city and location."
+      }
+    ]
+  },
+  {
+    "slug": "mcdonalds",
+    "faq": [
+      {
+        "question": "What is the most popular McDonald's meal?",
+        "answer": "Big Mac is one of the most popular meals."
+      },
+      {
+        "question": "Does McDonald's serve breakfast all day?",
+        "answer": "It depends on the location."
+      }
+    ]
+  },
+  {
+    "slug": "kfc",
+    "faq": [
+      {
+        "question": "What is KFC famous for?",
+        "answer": "KFC is famous for its Original Recipe fried chicken made with 11 herbs and spices."
+      },
+      {
+        "question": "Does KFC offer delivery?",
+        "answer": "Yes, delivery is available at many locations through the KFC app and third-party delivery services."
+      },
+      {
+        "question": "Can I order KFC online?",
+        "answer": "Yes, you can place orders through the KFC website or mobile app for pickup or delivery."
+      },
+      {
+        "question": "Does KFC have vegetarian options?",
+        "answer": "Yes, KFC offers select vegetarian items depending on the location."
+      },
+      {
+        "question": "Does KFC have a kids menu?",
+        "answer": "Yes, KFC offers Kids Meals with smaller portions and sides."
+      },
+      {
+        "question": "Are KFC menu prices the same at every location?",
+        "answer": "No, prices may vary depending on the restaurant location."
+      },
+      {
+        "question": "Can I customize my KFC order?",
+        "answer": "Yes, you can customize meals with different sides, sauces, and add-ons."
+      },
+      {
+        "question": "Does KFC provide nutritional information?",
+        "answer": "Yes, nutrition facts and calorie information are available for all menu items."
+      }
+    ]
+  },
+  {
+    "slug": "chipotle",
+    "faq": [
+      {
+        "question": "Does Chipotle have vegan options?",
+        "answer": "Yes, Chipotle offers several vegan-friendly ingredients, including Sofritas, beans, rice, fajita vegetables, and guacamole."
+      },
+      {
+        "question": "Can I order Chipotle online?",
+        "answer": "Yes, you can place orders through the Chipotle website or mobile app for pickup or delivery."
+      },
+      {
+        "question": "Does Chipotle offer delivery?",
+        "answer": "Yes, delivery is available at many locations through the Chipotle app and third-party delivery services."
+      },
+      {
+        "question": "Does Chipotle have a kids menu?",
+        "answer": "Yes, Chipotle offers Kids Build Your Own meals and Kids Quesadilla options."
+      },
+      {
+        "question": "Are Chipotle menu prices the same at every location?",
+        "answer": "No, prices may vary depending on the restaurant location."
+      },
+      {
+        "question": "Does Chipotle serve gluten-free food?",
+        "answer": "Many menu items are naturally gluten-free, but cross-contact may occur during preparation."
+      },
+      {
+        "question": "Can I customize my Chipotle order?",
+        "answer": "Yes, you can customize your burrito, bowl, tacos, salad, and other menu items with your preferred ingredients."
+      },
+      {
+        "question": "Does Chipotle provide nutritional information?",
+        "answer": "Yes, nutrition facts and calorie information are available for all menu items."
+      }
+    ]
+  },
+  {
     "slug": "katzs-delicatessen-menu",
     "faq": [
       {
@@ -1743,90 +1855,4 @@
     "faq": [
       {
         "question": "What is Gonzalez Restaurant famous for?",
-        "answer": "Gonzalez Restaurant is best known for its Mexican-inspired dishes."
-      },
-      {
-        "question": "Where is Gonzalez Restaurant located?",
-        "answer": "Location details vary. Check the official website or Google Maps for the exact address of Gonzalez Restaurant."
-      },
-      {
-        "question": "How much does a meal at Gonzalez Restaurant cost?",
-        "answer": "Costs depend on what you order. You can view current menu prices for Gonzalez Restaurant on MenuPricesHub, but prices may change over time."
-      },
-      {
-        "question": "Are Gonzalez Restaurant menu prices the same at every location?",
-        "answer": "Not necessarily. Prices can vary by location, promotions, and local taxes, so confirm with the restaurant before visiting."
-      },
-      {
-        "question": "Does Gonzalez Restaurant offer online ordering or delivery?",
-        "answer": "Availability depends on the location. Check the official website or popular delivery apps to see if pickup or delivery is offered."
-      },
-      {
-        "question": "Do I need a reservation at Gonzalez Restaurant?",
-        "answer": "Policies differ by restaurant and time of day. It is best to contact Gonzalez Restaurant directly or check its website, especially for busy hours or large groups."
-      },
-      {
-        "question": "Does Gonzalez Restaurant provide nutrition or allergen information?",
-        "answer": "Not every restaurant publishes full nutrition details. Where available, calorie and nutrition information appears on the MenuPricesHub page; for allergies, ask the restaurant directly."
-      },
-      {
-        "question": "What are the opening hours of Gonzalez Restaurant?",
-        "answer": "Hours can vary by day and season. Please check the official website or call Gonzalez Restaurant to confirm current hours."
-      }
-    ]
-  },
-  {
-    "slug": "pecan-lodge-menu",
-    "faq": [
-      {
-        "question": "What is Pecan Lodge famous for?",
-        "answer": "Pecan Lodge in Dallas is best known for its Texas barbecue, including brisket and beef ribs."
-      },
-      {
-        "question": "Where is Pecan Lodge located?",
-        "answer": "Pecan Lodge is located in Dallas. Check the official website or Google Maps for the exact address."
-      },
-      {
-        "question": "How much does a meal at Pecan Lodge cost?",
-        "answer": "Costs depend on what you order. You can view current menu prices for Pecan Lodge on MenuPricesHub, but prices may change over time."
-      },
-      {
-        "question": "Are Pecan Lodge menu prices the same at every location?",
-        "answer": "Not necessarily. Prices can vary by location, promotions, and local taxes, so confirm with the restaurant before visiting."
-      },
-      {
-        "question": "Does Pecan Lodge offer online ordering or delivery?",
-        "answer": "Availability depends on the location. Check the official website or popular delivery apps to see if pickup or delivery is offered."
-      },
-      {
-        "question": "Do I need a reservation at Pecan Lodge?",
-        "answer": "Policies differ by restaurant and time of day. It is best to contact Pecan Lodge directly or check its website, especially for busy hours or large groups."
-      },
-      {
-        "question": "Does Pecan Lodge provide nutrition or allergen information?",
-        "answer": "Not every restaurant publishes full nutrition details. Where available, calorie and nutrition information appears on the MenuPricesHub page; for allergies, ask the restaurant directly."
-      },
-      {
-        "question": "What are the opening hours of Pecan Lodge?",
-        "answer": "Hours can vary by day and season. Please check the official website or call Pecan Lodge to confirm current hours."
-      }
-    ]
-  },
-  {
-    "slug": "teds-café-escondido-menu",
-    "faq": [
-      {
-        "question": "What is Ted's Café Escondido famous for?",
-        "answer": "Ted's Café Escondido is best known for its Tex-Mex dishes."
-      },
-      {
-        "question": "Where is Ted's Café Escondido located?",
-        "answer": "Location details vary. Check the official website or Google Maps for the exact address of Ted's Café Escondido."
-      },
-      {
-        "question": "How much does a meal at Ted's Café Escondido cost?",
-        "answer": "Costs depend on what you order. You can view current menu prices for Ted's Café Escondido on MenuPricesHub, but prices may change over time."
-      },
-      {
-        "question": "Are Ted's Café Escondido menu prices the same at every location?",
-        "answer": "Not necessarily. Prices can vary by location, promotions, and local taxes, so confirm with
+        "answer": "Gonzalez Restaurant is best known 
