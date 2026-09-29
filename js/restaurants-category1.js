@@ -3,16 +3,36 @@
      1. CATEGORY TABS GENERATE KARO
   ========================= */
   const categories = [
-    { name: "All", url: "/restaurants/" },
-    { name: "Asian Food", url: "/categories/asian-food" },
-    { name: "Burger", url: "/categories/burger" },
-    { name: "Cafe", url: "/categories/cafe/" },
-    { name: "Desserts", url: "/categories/desserts" },
-    { name: "Healthy Food", url: "/categories/healthy-food" },
-    { name: "Italian", url: "/categories/italian" },
-    { name: "Mexican", url: "/categories/mexican" },
-    { name: "Pizza", url: "/categories/pizza" }
-  ];
+  { name: "All", url: "/restaurants/" },
+  { name: "Deli", url: "/categories/deli" },
+  { name: "Steakhouse", url: "/categories/steakhouse" },
+  { name: "BBQ", url: "/categories/bbq" },
+  { name: "Cheesesteak", url: "/categories/cheesesteak" },
+  { name: "Hot Chicken", url: "/categories/hot-chicken" },
+  { name: "Pizza", url: "/categories/pizza" },
+  { name: "Steak house", url: "/categories/steak-house" },
+  { name: "Ukrainian", url: "/categories/ukrainian" },
+  { name: "Hot Dogs", url: "/categories/hot-dogs" },
+  { name: "Seafood", url: "/categories/seafood" },
+  { name: "American", url: "/categories/american" },
+  { name: "Fine Dining", url: "/categories/fine-dining" },
+  { name: "Creole", url: "/categories/creole" },
+  { name: "Southern", url: "/categories/southern" },
+  { name: "Bakery", url: "/categories/bakery" },
+  { name: "French", url: "/categories/french" },
+  { name: "Fried Chicken", url: "/categories/fried-chicken" },
+  { name: "Mexican", url: "/categories/mexican" },
+  { name: "Tacos", url: "/categories/tacos" },
+  { name: "Burgers", url: "/categories/burgers" },
+  { name: "Japanese", url: "/categories/japanese" },
+  { name: "Soup", url: "/categories/soup" },
+  { name: "Caribbean", url: "/categories/caribbean" },
+  { name: "Dessert", url: "/categories/dessert" },
+  { name: "Breakfast", url: "/categories/breakfast" },
+  { name: "Chili", url: "/categories/chili" },
+  { name: "Brewpub", url: "/categories/brewpub" },
+  { name: "Italian Beef", url: "/categories/italian-beef" }
+];
 
   const navContainer = document.getElementById("category-nav1");
 
