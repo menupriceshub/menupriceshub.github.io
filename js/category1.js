@@ -103,9 +103,11 @@ function renderCategory(data, section, category) {
                   </span>
                 </div>
 
-                <a href="/${r.url}" class="catrest-btn">
-                  View
-                </a>
+                
+
+<a href="/restaurants/${r.url}" class="catrest-btn">
+  View
+</a>
 
               </div>
 
