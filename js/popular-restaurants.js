@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-fetch("/data/restaurants.json")
+fetch("data/restaurants.json")
 .then(res => res.json())
 .then(restaurants => {
 
