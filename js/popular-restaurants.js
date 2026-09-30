@@ -86,8 +86,9 @@ ${generateStars(r.rating)}
 </div>
 
 
-<a href="${r.url}" class="restaurant-btn">
-View
+
+<a href="/restaurants/${r.url}" class="restaurant-btn">
+  View
 </a>
 
 </div>
