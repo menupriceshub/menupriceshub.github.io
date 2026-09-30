@@ -51,7 +51,7 @@ section.innerHTML = `
 
 
 
-<a href="/${category.toLowerCase()}/index.html" class="section-right">
+<a href="/categories/${category.toLowerCase()}/" class="section-right">
   View All
   <i class="fa-solid fa-chevron-right icon"></i>
 </a>
