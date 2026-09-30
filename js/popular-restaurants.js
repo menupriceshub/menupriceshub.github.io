@@ -49,9 +49,11 @@ section.innerHTML = `
 <div class="section-header">
 <h2 class="section-left">Popular ${category}s</h2>
 
-<a href="#" class="section-right">
-View All
-<i class="fa-solid fa-chevron-right icon"></i>
+
+
+<a href="/${category.toLowerCase()}/index.html" class="section-right">
+  View All
+  <i class="fa-solid fa-chevron-right icon"></i>
 </a>
 
 </div>
