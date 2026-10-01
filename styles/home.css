@@ -1,4 +1,6 @@
-
+.load-more-btn{
+    background:blue;color:white;
+  }
 
 #mobileBar .nav-item.active i {
   color: red !important;
