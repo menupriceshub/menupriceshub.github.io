@@ -1,6 +1,29 @@
-.load-more-btn{
-    background:blue;color:white;
-  }
+.load-more-wrap {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.load-more-btn {
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.load-more-btn:hover {
+    background: #333;
+    transform: translateY(-2px);
+}
+
+.load-more-btn:active {
+    transform: translateY(0);
+}
 
 #mobileBar .nav-item.active i {
   color: red !important;
