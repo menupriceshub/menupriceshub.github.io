@@ -1,0 +1,248 @@
+/* CATEGORY RESTAURANTS CAROUSEL */
+
+.catrest-wrapper{
+  width:100%;
+  max-width:1400px;
+  margin:auto;
+  padding:20px 15px;
+  overflow:hidden;
+}
+
+.catrest-heading{
+  font-size:28px;
+  font-weight:700;
+  margin-bottom:20px;
+}
+
+/* Carousel */
+.catrest-grid{
+  position:relative;
+  width:100%;
+  height:520px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  overflow:visible;
+  perspective:1200px;
+}
+
+/* Card */
+.catrest-card{
+  position:absolute;
+  width:300px;
+  height:460px;
+  background:#fff;
+  border-radius:24px;
+  overflow:hidden;
+  box-shadow:0 8px 30px rgba(0,0,0,.18);
+
+  display:flex;
+  flex-direction:column;
+
+  transition:
+    transform .45s ease,
+    opacity .45s ease,
+    z-index .45s ease,
+    filter .45s ease;
+
+  transform-origin:center center;
+}
+
+/* Image */
+.catrest-img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+  flex-shrink:0;
+}
+
+/* Content */
+.catrest-content{
+  padding:18px;
+  display:flex;
+  flex-direction:column;
+  flex:1;
+}
+
+.catrest-name{
+  font-size:20px;
+  font-weight:800;
+  margin-bottom:6px;
+}
+
+.catrest-info{
+  font-size:14px;
+  color:#666;
+  margin-bottom:16px;
+}
+
+.catrest-bottom{
+  margin-top:auto;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.catrest-rating{
+  font-weight:600;
+}
+
+.catrest-stars{
+  color:#FFD43B;
+  font-size:14px;
+}
+
+.catrest-btn{
+  padding:8px 18px;
+  background:#ff1d25;
+  color:#fff;
+  border-radius:999px;
+  text-decoration:none;
+  font-weight:700;
+  transition:.3s;
+}
+
+.catrest-btn:hover{
+  background:darkblue;
+  color:#fff;
+}
+
+
+/* =========================
+   CAROUSEL POSITIONS
+========================= */
+
+/* Center */
+.catrest-card:nth-child(1){
+  transform:translateX(0) scale(1);
+  z-index:5;
+}
+
+/* Left 1 */
+.catrest-card:nth-child(2){
+  transform:translateX(-270px) scale(.92);
+  z-index:4;
+  filter:brightness(.92);
+}
+
+/* Left 2 */
+.catrest-card:nth-child(3){
+  transform:translateX(-500px) scale(.82);
+  z-index:3;
+  filter:brightness(.82);
+}
+
+/* Right 1 */
+.catrest-card:nth-child(4){
+  transform:translateX(270px) scale(.92);
+  z-index:4;
+  filter:brightness(.92);
+}
+
+/* Right 2 */
+.catrest-card:nth-child(5){
+  transform:translateX(500px) scale(.82);
+  z-index:3;
+  filter:brightness(.82);
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.catrest-carousel-controls{
+  display:flex;
+  justify-content:center;
+  gap:12px;
+  margin-top:10px;
+}
+
+.catrest-carousel-btn{
+  width:44px;
+  height:44px;
+  border:none;
+  border-radius:50%;
+  background:#111;
+  color:#fff;
+  font-size:20px;
+  cursor:pointer;
+  transition:.3s;
+}
+
+.catrest-carousel-btn:hover{
+  background:#ff4d00;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:768px){
+
+  .catrest-wrapper{
+    padding:15px 10px;
+  }
+
+  .catrest-grid{
+    height:430px;
+  }
+
+  .catrest-card{
+    width:250px;
+    height:390px;
+    border-radius:20px;
+  }
+
+  .catrest-img{
+    height:180px;
+  }
+
+  .catrest-content{
+    padding:14px;
+  }
+
+  /* center */
+  .catrest-card:nth-child(1){
+    transform:translateX(0) scale(1);
+  }
+
+  /* left */
+  .catrest-card:nth-child(2){
+    transform:translateX(-145px) scale(.82);
+  }
+
+  /* right */
+  .catrest-card:nth-child(4){
+    transform:translateX(145px) scale(.82);
+  }
+
+  /* far cards hide */
+  .catrest-card:nth-child(3),
+  .catrest-card:nth-child(5){
+    opacity:0;
+    pointer-events:none;
+  }
+}
+
+
+@media(max-width:480px){
+
+  .catrest-grid{
+    height:410px;
+  }
+
+  .catrest-card{
+    width:240px;
+    height:380px;
+  }
+
+  .catrest-card:nth-child(2){
+    transform:translateX(-115px) scale(.78);
+  }
+
+  .catrest-card:nth-child(4){
+    transform:translateX(115px) scale(.78);
+  }
+}
