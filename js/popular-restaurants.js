@@ -19,6 +19,178 @@ renderPopular(
 );
 
 
+
+renderPopular(
+  restaurants,
+  "popular-deli-section1",
+  "Deli"
+);
+
+renderPopular(
+  restaurants,
+  "popular-steakhouse-section1",
+  "Steakhouse"
+);
+
+renderPopular(
+  restaurants,
+  "popular-bbq-section1",
+  "BBQ"
+);
+
+renderPopular(
+  restaurants,
+  "popular-cheesesteak-section1",
+  "Cheesesteak"
+);
+
+renderPopular(
+  restaurants,
+  "popular-hot-chicken-section1",
+  "Hot Chicken"
+);
+
+renderPopular(
+  restaurants,
+  "popular-pizza-section1",
+  "Pizza"
+);
+
+renderPopular(
+  restaurants,
+  "popular-steak-house-section1",
+  "Steak house"
+);
+
+renderPopular(
+  restaurants,
+  "popular-ukrainian-section1",
+  "Ukrainian"
+);
+
+renderPopular(
+  restaurants,
+  "popular-hot-dogs-section1",
+  "Hot Dogs"
+);
+
+renderPopular(
+  restaurants,
+  "popular-seafood-section1",
+  "Seafood"
+);
+
+renderPopular(
+  restaurants,
+  "popular-american-section1",
+  "American"
+);
+
+renderPopular(
+  restaurants,
+  "popular-fine-dining-section1",
+  "Fine Dining"
+);
+
+renderPopular(
+  restaurants,
+  "popular-creole-section1",
+  "Creole"
+);
+
+renderPopular(
+  restaurants,
+  "popular-southern-section1",
+  "Southern"
+);
+
+renderPopular(
+  restaurants,
+  "popular-bakery-section1",
+  "Bakery"
+);
+
+renderPopular(
+  restaurants,
+  "popular-french-section1",
+  "French"
+);
+
+renderPopular(
+  restaurants,
+  "popular-fried-chicken-section1",
+  "Fried Chicken"
+);
+
+renderPopular(
+  restaurants,
+  "popular-mexican-section1",
+  "Mexican"
+);
+
+renderPopular(
+  restaurants,
+  "popular-tacos-section1",
+  "Tacos"
+);
+
+renderPopular(
+  restaurants,
+  "popular-burgers-section1",
+  "Burgers"
+);
+
+renderPopular(
+  restaurants,
+  "popular-japanese-section1",
+  "Japanese"
+);
+
+renderPopular(
+  restaurants,
+  "popular-soup-section1",
+  "Soup"
+);
+
+renderPopular(
+  restaurants,
+  "popular-caribbean-section1",
+  "Caribbean"
+);
+
+renderPopular(
+  restaurants,
+  "popular-dessert-section1",
+  "Dessert"
+);
+
+renderPopular(
+  restaurants,
+  "popular-breakfast-section1",
+  "Breakfast"
+);
+
+renderPopular(
+  restaurants,
+  "popular-chili-section1",
+  "Chili"
+);
+
+renderPopular(
+  restaurants,
+  "popular-brewpub-section1",
+  "Brewpub"
+);
+
+renderPopular(
+  restaurants,
+  "popular-italian-beef-section1",
+  "Italian Beef"
+);
+
+
+
+  
 });
 
 
