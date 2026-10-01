@@ -800,7 +800,7 @@ const results = document.getElementById("results");
 const searchSuggestions = document.getElementById("searchSuggestions");
 
 // Load JSON once
-fetch("/search-data.json")
+  fetch("/data/search-data.json")
 .then(res => res.json())
 .then(json => {
     data = json;
