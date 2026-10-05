@@ -2,29 +2,40 @@ const overlay = document.getElementById("overlay2");
 const fullImg = document.getElementById("fullImg");
 const closeBtn = document.getElementById("close");
 
-// Dynamic images ke liye
-document.getElementById("photos2").addEventListener("click", function(e){
-  if(e.target.tagName === "IMG"){
-    fullImg.src = e.target.src;
-    overlay.style.display = "flex";
+function openImage(img) {
+  fullImg.src = img.src;
+  overlay.style.display = "flex";
+}
+
+// Photos 2
+document.getElementById("photos2").addEventListener("click", function(e) {
+  if (e.target.tagName === "IMG") {
+    openImage(e.target);
   }
 });
 
-// Close button
-closeBtn.addEventListener("click", function(){
+// Hero slider
+document.getElementById("hero-slider-photo1").addEventListener("click", function(e) {
+  if (e.target.tagName === "IMG") {
+    openImage(e.target);
+  }
+});
+
+// Close
+closeBtn.addEventListener("click", function() {
   overlay.style.display = "none";
 });
 
-// Click outside image
-overlay.addEventListener("click", function(e){
-  if(e.target === overlay){
+// Outside click
+overlay.addEventListener("click", function(e) {
+  if (e.target === overlay) {
     overlay.style.display = "none";
   }
 });
 
-// ESC key
-document.addEventListener("keydown", function(e){
-  if(e.key === "Escape"){
+// ESC
+document.addEventListener("keydown", function(e) {
+  if (e.key === "Escape") {
     overlay.style.display = "none";
   }
 });
