@@ -78,7 +78,7 @@ image.id = "img-slide1";
       updateSlider();
     }
 
-    let autoSlide = setInterval(nextSlide, 1000);
+    let autoSlide = setInterval(nextSlide, 2000);
 
     let startX = 0, moveX = 0;
 
@@ -96,7 +96,7 @@ image.id = "img-slide1";
       if (diff > 50) current = (current + 1) % total;
       else if (diff < -50) current = (current - 1 + total) % total;
       updateSlider();
-      autoSlide = setInterval(nextSlide, 1000);
+      autoSlide = setInterval(nextSlide, 2000);
     });
   }
 
