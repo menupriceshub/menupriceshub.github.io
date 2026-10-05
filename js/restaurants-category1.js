@@ -3,7 +3,7 @@
      1. CATEGORY TABS GENERATE KARO
   ========================= */
   const categories = [
-  { name: "All", url: "/restaurants/" },
+  { name: "All", url: "/categories/" },
   { name: "Deli", url: "/categories/deli" },
   { name: "Steakhouse", url: "/categories/steakhouse" },
   { name: "BBQ", url: "/categories/bbq" },
