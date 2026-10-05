@@ -1,112 +1,155 @@
 document.addEventListener("DOMContentLoaded", () => {
+  const container = document.getElementById("city-sections");
+  if (!container) return;
 
-  const section = document.getElementById(
-    "city-restaurants-section"
-  );
+  // URL se city aur category nikalo
+  // /cities/new-york/        -> city = new-york
+  // /cities/new-york/pizza/  -> city = new-york, category = pizza
+  const parts = location.pathname.split("/").filter(Boolean);
+  const i = parts.indexOf("cities");
+  const citySlug = i !== -1 ? parts[i + 1] : null;
+  const catSlug = i !== -1 ? parts[i + 2] : null;
 
-  if(!section) return;
-
-  // URL se city nikalo
-  const city = location.pathname
-    .split("/")
-    .filter(Boolean)
-    .pop()
-    .toLowerCase();
+  if (!citySlug) return;
 
   fetch("/data/restaurants.json")
-
     .then(res => res.json())
-
     .then(restaurants => {
 
-      const items = restaurants.filter(r =>
-        r.city &&
-        r.city.toLowerCase() === city
+      // Sirf is city (ya state) ke restaurants
+      const cityData = restaurants.filter(r =>
+        slugify(r.city) === citySlug || slugify(r.state) === citySlug
       );
 
-      renderCity(
-        items,
-        section,
-        city
+      if (cityData.length === 0) {
+        container.innerHTML = `<p>No restaurants found.</p>`;
+        return;
+      }
+
+      // Sundar naam (New York) data se
+      const first = cityData[0];
+      const cityName = slugify(first.city) === citySlug ? first.city : first.state;
+
+      // Heading / title
+      const h1 = document.getElementById("city-title");
+      if (h1) h1.textContent = `Restaurants in ${cityName}`;
+      document.title = `Restaurants in ${cityName}`;
+
+      // Agar category URL me hai (/cities/new-york/pizza/) -> poori list
+      if (catSlug) {
+        const cat = cityData.find(r => slugify(r.category) === catSlug);
+        if (!cat) {
+          container.innerHTML = `<p>No restaurants found.</p>`;
+          return;
+        }
+        const div = document.createElement("div");
+        div.id = "city-all";
+        container.appendChild(div);
+        renderPopular(cityData, div.id, cat.category, cityName, 1000);
+        return;
+      }
+
+      // Warna category wise sections (top 6)
+      const categories = [...new Set(cityData.map(r => r.category))];
+      categories.sort((a, b) =>
+        cityData.filter(r => r.category === b).length -
+        cityData.filter(r => r.category === a).length
       );
 
-    });
-
+      categories.forEach(cat => {
+        const div = document.createElement("div");
+        div.id = "city-" + slugify(cat);
+        container.appendChild(div);
+        renderPopular(cityData, div.id, cat, cityName, 6);
+      });
+    })
+    .catch(err => console.error("Data load error:", err));
 });
 
 
-function renderCity(data, section, city){
+function slugify(text) {
+  return String(text || "").toLowerCase().trim().replace(/\s+/g, "-");
+}
+
+
+function renderPopular(data, sectionId, category, city, limit) {
+  const section = document.getElementById(sectionId);
+  if (!section) return;
+
+  const items = data
+    .filter(r => r.category === category)
+    .map(r => ({
+      ...r,
+      score: (Number(r.rating) * 20) + (Number(r.totalrating) / 100)
+    }))
+    .sort((a, b) => b.score - a.score)
+    .slice(0, limit);
+
+  if (items.length === 0) return;
 
   section.innerHTML = `
-
     <div class="section-header">
-      <h2 class="section-left">
-         ${city.charAt(0).toUpperCase()+city.slice(1)} Restaurants
-      </h2>
+      <h2 class="section-left">Popular ${category} in ${city}</h2>
 
-      <a href="/cities/${city}/" class="section-right">
+      <a href="/cities/${slugify(city)}/${slugify(category)}/" class="section-right">
         View All
         <i class="fa-solid fa-chevron-right icon"></i>
       </a>
     </div>
 
-    <div class="catrest-grid">
+    <div class="restaurant-grid">
+      ${items.map(r => `
+        <div class="restaurant-card">
+          <img class="restaurant-img" src="${r.thumbnail}" alt="${r.name}">
 
-      ${data.map(r=>`
-        <div class="catrest-card">
+          <div class="restaurant-content">
+            <h3 class="restaurant-name">${r.name}</h3>
 
-          <img 
-            class="catrest-img"
-            src="${r.thumbnail}"
-            alt="${r.name}"
-            loading="lazy"
-          >
-
-          <div class="catrest-content">
-
-            <h3 class="catrest-name">
-              ${r.name}
-            </h3>
-
-            <div class="catrest-info">
-              ${r.city} • ${r.category}
+            <div class="restaurant-info">
+              ${r.city} • ${category}
             </div>
 
-            <div class="catrest-bottom">
-
-              <div class="catrest-rating">
+            <div class="restaurant-bottom">
+              <div class="restaurant-rating">
                 <span>${r.rating}</span>
-                <span class="catrest-stars">
-                  ${generateStars(r.rating)}
-                </span>
+                <span class="restaurant-stars">${generateStars(r.rating)}</span>
               </div>
 
-              <a href="/${r.url}" class="catrest-btn">
-                View
-              </a>
-
+              <a href="/restaurants/${r.url}" class="restaurant-btn">View</a>
             </div>
           </div>
         </div>
       `).join("")}
-
     </div>
   `;
 }
 
 
-function generateStars(rating){
+function generateStars(rating) {
+  let html = "";
+  rating = Number(rating);
 
-  let html="";
+  const fullStars = Math.floor(rating);
+  const decimal = rating - fullStars;
 
-  for(let i=1;i<=5;i++){
+  let hasHalf = false;
+  let full = fullStars;
 
-    html += i <= Math.round(rating)
-      ? `<i class="fas fa-star"></i>`
-      : `<i class="far fa-star"></i>`;
+  if (decimal >= 0.75) {
+    full = fullStars + 1;
+  } else if (decimal >= 0.25) {
+    hasHalf = true;
+  }
 
+  for (let i = 1; i <= 5; i++) {
+    if (i <= full) {
+      html += `<i class="fas fa-star"></i>`;
+    } else if (i === full + 1 && hasHalf) {
+      html += `<i class="fas fa-star-half-alt"></i>`;
+    } else {
+      html += `<i class="far fa-star"></i>`;
+    }
   }
 
   return html;
-
 }
