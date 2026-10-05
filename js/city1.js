@@ -1,112 +1,158 @@
-document.addEventListener("DOMContentLoaded", () => {
+(function () {
 
-  const section = document.getElementById(
-    "city-restaurants-section"
-  );
+  /* =========================
+     1. CITY TABS GENERATE KARO
+  ========================= */
 
-  if(!section) return;
+  const cities = [
+    { name: "All", url: "/cities/" },
 
-  // URL se city nikalo
-  const city = location.pathname
+    { name: "New York", url: "/cities/new-york/" },
+    { name: "Los Angeles", url: "/cities/los-angeles/" },
+    { name: "Chicago", url: "/cities/chicago/" },
+    { name: "Houston", url: "/cities/houston/" },
+    { name: "Miami", url: "/cities/miami/" },
+    { name: "Las Vegas", url: "/cities/las-vegas/" },
+    { name: "Dallas", url: "/cities/dallas/" },
+    { name: "Seattle", url: "/cities/seattle/" }
+  ];
+
+
+  const navContainer = document.getElementById("city-nav1");
+
+  if (!navContainer) return;
+
+
+  /* =========================
+     2. CITY LINKS CREATE KARO
+  ========================= */
+
+  cities.forEach(city => {
+
+    const a = document.createElement("a");
+
+    a.href = city.url;
+    a.className = "city-tab";
+    a.textContent = city.name;
+
+    navContainer.appendChild(a);
+
+  });
+
+
+  /* =========================
+     3. ACTIVE CITY SET KARO
+  ========================= */
+
+  const cityTabs = document.querySelectorAll(".city-tab");
+
+  if (!cityTabs.length) return;
+
+
+  const currentPath = window.location.pathname
+    .replace(/\/+$/, "")
     .split("/")
-    .filter(Boolean)
-    .pop()
-    .toLowerCase();
-
-  fetch("/data/restaurants.json")
-
-    .then(res => res.json())
-
-    .then(restaurants => {
-
-      const items = restaurants.filter(r =>
-        r.city &&
-        r.city.toLowerCase() === city
-      );
-
-      renderCity(
-        items,
-        section,
-        city
-      );
-
-    });
-
-});
+    .filter(Boolean);
 
 
-function renderCity(data, section, city){
+  /*
+     Example:
 
-  section.innerHTML = `
+     /cities/
+     → All
 
-    <div class="section-header">
-      <h2 class="section-left">
-         ${city.charAt(0).toUpperCase()+city.slice(1)} Restaurants
-      </h2>
+     /cities/new-york/
+     → New York
 
-      <a href="/cities/${city}/" class="section-right">
-        View All
-        <i class="fa-solid fa-chevron-right icon"></i>
-      </a>
-    </div>
+     /cities/los-angeles/
+     → Los Angeles
+  */
 
-    <div class="catrest-grid">
+  let currentCity = "";
 
-      ${data.map(r=>`
-        <div class="catrest-card">
+  if (
+    currentPath.length >= 2 &&
+    currentPath[0] === "cities"
+  ) {
 
-          <img 
-            class="catrest-img"
-            src="${r.thumbnail}"
-            alt="${r.name}"
-            loading="lazy"
-          >
-
-          <div class="catrest-content">
-
-            <h3 class="catrest-name">
-              ${r.name}
-            </h3>
-
-            <div class="catrest-info">
-              ${r.city} • ${r.category}
-            </div>
-
-            <div class="catrest-bottom">
-
-              <div class="catrest-rating">
-                <span>${r.rating}</span>
-                <span class="catrest-stars">
-                  ${generateStars(r.rating)}
-                </span>
-              </div>
-
-              <a href="/${r.url}" class="catrest-btn">
-                View
-              </a>
-
-            </div>
-          </div>
-        </div>
-      `).join("")}
-
-    </div>
-  `;
-}
-
-
-function generateStars(rating){
-
-  let html="";
-
-  for(let i=1;i<=5;i++){
-
-    html += i <= Math.round(rating)
-      ? `<i class="fas fa-star"></i>`
-      : `<i class="far fa-star"></i>`;
+    currentCity = currentPath[currentPath.length - 1];
 
   }
 
-  return html;
 
-}
+  let activeTab = null;
+
+
+  cityTabs.forEach(tab => {
+
+    const tabPath = tab.getAttribute("href")
+      .replace(/\/+$/, "")
+      .split("/")
+      .filter(Boolean);
+
+
+    let tabCity = "";
+
+    if (
+      tabPath.length >= 2 &&
+      tabPath[0] === "cities"
+    ) {
+
+      tabCity = tabPath[tabPath.length - 1];
+
+    }
+
+
+    tab.classList.remove("active-city-tab");
+
+
+    /* =========================
+       ALL CITY PAGE
+    ========================= */
+
+    if (!currentCity && tabCity === "") {
+
+      tab.classList.add("active-city-tab");
+
+      activeTab = tab;
+
+    }
+
+
+    /* =========================
+       SPECIFIC CITY PAGE
+    ========================= */
+
+    else if (
+      currentCity &&
+      tabCity === currentCity
+    ) {
+
+      tab.classList.add("active-city-tab");
+
+      activeTab = tab;
+
+    }
+
+  });
+
+
+  /* =========================
+     4. ACTIVE CITY AUTO CENTER
+  ========================= */
+
+  if (activeTab) {
+
+    setTimeout(() => {
+
+      activeTab.scrollIntoView({
+        behavior: "smooth",
+        inline: "center",
+        block: "nearest"
+      });
+
+    }, 100);
+
+  }
+
+})();
