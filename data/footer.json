@@ -26,23 +26,23 @@
       "links": [
         {
           "name": "About",
-          "url": "/about.html"
+          "url": "/pages/about/"
         },
         {
           "name": "Contact",
-          "url": "/contact.html"
+          "url": "/pages/contact/"
         },
         {
           "name": "Disclaimer",
-          "url": "/disclaimer.html"
+          "url": "/pages/disclaimer/"
         },
         {
           "name": "Sitemap",
-          "url": "/sitemap.html"
+          "url": "/sitemap/"
         },
         {
           "name": "Author",
-          "url": "/author.html"
+          "url": "/pages/author"
         }
       ]
     },
@@ -51,15 +51,15 @@
       "links": [
         {
           "name": "Privacy Policy",
-          "url": "/privacy-policy.html"
+          "url": "/pages/privacy-policy.html"
         },
         {
           "name": "Terms & Conditions",
-          "url": "/terms-conditions.html"
+          "url": "/pages/terms-conditions.html"
         },
         {
           "name": "DMCA",
-          "url": "/dmca.html"
+          "url": "/pages/dmca.html"
         }
       ]
     },
