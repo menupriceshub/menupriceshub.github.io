@@ -1,70 +1,42 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>  
-<link rel="canonical" href="https://menupriceshub.github.io/Axyz.html" />
-  <link rel="stylesheet" href="styles/style.css">
-  <meta name="robots" content="index, follow, max-image-preview:large">
-  
-<script src="/js/about-widget.js" defer></script>
-<script src="/js/install-app.js" defer></script>
-<script type="module" src="/js/notification-widget.js"></script>
-<script src="/js/faq-widget.js" defer></script>
-  <script src="/js/my-script1.js" defer></script>
+<head>
+
+<!-- font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 
-  <script src="js/browser1.js" defer></script>
-<script src="js/breadcrumb1.js" defer></script>
-
-<script src="js/mph-scroll.js" defer></script>
-<script src="js/mph-share.js" defer></script>
-<script src="js/mph-tooltip.js" defer></script>
-<script src="js/head.js" defer></script>
-<script src="/js/restaurant-schema.js"></script>
-  <script src="/js/faq-pg.js" defer></script>
-  
-<script>
-const path = location.pathname
-  .replace(".html", "")
-  .split("/")
-  .filter(Boolean);
-
-let itemList = [{
-  "@type": "ListItem",
-  "position": 1,
-  "name": "Home",
-  "item": location.origin + "/"
-}];
-
-let url = location.origin;
-
-path.forEach((part, index) => {
-  url += "/" + part;
-
-  itemList.push({
-    "@type": "ListItem",
-    "position": index + 2,
-    "name": part.replace(/-/g, " ").replace(/\b\w/g, c => c.toUpperCase()),
-    "item": url + ".html"
-  });
-});
-
-const schema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": itemList
-};
-
-const script = document.createElement("script");
-script.type = "application/ld+json";
-script.text = JSON.stringify(schema);
-document.head.appendChild(script);
-</script>
+<link rel="canonical" href="https://menupriceshub.github.io" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="/styles/style.css">
+<link rel="stylesheet" href="/styles/review-widget.css">
+<link rel="stylesheet" href="/styles/home.css">
+<link rel="stylesheet" href="/styles/category1.css">
 
 
+<title>MenuPricesHub – Find Restaurant Menus, Prices & Calories All in one place</title>
+
+<meta name="description" content="Check Chipotle menu with prices, photos, reviews, location, FAQs and opening hours."/>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow, max-image-preview:large">
+
+
+<!-- Open Graph -->
+<meta property="og:site_name" content="MenuPricesHub" />
+<meta property="og:title" content="MenuPricesHub – Find Restaurant Menus, Prices & Calories" />
+<meta property="og:description" content="Find the latest restaurant menus, prices, calories, and nutrition facts in one place. Compare popular restaurants, discover new favorites, and make informed dining choices with MenuPricesHub." />
+<meta property="og:url" content="https://menupriceshub.github.io" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://menupriceshub.github.io/favicon.png" />
+<meta property="og:image" content="https://menupriceshub.github.io/images/og-image.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="MenuPricesHub - Restaurant Menus, Prices & Calories" />
+
 
 <!-- PWA -->
 <link rel="manifest" href="/manifest.json">
@@ -72,55 +44,108 @@ document.head.appendChild(script);
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
-<meta name="apple-mobile-web-app-title" content="MyFirstapp">
+<meta name="apple-mobile-web-app-title" content="MenuPricesHub">
 
 
-<title>Chipotle Menu With Prices 2026</title>
-<meta name="description" content="Check Chipotle menu with prices, photos, reviews, location, FAQs and opening hours."/>
+<!-- Scripts -->
+<script src="/js/header-widget.js" defer></script>
+<script src="/js/install-app.js" defer></script>
+<script type="module" src="/js/notification-widget.js"></script>
+<script src="/js/browser1.js" defer></script>
+<script src="/js/mph-scroll.js" defer></script>
+<script src="/js/mph-share.js" defer></script>
+<script src="/js/mph-tooltip.js" defer></script>
+<script src="/js/review-widget.js" defer></script>
+<script src="/js/hero-slider2.js" defer></script>
+<script src="/js/faq-widget.js" defer></script>
+<script src="/js/about-widget.js" defer></script>
+<script src="/js/footer-widget.js" defer></script>
+<script src="/js/my-script1.js" defer></script>
+<script src="/js/head.js" defer></script>
+<script src="/js/list-your-business1.js" defer></script>
 
-  
-<!-- Open Graph tags (Google, Facebook, WhatsApp ) -->
-<meta property="og:site_name" content="Menupriceshub" />
-<meta property="og:title" content="Menupriceshub" />
-<meta property="og:description" content="यहां अपनी साइट की एक लाइन description लिखें" />
-<meta property="og:url" content="https://menupriceshub.github.io/" />
-<meta property="og:type" content="website" />
-<meta property="og:image" content="https://menupriceshub.github.io/favicon.png" />
+<script src="/js/category1.js" defer></script>
+<script src="/js/city1.js" defer></script>
+ <script src="/js/citytab1.js" defer></script>
+<script src="/js/restaurants-category1.js" defer></script>
+<script src="/js/breadcrumb1.js" defer></script>
+ <script src="/js/faq-pg.js" defer></script>
 
-<!-- Canonical URL -->
-
-  
-
-
-
-<!-- Baad mein-->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-<link rel="stylesheet" href="styles/review-widget.css">
-
-  
-  
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4850266028754096"
-     crossorigin="anonymous"></script>
-
-
-
-
- 
-
-  
 </head>
-<body>
-  <!-- HEADER -->
 
+<style>
+  .city-section-nav-tabs X{
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  gap: 10px;
+}
+
+.city-tab X{
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.active-city-tab X{
+  /* category ke active-tab2 jaisa same style */
+}
+</style>
+
+
+<!-- HEADER -->
 <header id="site-header">
 </header>
-  
-  <script src="./js/header-widget.js" defer></script>
+
+
+<!-- MAIN -->
+<main class="container">
+
+
+<!-- BREADCRUMB -->
+
+<nav class="breadcrumb" id="breadcrumb1"></nav>
+
+<style>
+.breadcrumb:empty{
+  padding:0;
+  margin:0;
+}
+</style>
+
+
+<!-- HERO SLIDER -->
+
+<section class="hero-slider">
+
+  <div class="slides">
+
+    <!-- Slide 1 -->
+
+    <div class="slide active"
+      style="background-image:url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh0OveWDGwKTb8D7xJkNVawEDJLwnCCYc5E7lQxqFyblWTub6yrdyKcH2g039s1xrSyDRWBnENSCKBMK9NdEwVrDDMZM4lDlDPj3iI6dikTzJH8U-BaTz37k84MLyAS2HjrD1UodzPwfSv7h3u2eChalQcNs4YNbGkPfDwWsE5RJFUImwsdJLFwovfjcuA/s1600/pizzaslice-menupriceshub.webp');">
+
+      <div class="overlay"></div>
+
+      <div class="top-slider-content">
+
+        <h1>Best Pizza Menu & Prices – Explore Delicious Pizzas</h1>
+
+        <p>
+          Explore popular pizza restaurants with updated menus, prices, deals, and customer ratings.
+        </p>
+
+        <a href="#" class="slide-action-btn">
+          Explore Now
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
 
  <!-- FAQ -->
 <section id="faq">
@@ -129,122 +154,655 @@ document.head.appendChild(script);
 </section>
 
 
+<!-- CATEGORY TABS -->
+
+<!--   <div class="category-section-nav-tabs" id="category-nav1"></div>    -->
 
 
+<!-- CITY TABS -->
 
-  
-
-<!-- MAIN -->
-
-<main class="container">
-  
-
-<!-- BREADCRUMB -->
-
-<nav class="breadcrumb" id="breadcrumb1"></nav>
+<div class="category-section-nav-tabs" id="city-nav1"></div>
 
 
+<!-- Popular Restaurants -->
 
-  
-<!-- TITLE -->
+<section class="popular-restaurants" id="popular-restaurants-section1">
+</section>
 
-<h1>Contact Us</h1>
-  
-
-<!-- OVERVIEW -->
-
-<section id="overview">
-
-<div class="card-text-box">
-
-<p>
-Thank you for visiting MenuPricesHub. We value feedback, suggestions, and inquiries from our visitors.
-</p><br>
-
-<p>
-If you have questions about our website, would like to report an issue, suggest a correction, or contact us regarding business-related matters, please feel free to reach out.
-</p><br>
-
-<h2>How to Contact Us</h2>
-<p>
-You can contact us by email:
-</p><br>
-
-<p>
-<strong>Email:</strong> your-email@example.com
-</p><br>
-
-<p>
-We aim to respond to legitimate inquiries as soon as possible.
-</p><br>
-
-<style>
-.feature-list{
-  padding-left: 20px;
-  margin: 0;
-}
-
-.feature-list li{
-  margin-bottom: 8px;
-}
-</style>
-
-<h2>Reasons You May Contact Us</h2>
-<ul class="feature-list">
-<li>Report incorrect menu prices or restaurant information</li>
-<li>Request content corrections or updates</li>
-<li>Provide feedback and suggestions</li>
-<li>Report technical issues on the website</li>
-<li>Business and partnership inquiries</li>
-<li>General questions regarding website content</li>
-</ul><h2>Important Note</h2>
-<p>
-MenuPricesHub is an independent informational website. We are not affiliated with, endorsed by, or officially connected to any restaurant, food chain, or brand mentioned on this website unless explicitly stated.
-</p><br>
-
-<p>
-For restaurant reservations, food orders, refunds, promotions, or customer service issues, please contact the respective restaurant directly.
-</p><br>
-
-<h2>Response Time</h2>
-<p>
-While we make every effort to respond promptly, response times may vary depending on the nature and volume of inquiries received.
-</p><br>
-
-<h2>Thank You</h2>
-<p>
-We appreciate your interest in MenuPricesHub and thank you for helping us improve our website and content.
-</p><br>
+<script src="/js/popular-restaurants.js" defer></script>
 
 
+<!-- Popular Cafe -->
 
+<section class="popular-restaurants" id="popular-cafe-section1">
+</section>
+
+
+<!-- Popular Deli -->
+
+<section class="popular-restaurants" id="popular-deli-section1">
+</section>
+
+
+<!-- Popular Steakhouse -->
+
+<section class="popular-restaurants" id="popular-steakhouse-section1">
+</section>
+
+
+<!-- Popular BBQ -->
+
+<section class="popular-restaurants" id="popular-bbq-section1">
+</section>
+
+
+<!-- Popular Cheesesteak -->
+
+<section class="popular-restaurants" id="popular-cheesesteak-section1">
+</section>
+
+
+<!-- Popular Hot Chicken -->
+
+<section class="popular-restaurants" id="popular-hot-chicken-section1">
+</section>
+
+
+<!-- Popular Pizza -->
+
+<section class="popular-restaurants" id="popular-pizza-section1">
+</section>
+
+
+<!-- Popular Steak House -->
+
+<section class="popular-restaurants" id="popular-steak-house-section1">
+</section>
+
+
+<!-- Popular Ukrainian -->
+
+<section class="popular-restaurants" id="popular-ukrainian-section1">
+</section>
+
+
+<!-- Popular Hot Dogs -->
+
+<section class="popular-restaurants" id="popular-hot-dogs-section1">
+</section>
+
+
+<!-- Popular Seafood -->
+
+<section class="popular-restaurants" id="popular-seafood-section1">
+</section>
+
+
+<!-- Popular American -->
+
+<section class="popular-restaurants" id="popular-american-section1">
+</section>
+
+
+<!-- Popular Fine Dining -->
+
+<section class="popular-restaurants" id="popular-fine-dining-section1">
+</section>
+
+
+<!-- Popular Creole -->
+
+<section class="popular-restaurants" id="popular-creole-section1">
+</section>
+
+
+<!-- Popular Southern -->
+
+<section class="popular-restaurants" id="popular-southern-section1">
+</section>
+
+
+<!-- Popular Bakery -->
+
+<section class="popular-restaurants" id="popular-bakery-section1">
+</section>
+
+
+<!-- Popular French -->
+
+<section class="popular-restaurants" id="popular-french-section1">
+</section>
+
+
+<!-- Popular Fried Chicken -->
+
+<section class="popular-restaurants" id="popular-fried-chicken-section1">
+</section>
+
+
+<!-- Popular Mexican -->
+
+<section class="popular-restaurants" id="popular-mexican-section1">
+</section>
+
+
+<!-- Popular Tacos -->
+
+<section class="popular-restaurants" id="popular-tacos-section1">
+</section>
+
+
+<!-- Popular Burgers -->
+
+<section class="popular-restaurants" id="popular-burgers-section1">
+</section>
+
+
+<!-- Popular Japanese -->
+
+<section class="popular-restaurants" id="popular-japanese-section1">
+</section>
+
+
+<!-- Popular Soup -->
+
+<section class="popular-restaurants" id="popular-soup-section1">
+</section>
+
+
+<!-- Popular Caribbean -->
+
+<section class="popular-restaurants" id="popular-caribbean-section1">
+</section>
+
+
+<!-- Popular Dessert -->
+
+<section class="popular-restaurants" id="popular-dessert-section1">
+</section>
+
+
+<!-- Popular Breakfast -->
+
+<section class="popular-restaurants" id="popular-breakfast-section1">
+</section>
+
+
+<!-- Popular Chili -->
+
+<section class="popular-restaurants" id="popular-chili-section1">
+</section>
+
+
+<!-- Popular Brewpub -->
+
+<section class="popular-restaurants" id="popular-brewpub-section1">
+</section>
+
+
+<!-- Popular Italian Beef -->
+
+<section class="popular-restaurants" id="popular-italian-beef-section1">
+</section>
+
+
+<!-- Latest Blog Post -->
+
+<section class="mph-latest-wrap" id="mph-latest-blog">
+</section>
+
+<script src="/js/latest-blog1.js" defer></script>
+
+
+<!-- Popular City -->
+
+<div class="city-widget">
+
+  <div class="city-header">
+
+    <div class="city-title">
+      Popular Cities
+    </div>
+
+  </div>
+
+
+  <div class="city-scroll">
+
+
+    <a href="#" class="city-item">
+
+      <div class="city-photo">
+
+        <img
+          src="https://images.unsplash.com/photo-1499092346589-b9b6be3e94b2?w=300"
+          alt="New York">
+
+      </div>
+
+      <div class="city-name">
+        New York
+      </div>
+
+    </a>
+
+
+    <a href="#" class="city-item">
+
+      <div class="city-photo">
+
+        <img
+          src="https://images.unsplash.com/photo-1534190760961-74e8c1c5c3da?w=300"
+          alt="Los Angeles">
+
+      </div>
+
+      <div class="city-name">
+        Los Angeles
+      </div>
+
+    </a>
+
+
+    <a href="#" class="city-item">
+
+      <div class="city-photo">
+
+        <img
+          src="https://images.unsplash.com/photo-1494526585095-c41746248156?w=300"
+          alt="Chicago">
+
+      </div>
+
+      <div class="city-name">
+        Chicago
+      </div>
+
+    </a>
+
+
+    <a href="#" class="city-item">
+
+      <div class="city-photo">
+
+        <img
+          src="https://images.unsplash.com/photo-1514214246283-d427a95c5d2f?w=300"
+          alt="Houston">
+
+      </div>
+
+      <div class="city-name">
+        Houston
+      </div>
+
+    </a>
+
+
+    <a href="#" class="city-item">
+
+      <div class="city-photo">
+
+        <img
+          src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=300"
+          alt="Miami">
+
+      </div>
+
+      <div class="city-name">
+        Miami
+      </div>
+
+    </a>
+
+
+    <a href="#" class="city-item">
+
+      <div class="city-photo">
+
+        <img
+          src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?w=300"
+          alt="Las Vegas">
+
+      </div>
+
+      <div class="city-name">
+        Las Vegas
+      </div>
+
+    </a>
+
+
+    <a href="#" class="city-item">
+
+      <div class="city-photo">
+
+        <img
+          src="https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=300"
+          alt="Dallas">
+
+      </div>
+
+      <div class="city-name">
+        Dallas
+      </div>
+
+    </a>
+
+
+    <a href="#" class="city-item">
+
+      <div class="city-photo">
+
+        <img
+          src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=300"
+          alt="Seattle">
+
+      </div>
+
+      <div class="city-name">
+        Seattle
+      </div>
+
+    </a>
+
+
+    <a href="#" class="city-item">
+
+      <div class="explore-more">
+
+        <i class="fa-solid fa-ellipsis"></i>
+
+      </div>
+
+      <div class="city-name">
+        Explore More
+      </div>
+
+    </a>
+
+
+  </div>
+
+</div>
+
+
+<!-- Popular Search -->
+
+<div class="section-header">
+
+  <h2 class="section-left">
+    Looking for a menu?
+  </h2>
+
+  <a href="#" class="section-right">
+
+    View All
+
+    <i class="fa-solid fa-chevron-right icon"></i>
+
+  </a>
+
+</div>
+
+
+<div class="popular-search-sec-tabs">
+
+
+<a href="#" class="nav-tab search-active-tab1">
+  Best Restaurants Near Me
+</a>
+
+
+<a href="#" class="nav-tab">
+  Restaurant Menu With Prices
+</a>
+
+
+<a href="#" class="nav-tab">
+  Food Delivery Near Me
+</a>
+
+
+<a href="#" class="nav-tab">
+  Best Food Places
+</a>
+
+
+<a href="#" class="nav-tab">
+  Cafe Near Me
+</a>
+
+
+<a href="#" class="nav-tab">
+  Fast Food Near Me
+</a>
+
+
+<a href="#" class="nav-tab">
+  Pizza Near Me
+</a>
+
+
+<a href="#" class="nav-tab">
+  Burger Menu With Prices
+</a>
+
+
+<a href="#" class="nav-tab">
+  Restaurants Open Now
+</a>
+
+
+<a href="#" class="nav-tab">
+  Customer Reviews
+</a>
 
 
 </div>
-  
 
+
+<!-- List Your Business Banner -->
+
+<section class="elb-hero-slider" id="elb-hero-slider">
 </section>
-  
- 
-  
-<!-- About us -->
-<section id="aboutsection">
-  <div class="card">
-<h2 class="section-title" id="about-title"></h2>
-<div id="about-content"></div>
+
+
+<!-- Submit Rating -->
+
+<section id="star-rating">
+</section>
+
+
+<!-- FAQ -->
+
+<section id="faq">
+
+
+<div class="section-header">
+
+  <h2 class="section-left">
+    FAQ
+  </h2>
+
+  <a href="#" class="section-right">
+
+    View All
+
+    <i class="fa-solid fa-chevron-right icon"></i>
+
+  </a>
+
+</div>
+
+
+<div class="faq-grid">
+
+
+<div class="faq-item">
+
+  <div class="faq-question">
+
+    What is MenuPricesHub?
+
+    <span class="faq-icon">
+      +
+    </span>
+
   </div>
+
+  <div class="faq-answer">
+
+    MenuPricesHub is a restaurant discovery platform that helps users find restaurant menu prices, nutrition information, opening hours, reviews, and dining options across different cities.
+
+  </div>
+
+</div>
+
+
+<div class="faq-item">
+
+  <div class="faq-question">
+
+    How accurate are the menu prices on MenuPricesHub?
+
+    <span class="faq-icon">
+      +
+    </span>
+
+  </div>
+
+  <div class="faq-answer">
+
+    We regularly update restaurant menu prices and related information. However, prices may vary depending on the restaurant location, promotions, and local taxes.
+
+  </div>
+
+</div>
+
+
+<div class="faq-item">
+
+  <div class="faq-question">
+
+    Does MenuPricesHub provide calorie and nutrition information?
+
+    <span class="faq-icon">
+      +
+    </span>
+
+  </div>
+
+  <div class="faq-answer">
+
+    Yes, many restaurant pages include calorie counts, nutrition facts, and food details to help users make informed dining choices.
+
+  </div>
+
+</div>
+
+
+<div class="faq-item">
+
+  <div class="faq-question">
+
+    Why use MenuPricesHub to compare restaurant menus?
+
+    <span class="faq-icon">
+      +
+    </span>
+
+  </div>
+
+  <div class="faq-answer">
+
+    MenuPricesHub makes it easy to compare restaurant menu prices, discover new restaurants, check food categories, and stay updated with the latest menu changes in one place.
+
+  </div>
+
+</div>
+
+
+<div class="faq-item">
+
+  <div class="faq-question">
+
+    Why should I use MenuPricesHub?
+
+    <span class="faq-icon">
+      +
+    </span>
+
+  </div>
+
+  <div class="faq-answer">
+
+    MenuPricesHub helps you compare restaurant menu prices, discover new restaurants, explore food categories, and stay updated with the latest menu information in one place.
+
+  </div>
+
+</div>
+
+
+<div class="faq-item">
+
+  <div class="faq-question">
+
+    Can I find restaurant menu prices near me?
+
+    <span class="faq-icon">
+      +
+    </span>
+
+  </div>
+
+  <div class="faq-answer">
+
+    Yes, MenuPricesHub allows users to explore restaurant menu prices, popular restaurants, cafes, and dining options by city and location.
+
+  </div>
+
+</div>
+
+
+</div>
+
 </section>
 
-  
-</main>  <!-- container end -->
 
-  
-<!-- footer -->
-  <section id="footer-section1">
-<footer id="footer"></footer>
-<script src="./js/footer-widget.js" defer></script>
-  </section>
+<!-- SIMILAR -->
 
+<section id="similar-restaurants1">
+</section>
+
+
+<!-- About Us -->
+
+<section id="aboutsection">
+
+  <div class="card">
+
+    <h2 class="section-title" id="about-title">
+    </h2>
+
+    <div id="about-content">
+    </div>
+
+  </div>
+
+</section>
+
+
+</main>
+
+
+<!-- FOOTER -->
+
+<section id="footer-section1">
+
+<footer id="footer">
+</footer>
+
+</section>
 
 
 <!-- MOBILE STICKY BAR -->
@@ -252,11 +810,29 @@ We appreciate your interest in MenuPricesHub and thank you for helping us improv
 <div class="bottom-nav" id="mobileBar">
 </div>
 
-  
-  
-<!--tooltio -->
-  <div id="customTooltip" class="custom-tooltip"></div>
 
-  
- </body>
+<!-- TOOLTIP -->
+
+<div id="customTooltip" class="custom-tooltip">
+</div>
+
+
+<!-- FAQ SCRIPT -->
+
+<script>
+
+document.querySelectorAll('.faq-question').forEach(question => {
+
+  question.addEventListener('click', () => {
+
+    question.parentElement.classList.toggle('active');
+
+  });
+
+});
+
+</script>
+
+
+</body>
 </html>
