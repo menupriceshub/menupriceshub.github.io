@@ -138,7 +138,7 @@
     }
 
 
-    tab.classList.remove("active-city-tab");
+    tab.classList.remove("active-tab2");
 
 
     /* =========================
@@ -147,7 +147,7 @@
 
     if (!currentCity && tabCity === "") {
 
-      tab.classList.add("active-city-tab");
+      tab.classList.add("active-tab2");
 
       activeTab = tab;
 
@@ -163,7 +163,7 @@
       tabCity === currentCity
     ) {
 
-      tab.classList.add("active-city-tab");
+      tab.classList.add("active-tab2");
 
       activeTab = tab;
 
