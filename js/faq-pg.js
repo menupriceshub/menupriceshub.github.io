@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const container = document.getElementById("faq-container");
+  const container = document.getElementById("faq-container2");
   if (!container) return;
 
   const PER_PAGE = 15;
