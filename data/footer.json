@@ -26,19 +26,19 @@
       "links": [
         {
           "name": "About",
-          "url": "/pages/about/"
+          "url": "/pages/about.html"
         },
         {
           "name": "Contact",
-          "url": "/pages/contact/"
+          "url": "/pages/contact.html"
         },
         {
           "name": "Disclaimer",
-          "url": "/pages/disclaimer/"
+          "url": "/pages/disclaimer.html"
         },
         {
           "name": "Sitemap",
-          "url": "/sitemap/"
+          "url": "/sitemap.html"
         },
         {
           "name": "Author",
