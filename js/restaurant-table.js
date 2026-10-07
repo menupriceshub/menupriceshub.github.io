@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const wrapper = document.getElementById("page-wrapper");
   const restaurantId = wrapper?.dataset.restaurantId;
   const container = document.getElementById("menu-price-table-section1");
-  const priceRangeEl = document.getElementById("ptg-price-range");
 
   if (!restaurantId || !container) return;
 
@@ -18,10 +17,6 @@ document.addEventListener("DOMContentLoaded", () => {
       // ==============================
       // SAFE VALUE HELPER
       // ==============================
-      // undefined / null (value or string
-      // form) ko blank kar deta hai
-      // ==============================
-
       const safe = (val) => {
         if (val === undefined || val === null) return "";
         const str = String(val).trim();
@@ -35,201 +30,102 @@ document.addEventListener("DOMContentLoaded", () => {
         return str;
       };
 
-
       // ==============================
       // PRICE NUMBER HELPER
       // ==============================
-
       const toNum = (p) =>
         parseFloat(String(p).replace(/[^0-9.]/g, "")) || 0;
 
+      // ==============================
+      // VALID ITEMS ONLY
+      // (name + price dono hone chahiye)
+      // ==============================
+      const items = (data.items || []).filter(item =>
+        safe(item.name) !== "" && toNum(item.price) > 0
+      );
 
       // ==============================
-      // GROUP PRICE BY CATEGORY
+      // PRICE RANGE (starting -> top)
       // ==============================
-
-      const byCategory = {};
-
-      data.items.forEach(item => {
-
-        const cat = safe(item.category);
-
-        if (!byCategory[cat]) {
-          byCategory[cat] = [];
-        }
-
-        byCategory[cat].push(
-          toNum(item.price)
-        );
-
-      });
-
-
-      // ==============================
-      // PRICE RANGE CALCULATION
-      // ==============================
-
-      const mainCategories = ["Pizza", "Burger"];
-
-      const getMinMax = (categories) => {
-
-        let all = [];
-
-        categories.forEach(cat => {
-
-          if (byCategory[cat]) {
-            all = all.concat(byCategory[cat]);
-          }
-
-        });
-
-        if (!all.length) {
-          return {
-            min: 0,
-            max: 0
-          };
-        }
-
-        return {
-          min: Math.min(...all),
-          max: Math.max(...all)
-        };
-
-      };
-
-
-      const main = getMinMax(mainCategories);
-
-
-      const side = byCategory["Sides"]
-        ? {
-            min: Math.min(...byCategory["Sides"]),
-            max: Math.max(...byCategory["Sides"])
-          }
-        : {
-            min: 0,
-            max: 0
-          };
-
-
-      const bev = byCategory["Beverages"]
-        ? {
-            min: Math.min(...byCategory["Beverages"]),
-            max: Math.max(...byCategory["Beverages"])
-          }
-        : {
-            min: 0,
-            max: 0
-          };
-
-
-      const perPersonMin =
-        Math.round(
-          main.min +
-          side.min +
-          bev.min
-        );
-
-
-      const perPersonMax =
-        Math.round(
-          main.max +
-          side.max +
-          bev.max
-        );
-
-
-      const forTwoMin =
-        perPersonMin * 2;
-
-
-      const forTwoMax =
-        perPersonMax * 2;
-
-
-      // ==============================
-      // PRICE INFO BOX
-      // ==============================
+      const allPrices = items.map(item => toNum(item.price));
 
       const avgInfoEl =
-        document.getElementById(
-          "quick-avgperperson-info1"
-        );
-
+        document.getElementById("quick-avgperperson-info1");
 
       if (avgInfoEl) {
 
-        avgInfoEl.parentElement.innerHTML = `
-          <i
-            class="fa fa-receipt"
-            style="font-size:15px;color:red"
-          ></i>
+        if (allPrices.length) {
 
-          <span class="ptg-tooltip-wrap">
+          const minPrice = Math.round(Math.min(...allPrices));
+          const maxPrice = Math.round(Math.max(...allPrices));
 
-            ₹${safe(perPersonMin)} – ₹${safe(perPersonMax)}
+          avgInfoEl.parentElement.innerHTML = `
+            <i
+              class="fa fa-receipt"
+              style="font-size:15px;color:red"
+            ></i>
 
-            <span class="ptg-tooltip-text">
-              ₹${safe(perPersonMin)} – ₹${safe(perPersonMax)}
-              per person, based on
-              1 main course + 1 side + 1 drink.
-              For two:
-              ₹${safe(forTwoMin)} – ₹${safe(forTwoMax)}
+            <span class="ptg-tooltip-wrap">
+
+              ₹${minPrice} – ₹${maxPrice}
+
+              <span class="ptg-tooltip-text">
+                Menu prices range from ₹${minPrice} (starting)
+                to ₹${maxPrice} (highest).
+              </span>
+
             </span>
+          `;
 
-          </span>
-        `;
+        } else {
+          // Koi price nahi mila to box hide
+          avgInfoEl.parentElement.style.display = "none";
+        }
 
       }
-
 
       // ==============================
       // GROUP ITEMS BY CATEGORY
       // ==============================
-
       const categoryOrder = [];
       const itemsByCategory = {};
 
+      items.forEach(item => {
 
-      data.items.forEach(item => {
-
-        const cat = safe(item.category);
+        const cat = safe(item.category) || "Other";
 
         if (!itemsByCategory[cat]) {
-
           itemsByCategory[cat] = [];
-
-          categoryOrder.push(
-            cat
-          );
-
+          categoryOrder.push(cat);
         }
 
-        itemsByCategory[cat].push(
-          item
-        );
+        itemsByCategory[cat].push(item);
 
       });
 
+      // Agar koi valid item hi nahi hai
+      if (!categoryOrder.length) {
+        container.innerHTML = `
+          <p class="ptg-no-menu">
+            Menu is currently unavailable.
+          </p>
+        `;
+        return;
+      }
 
       // ==============================
       // CATEGORY SLUG
       // ==============================
-
       const slug = (str) => {
-
         return String(str)
           .toLowerCase()
           .replace(/[^a-z0-9]+/g, "-")
           .replace(/(^-|-$)/g, "");
-
       };
-
 
       // ==============================
       // BUILD TABS
       // ==============================
-
       const tabsHtml =
         categoryOrder.map((cat, idx) => {
 
@@ -244,14 +140,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
         }).join("");
 
-
       // ==============================
       // BUILD TABLES
+      // Only Menu Item + Price
       // ==============================
-      // Calories column removed.
-      // Only Menu Item + Price.
-      // ==============================
-
       const tablesHtml =
         categoryOrder.map(cat => {
 
@@ -283,9 +175,7 @@ document.addEventListener("DOMContentLoaded", () => {
                       return `
                         <tr>
 
-                          <td
-                            data-label="Menu Item"
-                          >
+                          <td data-label="Menu Item">
                             ${safe(item.name)}
                           </td>
 
@@ -312,11 +202,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
         }).join("");
 
-
       // ==============================
       // INSERT HTML
       // ==============================
-
       container.innerHTML = `
 
         <section id="menu-price-table-section1">
@@ -325,21 +213,17 @@ document.addEventListener("DOMContentLoaded", () => {
             <h2>${safe(data.title)}</h2>
           </div>
 
-
           <div class="ptg-tabs">
             ${tabsHtml}
           </div>
-
 
           <div class="ptg-tab-panels">
             ${tablesHtml}
           </div>
 
-
           <div class="ptg-scroll-note">
             ↔ Swipe table to see more
           </div>
-
 
           <p class="ptg-price-note">
             * Prices may vary by location.
@@ -349,84 +233,62 @@ document.addEventListener("DOMContentLoaded", () => {
 
       `;
 
-
       // ==============================
       // TAB CLICK
       // ==============================
-
       const tabButtons =
-        container.querySelectorAll(
-          ".ptg-tab-btn"
-        );
-
+        container.querySelectorAll(".ptg-tab-btn");
 
       tabButtons.forEach(btn => {
 
-        btn.addEventListener(
-          "click",
-          () => {
+        btn.addEventListener("click", () => {
 
-            // Remove active
-            tabButtons.forEach(b => {
-              b.classList.remove("active");
-            });
+          // Remove active
+          tabButtons.forEach(b => {
+            b.classList.remove("active");
+          });
 
+          // Add active
+          btn.classList.add("active");
 
-            // Add active
-            btn.classList.add("active");
+          // Target panel
+          const targetPanel =
+            document.getElementById(btn.dataset.tab);
 
+          if (targetPanel) {
 
-            // Target panel
-            const targetPanel =
-              document.getElementById(
-                btn.dataset.tab
-              );
+            const header =
+              document.getElementById("site-header");
 
+            const sectionNav =
+              document.getElementById("top-section-nav1");
 
-            if (targetPanel) {
+            // Calculate sticky height
+            const stickyOffset =
+              (header?.offsetHeight || 0) +
+              (sectionNav?.offsetHeight || 0) +
+              10;
 
-              const header =
-                document.getElementById(
-                  "site-header"
-                );
+            const targetY =
+              targetPanel.getBoundingClientRect().top +
+              window.pageYOffset -
+              stickyOffset;
 
-
-              const sectionNav =
-                document.getElementById(
-                  "top-section-nav1"
-                );
-
-
-              // Calculate sticky height
-              const stickyOffset =
-                (header?.offsetHeight || 0) +
-                (sectionNav?.offsetHeight || 0) +
-                10;
-
-
-              const targetY =
-                targetPanel.getBoundingClientRect().top +
-                window.pageYOffset -
-                stickyOffset;
-
-
-              window.scrollTo({
-                top: targetY,
-                behavior: "smooth"
-              });
-
-            }
-
-
-            // Keep clicked tab visible
-            btn.scrollIntoView({
-              behavior: "smooth",
-              block: "nearest",
-              inline: "center"
+            window.scrollTo({
+              top: targetY,
+              behavior: "smooth"
             });
 
           }
-        );
+
+          // Keep clicked tab visible
+          btn.scrollIntoView({
+            behavior: "smooth",
+            block: "nearest",
+            inline: "center"
+          });
+
+        });
 
       });
 
