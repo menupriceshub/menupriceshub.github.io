@@ -116,7 +116,7 @@ restaurant.city;
     <img src="${item.photo}" alt="${item.name}" loading="lazy">
     <div class="menu-content">
     <h3>${item.name}</h3>
-    <div class="price">${item.price}</div>
+    
     </div>
 
 
