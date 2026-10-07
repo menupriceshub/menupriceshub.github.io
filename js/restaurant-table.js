@@ -70,8 +70,8 @@ document.addEventListener("DOMContentLoaded", () => {
               ₹${minPrice} – ₹${maxPrice}
 
               <span class="ptg-tooltip-text">
-                Menu prices range from ₹${minPrice} (starting)
-                to ₹${maxPrice} (highest).
+                Menu prices range from &#36; ${minPrice} (starting)
+                to &#36;${maxPrice} (highest).
               </span>
 
             </span>
