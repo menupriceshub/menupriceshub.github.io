@@ -5,10 +5,11 @@ document.addEventListener("DOMContentLoaded", () => {
   // URL se city aur category nikalo
   // /cities/new-york/        -> city = new-york
   // /cities/new-york/pizza/  -> city = new-york, category = pizza
+  // /cities/st-louis/        -> city = st-louis
   const parts = location.pathname.split("/").filter(Boolean);
   const i = parts.indexOf("cities");
-  const citySlug = i !== -1 ? parts[i + 1] : null;
-  const catSlug = i !== -1 ? parts[i + 2] : null;
+  const citySlug = i !== -1 ? slugify(decodeURIComponent(parts[i + 1] || "")) : null;
+  const catSlug = i !== -1 && parts[i + 2] ? slugify(decodeURIComponent(parts[i + 2])) : null;
 
   if (!citySlug) return;
 
@@ -26,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
       }
 
-      // Sundar naam (New York) data se
+      // Sundar naam (New York / St. Louis) data se
       const first = cityData[0];
       const cityName = slugify(first.city) === citySlug ? first.city : first.state;
 
@@ -63,12 +64,22 @@ document.addEventListener("DOMContentLoaded", () => {
         renderPopular(cityData, div.id, cat, cityName, 6);
       });
     })
-    .catch(err => console.error("Data load error:", err));
+    .catch(err => {
+      console.error("Data load error:", err);
+      container.innerHTML = `<p>Something went wrong. Please try again.</p>`;
+    });
 });
 
 
+// "St. Louis" -> "st-louis", "Coeur d'Alene" -> "coeur-dalene", "Food & Drinks" -> "food-drinks"
 function slugify(text) {
-  return String(text || "").toLowerCase().trim().replace(/\s+/g, "-");
+  return String(text || "")
+    .toLowerCase()
+    .trim()
+    .replace(/[^a-z0-9\s-]/g, "")  // . ' & jaise special characters hatao
+    .replace(/\s+/g, "-")          // spaces -> -
+    .replace(/-+/g, "-")           // multiple - -> single -
+    .replace(/^-|-$/g, "");        // start/end ke - hatao
 }
 
 
