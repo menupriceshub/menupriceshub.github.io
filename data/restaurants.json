@@ -3256,7 +3256,7 @@
   },
   {
     "id": "32minettatavernny",
-    "category": "American",
+    "category": ["American", "Burger"], 
     "name": "Minetta Tavern",
     "city": "New York",
     "url": "minetta-tavern-menu.html",
