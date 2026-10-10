@@ -1681,7 +1681,7 @@
   },
   {
     "id": "17zunicafe",
-    "category": "American,cafe",
+    "category": ["American", "Cafe"], 
     "name": "Zuni Café",
     "city": "San Francisco",
     "url": "zuni-café-menu.html",
@@ -3256,7 +3256,7 @@
   },
   {
     "id": "32minettatavernny",
-    "category": ["American", "Burger"], 
+    "category": ["American", "Burgers"], 
     "name": "Minetta Tavern",
     "city": "New York",
     "url": "minetta-tavern-menu.html",
