@@ -32,9 +32,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // ==============================
       // PRICE NUMBER HELPER
+      // Sirf PEHLI value leta hai
+      // "$27 / $28 / $29" -> 27
+      // "$1-$27"          -> 1
+      // "$12.50"          -> 12.5
       // ==============================
-      const toNum = (p) =>
-        parseFloat(String(p).replace(/[^0-9.]/g, "")) || 0;
+      const toNum = (p) => {
+        const match = String(p ?? "").match(/\d+(?:\.\d+)?/);
+        return match ? parseFloat(match[0]) : 0;
+      };
 
       // ==============================
       // VALID ITEMS ONLY
@@ -70,7 +76,7 @@ document.addEventListener("DOMContentLoaded", () => {
               $${minPrice} – $${maxPrice}
 
               <span class="ptg-tooltip-text">
-                Menu prices range from &#36; ${minPrice} (starting)
+                Menu prices range from &#36;${minPrice} (starting)
                 to &#36;${maxPrice} (highest).
               </span>
 
