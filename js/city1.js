@@ -101,11 +101,11 @@ function renderPopular(data, sectionId, category, city, limit) {
   section.innerHTML = `
     <div class="section-header">
       <h2 class="section-left">Popular ${category} in ${city}</h2>
+<a href="/categories/${slugify(category)}/" class="section-right">
+    View All<i class="fa-solid fa-chevron-right icon"></i>
+</a>
 
-      <a href="/cities/${slugify(city)}/${slugify(category)}/" class="section-right">
-        View All
-        <i class="fa-solid fa-chevron-right icon"></i>
-      </a>
+      
     </div>
 
     <div class="restaurant-grid">
