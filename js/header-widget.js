@@ -16,7 +16,7 @@
     { text: "Search", href: "https://menupriceshub.github.io/search.html" },
     { text: "Categories", href: "https://menupriceshub.github.io/categories/" },
     { text: "Blog", href: "https://menupriceshub.github.io/blog/" },
-    { text: "Contact", href: "https://menupriceshub.github.io/contact.html" },
+    { text: "Contact", href: "https://menupriceshub.github.io/pages/contact.html" },
     { text: "List Your Business", href: "https://menupriceshub.github.io/list-your-business.html" }
   ];
 
