@@ -66,8 +66,7 @@
 
 <script>
 const path = location.pathname
-  .replace(/index\.html$/, "")
-  .replace(/\.html$/, "")
+  .replace(".html", "")
   .split("/")
   .filter(Boolean);
 
@@ -82,11 +81,12 @@ let url = location.origin;
 
 path.forEach((part, index) => {
   url += "/" + part;
+
   itemList.push({
     "@type": "ListItem",
     "position": index + 2,
     "name": part.replace(/-/g, " ").replace(/\b\w/g, c => c.toUpperCase()),
-    "item": url + "/"
+    "item": url + ".html"
   });
 });
 
@@ -101,6 +101,8 @@ script.type = "application/ld+json";
 script.text = JSON.stringify(schema);
 document.head.appendChild(script);
 </script>
+
+
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4850266028754096"
      crossorigin="anonymous"></script>
