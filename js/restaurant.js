@@ -151,7 +151,7 @@ restaurant.city;
     html += `
       <div class="similar-card">
         <img src="${item.thumbnail}" alt="${item.name}" loading="lazy">
-        <a href="${item.url}">${item.name} Menu</a>
+        <a href="/restaurants/${item.url.replace(/^\/?(restaurants\/)?/, '').replace(/\/?$/, '/')}">${item.name} Menu</a>
       </div>
     `;
   });
