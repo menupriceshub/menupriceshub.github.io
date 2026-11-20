@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://menupriceshub.github.io/</loc><priority>1.0</priority></url>
+  <url><loc>https://menupriceshub.github.io/blog/</loc><priority>0.8</priority></url>
   <url><loc>https://menupriceshub.github.io/blog/10-olive-garden-menu-hacks-pasta-lovers.html</loc><priority>0.6</priority></url>
   <url><loc>https://menupriceshub.github.io/blog/applebees-2-for-25-deal.html</loc><priority>0.6</priority></url>
   <url><loc>https://menupriceshub.github.io/blog/cheesecake-factory-menu-101.html</loc><priority>0.6</priority></url>
   <url><loc>https://menupriceshub.github.io/blog/chipotle-vs-taco-bell-value.html</loc><priority>0.6</priority></url>
   <url><loc>https://menupriceshub.github.io/blog/does-chipotle-have-a-kids-menu.html</loc><priority>0.6</priority></url>
   <url><loc>https://menupriceshub.github.io/blog/healthiest-fast-food-under-500-calories.html</loc><priority>0.6</priority></url>
-  <url><loc>https://menupriceshub.github.io/blog/</loc><priority>0.8</priority></url>
   <url><loc>https://menupriceshub.github.io/blog/save-money-fast-food.html</loc><priority>0.6</priority></url>
   <url><loc>https://menupriceshub.github.io/blog/starbucks-vs-dunkin-comparison.html</loc><priority>0.6</priority></url>
   <url><loc>https://menupriceshub.github.io/blog/texas-roadhouse-best-deal.html</loc><priority>0.6</priority></url>
   <url><loc>https://menupriceshub.github.io/calories-and-nutrition.html</loc><priority>0.6</priority></url>
+  <url><loc>https://menupriceshub.github.io/categories/</loc><priority>0.8</priority></url>
   <url><loc>https://menupriceshub.github.io/categories/american/</loc><priority>0.6</priority></url>
   <url><loc>https://menupriceshub.github.io/categories/asian-food/</loc><priority>0.6</priority></url>
   <url><loc>https://menupriceshub.github.io/categories/bakery/</loc><priority>0.6</priority></url>
@@ -31,7 +33,6 @@
   <url><loc>https://menupriceshub.github.io/categories/healthy-food/</loc><priority>0.6</priority></url>
   <url><loc>https://menupriceshub.github.io/categories/hot-chicken/</loc><priority>0.6</priority></url>
   <url><loc>https://menupriceshub.github.io/categories/hot-dogs/</loc><priority>0.6</priority></url>
-  <url><loc>https://menupriceshub.github.io/categories/</loc><priority>0.8</priority></url>
   <url><loc>https://menupriceshub.github.io/categories/italian-beef/</loc><priority>0.6</priority></url>
   <url><loc>https://menupriceshub.github.io/categories/italian/</loc><priority>0.6</priority></url>
   <url><loc>https://menupriceshub.github.io/categories/japanese/</loc><priority>0.6</priority></url>
@@ -44,6 +45,7 @@
   <url><loc>https://menupriceshub.github.io/categories/steakhouse/</loc><priority>0.6</priority></url>
   <url><loc>https://menupriceshub.github.io/categories/tacos/</loc><priority>0.6</priority></url>
   <url><loc>https://menupriceshub.github.io/categories/ukrainian/</loc><priority>0.6</priority></url>
+  <url><loc>https://menupriceshub.github.io/cities/</loc><priority>0.8</priority></url>
   <url><loc>https://menupriceshub.github.io/cities/ann-arbor/</loc><priority>0.6</priority></url>
   <url><loc>https://menupriceshub.github.io/cities/atlanta/</loc><priority>0.6</priority></url>
   <url><loc>https://menupriceshub.github.io/cities/austin/</loc><priority>0.6</priority></url>
@@ -64,7 +66,6 @@
   <url><loc>https://menupriceshub.github.io/cities/glendale/</loc><priority>0.6</priority></url>
   <url><loc>https://menupriceshub.github.io/cities/hollywood/</loc><priority>0.6</priority></url>
   <url><loc>https://menupriceshub.github.io/cities/houston/</loc><priority>0.6</priority></url>
-  <url><loc>https://menupriceshub.github.io/cities/</loc><priority>0.8</priority></url>
   <url><loc>https://menupriceshub.github.io/cities/jackson/</loc><priority>0.6</priority></url>
   <url><loc>https://menupriceshub.github.io/cities/kansas-city/</loc><priority>0.6</priority></url>
   <url><loc>https://menupriceshub.github.io/cities/los-angeles/</loc><priority>0.6</priority></url>
@@ -89,7 +90,6 @@
   <url><loc>https://menupriceshub.github.io/cities/waukesha/</loc><priority>0.6</priority></url>
   <url><loc>https://menupriceshub.github.io/cities/yountville/</loc><priority>0.6</priority></url>
   <url><loc>https://menupriceshub.github.io/faq/</loc><priority>0.8</priority></url>
-  <url><loc>https://menupriceshub.github.io/</loc><priority>1.0</priority></url>
   <url><loc>https://menupriceshub.github.io/list-your-business.html</loc><priority>0.6</priority></url>
   <url><loc>https://menupriceshub.github.io/pages/about.html</loc><priority>0.3</priority></url>
   <url><loc>https://menupriceshub.github.io/pages/author.html</loc><priority>0.3</priority></url>
@@ -98,6 +98,7 @@
   <url><loc>https://menupriceshub.github.io/pages/dmca.html</loc><priority>0.3</priority></url>
   <url><loc>https://menupriceshub.github.io/pages/privacy-policy.html</loc><priority>0.3</priority></url>
   <url><loc>https://menupriceshub.github.io/pages/terms-conditions.html</loc><priority>0.3</priority></url>
+  <url><loc>https://menupriceshub.github.io/restaurants/</loc><priority>0.8</priority></url>
   <url><loc>https://menupriceshub.github.io/restaurants/als-breakfast-menu/</loc><priority>0.7</priority></url>
   <url><loc>https://menupriceshub.github.io/restaurants/alsbeef-menu/</loc><priority>0.7</priority></url>
   <url><loc>https://menupriceshub.github.io/restaurants/american-coney-island-menu/</loc><priority>0.7</priority></url>
@@ -121,7 +122,7 @@
   <url><loc>https://menupriceshub.github.io/restaurants/franklin-barbecue-menu/</loc><priority>0.7</priority></url>
   <url><loc>https://menupriceshub.github.io/restaurants/galatoires-menu/</loc><priority>0.7</priority></url>
   <url><loc>https://menupriceshub.github.io/restaurants/gates-bar-b-q-menu/</loc><priority>0.7</priority></url>
-  <url><loc>https://menupriceshub.github.io/restaurants/gene-%26-georgetti-menu/</loc><priority>0.7</priority></url>
+  <url><loc>https://menupriceshub.github.io/restaurants/gene-and-georgetti-menu/</loc><priority>0.7</priority></url>
   <url><loc>https://menupriceshub.github.io/restaurants/genos-steaks-menu/</loc><priority>0.7</priority></url>
   <url><loc>https://menupriceshub.github.io/restaurants/gonzalez-restaurant-menu/</loc><priority>0.7</priority></url>
   <url><loc>https://menupriceshub.github.io/restaurants/great-lakes-brewing-company-menu/</loc><priority>0.7</priority></url>
@@ -132,25 +133,24 @@
   <url><loc>https://menupriceshub.github.io/restaurants/house-of-prime-rib-menu/</loc><priority>0.7</priority></url>
   <url><loc>https://menupriceshub.github.io/restaurants/husk-nashville-menu/</loc><priority>0.7</priority></url>
   <url><loc>https://menupriceshub.github.io/restaurants/imos-pizza-menu/</loc><priority>0.7</priority></url>
-  <url><loc>https://menupriceshub.github.io/restaurants/</loc><priority>0.8</priority></url>
   <url><loc>https://menupriceshub.github.io/restaurants/joes-kc-bbq-menu/</loc><priority>0.7</priority></url>
   <url><loc>https://menupriceshub.github.io/restaurants/joes-pizza-broadway-menu/</loc><priority>0.7</priority></url>
   <url><loc>https://menupriceshub.github.io/restaurants/katzs-delicatessen-menu/</loc><priority>0.7</priority></url>
   <url><loc>https://menupriceshub.github.io/restaurants/kens-artisan-pizza-menu/</loc><priority>0.7</priority></url>
-  <url><loc>https://menupriceshub.github.io/restaurants/l%26b-spumoni-gardens-menu/</loc><priority>0.7</priority></url>
   <url><loc>https://menupriceshub.github.io/restaurants/la-hacienda-de-los-barrios-menu/</loc><priority>0.7</priority></url>
   <url><loc>https://menupriceshub.github.io/restaurants/la-taqueria-menu/</loc><priority>0.7</priority></url>
   <url><loc>https://menupriceshub.github.io/restaurants/langers-delicatessen-restaurant-menu/</loc><priority>0.7</priority></url>
+  <url><loc>https://menupriceshub.github.io/restaurants/lb-spumoni-gardens-menu/</loc><priority>0.7</priority></url>
   <url><loc>https://menupriceshub.github.io/restaurants/lcs-bar-b-q-menu/</loc><priority>0.7</priority></url>
   <url><loc>https://menupriceshub.github.io/restaurants/le-bernardin-menu/</loc><priority>0.7</priority></url>
-  <url><loc>https://menupriceshub.github.io/restaurants/mannys-cafeteria-%26-delicatessen-menu/</loc><priority>0.7</priority></url>
+  <url><loc>https://menupriceshub.github.io/restaurants/mannys-cafeteria-and-delicatessen-menu/</loc><priority>0.7</priority></url>
   <url><loc>https://menupriceshub.github.io/restaurants/marufuku-ramen-menu/</loc><priority>0.7</priority></url>
   <url><loc>https://menupriceshub.github.io/restaurants/mary-macs-tea-room-menu/</loc><priority>0.7</priority></url>
   <url><loc>https://menupriceshub.github.io/restaurants/matts-bar-and-grill-menu/</loc><priority>0.7</priority></url>
   <url><loc>https://menupriceshub.github.io/restaurants/mickeys-diner-menu/</loc><priority>0.7</priority></url>
   <url><loc>https://menupriceshub.github.io/restaurants/milwaukee-burger-company-franklin-menu/</loc><priority>0.7</priority></url>
   <url><loc>https://menupriceshub.github.io/restaurants/minetta-tavern-menu/</loc><priority>0.7</priority></url>
-  <url><loc>https://menupriceshub.github.io/restaurants/musso-%26-frank-grill-menu/</loc><priority>0.7</priority></url>
+  <url><loc>https://menupriceshub.github.io/restaurants/musso-and-frank-grill-menu/</loc><priority>0.7</priority></url>
   <url><loc>https://menupriceshub.github.io/restaurants/original-tommys-menu/</loc><priority>0.7</priority></url>
   <url><loc>https://menupriceshub.github.io/restaurants/pappas-bros-steakhouse-menu/</loc><priority>0.7</priority></url>
   <url><loc>https://menupriceshub.github.io/restaurants/pappys-smokehouse-menu/</loc><priority>0.7</priority></url>
@@ -159,18 +159,18 @@
   <url><loc>https://menupriceshub.github.io/restaurants/pecan-lodge-menu/</loc><priority>0.7</priority></url>
   <url><loc>https://menupriceshub.github.io/restaurants/pequods-pizza-menu/</loc><priority>0.7</priority></url>
   <url><loc>https://menupriceshub.github.io/restaurants/peter-luger-steak-house-menu/</loc><priority>0.7</priority></url>
-  <url><loc>https://menupriceshub.github.io/restaurants/peter-pan-donut-%26-pastry-shop-menu/</loc><priority>0.7</priority></url>
+  <url><loc>https://menupriceshub.github.io/restaurants/peter-pan-donut-and-pastry-shop-menu/</loc><priority>0.7</priority></url>
   <url><loc>https://menupriceshub.github.io/restaurants/philippe-the-original-menu/</loc><priority>0.7</priority></url>
   <url><loc>https://menupriceshub.github.io/restaurants/pike-place-chowder-menu/</loc><priority>0.7</priority></url>
   <url><loc>https://menupriceshub.github.io/restaurants/pinks-hot-dogs-menu/</loc><priority>0.7</priority></url>
   <url><loc>https://menupriceshub.github.io/restaurants/pizzeria-bianco-menu/</loc><priority>0.7</priority></url>
-  <url><loc>https://menupriceshub.github.io/restaurants/portillos-%26-barnellis-chicago-menu/</loc><priority>0.7</priority></url>
+  <url><loc>https://menupriceshub.github.io/restaurants/portillos-and-barnellis-chicago-menu/</loc><priority>0.7</priority></url>
   <url><loc>https://menupriceshub.github.io/restaurants/princes-hot-chicken-shack-south-menu/</loc><priority>0.7</priority></url>
   <url><loc>https://menupriceshub.github.io/restaurants/rocky-mountain-chocolate-factory-of-durango-menu/</loc><priority>0.7</priority></url>
   <url><loc>https://menupriceshub.github.io/restaurants/roscoes-house-of-chicken-and-waffles-menu/</loc><priority>0.7</priority></url>
   <url><loc>https://menupriceshub.github.io/restaurants/rubys-diner-menu/</loc><priority>0.7</priority></url>
   <url><loc>https://menupriceshub.github.io/restaurants/rudys-jazz-room-menu/</loc><priority>0.7</priority></url>
-  <url><loc>https://menupriceshub.github.io/restaurants/russ-%26-daughters-menu/</loc><priority>0.7</priority></url>
+  <url><loc>https://menupriceshub.github.io/restaurants/russ-and-daughters-menu/</loc><priority>0.7</priority></url>
   <url><loc>https://menupriceshub.github.io/restaurants/rusty-taco-menu/</loc><priority>0.7</priority></url>
   <url><loc>https://menupriceshub.github.io/restaurants/sallys-apizza-menu/</loc><priority>0.7</priority></url>
   <url><loc>https://menupriceshub.github.io/restaurants/screen-door-eastside-menu/</loc><priority>0.7</priority></url>
