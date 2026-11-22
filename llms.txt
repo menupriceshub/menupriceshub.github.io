@@ -1,44 +1,225 @@
 # MenuPricesHub
 
-> MenuPricesHub provides restaurant menus, food prices, calories, nutrition information, and restaurant details to help users explore food options easily.
+> MenuPricesHub is a restaurant menu and price information website. Each restaurant page lists menu items with prices, photos, location, opening hours and FAQs. The site also covers food categories, restaurants by city, and blog guides about menu deals and nutrition.
 
-## Website
-https://menupriceshub.github.io/
+Menu prices change often and may differ by location. Treat prices as a reference and confirm with the restaurant.
 
-## About
-MenuPricesHub is a restaurant menu and price information platform. Users can find menu items, prices, calories, nutrition details, restaurant locations, and popular food searches.
+## Main pages
 
-## Main Sections
+- [Home](https://menupriceshub.github.io/): Search restaurant menus, prices and calories
+- [All Restaurants](https://menupriceshub.github.io/restaurants/): Browse every restaurant menu
+- [Categories](https://menupriceshub.github.io/categories/): Browse by food type
+- [Cities](https://menupriceshub.github.io/cities/): Find restaurants by city
+- [Blog](https://menupriceshub.github.io/blog/): Guides on deals, comparisons and nutrition
+- [FAQ](https://menupriceshub.github.io/faq/): Common questions
+- [Calories and Nutrition](https://menupriceshub.github.io/calories-and-nutrition.html): Calories and nutrition information
+- [Search](https://menupriceshub.github.io/search.html): Search restaurants and menu items
 
-- Home:
-https://menupriceshub.github.io/
+## Categories
 
-- Restaurants:
-https://menupriceshub.github.io/restaurants.html
+- [American](https://menupriceshub.github.io/categories/american/)
+- [Bakery](https://menupriceshub.github.io/categories/bakery/)
+- [BBQ](https://menupriceshub.github.io/categories/bbq/)
+- [Breakfast](https://menupriceshub.github.io/categories/breakfast/)
+- [Brewpub](https://menupriceshub.github.io/categories/brewpub/)
+- [Burgers](https://menupriceshub.github.io/categories/burgers/)
+- [Cafe](https://menupriceshub.github.io/categories/cafe/)
+- [Caribbean](https://menupriceshub.github.io/categories/caribbean/)
+- [Cheesesteak](https://menupriceshub.github.io/categories/cheesesteak/)
+- [Chili](https://menupriceshub.github.io/categories/chili/)
+- [Creole](https://menupriceshub.github.io/categories/creole/)
+- [Deli](https://menupriceshub.github.io/categories/deli/)
+- [Dessert](https://menupriceshub.github.io/categories/dessert/)
+- [Fine Dining](https://menupriceshub.github.io/categories/fine-dining/)
+- [French](https://menupriceshub.github.io/categories/french/)
+- [Fried Chicken](https://menupriceshub.github.io/categories/fried-chicken/)
+- [Hot Chicken](https://menupriceshub.github.io/categories/hot-chicken/)
+- [Hot Dogs](https://menupriceshub.github.io/categories/hot-dogs/)
+- [Italian](https://menupriceshub.github.io/categories/italian/)
+- [Italian Beef](https://menupriceshub.github.io/categories/italian-beef/)
+- [Japanese](https://menupriceshub.github.io/categories/japanese/)
+- [Mexican](https://menupriceshub.github.io/categories/mexican/)
+- [Pizza](https://menupriceshub.github.io/categories/pizza/)
+- [Seafood](https://menupriceshub.github.io/categories/seafood/)
+- [Soup](https://menupriceshub.github.io/categories/soup/)
+- [Southern](https://menupriceshub.github.io/categories/southern/)
+- [Steakhouse](https://menupriceshub.github.io/categories/steakhouse/)
+- [Tacos](https://menupriceshub.github.io/categories/tacos/)
+- [Ukrainian](https://menupriceshub.github.io/categories/ukrainian/)
 
-- Categories:
-https://menupriceshub.github.io/categories.html
+## Cities
 
-- Calories & Nutrition:
-https://menupriceshub.github.io/calories.html
+- [Restaurants in Ann Arbor](https://menupriceshub.github.io/cities/ann-arbor/)
+- [Restaurants in Atlanta](https://menupriceshub.github.io/cities/atlanta/)
+- [Restaurants in Austin](https://menupriceshub.github.io/cities/austin/)
+- [Restaurants in Balboa](https://menupriceshub.github.io/cities/balboa/)
+- [Restaurants in Berkeley](https://menupriceshub.github.io/cities/berkeley/)
+- [Restaurants in Boise](https://menupriceshub.github.io/cities/boise/)
+- [Best Restaurants in Brooklyn](https://menupriceshub.github.io/cities/brooklyn/)
+- [Restaurants in Buellton](https://menupriceshub.github.io/cities/buellton/)
+- [Restaurants in Charleston](https://menupriceshub.github.io/cities/charleston/)
+- [Best Restaurants in Chicago](https://menupriceshub.github.io/cities/chicago/)
+- [Restaurants in Cincinnati](https://menupriceshub.github.io/cities/cincinnati/)
+- [Restaurants in Cleveland](https://menupriceshub.github.io/cities/cleveland/)
+- [Restaurants in Dallas](https://menupriceshub.github.io/cities/dallas/)
+- [Restaurants in Denver](https://menupriceshub.github.io/cities/denver/)
+- [Restaurants in Detroit](https://menupriceshub.github.io/cities/detroit/)
+- [Restaurants in Driftwood](https://menupriceshub.github.io/cities/driftwood/)
+- [Restaurants in Durango](https://menupriceshub.github.io/cities/durango/)
+- [Restaurants in Glendale](https://menupriceshub.github.io/cities/glendale/)
+- [Restaurants in Hollywood](https://menupriceshub.github.io/cities/hollywood/)
+- [Restaurants in Houston](https://menupriceshub.github.io/cities/houston/)
+- [Restaurants in Jackson](https://menupriceshub.github.io/cities/jackson/)
+- [Best Restaurants in Kansas City](https://menupriceshub.github.io/cities/kansas-city/)
+- [Best Restaurants in Los Angeles](https://menupriceshub.github.io/cities/los-angeles/)
+- [Restaurants in Memphis](https://menupriceshub.github.io/cities/memphis/)
+- [Restaurants in Minneapolis](https://menupriceshub.github.io/cities/minneapolis/)
+- [Best Restaurants in Nashville](https://menupriceshub.github.io/cities/nashville/)
+- [Restaurants in New Haven](https://menupriceshub.github.io/cities/new-haven/)
+- [Restaurants in New Orleans](https://menupriceshub.github.io/cities/new-orleans/)
+- [Best Restaurants in New York](https://menupriceshub.github.io/cities/new-york/)
+- [Restaurants in Oakland](https://menupriceshub.github.io/cities/oakland/)
+- [Restaurants in Oklahoma City](https://menupriceshub.github.io/cities/oklahoma-city/)
+- [Restaurants in Pescadero](https://menupriceshub.github.io/cities/pescadero/)
+- [Restaurants in Philadelphia](https://menupriceshub.github.io/cities/philadelphia/)
+- [Restaurants in Phoenix](https://menupriceshub.github.io/cities/phoenix/)
+- [Restaurants in Portland](https://menupriceshub.github.io/cities/portland/)
+- [Restaurants in San Antonio](https://menupriceshub.github.io/cities/san-antonio/)
+- [Best Restaurants in San Francisco](https://menupriceshub.github.io/cities/san-francisco/)
+- [Restaurants in Savannah](https://menupriceshub.github.io/cities/savannah/)
+- [Restaurants in Seattle](https://menupriceshub.github.io/cities/seattle/)
+- [Restaurants in St. Louis](https://menupriceshub.github.io/cities/st-louis/)
+- [Restaurants in St. Paul](https://menupriceshub.github.io/cities/st-paul/)
+- [Restaurants in Waukesha](https://menupriceshub.github.io/cities/waukesha/)
+- [Restaurants in Yountville](https://menupriceshub.github.io/cities/yountville/)
 
-- Sitemap:
-https://menupriceshub.github.io/sitemap.html
+## Restaurant menus
 
-## Content Types
+- [Al's Breakfast Menu](https://menupriceshub.github.io/restaurants/als-breakfast-menu/)
+- [Al's Beef Menu](https://menupriceshub.github.io/restaurants/alsbeef-menu/)
+- [American Coney Island Menu](https://menupriceshub.github.io/restaurants/american-coney-island-menu/)
+- [American Coney Island Menu](https://menupriceshub.github.io/restaurants/arnolds-country-kitchen-menu/)
+- [Arthur Bryant's Barbeque Menu](https://menupriceshub.github.io/restaurants/arthur-bryants-barbeque-menu/)
+- [Balthazar Menu](https://menupriceshub.github.io/restaurants/balthazar-menu/)
+- [Barney Greengrass Menu](https://menupriceshub.github.io/restaurants/barney-greengrass-menu/)
+- [Big Jud's Menu](https://menupriceshub.github.io/restaurants/big-juds-menu/)
+- [Bomb Bomb Bar Menu](https://menupriceshub.github.io/restaurants/bomb-bomb-bar-menu/)
+- [Canter's Deli Menu](https://menupriceshub.github.io/restaurants/canters-deli-menu/)
+- [Casa Bonita Menu](https://menupriceshub.github.io/restaurants/casa-bonita-menu/)
+- [Cattlemen's Steakhouse Menu](https://menupriceshub.github.io/restaurants/cattlemens-steakhouse-menu/)
+- [Central BBQ Downtown Menu](https://menupriceshub.github.io/restaurants/central-bbq-downtown-menu/)
+- [Charlie Vergos' Rendezvous Menu](https://menupriceshub.github.io/restaurants/charlie-vergos-rendezvous-menu/)
+- [Chez Panisse Menu](https://menupriceshub.github.io/restaurants/chez-panisse-menu/)
+- [Commander's Palace Menu](https://menupriceshub.github.io/restaurants/commanders-palace-menu/)
+- [Dick's Drive-In Menu](https://menupriceshub.github.io/restaurants/dicks-drive-in-menu/)
+- [Duarte's Tavern Menu](https://menupriceshub.github.io/restaurants/duartes-tavern-menu/)
+- [Fainting Goat Cafe Menu](https://menupriceshub.github.io/restaurants/fainting-goat-cafe-menu/)
+- [FIG Menu](https://menupriceshub.github.io/restaurants/fig-menu/)
+- [Franklin Barbecue Menu](https://menupriceshub.github.io/restaurants/franklin-barbecue-menu/)
+- [Galatoire's Menu](https://menupriceshub.github.io/restaurants/galatoires-menu/)
+- [Gates Bar-B-Q  Menu](https://menupriceshub.github.io/restaurants/gates-bar-b-q-menu/)
+- [Gene & Georgetti Menu](https://menupriceshub.github.io/restaurants/gene-and-georgetti-menu/)
+- [Geno's Steaks Menu](https://menupriceshub.github.io/restaurants/genos-steaks-menu/)
+- [Gonzalez Restaurant Menu](https://menupriceshub.github.io/restaurants/gonzalez-restaurant-menu/)
+- [Great Lakes Brewing Company Menu](https://menupriceshub.github.io/restaurants/great-lakes-brewing-company-menu/)
+- [Grimaldi's Pizzeria Menu](https://menupriceshub.github.io/restaurants/grimaldis-pizzeria-menu/)
+- [Gus's World Famous Fried Chicken Menu](https://menupriceshub.github.io/restaurants/guss-world-famous-fried-chicken-menu/)
+- [Hitching Post 2 Menu](https://menupriceshub.github.io/restaurants/hitching-post-2-menu/)
+- [Homeroom Menu](https://menupriceshub.github.io/restaurants/homeroom-menu/)
+- [House Of Prime Rib Menu](https://menupriceshub.github.io/restaurants/house-of-prime-rib-menu/)
+- [Husk Nashville Menu](https://menupriceshub.github.io/restaurants/husk-nashville-menu/)
+- [Imo's Pizza Menu](https://menupriceshub.github.io/restaurants/imos-pizza-menu/)
+- [Joe's KC BBQ Menu](https://menupriceshub.github.io/restaurants/joes-kc-bbq-menu/)
+- [Joe's Pizza Broadway Menu](https://menupriceshub.github.io/restaurants/joes-pizza-broadway-menu/)
+- [Katz's Delicatessen Menu](https://menupriceshub.github.io/restaurants/katzs-delicatessen-menu/)
+- [Ken's Artisan Pizza Menu](https://menupriceshub.github.io/restaurants/kens-artisan-pizza-menu/)
+- [La Hacienda de Los Barrios Menu](https://menupriceshub.github.io/restaurants/la-hacienda-de-los-barrios-menu/)
+- [La Taqueria Menu](https://menupriceshub.github.io/restaurants/la-taqueria-menu/)
+- [Langer's Delicatessen-Restaurant Menu](https://menupriceshub.github.io/restaurants/langers-delicatessen-restaurant-menu/)
+- [L&B Spumoni Gardens Menu](https://menupriceshub.github.io/restaurants/lb-spumoni-gardens-menu/)
+- [LC's Bar-B-Q Menu](https://menupriceshub.github.io/restaurants/lcs-bar-b-q-menu/)
+- [Le Bernardin Menu](https://menupriceshub.github.io/restaurants/le-bernardin-menu/)
+- [Manny's Cafeteria & Delicatessen Menu](https://menupriceshub.github.io/restaurants/mannys-cafeteria-and-delicatessen-menu/)
+- [Marufuku Ramen Menu](https://menupriceshub.github.io/restaurants/marufuku-ramen-menu/)
+- [Mary Mac's Tea Room Menu](https://menupriceshub.github.io/restaurants/mary-macs-tea-room-menu/)
+- [Matt's Bar and Grill Menu](https://menupriceshub.github.io/restaurants/matts-bar-and-grill-menu/)
+- [Mickey's Diner Menu](https://menupriceshub.github.io/restaurants/mickeys-diner-menu/)
+- [Milwaukee Burger Company - Franklin Menu](https://menupriceshub.github.io/restaurants/milwaukee-burger-company-franklin-menu/)
+- [Minetta Tavern Menu](https://menupriceshub.github.io/restaurants/minetta-tavern-menu/)
+- [Musso & Frank Grill Menu](https://menupriceshub.github.io/restaurants/musso-and-frank-grill-menu/)
+- [Original Tommy's Menu](https://menupriceshub.github.io/restaurants/original-tommys-menu/)
+- [Pappas Bros. Steakhouse Menu](https://menupriceshub.github.io/restaurants/pappas-bros-steakhouse-menu/)
+- [Pappy's Smokehouse Menu](https://menupriceshub.github.io/restaurants/pappys-smokehouse-menu/)
+- [Paseo Menu](https://menupriceshub.github.io/restaurants/paseo-menu/)
+- [Pat's King of Steaks Menu](https://menupriceshub.github.io/restaurants/pats-king-of-steaks-menu/)
+- [Pecan Lodge Menu](https://menupriceshub.github.io/restaurants/pecan-lodge-menu/)
+- [Pequod's Pizza Menu](https://menupriceshub.github.io/restaurants/pequods-pizza-menu/)
+- [Peter Luger Steak House Menu](https://menupriceshub.github.io/restaurants/peter-luger-steak-house-menu/)
+- [Peter Pan Donut & Pastry Shop Menu](https://menupriceshub.github.io/restaurants/peter-pan-donut-and-pastry-shop-menu/)
+- [Philippe The Original Menu](https://menupriceshub.github.io/restaurants/philippe-the-original-menu/)
+- [Pike Place Chowder Menu](https://menupriceshub.github.io/restaurants/pike-place-chowder-menu/)
+- [Pink's Hot Dogs Menu](https://menupriceshub.github.io/restaurants/pinks-hot-dogs-menu/)
+- [Pizzeria Bianco Menu](https://menupriceshub.github.io/restaurants/pizzeria-bianco-menu/)
+- [Portillo's & Barnelli's Chicago Menu](https://menupriceshub.github.io/restaurants/portillos-and-barnellis-chicago-menu/)
+- [Prince's Hot Chicken Shack South Menu](https://menupriceshub.github.io/restaurants/princes-hot-chicken-shack-south-menu/)
+- [Rocky Mountain Chocolate Factory of Durango Menu](https://menupriceshub.github.io/restaurants/rocky-mountain-chocolate-factory-of-durango-menu/)
+- [Roscoe's House of Chicken and Waffles Menu](https://menupriceshub.github.io/restaurants/roscoes-house-of-chicken-and-waffles-menu/)
+- [Ruby's Diner Menu](https://menupriceshub.github.io/restaurants/rubys-diner-menu/)
+- [Rudy's Jazz Room Menu](https://menupriceshub.github.io/restaurants/rudys-jazz-room-menu/)
+- [Russ & Daughters Menu](https://menupriceshub.github.io/restaurants/russ-and-daughters-menu/)
+- [Rusty Taco Menu](https://menupriceshub.github.io/restaurants/rusty-taco-menu/)
+- [Sally's Apizza Menu](https://menupriceshub.github.io/restaurants/sallys-apizza-menu/)
+- [Screen Door Eastside Menu](https://menupriceshub.github.io/restaurants/screen-door-eastside-menu/)
+- [Skyline Chili Menu](https://menupriceshub.github.io/restaurants/skyline-chili-menu/)
+- [Slyman's Restaurant and Deli Menu](https://menupriceshub.github.io/restaurants/slymans-restaurant-and-deli-menu/)
+- [Snake River Grill Menu](https://menupriceshub.github.io/restaurants/snake-river-grill-menu/)
+- [SnoozeEatery Menu](https://menupriceshub.github.io/restaurants/snoozeeatery-menu/)
+- [Solly's Grille Menu](https://menupriceshub.github.io/restaurants/sollys-grille-menu/)
+- [Superdawg Drive-In Menu](https://menupriceshub.github.io/restaurants/superdawg-drive-in-menu/)
+- [Swan Oyster Depot Menu](https://menupriceshub.github.io/restaurants/swan-oyster-depot-menu/)
+- [Ted Drewes Frozen Custard Menu](https://menupriceshub.github.io/restaurants/ted-drewes-frozen-custard-menu/)
+- [Ted's Café Escondido Menu](https://menupriceshub.github.io/restaurants/teds-caf%C3%A9-escondido-menu/)
+- [Terry Black's Barbecue Menu](https://menupriceshub.github.io/restaurants/terry-blacks-barbecue-menu/)
+- [The Apple Pan Menu](https://menupriceshub.github.io/restaurants/the-apple-pan-menu/)
+- [The French Laundry Menu](https://menupriceshub.github.io/restaurants/the-french-laundry-menu/)
+- [The Grey Menu](https://menupriceshub.github.io/restaurants/the-grey-menu/)
+- [The Loveless Cafe Menu](https://menupriceshub.github.io/restaurants/the-loveless-cafe-menu/)
+- [The Original Ninfa's on Navigation Menu](https://menupriceshub.github.io/restaurants/the-original-ninfas-on-navigation-menu/)
+- [The Original Rainbow Cone Menu](https://menupriceshub.github.io/restaurants/the-original-rainbow-cone-menu/)
+- [The Original Soup Kitchen Menu](https://menupriceshub.github.io/restaurants/the-original-soup-kitchen-menu/)
+- [The Salt Lick BBQ Menu](https://menupriceshub.github.io/restaurants/the-salt-lick-bbq-menu/)
+- [Torchy's Tacos Menu](https://menupriceshub.github.io/restaurants/torchys-tacos-menu/)
+- [Veselka Menu](https://menupriceshub.github.io/restaurants/veselka-menu/)
+- [Zachary's Chicago Pizza Menu](https://menupriceshub.github.io/restaurants/zacharys-chicago-pizza-menu/)
+- [Zingerman's Delicatessen Menu](https://menupriceshub.github.io/restaurants/zingermans-delicatessen-menu/)
+- [Zingerman's Roadhouse Menu](https://menupriceshub.github.io/restaurants/zingermans-roadhouse-menu/)
+- [Zip's Cafe Menu](https://menupriceshub.github.io/restaurants/zips-cafe-menu/)
+- [Zuni Café Menu](https://menupriceshub.github.io/restaurants/zuni-cafe-menu/)
 
-- Restaurant menus
-- Food prices
-- Calories information
-- Nutrition details
-- Restaurant locations
-- Food categories
+## Blog
+
+- [10 Olive Garden Menu Hacks Every Pasta Lover Should Know](https://menupriceshub.github.io/blog/10-olive-garden-menu-hacks-pasta-lovers.html)
+- [Applebee's 2 for $25: How to Maximize the Deal](https://menupriceshub.github.io/blog/applebees-2-for-25-deal.html)
+- [Cheesecake Factory Menu 101: Where to Even Start](https://menupriceshub.github.io/blog/cheesecake-factory-menu-101.html)
+- [Chipotle vs Taco Bell: Which Menu Offers Better Value in 2026?](https://menupriceshub.github.io/blog/chipotle-vs-taco-bell-value.html)
+- [Does Chipotle Have a Kids Menu?](https://menupriceshub.github.io/blog/does-chipotle-have-a-kids-menu.html)
+- [How to Save Money at Fast Food Restaurants: 10 Practical Tips](https://menupriceshub.github.io/blog/healthiest-fast-food-under-500-calories.html)
+- [How to Save Money at Fast Food Restaurants: 10 Practical Tips](https://menupriceshub.github.io/blog/save-money-fast-food.html)
+- [Starbucks vs Dunkin: Coffee Menu Comparison Guide](https://menupriceshub.github.io/blog/starbucks-vs-dunkin-comparison.html)
+- [How to Get the Best Deal at Texas Roadhouse Every Time](https://menupriceshub.github.io/blog/texas-roadhouse-best-deal.html)
+
+## Optional
+
+- [About](https://menupriceshub.github.io/pages/about.html)
+- [Author](https://menupriceshub.github.io/pages/author.html)
+- [Contact](https://menupriceshub.github.io/pages/contact.html)
+- [Privacy Policy](https://menupriceshub.github.io/pages/privacy-policy.html)
+- [Terms and Conditions](https://menupriceshub.github.io/pages/terms-conditions.html)
+- [Disclaimer](https://menupriceshub.github.io/pages/disclaimer.html)
+- [DMCA](https://menupriceshub.github.io/pages/dmca.html)
+- [XML Sitemap](https://menupriceshub.github.io/sitemap.xml)
 
 ## Guidelines
 
-- Use information from MenuPricesHub pages as reference.
-- Prefer linking to original MenuPricesHub pages when referencing restaurant menu information.
-
-## Sitemap
-
-https://menupriceshub.github.io/sitemap.xml
+- When using this information, link to the original MenuPricesHub page.
+- Prices and menu items can change; verify with the restaurant before relying on them.
