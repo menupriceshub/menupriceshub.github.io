@@ -1,0 +1,49 @@
+name: Fix canonical tags
+on: workflow_dispatch
+permissions:
+  contents: write
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fix canonical tags
+        run: |
+          python3 - <<'PY'
+          import glob, re, os
+          B = "https://menupriceshub.github.io"
+          skip = {"Alog.html","Alograting.html","Autyosave.html","Ablog.html","Axyz-12.html","admin.html","admin2.html","app.html","sitemap.html","notifications.html","index.html"}
+          n = 0
+          for f in sorted(glob.glob("**/*.html", recursive=True)):
+              if f in skip or f.startswith(("data/","styles/","js/",".git/")) or os.path.getsize(f) < 100:
+                  continue
+              if f.startswith(("categories/steak-house/","categories/desserts/","restaurants/teds-")):
+                  continue
+              s = open(f, encoding="utf-8").read()
+              if "noindex" in s:
+                  continue
+              own = B + "/" + (f[:-10] if f.endswith("/index.html") else f)
+              tag = '<link rel="canonical" href="%s" />' % own
+              m = re.search(r'<link[^>]+rel=["\']canonical["\'][^>]*>', s, re.I)
+              if m:
+                  cur = re.search(r'href=["\']([^"\']*)', m.group(0)).group(1)
+                  if cur.rstrip("/") == own.rstrip("/"):
+                      continue
+                  s2 = s[:m.start()] + tag + s[m.end():]
+              else:
+                  h = re.search(r'<head[^>]*>', s, re.I)
+                  if not h:
+                      continue
+                  s2 = s[:h.end()] + "\n" + tag + s[h.end():]
+              open(f, "w", encoding="utf-8", newline="").write(s2)
+              n += 1
+              print("fixed", f)
+          print(n, "files fixed")
+          PY
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet || git commit -m "Fix canonical tags"
+          git push
