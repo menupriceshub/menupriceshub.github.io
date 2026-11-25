@@ -1,0 +1,99 @@
+name: Fix category pages SEO
+on: workflow_dispatch
+permissions:
+  contents: write
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fix category titles, descriptions and headings
+        run: |
+          python3 - <<'PY'
+          import os, re
+
+          B = "https://menupriceshub.github.io"
+          IMG = "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjab7qrT2I-pVKegA-ydLBoDND3UUKhwXxSCVgl-9Mmglt3O7kB3nPgyt1gk2MOyMXPyamzn_EMYktSiCYsyZquDZC-IAvlUNerknIdcjRrR10M5EJBj25fZ5mprenZ9iRAYLMOTjlXDZq6dFl4m7Q3VIhXEJNq8hwqPR_AyCt0-vluQKfZGDxiknPjr_c/s1600/mph-city-cover-home.webp"
+
+          NAMES = {
+              "american": "American Restaurants", "bakery": "Bakeries", "bbq": "BBQ Restaurants",
+              "breakfast": "Breakfast Restaurants", "brewpub": "Brewpubs", "burgers": "Burger Restaurants",
+              "cafe": "Cafes", "caribbean": "Caribbean Restaurants", "cheesesteak": "Cheesesteak Restaurants",
+              "chili": "Chili Restaurants", "creole": "Creole Restaurants", "deli": "Deli Restaurants",
+              "dessert": "Dessert Shops", "fine-dining": "Fine Dining Restaurants", "french": "French Restaurants",
+              "fried-chicken": "Fried Chicken Restaurants", "hot-chicken": "Hot Chicken Restaurants",
+              "hot-dogs": "Hot Dog Restaurants", "italian-beef": "Italian Beef Restaurants",
+              "italian": "Italian Restaurants", "japanese": "Japanese Restaurants", "mexican": "Mexican Restaurants",
+              "pizza": "Pizza Restaurants", "seafood": "Seafood Restaurants", "soup": "Soup Restaurants",
+              "southern": "Southern Restaurants", "steakhouse": "Steakhouses", "tacos": "Taco Restaurants",
+              "ukrainian": "Ukrainian Restaurants",
+          }
+
+          def build(slug):
+              n = NAMES[slug]
+              low = n.lower()
+              for w in ("bbq", "american", "caribbean", "creole", "french", "italian", "japanese", "mexican", "southern", "ukrainian"):
+                  low = re.sub(r"\b%s\b" % w, w.upper() if w == "bbq" else w.capitalize(), low)
+              return {
+                  "title": "Best %s: Menus & Prices | MenuPricesHub" % n,
+                  "h1": "Best %s in the USA – Menus & Prices" % n,
+                  "tag": "Explore the best %s in the USA. See menus, prices, photos, locations and hours in one place." % low,
+                  "desc": "Browse menus and prices for the best %s in the USA. See photos, hours and locations." % low,
+                  "url": "%s/categories/%s/" % (B, slug),
+              }
+
+          PAGES = {s: build(s) for s in NAMES}
+          PAGES[""] = {
+              "title": "Restaurant Categories: Browse Menus by Food Type | MenuPricesHub",
+              "h1": "Browse Restaurants by Category – Menus & Prices",
+              "tag": "Pick a food type, from pizza and BBQ to delis and seafood, and see menus, prices, photos and hours.",
+              "desc": "Browse restaurants by food type. See menus, prices, photos, hours and locations for popular US restaurants.",
+              "url": B + "/categories/",
+          }
+
+          def esc(t):
+              return t.replace("&", "&amp;")
+
+          def set_meta(s, attr, key, value):
+              pat = re.compile(r'<meta\s+%s=["\']%s["\'][^>]*>' % (attr, re.escape(key)), re.I)
+              tag = '<meta %s="%s" content="%s" />' % (attr, key, esc(value))
+              if pat.search(s):
+                  return pat.sub(lambda m: tag, s, count=1)
+              return s
+
+          fixed = 0
+          for slug, p in PAGES.items():
+              f = "categories/%s/index.html" % slug if slug else "categories/index.html"
+              if not os.path.isfile(f) or os.path.getsize(f) < 100:
+                  continue
+              s = open(f, encoding="utf-8").read()
+              o = s
+              s = re.sub(r"<title>.*?</title>", lambda m: "<title>%s</title>" % esc(p["title"]), s, count=1, flags=re.S | re.I)
+              s = set_meta(s, "name", "description", p["desc"])
+              s = set_meta(s, "property", "og:title", p["title"])
+              s = set_meta(s, "property", "og:description", p["desc"])
+              s = set_meta(s, "property", "og:url", p["url"])
+              s = set_meta(s, "name", "twitter:title", p["title"])
+              s = set_meta(s, "name", "twitter:description", p["desc"])
+              # og:image: remove the broken ones and set one working image
+              s = re.sub(r'\s*<meta\s+property="og:image(:width|:height)?"[^>]*>', "", s, flags=re.I)
+              alt = re.search(r'<meta\s+property="og:image:alt"[^>]*>', s, re.I)
+              img_tag = '<meta property="og:image" content="%s" />' % IMG
+              if alt:
+                  s = s[:alt.start()] + img_tag + "\n" + s[alt.start():]
+              # hero H1 + tagline
+              hero = re.compile(r'(<div class="top-slider-content">\s*)<h1[^>]*>.*?</h1>(\s*)<p>.*?</p>', re.S)
+              s = hero.sub(lambda m: "%s<h1>%s</h1>%s<p>%s</p>" % (m.group(1), esc(p["h1"]), m.group(2), esc(p["tag"])), s, count=1)
+              if s != o:
+                  open(f, "w", encoding="utf-8", newline="").write(s)
+                  fixed += 1
+                  print("fixed", f)
+          print(fixed, "category pages fixed")
+          PY
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet || git commit -m "Fix category pages SEO"
+          git push
