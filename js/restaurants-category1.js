@@ -27,7 +27,7 @@
   { name: "Japanese", url: "/categories/japanese" },
   { name: "Soup", url: "/categories/soup" },
   { name: "Caribbean", url: "/categories/caribbean" },
-  { name: "Dessert", url: "/categories/dessert" },
+  { name: "Desserts", url: "/categories/dessert" },
   { name: "Breakfast", url: "/categories/breakfast" },
   { name: "Chili", url: "/categories/chili" },
   { name: "Brewpub", url: "/categories/brewpub" },
