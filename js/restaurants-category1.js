@@ -10,7 +10,6 @@
   { name: "Cheesesteak", url: "/categories/cheesesteak" },
   { name: "Hot Chicken", url: "/categories/hot-chicken" },
   { name: "Pizza", url: "/categories/pizza" },
-  { name: "Steak house", url: "/categories/steak-house" },
   { name: "Ukrainian", url: "/categories/ukrainian" },
   { name: "Hot Dogs", url: "/categories/hot-dogs" },
   { name: "Seafood", url: "/categories/seafood" },
